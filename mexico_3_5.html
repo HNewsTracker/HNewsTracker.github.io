@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-08 01:40:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article23320872.html#storylink=rss'>site</a></td><td><table><tr><td>Masked citizens and parents of missing students from Ayotzinapa burn ballots and other voting materials taken from a polling station, in Tixtla, Guerrero State, Mexico, Sunday, June 7, 2015.</td></tr><tr><td>Riot police use extinguishers to put out the flames of a burning pick-up truck after it was set on fire in Chilpancingo, capital of Guerrero State, Mexico, Sunday, June 7, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 04:54:45</td><td><a href='http://abcnews.go.com/International/wireStory/mexicos-1st-independent-candidate-leads-exit-polls-31604165'>site</a></td><td>Protesters burned ballot boxes in several restive states of southern Mexico in an attempt to disrupt elections, but officials said the vote was proceeding satisfactorily despite "isolated incidents."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-08 05:57:31</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-08-LT--Mexico-Elections/id-b9d9353611a74cccbcba68597f005b24'>site</a></td><td>Jaime Rodriguez, known as "El Bronco," an independent candidate for governor of the northern state of Nuevo Leon, shows his inked finger after casting his vote in Villa de Garcia, Mexico, Sunday, June 7, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/07/09/296B54FC00000578-0-image-m-22_1433667437866.jpg'></td><td>2015-06-08 06:02:24</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3114874/Ruling-party-leads-1st-independent-wins-Mexico-elections.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Teachers belonging to a dissident union burn ballot boxes and ballots in the city of Oaxaca, Mexico, Sunday, June 7, 2015.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/08/07/2970617000000578-0-image-m-10_1433746399456.jpg'></td><td>2015-06-08 07:30:51</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3114874/Ruling-party-leads-1st-independent-wins-Mexico-elections.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Electoral volunteers count ballots after the polls closed in the country's midterm elections at a polling station in Mexico City, Sunday, June 7, 2015.</td></tr><tr><td>Poll workers count ballots under a street lights, at an outdoor poling station in Chilpancingo, Guerrero State, Mexico, Sunday, June 7, 2015.</td></tr></table></td></tr>
+</table></body></html>
