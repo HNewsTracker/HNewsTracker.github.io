@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297716860750_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-25 20:09:08</td><td><a href='http://www.torontosun.com/2015/06/25/apple-removes-games-featuring-confederate-flags-from-app-store'>site</a></td><td><table><tr><td>Apple removes games featuring Confederate flags from App Store</td></tr><tr><td>Apple Inc has removed several civil war games featuring Confederate flags from its App Store, some game developers said.</td></tr><tr><td>"Apple has removed our game from AppStore because of usage of the Confederate Flag," Game-Labs, developer of Ultimate General: Gettysburg said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/2/g/j/image.related.articleLeadwide.620x349.ghy26q.png/1435267528353.jpg'></td><td>2015-06-25 21:25:34</td><td><a href='http://www.brisbanetimes.com.au/digital-life/games/apple-removes-civil-war-games-featuring-confederate-flag-from-appstore-20150625-ghy26q'>site</a></td><td>The move by Apple prompted some criticism from users online, concerned the ban was ignoring the context in which the symbol was used in some cases and pointing out that World War II games featuring Nazi insignia were still being sold from the store.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i2.cdn.turner.com/money/dam/assets/150625162845-apple-app-store-civil-war-780x439.jpg'></td><td>2015-06-25 21:37:09</td><td><a href='http://money.cnn.com/2015/06/25/technology/apple-pulls-civil-war-games/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fmoney_latest+%28CNNMoney%3A+Latest+News%29'>site</a></td><td>Apple issued the following statement: "We have removed apps from the App Store that use the Confederate flag in offensive or mean-spirited ways, which is in violation of our guidelines. We are not removing apps that display the Confederate flag for educational or historical uses."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201526/flag_140x9390303.jpg'></td><td>2015-06-26 00:25:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11471647&ref=rss'>site</a></td><td>Apple Inc., which is based in Cupertino, California, is the latest company to distance itself from the divisive symbol after the shooting suspect, Dylann Storm Roof, appeared in photos holding the flag.</td></tr>
+</table></body></html>

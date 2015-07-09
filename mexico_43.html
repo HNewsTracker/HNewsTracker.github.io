@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 23:12:20</td><td></td><td><a href='mexico_43_44.html'>"The plan was to head to Mexico, which would have been aided by Joyce Mitchell's vehicle," Cuomo said. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://edition.cnn.com/2015/06/29/us/new-york-prison-break/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-06-30 05:11:37</td><td><a href='http://edition.cnn.com/2015/06/29/us/new-york-prison-break/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_topstories+%28RSS%3A+CNN+-+Top+Stories%29'>site</a></td><td>Escapees planned to go to Mexico</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 13:20:31</td><td><a href='http://www.reuters.com/article/2015/06/19/us-mexico-intelligent-cycling-jacket-idUSKBN0OZ1H020150619?feedType=RSS&feedName=scienceNews'>site</a></td><td><table><tr><td>Mexico City's bumper-to-bumper traffic is a problem for the sprawling capital city's cyclists.</td></tr><tr><td>Damian Real, a physics students, came up with the design for the smart bike jacket with his partner Riberto Rivas, a maths major, at Mexico's National Autonomous University.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/37/43/07/8270283/3/920x920.jpg'></td><td>2015-07-07 13:41:48</td><td><a href='http://www.sfgate.com/news/article/Exposed-to-Greek-banks-Balkans-brace-for-trouble-6370277.php'>site</a></td><td>SERBIA - It has also limited the amount of money Greek banks can send back to their parent companies in Greece.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:42:16</td><td><a href='http://news.yahoo.com/exposed-greek-banks-balkans-brace-trouble-134216336--finance.html'>site</a></td><td>Though Greece's limits on cash withdrawals have not extended to subsidiaries in the Balkans, the deposits could be at risk if the parent banks collapse.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 17:59:16</td><td><a href='http://www.utsandiego.com/news/2015/jun/25/greece-grants-nationality-to-2nd-generation/'>site</a></td><td><table><tr><td>Greece grants nationality to 2nd generation immigrants</td></tr><tr><td>The new law is expected to affect up to 200,000 second-generation immigrants, many of whose parents arrived in Greece during a big migratory flow from eastern Europe since the early 1990s.</td></tr></table></td></tr>
 </table></body></html>

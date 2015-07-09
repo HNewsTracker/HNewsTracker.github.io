@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 14:17:14</td><td><a href='http://nypost.com/2015/06/19/apple-music-wont-have-taylor-swifts-1989/'>site</a></td><td>Apple Music won?t have Taylor Swift?s ?1989?</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 05:24:07</td><td><a href='http://www.reuters.com/article/2015/06/10/us-apple-music-investigation-idUSKBN0OQ0BG20150610?feedType=RSS&feedName=topNews'>site</a></td><td>The attorneys general of New York and Connecticut are investigating Apple Inc's negotiations with music companies to look for signs of potential antitrust violations.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/06/09/102745901-RTX1FP5V.530x298.jpg?v=1433874701'></td><td>2015-06-10 06:06:00</td><td><a href='http://www.cnbc.com/id/102747112'>site</a></td><td>The letter said Universal Music Group had no agreements with Apple or music entities like Sony Music Entertainment and Warner Music Group that would impede the availability of free or ad-supported services.</td></tr>
 </table></body></html>

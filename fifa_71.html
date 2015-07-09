@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-10T080539Z_2_LYNXMPEB5908D_RTROPTP_2_SOCCER-WORLD-QATAR.JPG?itok=inKv3UBy'></td><td>2015-06-10 14:02:16</td><td><a href='http://www.sbs.com.au/news/article/2015/06/11/fifa-shelves-bidding-2026-world-cup-swiss-seize-data'>site</a></td><td>FIFA secretary general Jerome Valcke said during an event in Russia that it would be "nonsense" to start the bidding process for the 2026 tournament for the time being.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000aa641-642.jpg'></td><td>2015-06-10 19:28:58</td><td><a href='http://www.rte.ie/news/2015/0610/707267-fifa/'>site</a></td><td>The OAG, which took data and documents from FIFA last month, will speak with Mr Blatter and other officials if they are of interest to its investigation.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 22:19:38</td><td><a href='http://www.usnews.com/news/sports/articles/2015/06/10/former-brazil-star-zico-running-for-fifa-president'>site</a></td><td>Former Brazil star Zico running for FIFA president</td></tr>
 </table></body></html>

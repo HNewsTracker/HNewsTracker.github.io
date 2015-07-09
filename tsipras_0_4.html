@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/25/UTI1725814_r142x90.jpg?a4c645db5e0d43838ff6d631be583dfe8b15e757'></td><td>2015-06-26 22:25:55</td><td><a href='http://www.utsandiego.com/news/2015/jun/26/greek-minister-calls-on-nation-to-reject-bailout/'>site</a></td><td>Lafazanis spoke early Saturday, after an emergency cabinet meeting during which Prime Minister Alexis Tsipras announced his intention to call the referendum.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/29/40698ef52153d11d7a0f6a7067007b05_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-06-30 05:13:30</td><td><a href='http://www.utsandiego.com/news/2015/jun/29/tsipras-defiant-as-banks-shut-markets-rocked/'>site</a></td><td>Greek Prime Minister Alexis Tsipras was defiant, urging voters to reject creditors' demands, insisting a "No" vote in next Sunday's referendum would strengthen Athens' negotiating hand.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-07 05:19:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-greece-no-bailout-vote-20150706-story.html'>site</a></td><td>Greek Prime Minister Alexis Tsipras heads Tuesday to Brussels, where he will try to use a bailout referendum victory to obtain a rescue deal with European leaders.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>Tsipras has suggested he would step aside if Greeks vote "Yes" in Sunday's referendum.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 14:53:42</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=topNews'>site</a></td><td>Already, Tsipras' coalition is under strain as a succession of deputies from the right-wing Independent Greeks, his junior partners, have backed the 'Yes' vote.</td></tr>
 </table></body></html>

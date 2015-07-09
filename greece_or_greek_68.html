@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 14:36:09</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/11/greece-commits-to-step-up-reform-efforts-german-leader-says'>site</a></td><td>IMF throws cold water on hopes for Greece deal</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 14:40:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23737999.html#storylink=rss'>site</a></td><td>A spokesman for the International Monetary Fund says its team has returned to Washington after negotiators made "no progress" on resolving Greece's debt crisis.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 18:52:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/11/greece-commits-to-step-up-reform-efforts-german-leader-says'>site</a></td><td><table><tr><td>Greece gets wake-up call: coming week could seal its fate</td></tr><tr><td>"The Greek government has to be, I think, a little bit more realistic," Tusk said.</td></tr><tr><td>The Greek market closed up by a hefty 8.1 percent before the IMF's tough statement.</td></tr><tr><td>Despite the bluster, the financial and economic stakes are such that cutting Greece loose from the eurozone or the global financial network seems improbable.</td></tr><tr><td>"It's not possible for Greece to achieve targets without reforms" especially in pensions, he said.</td></tr><tr><td>Greece spends an amount equal to 10 percent of its economic output on pensions, compared to an average 2.5 percent across the eurozone.</td></tr></table></td></tr>
 </table></body></html>

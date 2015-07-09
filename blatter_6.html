@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150610&t=2&i=1055128377&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5908B'></td><td>2015-06-10 11:10:46</td><td><a href='http://www.reuters.com/article/2015/06/10/us-soccer-fifa-election-idUSKBN0OQ0L620150610?feedType=RSS&feedName=topNews'>site</a></td><td>"This extraordinary Executive Committee will convene in July, the precise date to be confirmed within this week. For this extraordinary elective Congress (to elect Blatter's successor) there are currently various date options for discussion."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297710732747_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-10 14:43:16</td><td><a href='http://www.torontosun.com/2015/06/10/fifa-shelves-bidding-for-2026-world-cup-seeks-blatter-replacement'>site</a></td><td>Scandal-plagued FIFA postponed the bidding for the right to host the 2026 World Cup on Wednesday and embarked on the search to find a replacement for outgoing President Sepp Blatter.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/03/b6/f4/27ab516aa43d4a648906eabf7901a1c8-30c68c007e95440d8f5f4229cffc2fa9-0.jpg'></td><td>2015-07-04 01:00:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fifa-deflects-criticism-about-absence-of-blatter-f/nmrTX/'>site</a></td><td><table><tr><td>FIFA deflects criticism about absence of Blatter from final</td></tr><tr><td>While both organizations raved about the successes of the event, the absence of Blatter and Valcke because of the FIFA corruption investigation lingered.</td></tr></table></td></tr>
 </table></body></html>

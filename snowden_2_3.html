@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,13 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/83615000/jpg/_83615563_83615557.jpg'></td><td>2015-06-14 00:02:19</td><td><a href='http://www.bbc.co.uk/news/uk-33125068#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>According to the Sunday Times, Western intelligence agencies have been forced to pull agents out of "hostile countries" after "Moscow gained access to more than one million classified files" held by Mr Snowden.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 00:02:28</td><td><a href='http://news.sky.com/story/1501619/uk-pulls-spies-after-snowden-files-cracked'>site</a></td><td>"Snowden has done incalculable damage. In some cases the agencies have been forced to intervene and lift their agents from operations to prevent them from being identified and killed."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.independent.co.uk/incoming/article10318329.ece/alternates/w460/6-Edward-Snowden-AP.jpg'></td><td>2015-06-13 23:18:12</td><td><a href='http://www.independent.co.uk/news/uk/home-news/britain-forced-to-withdraw-spies-after-russia-and-china-access-files-stolen-by-us-whistleblower-edward-snowden-10318598.html'>site</a></td><td>Britain forced to withdraw spies after Russia and China access files stolen by US whistleblower Edward Snowden</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/83615000/jpg/_83615563_83615557.jpg'></td><td>2015-06-14 00:02:19</td><td><a href='http://www.bbc.co.uk/news/uk-33125068#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>According to the Sunday Times, Western intelligence agencies have been forced to pull agents out of "hostile countries" after "Moscow gained access to more than one million classified files" held by Mr Snowden.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 00:02:28</td><td><a href='http://news.sky.com/story/1501619/uk-pulls-spies-after-snowden-files-cracked'>site</a></td><td>"Snowden has done incalculable damage. In some cases the agencies have been forced to intervene and lift their agents from operations to prevent them from being identified and killed."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-14 00:02:28</td><td><a href='http://news.sky.com/story/1501619/uk-withdraws-spies-over-snowden-files'>site</a></td><td>A British intelligence source was quoted as saying: "We know Russia and China have access to Snowden's material and will be going through it for years to come, searching for clues to identify potential targets.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-14 00:32:11</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123172/Britain-pulls-spies-Russia-China-crack-Snowden-files-report.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Britain pulls out spies as Russia, China crack Snowden files- report</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://img.rasset.ie/0007976f-642.jpg'></td><td>2015-06-14 08:48:40</td><td><a href='http://www.rte.ie/news/2015/0614/708021-edward-snowden/'>site</a></td><td>Britain has been forced to remove some of its spies after Russia and China accessed the top-secret raft of documents taken by former US intelligence contractor Edward Snowden, British media have reported.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-14 12:46:47</td><td><a href='http://news.yahoo.com/britain-pulls-spies-russia-china-crack-snowden-files-115045691.html'>site</a></td><td>The revelations about the impact of Snowden on intelligence operations comes days after Britain's terrorism law watchdog said the rules governing the security services' abilities to spy on the public needed to be overhauled.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-14 14:29:00</td><td><a href='http://www.cbc.ca/news/world/russia-china-crack-edward-snowden-files-u-k-pulls-out-spies-1.3112907?cmp=rss'>site</a></td><td>"As to the specific allegations this morning, we never comment on operational intelligence matters so I'm not going to talk about what we have or haven't done in order to mitigate the effect of the Snowden revelations, but nobody should be in any doubt that Edward Snowden has caused immense damage," he told Sky News.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/World/2015/06/14/snowden_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-06-14 18:47:26</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/06/14/22452086.html?cid=rssnewsworld'>site</a></td><td>British Foreign Secretary Philip Hammond said Snowden had done a huge amount of damage to the West's ability to protect its citizens.</td></tr>
 </table></body></html>

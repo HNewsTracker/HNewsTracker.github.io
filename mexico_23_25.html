@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 19:16:27</td><td><a href='http://abcnews.go.com/International/wireStory/ruling-party-leads-1st-independent-wins-mexico-elections-31604551'>site</a></td><td>Under Mexico's mixed system of direct and proportional elections for congressional seats, analysts predicted the PRI coalition will ultimately control 245 to 263 seats in the 500-seat legislature.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 21:10:25</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/08/winners-and-losers-5-takeaways-from-mexico-midterm-vote'>site</a></td><td>MEXICO CITY (AP) - Here are five things to know about Mexico's midterm elections, seen as a referendum on President Enrique Pena Nieto's government halfway through his six-year mandate.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-09 00:39:08</td><td><a href='http://news.yahoo.com/mexicos-ruling-party-close-keeping-majority-despite-violence-003908027--business.html'>site</a></td><td>Initial estimates from Mexico's electoral authority had the PRI and its partners winning between 246 and 263 lower house seats.</td></tr>
+</table></body></html>

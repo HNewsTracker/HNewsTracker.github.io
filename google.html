@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 24,
+            max: 18,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 24 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 18 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,28 +48,22 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 07:10:15</td><td></td><td><a href='google_5.html'>Apple Maps has improved a lot for driving and walking directions since it ousted Google Maps in 2012 as the default service on iPhones. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 11:30:52</td><td></td><td><a href='google_25.html'>Google took to blurring faces and car license plate numbers in Street View imagery at its mapping service due to privacy concerns. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 15:41:00</td><td></td><td><a href='google_15.html'>In a post on Google Plus, the company's social network, Mr. Page termed Sidewalk Labs "a relatively modest investment" and one "very different from Google's core business." (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 22:03:38</td><td></td><td><a href='google_23.html'>Google's Chief Executive Larry Page has announced the tech giant's latest moonshot, a new company whose mission is to revolutionize urban life. (1)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-11 22:40:39</td><td></td><td><a href='google_18.html'>In a recent CNBC interview, Sacca said that Twitter would be an "instant fit" for Google (GOOGL.O) if it were to acquire the microblogging service. (1)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-12 18:21:23</td><td></td><td><a href='google_29.html'>The move by Google-owned YouTube takes direct aim at Twitch. (1)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-12 20:30:40</td><td></td><td><a href='google_13.html'>Google launches a YouTube built for gamers (1)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-06-19 21:29:02</td><td></td><td><a href='google_0.html'>SAN FRANCISCO -- Google plans to censor unauthorized nude photos from its influential Internet search engine in a policy change aimed at cracking down on a malicious practice known as "revenge porn." (8)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-06-19 23:48:35</td><td></td><td><a href='google_20.html'>Google says it is taking steps to remove sexually explicit images of people posted without their consent - known as "revenge porn" - from their search results. (2)</a></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-06-24 16:47:00</td><td></td><td><a href='google_21.html'>Lynn Hill is one of the climbers featured in Google's vertical Street View of El Capitan in Yosemite National Park. (2)</a></td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-06-24 23:22:33</td><td></td><td><a href='google_14.html'>Google has emphasized using clean energy to power the centers. (2)</a></td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-06-25 19:12:23</td><td></td><td><a href='google_8.html'>The latest models of Google's self-driving cars are now cruising the streets near the Internet company's Silicon Valley headquarters in a test of how they work around other vehicles driven by people. (7)</a></td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-06-27 10:00:00</td><td></td><td><a href='google_11.html'>Rather than just cry about what went wrong and how they lost out on the deal, Google has been hard at work creating its own "Twitch killer." (5)</a></td></tr>
-  <tr><td style='display:none'>13</td><td></td><td>2015-06-29 13:43:11</td><td></td><td><a href='google_26.html'>WASHINGTON (AP) - The Supreme Court is staying out of a long-running legal battle between technology giants Oracle and Google over copyright protection for a computer program that powers most of the world's smartphones and computer tablets. (2)</a></td></tr>
-  <tr><td style='display:none'>14</td><td></td><td>2015-06-29 16:19:21</td><td></td><td><a href='google_16.html'>WASHINGTON - The U.S. Supreme Court on Monday sided with Oracle Corp. and declined to hear Google Inc.'s appeal in a major software copyright case that has been closely followed by the technology industry. (2)</a></td></tr>
-  <tr><td style='display:none'>15</td><td></td><td>2015-06-29 21:46:00</td><td></td><td><a href='google_19.html'>Google has agreed to add audio and visual alerts in its navigation app to warn drivers about railroad crossings. (1)</a></td></tr>
-  <tr><td style='display:none'>16</td><td></td><td>2015-07-01 17:27:20</td><td></td><td><a href='google_30.html'>Google Photo App Labels Black Couple 'Gorillas' (1)</a></td></tr>
-  <tr><td style='display:none'>17</td><td></td><td>2015-07-02 17:05:01</td><td></td><td><a href='google_7.html'>NEW YORK -- Google is apologizing after reports surfaced that an automatic image-recognition feature in its Photos application was identifying images of some black people as "gorillas." (3)</a></td></tr>
-  <tr><td style='display:none'>18</td><td></td><td>2015-07-02 21:27:05</td><td></td><td><a href='google_3.html'>The images showed the recently released Google Photos app had sorted a picture of two black people into a category labeled as "gorillas." (3)</a></td></tr>
-  <tr><td style='display:none'>19</td><td></td><td>2015-07-03 15:19:49</td><td></td><td><a href='google_27.html'>Gabriele Hammermann, director of the memorial site at Dachau, told the dpa news agency that Google's actions were a humiliation for victims and relatives of the Nazi camps. (2)</a></td></tr>
-  <tr><td style='display:none'>20</td><td></td><td>2015-07-06 14:30:07</td><td></td><td><a href='google_17.html'>Google Tests Carpooling Service for Commuters in Israel (1)</a></td></tr>
-  <tr><td style='display:none'>21</td><td></td><td>2015-07-06 16:15:19</td><td></td><td><a href='google_24.html'>Google bought Israel-based Waze, which uses satellite signals from members' smartphones to offer real-time traffic information, for about US$1 billion two years ago. (1)</a></td></tr>
-  <tr><td style='display:none'>22</td><td></td><td>2015-07-07 14:35:46</td><td></td><td><a href='google_22.html'>Google executives have said the company does not want to build its own self-driving cars, but would prefer to find a development and production partner. (2)</a></td></tr>
-  <tr><td style='display:none'>23</td><td></td><td>2015-07-07 16:03:26</td><td></td><td><a href='google_28.html'>Google did not say exactly where the driverless cars would be tested. (1)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 07:10:15</td><td></td><td><a href='google_0.html'>Apple Maps has improved a lot for driving and walking directions since it ousted Google Maps in 2012 as the default service on iPhones. (6)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 11:30:52</td><td></td><td><a href='google_22.html'>Google took to blurring faces and car license plate numbers in Street View imagery at its mapping service due to privacy concerns. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 15:41:00</td><td></td><td><a href='google_16.html'>In a post on Google Plus, the company's social network, Mr. Page termed Sidewalk Labs "a relatively modest investment" and one "very different from Google's core business." (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 22:03:38</td><td></td><td><a href='google_20.html'>Google's Chief Executive Larry Page has announced the tech giant's latest moonshot, a new company whose mission is to revolutionize urban life. (1)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-11 22:40:39</td><td></td><td><a href='google_17.html'>In a recent CNBC interview, Sacca said that Twitter would be an "instant fit" for Google (GOOGL.O) if it were to acquire the microblogging service. (1)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-12 18:21:23</td><td></td><td><a href='google_24.html'>The move by Google-owned YouTube takes direct aim at Twitch. (1)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-12 20:30:40</td><td></td><td><a href='google_14.html'>Google launches a YouTube built for gamers (1)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-19 23:48:35</td><td></td><td><a href='google_3.html'>Google says it is taking steps to remove sexually explicit images of people posted without their consent - known as "revenge porn" - from their search results. (10)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-24 16:47:00</td><td></td><td><a href='google_19.html'>Lynn Hill is one of the climbers featured in Google's vertical Street View of El Capitan in Yosemite National Park. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-06-24 23:22:33</td><td></td><td><a href='google_15.html'>Google has emphasized using clean energy to power the centers. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-06-25 19:12:23</td><td></td><td><a href='google_6.html'>The latest models of Google's self-driving cars are now cruising the streets near the Internet company's Silicon Valley headquarters in a test of how they work around other vehicles driven by people. (9)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-06-27 10:00:00</td><td></td><td><a href='google_12.html'>Rather than just cry about what went wrong and how they lost out on the deal, Google has been hard at work creating its own "Twitch killer." (5)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-06-29 13:43:11</td><td></td><td><a href='google_7.html'>WASHINGTON (AP) - The Supreme Court is staying out of a long-running legal battle between technology giants Oracle and Google over copyright protection for a computer program that powers most of the world's smartphones and computer tablets. (4)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-06-29 21:46:00</td><td></td><td><a href='google_18.html'>Google has agreed to add audio and visual alerts in its navigation app to warn drivers about railroad crossings. (1)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-07-01 17:27:20</td><td></td><td><a href='google_25.html'>Google Photo App Labels Black Couple 'Gorillas' (1)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-07-02 17:05:01</td><td></td><td><a href='google_9.html'>NEW YORK -- Google is apologizing after reports surfaced that an automatic image-recognition feature in its Photos application was identifying images of some black people as "gorillas." (8)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-07-06 16:15:19</td><td></td><td><a href='google_21.html'>Google bought Israel-based Waze, which uses satellite signals from members' smartphones to offer real-time traffic information, for about US$1 billion two years ago. (2)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-07-07 16:03:26</td><td></td><td><a href='google_23.html'>Google did not say exactly where the driverless cars would be tested. (1)</a></td></tr>
 </table></body></html>

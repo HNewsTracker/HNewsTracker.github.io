@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.euronews.com/articles/307930/606x340_307930.jpg?1434140456'></td><td>2015-06-12 20:20:56</td><td><a href='http://www.euronews.com/2015/06/12/interpol-suspends-20-million-euro-partnership-with-fifa/'>site</a></td><td>Interpol suspends 20 million euro partnership with Fifa</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/35/41/8247381/5/920x920.jpg'></td><td>2015-07-02 07:36:22</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-European-markets-solid-as-Greek-6362262.php'>site</a></td><td><table><tr><td>French Finance Minister Michel Sapin says Europe remains committed to avoiding "catastrophe" for Greece and keeping it in the eurozone.</td></tr><tr><td>Sapin said on France's iTele television Thursday that "the exit of Greece from the eurozone is not desirable, nor envisaged."</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 07:36:22</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/02/the-latest-european-markets-solid-as-greek-referendum-looms'>site</a></td><td>The Latest: France's Sapin says committed to Greece in euro</td></tr>
 </table></body></html>

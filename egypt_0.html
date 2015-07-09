@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 07:41:37</td><td><a href='http://news.yahoo.com/egypt-opens-borders-gaza-first-time-months-074137951.html'>site</a></td><td>Last month, it allowed the return of Palestinians stranded in Egypt.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 11:48:12</td><td></td><td><a href='egypt_0_2.html'>The Rafah border crossing will operate for six hours a day for the coming three days and 15,000 people Palestinians have applied to exit to Egypt, said Maher Abu Sabha, head of the Gaza side of the crossing. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/04/51/8145494/5/square_gallery_thumb.jpg'></td><td>2015-06-13 11:48:12</td><td><a href='http://www.sfgate.com/news/world/article/Egypt-opens-borders-with-Gaza-for-the-first-time-6325067.php'>site</a></td><td>A Palestinian family waits to cross the border into Egypt, at the Rafah crossing in the southern Gaza Strip, Saturday, June 13, 2015.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-13 11:48:27</td><td></td><td><a href='egypt_0_1.html'>RAFAH, Gaza Strip (AP) - Egypt opened its borders with the Gaza Strip for the first time in months Saturday, allowing Palestinians to enter and leave the isolated coastal strip. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 13:37:08</td><td></td><td><a href='egypt_0_1.html'>ISMAILIA, Egypt - Egypt's Suez Canal Authority says work on a parallel waterway to allow two-way traffic on the key trade route will be finished in time for a gala inauguration on Aug. 6. (6)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 17:36:56</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/13/egypts-new-suez-canal-to-be-completed-for-aug-6-ceremony'>site</a></td><td>"It is boosting our self-confidence and we are hoping this project will return Egypt to the path for investment."</td></tr>
 </table></body></html>

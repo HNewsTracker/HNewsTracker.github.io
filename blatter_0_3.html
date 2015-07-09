@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/dba/news/world/article25306764.ece/ALTERNATES/w220/NY150_FIFA_Investigation_Blatter.JPG'></td><td>2015-07-05 14:07:01</td><td><a href='http://www.theglobeandmail.com/news/world/blatter-alleges-france-germany-tried-to-influence-world-cup-hosting-decision-report/article25306765/?cmpid=rss1'>site</a></td><td><table><tr><td>In a story published on Sunday, the newspaper Welt am Sonntag quoted Blatter as saying: "Before the World Cup was awarded to Russia and Qatar, there were two political interventions.</td></tr><tr><td>Welt am Sonntag quoted Blatter as saying the German football federation, DFB, had "received a recommendation (from Wulff) that Germany should vote for Qatar for economic interests".</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150610&t=2&i=1055128377&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5908B'></td><td>2015-06-10 11:10:46</td><td><a href='http://www.reuters.com/article/2015/06/10/us-soccer-fifa-election-idUSKBN0OQ0L620150610?feedType=RSS&feedName=topNews'>site</a></td><td>"This extraordinary Executive Committee will convene in July, the precise date to be confirmed within this week. For this extraordinary elective Congress (to elect Blatter's successor) there are currently various date options for discussion."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/01/55/8133460/3/920x920.jpg'></td><td>2015-06-11 17:46:52</td><td><a href='http://www.sfgate.com/news/crime/article/FIFA-s-top-spokesman-leaves-job-Blatter-urged-to-6320964.php'>site</a></td><td>FIFA responded by announcing that its executive committee will meet on July 20 in Zurich to decide when from December to February the election to decide Blatter's successor should be held.</td></tr>
 </table></body></html>

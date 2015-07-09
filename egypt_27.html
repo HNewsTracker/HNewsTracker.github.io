@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/n/p/8/1/image.related.articleLeadNarrow.300x0.ghnhii.png/1434266443961.jpg'></td><td>2015-06-14 07:22:11</td><td><a href='http://www.smh.com.au/world/egypt-to-inaugurate-suez-canal-expansion-20150614-ghnhii.html'>site</a></td><td><table><tr><td>Egypt to inaugurate Suez Canal expansion</td></tr><tr><td>Construction work on Egypt's New Suez Canal project.</td></tr><tr><td>Ismailiya, Egypt: Egypt will inaugurate a "new Suez canal" shipping route in August aimed at speeding up traffic along the existing waterway and boosting revenues, officials say.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 17:53:25</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/obama-administration-criticizes-egypt-in-report-to/nmYNM/'>site</a></td><td>Obama administration criticizes Egypt in report to Congress</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 13:37:08</td><td><a href='http://www.daytondailynews.com/ap/ap/international/egypts-new-suez-canal-to-be-completed-for-aug-6-ce/nmcSL/'>site</a></td><td>Egypt's new Suez Canal to be completed for Aug. 6 ceremony</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,8 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 19:31:30</td><td></td><td><a href='holmes_20.html'>Holmes, a 27-year-old California native, has pleaded not guilty by reason of insanity to multiple counts of first-degree murder, attempted murder and explosives charges stemming from the rampage. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 12:42:08</td><td></td><td><a href='holmes_18.html'>Ian McKellen portrays elderly Sherlock in 'Mr Holmes' (1)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-12 00:57:15</td><td></td><td><a href='holmes_0.html'>- Months before James Holmes opened fire in a Colorado movie theater, his ex-girlfriend said she urged him talk to his therapist after he mentioned having thoughts about killing people, thoughts that to her "seemed very philosophical" and not a concrete threat. (22)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-19 16:14:20</td><td></td><td><a href='holmes_19.html'>Movie review: Mr Holmes (1)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-19 22:05:26</td><td></td><td><a href='holmes_9.html'>Wendell Holmes, the guitarist, pianist and singer and songwriter of the soul and blues band The Holmes Brothers, has died. (5)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-25 21:21:57</td><td></td><td><a href='holmes_15.html'>Jonathan Woodcock is an assistant professor of neurology and psychiatry at the University of Colorado's medical campus, the school where James Holmes was studying before the July 2012 attack. (8)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-27 00:38:19</td><td></td><td><a href='holmes_12.html'>Brauchler pointed out that Woodcock didn't talk to Holmes about the crime or his plans for the shooting in either interview and already completed a report concluding he was insane before the second, one-hour interview. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 12:42:08</td><td></td><td><a href='holmes_9.html'>Ian McKellen portrays elderly Sherlock in 'Mr Holmes' (1)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-19 16:14:20</td><td></td><td><a href='holmes_10.html'>Movie review: Mr Holmes (1)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-19 22:05:26</td><td></td><td><a href='holmes_0.html'>Wendell Holmes, the guitarist, pianist and singer and songwriter of the soul and blues band The Holmes Brothers, has died. (5)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-27 00:38:19</td><td></td><td><a href='holmes_3.html'>Dr. Jonathan Woodcock, one of the first defense witnesses to take the stand, interviewed Holmes four days after the July 20, 2012, shooting to determine if he was competent to stand trial and then again earlier this year when he was asked by the defense to testify on Holmes' sanity. (39)</a></td></tr>
 </table></body></html>

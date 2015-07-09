@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 18:04:02</td><td><a href='http://www.reuters.com/article/2015/06/29/us-tunisia-security-arrests-idUSKCN0P91ID20150629?feedType=RSS&feedName=topNews'>site</a></td><td>Tunisia arrests suspects associated with beach hotel attacker</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718206376_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-29 18:32:58</td><td><a href='http://www.torontosun.com/2015/06/29/tunisia-arrests-suspects-associated-with-beach-hotel-attacker'>site</a></td><td><table><tr><td>They promised Tunisia help in security, intelligence, police training and to help keep tourism alive.</td></tr><tr><td>British police are in Tunisia helping in the process of formally identifying victims.</td></tr><tr><td>Tour companies have helped thousands of tourists leave Tunisia since Friday's attack on a country that relies heavily on tourism for jobs and foreign currency revenues.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150628&i=109159209&w=240&r=109159209-1&t=2'></td><td>2015-06-28 09:57:27</td><td><a href='http://www.reuters.com/article/2015/06/28/us-tunisia-security-britain-idUSKBN0P70A220150628?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>European tour operators evacuate thousands from Tunisia after attack</td></tr><tr><td>SOUSSE, Tunisia Tour companies were evacuating thousands of foreign holidaymakers from Tunisia on Saturday, a day after a gunman killed 39 people at a beach hotel in an attack claimed by Islamic State.</td></tr><tr><td>Tour operators Thomson and First Choice, which are owned by German travel group TUI, said they had about 6,400 customers across Tunisia at the time of the attack, including several of the people killed and injured.</td></tr></table></td></tr>
 </table></body></html>

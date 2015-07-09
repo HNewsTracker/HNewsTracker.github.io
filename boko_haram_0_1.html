@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://timedotcom.files.wordpress.com/2015/07/nigeria-explosion.jpg?quality=65&amp;strip=color&amp;w=550'></td><td>2015-07-07 12:47:12</td><td><a href='http://time.com/3947707/boko-haram-bomb-nigeria/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>Boko Haram may be responding to an Islamic State group order for more mayhem during the Muslim holy month of Ramadan.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 13:45:43</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-07-AF--Boko%20Haram/id-152e363ed3594aeeb1ebf43cf32320cf'>site</a></td><td>Boko Haram wants to install an Islamic state across the West African nation of about 170 million people divided between a predominantly Muslim north and Christian south.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:01:58</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/22/witness-2-girls-blow-selves-up-in-northeast-nigeria'>site</a></td><td><table><tr><td>It is the fourth suicide bombing this month in Maiduguri, which is the birthplace of the Boko Haram Islamic extremist group.</td></tr><tr><td>Boko Haram has kidnapped hundreds and hundreds of girls and women and the numbers of female suicide bombers has raised fears that it is using the captives in its campaign.</td></tr></table></td></tr>
 </table></body></html>

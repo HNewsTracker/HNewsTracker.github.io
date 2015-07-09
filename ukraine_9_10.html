@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/02637/obama-putin_2637988b.jpg'></td><td>2015-06-25 23:42:53</td><td><a href='http://www.telegraph.co.uk/news/worldnews/vladimir-putin/11700224/Vladimir-Putin-calls-Barack-Obama-to-discuss-Ukraine-and-Islamic-State.html'>site</a></td><td>Putin, who has consistently denied backing the pro-Russian rebels in Ukraine, initiated the phone call with Obama, according to the White House.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 03:21:18</td><td><a href='http://www.daytondailynews.com/ap/ap/political/white-house-putin-calls-obama-discuss-ukraine-is-i/nmmD9/'>site</a></td><td>Russian President Vladimir Putin and President Barack Obama spoke by telephone Thursday and discussed continued tensions in eastern Ukraine and the fight against the Islamic State in the Middle East.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/37/01/41/8132731/5/square_gallery_thumb.jpg'></td><td>2015-06-11 06:33:08</td><td><a href='http://www.sfgate.com/news/world/article/Educated-Ukrainians-flee-east-Ukraine-for-new-6320299.php'>site</a></td><td>In this May 13, 2015, photo, Alesya Bolot gestures during an interview in Kiev, Ukraine.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 06:33:08</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/11/educated-ukrainians-flee-east-ukraine-for-new-lives-in-kiev'>site</a></td><td><table><tr><td>Educated Ukrainians flee east Ukraine for new lives in Kiev</td></tr><tr><td>KIEV, Ukraine (AP) - Alesya Bolot worked for a contemporary arts foundation that converted an abandoned factory into a mecca for young and bright people with daring ideas.</td></tr><tr><td>According to the U.N., a total of 94,000 people from eastern Ukraine are now living in Kiev and its suburbs.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 07:59:11</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article23737606.html#storylink=rss'>site</a></td><td>In this Thursday, May 14, 2015, photo, Victoria Sosnina poses for a photo, during an interview in Kiev, Ukraine.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 19:31:30</td><td><a href='http://www.reuters.com/article/2015/06/09/us-usa-shooting-denver-idUSKBN0OP26M20150609?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>The capital murder trial of Colorado movie theater gunman James Holmes came to a halt on Tuesday when a juror told the judge another panelist had talked about a prosecutor's Twitter message relating to the trial.</td></tr><tr><td>Holmes, a 27-year-old California native, has pleaded not guilty by reason of insanity to multiple counts of first-degree murder, attempted murder and explosives charges stemming from the rampage.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 20:58:32</td><td><a href='http://www.reuters.com/article/2015/06/09/us-usa-shooting-denver-idUSKBN0OP26M20150609?feedType=RSS&feedName=topNews'>site</a></td><td>Holmes' defense attorneys brought the message to the judge's attention on Friday and Brauchler has apologized for the tweet.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 20:58:32</td><td><a href='http://www.reuters.com/article/2015/06/09/us-usa-shooting-denver-idUSKBN0OP26M20150609?feedType=RSS&feedName=topNews'>site</a></td><td>Holmes' defense attorneys brought the message to the judge's attention on Friday and Brauchler has apologized for the tweet.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,4 +50,5 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 20:39:19</td><td><a href='http://thehill.com/policy/national-security/246967-ex-ag-holder-possibility-exists-for-deal-with-edward-snowden'>site</a></td><td><table><tr><td>Holder sees possible DOJ deal with Snowden</td></tr><tr><td>"We are in a different place as a result of the Snowden disclosures."</td></tr></table></td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-07-07 03:08:51</td><td></td><td><a href='snowden_0_1.html'>Melanie Newman, chief spokeswoman for Attorney General Loretta Lynch, Holder's successor, immediately shot down the idea that the Justice Department was softening its stance on Snowden. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-07 13:34:41</td><td><a href='http://nymag.com/daily/intelligencer/2015/07/jeb-bush-strongly-opposes-a-snowden-homecoming.html'>site</a></td><td>Snowden broke the law, recklessly endangered nat'l security, & fled to China/Russia.</td></tr>
 </table></body></html>

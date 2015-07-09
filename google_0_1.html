@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/06/19/1297714606967.jpg&size=104x59&quality=85'></td><td>2015-06-19 21:29:02</td><td><a href='http://technology.canoe.com/News/2015/06/19/22462721.html?cid=rsstechnology'>site</a></td><td>SAN FRANCISCO -- Google plans to censor unauthorized nude photos from its influential Internet search engine in a policy change aimed at cracking down on a malicious practice known as "revenge porn."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/06/19/1297714606967.jpg&size=104x59&quality=85'></td><td>2015-06-19 21:29:02</td><td><a href='http://technology.canoe.com/News/2015/06/19/22462721.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Google's stand against revenge porn won't necessarily purge it from the Internet because it has no authority to order other sites to remove offensive or even illegal content.</td></tr><tr><td>But Google is hoping revenge porn will prove less mortifying to its intended victims by making it more difficult to find.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-19 22:40:14</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-cracks-down-on-revenge-porn-under-new-6338181.php'>site</a></td><td>Google cracks down on 'revenge porn' under new nudity policy</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 07:05:28</td><td><a href='http://www.utsandiego.com/news/2015/jun/10/review-the-best-new-features-coming-from-apple/'>site</a></td><td>I look forward to seeing how well Siri and Google Now perform with the upcoming smarts.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 07:10:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463073&ref=rss'>site</a></td><td>Siri on Apple devices and Google Now on Android devices are supposed to get smarter by doing more based on context.</td></tr>
 </table></body></html>

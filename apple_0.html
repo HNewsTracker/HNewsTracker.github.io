@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 14:10:04</td><td></td><td><a href='apple_0_1.html'>As Apple opens new stores, it will also renovate about 20 existing U.S. stores, including the ones on Fifth Avenue and San Francisco's Union Square. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 14:10:04</td><td></td><td><a href='apple_0_2.html'>Upper East Side will be Apple's 266th store in the U.S. and seventh in New York City, a key market for Apple because it gets twice as much traffic as stores in other U.S. cities. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 14:52:00</td><td><a href='http://www.chicagotribune.com/bluesky/technology/ct-apple-new-store-old-bank-20150611-story.html'>site</a></td><td><table><tr><td>Apple sought to restore some of the building's old grandeur by reproducing the original chandeliers seen in old photographs, restoring marble floors and pilasters and turning a bank vault into a VIP showroom.</td></tr><tr><td>To create the newest Apple store to sell iPhones, smartwatches and other modern gadgetry, Apple took a look back at the 1920s.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 14:10:04</td><td></td><td><a href='apple_0_1.html'>And as Apple looks to open new stores or renovate existing ones - including the iconic New York Fifth Avenue store, with its distinctive glass-cube entrance - the company will look for additional ways to do that. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 14:52:00</td><td><a href='http://www.chicagotribune.com/bluesky/technology/ct-apple-new-store-old-bank-20150611-story.html'>site</a></td><td>Apple sought to restore some of the building's old grandeur by reproducing the original chandeliers seen in old photographs, restoring marble floors and pilasters and turning a bank vault into a VIP showroom.</td></tr>
 </table></body></html>

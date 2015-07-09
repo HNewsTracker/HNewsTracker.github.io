@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 11:34:50</td><td></td><td><a href='fifa_31_33.html'>STRASBOURG, France (AP) - European lawmakers have urged FIFA President Sepp Blatter to step down immediately, and for an interim leader to be appointed. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/6FqyPUGOqPRBAh1PASp_OQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-06-10T192518Z_1006980001_LYNXMPEB59108_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-ELECTION-ANALYSIS.JPG.cf.jpg'></td><td>2015-06-11 11:34:50</td><td><a href='http://news.yahoo.com/european-lawmakers-urge-fifa-president-blatter-now-113450467.html'>site</a></td><td>FIFA is not obliged to heed the parliament and has previously dismissed calls for action made by lawmaker groups, including the Council of Europe.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 13:58:21</td><td></td><td><a href='fifa_31_32.html'>FIFA said De Gregorio's deputy, Nicolas Maingot, will step up to the director's position. (4)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 13:58:21</td><td></td><td><a href='fifa_31_34.html'>"Walter has worked incredibly hard for the past four years and we are immensely grateful for all he has done. I am glad we will be able to continue to draw on his expertise until the end of the year," FIFA secretary general Jerome Valcke said. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-11 15:34:34</td><td></td><td><a href='fifa_31_35.html'>Soccer governing body FIFA said Thursday, June 11, 2015 that its director of public affairs Walter De Gregorio is leaving with immediate effect. (2)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-11 17:46:52</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/11/fifas-top-spokesman-leaves-job-blatter-urged-to-do-same'>site</a></td><td>FIFA responded by announcing that its executive committee will meet on July 20 in Zurich to decide when from December to February the election to decide Blatter's successor should be held.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/12/23/03096E0400000514-0-image-a-63_1434146919583.jpg'></td><td>2015-06-12 23:09:22</td><td><a href='http://www.dailymail.co.uk/sport/football/article-3122225/Interpol-suspends-decade-long-partnership-FIFA-amid-corruption-investigations.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Interpol secretary general Jurgen Stock said: 'In light of the current context surrounding FIFA, while Interpol is still committed to developing our Integrity in Sport programme, I have decided to suspend the agreement.</td></tr>
 </table></body></html>

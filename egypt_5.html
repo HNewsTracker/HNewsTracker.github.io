@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 13:37:08</td><td></td><td><a href='egypt_5_6.html'>ISMAILIA, Egypt - Egypt's Suez Canal Authority says work on a parallel waterway to allow two-way traffic on the key trade route will be finished in time for a gala inauguration on Aug. 6. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 13:37:08</td><td><a href='http://www.foxnews.com/world/2015/06/13/egypt-suez-canal-authority-says-work-on-new-waterway-to-meet-aug-6-opening/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>President Abdel-Fattah el-Sissi has ordered the new waterway to be dug in a single year, saying that the urgency of Egypt's economic situation meant the project could not wait for an originally planned three-year timetable.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-13 17:36:56</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/13/egypts-new-suez-canal-to-be-completed-for-aug-6-ceremony'>site</a></td><td>"It is boosting our self-confidence and we are hoping this project will return Egypt to the path for investment."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/29/8c/ba/7ac7812845d34c90a54ae9b8a4f42e6f-a77f3808a18d413bb5586fe1a84288a0-0.jpg'></td><td>2015-06-29 20:45:32</td><td><a href='http://www.daytondailynews.com/ap/ap/international/egypts-state-prosecutor-comes-under-bomb-attack-in/nmnY9/'>site</a></td><td><table><tr><td>Egypt's official news agency said Barakat has died of wounds sustained in the attack in a Cairo suburb.</td></tr><tr><td>Security personnel collect forensic evidence at the site of a bombing that killed Egypt's top prosecutor, Hisham Barakat, in Cairo, Egypt, Monday, June 29, 2015.</td></tr></table></td></tr>
 </table></body></html>

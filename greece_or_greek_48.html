@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 18:48:09</td><td></td><td><a href='greece_or_greek_48_50.html'>The ballot question does not address whether Greece should abandon the euro currency or leave the 28-member European Union, but many voters believe those issues are at stake. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td><table><tr><td>And they share a sense that Greece, so rich with history and culture, has fallen tragically short of its potential.</td></tr><tr><td>His son, Nikolas, is on his side - and he thinks polarized Greece may be on the verge of a civil war - while his wife Dimitra distrusts both the Yes and the No campaigns and doesn't plan to vote in Sunday's momentous Greek referendum.</td></tr><tr><td>"I am forced to vote for 'yes' because I want to stay in the eurozone and the EU. I can't imagine Greece out of Europe and I don't believe that if we say 'no' we can stay. I can't take that risk. We are under the protective umbrella of the EU, a big protective social system, and we need protection. And we have to stay for political and economic reasons."</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 18:55:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476025&ref=rss'>site</a></td><td>"I'm afraid for my future. I see people fired every day. I worry because I see people starving outside on the road. It's scary. All my classmates from high school have left for England or America. Nobody stays in Greece. But we are Greek, we should stay. But how can I say I will find a job?"</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-05 06:09:11</td><td></td><td><a href='greece_or_greek_48_49.html'>Meet the Danikoglous, an intense, articulate Greek family divided over whether or not the country should accept conditions by creditors attached to loans it needs to avoid default and a banking collapse. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 16:49:00</td><td><a href='http://abcnews.go.com/International/wireStory/greece-made-proposals-end-bailout-impasse-31631754'>site</a></td><td>Greece has just three weeks to conclude a deal before its finances implode, and a key negotiator complained that officials at the European Union's executive Commission have yet to respond to the documents presented late Monday.</td></tr>
 </table></body></html>

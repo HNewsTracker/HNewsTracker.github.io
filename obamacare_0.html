@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/06/25/politics/marco-rubio-obamacare-ruling/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-06-25 16:04:04</td><td><a href='http://edition.cnn.com/2015/06/25/politics/marco-rubio-obamacare-ruling/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_allpolitics+%28RSS%3A+CNN+-+Politics%29'>site</a></td><td>"I remain committed to repealing this bad law and replacing it with my consumer-centered plan that puts patients and families back in control of their health care decisions. We need Consumer Care, not Obamacare."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 20:32:50</td><td><a href='http://www.reuters.com/article/2015/06/25/us-usa-court-healthcare-idUSKBN0P51V220150625?feedType=RSS&feedName=wtMostRead'>site</a></td><td>"This is not about the Affordable Care Act as legislation, or Obamacare as a political football. This is healthcare in America," Obama said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 21:03:41</td><td></td><td><a href='obamacare_0_1.html'>"I disagree with the Court's ruling and believe they have once again erred in trying to correct the mistakes made by President Obama and Congress in forcing Obamacare on the American people," said Florida Sen. Marco Rubio. (4)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 20:18:01</td><td><a href='http://www.reuters.com/article/2015/06/26/us-usa-court-healthcare-idUSKBN0P51V220150626?feedType=RSS&feedName=healthNews'>site</a></td><td>Congressional Republicans vowed to continue efforts to repeal Obamacare despite appeals from Democrats for them to stop.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 16:04:04</td><td></td><td><a href='obamacare_0_2.html'>"I remain committed to repealing this bad law and replacing it with my consumer-centered plan that puts patients and families back in control of their health care decisions. We need Consumer Care, not Obamacare." (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 21:50:04</td><td></td><td><a href='obamacare_0_1.html'>Following Thursday's 6-3 court ruling, Republicans quickly vowed to make the 2016 election campaign a referendum on Obamacare, expressing disappointment with the court's decision. (9)</a></td></tr>
 </table></body></html>

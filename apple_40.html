@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150608&t=2&i=1054564675&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5708L'></td><td>2015-06-08 08:04:21</td><td><a href='http://www.reuters.com/article/2015/06/08/us-apple-developers-idUSKBN0OO0ME20150608?feedType=RSS&feedName=businessNews'>site</a></td><td>Apple expected to focus on watch, music at developer conference</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297708408949_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-08 13:37:19</td><td><a href='http://www.torontosun.com/2015/06/08/apple-expected-to-focus-on-watch-music-at-developer-conference'>site</a></td><td>Apple is expected to unveil a new music service and better tools to build apps for its smartwatch at its annual gathering of developers in San Francisco on Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 11:05:40</td><td><a href='http://www.utsandiego.com/news/2015/jun/10/spotify-gets-investment-as-it-faces-competition/'>site</a></td><td><table><tr><td>Spotify gets investment as it faces competition from Apple</td></tr><tr><td>COPENHAGEN, Denmark (AP) - Music streaming company Spotify says it has gotten a new investment from TeliaSonera, a Nordic telecoms company, as it looks to compete globally with similar services from Apple Inc. and others.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 05:22:39</td><td><a href='http://www.ctvnews.ca/business/apple-wwdc-what-to-expect-from-the-tech-giant-s-keynote-1.2411331'>site</a></td><td>Analysts also expect enhancements to the mobile-payment service known as Apple Pay.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 06:01:58</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-06-08-US-TEC--Apple's%20Show/id-0dc01a185dbb41b9b041bac5739ad142'>site</a></td><td>But that may be delayed, according to reports by the New York Times and the tech blog Re/code, which said Apple is still negotiating with broadcasters and isn't ready to announce the video service.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297716860750_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-25 20:09:08</td><td><a href='http://www.torontosun.com/2015/06/25/apple-removes-games-featuring-confederate-flags-from-app-store'>site</a></td><td><table><tr><td>Apple removes games featuring Confederate flags from App Store</td></tr><tr><td>Apple Inc has removed several civil war games featuring Confederate flags from its App Store, some game developers said.</td></tr><tr><td>"Apple has removed our game from AppStore because of usage of the Confederate Flag," Game-Labs, developer of Ultimate General: Gettysburg said.</td></tr></table></td></tr>
 </table></body></html>

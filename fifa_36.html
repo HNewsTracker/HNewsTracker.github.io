@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31300952.ece/2ca60/ALTERNATES/h342/PANews%20BT_P-79f7508b-76f2-46db-b0e5-ab518c0bb287_I1.jpg'></td><td>2015-06-14 10:36:07</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/fifa-boss-insists-blatter-must-quit-31300953.html'>site</a></td><td>The official overseeing the next Fifa presidential election has reminded Sepp Blatter to stick with his plans to step down.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 14:02:29</td><td><a href='http://www.miamiherald.com/news/politics-government/article24194914.html#storylink=rss'>site</a></td><td><table><tr><td>Sepp Blatter was warned from within FIFA on Sunday not to attempt to backtrack on his pledge to quit as president.</td></tr><tr><td>Asked on Sunday if Blatter was categorically ruling out standing in the new election, FIFA said: "We refer you to the remarks from FIFA President Blatter from 2 June. FIFA has no further comment."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-11T164431Z_1_LYNXMPEB5A11R_RTROPTP_2_SOCCER-FIFA-ARRESTS.JPG?itok=d0R8Sh9P'></td><td>2015-06-10 14:02:16</td><td><a href='http://www.sbs.com.au/news/article/2015/06/12/top-official-leaves-fifa-eu-urges-blatter-go-now'>site</a></td><td>FIFA to kick off Blatter succession process in July</td></tr>
 </table></body></html>

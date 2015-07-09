@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 15:09:49</td><td><a href='http://www.usnews.com/news/politics/articles/2015/06/14/kicking-off-campaign-clinton-looking-for-iowa-advantage'>site</a></td><td>"You can't take a position on a trade bill that you can't see," Clinton's campaign manager, Robby Mook, told CBS' "Face the Nation" on Sunday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 15:12:06</td><td></td><td><a href='hillary_clinton_0_1.html'>Seeking an army of volunteers, Hillary Rodham Clinton is trying to build an organizational edge in Iowa as some of her lesser-known Democratic rivals clamor for attention in the state that tripped up her first presidential campaign. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 16:31:29</td><td><a href='http://www.usnews.com/news/politics/articles/2015/06/14/kicking-off-campaign-clinton-looking-for-iowa-advantage'>site</a></td><td>Caitlin Wilson, of Altoona, Iowa, poses with a cardboard cutout of Democratic presidential candidate Hillary Rodham Clinton outside a rally, Sunday, June 14, 2015, in Des Moines, Iowa.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 15:09:49</td><td></td><td><a href='hillary_clinton_0_2.html'>"You can't take a position on a trade bill that you can't see," Clinton's campaign manager, Robby Mook, told CBS' "Face the Nation" on Sunday. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 18:52:11</td><td></td><td><a href='hillary_clinton_0_1.html'>Richard Rogers, of West Des Moines, Iowa, stands in a protestors pen before the arrival of Democratic presidential candidate Hillary Rodham Clinton at a rally, Sunday, June 14, 2015, in Des Moines, Iowa. (6)</a></td></tr>
 </table></body></html>

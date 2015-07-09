@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,9 +49,7 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 17:23:41</td><td></td><td><a href='van_morrison_2.html'>NEW YORK (AP) - A handwritten poem by Jim Morrison found among his possessions in the Paris hotel where he died in 1971 ends with the line "Last words, Last words out." (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 21:33:05</td><td></td><td><a href='van_morrison_0.html'>The Belfast-born Morrison was honored Friday by Queen Elizabeth II for his services to music and tourism in Northern Ireland, the inspiration for many of his classics. (4)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-12 22:42:34</td><td></td><td><a href='van_morrison_6.html'>Van Morrison knighted in Queen's honours list (1)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-15 03:09:04</td><td></td><td><a href='van_morrison_7.html'>Schlossnagle said he wants Morrison well-rested because he anticipates needing the Chicago Cubs' eighth-round draft pick again. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-19 06:51:04</td><td></td><td><a href='van_morrison_4.html'>Morrison and Lady Gaga picked up honorary prizes, while awards also were presented to Nate Ruess and the former CEO of the American Society of Composers Authors and Publishers (ASCAP), John LoFrumento. (3)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-19 18:40:27</td><td></td><td><a href='van_morrison_8.html'>Recording artist Van Morrison gestures on the red carpet before the Songwriters Hall of Fame ceremony in New York, June 18, 2015. (1)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 21:33:05</td><td></td><td><a href='van_morrison_0.html'>The Belfast-born Morrison was honored Friday by Queen Elizabeth II for his services to music and tourism in Northern Ireland, the inspiration for many of his classics. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 03:09:04</td><td></td><td><a href='van_morrison_5.html'>Schlossnagle said he wants Morrison well-rested because he anticipates needing the Chicago Cubs' eighth-round draft pick again. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-19 06:51:04</td><td></td><td><a href='van_morrison_4.html'>Honoree Van Morrison performs at the 46th Annual Songwriters Hall Of Fame Induction and Awards Gala at the Marriott Marquis on Thursday, June 18, 2015, in New York. (4)</a></td></tr>
 </table></body></html>

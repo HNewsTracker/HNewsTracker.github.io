@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>european games</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/01/47/8133096/3/square_gallery_thumb.jpg'></td><td>2015-06-11 15:26:33</td><td><a href='http://www.sfgate.com/business/energy/article/Azerbaijan-criticized-over-rights-as-European-6320749.php'>site</a></td><td>Patrick Hickey, the head of the European Olympic Committee attends a news conference on the eve of the opening of the 2015 European Games in Baku, Azerbaijan, Thursday, June 11, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 15:26:41</td><td></td><td><a href='european_games_7_8.html'>Hosting the European Games has a particular significance for majority-Muslim Azerbaijan, which has long sought to present itself as a European rather than Asian nation, a strategy long followed by neighboring Turkey. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/bt/api/res/1.2/ZRLwMxSlAMpPX54FtmLdhQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f6321f5c3f57321a790f6a706700d6eb.jpg'></td><td>2015-06-12 20:37:23</td><td><a href='https://news.yahoo.com/first-european-games-open-azerbaijan-175748385.html'>site</a></td><td>That stadium will also illustrate the European Games' struggles to establish itself as a new major sports event when it hosts a low-level track and field competition.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 20:37:23</td><td></td><td><a href='european_games_7_8.html'>BAKU, Azerbaijan (AP) - The first European Games opened in Azerbaijan on Friday with an extravagant opening ceremony featuring Lady Gaga, although even her star power failed to dispel some of the concerns hanging over the event. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/ZRLwMxSlAMpPX54FtmLdhQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f6321f5c3f57321a790f6a706700d6eb.jpg'></td><td>2015-06-12 20:37:23</td><td><a href='http://news.yahoo.com/first-european-games-open-azerbaijan-175748385.html'>site</a></td><td>The games in the oil-rich nation's capital Baku have become a focal point for criticism Azerbaijan's human rights record, and worries over the competition's sporting credibility.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 18:20:24</td><td></td><td><a href='greece_or_greek_46_47.html'>No relief: Greek police say they've been banned from parliament bathrooms; demand access (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 19:17:53</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3115834/Greek-police-say-theyre-banned-parliament-bathrooms.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>ATHENS, Greece (AP) - Forget bailouts or austerity riots.</td></tr><tr><td>The hot topic now in Greece is toilets.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 09:01:35</td><td><a href='http://time.com/3945519/poll-shows-even-divide-greek-referendum/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td><table><tr><td>(ATHENS, Greece) -The brief but intense campaign in Greece's critical bailout referendum ends Friday, with simultaneous rallies in Athens for "Yes" and "No" supporters in what an opinion poll shows will be a very close race.</td></tr><tr><td>The vote is set to be one of the most important in Greece's modern history, but many voters are confused about what's at stake.</td></tr></table></td></tr>
 </table></body></html>

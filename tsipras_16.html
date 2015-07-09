@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/greece22.jpg?ve=1&tl=1'></td><td>2015-06-11 11:25:03</td><td><a href='http://www.foxbusiness.com/industries/2015/06/11/greece-pm-pressured-for-debt-talk-concessions/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td><table><tr><td>Tsipras again said he saw a solution at hand.</td></tr><tr><td>Tsipras renewed a call for a restructuring of Athens' debts as part of any solution.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 11:43:53</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-idUSKBN0OR19T20150611?feedType=RSS&feedName=businessNews'>site</a></td><td>A poll showed a slight rise since April in the number who are dissatisfied with Tsipras's negotiating performance with the creditors, reaching 53.4 percent from 50.5 percent.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/aqUBDbJIacJ2tU._PWAnUg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-11T125303Z_1_LYNXMPEB5A0OV_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-11 15:19:24</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-under-pressure-concessions-111748901.html'>site</a></td><td>"Come in the torture room," Juncker told Tsipras at the start of their meeting.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 15:19:24</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-idUSKBN0OR19T20150611?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras told reporters he had worked on bridging the remaining differences on fiscal and financing issues.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 15:59:55</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-idUSKBN0OR19T20150611?feedType=RSS&feedName=topNews'>site</a></td><td>IMF quits Greek talks; EU tells Tsipras: stop gambling</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/aqUBDbJIacJ2tU._PWAnUg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-11T125303Z_1_LYNXMPEB5A0OV_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-11 17:32:19</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-under-pressure-concessions-111748901.html'>site</a></td><td>Tsipras held two hours of talks with European Commission President Jean-Claude Juncker, but neither side reported any breakthrough.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 19:54:02</td><td><a href='http://www.foxnews.com/world/2015/06/13/greek-premier-tsipras-says-no-elections-or-referendum-whatever-outcome-bailout/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>ATHENS, Greece - A government official says Greek Prime Minister Alexis Tsipras has told senior aides to "forget about elections or a referendum," whatever the outcome of the country's talks with creditors.</td></tr><tr><td>The official said Tsipras told four senior ministers Friday that his government, elected last January, has a fresh popular mandate and that "people have trusted us to take crucial decisions and manage the difficulties."</td></tr><tr><td>The official, who spoke on condition of anonymity due to the sensitivity of the talks, on Saturday quoted Tsipras as saying his government would deal with an agreement with creditors "however difficult the compromise."</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/bfaWZOkkjo1GfLlYmiBTTw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3c99b9f41265081a790f6a706700924f.jpg'></td><td>2015-06-11 18:24:04</td><td><a href='http://news.yahoo.com/retired-cia-operative-becomes-breakout-spy-novelist-182404279.html'>site</a></td><td>A: Defensive driving was always part of it, also handling weapons, although an average CIA case officer probably won't put his hand on a gun in five tours.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 18:27:01</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article23769118.html#storylink=rss'>site</a></td><td><table><tr><td>Jason Matthews spent 33 years as a CIA operations officer before retiring to write spy novels.</td></tr><tr><td>Q: What did your training as a CIA case officer entail?</td></tr><tr><td>Q: Your books are set partly in Russia, pitting the CIA against a corrupt and thuggish Russian intelligence apparatus.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/books/article23644348.html#storylink=rss'>site</a></td><td><table><tr><td>'The Great War of Our Time' goes inside the CIA, to a point</td></tr><tr><td>In his book "The Great War of Our Time," former CIA deputy Director Michael Morell explains the blunder that led to Saddam Hussein being deposed and sent him into hiding in a spider hole.</td></tr><tr><td>He was, in CIA lingo, "read into" the top issues of the day, putting him inside "the circle of knowledge."</td></tr><tr><td>"CIA should stay out of the talking-point business," Morell suggests, "especially on issues that are being seized upon for political purposes."</td></tr><tr><td>Still, it is doubtful "The Great War" will silence those who question the CIA, Presidents Bush and Obama, and former Secretary of State Hillary Rodham Clinton.</td></tr><tr><td>In passing, Morell mentions tension between the CIA and the National Security Agency and between CIA station chiefs abroad and the analysts back at Langley, Va.</td></tr></table></td></tr>
 </table></body></html>

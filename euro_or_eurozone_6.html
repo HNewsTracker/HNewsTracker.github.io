@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 11:47:02</td><td></td><td><a href='euro_or_eurozone_6_8.html'>At stake at the emergency summit beginning at 6 p.m. in Brussels is more than just the future of Greece, a nation of 11 million that makes up just 2 percent of the euro zone's economic output and population. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 11:58:03</td><td></td><td><a href='euro_or_eurozone_6_7.html'>He did not name names but may have been referring to German finance minister Wolfgang Schaeuble, who has made no secret of his scepticism about Greece's fitness to stay in the euro and last week suggested a possible "temporary" exit. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 03:33:38</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/25/greece-creditors-at-loggerheads-as-debt-deadline-looms'>site</a></td><td>"When Greece, Europe, the eurozone is at stake, we have to know how to finish negotiations," French President Francois Hollande said.</td></tr>
 </table></body></html>

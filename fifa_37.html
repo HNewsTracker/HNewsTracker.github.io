@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 01:00:43</td><td></td><td><a href='fifa_37_38.html'>While both organizations raved about the successes of the event, the absence of Blatter and Valcke because of the FIFA corruption investigation lingered. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/03/b6/f4/27ab516aa43d4a648906eabf7901a1c8-30c68c007e95440d8f5f4229cffc2fa9-0.jpg'></td><td>2015-07-04 01:00:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fifa-deflects-criticism-about-absence-of-blatter-f/nmrTX/'>site</a></td><td>It provided a bookend to the tournament that opened in the wake of the initial wave from the FIFA corruption investigation, but has mostly become a secondary story during the tournament, just as organizers had hoped when the event opened a month ago.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/images/Sports/gty_japan_vs_usa_soccer_mm_150702_4x3t_96.jpg'></td><td>2015-07-04 01:01:06</td><td><a href='http://abcnews.go.com/Sports/wireStory/fifa-deflects-criticism-absence-blatter-final-32215657'>site</a></td><td>But FIFA officials said the gap needs to close between the countries that have made serious investments in women's soccer and those that are lagging behind, creating imbalance in a tournament that expanded to 24 teams for the first time.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 16:53:00</td><td><a href='http://www.dw.com/en/fifa-bans-world-cup-bid-inspector-for-seven-years-for-breaking-ethics-rules/a-18565281?maca=en-rss-en-world-4025-rdf'>site</a></td><td>FIFA's ethics committee said Monday Mayne-Nicholls would be barred from "any kind of football-related activity at national and international level" for seven years.</td></tr>
 </table></body></html>

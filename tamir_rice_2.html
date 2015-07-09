@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>tamir rice</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 20:48:29</td><td></td><td><a href='tamir_rice_2_3.html'>Hours before a 12-year-old boy was fatally shot by a Cleveland police officer, the friend who had loaned Tamir Rice a pellet gun warned him to be careful because it looked real. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 01:18:07</td><td><a href='http://www.cbsnews.com/news/tamir-rice-shooting-death-investigation-details-released-by-prosecutor/'>site</a></td><td>Prosecutor releases details of Tamir Rice investigation</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 23:54:30</td><td><a href='http://news.yahoo.com/ohio-judge-finds-police-officer-face-charges-rice-210104754--finance.html'>site</a></td><td>Ohio judge recommends police officers face charges in Tamir Rice case</td></tr>
 </table></body></html>

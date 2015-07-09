@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>van morrison</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000ab706-642.jpg'></td><td>2015-06-12 22:42:34</td><td><a href='http://www.rte.ie/news/2015/0612/707614-queens-honours-list/'>site</a></td><td>Van Morrison knighted in Queen's honours list</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-12 21:31:40</td><td><a href='http://www.utsandiego.com/news/2015/jun/12/van-morrison-gets-knighthood-in-queens-birthday/'>site</a></td><td>Van Morrison gets knighthood in queen's birthday honors</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 21:33:05</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article23881921.html#storylink=rss'>site</a></td><td>Morrison is among more than 1,000 people recognized by the queen in her annual Birthday Honors list for their achievements and services to the community.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-12 21:33:05</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article23881921.html#storylink=rss'>site</a></td><td><table><tr><td>Acclaimed singer and songwriter Van Morrison is joining a select group of music giants with a knighthood to their name.</td></tr><tr><td>The Belfast-born Morrison was honored Friday by Queen Elizabeth II for his services to music and tourism in Northern Ireland, the inspiration for many of his classics.</td></tr></table></td></tr>
 </table></body></html>

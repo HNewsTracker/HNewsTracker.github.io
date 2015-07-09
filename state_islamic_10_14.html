@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 18:05:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463269&ref=rss'>site</a></td><td>The fight against the Islamic State group has attracted dozens of Westerners, including a number of Iraq war veterans who have made their way back to the Middle East to join Kurdish fighters, who have been most successful against the extremist group.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/uu/api/res/1.2/lXXrgUyl6uV858H.pf36Iw--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.cbsboston.com/a6a28ddcf2e6754bb097e35312e260c5'></td><td>2015-06-10 22:43:34</td><td><a href='http://news.yahoo.com/american-fighting-kurds-killed-islamic-state-battle-175851993.html'>site</a></td><td>Many are spurred on by Kurdish social media campaigners and a sense of duty rooted in the 2003 U.S.-led military invasion of Iraq, where Islamic State fighters recently have rolled back gains U.S. troops had made.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150622&t=2&i=1058220867&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5L0M8'></td><td>2015-06-22 15:14:11</td><td><a href='http://www.reuters.com/article/2015/06/22/us-mideast-crisis-syria-kurds-idUSKBN0P21HV20150622?feedType=RSS&feedName=topNews'>site</a></td><td>Islamic State has held the base, "Liwa 93", since capturing it from the Syrian military last year.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 13:45:46</td><td><a href='http://www.startribune.com/syrian-troops-regain-area-from-is-in-northeastern-city/310927191/'>site</a></td><td>Syrian troops regain neighborhood they lost earlier in battles with Islamic State group</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-08 06:52:04</td><td><a href='http://abcnews.go.com/International/wireStory/secret-success-shock-troops-fight-death-32291952'>site</a></td><td>Though best known for its horrific brutalities, the Islamic State group has proved to be a highly organized and flexible fighting force, according to senior Iraqi military and intelligence officials and Syrian Kurdish commanders on the front lines.</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/MVmFUqbc7H6kOdnuwq8_iA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_ZA/News/Reuters/2015-06-09T072945Z_1007970001_LYNXMPEB58084_RTROPTP_2_OZATP-UK-LIBYA-SECURITY.JPG.cf.jpg'></td><td>2015-06-09 11:24:23</td><td><a href='http://news.yahoo.com/islamic-state-seizes-power-plant-near-libyan-city-102113134.html'>site</a></td><td>"The plant ... was taken," Islamic State said in a message on social media, adding that the capture of the plant meant that the militants had driven their enemies out of the entire city.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 11:39:27</td><td></td><td><a href='state_islamic_29_30.html'>Since the start of the year militants in Libya loyal to Islamic State have claimed responsibility for killing dozens of Egyptian and Ethiopian Christians, as well attacks on Tripoli's luxury Corinthia hotel, embassies and oilfields. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47962230,width-300,resizemode-4/kuwait.jpg'></td><td>2015-07-06 14:46:33</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Kuwait-detains-26-over-Islamic-State-suicide-attack-on-mosque-newspaper/articleshow/47962135.cms'>site</a></td><td><table><tr><td>Kuwait detains 26 over Islamic State suicide attack on mosque -newspaper</td></tr><tr><td>The June 26 attack by Islamic State militants jolted Kuwait, raising the spectre of sectarian strife in the Gulf Arab oil exporting state.</td></tr><tr><td>He said other suspects, including fighters with Islamic State abroad, have been identified and that some of their relatives inside Kuwait have been charged in connection with the blast.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 16:22:58</td><td><a href='http://abcnews.go.com/International/wireStory/us-delivers-missile-ships-egypt-security-support-31943729'>site</a></td><td>The embassy says the total of four ships represent a $1.1 billion investment by the United States in its strategic partnership with Egypt.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 16:25:33</td><td></td><td><a href='egypt_13_14.html'>CAIRO - The U.S. Embassy in Cairo says America has delivered two vessels, known as fast missile craft, to Egypt's navy to help it secure vital waterways such as the Suez Canal and Red Sea. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47659150,width-300,resizemode-4/suez.jpg'></td><td>2015-06-13 17:44:10</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Egypts-new-Suez-Canal-to-be-completed-for-Aug-6-ceremony/articleshow/47659137.cms'>site</a></td><td>A dredger works on a new section of the Suez canal during a media tour in Ismailia, Egypt.</td></tr>
 </table></body></html>

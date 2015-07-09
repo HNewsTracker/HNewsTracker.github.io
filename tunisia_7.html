@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 13:03:20</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/30/tunisia-chief-new-security-system-had-been-set-for-july-1'>site</a></td><td><table><tr><td>Tunisia chief: New security system had been set for July 1</td></tr><tr><td>Friday's attack, Tunisia's worst terrorist incident, is expected to cripple the vital tourism sector, with the tourism minister predicting a half billion dollars in losses for 2015.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/32/75/8236868/3/square_gallery_thumb.jpg'></td><td>2015-06-30 13:03:20</td><td><a href='http://www.sfgate.com/news/world/article/Tunisia-chief-New-security-system-had-been-set-6357384.php'>site</a></td><td>British Minister for North Africa Tobias Ellwood, leaves from local hospital in Tunis, Tunisia, Tuesday, June 30, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cdn1.belfasttelegraph.co.uk/incoming/article31342175.ece/3da5b/ALTERNATES/w620/479038354_2.jpg'></td><td>2015-06-30 17:32:49</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/tunisia-attack-gunman-seifeddine-rezgu-trained-in-libya-at-same-time-as-bardo-museum-attackers-31342213.html'>site</a></td><td>Mr Essebsi, 88, is a veteran of Tunisia's pre-revolutionary regime and was elected last autumn on a platform of restoring security and dignity to the state.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/37/33/12/8237701/3/square_gallery_thumb.jpg'></td><td>2015-06-30 17:42:06</td><td><a href='http://www.sfgate.com/news/world/article/Tunisia-chief-New-security-system-had-been-set-6357384.php'>site</a></td><td>APNewsBreak: Tunisia beach killer trained with museum gunmen</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-30 18:36:12</td><td></td><td><a href='tunisia_7_8.html'>The revelation confirms repeated fears that the strong presence of the Islamic State group in neighbouring Libya has become a direct threat to Tunisia, the only democracy to emerge from the Arab Spring uprisings. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/vQH1376AYeZG9Ly1NHZwqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/b9d326b36981bab867f4e3f7ad36c680cab54729.jpg'></td><td>2015-07-07 06:07:29</td><td><a href='http://news.yahoo.com/uk-remembers-2005-london-bombings-under-shadow-tunisia-032113489.html'>site</a></td><td><table><tr><td>UK remembers 2005 London bombings under shadow of Tunisia</td></tr><tr><td>London (AFP) - Britain will on Tuesday mark 10 years since the London bombings with a minute's silence for the 52 victims, less than a fortnight after an attack in Tunisia highlighted the ongoing Islamist threat.</td></tr></table></td></tr>
 </table></body></html>

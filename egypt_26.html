@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 12:35:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476257&ref=rss'>site</a></td><td><table><tr><td>Egypt's currency drops to new low against the dollar</td></tr><tr><td>CAIRO (AP) " Egypt's central bank says the Egyptian pound has fallen to a new low against the dollar, its second such drop since Thursday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 17:53:25</td><td><a href='http://www.utsandiego.com/news/2015/jun/08/obama-administration-criticizes-egypt-in-report/'>site</a></td><td>The report, quietly submitted to lawmakers last month, said that while Egypt has implemented some democratic reforms, "the overall trajectory of rights and democracy has been negative."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 18:10:26</td><td><a href='http://www.foxnews.com/politics/2015/06/08/obama-administration-criticizes-egypt-in-report-to-congress/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fpolitics+%28Internal+-+Politics+-+Text%29'>site</a></td><td>The Obama administration expressed concern for Egypt's decision to expand the jurisdiction of military courts to try civilians.</td></tr>
 </table></body></html>

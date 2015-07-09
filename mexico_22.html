@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 19:55:56</td><td></td><td><a href='mexico_22_23.html'>Two convicted murders who used power tools to cut their way out of a prison near the Canadian border could be nearby or "in Mexico by now," New York Gov. Andrew Cuomo said Sunday. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/05/51/8149570/3/square_gallery_thumb.jpg'></td><td>2015-06-14 19:56:02</td><td><a href='http://www.sfgate.com/news/crime/article/NY-rural-residents-on-edge-as-search-for-2-6326079.php'>site</a></td><td>NY Gov: Escaped inmates could be close or 'in Mexico by now'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/80e4b130cf68bce144a07675f634f9c607f90a64/0_305_2839_1703/500.jpg'></td><td>2015-06-20 17:53:18</td><td><a href='http://www.theguardian.com/us-news/2015/jun/20/new-mexico-search-white-house-chef-walter-scheib'>site</a></td><td><table><tr><td>New Mexico police search mountains for missing former White House chef</td></tr><tr><td>Authorities resumed a search by air and ground Saturday in a New Mexico mountain range for a former White House chef who has now been missing for a week.</td></tr><tr><td>Scheib recently moved from Florida to Taos, New Mexico, and reportedly went for a hike on 13 June in the mountains near the Taos Ski Valley.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,8 +49,7 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 08:48:40</td><td></td><td><a href='snowden_2.html'>Britain has been forced to remove some of its spies after Russia and China accessed the top-secret raft of documents taken by former US intelligence contractor Edward Snowden, British media have reported. (16)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 03:49:44</td><td></td><td><a href='snowden_9.html'>Although WikiLeaks has not indicated the source of the leaked material, the disclosures suggest the group has obtained access to the massive trove of intelligence material leaked by Mr Snowden in May 2013 or else other US intelligence material of similar sensitivity and importance. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 07:15:37</td><td></td><td><a href='snowden_7.html'>Dave Pollak, chairman of Belknap County Democrats, said he agreed with Chafee that Snowden is a whistleblower and should not be prosecuted. (3)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-07 03:08:51</td><td></td><td><a href='snowden_0.html'>Melanie Newman, chief spokeswoman for Attorney General Loretta Lynch, Holder's successor, immediately shot down the idea that the Justice Department was softening its stance on Snowden. (7)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-07 13:34:41</td><td></td><td><a href='snowden_8.html'>Snowden broke the law, recklessly endangered nat'l security, & fled to China/Russia. (1)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 03:49:44</td><td></td><td><a href='snowden_7.html'>Although WikiLeaks has not indicated the source of the leaked material, the disclosures suggest the group has obtained access to the massive trove of intelligence material leaked by Mr Snowden in May 2013 or else other US intelligence material of similar sensitivity and importance. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 07:15:37</td><td></td><td><a href='snowden_6.html'>Dave Pollak, chairman of Belknap County Democrats, said he agreed with Chafee that Snowden is a whistleblower and should not be prosecuted. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-07 03:08:51</td><td></td><td><a href='snowden_0.html'>Melanie Newman, chief spokeswoman for Attorney General Loretta Lynch, Holder's successor, immediately shot down the idea that the Justice Department was softening its stance on Snowden. (8)</a></td></tr>
 </table></body></html>

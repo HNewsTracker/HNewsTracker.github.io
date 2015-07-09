@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,14 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 13:30:57</td><td></td><td><a href='boko_haram_8.html'>Benin has not deployed any troops against Boko Haram yet, but has agreed in principle to join the force. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 17:24:43</td><td></td><td><a href='boko_haram_5.html'>Nigeria, neighbors forge anti-Boko Haram force (1)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 20:30:22</td><td></td><td><a href='boko_haram_7.html'>UN urges stepped-up action against Boko Haram and LRA (1)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-22 17:01:58</td><td></td><td><a href='boko_haram_3.html'>Boko Haram has kidnapped hundreds and hundreds of girls and women and the numbers of female suicide bombers has raised fears that it is using the captives in its campaign. (3)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-28 18:12:21</td><td></td><td><a href='boko_haram_2.html'>There was no immediate claim of responsibility for the attack but suspicion quickly fell on Boko Haram, the Islamic militant group based in neighboring Nigeria that had already attacked Chadian villages along the lake dividing the two countries. (4)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-01 21:41:53</td><td></td><td><a href='boko_haram_6.html'>Chad forces arrest Boko Haram leader, hold 74 others (1)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-02 18:50:51</td><td></td><td><a href='boko_haram_4.html'>Kukawa is 110 miles northeast of Maiduguri, the biggest city in northeast Nigeria and the birthplace of Boko Haram. (2)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-07-03 19:26:00</td><td></td><td><a href='boko_haram_11.html'>It is the fifth attack in a week that left 173 people killed as Boko Haram Islamic extremists appear to obey an Islamic State group order to step up attacks in the holy month of Ramadan. (2)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-07-06 08:33:19</td><td></td><td><a href='boko_haram_9.html'>Bombs blamed on Boko Haram kill 44 in Nigeria (1)</a></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-07-06 15:55:17</td><td></td><td><a href='boko_haram_10.html'>Nigerian military frees 180 Boko Haram suspects, some babies (2)</a></td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-07-07 13:45:43</td><td></td><td><a href='boko_haram_0.html'>Boko Haram wants to install an Islamic state across the West African nation of about 170 million people divided between a predominantly Muslim north and Christian south. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 13:30:57</td><td></td><td><a href='boko_haram_10.html'>Benin has not deployed any troops against Boko Haram yet, but has agreed in principle to join the force. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 17:24:43</td><td></td><td><a href='boko_haram_7.html'>Nigeria, neighbors forge anti-Boko Haram force (1)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 20:30:22</td><td></td><td><a href='boko_haram_9.html'>UN urges stepped-up action against Boko Haram and LRA (1)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-22 17:01:58</td><td></td><td><a href='boko_haram_0.html'>Boko Haram has kidnapped hundreds and hundreds of girls and women and the numbers of female suicide bombers has raised fears that it is using the captives in its campaign. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-28 18:12:21</td><td></td><td><a href='boko_haram_4.html'>There was no immediate claim of responsibility for the attack but suspicion quickly fell on Boko Haram, the Islamic militant group based in neighboring Nigeria that had already attacked Chadian villages along the lake dividing the two countries. (4)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-01 21:41:53</td><td></td><td><a href='boko_haram_8.html'>Chad forces arrest Boko Haram leader, hold 74 others (1)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-03 19:26:00</td><td></td><td><a href='boko_haram_5.html'>It is the fifth attack in a week that left 173 people killed as Boko Haram Islamic extremists appear to obey an Islamic State group order to step up attacks in the holy month of Ramadan. (4)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-06 08:33:19</td><td></td><td><a href='boko_haram_11.html'>Bombs blamed on Boko Haram kill 44 in Nigeria (1)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-06 15:55:17</td><td></td><td><a href='boko_haram_12.html'>Nigerian military frees 180 Boko Haram suspects, some babies (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-07 13:45:43</td><td></td><td><a href='boko_haram_2.html'>Boko Haram wants to install an Islamic state across the West African nation of about 170 million people divided between a predominantly Muslim north and Christian south. (3)</a></td></tr>
 </table></body></html>

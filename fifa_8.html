@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 16:56:27</td><td></td><td><a href='fifa_8_10.html'>"In conversations I've had here in Europe, people think it is very important for FIFA to be able to operate with integrity and transparency and accountability," Obama told reporters at a news conference after the G7 summit. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 18:35:14</td><td></td><td><a href='fifa_8_9.html'>ELMAU, Germany (AP) " President Barack Obama says soccer fans around the world want to ensure FIFA operates with integrity. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:31:05</td><td></td><td><a href='fifa_8_9.html'>If Diego Maradona is serious about running for the FIFA presidency, he still has a lot of work to do just to get on the ballot. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 17:55:15</td><td></td><td><a href='fifa_8_10.html'>Journalist Victor Hugo Morales said on Twitter late Sunday, June 21, 2015 that Maradona plans to run for president of FIFA. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 18:01:06</td><td><a href='http://www.miamiherald.com/news/politics-government/article25154227.html#storylink=rss'>site</a></td><td>In the often mysterious world of FIFA politics, it is far from clear which five of the 209 member federations would choose to nominate Maradona and why they would do it.</td></tr>
 </table></body></html>

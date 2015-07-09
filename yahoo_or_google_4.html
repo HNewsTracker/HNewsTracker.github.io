@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 17:05:01</td><td><a href='http://technology.canoe.com/News/2015/07/02/22484626.html?cid=rsstechnology'>site</a></td><td><table><tr><td>NEW YORK -- Google is apologizing after reports surfaced that an automatic image-recognition feature in its Photos application was identifying images of some black people as "gorillas."</td></tr><tr><td>A New York man posted a picture of himself and a female friend on Twitter earlier this week, showing that the Google image software had tagged both of them as "gorillas," which is sometimes used as a racial slur.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297714606967_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-03 14:28:54</td><td><a href='http://www.torontosun.com/2015/07/02/google-apologizes-after-report-of-photo-app-tagging-black-people-as-gorillas'>site</a></td><td>Google says it's "appalled and genuinely sorry" for what happened with the image-recognition feature.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/e2krA.hTUDE7ER1KzxD14w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201506091548569383343'></td><td>2015-06-09 20:51:47</td><td><a href='http://sports.yahoo.com/news/soriano-agrees-minor-league-deal-cubs-162628406--mlb.html'>site</a></td><td>Soriano agrees to minor league deal with Cubs (Yahoo Sports)</td></tr>
 </table></body></html>

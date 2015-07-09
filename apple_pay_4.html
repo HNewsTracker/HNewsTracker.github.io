@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple pay</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 14:41:10</td><td><a href='http://www.sbs.com.au/news/article/2015/06/22/taylor-swift-boycotts-new-apple-service'>site</a></td><td>Swift says the tech giant, which is launching the new Apple Music on June 30, won't pay for songs streamed during a free three-month trial period for new subscribers.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/34a4823d8afe8d83140a6e85e07f5abfab4691bb/r=299&amp;c=299x168/http/videos.usatoday.net/Brightcove2/29906170001/2015/06/29906170001_4276211489001_video-still-for-video-4274287916001.jpg?pubId=29906170001'></td><td>2015-06-08 17:50:27</td><td><a href='http://www.usatoday.com/story/tech/personal/2015/06/08/live-coverage-apple-wwdc/28674973/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomtech-personaltalk'>site</a></td><td>1:46 p.m.: Bailey says Apple Pay will launch in the U.K. next month.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 17:52:33</td><td><a href='http://news.sky.com/story/1498474/apple-reveals-revolutionary-spotify-rival'>site</a></td><td>Apple Pay: Contactless System To Launch In UK</td></tr>
 </table></body></html>

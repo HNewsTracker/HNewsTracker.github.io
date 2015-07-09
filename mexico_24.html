@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 23:35:22</td><td></td><td><a href='mexico_24_25.html'>MEXICO CITY - The Mexican government says teacher testing will go on as planned, despite the objections of radical teachers' unions. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 23:35:22</td><td><a href='http://www.startribune.com/mexico-says-teacher-testing-will-go-ahead-as-planned/306710731/'>site</a></td><td>Many teachers in Mexico's under-performing schools have essentially inherited their posts.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 13:20:31</td><td><a href='http://www.reuters.com/article/2015/06/19/us-mexico-intelligent-cycling-jacket-idUSKBN0OZ1H020150619?feedType=RSS&feedName=scienceNews'>site</a></td><td><table><tr><td>Mexico City's bumper-to-bumper traffic is a problem for the sprawling capital city's cyclists.</td></tr><tr><td>Damian Real, a physics students, came up with the design for the smart bike jacket with his partner Riberto Rivas, a maths major, at Mexico's National Autonomous University.</td></tr></table></td></tr>
 </table></body></html>

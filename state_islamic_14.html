@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 14:00:57</td><td></td><td><a href='state_islamic_14_15.html'>YPG fighters were battling Islamic State militants at the eastern outskirts of Tel Abyad on Sunday, YPG spokesman Redur Xeili told Reuters. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 14:00:57</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123509/Syrian-Kurds-battle-Islamic-State-town-Turkish-border.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>An activist group, Raqqa is Being Slaughtered Silently, said on its Twitter feed that Islamic State had stripped a Tel Abyad hospital of all its equipment and had moved it to Raqqa city.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/23b/news/world/article24919144.ece/ALTERNATES/w220/web-virginia-0611.JPG'></td><td>2015-06-11 18:34:37</td><td><a href='http://www.theglobeandmail.com/news/world/american-teenager-pleads-guilty-to-charges-of-helping-islamic-state/article24919145/?cmpid=rss1'>site</a></td><td>A 17-year-old from Virginia pleaded guilty in court on Thursday to charges of conspiring to help Islamic State militants, the first time the United States has prosecuted a minor as an adult in such a case.</td></tr>
 </table></body></html>

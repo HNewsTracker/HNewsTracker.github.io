@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 14:29:40</td><td></td><td><a href='state_islamic_31_32.html'>MADRID -- Spanish police on Tuesday arrested a woman suspected of recruiting pre-teen girls and teenagers to send to areas controlled by the Islamic State armed group in Syria. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 16:25:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article26647843.html#storylink=rss'>site</a></td><td>The ministry said the woman in Arrecife maintained contact with Islamic State militants in Syria, including a facilitator who gave her orders for recruiting girls and arranging their travel to Syria.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/images/International/ap_tunisia_5_kb_150626_4x3t_96.jpg'></td><td>2015-06-26 23:57:28</td><td><a href='http://abcnews.go.com/International/wireStory/report-islamic-state-claims-credit-attack-tunisian-resort-32063835'>site</a></td><td>Report: Islamic State Claims Credit for Attack at Tunisian Resort That Killed at Least 37</td></tr>
 </table></body></html>

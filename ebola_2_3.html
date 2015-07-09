@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150630&t=2&i=1060294345&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB5T09D'></td><td>2015-06-30 08:00:03</td><td><a href='http://www.reuters.com/article/2015/06/30/us-health-ebola-liberia-idUSKCN0PA0PB20150630?feedType=RSS&feedName=healthNews'>site</a></td><td>MONROVIA A Liberian has died of Ebola in the first recorded case since the country at the heart of an epidemic was declared free of the virus on May 9, Deputy Health Minister Tolbert Nyenswah said on Tuesday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/33/17/8238046/7/square_gallery_thumb.jpg'></td><td>2015-06-30 19:53:46</td><td><a href='http://www.sfgate.com/news/medical/article/Liberia-quarantines-community-where-corpse-tested-6357541.php'>site</a></td><td>Liberian authorities on Tuesday quarantined an area where the corpse of the boy was found, sparking fears this West African country could face another outbreak of the disease nearly two months after being declared Ebola-free.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150630&t=2&i=1060294345&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB5T09D'></td><td>2015-06-30 08:00:03</td><td><a href='http://www.reuters.com/article/2015/06/30/us-health-ebola-liberia-idUSKCN0PA0PB20150630?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>A health worker injects a woman with an Ebola vaccine during a trial in Monrovia, February 2, 2015.</td></tr><tr><td>MONROVIA A Liberian has died of Ebola in the first recorded case since the country at the heart of an epidemic was declared free of the virus on May 9, Deputy Health Minister Tolbert Nyenswah said on Tuesday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/33/17/8238046/7/square_gallery_thumb.jpg'></td><td>2015-06-30 19:53:46</td><td><a href='http://www.sfgate.com/news/medical/article/Liberia-quarantines-community-where-corpse-tested-6357541.php'>site</a></td><td><table><tr><td>Health workers leave after they took a blood specimen from a child to test for the Ebola virus in a area were a 17-year old boy died from the virus on the outskirts of Monrovia, Liberia, Tuesday, June 30, 2015.</td></tr><tr><td>Liberian authorities on Tuesday quarantined an area where the corpse of the boy was found, sparking fears this West African country could face another outbreak of the disease nearly two months after being declared Ebola-free.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pmQa6lTbZKown3vhlxH8_w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b04350ba760a0c1d7b0f6a706700b6a6.jpg'></td><td>2015-07-03 15:56:25</td><td><a href='http://news.yahoo.com/liberia-works-contain-ebola-source-cases-155625276.html'>site</a></td><td>"We will contain it quickly because of where we are in the learning curve as far as Ebola is concerned," said Dr. Philip Ireland at the John F. Kennedy Medical Center in the capital, Monrovia.</td></tr>
 </table></body></html>

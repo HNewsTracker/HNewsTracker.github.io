@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/7/n/g/z/image.related.articleLeadwide.620x349.ghka5a.png/1433950831554.jpg'></td><td>2015-06-09 19:35:10</td><td><a href='http://www.brisbanetimes.com.au/world/the-unbelievable-damage-islamic-state-has-done-to-ancient-sites-in-iraq-and-syria-20150610-ghka5a.html'>site</a></td><td><table><tr><td>As the Islamic State continues its efforts to create a "caliphate," killing thousands in its path, the group is also pursuing another campaign: the destruction of historic sites.</td></tr><tr><td>Video released by the Islamic State shows the militants pulverising carvings, statues and walls, using guns, sledgehammers and pickaxes.</td></tr><tr><td>In February, the Islamic State went to the Nineveh Museum in Mosul and used sledgehammers to smash artifacts that were known as some of the most cherished of pre-Islamic antiquity.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/7/n/g/z/image.related.articleLeadwide.620x349.ghka5a.png/1433950831554.jpg'></td><td>2015-06-09 19:35:10</td><td><a href='http://www.smh.com.au/world/the-unbelievable-damage-islamic-state-has-done-to-ancient-sites-in-iraq-and-syria-20150610-ghka5a.html'>site</a></td><td>An Islamic State militant destroys the statue of Lamassu, an Assyrian deity, with a jackhammer in the northern Iraqi Governorate of Nineveh.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297717188405_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-26 23:16:23</td><td><a href='http://www.torontosun.com/2015/06/26/islamic-state-suicide-bomber-kills-more-than-10-in-kuwait-mosque'>site</a></td><td>Islamic State had urged its followers on Tuesday to step up attacks during the Ramadan fasting month against Christians, Shi'ites and Sunni Muslims fighting with a U.S.-led coalition against the ultra-hardline jihadist group.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>european games</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/01/47/8133096/3/square_gallery_thumb.jpg'></td><td>2015-06-11 15:26:33</td><td><a href='http://www.sfgate.com/business/energy/article/Azerbaijan-criticized-over-rights-as-European-6320749.php'>site</a></td><td>Azerbaijan criticized over rights as European Games begin</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2EjvL81fCDjMHvz06eVHdg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b2ab188e1497131a790f6a706700270f.jpg'></td><td>2015-06-11 15:26:41</td><td><a href='http://news.yahoo.com/azerbaijan-criticized-over-rights-european-games-begin-121519200--spt.html'>site</a></td><td>Hosting the European Games has a particular significance for majority-Muslim Azerbaijan, which has long sought to present itself as a European rather than Asian nation, a strategy long followed by neighboring Turkey.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/ZRLwMxSlAMpPX54FtmLdhQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f6321f5c3f57321a790f6a706700d6eb.jpg'></td><td>2015-06-12 20:37:23</td><td><a href='http://news.yahoo.com/first-european-games-open-azerbaijan-175748385.html'>site</a></td><td><table><tr><td>Lady Gaga helps open European Games open in Azerbaijan</td></tr><tr><td>BAKU, Azerbaijan (AP) - The first European Games opened in Azerbaijan on Friday with an extravagant opening ceremony featuring Lady Gaga, although even her star power failed to dispel some of the concerns hanging over the event.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 15:15:27</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123551/Libyan-Islamists-claim-drive-Islamic-State-port-stronghold.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Street fighting has raged for several days between members of the local Islamist umbrella group Majlis Mujahideen and Islamic State loyalists, who have been trying to increase their influence in the port city for more than a year.</td></tr><tr><td>A Majlis spokesman told local Libyan Nabaa TV that more than 70 Islamic State militants had surrendered during the fighting, in which some were severely wounded.</td></tr><tr><td>Forces from both governments have been fighting Islamic State but also each other in a conflict where military alliances are often fluid and based on local interests.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 15:46:48</td><td><a href='http://www.reuters.com/article/2015/06/11/us-usa-security-islamicstate-idUSKBN0OR1V520150611?feedType=RSS&feedName=domesticNews'>site</a></td><td>Virginia 17-year-old pleads guilty to helping to Islamic State</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/World/2015/06/11/RE_JehJohnson650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-06-11 16:31:38</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/06/11/22447431.html?cid=rssnewsworld'>site</a></td><td>Homeland Security Secretary Jeh Johnson was meeting on Thursday with a Muslim group in nearby Sterling as part of the department's outreach to Islamic communities around the country.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/23b/news/world/article24919144.ece/ALTERNATES/w220/web-virginia-0611.JPG'></td><td>2015-06-11 18:34:37</td><td><a href='http://www.theglobeandmail.com/news/world/american-teenager-pleads-guilty-to-charges-of-helping-islamic-state/article24919145/?cmpid=rss1'>site</a></td><td>A 17-year-old from Virginia pleaded guilty in court on Thursday to charges of conspiring to help Islamic State militants, the first time the United States has prosecuted a minor as an adult in such a case.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 19:40:22</td><td><a href='http://abcnews.go.com/US/wireStory/northern-virginia-teen-admits-guilt-terror-related-charge-31689340'>site</a></td><td><table><tr><td>Teen Pleads Guilty to Helping Friend Join Islamic State</td></tr><tr><td>A 17-year-old who otherwise would have been graduating with honors from high school this week instead pleaded guilty Thursday to terrorism charges for helping another teen travel to Syria to join the Islamic State.</td></tr></table></td></tr>
 </table></body></html>

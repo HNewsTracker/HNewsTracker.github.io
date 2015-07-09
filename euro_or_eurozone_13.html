@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/26/ff/c2081be7248c4c4699e99dab785a132b-cb5131321a4745be9138ef9b4ad13ffb-0.jpg'></td><td>2015-07-04 06:33:36</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/would-euro-departure-help-or-hurt-europes-currency/nmrZb/'>site</a></td><td>But that might prove more difficult if Greece was no longer a part of the euro - and did not face external pressure from fellow eurozone states to modernize its economy.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 06:33:36</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/03/would-euro-departure-help-or-hurt-europes/'>site</a></td><td><table><tr><td>Would euro departure help or hurt Europe's currency union?</td></tr><tr><td>Ironically, a few experts think one of the most devastating outcomes for the euro would be if Greece leaves and, against all expectation, thrives.</td></tr><tr><td>That would undermine claims for the euro being a key to prosperity.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 06:33:36</td><td></td><td><a href='euro_or_eurozone_13_14.html'>For the long term, a Greek exit would disrupt the euro's "Hotel California" principle: that, as the Eagles put it, you can "check out any time you like, but you can never leave." (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-13 22:02:04</td><td><a href='http://www.charlotteobserver.com/sports/article24030568.html#storylink=rss'>site</a></td><td>Faeroe Islands beat Greece again in Euro 2016 qualifying</td></tr>
 </table></body></html>

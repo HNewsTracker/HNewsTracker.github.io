@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 09:16:15</td><td><a href='http://www.reuters.com/article/2015/06/09/us-egypt-rights-idUSKBN0OP0RT20150609?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>"The report is politicized and lacks the basic tenants of accuracy and objectivity," Egypt's foreign ministry said in a statement.</td></tr><tr><td>HRW had targeted Egypt since June 30, 2013 -- when the army overthrew the elected President Mohamed Mursi -- and was carrying out a "systematic campaign" against Egypt, he said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 06:33:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/30/fallen-egypt-archaeologist-wants-international-grand-museum'>site</a></td><td>His name is still associated with many of Egypt's most famous digs, including grand discoveries such as the Valley of the Golden Mummies in Bahariya Oasis in 1999 and the mummy of Queen Hatshepsut almost a decade later.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/30/a3/47/919a7a692a364196bcf1e3147bd91cf4-75aa31bdbe074250a3bd197239457e36-0.jpg'></td><td>2015-06-30 06:33:14</td><td><a href='http://www.daytondailynews.com/ap/ap/international/fallen-egypt-archaeologist-wants-international-gra/nmn8b/'>site</a></td><td><table><tr><td>Fallen Egypt archaeologist wants international Grand Museum</td></tr><tr><td>For more than a decade, he was the self-styled Indiana Jones of Egypt, presiding over its antiquities and striding through temples and tombs as the star of TV documentaries that made him an international celebrity.</td></tr><tr><td>In this June 18, 2015 photo, Zahi Hawass, Egypt's former head of antiquities, speaks during an interview with The Associated Press in his office in Cairo.</td></tr><tr><td>His trademark wide-brimmed hat and safari vest may be hung up for now, but he is brimming with ideas on how to revive Egypt's antiquities and bring back tourists after years of unrest.</td></tr></table></td></tr>
 </table></body></html>

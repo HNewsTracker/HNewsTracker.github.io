@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 14:04:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/more-than-1000-immigrants-reach-greece-by-sea-in-a/nmZQ5/'>site</a></td><td>EU urges refugee action as over 1,000 migrants reach Greece</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 23:26:24</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-leader-heads-to-brussels-to-meet-merkel-holl/nmZQn/'>site</a></td><td>Greek leader meets creditors, seeks bailout breakthrough</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td><table><tr><td>Flawed bailouts, political missteps brought Greece to brink</td></tr><tr><td>FRANKFURT, Germany (AP) " After two bailouts totaling 240 billion euros ($266 billion) and six years of depression, spending cuts and lost jobs, Greece teeters on the edge of collapse.</td></tr><tr><td>Despite its rickety finances, Greece shaped up a little for a few years and qualified to join the single currency in 2001.</td></tr><tr><td>Greece was waved in, and promptly went back to its old ways.</td></tr></table></td></tr>
 </table></body></html>

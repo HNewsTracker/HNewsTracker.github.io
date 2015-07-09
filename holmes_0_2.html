@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 19:49:42</td><td><a href='http://abcnews.go.com/US/wireStory/psychiatrist-takes-stand-theater-shooting-trial-31615934'>site</a></td><td><table><tr><td>- Holmes told Metzner he listened to loud, driving music through headphones during the attack so he would not feel any connection to his victims.</td></tr><tr><td>Holmes told Metzner and Reid that he still had homicidal urges more than a year after the shootings.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-09 04:27:04</td><td><a href='http://www.miamiherald.com/news/business/article23516584.html#storylink=rss'>site</a></td><td>Holmes' attorney pressed Metzner to concede that Holmes' plan doesn't necessarily mean he was sane.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 22:05:26</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article25016287.html#storylink=rss'>site</a></td><td><table><tr><td>Wendell Holmes, singer, songwriter of Holmes Brothers, dies</td></tr><tr><td>Wendell Holmes, the guitarist, pianist and singer and songwriter of the soul and blues band The Holmes Brothers, has died.</td></tr><tr><td>The three formed The Holmes Brothers in 1979.</td></tr></table></td></tr>
 </table></body></html>

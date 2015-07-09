@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:31:05</td><td></td><td><a href='fifa_24_25.html'>If Diego Maradona is serious about running for the FIFA presidency, he still has a lot of work to do just to get on the ballot. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 17:55:15</td><td></td><td><a href='fifa_24_26.html'>Journalist Victor Hugo Morales said on Twitter late Sunday, June 21, 2015 that Maradona plans to run for president of FIFA. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 21:26:03</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/06/world-cup-moments-distanced-women-from-fifa-scandal'>site</a></td><td>For FIFA, it's back to reality.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/06/28/26/b57a51f9e0754ed6876a2fc1d63445cf-5d059be38d204a3cbc3a91ea86a4dfd4-3.jpg'></td><td>2015-07-06 21:30:17</td><td><a href='http://www.daytondailynews.com/ap/ap/international/world-cup-moments-distanced-women-from-fifa-scanda/nmsS2/'>site</a></td><td>Instead, FIFA Senior Vice President Issa Hayatou of Cameroon, the head of African soccer's governing body, handed the trophy to U.S. veterans Abby Wambach and Christie Rampone.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-06 21:30:17</td><td></td><td><a href='fifa_24_25.html'>For a few moments over the past month, the Women's World Cup seemed to push aside the FIFA scandal that is simmering a half planet away. (2)</a></td></tr>
 </table></body></html>

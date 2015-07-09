@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 13:58:05</td><td></td><td><a href='egypt_18_19.html'>Policemen investigate the site of a car bomb attack on the convoy of Egyptian public prosecutor Hisham Barakat near his house at Heliopolis district in Cairo, Egypt, June 29, 2015. (5)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 14:59:59</td><td><a href='http://www.nydailynews.com/news/world/car-bomb-kills-egypt-top-prosecutor-article-1.2275009'>site</a></td><td>Egypt's main Islamic militant group Ansar Beit al-Maqdis - which has pledged allegiance to the Islamic State group fighting in Iraq and Syria - has claimed responsibility for that attack.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-29 15:36:25</td><td></td><td><a href='egypt_18_22.html'>The attack came as Egyptian security forces went on high alert on the eve of the second anniversary of massive anti-Islamist demonstrations that paved the way, days later, for the military's ouster of Egypt's Islamic President Mohammed Morsi. (3)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-29 21:15:41</td><td></td><td><a href='egypt_18_23.html'>Egypt's top public prosecutor was killed by a car bomb attack on his convoy on Monday, the most senior state official to die at the hands of militants since the toppling of an Islamist president two years ago. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-30 08:28:01</td><td><a href='http://www.utsandiego.com/news/2015/jun/30/egypt-prepares-for-burial-of-slain-prosecutor/'>site</a></td><td>Egypt prepares for burial of slain prosecutor general</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-30 19:52:13</td><td></td><td><a href='egypt_18_21.html'>Despite an international outcry against legal abuses and lack of due process, Egypt has waged a 2-year-old crackdown that has led to thousands of arrests, mass convictions and death sentences. (2)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-03 20:57:13</td><td></td><td><a href='egypt_18_20.html'>Two years to the day after the army overthrew Egypt's Islamist president, the sounds coming from the mosque at Cairo's Tahrir Square were sadly telling. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 18:34:45</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/04/egypts-president-visits-troops-in-embattled-north-sinai'>site</a></td><td><table><tr><td>It came in a week of bloodletting that saw Egypt's prosecutor general assassinated outside his Cairo home by a massive car bomb, and a special forces raid on an apartment that killed nine members of the outlawed Muslim Brotherhood.</td></tr><tr><td>Egypt routinely blames the Muslim Brotherhood for violent attacks in the country.</td></tr></table></td></tr>
 </table></body></html>

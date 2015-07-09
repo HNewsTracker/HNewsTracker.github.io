@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 20:33:56</td><td></td><td><a href='ferguson_1_2.html'>The summary is part of a longer after-action report to be released in the coming weeks focusing on the actions of police in Ferguson, St. Louis city and county and the Missouri State Highway Patrol. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/US/HT_david_sweat_jt_150606_4x3t_96.jpg'></td><td>2015-06-30 20:33:56</td><td><a href='http://abcnews.go.com/US/wireStory/federal-report-faults-police-actions-ferguson-unrest-32126645'>site</a></td><td>The report suggests that the protests after Brown's death on Aug. 9 were aggravated by the community's hostility toward Ferguson police and worsened when authorities didn't quickly divulge details of his death.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-24 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/books/article25392502.html#storylink=rss'>site</a></td><td><table><tr><td>"Yet even after Ferguson, unarmed black men continue to die at the hands of police."</td></tr><tr><td>Still, "The Ferguson Report" is especially damning, for it reveals an institutional culture that targets African Americans.</td></tr><tr><td>If "The Ferguson Report" has anything to tell us, it is that.</td></tr></table></td></tr>
 </table></body></html>

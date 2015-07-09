@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/08/07/2970617000000578-0-image-m-10_1433746399456.jpg'></td><td>2015-06-08 07:30:51</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3114874/Ruling-party-leads-1st-independent-wins-Mexico-elections.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Electoral volunteers count ballots after the polls closed in the country's midterm elections at a polling station in Mexico City, Sunday, June 7, 2015.</td></tr><tr><td>Poll workers count ballots under a street lights, at an outdoor poling station in Chilpancingo, Guerrero State, Mexico, Sunday, June 7, 2015.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 22:05:15</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11464990&ref=rss'>site</a></td><td>Fabiola Ibarra scored in stoppage time for Mexico.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 00:32:37</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123197/Kirby-inspires-England-2-1-win-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>6 to a much-needed lead before Mexico's Fabiola Ibarra gave her team hope with a goal in stoppage time, but there was little time for an equaliser.</td></tr>
 </table></body></html>

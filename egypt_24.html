@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 18:04:23</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/09/egypts-cib-buying-citibanks-local-retail-operations'>site</a></td><td>CAIRO (AP) - Egypt's Commercial International Bank, the country's largest private-sector bank, has signed an agreement to acquire Citibank Egypt's retail operations that had been up for sale.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 18:10:16</td><td></td><td><a href='egypt_24_25.html'>Citibank Egypt's website says it has 100,000 retail customers and operates 9 branches, including 8 in Cairo, and one in Alexandria. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 17:30:24</td><td><a href='http://abcnews.go.com/International/wireStory/egypt-names-ambassador-israel-years-31926966'>site</a></td><td><table><tr><td>Egypt Names Ambassador to Israel After Nearly 3 Years</td></tr><tr><td>Egypt has named a new ambassador to Israel nearly three years after it had recalled the last one at the outset of the 2012 Israeli offensive in Gaza.</td></tr><tr><td>A statement released Sunday said President Abdel-Fattah el-Sissi named ambassador Hazem Khairat as part of a regular reshuffle of Egypt's diplomatic corps.</td></tr></table></td></tr>
 </table></body></html>

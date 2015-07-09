@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 12,
+            max: 11,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,16 +48,15 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 18:08:48</td><td></td><td><a href='ebola_6.html'>KRUEN, Germany (Reuters) - Leaders of the Group of Seven industrial nations pledged on Monday to wipe out Ebola but offered little in terms of concrete action, disappointing non-governmental organizations. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 16:49:54</td><td></td><td><a href='ebola_14.html'>FREETOWN Sierra Leone is introducing new curfews for two northern districts after a spike in new Ebola cases to the highest level in months, President Ernest Bai Koroma said on Friday. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-13 16:59:18</td><td></td><td><a href='ebola_9.html'>"The reality today is if Ebola were to hit on scale it did in August and September, we would hardly do much better than we did the last time around," Joanne Liu said on the sidelines of a meeting on Ebola in Dakar. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-13 18:09:39</td><td></td><td><a href='ebola_12.html'>(AP) - The insurance carrier for a Connecticut city paid $30,000 to settle a lawsuit filed by the family of a third-grader who was barred from school for several days because of Ebola fears. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-19 15:29:28</td><td></td><td><a href='ebola_13.html'>The authoritarian, impoverished nation better known for pursuing a nuclear program despite global criticism announced Friday it has a drug that can prevent and cure MERS, Ebola, SARS and AIDS. (2)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-19 22:01:25</td><td></td><td><a href='ebola_11.html'>Tekmira is also running an early-stage trial of a drug called TKM-Ebola, which targets a slightly different strain of the virus. (2)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-26 19:49:11</td><td></td><td><a href='ebola_10.html'>A new rapid-detection test that diagnoses Ebola within minutes could improve treatment of the deadly virus and help health care workers contain outbreaks, researchers say. (3)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-06-30 12:00:00</td><td></td><td><a href='ebola_2.html'>The corpse of a 17-year-old man has tested positive for Ebola in Liberia, but no other cases have been reported, the country's deputy health minister said late Monday, June 29, 2015. (11)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-07-03 15:56:25</td><td></td><td><a href='ebola_16.html'>"We will contain it quickly because of where we are in the learning curve as far as Ebola is concerned," said Dr. Philip Ireland at the John F. Kennedy Medical Center in the capital, Monrovia. (1)</a></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-07-07 16:05:17</td><td></td><td><a href='ebola_0.html'>A panel commissioned by the World Health Organization to assess its bungled response to the world's biggest Ebola outbreak said the crisis exposed the agency's "organizational failings" and called for WHO to be held accountable. (4)</a></td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-07-07 20:12:28</td><td></td><td><a href='ebola_15.html'>DAKAR A dead dog suspected of being the possible source for the re-emergence of Ebola in Liberia has tested negative for the disease, two health officials said on Tuesday, quoting initial findings. (1)</a></td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-07-08 01:27:47</td><td></td><td><a href='ebola_8.html'>London: Experts have recommended urgent, root-and-branch changes to the World Health Organisation after an inadequate response to West Africa's vast and deadly Ebola outbreak. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 18:08:48</td><td></td><td><a href='ebola_0.html'>KRUEN, Germany (Reuters) - Leaders of the Group of Seven industrial nations pledged on Monday to wipe out Ebola but offered little in terms of concrete action, disappointing non-governmental organizations. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 16:49:54</td><td></td><td><a href='ebola_12.html'>FREETOWN Sierra Leone is introducing new curfews for two northern districts after a spike in new Ebola cases to the highest level in months, President Ernest Bai Koroma said on Friday. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-13 16:59:18</td><td></td><td><a href='ebola_6.html'>"The reality today is if Ebola were to hit on scale it did in August and September, we would hardly do much better than we did the last time around," Joanne Liu said on the sidelines of a meeting on Ebola in Dakar. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-13 18:09:39</td><td></td><td><a href='ebola_9.html'>(AP) - The insurance carrier for a Connecticut city paid $30,000 to settle a lawsuit filed by the family of a third-grader who was barred from school for several days because of Ebola fears. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-19 15:29:28</td><td></td><td><a href='ebola_10.html'>The authoritarian, impoverished nation better known for pursuing a nuclear program despite global criticism announced Friday it has a drug that can prevent and cure MERS, Ebola, SARS and AIDS. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-19 22:01:25</td><td></td><td><a href='ebola_8.html'>Tekmira is also running an early-stage trial of a drug called TKM-Ebola, which targets a slightly different strain of the virus. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-26 19:49:11</td><td></td><td><a href='ebola_7.html'>A new rapid-detection test that diagnoses Ebola within minutes could improve treatment of the deadly virus and help health care workers contain outbreaks, researchers say. (3)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-30 12:00:00</td><td></td><td><a href='ebola_2.html'>The corpse of a 17-year-old man has tested positive for Ebola in Liberia, but no other cases have been reported, the country's deputy health minister said late Monday, June 29, 2015. (12)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-07 16:05:17</td><td></td><td><a href='ebola_11.html'>A panel commissioned by the World Health Organization to assess its bungled response to the world's biggest Ebola outbreak said the crisis exposed the agency's "organizational failings" and called for WHO to be held accountable. (4)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-07 20:12:28</td><td></td><td><a href='ebola_13.html'>DAKAR A dead dog suspected of being the possible source for the re-emergence of Ebola in Liberia has tested negative for the disease, two health officials said on Tuesday, quoting initial findings. (1)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-08 01:27:47</td><td></td><td><a href='ebola_5.html'>London: Experts have recommended urgent, root-and-branch changes to the World Health Organisation after an inadequate response to West Africa's vast and deadly Ebola outbreak. (3)</a></td></tr>
 </table></body></html>

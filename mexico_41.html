@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 00:15:05</td><td></td><td><a href='mexico_41_42.html'>FILE - In this Jan. 13, 2008, file photo, Mexico's former president Felipe Calderon, right, accompanied by his wife Margarita Zabala, waves upon their arrival to a military airport in Guatemala City. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 00:20:21</td><td><a href='http://www.startribune.com/ex-first-lady-says-she-ll-seek-mexico-s-presidency-in-2018/307314591/'>site</a></td><td>Zabala said the party needs to find "a national leader of consensus" and narrow the gap between politicians and Mexico's voters, many of whom complain about corruption in government.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 00:20:22</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11465451&ref=rss'>site</a></td><td>Ex-first lady says she'll seek Mexico's presidency in 2018</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-06-08 15:07:45</td><td><a href='http://news.yahoo.com/officials-probe-release-felon-accused-killing-officer-150745619.html'>site</a></td><td>ALBUQUERQUE, N.M. (AP) - New Mexico's attorney general is investigating the circumstances that led to the release of a repeat offender who prosecutors say went on to kill a police officer.</td></tr>
 </table></body></html>

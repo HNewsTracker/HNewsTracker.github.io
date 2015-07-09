@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 15:58:56</td><td><a href='http://abcnews.go.com/US/wireStory/38-members-ousted-suspended-penn-state-fraternity-31613907'>site</a></td><td>Nearly 40 members have been removed from a Penn State fraternity that's been suspended for three years over a Facebook page featuring photos of nude and semi-nude women.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 16:01:05</td><td><a href='http://www.startribune.com/38-members-ousted-from-suspended-penn-state-fraternity/306502151/'>site</a></td><td>38 members ousted from Penn State frat after chapter is suspended over nude Facebook photos</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 16:01:05</td><td><a href='http://www.startribune.com/38-members-ousted-from-suspended-penn-state-fraternity/306502151/'>site</a></td><td>38 members ousted from Penn State frat after chapter is suspended over nude Facebook photos</td></tr>
 </table></body></html>
