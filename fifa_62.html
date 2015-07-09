@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 00:49:43</td><td><a href='http://www.nytimes.com/aponline/2015/07/04/world/europe/ap-soc-fifa-investigation-blatter.html?partner=rss&emc=rss&_r=0'>site</a></td><td><table><tr><td>"I'm there now to fight. Not for myself but for FIFA," said Blatter, who added he was on the right path and had no doubts.</td></tr><tr><td>"Is FIFA responsible from the top down for everything in football, what happens in some village somewhere around the world?" asked Blatter, also a target of the American investigation.</td></tr><tr><td>"Everyone has fears, for example of death, but with regard to my work at FIFA I have no fear. I've nothing to be afraid of," said Blatter.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150608&t=2&i=1054691323&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB570UN'></td><td>2015-06-08 17:43:34</td><td><a href='http://www.reuters.com/article/2015/06/08/us-soccer-fifa-ioc-idUSKBN0OO23420150608?feedType=RSS&feedName=sportsNews'>site</a></td><td><table><tr><td>Bach warns FIFA that reforms will be painful</td></tr><tr><td>"We can only encourage FIFA to continue (with) the reforms which have been initiated, we cannot give detailed advice of what to do but we appreciate there is a readiness for reforms," he told a news conference.</td></tr><tr><td>"The structure of FIFA is very different from the IOC and the difference in the scope is huge. There is almost no comparison of what happened with Salt Lake City and what is now at stake with regards to FIFA," said Bach.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 18:02:23</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3115782/Bach-warns-FIFA-reforms-painful.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Bach added that he did not want to give advice to FIFA and pointed out that the structures of the two organisations were enormously different and difficult to compare.</td></tr>
 </table></body></html>

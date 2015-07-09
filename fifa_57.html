@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-10T111704Z_1_LYNXMPEB590H8_RTROPTP_2_SOCCER-WORLD.JPG?itok=ZQvonhjI'></td><td>2015-06-10 11:17:04</td><td><a href='http://www.sbs.com.au/news/article/2015/06/10/bidding-2026-world-cup-be-postponed-fifa-official'>site</a></td><td>"Due to the situation, I think it's nonsense to start any bidding process for the time being. It will be postponed," FIFA Secretary General Jerome Valcke told a news conference in the southern Russian city of Samara.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 23:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-says-he-has-clear-conscience-despite-fifa-/nmqLX/'>site</a></td><td>The 79-year-old told Bunte that he happily accepts "fair and constructive criticism, also to consider what can be done differently. But when someone says, 'Blatter is corrupt because FIFA is corrupt', I can only shake my head. Anyone who makes such claims without proof should be jailed."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 23:51:01</td><td><a href='http://www.ctvnews.ca/sports/sepp-blatter-has-clear-conscience-despite-fifa-corruption-probe-1.2449530'>site</a></td><td>Four days after being re-elected for a fifth term, Blatter said on June 2 that he would step down amid a crisis provoked by American and Swiss federal investigations of corruption linked to FIFA.</td></tr>
 </table></body></html>

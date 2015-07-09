@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 30,
+            max: 29,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 30 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 29 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,34 +48,33 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 06:01:58</td><td></td><td><a href='apple_44.html'>But that may be delayed, according to reports by the New York Times and the tech blog Re/code, which said Apple is still negotiating with broadcasters and isn't ready to announce the video service. (1)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 13:37:19</td><td></td><td><a href='apple_40.html'>Apple is expected to unveil a new music service and better tools to build apps for its smartwatch at its annual gathering of developers in San Francisco on Monday. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-08 17:42:00</td><td></td><td><a href='apple_7.html'>The new Mac system will be more formally known as OS X 10.11, as it's the 11th update to a system adapted from the NeXT operating system that co-founder Steve Jobs brought to Apple when he returned in 1997 after an exile. (15)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-08 20:26:00</td><td></td><td><a href='apple_45.html'>Everything you need to know about Apple Pay in the UK (1)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-09 01:34:06</td><td></td><td><a href='apple_42.html'>The big news at Apple's Worldwide Developers Conference always revolves around new apps and updated operating systems. (2)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-09 05:15:00</td><td></td><td><a href='apple_31.html'>70 per cent of Apple's staff are male. (1)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-09 07:01:00</td><td></td><td><a href='apple_38.html'>Can Apple win the streaming wars? (1)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-06-09 07:02:37</td><td></td><td><a href='apple_15.html'>"It'll change the way you experience music forever," CEO Tim Cook promised Monday at Apple's annual conference for software developers, held in San Francisco. (4)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-06-09 21:01:24</td><td></td><td><a href='apple_5.html'>The maker of iPods and iPhones announced Apple Music, an app that combines Beats 1, a 24-hour, seven-day live radio station, with an on-demand music streaming service. (5)</a></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-06-10 05:24:07</td><td></td><td><a href='apple_43.html'>The attorneys general of New York and Connecticut are investigating Apple Inc's negotiations with music companies to look for signs of potential antitrust violations. (2)</a></td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-06-10 07:10:15</td><td></td><td><a href='apple_41.html'>Apple Maps has improved a lot for driving and walking directions since it ousted Google Maps in 2012 as the default service on iPhones. (5)</a></td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-06-10 11:05:40</td><td></td><td><a href='apple_36.html'>COPENHAGEN, Denmark (AP) - Music streaming company Spotify says it has gotten a new investment from TeliaSonera, a Nordic telecoms company, as it looks to compete globally with similar services from Apple Inc. and others. (3)</a></td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-06-10 23:05:00</td><td></td><td><a href='apple_26.html'>If Apple is successful, said Ted Cohen, a former music executive, others in the industry may decide to weaken or phase out their free tiers, he added. (4)</a></td></tr>
-  <tr><td style='display:none'>13</td><td></td><td>2015-06-11 01:45:43</td><td></td><td><a href='apple_28.html'>Spotify Raises $526 Million in Apple Battle (1)</a></td></tr>
-  <tr><td style='display:none'>14</td><td></td><td>2015-06-11 08:00:00</td><td></td><td><a href='apple_34.html'>(Plus, soon after the great reveal, news came that Apple was being investigated by two states for antitrust violations in its negotiations with music companies.) (1)</a></td></tr>
-  <tr><td style='display:none'>15</td><td></td><td>2015-06-11 11:15:00</td><td></td><td><a href='apple_12.html'>Another email, sent by a retail worker in Beijing to Cook and other managers in 2013, said Apple treats its employees "as animals" and thieves. (4)</a></td></tr>
-  <tr><td style='display:none'>16</td><td></td><td>2015-06-11 14:10:04</td><td></td><td><a href='apple_0.html'>And as Apple looks to open new stores or renovate existing ones - including the iconic New York Fifth Avenue store, with its distinctive glass-cube entrance - the company will look for additional ways to do that. (8)</a></td></tr>
-  <tr><td style='display:none'>17</td><td></td><td>2015-06-11 14:10:04</td><td></td><td><a href='apple_35.html'>In with the old: Apple restores former bank for new store (1)</a></td></tr>
-  <tr><td style='display:none'>18</td><td></td><td>2015-06-11 16:00:13</td><td></td><td><a href='apple_39.html'>EU tax probes on Apple, Amazon, Starbucks at advanced stage: European Commission (1)</a></td></tr>
-  <tr><td style='display:none'>19</td><td></td><td>2015-06-13 16:41:00</td><td></td><td><a href='apple_37.html'>Apple is clearly working out these third-party app issues, though. (1)</a></td></tr>
-  <tr><td style='display:none'>20</td><td></td><td>2015-06-19 14:17:14</td><td></td><td><a href='apple_33.html'>Apple Music won?t have Taylor Swift?s ?1989? (1)</a></td></tr>
-  <tr><td style='display:none'>21</td><td></td><td>2015-06-19 23:06:33</td><td></td><td><a href='apple_30.html'>Swift's previous albums, though, will be available on Apple Music though. (1)</a></td></tr>
-  <tr><td style='display:none'>22</td><td></td><td>2015-06-21 04:07:52</td><td></td><td><a href='apple_13.html'>Although Apple is likely to use some algorithms to filter stories, the hiring of experienced journalists is a positive step, said Dan Kennedy, a journalism professor at Northeastern University. (7)</a></td></tr>
-  <tr><td style='display:none'>23</td><td></td><td>2015-06-21 15:17:49</td><td></td><td><a href='apple_17.html'>In an open letter to Apple, Taylor Swift has criticized the company's new streaming music service for failing to pay artists for a free three-month trial. (20)</a></td></tr>
-  <tr><td style='display:none'>24</td><td></td><td>2015-06-25 20:09:08</td><td></td><td><a href='apple_24.html'>Apple Inc has removed several civil war games featuring Confederate flags from its App Store, some game developers said. (7)</a></td></tr>
-  <tr><td style='display:none'>25</td><td></td><td>2015-06-30 15:17:23</td><td></td><td><a href='apple_3.html'>A divided federal appeals court on Tuesday said Apple Inc. orchestrated a conspiracy with five publishers to increase e-book prices, in a victory for the U.S. Justice Department. (7)</a></td></tr>
-  <tr><td style='display:none'>26</td><td></td><td>2015-07-01 05:23:55</td><td></td><td><a href='apple_32.html'>AC/DC to put music on Spotify, Apple Music (1)</a></td></tr>
-  <tr><td style='display:none'>27</td><td></td><td>2015-07-02 08:00:00</td><td></td><td><a href='apple_27.html'>Complete with high-profile DJs and programmed shows, it sets the service apart from the pack and best illustrates Apple's ambition - to become a destination spot not unlike media giants of yore. (3)</a></td></tr>
-  <tr><td style='display:none'>28</td><td></td><td>2015-07-03 21:18:52</td><td></td><td><a href='apple_46.html'>Apple's new streaming service features live radio programming, including shows hosted by Zane Lowe, Ebro Darden and Julie Adenuga. (3)</a></td></tr>
-  <tr><td style='display:none'>29</td><td></td><td>2015-07-06 17:15:58</td><td></td><td><a href='apple_29.html'>Apple Music - the lowdown (1)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 13:37:19</td><td></td><td><a href='apple_40.html'>Apple is expected to unveil a new music service and better tools to build apps for its smartwatch at its annual gathering of developers in San Francisco on Monday. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 17:42:00</td><td></td><td><a href='apple_7.html'>The new Mac system will be more formally known as OS X 10.11, as it's the 11th update to a system adapted from the NeXT operating system that co-founder Steve Jobs brought to Apple when he returned in 1997 after an exile. (15)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-08 20:26:00</td><td></td><td><a href='apple_44.html'>Everything you need to know about Apple Pay in the UK (1)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-09 01:34:06</td><td></td><td><a href='apple_42.html'>The big news at Apple's Worldwide Developers Conference always revolves around new apps and updated operating systems. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-09 05:15:00</td><td></td><td><a href='apple_31.html'>70 per cent of Apple's staff are male. (1)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-09 07:01:00</td><td></td><td><a href='apple_38.html'>Can Apple win the streaming wars? (1)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-09 07:02:37</td><td></td><td><a href='apple_15.html'>"It'll change the way you experience music forever," CEO Tim Cook promised Monday at Apple's annual conference for software developers, held in San Francisco. (4)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-09 21:01:24</td><td></td><td><a href='apple_5.html'>The maker of iPods and iPhones announced Apple Music, an app that combines Beats 1, a 24-hour, seven-day live radio station, with an on-demand music streaming service. (5)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-10 05:24:07</td><td></td><td><a href='apple_43.html'>The attorneys general of New York and Connecticut are investigating Apple Inc's negotiations with music companies to look for signs of potential antitrust violations. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-06-10 07:10:15</td><td></td><td><a href='apple_41.html'>Apple Maps has improved a lot for driving and walking directions since it ousted Google Maps in 2012 as the default service on iPhones. (5)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-06-10 11:05:40</td><td></td><td><a href='apple_36.html'>COPENHAGEN, Denmark (AP) - Music streaming company Spotify says it has gotten a new investment from TeliaSonera, a Nordic telecoms company, as it looks to compete globally with similar services from Apple Inc. and others. (3)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-06-10 23:05:00</td><td></td><td><a href='apple_26.html'>If Apple is successful, said Ted Cohen, a former music executive, others in the industry may decide to weaken or phase out their free tiers, he added. (4)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-06-11 01:45:43</td><td></td><td><a href='apple_28.html'>Spotify Raises $526 Million in Apple Battle (1)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-06-11 08:00:00</td><td></td><td><a href='apple_34.html'>(Plus, soon after the great reveal, news came that Apple was being investigated by two states for antitrust violations in its negotiations with music companies.) (1)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-06-11 11:15:00</td><td></td><td><a href='apple_12.html'>Another email, sent by a retail worker in Beijing to Cook and other managers in 2013, said Apple treats its employees "as animals" and thieves. (4)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-06-11 14:10:04</td><td></td><td><a href='apple_0.html'>And as Apple looks to open new stores or renovate existing ones - including the iconic New York Fifth Avenue store, with its distinctive glass-cube entrance - the company will look for additional ways to do that. (8)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-06-11 14:10:04</td><td></td><td><a href='apple_35.html'>In with the old: Apple restores former bank for new store (1)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-06-11 16:00:13</td><td></td><td><a href='apple_39.html'>EU tax probes on Apple, Amazon, Starbucks at advanced stage: European Commission (1)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-06-13 16:41:00</td><td></td><td><a href='apple_37.html'>Apple is clearly working out these third-party app issues, though. (1)</a></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-06-19 14:17:14</td><td></td><td><a href='apple_33.html'>Apple Music won?t have Taylor Swift?s ?1989? (1)</a></td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-06-19 23:06:33</td><td></td><td><a href='apple_30.html'>Swift's previous albums, though, will be available on Apple Music though. (1)</a></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-06-21 04:07:52</td><td></td><td><a href='apple_13.html'>Although Apple is likely to use some algorithms to filter stories, the hiring of experienced journalists is a positive step, said Dan Kennedy, a journalism professor at Northeastern University. (7)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-06-21 15:17:49</td><td></td><td><a href='apple_17.html'>In an open letter to Apple, Taylor Swift has criticized the company's new streaming music service for failing to pay artists for a free three-month trial. (20)</a></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-06-25 20:09:08</td><td></td><td><a href='apple_24.html'>Apple Inc has removed several civil war games featuring Confederate flags from its App Store, some game developers said. (7)</a></td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-06-30 15:17:23</td><td></td><td><a href='apple_3.html'>A divided federal appeals court on Tuesday said Apple Inc. orchestrated a conspiracy with five publishers to increase e-book prices, in a victory for the U.S. Justice Department. (7)</a></td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-07-01 05:23:55</td><td></td><td><a href='apple_32.html'>AC/DC to put music on Spotify, Apple Music (1)</a></td></tr>
+  <tr><td style='display:none'>26</td><td></td><td>2015-07-02 08:00:00</td><td></td><td><a href='apple_27.html'>Complete with high-profile DJs and programmed shows, it sets the service apart from the pack and best illustrates Apple's ambition - to become a destination spot not unlike media giants of yore. (3)</a></td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-07-03 21:18:52</td><td></td><td><a href='apple_45.html'>Apple's new streaming service features live radio programming, including shows hosted by Zane Lowe, Ebro Darden and Julie Adenuga. (3)</a></td></tr>
+  <tr><td style='display:none'>28</td><td></td><td>2015-07-06 17:15:58</td><td></td><td><a href='apple_29.html'>Apple Music - the lowdown (1)</a></td></tr>
 </table></body></html>

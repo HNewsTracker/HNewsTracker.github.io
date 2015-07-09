@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 09:55:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463137&ref=rss'>site</a></td><td>SAMARA, Russia (AP) " FIFA has suspended the 2026 World Cup bidding process amid a widening corruption scandal implicating previous bid contests.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cdn.rt.com/files/news/41/01/70/00/fifa-suspends-bidding.si.jpg'></td><td>2015-06-10 10:11:58</td><td><a href='http://rt.com/news/266263-fifa-suspends-2026-bidding/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td>The host for the tornament is expected to be chosen by the 209 FIFA members in May 2017 at a meeting in Kuala Lumpur, Malaysia.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/06/sp-fifa-a-20150611-200x200.jpg'></td><td>2015-06-10 10:16:02</td><td><a href='http://www.japantimes.co.jp/sports/2015/06/10/soccer/international-soccer/fifa-postpones-2026-world-cup-bidding-amid-turmoil/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+japantimes_sports+%28The+Japan+Times+Headline+News+-+Sports%29'>site</a></td><td><table><tr><td>FIFA secretary general Jerome Valcke says it would be "nonsense" to begin the process now.</td></tr><tr><td>FIFA planned to write to its 209 member federations this week to explain the bidding timetable and rules.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/12/23/03096E0400000514-0-image-a-63_1434146919583.jpg'></td><td>2015-06-12 23:09:22</td><td><a href='http://www.dailymail.co.uk/sport/football/article-3122225/Interpol-suspends-decade-long-partnership-FIFA-amid-corruption-investigations.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Interpol secretary general Jurgen Stock said: 'In light of the current context surrounding FIFA, while Interpol is still committed to developing our Integrity in Sport programme, I have decided to suspend the agreement.</td></tr>
 </table></body></html>
