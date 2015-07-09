@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 20:26:56</td><td><a href='http://news.yahoo.com/tropical-storm-carlos-forms-south-mexico-162817197.html'>site</a></td><td><table><tr><td>MIAMI (AP) - Hurricane Carlos hovered Saturday over the Pacific Ocean south of Acapulco, Mexico, hours after a hurricane watch was issued for a swath of that country's southwest coastline, forecasters said.</td></tr><tr><td>Mexico's government has issued a hurricane watch from Lazaro Cardenas to Punta San Telmo along Mexico's southwest mainland coast, meaning hurricane conditions were possible within that area within 48 hours.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 12:28:03</td><td></td><td><a href='mexico_34_35.html'>Hurricane Carlos has weakened slightly but is expected to regain punch, hovering stationary over the Pacific Ocean off Mexico. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 19:36:01</td><td><a href='http://abcnews.go.com/International/wireStory/hurricane-warning-issued-carlos-gain-strength-speed-31751202'>site</a></td><td><table><tr><td>Sergio Pina, 41, a business risk manager from Mexico City, stood among a group of spectators watching the wild weather.</td></tr><tr><td>Rain accumulations of 6 inches to 10 inches were possible in southwestern Mexico, with a chance for up to 15 inches in some areas, according to the hurricane center.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-15 04:02:48</td><td></td><td><a href='mexico_34_36.html'>Officials ordered schools closed Monday and readied shelters along Mexico's southwestern coast as Tropical Storm Carlos battered beaches with high waves and strong wind as it swirled just offshore. (2)</a></td></tr>
+</table></body></html>

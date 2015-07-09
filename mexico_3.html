@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,10 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-06-08 05:46:07</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/08/ruling-party-leads-1st-independent-wins-in-mexico-elections'>site</a></td><td>It was the first election in Mexico to allow unaffiliated candidates, thanks to an electoral reform last year.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-08 05:46:07</td><td></td><td><a href='mexico_3_6.html'>Ruling party leads, 1st independent wins in Mexico elections (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-08 05:57:31</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-08-LT--Mexico-Elections/id-b9d9353611a74cccbcba68597f005b24'>site</a></td><td>Rodriguez, Mexico's first independent gubernatorial candidate, was leading in exit polls as voting closed Sunday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 07:30:51</td><td></td><td><a href='mexico_3_5.html'>Poll workers count ballots under a street lights, at an outdoor poling station in Chilpancingo, Guerrero State, Mexico, Sunday, June 7, 2015. (7)</a></td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7fMT9ofzU8aVSrlq1ttNLQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/cf7cd053976dc319780f6a706700f7f1.jpg'></td><td>2015-06-08 13:38:36</td><td><a href='http://news.yahoo.com/ruling-party-leads-1st-independent-wins-mexico-elections-054624872.html'>site</a></td><td>The biggest loser was the Democratic Revolution Party, which has been Mexico's leading leftist party for a quarter century.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 21:10:25</td><td></td><td><a href='mexico_3_4.html'>MEXICO CITY (AP) - Here are five things to know about Mexico's midterm elections, seen as a referendum on President Enrique Pena Nieto's government halfway through his six-year mandate. (2)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-08 21:10:25</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/08/winners-and-losers-5-takeaways-from-mexico-midterm-vote'>site</a></td><td>His win is a first for Mexico, made possible by a reform last year allowing people not affiliated with parties to run.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 05:46:07</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/08/ruling-party-leads-1st-independent-wins-in-mexico-elections'>site</a></td><td>It was the first election in Mexico to allow unaffiliated candidates, thanks to an electoral reform last year.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/07/cf7cd053976dc319780f6a706700f7f1_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-06-08 05:46:07</td><td><a href='http://www.utsandiego.com/news/2015/jun/07/ruling-party-leads-1st-independent-wins-in-mexico/'>site</a></td><td>Ruling party leads, 1st independent wins in Mexico elections</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-08 07:30:51</td><td></td><td><a href='mexico_3_4.html'>Poll workers count ballots under a street lights, at an outdoor poling station in Chilpancingo, Guerrero State, Mexico, Sunday, June 7, 2015. (5)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7fMT9ofzU8aVSrlq1ttNLQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/cf7cd053976dc319780f6a706700f7f1.jpg'></td><td>2015-06-08 13:38:36</td><td><a href='http://news.yahoo.com/ruling-party-leads-1st-independent-wins-mexico-elections-054624872.html'>site</a></td><td>The biggest loser was the Democratic Revolution Party, which has been Mexico's leading leftist party for a quarter century.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-08 21:10:25</td><td></td><td><a href='mexico_3_5.html'>MEXICO CITY (AP) - Here are five things to know about Mexico's midterm elections, seen as a referendum on President Enrique Pena Nieto's government halfway through his six-year mandate. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-08 21:10:25</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/08/winners-and-losers-5-takeaways-from-mexico-midterm-vote'>site</a></td><td>His win is a first for Mexico, made possible by a reform last year allowing people not affiliated with parties to run.</td></tr>
 </table></body></html>

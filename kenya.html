@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 05:30:01</td><td></td><td><a href='kenya_0.html'>OKLAHOMA CITY (AP) - Jury selection is scheduled to begin in the federal trial of an Oklahoma man accused of sexual misconduct with children at an orphanage in Kenya. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 15:19:33</td><td></td><td><a href='kenya_7.html'>The World Food Program said for the second time in just over six months it was being forced to reduce the size of food ratios for about 500,000 refugees living in Dadaab and Kakuma camps in northern Kenya. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 09:14:01</td><td></td><td><a href='kenya_1.html'>Al-Shabab militants is carrying out attacks in Kenya because it is among several African countries that have deployed troops to Somalia to fight the militants who are waging an insurgency against Somalia's weak government. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-14 11:29:17</td><td></td><td><a href='kenya_5.html'>Although Mpeketoni is inland from Kenya's Indian Ocean coastline, the attacks froze the tourism industry in Lamu, which had been popular with tourists from Europe and North America. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-21 05:19:34</td><td></td><td><a href='kenya_3.html'>A policeman patrols as refugees from South Sudan queue to attend World Refugee Day celebrations at the Kakuma refugee camp in Kenya. (5)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-07 05:46:24</td><td></td><td><a href='kenya_4.html'>Eleven people were also wounded in the attack which took place in Soko Mbuzi village in Mandera County near Kenya's border with Somalia, said Mandera County Commissioner Alex Nkoyo. (3)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-07 08:48:12</td><td></td><td><a href='kenya_6.html'>Abbas Gullet, secretary general of Kenya Red Cross, said the workers were attacked as they slept. (2)</a></td></tr>
+</table></body></html>

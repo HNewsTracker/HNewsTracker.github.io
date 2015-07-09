@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 09:11:11</td><td></td><td><a href='nepal_11.html'>The remains of the villagers were flown back to Nepal on Sunday and were being stored at Tribhuwan University Teaching Hospital in Kathmandu, where relatives of the civilian victims gathered Monday. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 20:00:58</td><td></td><td><a href='nepal_7.html'>Some analysts say the earthquake and its aftermath have led politicians, seen as selfish and out of touch with the plight of Nepal's poor, to show a greater sense of common purpose. (1)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-09 03:55:58</td><td></td><td><a href='nepal_2.html'>The latest agreement was signed by United Communist Party of Nepal (Maoist), the main opposition party. (4)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 06:54:12</td><td></td><td><a href='nepal_10.html'>Scores of people die every year from flooding and landslides during the monsoon season in Nepal. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-11 07:40:00</td><td></td><td><a href='nepal_0.html'>Also, the trails around the Langtang valley in northern Nepal were completely damaged and an entire village buried by a landslide and avalanche set off by the earthquake. (6)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-11 11:40:30</td><td></td><td><a href='nepal_8.html'>21 dead, dozens missing as landslide buries Nepal villages (1)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-15 06:23:19</td><td></td><td><a href='nepal_4.html'>Nepal has reopened most of the heritage sites that were damaged in a pair of strong earthquakes that devastated parts of the country recently, hoping to bring back foreign tourists. (6)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-30 13:54:44</td><td></td><td><a href='nepal_9.html'>In this photo by Niranjan Shrestha, farmers play with sludge as they plant paddy saplings in a field outside Kathmandu, Nepal, on Asar Pandhra day. (2)</a></td></tr>
+</table></body></html>

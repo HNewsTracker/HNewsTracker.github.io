@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tsipras</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 11:09:00</td><td></td><td><a href='tsipras_10.html'>However, Schinas said Moscovici had informed the government Tuesday afternoon "that their latest suggestions do not reflect the state of discussions between President Juncker and Prime Minister Tsipras Wednesday night and those between Commissioner Moscovici and the Greek ministers Monday afternoon." (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 11:43:53</td><td></td><td><a href='tsipras_16.html'>A poll showed a slight rise since April in the number who are dissatisfied with Tsipras's negotiating performance with the creditors, reaching 53.4 percent from 50.5 percent. (7)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-13 13:12:25</td><td></td><td><a href='tsipras_14.html'>Tsipras used the term "sustainable solution" to refer to a long-standing demand for large parts of Greece's mountainous debts to be written off - something he believes is vital if the Greek economy is to start getting back on its feet after a five-year depression. (4)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-13 19:54:02</td><td></td><td><a href='tsipras_17.html'>The official said Tsipras told four senior ministers Friday that his government, elected last January, has a fresh popular mandate and that "people have trusted us to take crucial decisions and manage the difficulties." (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-20 17:43:57</td><td></td><td><a href='tsipras_12.html'>Minister of State Alekos Flambouraris said in a TV interview earlier Saturday that there could be a phone discussion between Tsipras and European Commission President Jean-Claude Juncker later Saturday, although it had not been scheduled yet. (4)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-30 05:13:30</td><td></td><td><a href='tsipras_0.html'>Greek Prime Minister Alexis Tsipras was defiant, urging voters to reject creditors' demands, insisting a "No" vote in next Sunday's referendum would strengthen Athens' negotiating hand. (35)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-03 13:15:19</td><td></td><td><a href='tsipras_18.html'>Greek PM Tsipras says IMF report fully justifies Greece's position on debt relief (1)</a></td></tr>
+</table></body></html>

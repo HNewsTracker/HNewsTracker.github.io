@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>european games</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 13:48:24</td><td></td><td><a href='european_games_4.html'>THE HAGUE, Netherlands (AP) - On the eve of the inaugural European Games in Azerbaijan, the Netherlands on Wednesday pulled out of hosting the second edition of the multi-sport event in 2019. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 14:02:18</td><td></td><td><a href='european_games_17.html'>"I have no doubt that we will be able to present a strong host for the 2019 European Games, but right now our focus remains on ensuring this inaugural edition is the best possible launch pad for Europe's first continental Games." (1)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 07:55:15</td><td></td><td><a href='european_games_16.html'>BAKU, Azerbaijan (AP) " Organizers of the European Games insist the 2019 event will go ahead as planned despite the Netherlands pulling out as host nation. (1)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 09:29:04</td><td></td><td><a href='european_games_0.html'>Without any high-level track and field or swimming competitions - traditionally the two most popular Olympic sports - there are questions over the European Games' credibility as a sports event. (6)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-11 11:44:04</td><td></td><td><a href='european_games_19.html'>Three teenage synchronized swimmers from Austria were injured Thursday when they were hit by a shuttle bus in the athletes village on the eve of the inaugural European Games, Austrian Olympic officials said. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-11 15:26:41</td><td></td><td><a href='european_games_7.html'>Hosting the European Games has a particular significance for majority-Muslim Azerbaijan, which has long sought to present itself as a European rather than Asian nation, a strategy long followed by neighboring Turkey. (3)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-13 09:35:34</td><td></td><td><a href='european_games_9.html'>Catherine Ugwu, who coordinated the ceremony for games organizers, said they had to "work very hard on keeping it a secret" and that the singer "was kind enough to stay in a hotel and not move for several days." (5)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-13 17:18:07</td><td></td><td><a href='european_games_12.html'>In a story June 12 about the opening ceremony of the European Games, The Associated Press erroneously reported that Azerbaijani President Ilham Aliyev entered the stadium carrying a torch. (8)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-14 17:32:03</td><td></td><td><a href='european_games_15.html'>IOC's Bach praises European Games harmony (1)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-06-22 17:35:28</td><td></td><td><a href='european_games_2.html'>"Regarding the future, if we had the best athletes here in Europe and the equivalent of the European championship then of course we would be giving medals to each individual athlete," the games' chief operating officer Simon Clegg said Monday. (5)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-06-28 18:50:23</td><td></td><td><a href='european_games_18.html'>Actors perform during the closing ceremony of the 2015 European Games in Baku, Azerbaijan, Sunday, June 28, 2015. (3)</a></td></tr>
+</table></body></html>

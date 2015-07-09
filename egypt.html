@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 31,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 31 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 13:13:40</td><td></td><td><a href='egypt_32.html'>Egypt's foreign minister says his country is hosting the second meeting of Syrian opposition this year in a bid to champion a political process amid an international and regional focus on a military solution to the conflict now in its fifth year. (1)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 17:53:25</td><td></td><td><a href='egypt_39.html'>The report, quietly submitted to lawmakers last month, said that while Egypt has implemented some democratic reforms, "the overall trajectory of rights and democracy has been negative." (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-08 20:03:28</td><td></td><td><a href='egypt_31.html'>IS in Egypt kills man accused of being police 'spy' (1)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-09 06:24:09</td><td></td><td><a href='egypt_44.html'>Given such conditions, Egypt is unlikely to emerge as a top wine producer anytime soon, or even challenge nearby Lebanon, Israel, Turkey or Greece. (6)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-09 09:16:15</td><td></td><td><a href='egypt_28.html'>HRW had targeted Egypt since June 30, 2013 -- when the army overthrew the elected President Mohamed Mursi -- and was carrying out a "systematic campaign" against Egypt, he said. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-09 10:16:24</td><td></td><td><a href='egypt_16.html'>A criminal court in Egypt's coastal city of Port Said has sentenced 11 people to death over a 2012 football riot that left more than 70 dead and several hundreds injured. (6)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-09 15:40:53</td><td></td><td><a href='egypt_3.html'>Egypt aims to reduce its surging fertility rate over the next 15 years, a government minister said Tuesday, in an effort to address overpopulation concerns in the Arab world's most populous country. (4)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-09 18:04:23</td><td></td><td><a href='egypt_24.html'>CAIRO (AP) - Egypt's Commercial International Bank, the country's largest private-sector bank, has signed an agreement to acquire Citibank Egypt's retail operations that had been up for sale. (3)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-09 18:57:41</td><td></td><td><a href='egypt_43.html'>Egypt court sentences TV broadcaster to 1 year for slander (1)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-06-10 09:12:18</td><td></td><td><a href='egypt_7.html'>LUXOR, Egypt: Egyptian officials say a suicide bomber has blown himself up at the ancient temple of Karnak in Luxor, a southern city frequented by millions of foreign and Egyptian tourists every year. (18)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-06-13 09:46:58</td><td></td><td><a href='egypt_45.html'>Gaza officials said 15,000 people had registered to travel via Rafah, including at least 3,000 patients, and hundreds of students who study in Egypt and elsewhere in the Arab world. (1)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-06-13 11:48:27</td><td></td><td><a href='egypt_0.html'>RAFAH, Gaza Strip (AP) - Egypt opened its borders with the Gaza Strip for the first time in months Saturday, allowing Palestinians to enter and leave the isolated coastal strip. (7)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-06-13 13:37:08</td><td></td><td><a href='egypt_5.html'>President Abdel-Fattah el-Sissi has ordered the new waterway to be dug in a single year, saying that the urgency of Egypt's economic situation meant the project could not wait for an originally planned three-year timetable. (4)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-06-13 13:37:08</td><td></td><td><a href='egypt_40.html'>Egypt's new Suez Canal to be completed for Aug. 6 ceremony (2)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-06-13 19:07:16</td><td></td><td><a href='egypt_35.html'>Egypt sentences 23 to prison for killing 4 Shiite men (2)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-06-14 07:22:11</td><td></td><td><a href='egypt_27.html'>Ismailiya, Egypt: Egypt will inaugurate a "new Suez canal" shipping route in August aimed at speeding up traffic along the existing waterway and boosting revenues, officials say. (3)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-06-14 12:08:21</td><td></td><td><a href='egypt_11.html'>CAIRO - Officials say two separate road accidents in Egypt Sunday have killed 23 Egyptians and injured 17 others. (3)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-06-21 13:13:41</td><td></td><td><a href='egypt_34.html'>Al-Jazeera journalist Ahmed Mansour was being held in Berlin police custody today awaiting a judge's decision on his further detention on an international arrest warrant issued by his native Egypt, authorities said. (2)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-06-21 17:30:24</td><td></td><td><a href='egypt_15.html'>Egypt has named a new ambassador to Israel nearly three years after it had recalled the last one at the outset of the 2012 Israeli offensive in Gaza. (3)</a></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-06-21 19:43:19</td><td></td><td><a href='egypt_29.html'>A high-profile Al Jazeera journalist has been arrested in Germany at the request of Egypt. (1)</a></td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-06-22 16:25:33</td><td></td><td><a href='egypt_13.html'>CAIRO - The U.S. Embassy in Cairo says America has delivered two vessels, known as fast missile craft, to Egypt's navy to help it secure vital waterways such as the Suez Canal and Red Sea. (4)</a></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-06-22 17:25:01</td><td></td><td><a href='egypt_38.html'>Switzerland is dropping part of a prosecution case against Egypt's longtime autocrat Hosni Mubarak, his close aids and family members, involving hundreds of millions of Swiss francs frozen in Swiss banks. (1)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-06-22 17:46:42</td><td></td><td><a href='egypt_41.html'>Dozens of demonstrators gathered outside the justice building before Mansour was released, carrying signs with slogans including "stop the bloodbath in Egypt" and "freedom for Ahmed Mansour." (3)</a></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-06-28 16:35:05</td><td></td><td><a href='egypt_46.html'>Egypt sentences 3 to year in prison over racy video (1)</a></td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-06-29 13:58:05</td><td></td><td><a href='egypt_18.html'>Policemen investigate the site of a car bomb attack on the convoy of Egyptian public prosecutor Hisham Barakat near his house at Heliopolis district in Cairo, Egypt, June 29, 2015. (16)</a></td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-06-30 06:33:14</td><td></td><td><a href='egypt_42.html'>His name is still associated with many of Egypt's most famous digs, including grand discoveries such as the Valley of the Golden Mummies in Bahariya Oasis in 1999 and the mummy of Queen Hatshepsut almost a decade later. (5)</a></td></tr>
+  <tr><td style='display:none'>26</td><td></td><td>2015-07-03 21:05:59</td><td></td><td><a href='egypt_33.html'>Islamic State's Egypt affiliate, Sinai Province, said in a statement posted on Twitter by supporters that it had launched three Grad rockets toward "occupied Palestine". (2)</a></td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-07-03 23:18:13</td><td></td><td><a href='egypt_36.html'>Egypt's military deployed F-16 warplanes to bombard IS jihadists who battled troops after launching their surprise dawn attack. (2)</a></td></tr>
+  <tr><td style='display:none'>28</td><td></td><td>2015-07-04 18:34:45</td><td></td><td><a href='egypt_30.html'>It came in a week of bloodletting that saw Egypt's prosecutor general assassinated outside his Cairo home by a massive car bomb, and a special forces raid on an apartment that killed nine members of the outlawed Muslim Brotherhood. (2)</a></td></tr>
+  <tr><td style='display:none'>29</td><td></td><td>2015-07-05 12:35:16</td><td></td><td><a href='egypt_26.html'>CAIRO (AP) " Egypt's central bank says the Egyptian pound has fallen to a new low against the dollar, its second such drop since Thursday. (2)</a></td></tr>
+  <tr><td style='display:none'>30</td><td></td><td>2015-07-06 20:58:28</td><td></td><td><a href='egypt_37.html'>The New York-based Committee to Protect Journalists has said that at least 18 journalists were behind bars in Egypt as of June 1 and accused the government of using the pretext of national security to crackdown on freedoms. (3)</a></td></tr>
+</table></body></html>

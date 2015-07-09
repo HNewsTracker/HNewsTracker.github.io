@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150610&t=2&i=1055128377&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5908B'></td><td>2015-06-10 11:10:46</td><td><a href='http://www.reuters.com/article/2015/06/10/us-soccer-fifa-election-idUSKBN0OQ0L620150610?feedType=RSS&feedName=topNews'>site</a></td><td>"This extraordinary Executive Committee will convene in July, the precise date to be confirmed within this week. For this extraordinary elective Congress (to elect Blatter's successor) there are currently various date options for discussion."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297710732747_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-10 14:43:16</td><td><a href='http://www.torontosun.com/2015/06/10/fifa-shelves-bidding-for-2026-world-cup-seeks-blatter-replacement'>site</a></td><td>Scandal-plagued FIFA postponed the bidding for the right to host the 2026 World Cup on Wednesday and embarked on the search to find a replacement for outgoing President Sepp Blatter.</td></tr>
+</table></body></html>

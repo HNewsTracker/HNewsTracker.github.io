@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 00:39:08</td><td><a href='http://news.yahoo.com/mexicos-ruling-party-close-keeping-majority-despite-violence-003908027--business.html'>site</a></td><td><table><tr><td>Mexico's ruling party close to keeping majority despite violence, graft</td></tr><tr><td>Initial estimates from Mexico's electoral authority had the PRI and its partners winning between 246 and 263 lower house seats.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 18:27:51</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-president-leaves-hospital-gallbladder-surgery-32085716'>site</a></td><td>Mexico President Leaves Hospital After Gallbladder Surgery</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 18:30:27</td><td><a href='http://www.startribune.com/mexico-president-leaves-hospital-after-gallbladder-surgery/310487841/'>site</a></td><td>MEXICO CITY - Mexican President Enrique Pena Nieto left the hospital on Sunday after undergoing surgery to remove his gallbladder.</td></tr>
 </table></body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tsipras</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 11:09:00</td><td><a href='http://www.ctvnews.ca/business/greek-pm-heads-to-brussels-hoping-to-end-bailout-stalemate-1.2415072'>site</a></td><td>However, Schinas said Moscovici had informed the government Tuesday afternoon "that their latest suggestions do not reflect the state of discussions between President Juncker and Prime Minister Tsipras Wednesday night and those between Commissioner Moscovici and the Greek ministers Monday afternoon."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 11:34:52</td><td></td><td><a href='tsipras_10_11.html'>Tsipras' radical left Syriza party won early elections in January on promises of repealing the harsh austerity measures that accompanied Greece's 240 billion euro bailout program. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-10 15:56:04</td><td><a href='http://www.cbsnews.com/news/greek-leader-heads-to-brussels-to-meet-merkel-hollande/'>site</a></td><td>However, Merkel recently indicated she would have an opportunity to speak to Tsipras on Wednesday.</td></tr>
+</table></body></html>

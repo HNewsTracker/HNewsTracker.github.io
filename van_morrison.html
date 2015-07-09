@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>van morrison</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 17:23:41</td><td></td><td><a href='van_morrison_2.html'>NEW YORK (AP) - A handwritten poem by Jim Morrison found among his possessions in the Paris hotel where he died in 1971 ends with the line "Last words, Last words out." (6)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 21:33:05</td><td></td><td><a href='van_morrison_0.html'>The Belfast-born Morrison was honored Friday by Queen Elizabeth II for his services to music and tourism in Northern Ireland, the inspiration for many of his classics. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-12 22:42:34</td><td></td><td><a href='van_morrison_6.html'>Van Morrison knighted in Queen's honours list (1)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-15 03:09:04</td><td></td><td><a href='van_morrison_7.html'>Schlossnagle said he wants Morrison well-rested because he anticipates needing the Chicago Cubs' eighth-round draft pick again. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-19 06:51:04</td><td></td><td><a href='van_morrison_4.html'>Morrison and Lady Gaga picked up honorary prizes, while awards also were presented to Nate Ruess and the former CEO of the American Society of Composers Authors and Publishers (ASCAP), John LoFrumento. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-19 18:40:27</td><td></td><td><a href='van_morrison_8.html'>Recording artist Van Morrison gestures on the red carpet before the Songwriters Hall of Fame ceremony in New York, June 18, 2015. (1)</a></td></tr>
+</table></body></html>

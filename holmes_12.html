@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-27 00:38:19</td><td><a href='http://www.daytondailynews.com/ap/ap/us/prosecutors-question-doctor-who-found-theater-shoo/nmmPD/'>site</a></td><td><table><tr><td>Dr. Jonathan Woodcock, one of the first defense witnesses to take the stand, interviewed Holmes four days after the July 20, 2012, shooting to determine if he was competent to stand trial and then again earlier this year when he was asked by the defense to testify on Holmes' sanity.</td></tr><tr><td>He said Holmes was so delusional and psychotic as a result of deep-seeded mental illness that he was unable to tell right from wrong when he opened fire on the theater - Colorado's standard for an insanity verdict.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-27 00:39:14</td><td></td><td><a href='holmes_12_13.html'>In response to their inquiries, Woodcock reaffirmed his conclusion that Holmes was insane. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-27 00:41:05</td><td></td><td><a href='holmes_12_14.html'>Brauchler suggested that jurors and others in the courtroom who had watched all 22 hours of Dr. William Reid's interview, in which Holmes talked at length about his planning and preparation for the shooting, had observed him longer than Woodcock had. (2)</a></td></tr>
+</table></body></html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 18,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 18 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 09:42:38</td><td></td><td><a href='blatter_16.html'>Platini, a former France great and a leading candidate to replace Blatter as FIFA president, spoke Wednesday after meeting with French President Francois Hollande. (1)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 10:53:33</td><td></td><td><a href='blatter_17.html'>Fifa has announced the date for the election of Sepp Blatter's successor as president will be decided next month - with December 16 a likely option - and postponed the bidding process for the 2026 World Cup. (1)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-10 11:10:46</td><td></td><td><a href='blatter_6.html'>"This extraordinary Executive Committee will convene in July, the precise date to be confirmed within this week. For this extraordinary elective Congress (to elect Blatter's successor) there are currently various date options for discussion." (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-10 18:53:39</td><td></td><td><a href='blatter_8.html'>Under Blatter, FIFA has handed its development money out strategically. (1)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-11 11:10:40</td><td></td><td><a href='blatter_13.html'>The race to succeed Blatter gathered a new challenger on Wednesday when football great Zico formally declared his candidacy for the FIFA presidency, but the Brazilian admitted his chances of success were limited. (4)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-11 11:34:50</td><td></td><td><a href='blatter_10.html'>FIFA rules require senior vice president Issa Hayatou of Cameroon to step up as interim president if Blatter leaves before the election. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-11 11:39:51</td><td></td><td><a href='blatter_14.html'>"The European Parliament... therefore calls on FIFA to select, in a transparent and inclusive way, an appropriate interim leader to replace Joseph Blatter forthwith." (1)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-11 17:46:52</td><td></td><td><a href='blatter_20.html'>FIFA responded by announcing that its executive committee will meet on July 20 in Zurich to decide when from December to February the election to decide Blatter's successor should be held. (3)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-14 02:03:51</td><td></td><td><a href='blatter_4.html'>GENEVA (Reuters) - Sepp Blatter may seek to stay on as the president of FIFA, a Swiss newspaper quoted an anonymous source close to Blatter as saying on Sunday. (4)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-06-14 10:20:22</td><td></td><td><a href='blatter_15.html'>ZURICH (AP) " The official overseeing the next FIFA presidential election has reminded Sepp Blatter to stick with his plans to step down. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-06-25 14:00:10</td><td></td><td><a href='blatter_18.html'>With FIFA mired in a corruption scandal, Blatter, 79, delighted critics this month by announcing he would stand down as president of the governing body and call a leadership election, due between December and February. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-06-27 17:16:02</td><td></td><td><a href='blatter_11.html'>Sepp Blatter: 'I Have Not Resigned' (1)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-06-28 13:51:04</td><td></td><td><a href='blatter_5.html'>"I call on all concerned - including Mr. Blatter - to endorse in the interest of the reforms unequivocally the announced changing of the guard at the top of FIFA," Scala said. (3)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-06-30 18:55:51</td><td></td><td><a href='blatter_12.html'>FIFA president Sepp Blatter will not travel to Canada for the final of the women's World Cup on July 5 for personal reasons, a U.S.-based lawyer for Blatter said on Tuesday. (1)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-06-30 20:29:55</td><td></td><td><a href='blatter_9.html'>Traveling to Canada would have taken Blatter to the doorstep of the United States, where he is a target of the investigation into alleged soccer corruption. (1)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-07-01 23:22:15</td><td></td><td><a href='blatter_19.html'>The 79-year-old told Bunte that he happily accepts "fair and constructive criticism, also to consider what can be done differently. But when someone says, 'Blatter is corrupt because FIFA is corrupt', I can only shake my head. Anyone who makes such claims without proof should be jailed." (2)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-07-04 01:00:43</td><td></td><td><a href='blatter_7.html'>While both organizations raved about the successes of the event, the absence of Blatter and Valcke because of the FIFA corruption investigation lingered. (2)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-07-05 14:07:01</td><td></td><td><a href='blatter_0.html'>Welt am Sonntag quoted Blatter as saying the German football federation, DFB, had "received a recommendation (from Wulff) that Germany should vote for Qatar for economic interests". (8)</a></td></tr>
+</table></body></html>

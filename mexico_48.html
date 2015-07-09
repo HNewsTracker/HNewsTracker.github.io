@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 01:34:09</td><td><a href='http://www.foxnews.com/world/2015/06/10/mexico-decries-new-texas-law-beefing-up-security-along-border-says-it-will/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Mexico's Foreign Relations Department said Wednesday the new law will "promote division between our societies, and runs contrary to the principles and values governing the U.S.-Mexico bilateral relationship."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 01:34:09</td><td><a href='http://www.sfgate.com/news/texas/article/Mexico-decries-new-Texas-law-beefing-up-security-6319960.php'>site</a></td><td>Mexico didn't appear to object to moves to replace the National Guard troops.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 01:34:17</td><td><a href='http://news.yahoo.com/mexico-decries-texas-law-beefing-security-border-013417433.html'>site</a></td><td>Mexico decries new Texas law beefing up security on border</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 19:50:08</td><td><a href='http://www.startribune.com/3-teens-charged-with-cyberattack-on-baby-formula-website/308697101/'>site</a></td><td>ALBUQUERQUE, N.M. - Authorities say three Rio Rancho, New Mexico, teenage boys orchestrated a cyberattack on the Enfamil baby formula website, attracting the attention of the FBI and Secret Service.</td></tr>
 </table></body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>euro or eurozone</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/06/4431b24e19d2671e7b0f6a7067004551_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-06 15:44:00</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/06/whats-next-as-greece-stumbles-toward-euro-exit/'>site</a></td><td>That's followed by a meeting of eurozone finance ministers on Tuesday, and a full summit of the leaders of the 19 euro countries that evening.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/41/67/8265190/5/square_gallery_thumb.jpg'></td><td>2015-07-06 15:44:00</td><td><a href='http://www.sfgate.com/news/world/article/What-s-next-as-Greece-stumbles-toward-euro-exit-6368391.php'>site</a></td><td><table><tr><td>What's next, as Greece stumbles toward euro exit</td></tr><tr><td>Next stop could be the badlands of euro exit.</td></tr><tr><td>Many analysts think that would result in Greece leaving the euro.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/tVJ6fu0nqjgRF.M3PwTXzA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/4431b24e19d2671e7b0f6a7067004551_original.jpg'></td><td>2015-07-07 03:56:10</td><td><a href='http://finance.yahoo.com/news/whats-next-greece-stumbles-toward-154417485.html'>site</a></td><td>Greece, which overspent for years until its troubles became clear in 2009, has already been granted 240 billion euros in loans from the other eurozone countries.</td></tr>
+</table></body></html>

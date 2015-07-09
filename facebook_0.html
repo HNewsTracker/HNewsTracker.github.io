@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/jghqJBgXnxL9zDlE5Wz_Bw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_REUTERS-EN_WRAPPER_NEW_1/2015-06-09T191010Z_1_LYNXMPEB580WQ_RTROPTP_3_VARIETY-ENTERTAINMENT-DIGITAL-NEWS_original.jpg'></td><td>2015-06-10 11:17:51</td><td><a href='http://finance.yahoo.com/news/exclusive-facebook-earns-51-percent-111751218.html'>site</a></td><td><table><tr><td>Facebook earns 51% of ad revenue overseas</td></tr><tr><td>A 3D plastic representation of the Facebook logo is seen in this illustration in Zenica, Bosnia and Herzegovina, May 13, 2015.</td></tr><tr><td>While Facebook has reported regional growth in percentage terms, this is the first time it has detailed ad sales outside the United States and Canada as a percent of worldwide sales.</td></tr><tr><td>"The next 1 billion consumers are going to come from these countries," said Carolyn Everson, vice president, global marketing solutions at Facebook.</td></tr><tr><td>Mobile advertising represents more than 70 percent of Facebook's total ad revenue, and mobile is particularly strong and attractive to advertisers in emerging markets, Everson said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 11:17:51</td><td></td><td><a href='facebook_0_1.html'>Total advertising revenue for the quarter increased 46 percent to $3.3 billion, the vast majority of Facebook's $3.5 billion in quarterly revenue. (2)</a></td></tr>
+</table></body></html>

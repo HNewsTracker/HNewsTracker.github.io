@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 02:01:21</td><td><a href='http://www.torontosun.com/2015/07/02/us-drone-strike-kills-senior-islamic-state-leader'>site</a></td><td>The Treasury statement identified him as the Islamic State group's "amir of suicide bombers," saying he recruited foreign fighters for suicide attacks in Iraq and Syria.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 02:27:04</td><td></td><td><a href='state_islamic_26_27.html'>Last September, the U.S. Treasury Department imposed economic sanctions on al-Harzi and seven other individuals that it said have helped finance or facilitate the movement of foreign fighters joining the Islamic State and the Nusra Front. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='https://timedotcom.files.wordpress.com/2015/07/mideast-syria-islamic_wong.jpg?quality=65&amp;strip=color&amp;w=550'></td><td>2015-07-03 02:27:04</td><td><a href='http://time.com/3945381/us-drone-isis-islamic-state-leader-dead/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>(WASHINGTON) - A coalition airstrike in Syria has killed a senior Islamic State leader, who has been responsible for moving fighters and weapons from Libya to Syria, the Pentagon said Thursday.</td></tr>
+</table></body></html>

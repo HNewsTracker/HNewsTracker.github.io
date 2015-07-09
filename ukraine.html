@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 29,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 29 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 13:04:59</td><td></td><td><a href='ukraine_14.html'>MOSCOW (Reuters) - History has become a weapon in Russia's battle with the West over Ukraine as President Vladimir Putin looks increasingly to the past to whip up patriotism and rally support. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 15:49:52</td><td></td><td><a href='ukraine_36.html'>"Russia is in deep recession. So Russia's actions in Ukraine are hurting Russia and hurting the Russian people," Obama said. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-08 17:02:37</td><td></td><td><a href='ukraine_24.html'>VIENNA (Reuters) - Russia has refused to sign off on the U.N. nuclear watchdog's annual report because the document lists a nuclear reactor near Crimea's Sevastopol as being in Ukraine, two diplomats present at the meeting told Reuters on Monday. (1)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-08 19:01:26</td><td></td><td><a href='ukraine_33.html'>Ukraine's military says seven soldiers have died in eastern Ukraine after their truck hit a mine near the largest city in the war-torn east. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-09 09:03:41</td><td></td><td><a href='ukraine_23.html'>Fuel depot blazes in Ukraine, three firemen missing (1)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-09 09:58:09</td><td></td><td><a href='ukraine_31.html'>A spokesman for Ukraine's Emergencies Ministry told AFP that it was aware of six people being injured. (1)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-09 14:46:57</td><td></td><td><a href='ukraine_37.html'>However, Ukraine urgently evacuated hundreds of residents from the site of a series of fuel depot blasts after the fire spread, leaving several people missing and at least one confirmed dead. (1)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-09 16:58:02</td><td></td><td><a href='ukraine_0.html'>KIEV, Ukraine (AP) - Ukrainian firefighters on Tuesday managed to contain a major blaze that had engulfed a fuel depot near Kiev, preventing it from spreading to another fuel depot and a nearby military base. (4)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-10 04:03:19</td><td></td><td><a href='ukraine_20.html'>MOSCOW (AP) - A new survey shows that Americans are less willing than Europeans to send economic aid to Ukraine, where the government is struggling to keep the economy afloat while battling Russian-backed separatists. (5)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-06-10 19:36:09</td><td></td><td><a href='ukraine_4.html'>Pope Francis has met privately with Russian president Vladimir Putin at the Vatican, using the talks to call for a "sincere and great effort" aimed at bringing peace to Ukraine. (14)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-06-11 06:33:08</td><td></td><td><a href='ukraine_11.html'>KIEV, Ukraine (AP) - Alesya Bolot worked for a contemporary arts foundation that converted an abandoned factory into a mecca for young and bright people with daring ideas. (6)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-06-11 10:55:14</td><td></td><td><a href='ukraine_32.html'>KIEV, Ukraine (AP) " Ukraine's government broadcasting authority has extended the operating licensing for a popular television station that has been accused of a pro-Russia stance. (2)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-06-11 15:50:25</td><td></td><td><a href='ukraine_38.html'>Killings of soldiers and civilians fray Ukraine's ceasefire (1)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-06-12 23:59:00</td><td></td><td><a href='ukraine_22.html'>Ukraine says it may freeze debt payments to fund war (1)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-06-13 11:30:09</td><td></td><td><a href='ukraine_41.html'>A craze has swept through Ukraine for the removal of Lenin monuments, regardless of abiding fondness among many elderly people for the communist era. (5)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-06-13 12:43:12</td><td></td><td><a href='ukraine_26.html'>A Russia-backed rebel loads shells in a tank at Donetsk airport, eastern Ukraine, Friday, June 12, 2015. (1)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-06-14 11:50:23</td><td></td><td><a href='ukraine_39.html'>The truce brokered by the leaders of Ukraine, Russia, Germany and France in Minsk, Belarus, has stemmed large-scale fighting but skirmishes claim lives almost daily on both sides. (1)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-06-20 17:28:38</td><td></td><td><a href='ukraine_17.html'>McCain has been a lively supporter of legislation passed in the U.S. Senate this week that includes provisions to supply Ukraine with hundreds of millions of dollars in defence military equipment. (5)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-06-22 15:54:57</td><td></td><td><a href='ukraine_30.html'>An EU statement said the decision was taken without debate by the bloc's foreign ministers at a meeting in Luxembourg, in response to "Russia's destabilizing role in eastern Ukraine." (1)</a></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-06-25 16:38:02</td><td></td><td><a href='ukraine_27.html'>Inside Ukraine, where pro-Russian separatists are battling Ukrainian forces, Breedlove said "we see a force that has been trained, that is led by Russian leadership, ... and is ready to do whatever mission is required of it in the Donbass (region)." (2)</a></td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-06-26 03:21:18</td><td></td><td><a href='ukraine_9.html'>Russian President Vladimir Putin and President Barack Obama spoke by telephone Thursday and discussed continued tensions in eastern Ukraine and the fight against the Islamic State in the Middle East. (3)</a></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-06-26 05:54:31</td><td></td><td><a href='ukraine_28.html'>June 25, 2015: NATO Secretary General Jens Stoltenberg, second right, speaks with Ukraine's Defense Minister Stepan Poltorak, second left, during a meeting of the NATO-Ukraine Commission at NATO headquarters in Brussels. (1)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-06-27 00:47:55</td><td></td><td><a href='ukraine_40.html'>The US State Department's number two diplomat on Friday compared China's behavior in pursuit of territory in the South China Sea to that of Russia in eastern Ukraine. (1)</a></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-07-02 07:35:57</td><td></td><td><a href='ukraine_34.html'>BUCHAREST, Romania - NATO Secretary General Jens Stoltenberg is meeting top officials in Romania and will inspect a site where the alliance will build a facility in reaction to the crisis in Ukraine. (1)</a></td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-07-03 14:28:02</td><td></td><td><a href='ukraine_35.html'>BRATISLAVA, Slovakia (AP) - Slovakia's spy agency says Russian agents have significantly increased their activities in Slovakia and all other NATO and European Union countries in connection with the crisis in Ukraine. (3)</a></td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-07-05 12:17:52</td><td></td><td><a href='ukraine_29.html'>Despite an internationally brokered cease-fire in February, sporadic fighting continues along Ukraine's front line and each side regularly accuses the other of shelling its positions. (3)</a></td></tr>
+  <tr><td style='display:none'>26</td><td></td><td>2015-07-06 18:19:16</td><td></td><td><a href='ukraine_1.html'>FILE - In this Wednesday May 21, 2014 file photo, a gas pressure gauge in Bil 'che-Volicko-Ugerske underground gas storage facilities is seen in Strij, outside Lviv, Ukraine. (9)</a></td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-07-07 01:14:29</td><td></td><td><a href='ukraine_25.html'>"Senator Durbin has been outspoken in his criticism of Russia's invasion of Ukraine and supportive of Ukrainian efforts to reform their economy and defend their nation," Durbin spokesman Ben Marter said. (1)</a></td></tr>
+  <tr><td style='display:none'>28</td><td></td><td>2015-07-07 14:00:05</td><td></td><td><a href='ukraine_42.html'>Ukraine's Energy Minister Volodymyr Demchyshyn said on Tuesday that energy-rich Russia had recently also stopped supplying electricity to the militia-run regions of Lugansk and Donetsk because bills were not being paid. (2)</a></td></tr>
+</table></body></html>
