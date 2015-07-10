@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/e878100539384fc53e3134739df4f737446d0b07/0_0_4056_2437/500.jpg'></td><td>2015-06-11 03:13:36</td><td><a href='http://www.theguardian.com/technology/2015/jun/11/apple-knew-about-demeaning-bag-checks-on-employees-before-lawsuit'>site</a></td><td><table><tr><td>The employee complaints, which a judge ordered unsealed, are part of a 2013 lawsuit alleging Apple should compensate employees for the time it takes to conduct the searches.</td></tr><tr><td>In the 2012 email to Cook, with a subject line "Fearless feedback from Apple retail specialist", the employee said Apple's policy implied the company did not trust its workers.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 13:36:07</td><td><a href='http://nypost.com/2015/06/11/apples-bag-search-policy-treats-workers-as-criminals-suit/'>site</a></td><td><table><tr><td>Another email, sent by a retail worker in Beijing to Cook and other managers in 2013, said Apple treats its employees "as animals" and thieves.</td></tr><tr><td>Cook's response to that email is not displayed in the court filing, though other Apple executives did discuss the bag search policy.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 17:03:12</td><td><a href='http://www.usnews.com/news/technology/articles/2015/06/09/apple-music-brings-change-to-streaming-but-is-it-enough'>site</a></td><td>Here's a look at some of the major aspects of Apple Music.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 21:01:24</td><td><a href='http://www.seattlepi.com/business/technology/article/Who-s-Who-in-music-streaming-Apple-Spotify-6316853.php'>site</a></td><td><table><tr><td>Who's Who in music streaming: Apple, Spotify, Pandora & more</td></tr><tr><td>SAN FRANCISCO (AP) - Apple shook up the music world more than a decade ago when it offered an easy way to buy songs digitally for 99 cents each.</td></tr><tr><td>- With last year's purchase of headphones maker Beats, Apple got Beats Music, which offers unlimited listening and offline playback for $10 a month.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-09 21:01:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/09/whos-who-in-music-streaming-apple-spotify-pandora-more'>site</a></td><td>The maker of iPods and iPhones announced Apple Music, an app that combines Beats 1, a 24-hour, seven-day live radio station, with an on-demand music streaming service.</td></tr>
 </table></body></html>

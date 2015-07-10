@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-21 16:05:47</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift writes open letter to Apple Music bosses</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-21 18:42:15</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift has written an open letter to Apple Music bosses explaining why she is withholding her album 1989 from their service, telling them "it is unfair to ask anyone to work for nothing".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/06/30/business/Microsoft/Microsoft-thumbStandard.jpg'></td><td>2015-07-08 05:22:48</td><td><a href='http://www.nytimes.com/2015/07/09/technology/microsoft-layoffs.html'>site</a></td><td><table><tr><td>Microsoft has continued to lose market share in smartphones since acquiring Nokia's handset business.</td></tr><tr><td>Last month, the company said that Stephen Elop, the former chief executive of Nokia who became a senior Microsoft executive after the acquisition, overseeing its devices business, would leave Microsoft.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 07:23:08</td><td><a href='http://www.reuters.com/article/2015/07/08/us-microsoft-redundancies-idUSKCN0PI0GL20150708?feedType=RSS&feedName=businessNews'>site</a></td><td>The layoffs are expected to affect employees at the hardware group and other parts of the company, including the smartphone business that Microsoft acquired from Nokia last year, the newspaper said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/44/40/8276022/9/628x471.jpg'></td><td>2015-07-08 23:00:18</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-cuts-7-800-jobs-as-phone-sales-flag-6372554.php'>site</a></td><td>Analysts have said the Nokia business was a drag on Microsoft's profits.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-08 23:00:56</td><td><a href='http://abcnews.go.com/Technology/wireStory/microsoft-cuts-7800-jobs-phone-sales-flag-32298427'>site</a></td><td>Microsoft isn't getting out of the hardware business altogether, although Nadella said the company will no longer focus on building a "stand-alone phone business."</td></tr>
 </table></body></html>

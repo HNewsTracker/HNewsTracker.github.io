@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 21:43:02</td><td><a href='http://www.foxbusiness.com/markets/2015/06/11/pentagon-price-tag-for-war-on-islamic-state-is-27-billion-most-it-for-air-force/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>WASHINGTON - The Pentagon says the U.S. has spent more than $2.7 billion on the war against Islamic State militants in Iraq and Syria since bombings began last August, and the average daily cost is now more than $9 million.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 18:05:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463269&ref=rss'>site</a></td><td>The fight against the Islamic State group has attracted dozens of Westerners, including a number of Iraq war veterans who have made their way back to the Middle East to join Kurdish fighters, who have been most successful against the extremist group.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/uu/api/res/1.2/lXXrgUyl6uV858H.pf36Iw--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.cbsboston.com/a6a28ddcf2e6754bb097e35312e260c5'></td><td>2015-06-10 22:43:34</td><td><a href='http://news.yahoo.com/american-fighting-kurds-killed-islamic-state-battle-175851993.html'>site</a></td><td>Many are spurred on by Kurdish social media campaigners and a sense of duty rooted in the 2003 U.S.-led military invasion of Iraq, where Islamic State fighters recently have rolled back gains U.S. troops had made.</td></tr>
 </table></body></html>

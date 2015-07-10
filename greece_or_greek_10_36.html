@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,12 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 21:07:51</td><td><a href='http://news.yahoo.com/p-downgrades-greece-says-default-likely-no-debt-210751450.html'>site</a></td><td>The rating agency said Wednesday Greece has shown it is giving higher priority to pensions and other domestic spending than making debt payments on time.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/02/00/8134676/3/628x471.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-building-on-gains-from-the-6320951.php'>site</a></td><td>The move increases pressure on Athens to compromise but markets were worried that the outstanding differences between Greece and its creditors would lead to the country defaulting on its debt.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down/_jcr_content/image.adapt.250.low.greece_banks_062915.jpg'></td><td>2015-06-29 11:53:00</td><td><a href='http://america.aljazeera.com/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down.html'>site</a></td><td>The creditors wanted Greece to further cut pensions and raise taxes in ways that Tsipras has long argued would deepen one of the worst economic crises of modern times, in a country where over a quarter of the workforce is already unemployed.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>GREEK SAGA: Greece and its European creditors appeared to be narrowing their differences after Athens offered a raft of proposals to reduce the cost of pensions, hike taxes and cut state spending.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-09 16:51:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23561050.html#storylink=rss'>site</a></td><td>New Greek proposals aimed at ending a long standoff with international bailout creditors and unlocking vital rescue funds were received with little visible enthusiasm in Brussels on Tuesday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 10:05:43</td><td><a href='http://finance.yahoo.com/news/world-stocks-uneven-greek-impasse-094058299.html'>site</a></td><td>HONG KONG (AP) -- World stock benchmarks were uneven Wednesday as Greek and EU officials tried once again to break the deadlock over Greece's bailout terms.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=8007&amp;contextPath=7037-7986-7989-8007-&amp;pubId=13&amp;cat=&amp;meta=read-wirestory&amp;objId=23745514&amp;type=article&amp;title=Asia+stocks+drift+as+Greece+dampens+impact+of+strong+US+data&amp;url=http%3a%2f%2fwww.charlotteobserver.com%2fnews%2fbusiness%2fnational-business%2farticle23745514.html'></td><td>2015-06-12 03:39:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23745514.html#storylink=rss'>site</a></td><td>Asian stock markets were little changed Friday as lack of progress in bailout negotiations between Greece and its creditors dampened the positive impulse from upbeat U.S. retail and jobs data.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/_j00g7BCZHvqcUhI_UE38A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fa5b7058fe2591a790f6a7067007aa3.jpg'></td><td>2015-06-15 03:11:08</td><td><a href='http://news.yahoo.com/asia-stocks-slip-euro-down-greek-debt-talks-031108153--finance.html'>site</a></td><td>GREEK DRAMA: Weekend negotiations on Greece's bailout terms produced no breakthroughs and Greek officials and creditors remained far apart as a deadline for a debt payment nears.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201524/mer_140x93.jpg'></td><td>2015-06-25 21:10:32</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11471420&ref=rss'>site</a></td><td>The bitter standoff between Greece and its international creditors was extended into the weekend, just days before Athens has to meet a crucial debt deadline which could decide whether it goes bankrupt and gets kicked out of the euro currency club.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/6/i/p/image.related.articleLeadwide.620x349.ghykvh.png/1435293816058.jpg'></td><td>2015-06-26 04:43:45</td><td><a href='http://www.brisbanetimes.com.au/world/germany-and-france-tell-greece-to-sort-debt-deal-this-weekend-20150626-ghykvh.html'>site</a></td><td>Germany and France tell Greece to sort debt deal this weekend</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 08:34:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25812790.html#storylink=rss'>site</a></td><td>More than 13,000 people gathered in Athens to support him and denounce Greece's creditors, as they chanted: "Take the bailout and go!"</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>He is urging a resounding 'No', saying it would give him a strengthened mandate to return to negotiations and demand a better deal, including a writedown on Greece's massive debt.</td></tr>
 </table></body></html>

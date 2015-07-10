@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 13:05:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11462586&ref=rss'>site</a></td><td><table><tr><td>Russian security czar worried about Islamic State recruiters</td></tr><tr><td>MOSCOW (AP) " Russia's security chief says recruiters of the Islamic State group are active in the country and called for closer international cooperation to combat them.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 21:26:23</td><td><a href='http://www.reuters.com/article/2015/07/09/us-usa-security-fourth-idUSKCN0PJ2AU20150709?feedType=RSS&feedName=topNews'>site</a></td><td>Separately, a national security source said multiple overseas plots by Islamic State sympathizers had also been halted in recent days.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-09 21:26:23</td><td><a href='http://www.reuters.com/article/2015/07/09/us-usa-security-fourth-idUSKCN0PJ2AU20150709?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>Some of those arrested were communicating with Islamic State via encrypted data, a second U.S. security source said.</td></tr><tr><td>Comey estimated that dozens of people influenced by Islamic State have "gone dark" and disappeared from the FBI's watch because of encrypted data.</td></tr></table></td></tr>
 </table></body></html>

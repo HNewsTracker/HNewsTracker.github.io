@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 04:07:56</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/04/campaigns-halt-as-greeks-face-tough-referendum-choice'>site</a></td><td><table><tr><td>They also showed an overwhelming majority of people - about 75 percent - want Greece to remain in the euro currency.</td></tr><tr><td>He said if the European Union wants to keep Greece in the eurozone, it will have to come up with "a very generous plan" since the cost of the crisis has shot up to unanticipated levels.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 10:44:04</td><td><a href='http://www.charlotteobserver.com/sports/article26848027.html#storylink=rss'>site</a></td><td>Big Euro teams to avoid small World Cup qualifying groups</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-09 10:44:04</td><td><a href='http://www.miamiherald.com/sports/article26848027.html#storylink=rss'>site</a></td><td>Romania and Wales entered the top 10 on FIFA's rankings on Thursday after going unbeaten to lead their Euro 2016 qualifying groups.</td></tr>
 </table></body></html>

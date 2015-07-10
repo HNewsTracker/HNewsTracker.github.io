@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 08:00:03</td><td></td><td><a href='ebola_1_2.html'>MONROVIA A Liberian has died of Ebola in the first recorded case since the country at the heart of an epidemic was declared free of the virus on May 9, Deputy Health Minister Tolbert Nyenswah said on Tuesday. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='merica.aljazeera.com/content/ajam/multimedia/2015/6/after-ebola-outbreak-liberias-health-care-system-struggles-to-rebound/_jcr_content/image.adapt.480.low.liberia_healthcare_ward.jpg'></td><td>2015-06-30 08:20:00</td><td><a href='http://america.aljazeera.com/articles/2015/6/30/liberia-announces-first-ebola-death-since-country-declared-free-of-virus.html'>site</a></td><td>"A 17-year-old corpse was tested positive for Ebola virus. This took place in Margibi County. There is no need to panic. The corpse has been buried and our contact tracing has started work," said Nyenswah.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-01 18:29:33</td><td></td><td><a href='ebola_1_3.html'>Also Wednesday, workers exhumed the body of the 17-year-old male student whose infection, detected after his death, sparked fears of the return of Ebola to Liberia. (6)</a></td></tr>
+</table></body></html>

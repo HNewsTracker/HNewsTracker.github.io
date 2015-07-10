@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 20:50:00</td><td><a href='http://www.cnbc.com/id/102749673'>site</a></td><td>Standard and Poor's lowered its long-term sovereign credit rating on Greece to "CCC" from "CCC positive", saying the government would likely default on its commercial debt in the next 12 months in the absence of an agreement with creditors.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/00/34/8128306/7/square_gallery_thumb.jpg'></td><td>2015-06-10 21:36:24</td><td><a href='http://www.sfgate.com/news/world/article/Greek-leader-heads-to-Brussels-to-meet-Merkel-6317955.php'>site</a></td><td>With the onus firmly on Greece and options increasingly limited, Standard & Poor's in New York downgraded Greece's credit rating 1 notch further into junk territory.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-10 15:25:05</td><td><a href='http://www.miamiherald.com/news/business/article23646793.html#storylink=rss'>site</a></td><td>A broken sign at the headquarters of National Bank of Greece in Athens, Wednesday, June 10, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 16:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25105846.html#storylink=rss'>site</a></td><td>A girl sits on her father's shoulders as she unfurls the Greek flag during a protest march in solidarity with Greece in the center of Brussels on Sunday, June 21, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/21/d9/aa/d6fd049a1ea4418f815afdce1e3d93ec-9142a1b8966d4573809c45d61eac2188-0.jpg'></td><td>2015-06-21 21:02:27</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greece-presents-new-financial-proposals-to-europea/nmhZY/'>site</a></td><td>Presidential Guards perform a change of shift as anti-austerity protesters hold a rally in front of the parliament in Athens, Greece, on Sunday, June 21, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 08:34:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25812790.html#storylink=rss'>site</a></td><td>Demonstrators holding letters to form a banner take part in a protest against the European Central Bank, in Trafalgar Square, London, over Greece's debt repayments, Monday June 29, 2015.</td></tr>
 </table></body></html>

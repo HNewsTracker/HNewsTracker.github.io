@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=worldNews'>site</a></td><td>U.S. Treasury Secretary Jack Lew spoke with both Tsipras the his new finance minister and said Washington looked forward to Athens and other parties resuming conversations toward resolving the Greek situation, a Treasury spokeswoman said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 23:48:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/greek-pm-tsipras-races-to-restart-talks-after-vote-win'>site</a></td><td>U.S. Treasury Secretary Jack Lew added pressure on the European lenders, arguing debt relief was needed for a deal - and describing a Greek euro-exit as a "geopolitical mistake."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 18:52:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/11/greece-commits-to-step-up-reform-efforts-german-leader-says'>site</a></td><td>"It's not possible for Greece to achieve targets without reforms" especially in pensions, he said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>U.S. Treasury Secretary Jack Lew spoke with both Tsipras the his new finance minister and said Washington looked forward to Athens and other parties resuming conversations toward resolving the Greek situation, a Treasury spokeswoman said.</td></tr><tr><td>Lew voiced hope such an outcome "will allow Greece to make difficult but necessary fiscal and structural reforms, return to growth, and achieve debt sustainability within the euro zone," the Treasury statement said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 23:48:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/greek-pm-tsipras-races-to-restart-talks-after-vote-win'>site</a></td><td><table><tr><td>Speaking in Washington, Lagarde said Greece needed to continue cost-cutting reforms, but added: "The other leg is debt restructuring, which we believe is needed ... for debt sustainability."</td></tr><tr><td>U.S. Treasury Secretary Jack Lew added pressure on the European lenders, arguing debt relief was needed for a deal - and describing a Greek euro-exit as a "geopolitical mistake."</td></tr><tr><td>"I don't think any prime minister of Greece could sell all the additional fiscal measures, plus the structural reforms that are needed without some sense of what the debt sustainability looks like," he said in Washington.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-09 08:35:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11478406&ref=rss'>site</a></td><td>Greece rushing to finalize reforms and remain in euro</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/46/13/8282862/3/gallery_thumb.jpg'></td><td>2015-07-09 19:18:25</td><td><a href='http://www.seattlepi.com/business/technology/article/Review-Microsoft-Office-in-a-world-of-multiple-6375843.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Microsoft's new Office apps do a good job of helping us navigate a world in which we frequently switch from one device to another - from a Mac to a Windows PC, with a smartphone or tablet along the way.</td></tr><tr><td>Those with an Office 365 subscription can get the Mac Office starting Thursday at http://office.microsoft.com.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 05:24:07</td><td><a href='http://www.reuters.com/article/2015/06/10/us-apple-music-investigation-idUSKBN0OQ0BG20150610?feedType=RSS&feedName=topNews'>site</a></td><td>The attorneys general of New York and Connecticut are investigating Apple Inc's negotiations with music companies to look for signs of potential antitrust violations.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/06/09/102745901-RTX1FP5V.530x298.jpg?v=1433874701'></td><td>2015-06-10 06:06:00</td><td><a href='http://www.cnbc.com/id/102747112'>site</a></td><td>The letter said Universal Music Group had no agreements with Apple or music entities like Sony Music Entertainment and Warner Music Group that would impede the availability of free or ad-supported services.</td></tr>
 </table></body></html>

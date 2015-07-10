@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 14:52:00</td><td><a href='http://www.chicagotribune.com/bluesky/technology/ct-apple-new-store-old-bank-20150611-story.html'>site</a></td><td>Apple sought to restore some of the building's old grandeur by reproducing the original chandeliers seen in old photographs, restoring marble floors and pilasters and turning a bank vault into a VIP showroom.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 05:22:48</td><td></td><td><a href='apple_or_microsoft_23_25.html'>Last month, the company said that Stephen Elop, the former chief executive of Nokia who became a senior Microsoft executive after the acquisition, overseeing its devices business, would leave Microsoft. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static01.nyt.com/images/2015/06/30/business/Microsoft/Microsoft-thumbStandard.jpg'></td><td>2015-07-08 05:22:48</td><td><a href='http://www.nytimes.com/2015/07/09/technology/microsoft-layoffs.html'>site</a></td><td><table><tr><td>At the end of March, Microsoft had more than 118,000 employees globally.</td></tr><tr><td>He also warned in the message that Microsoft would need to "make some tough choices in areas where things are not working and solve hard problems in ways that drive customer value."</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 07:23:08</td><td></td><td><a href='apple_or_microsoft_23_24.html'>The latest job cuts are in addition to the 18,000 jobs Microsoft said it planned to cut a year ago, the newspaper said, citing sources familiar with the matter. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-08 21:41:55</td><td></td><td><a href='apple_or_microsoft_23_26.html'>Microsoft will cut 7,800 jobs and take a US$7.6 billion impairment charge as it attempts to revive its flagging phone hardware business. (6)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,6 +49,4 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/37/30/62/8228007/5/square_gallery_thumb.jpg'></td><td>2015-06-28 16:18:00</td><td><a href='http://www.sfgate.com/news/crime/article/The-Latest-Tunisia-puts-1-000-extra-police-on-6354008.php'>site</a></td><td><table><tr><td>The Latest: Queen Elizabeth II shocked about Tunisia attack</td></tr><tr><td>Queen Elizabeth II says the attack on a beach resort in Tunisia has left her and her husband, Prince Philip, shocked.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 13:12:02</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/03/britain-tunisia-honor-38-victims-of-beach-resort-attack'>site</a></td><td>Fans and staff at Wimbledon observed a minute's silence for the victims of last Friday's attack in Tunisia, in which 30 Britons were killed in a shooting rampage at a beach resort in Sousse.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/37/37/06/8253841/7/square_gallery_thumb.jpg'></td><td>2015-07-03 13:12:02</td><td><a href='http://www.sfgate.com/news/world/article/Britain-Tunisia-honor-38-victims-of-beach-resort-6364649.php'>site</a></td><td><table><tr><td>Britain, Tunisia honor 38 victims of beach resort attack</td></tr><tr><td>Flags have been lowered to half-staff at Buckingham Palace and U.K. government buildings as Britain and Tunisia honor the 38 victims of an Islamic extremist's rampage at a Tunisian beach resort.</td></tr></table></td></tr>
 </table></body></html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 09:55:16</td><td></td><td><a href='fifa_14_17.html'>SAMARA, Russia (AP) " FIFA has suspended the 2026 World Cup bidding process amid a widening corruption scandal implicating previous bid contests. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn.rt.com/files/news/41/01/70/00/fifa-suspends-bidding.si.jpg'></td><td>2015-06-10 10:11:58</td><td><a href='http://rt.com/news/266263-fifa-suspends-2026-bidding/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td>The host for the tornament is expected to be chosen by the 209 FIFA members in May 2017 at a meeting in Kuala Lumpur, Malaysia.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-10 11:17:04</td><td></td><td><a href='fifa_14_18.html'>"Due to the situation, I think it's nonsense to start any bidding process for the time being. It will be postponed," FIFA Secretary General Jerome Valcke told a news conference in the southern Russian city of Samara. (6)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-10 18:18:03</td><td></td><td><a href='fifa_14_19.html'>Two weeks ago it raided FIFA offices and opened "criminal proceedings against persons unknown on suspicion of criminal mismanagement and of money laundering." (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-10 21:29:03</td><td></td><td><a href='fifa_14_22.html'>"I would like to confirm this decision about the possibility of being a candidate in the next FIFA election," Zico told a news conference in his native Rio de Janeiro. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-10 22:02:35</td><td></td><td><a href='fifa_14_16.html'>Former Brazil star Zico on Wednesday confirmed he will stand in the election to succeed Sepp Blatter as president of FIFA, although he admitted he may struggle to find enough support. (35)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-11 04:35:04</td><td></td><td><a href='fifa_14_20.html'>Marin was one of seven top soccer officials arrested two weeks ago in connection with the growing bribery and corruption scandal surrounding FIFA. (2)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-11 10:02:38</td><td></td><td><a href='fifa_14_23.html'>On Wednesday, Switzerland's Office of the Attorney General seized further data from FIFA as part of its probe. (2)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-11 14:12:51</td><td></td><td><a href='fifa_14_15.html'>FIFA communications director Walter De Gregorio, closely tied to the embattled FIFA president since 2011, left his job three days after telling a joke about soccer's governing body on a TV talk show. (12)</a></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150612&t=2&i=1055755980&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5B0RM'></td><td>2015-06-12 20:17:54</td><td><a href='http://www.reuters.com/article/2015/06/12/us-soccer-fifa-idUSKBN0OS1Q620150612?feedType=RSS&feedName=sportsNews'>site</a></td><td>Interpol's decision was a disappointment, FIFA said, since the 2011 "integrity in sport" program was not connected to the "current issues" it faced.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-01 23:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-says-he-has-clear-conscience-despite-fifa-/nmqLX/'>site</a></td><td>The 79-year-old told Bunte that he happily accepts "fair and constructive criticism, also to consider what can be done differently. But when someone says, 'Blatter is corrupt because FIFA is corrupt', I can only shake my head. Anyone who makes such claims without proof should be jailed."</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-02 09:00:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-us-seeks-extradition-fifa-20150702-story.html'>site</a></td><td>The seven men include FIFA vice president Jeffrey Webb of the Cayman Islands and Eugenio Figueredo of Uruguay, who was arrested two days before his FIFA vice presidential term expired.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-04 09:00:04</td><td></td><td><a href='fifa_14_21.html'>The son of a sultan from northern Cameroon, Issa Hayatou has ruled African soccer for 27 years and counting, a decade longer than Sepp Blatter has been in charge of FIFA. (4)</a></td></tr>
+</table></body></html>

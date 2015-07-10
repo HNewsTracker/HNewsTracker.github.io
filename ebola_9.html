@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/Z8uqHf71yTjPmXrBjftsig--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-07-08T232543Z_1_LYNXNPEB6719W_RTROPTP_2_HEALTH-EBOLA-LEONE.JPG'></td><td>2015-07-08 23:25:43</td><td><a href='http://news.yahoo.com/loss-health-staff-could-increase-maternal-mortality-ebola-232543149.html'>site</a></td><td><table><tr><td>The loss of health workers to Ebola could increase maternal mortality in Guinea by 38 percent, 74 percent in Sierra Leone and more than 100 percent in Liberia, the bank said in a report.</td></tr><tr><td>"The loss of health workers to Ebola could increase maternal deaths up to rates last seen in these countries 15-20 years ago," Markus Goldstein, lead economist at the World Bank, said in a statement.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/6/19/1434713157343/2fa4dab2-4891-4d28-b5d0-9d6776e6e921-300x180.png'></td><td>2015-06-19 12:36:23</td><td><a href='http://www.theguardian.com/world/2015/jun/19/north-korea-cure-mers-aids-ebola-vaccine'>site</a></td><td>The authoritarian, impoverished nation announced it has a drug that can prevent and cure Mers, Ebola, Sars and Aids.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://wpmedia.news.nationalpost.com/2015/06/north-korea.jpg?w=620'></td><td>2015-06-19 15:29:28</td><td><a href='http://news.nationalpost.com/news/world/need-a-miracle-cure-visit-north-korea-impoverished-nation-claims-it-has-antidote-for-mers-ebola-and-aids'>site</a></td><td>The authoritarian, impoverished nation better known for pursuing a nuclear program despite global criticism announced Friday it has a drug that can prevent and cure MERS, Ebola, SARS and AIDS.</td></tr>
 </table></body></html>

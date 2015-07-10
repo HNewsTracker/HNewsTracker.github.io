@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 19:41:51</td><td><a href='http://da.feedsportal.com/c/33039/f/533917/s/47ae0bb1/sc/3/l/0Ltimesofindia0Bindiatimes0N0Cworld0Crest0Eof0Eworld0CTunisia0Emakes0Efirst0Ebeach0Eattack0Earrests0Eas0EUK0Eurges0Efightback0Carticleshow0C478723640Bcms/ia1.htm'>site</a></td><td>Tunisia makes first beach attack arrests as UK urges fightback</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 13:45:38</td><td><a href='http://abcnews.go.com/International/wireStory/young-soccer-player-blogger-killed-tunisia-32082082'>site</a></td><td>So did Ross Nayler, whose father, 42-year-old Scott Chaulkley, was on holiday in Tunisia together with Davey.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 23:01:43</td><td></td><td><a href='tunisia_10_11.html'>Karl Turner, the MP for East Hull, tweeted: "So sorry Claire Windass from Hull was killed in Tunisia terrorist attack. My thoughts with family & friends. RIP." (2)</a></td></tr>
 </table></body></html>
