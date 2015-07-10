@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 13:38:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26528617.html#storylink=rss'>site</a></td><td><table><tr><td>Greek foreign minister visits Israel amid crisis at home</td></tr><tr><td>Emmanuel Nahshon, Israel's Foreign Ministry spokesman, said Sunday that the visit from Greek Foreign Minister Nikolaos Kotzias would have an "economic emphasis" but would not elaborate.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/aLUhTIq_RU3INQXai_hJUQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/d450b959c403eb19780f6a7067005265.jpg'></td><td>2015-06-10 11:34:52</td><td><a href='http://news.yahoo.com/greek-leader-heads-brussels-meet-merkel-hollande-085041457--finance.html'>site</a></td><td>Though Greek officials said the three will meet on the summit sidelines, neither German nor French officials were confirming the meeting would take place.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 11:45:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article23738083.html#storylink=rss'>site</a></td><td>Greek stocks jumped 7 percent after officials, including German Chancellor Angela Merkel, said Greece had committed to reaching a compromise in coming days.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 05:50:50</td><td><a href='http://www.reuters.com/article/2015/06/26/us-eurozone-greece-idUSKBN0P40EO20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>German Chancellor Angela Merkel, whose country is Greece's biggest creditor, said the next meeting of Eurogroup ministers on Saturday would be "of decisive importance" for a Greek solution since time was running out.</td></tr>
 </table></body></html>

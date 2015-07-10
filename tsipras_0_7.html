@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-02 05:57:03</td><td><a href='http://www.reuters.com/article/2015/07/02/us-eurozone-greece-idUSKBN0P40EO20150702?feedType=RSS&feedName=topNews'>site</a></td><td>Euro zone finance ministers held an hour-long conference call to discuss the previous night's offer from Tsipras, but were adamant that no further discussions would be held until after Sunday's vote.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 14:53:42</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras may not survive long if voters ignore his call to vote 'No'.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/aLUhTIq_RU3INQXai_hJUQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/d450b959c403eb19780f6a7067005265.jpg'></td><td>2015-06-10 11:34:52</td><td><a href='http://news.yahoo.com/greek-leader-heads-brussels-meet-merkel-hollande-085041457--finance.html'>site</a></td><td>Tsipras' radical left Syriza party won early elections in January on promises of repealing the harsh austerity measures that accompanied Greece's 240 billion euro bailout program.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 15:56:04</td><td><a href='http://www.cbsnews.com/news/greek-leader-heads-to-brussels-to-meet-merkel-hollande/'>site</a></td><td>Tsipras must also face down hardliners within his own party, many of which have called for a break in relations with creditors and for Greece to go it alone, even if it means leaving the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>Greece's Tsipras digs in against bailout</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-10 04:05:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11478922&ref=rss'>site</a></td><td>Greece's Tsipras to sell last-ditch deal to reluctant party</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/10/72/f9/4cd0d6169f9f4465bcbb14277df4c5d4-60a8fd8e71c24ca2be414e631b642799-0.jpg'></td><td>2015-07-10 08:14:47</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-to-sell-last-ditch-deal-to-relucta/nmwYc/'>site</a></td><td>Tsipras could face a tough battle to convince his party hardliners to back his proposal.</td></tr>
 </table></body></html>

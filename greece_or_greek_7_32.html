@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-12 16:01:20</td><td><a href='http://www.cbc.ca/news/business/stocks-knocked-back-by-faltering-greek-debt-talks-1.3111015?cmp=rss'>site</a></td><td>"Our judgment remains that Greece will offer concessions to get a deal. The Greek position deteriorates dramatically beyond the end of June, as capital controls would likely make the political and economic situation in Greece even more difficult than it is now."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 12:20:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475634&ref=rss'>site</a></td><td>KARITAINA, Greece (AP) " Ilias Mathes has protection against bank closures, capital controls and the slashing of his pension: 10 goats, some hens and a vegetable patch.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/aqUBDbJIacJ2tU._PWAnUg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-11T125303Z_1_LYNXMPEB5A0OV_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-11 15:19:24</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-under-pressure-concessions-111748901.html'>site</a></td><td>Asked about concerns for the process raised by the departure of IMF and Greek negotiators, an EU diplomat said: "If the process was working properly the president would not have had to have a meeting with Tsipras today."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 21:21:13</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-follow-europe-lower-greek-talks-stall-31718488'>site</a></td><td>At a summit meeting in Brussels late Thursday, the IMF pulled its negotiators out of talks with Greece, saying there had been no progress and that major differences remained on key issues.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 19:21:45</td><td><a href='http://www.reuters.com/article/2015/06/14/us-eurozone-greece-idUSKBN0OS0E020150614?feedType=RSS&feedName=worldNews'>site</a></td><td>"While some progress was made, the talks did not succeed as there remains a significant gap between the plans of the Greek authorities and the joint requirements of Commission, ECB and IMF," it said.</td></tr>
 </table></body></html>

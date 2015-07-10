@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 13:37:08</td><td><a href='http://www.foxnews.com/world/2015/06/13/egypt-suez-canal-authority-says-work-on-new-waterway-to-meet-aug-6-opening/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>ISMAILIA, Egypt - Egypt's Suez Canal Authority says work on a parallel waterway to allow two-way traffic on the key trade route will be finished in time for a gala inauguration on Aug. 6.</td></tr><tr><td>President Abdel-Fattah el-Sissi has ordered the new waterway to be dug in a single year, saying that the urgency of Egypt's economic situation meant the project could not wait for an originally planned three-year timetable.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47659150,width-300,resizemode-4/suez.jpg'></td><td>2015-06-13 17:44:10</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Egypts-new-Suez-Canal-to-be-completed-for-Aug-6-ceremony/articleshow/47659137.cms'>site</a></td><td>A dredger works on a new section of the Suez canal during a media tour in Ismailia, Egypt.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/h/n/p/8/1/image.related.articleLeadNarrow.300x0.ghnhii.png/1434266443961.jpg'></td><td>2015-06-14 07:22:11</td><td><a href='http://www.smh.com.au/world/egypt-to-inaugurate-suez-canal-expansion-20150614-ghnhii.html'>site</a></td><td><table><tr><td>Egypt to inaugurate Suez Canal expansion</td></tr><tr><td>Construction work on Egypt's New Suez Canal project.</td></tr><tr><td>Ismailiya, Egypt: Egypt will inaugurate a "new Suez canal" shipping route in August aimed at speeding up traffic along the existing waterway and boosting revenues, officials say.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 11:50:42</td><td><a href='http://www.sfgate.com/news/world/article/Egypt-court-sentences-11-to-death-over-2012-6315500.php'>site</a></td><td>The February 2012 riot began at the end of a league match in Port Said between Cairo's Al-Ahly, Egypt's most successful club, and home side Al-Masry.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 11:51:28</td><td><a href='http://abcnews.go.com/International/wireStory/egypt-court-sentences-11-death-2012-soccer-riot-31631480'>site</a></td><td>The riot, Egypt's worst and among the world's deadliest, led to the temporary suspension of Egypt's top flight soccer league.</td></tr>
 </table></body></html>

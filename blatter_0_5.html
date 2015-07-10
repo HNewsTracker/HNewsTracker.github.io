@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6540348-3x2-340x227.jpg'></td><td>2015-06-11 11:10:40</td><td><a href='http://www.abc.net.au/news/2015-06-11/blatter-defies-eu-parliament-calls-to-quit-fifa-immediately/6540164'>site</a></td><td>The European Parliament said Blatter's failure to depart immediately would block efforts to rid FIFA of rampant corruption.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/6FqyPUGOqPRBAh1PASp_OQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-06-10T192518Z_1006980001_LYNXMPEB59108_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-ELECTION-ANALYSIS.JPG.cf.jpg'></td><td>2015-06-11 11:34:50</td><td><a href='http://news.yahoo.com/european-lawmakers-urge-fifa-president-blatter-now-113450467.html'>site</a></td><td>STRASBOURG, France (AP) - European lawmakers have urged FIFA President Sepp Blatter to step down immediately, and for an interim leader to be appointed.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150611&t=2&i=1055443227&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5A0KT'></td><td>2015-06-11 11:39:51</td><td><a href='http://www.reuters.com/article/2015/06/11/us-soccer-fifa-eu-idUSKBN0OR1BT20150611?feedType=RSS&feedName=sportsNews'>site</a></td><td>"The European Parliament... therefore calls on FIFA to select, in a transparent and inclusive way, an appropriate interim leader to replace Joseph Blatter forthwith."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 23:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-says-he-has-clear-conscience-despite-fifa-/nmqLX/'>site</a></td><td>Four days after being re-elected for a fifth term, Blatter said on June 2 that he would step down amid a crisis provoked by American and Swiss federal investigations of corruption linked to FIFA.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-05 01:25:32</td><td><a href='http://www.theguardian.com/football/2015/jul/05/france-and-germany-intervened-over-world-cup-votes-says-sepp-blatter'>site</a></td><td>Blatter said in June that he would stand down as pressure built from the American case and a separate Swiss federal investigation focused on possible money laundering linked to the awarding of the World Cups to Russia and Qatar.</td></tr>
 </table></body></html>

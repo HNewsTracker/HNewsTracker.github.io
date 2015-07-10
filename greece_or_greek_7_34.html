@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 18:52:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/11/greece-commits-to-step-up-reform-efforts-german-leader-says'>site</a></td><td>The Greek market closed up by a hefty 8.1 percent before the IMF's tough statement.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/_j00g7BCZHvqcUhI_UE38A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fa5b7058fe2591a790f6a7067007aa3.jpg'></td><td>2015-06-15 03:11:08</td><td><a href='http://news.yahoo.com/asia-stocks-slip-euro-down-greek-debt-talks-031108153--finance.html'>site</a></td><td>CURRENCIES: The euro faltered on news of the Greek debt impasse, falling nearly 0.5 percent to $1.1207 from $1.1260 in late trading Friday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/02/00/8134676/3/628x471.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-building-on-gains-from-the-6320951.php'>site</a></td><td>The move increases pressure on Athens to compromise but markets were worried that the outstanding differences between Greece and its creditors would lead to the country defaulting on its debt.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down/_jcr_content/image.adapt.250.low.greece_banks_062915.jpg'></td><td>2015-06-29 11:53:00</td><td><a href='http://america.aljazeera.com/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down.html'>site</a></td><td>The creditors wanted Greece to further cut pensions and raise taxes in ways that Tsipras has long argued would deepen one of the worst economic crises of modern times, in a country where over a quarter of the workforce is already unemployed.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td><table><tr><td>GREEK SAGA: Greece and its European creditors appeared to be narrowing their differences after Athens offered a raft of proposals to reduce the cost of pensions, hike taxes and cut state spending.</td></tr><tr><td>He said an agreement between Greece and its creditors is still not certain but the fact that Greece has proposed a fiscal package along the lines of the one recently demanded by its European creditors is a "significant step in the direction of compromise."</td></tr></table></td></tr>
 </table></body></html>

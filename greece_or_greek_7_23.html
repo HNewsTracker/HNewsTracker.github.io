@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/8k.BWiB20Ut5zpjB4kwnUw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-12T074041Z_1_LYNXMPEB5B0AO_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-12 18:16:14</td><td><a href='http://finance.yahoo.com/news/greece-hopes-eu-imf-deal-054302490.html'>site</a></td><td>The third - discussed formally for the first time at such a senior level in the EU - was to accept that Greece could default.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-05 06:09:11</td><td><a href='http://abcnews.go.com/International/wireStory/family-divided-emotions-run-high-ahead-greek-vote-32229803'>site</a></td><td>Meet the Danikoglous, an intense, articulate Greek family divided over whether or not the country should accept conditions by creditors attached to loans it needs to avoid default and a banking collapse.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 15:46:34</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/14/senior-official-says-germany-wont-be-blackmailed-by-greece'>site</a></td><td>Gabriel, who is also vice-chancellor, told German public broadcaster ARD on Sunday that Europe's patience with Greece is running out.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/7/1/greek-bailout-money-went-to-banks-not-greece/_jcr_content/image.adapt.480.low.greece_newlede_070215.jpg'></td><td>2015-07-04 12:25:00</td><td><a href='http://america.aljazeera.com/articles/2015/7/4/greek-minister-europe-cant-afford-to-let-athens-go-under.html'>site</a></td><td>"As much for Greece as for Europe, I'm sure," Varoufakis told the Spanish newspaper El Mundo.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-06 18:14:50</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-06-EU--Greece-Bailout-The%20Latest/id-835d02b519244af1896325b38e3e8329'>site</a></td><td>"It's Greece that is in difficulty. Europe is not in difficulty - Europe is facing a Greek difficulty."</td></tr>
 </table></body></html>

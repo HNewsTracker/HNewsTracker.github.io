@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 15:59:55</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-idUSKBN0OR19T20150611?feedType=RSS&feedName=topNews'>site</a></td><td>Earlier, European Council President Donald Tusk spelled out an unprecedentedly forthright message to Greece's radical anti-austerity government after four months of bitter negotiations.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>European Council President Donald Tusk retorted in a tweet: "Europe wants to help Greece. But cannot help anyone against their own will. Let's wait for the results of the Greek referendum."</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 08:05:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475895&ref=rss'>site</a></td><td>But months of talks without real results have eroded the Greek government's credibility in the eyes of Europe's power circles.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='https://timedotcom.files.wordpress.com/2015/07/greece-bailout_wong-3.jpg?quality=65&#038;strip=color&#038;w=560&#038;h=374&#038;crop=1'></td><td>2015-07-07 23:36:17</td><td><a href='http://time.com/3948957/greece-grexit-alexis-tsipras-deadline/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>Highlighting the rising anger with Tsipras over months of foot-dragging and surprising negotiating twists, European Commission President Jean-Claude Juncker had a stark warning for Greece.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-01 21:47:50</td><td><a href='http://www.reuters.com/article/2015/07/01/us-eurozone-greece-idUSKBN0P40EO20150701?feedType=RSS&feedName=wtMostRead'>site</a></td><td>He asked to keep a discount on value-added tax for Greek islands, stretch out defense spending cuts and delay the phasing out of an income supplement to poorer pensioners.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 00:35:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11478839&ref=rss'>site</a></td><td>Greece proposes tax hikes, spending cuts, pension reforms</td></tr>
 </table></body></html>

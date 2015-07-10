@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,11 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 00:56:06</td><td><a href='http://finance.yahoo.com/news/asia-shares-wallow-near-three-005606642.html'>site</a></td><td>The higher yields dented the allure of equities and helped send European share prices to four-month lows, with concerns about Greece further weighing on investor sentiment.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td><table><tr><td>Dimitris is voting "yes" because he fears Greece would be in danger if it leaves the European Union.</td></tr><tr><td>His daughter Alexandra is voting "no" because she is tired of richer European nations bossing Greece around.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/vQj4NwMDidn7hUpSz5buhQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/d23298e4f0c0501d7b0f6a70670019ff.jpg'></td><td>2015-07-05 09:51:05</td><td><a href='http://news.yahoo.com/latest-greece-polls-open-bailout-referendum-040638552.html'>site</a></td><td>Instead, they argue voting "yes" will allow Greece to get a new bailout deal quickly to shore up the economy.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-09 08:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26845423.html#storylink=rss'>site</a></td><td>European benchmarks gained as Greece's government raced to finalize details of reforms as it seeks a third bailout from European nations.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-09 12:15:28</td><td><a href='http://www.startribune.com/easier-terms-for-greece-could-open-a-can-of-worms-in-europe/312837621/'>site</a></td><td>That makes the Greek debt controversy a political threat in Spain, with potential economic consequences spilling beyond the borders of the European Union's fifth-largest economy.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/1461678/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F8a%2F2e%2F9b7fedd44a0a97a639b8fb25de87%2Fresizes%2F500%2F150528-india-7-editorial.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/11/us-stocks-open-higher-building-on-gains-from-the-day-before'>site</a></td><td>Asia stocks drift as Greece dampens impact of strong US data</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/24/70/8211972/3/628x471.jpg'></td><td>2015-06-26 03:16:14</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-edge-higher-following-a-surge-in-6348752.php'>site</a></td><td>Asian stocks fall on Greek standoff, China margin curbs</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-29 13:42:23</td><td><a href='http://news.yahoo.com/asian-stock-markets-sink-greece-closes-banks-032205086--finance.html'>site</a></td><td>US stocks fall in early trade as Greece debt woes escalate</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/29/1c/76/6be55cdd8d6840a99dbd6033e5ab3f65-c7e04fba32314828a7087c4be9e1464a-0.jpg'></td><td>2015-06-30 05:01:27</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-fall-in-early-trade-as-greece-debt-woes-/nmngc/'>site</a></td><td>Asia stocks bounce back but Greece uncertainty still looms</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-following-gains-in-European-6360385.php'>site</a></td><td><table><tr><td>Asian stocks gain as US data eclipses Greek risk</td></tr><tr><td>SEOUL, South Korea (AP) - Asian stocks were higher on Thursday as strong U.S. payroll data overshadowed worries about Greek debt.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/03/876/493/abb781a9fc15e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-1.jpg?ve=1&tl=1'></td><td>2015-07-03 14:32:54</td><td><a href='http://www.foxbusiness.com/markets/2015/07/03/world-stocks-drift-lower-ahead-greek-vote-chinese-stocks-plunge-as-support/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>World stocks drift lower ahead of Greek vote; China plunges</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-08 03:44:38</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-heads-lower-greece-debt-talks-proceed-32273588'>site</a></td><td>China Leads Dive in Asia Stocks as Greece Rattles Investors</td></tr>
 </table></body></html>

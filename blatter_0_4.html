@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 23:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-says-he-has-clear-conscience-despite-fifa-/nmqLX/'>site</a></td><td>Four days after being re-elected for a fifth term, Blatter said on June 2 that he would step down amid a crisis provoked by American and Swiss federal investigations of corruption linked to FIFA.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-05 01:25:32</td><td><a href='http://www.theguardian.com/football/2015/jul/05/france-and-germany-intervened-over-world-cup-votes-says-sepp-blatter'>site</a></td><td>Blatter said in June that he would stand down as pressure built from the American case and a separate Swiss federal investigation focused on possible money laundering linked to the awarding of the World Cups to Russia and Qatar.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 14:20:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463848&ref=rss'>site</a></td><td>De Gregorio joined FIFA after working on Blatter's campaign team during the 2011 presidential election.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 10:20:22</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11465192&ref=rss'>site</a></td><td>ZURICH (AP) " The official overseeing the next FIFA presidential election has reminded Sepp Blatter to stick with his plans to step down.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 09:15:14</td><td><a href='http://www.charlotteobserver.com/sports/article26934976.html#storylink=rss'>site</a></td><td>Adidas chief: Platini the best choice to succeed Blatter</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-10 09:15:14</td><td><a href='http://www.miamiherald.com/sports/article26934976.html#storylink=rss'>site</a></td><td>Former France captain Platini hasn't yet said whether he will look to succeed Blatter in the FIFA presidential election expected in a few months.</td></tr>
 </table></body></html>

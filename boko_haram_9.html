@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 20:30:22</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11464013&ref=rss'>site</a></td><td>UN urges stepped-up action against Boko Haram and LRA</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 18:37:29</td><td><a href='http://www.cbsnews.com/news/nigeria-isis-affiliated-islamic-extremists-boko-haram-chibok-girls-prisoners/'>site</a></td><td><table><tr><td>Activist: Boko Haram offering swap for captive girls</td></tr><tr><td>The new initiative reopens an offer made last year to the government of former President Goodluck Jonathan to release the 219 students in exchange for 16 Boko Haram detainees, the activist said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 19:36:38</td><td><a href='http://time.com/3949907/nigeria-boko-haram-release-offer/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>Shekau had threatened in 2013 to kidnap women and girls if Nigeria's military did not release detained Boko Haram wives and children.</td></tr>
 </table></body></html>

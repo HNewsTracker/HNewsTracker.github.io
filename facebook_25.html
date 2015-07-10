@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03368/facebook_3368695b.jpg'></td><td>2015-07-08 13:35:22</td><td><a href='http://www.telegraph.co.uk/technology/facebook/11726248/Facebook-puts-women-in-front-with-new-friends-icon.html'>site</a></td><td>Facebook puts women in front with new friends icon</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 14:33:33</td><td><a href='http://abcnews.go.com/Technology/reason-subtle-facebook-icon-change/story?id=32297650'>site</a></td><td>The Reason Behind the Subtle Facebook Icon Change</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 21:06:53</td><td><a href='http://www.seattlepi.com/news/texas/article/Facebook-to-add-more-computing-power-with-Texas-6371030.php'>site</a></td><td><table><tr><td>Facebook to add more computing power with Texas data center</td></tr><tr><td>Facebook Inc. initially expects to employ 40 people at the data center, which will rely solely on wind power to keep its computer servers running.</td></tr><tr><td>This will be Facebook's fourth data center in the U.S., joining others in Oregon, Iowa and North Carolina.</td></tr></table></td></tr>
 </table></body></html>

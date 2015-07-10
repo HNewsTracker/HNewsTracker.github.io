@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 13:15:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475647&ref=rss'>site</a></td><td>Greek PM Tsipras says Sunday's referendum is not a vote on whether to remain in the euro</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 04:09:10</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26480347.html#storylink=rss'>site</a></td><td>The opposition accuses Tsipras of jeopardizing the country's membership in the eurozone and says a "yes" vote is about keeping the common currency.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>"If they (Greeks) say 'No', they will have to introduce another currency after the referendum because the euro is not available as a means of payment," Martin Schulz, the president of the European Parliament, said in remarks broadcast on Germany's Deutschlandfunk radio on Sunday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-07 03:39:09</td><td><a href='http://news.yahoo.com/eurozone-leaders-hold-emergency-summit-greece-033909834.html'>site</a></td><td>"It is now up to the government of Alexis Tsipras to make serious, credible proposals so that this willingness to stay in the eurozone can translate into a lasting programme," Hollande said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/45/60/8281109/7/square_gallery_thumb.jpg'></td><td>2015-07-09 13:14:20</td><td><a href='http://www.sfgate.com/news/world/article/Greece-racing-to-finalize-reforms-and-remain-in-6374611.php'>site</a></td><td>After months of fruitless negotiations with Tsipras' government, elected in January on promises to repeal bailout austerity, the skeptical eurozone creditor states have said they want to see a detailed, cost-accounted plan of the reforms.</td></tr>
 </table></body></html>

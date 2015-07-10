@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 20:00:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11464963&ref=rss'>site</a></td><td>Greek Premier: Elections or referendum out of the question</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201525/AP150306004003_140x93.jpg'></td><td>2015-06-26 22:20:22</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11472142&ref=rss'>site</a></td><td>Greek development minister calls on nation to reject bailout deal in July 5 referendum</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-27 01:31:58</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/greek-official-chance-of-deal-small-in-current-climate'>site</a></td><td>Greece's fraught bailout talks with its creditors took a dramatic turn early Saturday, with the radical left government announcing a referendum in just over a week on the latest proposed deal - and urging voters to reject it.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31333970.ece/7e830/ALTERNATES/h342/PANews%20BT_P-81ca7e2d-aa7c-4326-bd44-2d8f1ad6ef0d_I1.jpg'></td><td>2015-06-27 03:36:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/eu-rejects-bailout-extension-plea-31333972.html'>site</a></td><td>Greece announces bailout referendum</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-28 00:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25651300.html#storylink=rss'>site</a></td><td>Greek parliament approves referendum on creditor reforms</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='https://s.yimg.com/uu/api/res/1.2/XZ3j1M2asHxMQE8i80mUKg--/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.reutersnews.com/2015-06-27T163110Z_1_LOP000H4QSI00_RTRMADP_BASEIMAGE-960X540_GREECE-EUROZONE-NEWS-CONFERENCE-ROUGH-CUT.JPG'></td><td>2015-06-28 01:08:15</td><td><a href='http://news.yahoo.com/greeks-face-uncertainty-vote-called-bailout-101948918--finance.html'>site</a></td><td>Parliament approves referendum; Greece's future in balance</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/bVhaab2TBdF02gGnCiYn.w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/91bcc294a0b62b1d7b0f6a7067006be2.jpg'></td><td>2015-07-04 08:00:13</td><td><a href='http://news.yahoo.com/analysts-greek-governments-post-referendum-future-unsure-080013832.html'>site</a></td><td>Analysts: Greek government's post-referendum future unsure</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-07-09 11:08:09</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/09/the-latest-eu-economics-chief-says-greece-deal-possible'>site</a></td><td>EU Economics Commissioner Pierre Moscovici is hopeful that a new Greek bailout deal is possible, in exchange for "concrete, complete" reform proposals from Greece's government.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 05:59:56</td><td><a href='http://finance.yahoo.com/news/asia-shares-wallow-near-three-005606642.html'>site</a></td><td>Concerns about Greece also added to the nervousness.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 13:21:03</td><td><a href='http://www.utsandiego.com/news/2015/jun/21/greece-presents-new-financial-proposals-to/'>site</a></td><td>Tsipras "presented to the three leaders Greece's proposal for a mutually beneficial agreement, which will provide a permanent solution and not just postpone tackling the problem," the press office statement said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-21 16:14:47</td><td><a href='http://abcnews.go.com/International/wireStory/greece-presents-financial-proposals-european-leaders-31922497'>site</a></td><td>Renzi added that European leaders were working to have an agreement with Greece "in the next hours," but didn't provide any details.</td></tr>
 </table></body></html>

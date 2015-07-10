@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 13:12:25</td><td><a href='http://www.reuters.com/article/2015/06/13/us-eurozone-greece-idUSKBN0OS0E020150613?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras seeks debt relief as Greeks take offer to Brussels</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150612&i=108722162&w=240&r=108722162-1&t=2'></td><td>2015-06-13 17:54:02</td><td><a href='http://www.reuters.com/article/2015/06/13/us-eurozone-greece-idUSKBN0OS0E020150613?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras signaled that without debt relief, he would reject any deal involving curbs on the right of Greek workers to bargain collectively on pay - something that union members elsewhere take for granted.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-03 13:15:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475646&ref=rss'>site</a></td><td>Greek PM Tsipras says IMF report fully justifies Greece's position on debt relief</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-02 05:57:03</td><td><a href='http://www.reuters.com/article/2015/07/02/us-eurozone-greece-idUSKBN0P40EO20150702?feedType=RSS&feedName=topNews'>site</a></td><td>Euro zone finance ministers held an hour-long conference call to discuss the previous night's offer from Tsipras, but were adamant that no further discussions would be held until after Sunday's vote.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 14:53:42</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras may not survive long if voters ignore his call to vote 'No'.</td></tr>
 </table></body></html>

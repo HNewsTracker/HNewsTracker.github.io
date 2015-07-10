@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 04:35:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463015&ref=rss'>site</a></td><td><table><tr><td>Indonesia volcano at high alert level unleashes fresh burst</td></tr><tr><td>TANAH KARO, Indonesia (AP) " A volcano in western Indonesia that has been spewing clouds of searing gas high into the air let out a new powerful burst Wednesday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 05:48:39</td><td><a href='http://www.usnews.com/news/science/news/articles/2015/06/10/indonesia-volcano-at-high-alert-level-unleashes-fresh-burst'>site</a></td><td>Authorities say they are closely monitoring the volcano after it was placed at the highest alert level last week.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/37/04/52/8145549/7/mosaic_2.jpg'></td><td>2015-06-13 13:12:59</td><td><a href='http://www.chron.com/news/science/article/Indonesia-s-Mount-Sinabung-unleashes-new-powerful-6325150.php'>site</a></td><td>JAKARTA, Indonesia (AP) - A volcano in western Indonesia unleashed a new powerful burst high into the sky on Saturday, sending hot ash far down the mountain's slopes, an official said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31366235.ece/a3b07/ALTERNATES/h342/PANews%20BT_P-e20bfe8d-a710-46f7-aab6-60bb90ab80eb_I1.jpg'></td><td>2015-07-10 05:46:08</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/volcano-sparks-java-travel-chaos-31366236.html'>site</a></td><td><table><tr><td>Volcano sparks Java travel chaos</td></tr><tr><td>Ash spewing from a volcano on Indonesia's main island of Java has sparked chaos for holidaymakers as airports close and international airlines cancel flights to tourist hotspot Bali.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-07-10 09:25:13</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/10/eruption-of-indonesian-volcano-sparks-travel-chaos'>site</a></td><td>A 2010 eruption of Iceland's Eyjafjallajokul volcano produced an ash cloud that caused a week of international aviation chaos, with more than 100,000 flights cancelled.</td></tr>
 </table></body></html>

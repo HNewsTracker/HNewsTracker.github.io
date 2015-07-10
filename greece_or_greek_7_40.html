@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 15:59:55</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-idUSKBN0OR19T20150611?feedType=RSS&feedName=topNews'>site</a></td><td>A Greek source told Reuters that the entire Greek delegation that had been negotiating a cash-for-reform deal had left Brussels for home on Thursday, citing outstanding disagreements.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/06/12/102755577-0261be11dead2c1dd6657a30b561e2dcdbe82d16.80x60.jpg?v=1434126070'></td><td>2015-06-14 05:07:00</td><td><a href='http://www.cnbc.com/id/102757241'>site</a></td><td>With Greece heading towards possible default and bankruptcy, he told his negotiating team before it took a counter-proposal to Brussels that without debt relief he would reject any settlement that isolates his country from the rest of Europe.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/7/1/greek-bailout-money-went-to-banks-not-greece/_jcr_content/image.adapt.480.low.greece_newlede_070215.jpg'></td><td>2015-07-04 12:25:00</td><td><a href='http://america.aljazeera.com/articles/2015/7/4/greek-minister-europe-cant-afford-to-let-athens-go-under.html'>site</a></td><td>"As much for Greece as for Europe, I'm sure," Varoufakis told the Spanish newspaper El Mundo.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 09:06:06</td><td><a href='http://www.reuters.com/article/2015/06/21/us-global-economy-weekahead-idUSKBN0P109V20150621?feedType=RSS&feedName=businessNews'>site</a></td><td>Merkel faces growing opposition from within her ruling conservatives to granting Greece any more bailout money, with a recent opinion poll showing a narrow majority of Germans now in favor of Greece leaving the currency union.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:26:40</td><td><a href='http://news.yahoo.com/western-union-restarts-money-transfer-greece-132640414--sector.html'>site</a></td><td><table><tr><td>Western Union restarts money transfer service in Greece</td></tr><tr><td>(Reuters) - Western Union Co said it restarted money transfer service in Greece, allowing customers in the country to receive funds from overseas.</td></tr></table></td></tr>
 </table></body></html>

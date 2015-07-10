@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718766106_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-30 17:21:16</td><td><a href='http://www.torontosun.com/2015/06/30/germanwings-offers-emotional-damage-payments-to-crash-victims-families'>site</a></td><td><table><tr><td>Germanwings offers emotional damage payments to crash victims' families</td></tr><tr><td>BERLIN - Germanwings is offering 25,000 euros ($27,958) compensation payments to close relatives of those killed in the March 24 plane crash for their pain and suffering, it said on Tuesday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 16:46:15</td><td><a href='http://www.foxnews.com/world/2015/06/11/doctors-felt-germanwings-co-pilot-unfit-to-fly-prosecutor-says/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>PARIS - The co-pilot who crashed a Germanwings jet into the Alps feared that he was losing his eyesight, and some of the many doctors he consulted felt he was unfit to fly, a French prosecutor said Thursday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/02/12/8135341/5/628x471.jpg'></td><td>2015-06-11 19:26:30</td><td><a href='http://www.seattlepi.com/news/crime/article/Families-of-Germanwings-crash-victims-to-meet-6320483.php'>site</a></td><td>Germanwings and parent company Lufthansa have said that Lubitz had passed all medical tests and was cleared by doctors as fit to fly.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.gannett-cdn.com/-mm-/ba3dc27cd316dc0cedec920d66fbc6bf9ae97774/r=x60&amp;c=60x60/http/videos.usatoday.net/Brightcove2/29906170001/2015/06/29906170001_4291115730001_thumb-Wochit77334030.jpg'></td><td>2015-06-11 20:51:42</td><td><a href='http://www.usatoday.com/videos/news/world/2015/06/11/71082806/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomworld-topstories'>site</a></td><td>A French prosecutor says that some doctors who treated the co-pilot who crashed a Germanwings jet felt he was unfit to fly, but did not tell his employers because of German patient secrecy laws.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-12 17:18:31</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/12/germanwings-co-pilot-researched-deadly-drugs-living-will'>site</a></td><td>Germanwings Co-Pilot Researched Deadly Drugs, Living Will</td></tr>
 </table></body></html>

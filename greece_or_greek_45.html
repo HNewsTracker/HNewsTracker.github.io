@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 08:00:18</td><td><a href='http://abcnews.go.com/International/wireStory/greek-anti-austerity-protesters-hold-finance-ministry-sit-31684409'>site</a></td><td>Greek left-wing demonstrators are staging a sit-in at the finance ministry building in central Athens, in a protest against the radical, left-led government, which they accuse of planning new austerity measures.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 14:04:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/more-than-1000-immigrants-reach-greece-by-sea-in-a/nmZQ5/'>site</a></td><td>EU urges refugee action as over 1,000 migrants reach Greece</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 23:26:24</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-leader-heads-to-brussels-to-meet-merkel-holl/nmZQn/'>site</a></td><td>Greek leader meets creditors, seeks bailout breakthrough</td></tr>
 </table></body></html>

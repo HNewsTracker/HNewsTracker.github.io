@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31288666.ece/8f1b8/ALTERNATES/h342/PANews%20BT_P-ffea996d-9991-4f6e-986e-621d1ce59dba_I1.jpg'></td><td>2015-06-09 10:46:14</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/fresh-greek-proposals-over-bailout-31288667.html'>site</a></td><td>The submission follows last week's impasse, when bailout creditors responded to a 47-page Greek proposal with a brief counter-offer that Athens rejected as containing "absurd" measures.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 11:38:54</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/09/greece-says-it-has-made-new-proposals-to-end-bailout-impasse'>site</a></td><td>He said the documents included alternative ideas on budget measures required for creditors to approve the bailout payment, and proposals on "a workable plan" to render Greece's crushing debt load viable.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-06-09 12:58:34</td><td><a href='http://finance.yahoo.com/news/greek-reform-proposal-not-sufficient-112822879.html'>site</a></td><td>Other officials said the Greek proposal was divided into two documents, one of which addressed mainly fiscal issues like the size of the primary budget surplus and the other spelled out Athens' ideas for a major debt restructuring.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-14 17:50:06</td><td><a href='http://www.startribune.com/greece-says-it-will-never-accept-wage-pension-cuts/307301491/'>site</a></td><td>He added that Greece will no longer accept measures that undermine growth and has submitted proposals that cover creditors' demands for a primary budget surplus without doing so.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-01 21:47:50</td><td><a href='http://www.reuters.com/article/2015/07/01/us-eurozone-greece-idUSKBN0P40EO20150701?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Kiki Rizopoulou, a 79-year-old pensioner from Lamia in central Greece, had to travel to Athens to collect her pension, spending 20 euros of the 120 euros she was allowed to withdraw.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.miamiherald.com/news/business/article26032012.html#storylink=rss'>site</a></td><td>Pensioners wait to be allowed into the National Bank of Greece to withdraw a maximum of 120 euros ($134) for the week, Thursday, July 2, 2015.</td></tr>
 </table></body></html>
