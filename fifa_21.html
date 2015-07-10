@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/6FqyPUGOqPRBAh1PASp_OQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-06-10T192518Z_1006980001_LYNXMPEB59108_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-ELECTION-ANALYSIS.JPG.cf.jpg'></td><td>2015-06-11 11:34:50</td><td><a href='http://news.yahoo.com/european-lawmakers-urge-fifa-president-blatter-now-113450467.html'>site</a></td><td><table><tr><td>STRASBOURG, France (AP) - European lawmakers have urged FIFA President Sepp Blatter to step down immediately, and for an interim leader to be appointed.</td></tr><tr><td>FIFA is not obliged to heed the parliament and has previously dismissed calls for action made by lawmaker groups, including the Council of Europe.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 02:36:04</td><td></td><td><a href='fifa_21_22.html'>FIFA has issued a warning to U.S. forward Abby Wambach for comments she made about the officiating in a match against Colombia at the Women's World Cup. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-26 02:36:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25541320.html#storylink=rss'>site</a></td><td>FIFA said in a statement Thursday night that the apology factored into the decision.</td></tr>
 </table></body></html>

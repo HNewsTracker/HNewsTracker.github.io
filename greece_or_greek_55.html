@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 18:14:50</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-06-EU--Greece-Bailout-The%20Latest/id-835d02b519244af1896325b38e3e8329'>site</a></td><td>"It's Greece that is in difficulty. Europe is not in difficulty - Europe is facing a Greek difficulty."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 14:04:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/more-than-1000-immigrants-reach-greece-by-sea-in-a/nmZQ5/'>site</a></td><td>EU urges refugee action as over 1,000 migrants reach Greece</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 23:26:24</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-leader-heads-to-brussels-to-meet-merkel-holl/nmZQn/'>site</a></td><td>Greek leader meets creditors, seeks bailout breakthrough</td></tr>
 </table></body></html>

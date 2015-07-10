@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-06-10 19:04:08</td><td><a href='http://news.yahoo.com/putin-visits-italy-pope-g-7-snub-over-085532019.html'>site</a></td><td><table><tr><td>Pope tells Putin: 'Sincere' peace efforts needed for Ukraine</td></tr><tr><td>Lombardi said Francis stressed the need "to commit oneself in a sincere and great effort to bring" peace to Ukraine, through dialogue and implementation of the Minsk accords.</td></tr><tr><td>Renzi greeted Putin as Russia's "dear" president and didn't voice any criticism against the country's actions in Ukraine, saying simply that they both agreed there must be full implementation of the Minsk peace accord.</td></tr><tr><td>They said sanctions against Russia won't be lifted until Moscow fully implements its part of the Ukraine peace accord, and could be increased if needed.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:28:38</td><td></td><td><a href='ukraine_15_16.html'>KIEV, Ukraine (AP) - U.S. Sen. John McCain has said during a visit to Ukraine that it is shameful that Washington's European allies have not done more to assist Ukrainian forces in their quest to defeat Russian-backed separatists in the east. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:28:38</td><td></td><td><a href='ukraine_15_17.html'>McCain has been a lively supporter of legislation passed in the U.S. Senate this week that includes provisions to supply Ukraine with hundreds of millions of dollars in defence military equipment. (3)</a></td></tr>
 </table></body></html>

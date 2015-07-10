@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/f7b22dc/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F6c%2F441377966dba2877e4bba89038c58f%2Fmedia%3Aaa41d6a349314f428e96a04f5429da18Ukraine.JPEG'></td><td>2015-06-09 10:14:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/09/ukraine-fuel-depot-fire-kills-1-several-injured-near-kiev'>site</a></td><td>At least one killed and a number of firemen were injured on Tuesday as they fought to control a blazing fuel depot outside Ukraine's capital Kiev.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/76/46/8120706/7/square_gallery_thumb.jpg'></td><td>2015-06-09 10:14:36</td><td><a href='http://www.sfgate.com/news/world/article/Ukraine-fuel-depot-fire-kills-1-several-injured-6315508.php'>site</a></td><td>KIEV, Ukraine (AP) - Ukrainian officials say that a major blaze has engulfed a fuel depot near the capital, leaving one man dead and injuring several others.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/09/3c4e7e06c1d5e119780f6a7067000e38_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-06-09 10:14:36</td><td><a href='http://www.utsandiego.com/news/2015/jun/09/ukraine-fuel-depot-fire-kills-1-several-injured/'>site</a></td><td>Ukraine fuel depot fire kills 1, several injured near Kiev</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.usnews.com/dims4/USNEWS/f7b22dc/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F6c%2F441377966dba2877e4bba89038c58f%2Fmedia%3Aaa41d6a349314f428e96a04f5429da18Ukraine.JPEG'></td><td>2015-06-09 16:58:02</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/09/ukraine-fuel-depot-fire-kills-1-several-injured-near-kiev'>site</a></td><td>KIEV, Ukraine (AP) - Ukrainian firefighters on Tuesday managed to contain a major blaze that had engulfed a fuel depot near Kiev, preventing it from spreading to another fuel depot and a nearby military base.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47651050,width-300,resizemode-4/Arseniy-Yatsenyuk.jpg'></td><td>2015-06-12 23:59:00</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Ukraine-says-it-may-freeze-debt-payments-to-fund-war/articleshow/47651046.cms'>site</a></td><td>Ukraine says it may freeze debt payments to fund war</td></tr>
 </table></body></html>

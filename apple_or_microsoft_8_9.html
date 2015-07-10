@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,11 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 17:42:00</td><td><a href='http://www.ctvnews.ca/sci-tech/latest-from-apple-s-wwdc-mac-update-called-el-capitan-1.2412093'>site</a></td><td><table><tr><td>Apple says this fall's update to its Mac operating system will be called El Capitan -- the name of a landmark in Yosemite National Park.</td></tr><tr><td>It follows a recent practice of Apple naming the Mac operating system after geographical locations in California.</td></tr><tr><td>The new Mac system will be more formally known as OS X 10.11, as it's the 11th update to a system adapted from the NeXT operating system that co-founder Steve Jobs brought to Apple when he returned in 1997 after an exile.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/09/73b26ba59b04d419780f6a70670087fa_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-06-09 07:02:18</td><td><a href='http://www.utsandiego.com/news/2015/jun/09/apple-music-brings-change-to-streaming-but-is-it/'>site</a></td><td>The service will be free to users with an Apple ID.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/s0iSFiZqYvckpp3tmHiMpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/73b26ba59b04d419780f6a70670087fa.jpg'></td><td>2015-06-09 07:02:37</td><td><a href='http://news.yahoo.com/apple-music-brings-change-streaming-enough-070237533.html'>site</a></td><td><table><tr><td>Apple Music brings change to streaming, but is it enough?</td></tr><tr><td>"It'll change the way you experience music forever," CEO Tim Cook promised Monday at Apple's annual conference for software developers, held in San Francisco.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-09 17:03:12</td><td><a href='http://www.usnews.com/news/technology/articles/2015/06/09/apple-music-brings-change-to-streaming-but-is-it-enough'>site</a></td><td>Here's a look at some of the major aspects of Apple Music.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-09 21:01:24</td><td><a href='http://www.seattlepi.com/business/technology/article/Who-s-Who-in-music-streaming-Apple-Spotify-6316853.php'>site</a></td><td><table><tr><td>Who's Who in music streaming: Apple, Spotify, Pandora & more</td></tr><tr><td>SAN FRANCISCO (AP) - Apple shook up the music world more than a decade ago when it offered an easy way to buy songs digitally for 99 cents each.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-09 21:01:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/09/whos-who-in-music-streaming-apple-spotify-pandora-more'>site</a></td><td>The maker of iPods and iPhones announced Apple Music, an app that combines Beats 1, a 24-hour, seven-day live radio station, with an on-demand music streaming service.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-11 08:00:00</td><td><a href='http://www.miamiherald.com/entertainment/music-news-reviews/article23743678.html#storylink=rss'>site</a></td><td>(Plus, soon after the great reveal, news came that Apple was being investigated by two states for antitrust violations in its negotiations with music companies.)</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/08/20/2974CD3D00000578-3115680-image-a-38_1433791873946.jpg'></td><td>2015-06-11 18:02:33</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-3115680/Apple-faces-music-iPhone-make-unveiling-streaming-music-service-Spotify-Tidal.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Jimmy Iovine revealed the new service, called Apple One.</td></tr>
 </table></body></html>

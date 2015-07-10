@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/17/71/8191597/5/920x920.jpg'></td><td>2015-06-22 17:16:17</td><td><a href='http://www.sfgate.com/news/world/article/The-latest-on-Greece-Markets-surge-on-hopes-for-6341078.php'>site</a></td><td><table><tr><td>"It's an opportunity to get that deal this week," he said after the eurozone meeting on Monday ended.</td></tr><tr><td>Schaeuble said Monday ahead of a finance ministers' meeting on the issue: "We are still in the same situation as last Thursday," when the 19 ministers of the eurozone last assessed Greece's proposals.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/k4eOOc8sWfl6nyZvuerHOg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f51a45e7da301d1b7a0f6a706700c08d.jpg'></td><td>2015-06-22 17:16:56</td><td><a href='http://news.yahoo.com/latest-greece-markets-surge-hopes-deal-081250477--finance.html'>site</a></td><td>After a midday meeting among the 19 eurozone ministers, Finnish Finance Minister Alexander Stubb said "No agreement. We agreed to continue" negotiations to look for a full deal later in the week.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/06/4431b24e19d2671e7b0f6a7067004551_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-06 15:44:00</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/06/whats-next-as-greece-stumbles-toward-euro-exit/'>site</a></td><td>That's followed by a meeting of eurozone finance ministers on Tuesday, and a full summit of the leaders of the 19 euro countries that evening.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47975022,width-300,resizemode-4/Euclid-Tsakalotos-Greeces-new-finance-minister.jpg'></td><td>2015-07-07 11:58:03</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Greece-faces-last-chance-to-stay-in-euro-as-cash-runs-out/articleshow/47974144.cms'>site</a></td><td><table><tr><td>He did not name names but may have been referring to German finance minister Wolfgang Schaeuble, who has made no secret of his scepticism about Greece's fitness to stay in the euro and last week suggested a possible "temporary" exit.</td></tr><tr><td>Tsakalotos entered the euro zone finance ministers' meeting without comment.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/TXSvQSj0ejP1BwtYkdJ1Yw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/528ef41f43fc841e7b0f6a706700ad8d.jpg'></td><td>2015-07-07 15:58:12</td><td><a href='http://news.yahoo.com/latest-lithuanian-finance-minister-sees-compromise-115544872--finance.html'>site</a></td><td>German Finance Minister Wolfgang Schaeuble says Berlin still opposes an actual debt cut for Greece as he arrived at a meeting with his counterparts in the 19-country eurozone.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 04:09:10</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26480347.html#storylink=rss'>site</a></td><td>"I am voting 'yes' because I believe that my future and even my kids' future, in twenty or thirty years from now, is in the eurozone and the European Union," Spiliotopoulos said on the eve of the referendum.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>Greece votes in referendum with future in euro in doubt</td></tr>
 </table></body></html>

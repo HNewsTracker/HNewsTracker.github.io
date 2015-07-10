@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 23:58:11</td><td><a href='http://www.reuters.com/article/2015/06/14/us-markets-global-idUSKBN0OU15F20150614?feedType=RSS&feedName=businessNews'>site</a></td><td>The euro skidded 0.4 percent on the day to $1.1215 EUR=, and was down 0.5 percent against the yen at 138.28 EURJPY=.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/_j00g7BCZHvqcUhI_UE38A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fa5b7058fe2591a790f6a7067007aa3.jpg'></td><td>2015-06-15 03:11:08</td><td><a href='http://news.yahoo.com/asia-stocks-slip-euro-down-greek-debt-talks-031108153--finance.html'>site</a></td><td>CURRENCIES: The euro faltered on news of the Greek debt impasse, falling nearly 0.5 percent to $1.1207 from $1.1260 in late trading Friday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 13:15:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475647&ref=rss'>site</a></td><td>Greek PM Tsipras says Sunday's referendum is not a vote on whether to remain in the euro</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 04:09:10</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26480347.html#storylink=rss'>site</a></td><td>The opposition accuses Tsipras of jeopardizing the country's membership in the eurozone and says a "yes" vote is about keeping the common currency.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>"If they (Greeks) say 'No', they will have to introduce another currency after the referendum because the euro is not available as a means of payment," Martin Schulz, the president of the European Parliament, said in remarks broadcast on Germany's Deutschlandfunk radio on Sunday.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 19:54:02</td><td><a href='http://www.foxnews.com/world/2015/06/13/greek-premier-tsipras-says-no-elections-or-referendum-whatever-outcome-bailout/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The official said Tsipras told four senior ministers Friday that his government, elected last January, has a fresh popular mandate and that "people have trusted us to take crucial decisions and manage the difficulties."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:50:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11468708&ref=rss'>site</a></td><td>A meeting between Prime Minister Alexis Tsipras and three senior ministers finished Saturday evening and a new one is scheduled for Sunday morning.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-21 13:52:42</td><td><a href='http://www.ctvnews.ca/business/greek-pm-tsipras-presents-new-financial-proposal-to-eu-1.2432946'>site</a></td><td>Tsipras has been meeting with his senior ministers all day and will leave for Brussels later Sunday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 12:43:17</td><td><a href='http://www.reuters.com/article/2015/06/21/us-eurozone-greece-proposal-idUSKBN0P10HQ20150621?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greece's Tsipras presented proposal to EU leaders: PM's office</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 13:52:42</td><td><a href='http://www.ctvnews.ca/business/greek-pm-tsipras-presents-new-financial-proposal-to-eu-1.2432946'>site</a></td><td>A government source close to the talks says Tsipras "presented to the three leaders Greece's proposal for a mutually beneficial agreement, which will provide a permanent solution and not just postpone tackling the problem."</td></tr>
 </table></body></html>

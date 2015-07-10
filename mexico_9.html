@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/z/7/3/x/image.related.articleLeadwide.620x349.ghz710.png/1435369844099.jpg'></td><td>2015-06-27 01:50:53</td><td><a href='http://www.brisbanetimes.com.au/world/donald-trump-pinata-all-the-rage-in-mexico-20150627-ghz710.html'>site</a></td><td><table><tr><td>A pinata depicting US Republican presidential candidate Donald Trump hangs outside a workshop in Reynosa, Mexico.</td></tr><tr><td>On Thursday, Mr Trump said he has great respect for Mexico and loves Mexicans.</td></tr><tr><td>Mr Trump said last week on Twitter: "I like Mexico and love the spirit of the Mexican people."</td></tr><tr><td>"Oscars were a great night for Mexico & why not - they are ripping off the US more than almost any other nation," Mr Trump tweeted.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-06-12 01:03:33</td><td><a href='http://news.yahoo.com/mexico-supports-probe-shooting-us-helicopter-010333153.html'>site</a></td><td><table><tr><td>MEXICO CITY (AP) - The Mexican government says it is working with the United States in the investigation into a shooting attack on a U.S. Customs and Border Protection helicopter on June 5, but says it "categorically rejects any attempt to see the border as a security threat."</td></tr><tr><td>Mexico's Foreign Relations Department said Thursday the U.S. border informed the Mexican government that it will send two Blackhawk helicopters to patrol the Texas border area where the helicopter was hit.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/assets/images/navigation/abc-logo.png'></td><td>2015-06-12 01:04:08</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-supports-probe-shooting-us-helicopter-31708352'>site</a></td><td><table><tr><td>Mexico Supports Probe Into Shooting of US Helicopter</td></tr><tr><td>Mexico has long opposed any militarization of the border.</td></tr></table></td></tr>
 </table></body></html>

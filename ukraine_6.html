@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/f7b22dc/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F6c%2F441377966dba2877e4bba89038c58f%2Fmedia%3Aaa41d6a349314f428e96a04f5429da18Ukraine.JPEG'></td><td>2015-06-09 16:58:02</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/09/ukraine-fuel-depot-fire-kills-1-several-injured-near-kiev'>site</a></td><td>KIEV, Ukraine (AP) - Ukrainian firefighters on Tuesday managed to contain a major blaze that had engulfed a fuel depot near Kiev, preventing it from spreading to another fuel depot and a nearby military base.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 19:03:44</td><td></td><td><a href='ukraine_6_8.html'>Russia accuses Ukraine of failing to launch political dialogue with the rebellious east and of keeping its economic blockade of areas controlled by pro-Russian rebels. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/37/00/26/8127911/7/square_gallery_thumb.jpg'></td><td>2015-06-10 19:03:44</td><td><a href='http://www.sfgate.com/news/world/article/Putin-visits-Italy-pope-after-G-7-snub-over-6317959.php'>site</a></td><td>Federico Lombardi said their talks concentrated on the Ukraine conflict and the Middle East, where the Holy See is worried about the fate of the Christian minority.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-10 19:36:09</td><td></td><td><a href='ukraine_6_7.html'>Pope Francis has met privately with Russian president Vladimir Putin at the Vatican, using the talks to call for a "sincere and great effort" aimed at bringing peace to Ukraine. (10)</a></td></tr>
 </table></body></html>

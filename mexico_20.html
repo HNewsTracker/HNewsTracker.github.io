@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-06-08 15:07:45</td><td><a href='http://news.yahoo.com/officials-probe-release-felon-accused-killing-officer-150745619.html'>site</a></td><td>ALBUQUERQUE, N.M. (AP) - New Mexico's attorney general is investigating the circumstances that led to the release of a repeat offender who prosecutors say went on to kill a police officer.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 20:49:35</td><td></td><td><a href='mexico_20_21.html'>MEXICO CITY (AP) - The documentary "Cartel Land" opens with chilling night scenes of large-scale methamphetamine cooking in rural Mexico. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 20:49:35</td><td></td><td><a href='mexico_20_22.html'>The film, with the Academy Award-winning director Kathryn Bigelow as executive producer, opens in Mexico on Thursday, in New York on Friday and later in other U.S. cities. (3)</a></td></tr>
 </table></body></html>

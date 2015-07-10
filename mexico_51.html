@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 14:25:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475665&ref=rss'>site</a></td><td>7-year-old wounded in firefight in Mexico dies</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 20:58:05</td><td><a href='http://www.foxnews.com/world/2015/06/25/att-to-invest-3-billion-in-expanding-newly-acquired-iusacell-mobile-phone/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>MEXICO CITY - AT&T Inc. plans to invest about $3 billion to build up its recently acquired Iusacell mobile phone network in Mexico.</td></tr><tr><td>Iusacell announced Thursday that the plan will extend voice and data services to cover about 100 million people in Mexico by 2018.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 20:58:56</td><td><a href='http://abcnews.go.com/International/wireStory/att-spend-3b-expanding-iusacell-network-mexico-32034825'>site</a></td><td><table><tr><td>AT&T to Spend $3B on Expanding Iusacell Network in Mexico</td></tr><tr><td>AT&T spent about $4.4 billion to buy both Iusacell and the Nextel Mexico mobile system between November and January.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 12,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,16 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 14:55:38</td><td></td><td><a href='baltimore_8.html'>A Baltimore judge has rejected a motion for a broad gag order in the case of six police officers charged in the fatal injury of a man in their custody. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 15:28:57</td><td></td><td><a href='baltimore_3.html'>Baltimore prosecutors had asked police to focus drug enforcement efforts on the corner where Freddie Gray was chased by officers before he allegedly suffered a fatal injury in police custody, the Baltimore Sun reported on Wednesday. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 15:20:05</td><td></td><td><a href='baltimore_10.html'>Local and federal authorities announced indictments against 14 men they say are members of a notoriously vicious gang known for violence, drug trafficking and witness intimidation both on Baltimore's streets and in its jails. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-14 15:47:01</td><td></td><td><a href='baltimore_9.html'>Carroll was editor and senior vice president at the Baltimore Sun from 1991 until 2000, when he took the head position at the Times that would become his last journalism job in a career spanning 40 years. (4)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-20 15:57:18</td><td></td><td><a href='baltimore_11.html'>BALTIMORE (AP) - Officials are expecting up to 350,000 people at the African American Festival this weekend in Baltimore. (1)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-22 17:35:20</td><td></td><td><a href='baltimore_7.html'>Jackson, an Illinois Democrat, was released from the Volunteers of America halfway house in Baltimore in the morning and left in one of two black SUVs that were there for him. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 14:55:38</td><td></td><td><a href='baltimore_11.html'>A Baltimore judge has rejected a motion for a broad gag order in the case of six police officers charged in the fatal injury of a man in their custody. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 15:28:57</td><td></td><td><a href='baltimore_6.html'>Baltimore prosecutors had asked police to focus drug enforcement efforts on the corner where Freddie Gray was chased by officers before he allegedly suffered a fatal injury in police custody, the Baltimore Sun reported on Wednesday. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 15:20:05</td><td></td><td><a href='baltimore_13.html'>Local and federal authorities announced indictments against 14 men they say are members of a notoriously vicious gang known for violence, drug trafficking and witness intimidation both on Baltimore's streets and in its jails. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-14 15:47:01</td><td></td><td><a href='baltimore_12.html'>Carroll was editor and senior vice president at the Baltimore Sun from 1991 until 2000, when he took the head position at the Times that would become his last journalism job in a career spanning 40 years. (4)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-20 15:57:18</td><td></td><td><a href='baltimore_14.html'>BALTIMORE (AP) - Officials are expecting up to 350,000 people at the African American Festival this weekend in Baltimore. (1)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-22 17:35:20</td><td></td><td><a href='baltimore_10.html'>Jackson, an Illinois Democrat, was released from the Volunteers of America halfway house in Baltimore in the morning and left in one of two black SUVs that were there for him. (2)</a></td></tr>
   <tr><td style='display:none'>6</td><td></td><td>2015-06-25 21:21:35</td><td></td><td><a href='baltimore_0.html'>-- An unarmed black man was fatally shot Thursday by officers in suburban Baltimore who thought he had a weapon when they were called to a home from which he was barred by protective order, the police chief said. (7)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-06-25 21:34:04</td><td></td><td><a href='baltimore_6.html'>It was 7-4 for Baltimore on a Machado two-out single to plate Pearce in the sixth, then the O's edge stretched to four in the seventh as Reimold hit a leadoff double and scored on a Davis double. (2)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-06-26 01:11:24</td><td></td><td><a href='baltimore_4.html'>Residents who attended the forum at the University of Baltimore Law School broke up into small groups to speak one-on-one with agency attorneys about their experiences with the police. (2)</a></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-07-03 18:17:40</td><td></td><td><a href='baltimore_2.html'>Baltimore police probe transport van sign Police in Baltimore are investigating a sign posted inside a police transport van that tells passengers: "Enjoy your ride, cuz we sure will!" (1)</a></td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-07-08 10:44:09</td><td></td><td><a href='baltimore_5.html'>Three people were killed and one was wounded when gunmen opened fire on a group of people on a street near the University of Maryland, Baltimore, police said on Wednesday. (1)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-25 21:34:04</td><td></td><td><a href='baltimore_9.html'>It was 7-4 for Baltimore on a Machado two-out single to plate Pearce in the sixth, then the O's edge stretched to four in the seventh as Reimold hit a leadoff double and scored on a Davis double. (2)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-26 01:11:24</td><td></td><td><a href='baltimore_7.html'>Residents who attended the forum at the University of Baltimore Law School broke up into small groups to speak one-on-one with agency attorneys about their experiences with the police. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-03 18:17:40</td><td></td><td><a href='baltimore_5.html'>Baltimore police probe transport van sign Police in Baltimore are investigating a sign posted inside a police transport van that tells passengers: "Enjoy your ride, cuz we sure will!" (1)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-08 10:44:09</td><td></td><td><a href='baltimore_8.html'>Three people were killed and one was wounded when gunmen opened fire on a group of people on a street near the University of Maryland, Baltimore, police said on Wednesday. (1)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-09 09:10:20</td><td></td><td><a href='baltimore_2.html'>Batts too was a veteran officer, though new to the city of Baltimore: He spent three decades in California, two as commissioner of the embattled Oakland Police Department and seven as commissioner of the Long Beach police department, where he'd served as a law enforcement officer for 20 years. (9)</a></td></tr>
 </table></body></html>

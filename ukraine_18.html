@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 14:00:05</td><td><a href='http://www.news24.com/World/News/Russia-cuts-off-power-supplies-to-Ukraine-rebels-20150707'>site</a></td><td>Ukraine's Energy Minister Volodymyr Demchyshyn said on Tuesday that energy-rich Russia had recently also stopped supplying electricity to the militia-run regions of Lugansk and Donetsk because bills were not being paid.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 04:03:19</td><td><a href='http://news.yahoo.com/poll-americans-europeans-differ-aid-ukraine-040232814.html'>site</a></td><td><table><tr><td>Poll: Americans and Europeans differ on aid to Ukraine</td></tr><tr><td>MOSCOW (AP) - A new survey shows that Americans are less willing than Europeans to send economic aid to Ukraine, where the government is struggling to keep the economy afloat while battling Russian-backed separatists.</td></tr><tr><td>While Ukraine is not a NATO member, other former Soviet republics are and they worry that the Western alliance would not defend them if it meant military confrontation with Russia.</td></tr><tr><td>But when asked whether NATO should send arms to Ukraine, the U.S. and Poland were most in favor, at 46 percent and 50 percent, respectively.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 04:05:12</td><td><a href='http://www.startribune.com/poll-americans-and-europeans-differ-on-aid-to-ukraine/306732581/'>site</a></td><td>Of the eight countries, only Italy was less supportive of sending economic aid to Ukraine than the U.S., where 62 percent of those surveyed were in favor.</td></tr>
 </table></body></html>

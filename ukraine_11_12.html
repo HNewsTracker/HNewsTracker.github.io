@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 14:28:02</td><td><a href='http://news.yahoo.com/slovak-agency-russian-spies-increase-activities-eu-nato-142802669.html'>site</a></td><td><table><tr><td>BRATISLAVA, Slovakia (AP) - Slovakia's spy agency says Russian agents have significantly increased their activities in Slovakia and all other NATO and European Union countries in connection with the crisis in Ukraine.</td></tr><tr><td>It says Ukraine's conflict strengthened the position of conservatives close to Russian President Vladimir Putin.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/37/01/41/8132731/5/square_gallery_thumb.jpg'></td><td>2015-06-11 06:33:08</td><td><a href='http://www.sfgate.com/news/world/article/Educated-Ukrainians-flee-east-Ukraine-for-new-6320299.php'>site</a></td><td>In this May 13, 2015, photo, Alesya Bolot gestures during an interview in Kiev, Ukraine.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 06:33:08</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/11/educated-ukrainians-flee-east-ukraine-for-new-lives-in-kiev'>site</a></td><td><table><tr><td>Educated Ukrainians flee east Ukraine for new lives in Kiev</td></tr><tr><td>KIEV, Ukraine (AP) - Alesya Bolot worked for a contemporary arts foundation that converted an abandoned factory into a mecca for young and bright people with daring ideas.</td></tr><tr><td>According to the U.N., a total of 94,000 people from eastern Ukraine are now living in Kiev and its suburbs.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 07:59:11</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article23737606.html#storylink=rss'>site</a></td><td>In this Thursday, May 14, 2015, photo, Victoria Sosnina poses for a photo, during an interview in Kiev, Ukraine.</td></tr>
 </table></body></html>

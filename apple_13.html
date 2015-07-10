@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 14:10:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/11/in-with-the-old-apple-restores-former-bank-for-new-store'>site</a></td><td><table><tr><td>It's all part of Apple's effort to keep its stores distinct - not just from other retailers but from each other.</td></tr><tr><td>And as Apple looks to open new stores or renovate existing ones - including the iconic New York Fifth Avenue store, with its distinctive glass-cube entrance - the company will look for additional ways to do that.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 07:10:15</td><td></td><td><a href='apple_13_14.html'>Apple Maps has improved a lot for driving and walking directions since it ousted Google Maps in 2012 as the default service on iPhones. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 07:10:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11463073&ref=rss'>site</a></td><td>With Apple, it will be a core feature.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-10 08:09:18</td><td><a href='http://www.seattlepi.com/business/technology/article/Review-The-best-new-features-coming-from-Apple-6317745.php'>site</a></td><td>On Apple Watch, apps from outside parties have essentially been extensions of phone apps.</td></tr>
 </table></body></html>

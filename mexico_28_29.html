@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 15:49:10</td><td><a href='http://www.reuters.com/article/2015/06/11/us-storm-carlos-mexico-idUSKBN0OR25G20150611?feedType=RSS&feedName=environmentNews'>site</a></td><td><table><tr><td>MEXICO CITY Tropical storm Carlos formed off the southern Pacific coast of Mexico on Thursday and was expected to gain some strength in the coming days, the U.S. National Hurricane Center said.</td></tr><tr><td>The center said the storm was expected to move in a path northward, parallel to the coast of Mexico and that no watches or warnings were in effect.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 20:26:56</td><td><a href='http://news.yahoo.com/tropical-storm-carlos-forms-south-mexico-162817197.html'>site</a></td><td><table><tr><td>MIAMI (AP) - Hurricane Carlos hovered Saturday over the Pacific Ocean south of Acapulco, Mexico, hours after a hurricane watch was issued for a swath of that country's southwest coastline, forecasters said.</td></tr><tr><td>Mexico's government has issued a hurricane watch from Lazaro Cardenas to Punta San Telmo along Mexico's southwest mainland coast, meaning hurricane conditions were possible within that area within 48 hours.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-13 23:14:44</td><td><a href='http://abcnews.go.com/International/wireStory/forecasters-issue-hurricane-warning-carlos-strengthen-off-southwest-31747822'>site</a></td><td>Forecasters issue hurricane warning as Carlos to strengthen off southwest Mexico late Sunday.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-14 12:28:03</td><td><a href='http://www.miamiherald.com/news/nation-world/article23758078.html#storylink=rss'>site</a></td><td><table><tr><td>Hurricane Carlos weakens some, nearly stationary off Mexico</td></tr><tr><td>Hurricane Carlos has weakened slightly but is expected to regain punch, hovering stationary over the Pacific Ocean off Mexico.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150614&t=2&i=1056179873&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5D0E7'></td><td>2015-06-14 17:06:26</td><td><a href='http://www.reuters.com/article/2015/06/14/us-storm-carlos-mexico-idUSKBN0OU0UI20150614?feedType=RSS&feedName=environmentNews'>site</a></td><td>Meanwhile on the other side of the country, a low pressure system in the Gulf of Mexico was producing showers on the coast of Guatemala, Belize, and the Yucatan peninsula, and it could become a tropical storm in the next two days, the NHC said.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-15 04:02:48</td><td><a href='http://abcnews.go.com/International/wireStory/tropical-storm-carlos-batters-mexicos-southwest-coast-31766312'>site</a></td><td>Officials ordered schools closed Monday and readied shelters along Mexico's southwestern coast as Tropical Storm Carlos battered beaches with high waves and strong wind as it swirled just offshore.</td></tr>
+</table></body></html>

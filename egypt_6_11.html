@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/e4da348/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F8b%2Fa91dd5f23e310b43d1e23157cc94aa%2Fmedia%3A3400c76406944ff5a0faf875fe756817MideastEgypt.JPEG'></td><td>2015-06-10 10:45:19</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/10/the-latest-on-egypt-attack-4-wounded-in-shootout'>site</a></td><td>The latest on Egypt attack: 4 wounded in shootout</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 21:05:59</td><td><a href='http://www.reuters.com/article/2015/07/03/us-israel-palestinians-rocket-claim-idUSKCN0PD26320150703?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Rockets land in Israel, Egypt's IS affiliate claims responsibility</td></tr><tr><td>Islamic State's Egypt affiliate, Sinai Province, said in a statement posted on Twitter by supporters that it had launched three Grad rockets toward "occupied Palestine".</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-03 23:18:13</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/IS-in-Egypt-claims-rocket-attack-on-Israel/articleshow/47932910.cms'>site</a></td><td><table><tr><td>IS in Egypt claims rocket attack on Israel</td></tr><tr><td>Egypt's military deployed F-16 warplanes to bombard IS jihadists who battled troops after launching their surprise dawn attack.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 14:59:59</td><td><a href='http://www.nydailynews.com/news/world/car-bomb-kills-egypt-top-prosecutor-article-1.2275009'>site</a></td><td>Egypt's main Islamic militant group Ansar Beit al-Maqdis - which has pledged allegiance to the Islamic State group fighting in Iraq and Syria - has claimed responsibility for that attack.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cbsnews1.cbsistatic.com/hub/i/r/2015/06/29/730d5799-8b0d-4ae8-9ffa-86b3e4ec6d26/thumbnail/620x350/a9a3d73579778ffe92bc04589572310a/cairo-bombing-over-view.jpg'></td><td>2015-06-29 15:36:25</td><td><a href='http://www.cbsnews.com/news/egypt-prosecutor-hisham-barakat-targeted-in-cairo-bomb-attack/'>site</a></td><td>The attack came as Egyptian security forces went on high alert on the eve of the second anniversary of massive anti-Islamist demonstrations that paved the way, days later, for the military's ouster of Egypt's Islamic President Mohammed Morsi.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-29 23:44:05</td><td><a href='http://www.reuters.com/article/2015/06/29/us-egypt-violence-idUSKCN0P90UA20150629?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Last month, the Islamic State militant group's Egyptian affiliate urged followers to attack judges, opening a new front in an Islamist insurgency in Egypt..</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/03/6d/90/aad568d79cc94341ba8f7fc8128faed0-5989351e162c4dc897cae975e9a7f1ab-0.jpg'></td><td>2015-07-03 20:57:13</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/egypt-marks-2nd-anniversary-of-islamist-ouster-wit/nmrQM/'>site</a></td><td>Egypt marks 2nd anniversary of Islamist ouster with mourning</td></tr>
 </table></body></html>

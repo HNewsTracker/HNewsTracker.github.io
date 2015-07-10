@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/0009547c-642.jpg'></td><td>2015-07-01 11:04:58</td><td><a href='http://www.rte.ie/news/business/2015/0701/711922-vienna-facebook-court/'>site</a></td><td><table><tr><td>An Austrian student's legal battle against Facebook, accusing it of helping the US security service to collect personal data, suffered a setback after a Vienna court rejected his case on procedural grounds, both sides have said.</td></tr><tr><td>"This litigation was unnecessary and we're pleased that the court has roundly rejected these claims," a spokesman for Facebook said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 20:39:55</td><td><a href='http://news.yahoo.com/las-vegas-man-accused-threatening-obama-facebook-posts-203955656.html'>site</a></td><td>LAS VEGAS (AP) - Federal authorities in Nevada say they arrested a Las Vegas man with seven registered guns and charged him with making Facebook threats to harm President Barack Obama.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 20:44:20</td><td><a href='http://www.miamiherald.com/news/nation-world/article25853248.html#storylink=rss'>site</a></td><td>Las Vegas man accused of threatening Obama in Facebook posts</td></tr>
 </table></body></html>

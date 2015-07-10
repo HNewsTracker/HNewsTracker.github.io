@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/N1mWFhVD5D1GQP8VCNxjPA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507011440528093945'></td><td>2015-07-02 03:44:01</td><td><a href='http://sports.yahoo.com/news/penguins-acquire-phil-kessel-maple-leafs-major-trade-184759025--nhl.html'>site</a></td><td>Penguins acquire Phil Kessel from Maple Leafs in major trade (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.chron.com/img/hdn/share/fb_share_2.png'></td><td>2015-06-25 12:36:06</td><td><a href='http://www.chron.com/business/article/Yahoo-s-Sullivan-to-become-Facebook-s-chief-6348486.php'>site</a></td><td><table><tr><td>Yahoo's Stamos to become Facebook's chief security officer</td></tr><tr><td>Stamos served as Yahoo Inc.'s chief information security officer for a little over a year, having started there in March 2014, according to his Linkedin account.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 13:21:08</td><td><a href='http://www.ctvnews.ca/sci-tech/yahoo-s-stamos-joining-facebook-as-its-chief-security-officer-1.2439714'>site</a></td><td>NEW YORK -- Yahoo's cybersecurity chief says he's heading to Facebook to become its chief security officer.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 18:57:41</td><td><a href='http://news.yahoo.com/egypt-court-sentences-tv-broadcaster-1-slander-185741212.html'>site</a></td><td>Egypt court sentences TV broadcaster to 1 year for slander</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 06:24:09</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/09/egypts-winemakers-seek-to-revive-ancient-art'>site</a></td><td><table><tr><td>Egypt's winemakers seek to revive ancient art</td></tr><tr><td>It's all part of a now 15-year effort to revive Egypt's small wine industry, which mainly caters to tourists.</td></tr><tr><td>"When a tourist comes to Egypt and he drinks a wine that is not Egyptian, it's a shameful thing."</td></tr><tr><td>Given such conditions, Egypt is unlikely to emerge as a top wine producer anytime soon, or even challenge nearby Lebanon, Israel, Turkey or Greece.</td></tr><tr><td>In ancient times, Egypt was part of a winemaking tradition spanning the eastern Mediterranean.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-09 13:36:24</td><td><a href='http://www.miamiherald.com/news/business/article23565037.html#storylink=rss'>site</a></td><td>In this Wednesday, May 27, 2015 photo, a worker inspects wine bottles at the Gianaclis winery, one of Egypt's main wineries, in the Nile Delta, north of Cairo, Egypt.</td></tr>
 </table></body></html>

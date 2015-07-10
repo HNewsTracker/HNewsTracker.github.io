@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,10 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 19:57:44</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-06-09-US-Colorado-Shooting/id-6f68c790b1cf424ba257372859c52a09'>site</a></td><td>The judge was concerned that none of the other jurors came forward in James Holmes' high-profile trial.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 21:46:05</td><td><a href='http://www.usnews.com/news/us/articles/2015/06/09/judge-in-colorado-theater-shooting-trial-dismisses-2-jurors'>site</a></td><td>Judge Carlos A. Samour Jr. found the three women violated his orders to avoid outside information on James Holmes' death penalty trial and to not talk about the case with anyone.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 17:31:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-06-11-US--Colorado%20Shooting-The%20Latest/id-7b04c140aa0d42d1a8bd463682a438d3'>site</a></td><td>Prosecutors contend Holmes was sane and are seeking the death penalty.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 03:35:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article23645413.html#storylink=rss'>site</a></td><td>"He wouldn't go up and interact with people," Datta said, adding that Holmes was more talkative when he was alone with her.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 15:38:03</td><td><a href='http://www.foxnews.com/us/2015/06/11/colorado-theater-shooter-ex-didnt-see-future-with-him/'>site</a></td><td>Prosecutors have said Holmes sent her messages saying he wanted to kill people, but she didn't take him seriously and suggested he see a therapist.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 17:31:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-06-11-US--Colorado%20Shooting-The%20Latest/id-7b04c140aa0d42d1a8bd463682a438d3'>site</a></td><td><table><tr><td>Datta testified about online chats she had with Holmes in the months they dated.</td></tr><tr><td>Gargi Datta (gar-ghee DAH-tah) says she confronted Holmes after he told someone who hit on her that she was his girlfriend.</td></tr><tr><td>Datta says she saw Holmes deliver a class presentation in May 2012.</td></tr><tr><td>Datta testified that in early 2012, she and another student asked Holmes to see a therapist, and Holmes said he already was.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 21:20:59</td><td><a href='http://www.foxnews.com/us/2015/06/11/colorado-theater-shooter-ex-didnt-see-future-with-him/'>site</a></td><td>In a video played earlier in the trial, Holmes said he fell in love with Datta.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-12 00:21:00</td><td><a href='http://www.latimes.com/nation/la-na-james-holmes-girlfriend-20150611-story.html'>site</a></td><td>Datta and Holmes were both graduate students in the University of Colorado's neuroscience program.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/12/01/6ZDJGGrYGHSK2-3119515-image-a-4_1434067946427.jpg'></td><td>2015-06-12 01:06:08</td><td><a href='http://www.dailymail.co.uk/news/article-3119515/Theater-shooters-ex-I-didnt-future-him.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Datta and Holmes were graduate students at the University of Colorado when they began dating during their first semester in the fall of 2011.</td></tr>
 </table></body></html>
