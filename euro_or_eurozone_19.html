@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/21/d9/aa/d6fd049a1ea4418f815afdce1e3d93ec-9142a1b8966d4573809c45d61eac2188-0.jpg'></td><td>2015-06-21 21:02:27</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greece-presents-new-financial-proposals-to-europea/nmhZY/'>site</a></td><td>A flag which says "stop" and has euro money signs in the EU stars flaps in the wind during a protest march in solidarity with Greece in the center of Brussels on Sunday, June 21, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/l/f/e/6/image.related.articleLeadwide.620x349.ghlejv.png/1433988821411.jpg'></td><td>2015-06-11 02:15:35</td><td><a href='http://www.brisbanetimes.com.au/world/belgium-finds-way-to-issue-its-own-waterloo-euro-coin-20150611-ghlejv.html'>site</a></td><td>Belgium finds way to issue its own Waterloo euro coin</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/l/f/e/6/image.related.articleLeadwide.620x349.ghlejv.png/1433988821411.jpg'></td><td>2015-06-11 02:15:35</td><td><a href='http://www.smh.com.au/world/belgium-finds-way-to-issue-its-own-waterloo-euro-coin-20150611-ghlejv.html'>site</a></td><td>This week, Belgium decided to circumvent French resistance by invoking a little-known European Union rule that allows countries to issue euro coins of their choice, provided they are in an irregular denomination.</td></tr>
 </table></body></html>

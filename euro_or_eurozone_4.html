@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201525/AP150506205731_140x93.jpg'></td><td>2015-06-30 18:25:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11473789&ref=rss'>site</a></td><td>Greek official: eurozone finance ministers' teleconference over, will continue Wed morning</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 15:52:45</td><td></td><td><a href='euro_or_eurozone_4_5.html'>"We continue to see mounting tensions over Greece as a catalyst for the euro-dollar to go near parity, if contagion to other peripherals causes the European Central Bank (ECB) to accelerate quantitative easing." (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/Y5BwJRryezZ7NlkRs6H7EA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/28c8a3431780597122d24ce765a25a57'></td><td>2015-07-01 15:52:45</td><td><a href='http://finance.yahoo.com/news/euro-only-headed-down-goldman-072354201.html'>site</a></td><td>"The Italian sovereign spread tended to lead the euro. The European common currency, that is, rose along with European bond yields and vice versa. That's the opposite of what one would expect in the case of contagion," he said.</td></tr>
 </table></body></html>

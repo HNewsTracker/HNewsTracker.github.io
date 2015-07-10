@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 13:12:02</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/03/britain-tunisia-honor-38-victims-of-beach-resort-attack'>site</a></td><td><table><tr><td>People observe the minute silence for the victims of the shooting in Tunisia last week, at the All England Lawn Tennis Championships in Wimbledon, London, Friday July 3, 2015.</td></tr><tr><td>Fans and staff at Wimbledon observed a minute's silence for the victims of last Friday's attack in Tunisia, in which 30 Britons were killed in a shooting rampage at a beach resort in Sousse.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn1.belfasttelegraph.co.uk/incoming/article31342175.ece/3da5b/ALTERNATES/w620/479038354_2.jpg'></td><td>2015-06-30 17:32:49</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/tunisia-attack-gunman-seifeddine-rezgu-trained-in-libya-at-same-time-as-bardo-museum-attackers-31342213.html'>site</a></td><td>Mr Essebsi, 88, is a veteran of Tunisia's pre-revolutionary regime and was elected last autumn on a platform of restoring security and dignity to the state.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718812909_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-30 18:36:12</td><td><a href='http://www.torontosun.com/2015/06/30/tunisia-beach-gunman-trained-in-libya-with-museum-attackers-official'>site</a></td><td><table><tr><td>The revelation confirms repeated fears that the strong presence of the Islamic State group in neighbouring Libya has become a direct threat to Tunisia, the only democracy to emerge from the Arab Spring uprisings.</td></tr><tr><td>Increasingly, however, they have stayed in Libya before returning to carry out attacks in Tunisia.</td></tr><tr><td>Tunisia's most well-known Islamic radical Seifallah Ben Hassine, fled to Libya in 2013 taking many supporters with him into exile.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31351807.ece/2e513/ALTERNATES/h342/PANews%20BT_P-43ef656b-fe6b-4c07-82c4-72bc00ebe0d2_I1.jpg'></td><td>2015-07-04 14:26:20</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/tunisia-declares-state-of-emergency-31351808.html'>site</a></td><td>Mr Essebsi blamed the poor security in Libya for Tunisia's problems, and the lack of international resolve in targeting the Islamic State group throughout the region.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-04 16:19:48</td><td><a href='http://www.nydailynews.com/news/world/tunisian-leader-calls-state-emergency-beach-attack-article-1.2281304'>site</a></td><td>With a nationwide televised address, President Beji Caid Essebsi officially reintroduced urgent security measures for Tunisia that had been lifted in March 2014.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/92635442f11dad24e23e53632f3882005744472e/c=307-0-2000-1273&amp;r=x404&amp;c=534x401/local/-/media/USATODAY/WiresImages/2015/07/03/ccb475519f09231d7b0f6a7067000a7b.jpg'></td><td>2015-07-03 14:26:35</td><td><a href='http://www.usatoday.com/story/news/world/2015/07/03/islamic-state-palmyra/29661517/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomworld-topstories'>site</a></td><td><table><tr><td>Islamic State says it destroyed archaeological pieces from Palmyra</td></tr><tr><td>The Islamic State group says it has destroyed six archaeological pieces from the historic town of Palmyra that were confiscated from a smuggler.</td></tr><tr><td>An IS statement says the busts were found when the smuggler was stopped at a checkpoint and was later referred to an Islamic which ordered that they be destroyed and the man be whipped.</td></tr><tr><td>The issue was referred to an Islamic court in the northern Syrian town of Manbij, which ordered that they be destroyed and the man be whipped.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2013/06/27/hutchins_r142x90.jpg?a4c645db5e0d43838ff6d631be583dfe8b15e757'></td><td>2015-06-11 11:23:12</td><td><a href='http://www.utsandiego.com/news/2015/jun/11/dempsey-says-new-us-military-base-in-iraq-could/'>site</a></td><td>Dempsey said another could eventually be established in north-central Iraq if and when the Iraqi army is ready to organize a counteroffensive in Mosul, which has been in Islamic State hands for 12 months.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 11:23:12</td><td><a href='http://www.foxnews.com/us/2015/06/11/gen-dempsey-says-new-us-military-base-in-iraq-could-be-model-in-battle-against/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>NAPLES, Italy - The Pentagon's top general says the new U.S. military base being setting up in Iraq's western desert could be a model for more such U.S. hubs if Iraq is able to regain momentum against the Islamic State group.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 21,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 21 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,25 +48,6 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 17:43:34</td><td></td><td><a href='fifa_6_11.html'>"We can only encourage FIFA to continue (with) the reforms which have been initiated, we cannot give detailed advice of what to do but we appreciate there is a readiness for reforms," he told a news conference. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 19:55:05</td><td></td><td><a href='fifa_6_7.html'>Bach said the size of the FIFA scandal was much bigger than the case that led to the ouster of 10 IOC members for accepting improper inducements during Salt Lake's winning bid for the 2002 Winter Games. (4)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-09 12:35:15</td><td></td><td><a href='fifa_6_10.html'>MILAN (AP) " An Argentine businessman who was indicted by U.S. authorities in connection to the FIFA corruption case turned himself in to Italian police on Tuesday. (13)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-09 15:30:44</td><td></td><td><a href='fifa_6_8.html'>Leoz, a former FIFA executive committee member who is under house arrest in Paraguay, was also named on the Interpol list, as was FIFA vice president Jack Warner and Jose Margulies, a Brazilian broadcast executive. (5)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-09 15:32:18</td><td></td><td><a href='fifa_6_9.html'>In a separate Swiss investigation, authorities seized documents at FIFA headquarters in their probe into the bidding contests for the 2018 and 2022 World Cup tournaments. (10)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-09 17:40:52</td><td><a href='http://www.nydailynews.com/sports/soccer/feds-probing-world-cup-awards-fifa-scandal-live-updates-article-1.2245281'>site</a></td><td>"It didn't transgress any FIFA practices, any practices applicable to the bidding process. What else can we say?"</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-10 08:04:16</td><td></td><td><a href='fifa_6_16.html'>FIFA confirmed in a statement on Wednesday that its executive committee would meet in July to pick a date for the full presidential vote, with various options set to be discussed. (4)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-06-10 10:11:58</td><td></td><td><a href='fifa_6_17.html'>The host for the tornament is expected to be chosen by the 209 FIFA members in May 2017 at a meeting in Kuala Lumpur, Malaysia. (3)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-06-10 11:17:04</td><td></td><td><a href='fifa_6_18.html'>"Due to the situation, I think it's nonsense to start any bidding process for the time being. It will be postponed," FIFA Secretary General Jerome Valcke told a news conference in the southern Russian city of Samara. (8)</a></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-06-10 13:49:46</td><td></td><td><a href='fifa_6_21.html'>Scandal-hit FIFA will hold an extraordinary executive committee meeting in July to discuss dates for the election to replace president Sepp Blatter, who announced his resignation next week. (14)</a></td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-06-10 18:18:03</td><td></td><td><a href='fifa_6_22.html'>Two weeks ago it raided FIFA offices and opened "criminal proceedings against persons unknown on suspicion of criminal mismanagement and of money laundering." (2)</a></td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-06-10 22:02:35</td><td></td><td><a href='fifa_6_20.html'>Former Brazil star Zico on Wednesday confirmed he will stand in the election to succeed Sepp Blatter as president of FIFA, although he admitted he may struggle to find enough support. (4)</a></td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-06-11 11:39:51</td><td></td><td><a href='fifa_6_12.html'>"The European Parliament... therefore calls on FIFA to select, in a transparent and inclusive way, an appropriate interim leader to replace Joseph Blatter forthwith." (6)</a></td></tr>
-  <tr><td style='display:none'>13</td><td></td><td>2015-06-11 14:12:51</td><td></td><td><a href='fifa_6_13.html'>FIFA communications director Walter De Gregorio, closely tied to the embattled FIFA president since 2011, left his job three days after telling a joke about soccer's governing body on a TV talk show. (9)</a></td></tr>
-  <tr><td style='display:none'>14</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-13T235621Z_1_LYNXMPEB5C0FX_RTROPTP_2_SOCCER-FIFA.JPG?itok=oqQng1Dt'></td><td>2015-06-14 09:08:23</td><td><a href='http://www.sbs.com.au/news/article/2015/06/14/blatter-may-seek-stay-fifa-boss-source-tells-swiss-paper'>site</a></td><td>Blatter's renewed interest in the job was also a reason for the departure of Walter de Gregorio as FIFA's director of communications, since he had argued for a completely new start and advised Blatter to go, the Swiss newspaper said.</td></tr>
-  <tr><td style='display:none'>15</td><td></td><td>2015-06-21 19:48:52</td><td></td><td><a href='fifa_6_19.html'>"Sports associations like the International Federation of Association Football (FIFA) or the International Olympic Committee are not businesses but associations. They do not pay taxes and, as associations, are exempt from the Swiss anti-corruption legal framework," the State Department said in the report. (2)</a></td></tr>
-  <tr><td style='display:none'>16</td><td></td><td>2015-06-22 17:55:15</td><td></td><td><a href='fifa_6_14.html'>Journalist Victor Hugo Morales said on Twitter late Sunday, June 21, 2015 that Maradona plans to run for president of FIFA. (5)</a></td></tr>
-  <tr><td style='display:none'>17</td><td></td><td>2015-06-30 13:15:05</td><td></td><td><a href='fifa_6_15.html'>The Liberian who wants to be FIFA president says he would step aside if longtime African soccer head Issa Hayatou decided to run. (5)</a></td></tr>
-  <tr><td style='display:none'>18</td><td></td><td>2015-07-01 23:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-says-he-has-clear-conscience-despite-fifa-/nmqLX/'>site</a></td><td>The 79-year-old told Bunte that he happily accepts "fair and constructive criticism, also to consider what can be done differently. But when someone says, 'Blatter is corrupt because FIFA is corrupt', I can only shake my head. Anyone who makes such claims without proof should be jailed."</td></tr>
-  <tr><td style='display:none'>19</td><td></td><td>2015-07-01 23:51:01</td><td></td><td><a href='fifa_6_23.html'>Four days after being re-elected for a fifth term, Blatter said on June 2 that he would step down amid a crisis provoked by American and Swiss federal investigations of corruption linked to FIFA. (3)</a></td></tr>
-  <tr><td style='display:none'>20</td><td></td><td>2015-07-02 09:00:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-us-seeks-extradition-fifa-20150702-story.html'>site</a></td><td>The seven men include FIFA vice president Jeffrey Webb of the Cayman Islands and Eugenio Figueredo of Uruguay, who was arrested two days before his FIFA vice presidential term expired.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 15:30:44</td><td></td><td><a href='fifa_6_8.html'>Leoz, a former FIFA executive committee member who is under house arrest in Paraguay, was also named on the Interpol list, as was FIFA vice president Jack Warner and Jose Margulies, a Brazilian broadcast executive. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 20:45:19</td><td></td><td><a href='fifa_6_7.html'>BUENOS AIRES, Argentina - An Argentine businessman who was indicted by U.S. authorities in the FIFA corruption case says he is willing to be extradited to the U.S. from Italy, where he is being held. (8)</a></td></tr>
 </table></body></html>

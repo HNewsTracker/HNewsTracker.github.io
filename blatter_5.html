@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-10T183653Z_1_LYNXMPEB590YA_RTROPTP_2_SOCCER-FIFA-BLATTER.JPG?itok=3KjbuZeR'></td><td>2015-06-10 18:53:39</td><td><a href='http://www.sbs.com.au/news/article/2015/06/11/insight-fifa-blatter-built'>site</a></td><td>Under Blatter, FIFA has handed its development money out strategically.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150610&t=2&i=1055128377&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5908B'></td><td>2015-06-10 11:10:46</td><td><a href='http://www.reuters.com/article/2015/06/10/us-soccer-fifa-election-idUSKBN0OQ0L620150610?feedType=RSS&feedName=topNews'>site</a></td><td>"This extraordinary Executive Committee will convene in July, the precise date to be confirmed within this week. For this extraordinary elective Congress (to elect Blatter's successor) there are currently various date options for discussion."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 14:43:16</td><td></td><td><a href='blatter_5_6.html'>Scandal-plagued FIFA postponed the bidding for the right to host the 2026 World Cup on Wednesday and embarked on the search to find a replacement for outgoing President Sepp Blatter. (2)</a></td></tr>
 </table></body></html>

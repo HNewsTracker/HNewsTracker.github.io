@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 20:08:47</td><td></td><td><a href='microsoft_0_1.html'>The Surface Hub will "pay for itself and make money" said Mike Angiulo, who runs Microsoft's devices group. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://wpmedia.business.financialpost.com/2015/06/surface.png?w=620'></td><td>2015-06-10 21:02:09</td><td><a href='http://business.financialpost.com/fp-tech-desk/microsoft-corp-reveals-gigantic-us20000-84-inch-surface-for-conferencing'>site</a></td><td>It will run a custom version of Windows 10, Microsoft's new operating system due out in late July.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 05:22:48</td><td></td><td><a href='microsoft_0_1.html'>Last month, the company said that Stephen Elop, the former chief executive of Nokia who became a senior Microsoft executive after the acquisition, overseeing its devices business, would leave Microsoft. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static01.nyt.com/images/2015/06/30/business/Microsoft/Microsoft-thumbStandard.jpg'></td><td>2015-07-08 05:22:48</td><td><a href='http://www.nytimes.com/2015/07/09/technology/microsoft-layoffs.html'>site</a></td><td>At the end of March, Microsoft had more than 118,000 employees globally.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 21:41:55</td><td></td><td><a href='microsoft_0_2.html'>Microsoft will cut 7,800 jobs and take a US$7.6 billion impairment charge as it attempts to revive its flagging phone hardware business. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-08 21:42:23</td><td></td><td><a href='microsoft_0_3.html'>Three years ago, Microsoft wrote off another big sum, $6.2 billion, on its purchase of digital advertising firm aQuantive. (2)</a></td></tr>
 </table></body></html>

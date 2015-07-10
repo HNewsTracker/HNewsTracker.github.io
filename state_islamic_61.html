@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150613&t=2&i=1055941428&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5C06R'></td><td>2015-06-13 16:52:16</td><td><a href='http://www.reuters.com/article/2015/06/13/us-mideast-crisis-syria-idUSKBN0OT0F120150613?feedType=RSS&feedName=wtMostRead'>site</a></td><td>The advance raises the prospect of a battle at the Turkish border between the well-organized YPG militia and Islamic State.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47968619,width-300,resizemode-4/HSBC.jpg'></td><td>2015-07-07 04:37:02</td><td><a href='http://timesofindia.indiatimes.com/world/uk/HSBC-fires-6-staff-for-mock-Islamic-State-execution-video/articleshow/47968514.cms'>site</a></td><td><table><tr><td>HSBC fires 6 staff for mock Islamic State execution video</td></tr><tr><td>British bank HSBC fired six staff after they filmed a mock Islamic State-style execution video during a team-building day out and posted footage online, a spokesman confirmed on Tuesday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/g/y/o/c/e/image.related.thumbnail.90x60.gi6mjw.png/1436246120385.jpg'></td><td>2015-07-07 05:15:44</td><td><a href='http://www.smh.com.au/world/hsbc-bank-staff-sacked-for-islamic-state-beheading-prank-20150707-gi6mjw.html'>site</a></td><td>HSBC bank staff sacked for Islamic State beheading prank</td></tr>
 </table></body></html>

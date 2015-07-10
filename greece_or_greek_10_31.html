@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/8fP.C1.2FZ8vFtfE58PkzQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8193345-1-1-0.jpg.cf.jpg'></td><td>2015-06-10 11:56:40</td><td><a href='http://news.yahoo.com/asian-stocks-uneven-china-msci-result-071358146.html'>site</a></td><td>GREEK TALKS: European markets, in particular, have been under the kosh of late, largely because of renewed worries over the financial future of Greece.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 21:27:11</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/stocks-up-ahead-of-greece-decision-chinese-stocks-plunge'>site</a></td><td>While Greece has been the main driver in financial markets recent weeks, worries over China have risen the list of concerns.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-30 05:01:27</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/29/us-stocks-fall-in-early-trade-as-greece-debt-woes-escalate'>site</a></td><td>If Greece defaults and switches to a new currency, it's sure to shake global financial markets.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 05:07:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25747720.html#storylink=rss'>site</a></td><td>"Most traders are well prepped over the possible fallout of Greece. It's guessing which card will fall next that's the difficult bit," said Nicholas Teo, analyst at CMC Markets in Singapore.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-03 12:20:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475634&ref=rss'>site</a></td><td>If Greece's financial crisis deepens, as many believe it must, he can feed his children and grandchildren with the bounty of the land in this proud village high in the mountains of the Arcadia Peloponnese.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/07/247976c86b65931e7b0f6a70670071db_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-08 06:23:55</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/china-leads-dive-in-asia-stocks-as-greece-rattles/'>site</a></td><td>"Still, for traders there are only two games in town and these remain China's equity markets and the Greek negotiations."</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>THE QUOTE: "Greece's proposal to its European creditors appears to significantly improve the prospects for a weekend agreement on extending further credit," said Ric Spooner, chief market analyst at CMC Markets.</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297716290062_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-24 18:32:12</td><td><a href='http://www.torontosun.com/2015/06/24/microsoft-office-finally-available-for-android'>site</a></td><td><table><tr><td>Well, you're in luck, because Microsoft Office apps for Android are now available, the company said in a blog post on Wednesday.</td></tr><tr><td>For full access, users need a Microsoft Office 365 subscription.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 21:51:47</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/06/09/nokia-theatre-home-of-the-emmys-renamed-microsoft-theater'>site</a></td><td>Nokia Theatre, home of the Emmys, renamed Microsoft Theater</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/OrgbKooyCxE3xvUO4Rokhw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/0939421dc476ed19780f6a706700f0b2.jpg'></td><td>2015-06-09 21:51:58</td><td><a href='http://news.yahoo.com/nokia-theatre-home-emmys-renamed-microsoft-theater-215158984.html'>site</a></td><td><table><tr><td>Microsoft and theater owner AEG announced Tuesday that the 7,100-seat venue is being rebranded.</td></tr><tr><td>The 40,000-square-foot plaza outside the theater will similarly be known as Microsoft Square, and the nearby 3,100-seat venue Club Nokia will also be rebranded.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-09 21:53:26</td><td><a href='http://abcnews.go.com/Entertainment/wireStory/nokia-theatre-home-emmys-renamed-microsoft-theater-31649152'>site</a></td><td>Microsoft Corp. acquired Nokia Corp.'s smartphone business last year.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-10 06:16:57</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-06-09-US--Microsoft%20Theater-Nokia%20Theatre/id-f5f83d8782cf4ba0ba9102c1a484cfd5'>site</a></td><td>Microsoft and theater owner AEG announced Tuesday, June 9, 2015, that the 7,100-seat venue is being rebranded following Microsoft's acquisition of the Nokia smartphone business last year.</td></tr>
 </table></body></html>

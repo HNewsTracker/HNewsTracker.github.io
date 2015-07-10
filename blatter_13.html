@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://si.wsj.net/public/resources/images/BN-JC779_0626FI_P_20150626111659.jpg'></td><td>2015-06-27 17:16:02</td><td><a href='http://www.wsj.com/articles/sepp-blatter-i-have-not-resigned-1435332429?mod=WSJ_GoogleNews'>site</a></td><td>Sepp Blatter: 'I Have Not Resigned'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 09:15:14</td><td><a href='http://www.charlotteobserver.com/sports/article26934976.html#storylink=rss'>site</a></td><td>Adidas chief: Platini the best choice to succeed Blatter</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 09:15:14</td><td><a href='http://www.miamiherald.com/sports/article26934976.html#storylink=rss'>site</a></td><td>Former France captain Platini hasn't yet said whether he will look to succeed Blatter in the FIFA presidential election expected in a few months.</td></tr>
 </table></body></html>

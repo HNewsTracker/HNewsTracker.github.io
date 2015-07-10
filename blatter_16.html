@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150611&t=2&i=1055443227&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5A0KT'></td><td>2015-06-11 11:39:51</td><td><a href='http://www.reuters.com/article/2015/06/11/us-soccer-fifa-eu-idUSKBN0OR1BT20150611?feedType=RSS&feedName=sportsNews'>site</a></td><td>"The European Parliament... therefore calls on FIFA to select, in a transparent and inclusive way, an appropriate interim leader to replace Joseph Blatter forthwith."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 10:20:22</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11465192&ref=rss'>site</a></td><td>ZURICH (AP) " The official overseeing the next FIFA presidential election has reminded Sepp Blatter to stick with his plans to step down.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 14:02:29</td><td><a href='http://www.miamiherald.com/news/politics-government/article24194914.html#storylink=rss'>site</a></td><td>Sepp Blatter was warned from within FIFA on Sunday not to attempt to backtrack on his pledge to quit as president.</td></tr>
 </table></body></html>

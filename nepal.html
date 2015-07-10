@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,9 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 05:10:15</td><td></td><td><a href='nepal_0.html'>KATHMANDU, Nepal (AP) " A landslide triggered by heavy rainfall has buried six villages in Nepal's mountainous northeast and at least 15 people are believed to have been killed. (8)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 06:54:12</td><td><a href='http://www.smh.com.au//breaking-news-world/landslides-kill-at-least-15-in-nepal-20150611-3xleq.html'>site</a></td><td><table><tr><td>Landslides kill at least 15 in Nepal</td></tr><tr><td>Scores of people die every year from flooding and landslides during the monsoon season in Nepal.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 07:40:00</td><td></td><td><a href='nepal_0.html'>Also, the trails around the Langtang valley in northern Nepal were completely damaged and an entire village buried by a landslide and avalanche set off by the earthquake. (6)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-06-11 11:40:30</td><td><a href='http://www.daytondailynews.com/ap/ap/international/21-dead-dozens-missing-as-landslide-buries-nepal-v/nmbDB/'>site</a></td><td>21 dead, dozens missing as landslide buries Nepal villages</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 06:23:19</td><td></td><td><a href='nepal_3.html'>Nepal has reopened most of the heritage sites that were damaged in a pair of strong earthquakes that devastated parts of the country recently, hoping to bring back foreign tourists. (6)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 13:54:44</td><td></td><td><a href='nepal_4.html'>In this photo by Niranjan Shrestha, farmers play with sludge as they plant paddy saplings in a field outside Kathmandu, Nepal, on Asar Pandhra day. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-15 06:23:19</td><td></td><td><a href='nepal_2.html'>Nepal has reopened most of the heritage sites that were damaged in a pair of strong earthquakes that devastated parts of the country recently, hoping to bring back foreign tourists. (6)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-30 13:54:44</td><td></td><td><a href='nepal_4.html'>In this photo by Niranjan Shrestha, farmers play with sludge as they plant paddy saplings in a field outside Kathmandu, Nepal, on Asar Pandhra day. (2)</a></td></tr>
 </table></body></html>

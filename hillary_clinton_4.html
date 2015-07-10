@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150704&t=2&i=1061554693&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB630EF'></td><td>2015-07-04 21:01:17</td><td><a href='http://www.reuters.com/article/2015/07/04/us-china-usa-clinton-idUSKCN0PE0TI20150704?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>Hillary Clinton accuses China of hacking U.S. computers</td></tr><tr><td>Clinton said she hoped that "a strong verifiable deal" would be reached at talks in Vienna between world powers and Iran.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 00:57:58</td><td></td><td><a href='hillary_clinton_4_5.html'>Asked whether he would keep giving paid speeches if Hillary Clinton entered the White House, Clinton said: "No. I don't think so. I don't think that - because once you get to be president then you're just making a daily story." (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 01:09:02</td><td><a href='http://www.theguardian.com/us-news/2015/jun/11/bill-clinton-says-he-will-stop-giving-paid-speeches-if-hillary-made-us-president'>site</a></td><td>But an increasing number of Americans have said they find Hillary Clinton untrustworthy in polls.</td></tr>
 </table></body></html>

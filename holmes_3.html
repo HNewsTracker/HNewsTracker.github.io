@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,7 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 19:31:30</td><td><a href='http://www.reuters.com/article/2015/06/09/us-usa-shooting-denver-idUSKBN0OP26M20150609?feedType=RSS&feedName=topNews'>site</a></td><td>Holmes, a 27-year-old California native, has pleaded not guilty by reason of insanity to multiple counts of first-degree murder, attempted murder and explosives charges stemming from the rampage.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 20:58:32</td><td><a href='http://www.reuters.com/article/2015/06/09/us-usa-shooting-denver-idUSKBN0OP26M20150609?feedType=RSS&feedName=topNews'>site</a></td><td>Holmes' defense attorneys brought the message to the judge's attention on Friday and Brauchler has apologized for the tweet.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-09 21:46:05</td><td></td><td><a href='holmes_3_4.html'>Judge Carlos A. Samour Jr. found the three women violated his orders to avoid outside information on James Holmes' death penalty trial and to not talk about the case with anyone. (4)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-12 01:06:08</td><td></td><td><a href='holmes_3_5.html'>Datta and Holmes were graduate students at the University of Colorado when they began dating during their first semester in the fall of 2011. (9)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-25 21:21:57</td><td></td><td><a href='holmes_3_8.html'>A psychiatrist who determined that Colorado theater shooter James Holmes was insane at the time of the 2012 shootings says that people suffering from delusions can't always control behavior - even if they know the behavior is wrong. (4)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-25 21:26:04</td><td></td><td><a href='holmes_3_6.html'>Defense attorneys for Holmes are preparing to open their case on Thursday, June 25, 2015 with witnesses they hope can illustrate the severity of his mental illness at the time of the attack on July 20, 2012. (9)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-27 00:38:19</td><td></td><td><a href='holmes_3_7.html'>Brauchler pointed out that Woodcock didn't talk to Holmes about the crime or his plans for the shooting in either interview and already completed a report concluding he was insane before the second, one-hour interview. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/25/b2/39/d95ef8b21d1c4f068f1813a1ab34f038-01e1db1ff8a3404aa6c1d0d9e57471ba-1.jpg'></td><td>2015-06-25 21:21:57</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-defense-begins-present/nmkw7/'>site</a></td><td>A psychiatrist who determined that Colorado theater shooter James Holmes was insane at the time of the 2012 shootings says that people suffering from delusions can't always control behavior - even if they know the behavior is wrong.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-27 00:38:19</td><td></td><td><a href='holmes_3_4.html'>Brauchler pointed out that Woodcock didn't talk to Holmes about the crime or his plans for the shooting in either interview and already completed a report concluding he was insane before the second, one-hour interview. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-27 00:38:19</td><td></td><td><a href='holmes_3_5.html'>Dr. Jonathan Woodcock, one of the first defense witnesses to take the stand, interviewed Holmes four days after the July 20, 2012, shooting to determine if he was competent to stand trial and then again earlier this year when he was asked by the defense to testify on Holmes' sanity. (9)</a></td></tr>
 </table></body></html>

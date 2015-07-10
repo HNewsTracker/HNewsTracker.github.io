@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/03/b6/f4/27ab516aa43d4a648906eabf7901a1c8-30c68c007e95440d8f5f4229cffc2fa9-0.jpg'></td><td>2015-07-04 01:00:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fifa-deflects-criticism-about-absence-of-blatter-f/nmrTX/'>site</a></td><td><table><tr><td>FIFA deflects criticism about absence of Blatter from final</td></tr><tr><td>While both organizations raved about the successes of the event, the absence of Blatter and Valcke because of the FIFA corruption investigation lingered.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 13:51:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article25701787.html#storylink=rss'>site</a></td><td>"I call on all concerned - including Mr. Blatter - to endorse in the interest of the reforms unequivocally the announced changing of the guard at the top of FIFA," Scala said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 13:51:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article25701787.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA election monitor urges Blatter to commit to going</td></tr><tr><td>Sepp Blatter got a clear message on Sunday from FIFA election monitor Domenico Scala to end speculation he wants to stay in office.</td></tr></table></td></tr>
 </table></body></html>

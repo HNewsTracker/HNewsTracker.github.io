@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/29/8c/ba/7ac7812845d34c90a54ae9b8a4f42e6f-a77f3808a18d413bb5586fe1a84288a0-0.jpg'></td><td>2015-06-29 20:45:32</td><td><a href='http://www.daytondailynews.com/ap/ap/international/egypts-state-prosecutor-comes-under-bomb-attack-in/nmnY9/'>site</a></td><td><table><tr><td>Egypt's official news agency said Barakat has died of wounds sustained in the attack in a Cairo suburb.</td></tr><tr><td>Security personnel collect forensic evidence at the site of a bombing that killed Egypt's top prosecutor, Hisham Barakat, in Cairo, Egypt, Monday, June 29, 2015.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 13:13:41</td><td></td><td><a href='egypt_5_6.html'>Al-Jazeera journalist Ahmed Mansour was being held in Berlin police custody today awaiting a judge's decision on his further detention on an international arrest warrant issued by his native Egypt, authorities said. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47758590,width-300,resizemode-4/Germany-Egypt-Al-Jazeera.jpg'></td><td>2015-06-21 13:13:41</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Al-Jazeera-reporter-still-held-in-Berlin-on-Egypt-warrant/articleshow/47758578.cms'>site</a></td><td>"The Berlin prosecutor's office is examining the legal assistance request" from Egypt, he added.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/22/51/e6/f551a93b33c541edaf7defdb13be7ac3-c6bc6743a6a94c43ba7e38b844d7d78a-8.jpg'></td><td>2015-06-22 17:45:47</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/german-court-to-decide-on-al-jazeera-journalists-f/nmhn9/'>site</a></td><td>A dual Egyptian-British citizen, he was convicted in absentia in Egypt on charges that his lawyers and reporters' groups call politically motivated.</td></tr>
 </table></body></html>

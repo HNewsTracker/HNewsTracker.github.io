@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 21:07:51</td><td><a href='http://news.yahoo.com/p-downgrades-greece-says-default-likely-no-debt-210751450.html'>site</a></td><td>The rating agency said Wednesday Greece has shown it is giving higher priority to pensions and other domestic spending than making debt payments on time.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/02/00/8134676/3/628x471.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-building-on-gains-from-the-6320951.php'>site</a></td><td>The move increases pressure on Athens to compromise but markets were worried that the outstanding differences between Greece and its creditors would lead to the country defaulting on its debt.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down/_jcr_content/image.adapt.250.low.greece_banks_062915.jpg'></td><td>2015-06-29 11:53:00</td><td><a href='http://america.aljazeera.com/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down.html'>site</a></td><td>The creditors wanted Greece to further cut pensions and raise taxes in ways that Tsipras has long argued would deepen one of the worst economic crises of modern times, in a country where over a quarter of the workforce is already unemployed.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>GREEK SAGA: Greece and its European creditors appeared to be narrowing their differences after Athens offered a raft of proposals to reduce the cost of pensions, hike taxes and cut state spending.</td></tr>
+</table></body></html>

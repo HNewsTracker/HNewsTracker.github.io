@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 13:21:03</td><td><a href='http://www.utsandiego.com/news/2015/jun/21/greece-presents-new-financial-proposals-to/'>site</a></td><td>European leaders working hard to keep Greece in eurozone</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 16:13:54</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/21/greece-presents-new-financial-proposals-to-european-leaders'>site</a></td><td>Later Hollande told reporters in Milan, where he met with Italian Premier Matteo Renzi, that everything must be done to keep financially-ailing Greece in the Eurozone.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/21/d9/aa/d6fd049a1ea4418f815afdce1e3d93ec-9142a1b8966d4573809c45d61eac2188-0.jpg'></td><td>2015-06-21 21:02:27</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greece-presents-new-financial-proposals-to-europea/nmhZY/'>site</a></td><td>A flag which says "stop" and has euro money signs in the EU stars flaps in the wind during a protest march in solidarity with Greece in the center of Brussels on Sunday, June 21, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/Y5BwJRryezZ7NlkRs6H7EA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/28c8a3431780597122d24ce765a25a57'></td><td>2015-07-01 15:52:45</td><td><a href='http://finance.yahoo.com/news/euro-only-headed-down-goldman-072354201.html'>site</a></td><td><table><tr><td>"We continue to see mounting tensions over Greece as a catalyst for the euro-dollar to go near parity, if contagion to other peripherals causes the European Central Bank (ECB) to accelerate quantitative easing."</td></tr><tr><td>But the bank noted: "We fail to see how mounting tensions around Greece do anything other than reinforce U.S. outperformance over the euro zone, i.e., we see this price action as a fade."</td></tr></table></td></tr>
 </table></body></html>

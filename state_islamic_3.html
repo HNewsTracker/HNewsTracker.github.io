@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 07:55:26</td><td></td><td><a href='state_islamic_3_4.html'>Beirut: Kurdish fighters have advanced to the outskirts of a key Syrian border town held by Islamic State, as Turkish forces sought to prevent thousands fleeing the fighting from crossing the frontier. (19)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 15:14:11</td><td></td><td><a href='state_islamic_3_5.html'>The Kurdish front in northern Syria has been one of the few sources of good news for the global campaign against Islamic State since the jihadists made major advances last month in western Iraq and central Syria. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 16:46:41</td><td><a href='http://www.reuters.com/article/2015/06/26/us-mideast-crisis-syria-idUSKBN0P60UY20150626?feedType=RSS&feedName=topNews'>site</a></td><td>While Islamic State had managed to advance slightly in Hasaka on Friday, seizing one army position, fierce army air strikes had hindered the attack, Abdulrahman said.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 16:46:41</td><td><a href='http://www.reuters.com/article/2015/06/26/us-mideast-crisis-syria-idUSKBN0P60UY20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Unlike the Kobani raid, the Islamic State attack on Hasaka appears aimed at wresting control of the government-held parts of city, which is divided into areas run separately by President Bashar al-Assad's government and the YPG.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-07 13:19:15</td><td></td><td><a href='state_islamic_3_6.html'>While the YPG has shown itself to be a potent force in the fight against Islamic State, its effectiveness is seen to diminish beyond the predominantly Kurdish areas it was set up to defend in northern and northeastern Syria. (4)</a></td></tr>
+</table></body></html>

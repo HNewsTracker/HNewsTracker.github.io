@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/0f7/report-on-business/streetwise/article24949833.ece/ALTERNATES/w220/fair-fax12rb1.JPG'></td><td>2015-06-19 23:00:53</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/fairfax-ceo-calls-on-greece-to-remove-uncertainty-clinch-debt-deal/article25045991/?cmpid=rss1'>site</a></td><td>A steady flow of withdrawals from the banks continued on Friday ahead of a key summit next week that could decide whether Greece can stay in the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td>Without access to capital markets, Greek lenders have to rely on almost 86 billion of Emergency Liquidity Assistance to stay afloat, subject to weekly boosts by the European Central Bank.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=wtMostRead'>site</a></td><td>The ECB on Friday raised the ceiling on the "emergency liquidity assistance" that Greece's banks rely on to keep their doors open.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/__PDex3E8eFxpckSZgdVjg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-21T130309Z_1_LYNXMPEB5K0DA_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-21 15:44:29</td><td><a href='http://finance.yahoo.com/news/behind-scenes-greece-creditors-push-130309759.html'>site</a></td><td>Sources in Frankfurt and in Brussels said the European Central Bank's board would discuss the liquidity of Greece's banking sector at 0830 GMT on Monday.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-28 14:03:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-28-EU--Greece%20Bailout-The%20Latest/id-fb5799103c44457a8a545e4ac58c9db9'>site</a></td><td>The Latest: Bank of Greece recommends banks remain closed</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-28 17:55:03</td><td><a href='http://abcnews.go.com/International/wireStory/greek-prime-minister-greek-bank-deposits-completely-safe-32085920'>site</a></td><td>Greek Prime Minister Says Greek Bank Deposits Completely Safe</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-28 18:24:13</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/28/greece-awaits-european-central-bank-decision-on-liquidity'>site</a></td><td>ATHENS, Greece (AP) - Greek banks will remain shut for an unspecified time and the country is imposing restrictions on bank withdrawals following a recommendation by the Bank of Greece, the country's prime minister said Sunday.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150628&i=109158692&w=240&r=109158692-1&t=2'></td><td>2015-06-28 18:54:45</td><td><a href='http://www.reuters.com/article/2015/06/28/us-eurozone-greece-idUSKBN0P40EO20150628?feedType=RSS&feedName=topNews'>site</a></td><td>"This decision led the ECB today to limit the liquidity of Greek banks and forced the central bank of Greece to propose a bank holiday and a restriction on bank withdrawals," he said in a televised address.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-01 21:53:49</td><td><a href='http://www.reuters.com/article/2015/07/01/us-markets-stocks-idUSKCN0PB4J520150701?feedType=RSS&feedName=businessNews'>site</a></td><td>Euro zone central bank chiefs kept in place their cap on a funding lifeline to Greece, maintaining pressure as Greece's lenders run out of cash.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-02 05:06:47</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-greek-anxiety-004926180.html'>site</a></td><td>"If this payment is missed, the ECB will most likely pull the plug on liquidity to Greek banks, which would have a more dramatic impact than the latest default, leading to increased uncertainty for Greece, the euro and the financial markets as a whole."</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-04 03:24:10</td><td><a href='http://abcnews.go.com/International/wireStory/greece-referendum-campaigns-squeezed-deadline-32198424'>site</a></td><td>Rallies for both campaigns were also held in 10 other Greek cities Friday.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 03:29:04</td><td><a href='http://www.miamiherald.com/news/business/article26211073.html#storylink=rss'>site</a></td><td>As Greek banks and markets remain closed Friday for a fifth day, rival campaigns scrambled to roll out their messages.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 16:21:14</td><td><a href='http://news.yahoo.com/greece-votes-referendum-future-euro-doubt-042002265--sector.html'>site</a></td><td>Greek banks, which have been closed all week and rationing withdrawals from cash machines, are expected to run out of money within days unless the European Central Bank provides an emergency lifeline.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-07-07 11:31:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/greek-pm-tsipras-races-to-restart-talks-after-vote-win'>site</a></td><td>Greece's financial distress became more acute late Monday when the European Central Bank refused to increase assistance for Greek banks, which are not due to reopen until Thursday.</td></tr>
+</table></body></html>
