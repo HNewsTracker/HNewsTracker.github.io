@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-12 21:21:13</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-follow-europe-lower-greek-talks-stall-31718488'>site</a></td><td>An unexpected decision by the International Monetary Fund to walk away from talks with Greece spurred the selling.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 00:21:19</td><td><a href='http://www.reuters.com/article/2015/06/13/us-markets-stocks-idUSKBN0OS18420150613?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Also of concern, a day after the International Monetary Fund quit bailout talks with Greece, EU officials said they had held their first formal discussions on the worst-case scenario for the country.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 17:50:06</td><td><a href='http://www.startribune.com/greece-says-it-will-never-accept-wage-pension-cuts/307301491/'>site</a></td><td>He added that Greece will no longer accept measures that undermine growth and has submitted proposals that cover creditors' demands for a primary budget surplus without doing so.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/46/40/8284214/15/square_gallery_thumb.jpg'></td><td>2015-07-09 22:38:04</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-EU-economics-chief-says-Greece-deal-6374574.php'>site</a></td><td><table><tr><td>The Latest: Greece seeks 53.5B euros in new bailout package</td></tr><tr><td>Greece is seeking 53.5 billion euros ($59 billion) as part of a new bailout package, according to draft legislation submitted to parliament early Friday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 07:35:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479009&ref=rss'>site</a></td><td>Greece has requested a third bailout of 53.5 billion euros ($59 billion) and seemingly caved in to a large chunk of creditor demands for a new round of austerity measures.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/RdCkRpZGr0NH8uZCIA1Ciw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/d1de1cb6bfe2cd1e7b0f6a706700aa00_original.jpg'></td><td>2015-07-10 15:04:42</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-sell-austerity-deal-111433389.html'>site</a></td><td>The package would be far larger than the 7.2 billion euros creditors had been offering to Greece during the previous five months of fruitless negotiations.</td></tr>
 </table></body></html>

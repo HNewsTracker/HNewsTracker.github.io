@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/46/40/8284214/15/square_gallery_thumb.jpg'></td><td>2015-07-09 22:38:04</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-EU-economics-chief-says-Greece-deal-6374574.php'>site</a></td><td><table><tr><td>The Latest: Greece seeks 53.5B euros in new bailout package</td></tr><tr><td>Greece is seeking 53.5 billion euros ($59 billion) as part of a new bailout package, according to draft legislation submitted to parliament early Friday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 07:35:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479009&ref=rss'>site</a></td><td>Greece has requested a third bailout of 53.5 billion euros ($59 billion) and seemingly caved in to a large chunk of creditor demands for a new round of austerity measures.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 13:38:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26528617.html#storylink=rss'>site</a></td><td><table><tr><td>Greek foreign minister visits Israel amid crisis at home</td></tr><tr><td>Emmanuel Nahshon, Israel's Foreign Ministry spokesman, said Sunday that the visit from Greek Foreign Minister Nikolaos Kotzias would have an "economic emphasis" but would not elaborate.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/6/18/eurozone-leaders-to-hold-emergency-summit-on-greece/_jcr_content/image.adapt.480.low.Varoufakis_061815.jpg'></td><td>2015-06-20 15:27:00</td><td><a href='http://america.aljazeera.com/articles/2015/6/20/greece-to-offer-more-in-debt-talks.html'>site</a></td><td>"We will try to supplement our proposal so that we get closer to a solution," State Minister Alekos Flabouraris told Greek Mega television in a morning news show.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 13:21:03</td><td><a href='http://www.utsandiego.com/news/2015/jun/21/greece-presents-new-financial-proposals-to/'>site</a></td><td>Tsipras "presented to the three leaders Greece's proposal for a mutually beneficial agreement, which will provide a permanent solution and not just postpone tackling the problem," the press office statement said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-21 16:14:47</td><td><a href='http://abcnews.go.com/International/wireStory/greece-presents-financial-proposals-european-leaders-31922497'>site</a></td><td>Renzi added that European leaders were working to have an agreement with Greece "in the next hours," but didn't provide any details.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 00:56:06</td><td><a href='http://finance.yahoo.com/news/asia-shares-wallow-near-three-005606642.html'>site</a></td><td>A new reform proposal submitted by Athens earlier this week failed to fully satisfy its creditors, heightening concerns whether Greece can agree on a deal to unlock new funding to ward off a debt default.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 00:25:36</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-talks-idUSKBN0OQ0TQ20150611?feedType=RSS&feedName=topNews'>site</a></td><td>A German spokesman dismissed as "pure invention" a media report that Merkel might agree to a deal if Greece committed to at least one major economic reform sought by the creditors.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 15:59:55</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-idUSKBN0OR19T20150611?feedType=RSS&feedName=topNews'>site</a></td><td>A Greek source told Reuters that the entire Greek delegation that had been negotiating a cash-for-reform deal had left Brussels for home on Thursday, citing outstanding disagreements.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/06/12/102755577-0261be11dead2c1dd6657a30b561e2dcdbe82d16.80x60.jpg?v=1434126070'></td><td>2015-06-14 05:07:00</td><td><a href='http://www.cnbc.com/id/102757241'>site</a></td><td>With Greece heading towards possible default and bankruptcy, he told his negotiating team before it took a counter-proposal to Brussels that without debt relief he would reject any settlement that isolates his country from the rest of Europe.</td></tr>
 </table></body></html>

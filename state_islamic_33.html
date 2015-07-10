@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47962230,width-300,resizemode-4/kuwait.jpg'></td><td>2015-07-06 14:46:33</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Kuwait-detains-26-over-Islamic-State-suicide-attack-on-mosque-newspaper/articleshow/47962135.cms'>site</a></td><td><table><tr><td>Kuwait detains 26 over Islamic State suicide attack on mosque -newspaper</td></tr><tr><td>The June 26 attack by Islamic State militants jolted Kuwait, raising the spectre of sectarian strife in the Gulf Arab oil exporting state.</td></tr><tr><td>He said other suspects, including fighters with Islamic State abroad, have been identified and that some of their relatives inside Kuwait have been charged in connection with the blast.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 17:25:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11472695&ref=rss'>site</a></td><td>BAMAKO, Mali (AP) " Gunmen identifying as Islamic extremists attacked and briefly occupied a village in southern Mali near Ivory Coast on Sunday before security forces drove them out, officials said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 17:31:47</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/28/mali-gunmen-attack-village-near-ivory-coast-border'>site</a></td><td>Islamic extremists took control of northern Mali in 2012 following a military coup.</td></tr>
 </table></body></html>

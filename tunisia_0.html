@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 14,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -61,4 +61,5 @@
   <tr><td style='display:none'>10</td><td></td><td>2015-07-03 13:12:02</td><td></td><td><a href='tunisia_0_6.html'>Flags have been lowered to half-staff at Buckingham Palace and U.K. government buildings as Britain and Tunisia honor the 38 victims of an Islamic extremist's rampage at a Tunisian beach resort. (3)</a></td></tr>
   <tr><td style='display:none'>11</td><td></td><td>2015-07-09 19:25:30</td><td></td><td><a href='tunisia_0_4.html'>"If you're in Tunisia and you don't have an essential need to remain you should leave by commercial means," the statement said. (2)</a></td></tr>
   <tr><td style='display:none'>12</td><td></td><td>2015-07-10 08:25:04</td><td></td><td><a href='tunisia_0_5.html'>Tunisia's prime minister says that his country has done "everything in our power" to protect British and other foreign tourists, as British travelers flock to Tunisian airports under orders from their government to flee amid risks of terror attacks. (6)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-07-10 14:35:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11479209&ref=rss'>site</a></td><td>Denmark tells its citizens not to travel to Tunisia</td></tr>
 </table></body></html>

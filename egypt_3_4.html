@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 15:40:53</td><td><a href='http://abcnews.go.com/International/wireStory/egypt-aims-reduce-fertility-rate-24-2030-31634845'>site</a></td><td><table><tr><td>Overpopulated Egypt Seeks to Reduce Fertility Rate by 2030</td></tr><tr><td>Egypt aims to reduce its surging fertility rate over the next 15 years, a government minister said Tuesday, in an effort to address overpopulation concerns in the Arab world's most populous country.</td></tr><tr><td>A 2014 study by Egypt's Health Ministry and an organization funded by the U.S. Agency for International Development showed that the birth rate, which had been falling since at least 1980, rose dramatically after 2008.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47758590,width-300,resizemode-4/Germany-Egypt-Al-Jazeera.jpg'></td><td>2015-06-21 13:13:41</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Al-Jazeera-reporter-still-held-in-Berlin-on-Egypt-warrant/articleshow/47758578.cms'>site</a></td><td>Al-Jazeera journalist Ahmed Mansour was being held in Berlin police custody today awaiting a judge's decision on his further detention on an international arrest warrant issued by his native Egypt, authorities said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6562282-3x2-340x227.jpg'></td><td>2015-06-21 19:43:19</td><td><a href='http://www.abc.net.au/news/2015-06-22/german-authorities-detain-al-jazeera-journalist-egypts-request/6562272'>site</a></td><td>A high-profile Al Jazeera journalist has been arrested in Germany at the request of Egypt.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/images/International/WireAP_f22244f1386a4e14baf854aaef96c676_16x9_992.jpg'></td><td>2015-06-22 17:46:33</td><td><a href='http://abcnews.go.com/International/wireStory/german-court-decide-al-jazeera-journalists-fate-31934475'>site</a></td><td>Egypt considers Al-Jazeera a mouthpiece of the Muslim Brotherhood, the Islamist group that it has labelled a terrorist organization.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/bXCAL_QhlwS1vySK8co17Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4473da64b1ae081b7a0f6a7067009ca4.jpg'></td><td>2015-06-22 17:46:42</td><td><a href='http://news.yahoo.com/german-court-decide-al-jazeera-journalists-fate-073150993.html'>site</a></td><td>Dozens of demonstrators gathered outside the justice building before Mansour was released, carrying signs with slogans including "stop the bloodbath in Egypt" and "freedom for Ahmed Mansour."</td></tr>
 </table></body></html>

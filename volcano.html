@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 04:35:15</td><td></td><td><a href='volcano_3.html'>TANAH KARO, Indonesia (AP) " A volcano in western Indonesia that has been spewing clouds of searing gas high into the air let out a new powerful burst Wednesday. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 13:12:59</td><td></td><td><a href='volcano_3.html'>JAKARTA, Indonesia (AP) - A volcano in western Indonesia unleashed a new powerful burst high into the sky on Saturday, sending hot ash far down the mountain's slopes, an official said. (6)</a></td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-06-13 20:53:00</td><td></td><td><a href='volcano_5.html'>Six scientists who have been living under a dome on the slopes of a dormant Hawaii volcano for eight months to simulate life on Mars have emerged from isolation. (2)</a></td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-07-10 05:46:08</td><td></td><td><a href='volcano_0.html'>Ash spewing from a volcano on Indonesia's main island of Java has sparked chaos for holidaymakers as airports close and international airlines cancel flights to tourist hotspot Bali. (7)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-10 15:15:21</td><td></td><td><a href='volcano_6.html'>A volcano in western Mexico has erupted, spewing ash more than 4 miles (7 kilometers) into the air and sending lava down its flanks. (2)</a></td></tr>
 </table></body></html>

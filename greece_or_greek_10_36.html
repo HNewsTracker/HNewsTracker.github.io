@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,8 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-09 16:51:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23561050.html#storylink=rss'>site</a></td><td>New Greek proposals aimed at ending a long standoff with international bailout creditors and unlocking vital rescue funds were received with little visible enthusiasm in Brussels on Tuesday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 10:05:43</td><td><a href='http://finance.yahoo.com/news/world-stocks-uneven-greek-impasse-094058299.html'>site</a></td><td>HONG KONG (AP) -- World stock benchmarks were uneven Wednesday as Greek and EU officials tried once again to break the deadlock over Greece's bailout terms.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=8007&amp;contextPath=7037-7986-7989-8007-&amp;pubId=13&amp;cat=&amp;meta=read-wirestory&amp;objId=23745514&amp;type=article&amp;title=Asia+stocks+drift+as+Greece+dampens+impact+of+strong+US+data&amp;url=http%3a%2f%2fwww.charlotteobserver.com%2fnews%2fbusiness%2fnational-business%2farticle23745514.html'></td><td>2015-06-12 03:39:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23745514.html#storylink=rss'>site</a></td><td>Asian stock markets were little changed Friday as lack of progress in bailout negotiations between Greece and its creditors dampened the positive impulse from upbeat U.S. retail and jobs data.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/_j00g7BCZHvqcUhI_UE38A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fa5b7058fe2591a790f6a7067007aa3.jpg'></td><td>2015-06-15 03:11:08</td><td><a href='http://news.yahoo.com/asia-stocks-slip-euro-down-greek-debt-talks-031108153--finance.html'>site</a></td><td>GREEK DRAMA: Weekend negotiations on Greece's bailout terms produced no breakthroughs and Greek officials and creditors remained far apart as a deadline for a debt payment nears.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201524/mer_140x93.jpg'></td><td>2015-06-25 21:10:32</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11471420&ref=rss'>site</a></td><td>The bitter standoff between Greece and its international creditors was extended into the weekend, just days before Athens has to meet a crucial debt deadline which could decide whether it goes bankrupt and gets kicked out of the euro currency club.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/6/i/p/image.related.articleLeadwide.620x349.ghykvh.png/1435293816058.jpg'></td><td>2015-06-26 04:43:45</td><td><a href='http://www.brisbanetimes.com.au/world/germany-and-france-tell-greece-to-sort-debt-deal-this-weekend-20150626-ghykvh.html'>site</a></td><td>Germany and France tell Greece to sort debt deal this weekend</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 08:34:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25812790.html#storylink=rss'>site</a></td><td>More than 13,000 people gathered in Athens to support him and denounce Greece's creditors, as they chanted: "Take the bailout and go!"</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>He is urging a resounding 'No', saying it would give him a strengthened mandate to return to negotiations and demand a better deal, including a writedown on Greece's massive debt.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-10 15:25:05</td><td><a href='http://www.miamiherald.com/news/business/article23646793.html#storylink=rss'>site</a></td><td>A broken sign at the headquarters of National Bank of Greece in Athens, Wednesday, June 10, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 16:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25105846.html#storylink=rss'>site</a></td><td>A girl sits on her father's shoulders as she unfurls the Greek flag during a protest march in solidarity with Greece in the center of Brussels on Sunday, June 21, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/21/d9/aa/d6fd049a1ea4418f815afdce1e3d93ec-9142a1b8966d4573809c45d61eac2188-0.jpg'></td><td>2015-06-21 21:02:27</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greece-presents-new-financial-proposals-to-europea/nmhZY/'>site</a></td><td>Presidential Guards perform a change of shift as anti-austerity protesters hold a rally in front of the parliament in Athens, Greece, on Sunday, June 21, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 08:34:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25812790.html#storylink=rss'>site</a></td><td>Demonstrators holding letters to form a banner take part in a protest against the European Central Bank, in Trafalgar Square, London, over Greece's debt repayments, Monday June 29, 2015.</td></tr>
 </table></body></html>

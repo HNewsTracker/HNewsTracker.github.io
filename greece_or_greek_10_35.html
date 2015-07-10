@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 13:38:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26528617.html#storylink=rss'>site</a></td><td><table><tr><td>Greek foreign minister visits Israel amid crisis at home</td></tr><tr><td>Emmanuel Nahshon, Israel's Foreign Ministry spokesman, said Sunday that the visit from Greek Foreign Minister Nikolaos Kotzias would have an "economic emphasis" but would not elaborate.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 20:50:00</td><td><a href='http://www.cnbc.com/id/102749673'>site</a></td><td>Standard and Poor's lowered its long-term sovereign credit rating on Greece to "CCC" from "CCC positive", saying the government would likely default on its commercial debt in the next 12 months in the absence of an agreement with creditors.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/00/34/8128306/7/square_gallery_thumb.jpg'></td><td>2015-06-10 21:36:24</td><td><a href='http://www.sfgate.com/news/world/article/Greek-leader-heads-to-Brussels-to-meet-Merkel-6317955.php'>site</a></td><td>With the onus firmly on Greece and options increasingly limited, Standard & Poor's in New York downgraded Greece's credit rating 1 notch further into junk territory.</td></tr>
 </table></body></html>

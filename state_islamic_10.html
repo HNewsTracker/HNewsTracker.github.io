@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 20:47:00</td><td></td><td><a href='state_islamic_10_11.html'>A knife and the decapitated body of Salhi's employer were found at the site of the explosion, and the severed head was posted on a gate at the factory entrance with two flags bearing proclamations of Islamic faith, the prosecutor said. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 20:47:00</td><td><a href='http://tvnz.co.nz/world-news/french-beheading-suspect-previously-investigated-radical-islamic-ties-6347844?ref=rss'>site</a></td><td>followed a call by Islamic State extremists to target "nonbelievers."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 12:10:06</td><td></td><td><a href='state_islamic_10_11.html'>In areas controlled by the Islamic State group in Iraq and Syria, women must not only be covered, but usually are required to wear all black, with flat-soled shoes; for men, Western clothes or hair styles - even hair gel - can draw suspicion. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 12:10:06</td><td><a href='http://www.miamiherald.com/news/nation-world/article25104442.html#storylink=rss'>site</a></td><td>FILE - This undated file image made from a video released by Islamic State militants Tuesday, Aug. 19, 2014, purports to show the killing of journalist James Foley by the militant group.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 12:10:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article25104442.html#storylink=rss'>site</a></td><td>June 16, 2015 - Kurds deal the Islamic State a major setback by capturing the Syrian town of Tal Abyad on the Turkish border, which had provided a strategic supply route to IS.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/09/be/89/b83626de333e41c8951f22ef0872759d-89c39f46c9974064b391f12f6ee7aeab-0.jpg'></td><td>2015-07-09 12:10:04</td><td><a href='http://www.daytondailynews.com/ap/ap/business/easier-terms-for-greece-could-open-a-can-of-worms-/nmt28/'>site</a></td><td>Eurozone governments taking a tough line on Greece's demand for debt relief and easier bailout terms fear opening a can of worms.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/9/t/4/4/image.related.articleLeadwide.620x349.gi9co0.png/1436513280293.jpg'></td><td>2015-07-10 07:26:35</td><td><a href='http://www.brisbanetimes.com.au/world/greek-debt-crisis-france-to-the-rescue-as-athens-accepts-austerity-for-relief-20150710-gi9co0'>site</a></td><td>She has been forced to balance an angry German public, which sees no reason to give Greece billions of additional bailout money or to write down any more of its debt, against the danger of a Greek exit from the eurozone.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-01 21:47:50</td><td><a href='http://www.reuters.com/article/2015/07/01/us-eurozone-greece-idUSKBN0P40EO20150701?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Kiki Rizopoulou, a 79-year-old pensioner from Lamia in central Greece, had to travel to Athens to collect her pension, spending 20 euros of the 120 euros she was allowed to withdraw.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.miamiherald.com/news/business/article26032012.html#storylink=rss'>site</a></td><td>Pensioners wait to be allowed into the National Bank of Greece to withdraw a maximum of 120 euros ($134) for the week, Thursday, July 2, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-06 02:50:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-greece-referendum-20150705-story.html'>site</a></td><td>"We will now wait for the initiatives of the Greek authorities," he said.</td></tr>
 </table></body></html>

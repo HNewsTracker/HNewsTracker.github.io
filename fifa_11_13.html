@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 24,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 24 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-10T070517Z_1_LYNXMPEB5908G_RTROPTP_2_SOCCER-FIFA-BLATTER.JPG?itok=LbyBYVMR'></td><td>2015-06-10 08:04:16</td><td><a href='http://www.sbs.com.au/news/article/2015/06/10/fifa-elect-blatter-successor-december-16-bbc'>site</a></td><td>FIFA confirmed in a statement on Wednesday that its executive committee would meet in July to pick a date for the full presidential vote, with various options set to be discussed.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 08:35:15</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11463104&ref=rss'>site</a></td><td>PARIS (AP) " UEFA President Michel Platini met with French President Francois Hollande on Wednesday amid speculation that he will run for the FIFA presidency when Sepp Blatter follows through with his resignation.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-10 08:48:30</td><td><a href='http://www.miamiherald.com/sports/article23641249.html#storylink=rss'>site</a></td><td>FIFA says there are "various date options" for the election.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-10 13:49:46</td><td><a href='http://nypost.com/2015/06/10/fifas-search-for-blatter-replacement-to-begin-in-july/'>site</a></td><td>Scandal-hit FIFA will hold an extraordinary executive committee meeting in July to discuss dates for the election to replace president Sepp Blatter, who announced his resignation next week.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-11T164431Z_1_LYNXMPEB5A11R_RTROPTP_2_SOCCER-FIFA-ARRESTS.JPG?itok=d0R8Sh9P'></td><td>2015-06-10 14:02:16</td><td><a href='http://www.sbs.com.au/news/article/2015/06/12/top-official-leaves-fifa-eu-urges-blatter-go-now'>site</a></td><td>FIFA to kick off Blatter succession process in July</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-10 21:29:03</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11463543&ref=rss'>site</a></td><td><table><tr><td>Former Brazil star Zico wants to run for the presidency of FIFA, even though he believes the odds are stacked against him being elected.</td></tr><tr><td>FIFA said earlier Wednesday its executive committee would meet next month to choose an election date.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/10/21/2984670700000578-3118976-image-a-18_1433969653465.jpg'></td><td>2015-06-10 22:02:35</td><td><a href='http://www.dailymail.co.uk/sport/football/article-3118976/Brazil-legend-Zico-confirms-plans-stand-FIFA-presidency-election.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Former Brazil star Zico on Wednesday confirmed he will stand in the election to succeed Sepp Blatter as president of FIFA, although he admitted he may struggle to find enough support.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-10 22:19:38</td><td><a href='http://www.usnews.com/news/sports/articles/2015/06/10/former-brazil-star-zico-running-for-fifa-president'>site</a></td><td>Former Brazil star Zico running for FIFA president</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-10T193519Z_1_LYNXMPEB5910D_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-ELECTION-ANALYSIS.JPG?itok=kXkmCjYC'></td><td>2015-06-11 10:02:38</td><td><a href='http://www.sbs.com.au/news/article/2015/06/11/analysis-fifa-hold-new-election-concerns-it-under-old-rules'>site</a></td><td>LAUSANNE, Switzerland (Reuters) - FIFA began the process of finding a replacement for outgoing president Sepp Blatter on Wednesday with the same system which has caused problems in the past.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.abc.net.au/news/image/6540348-3x2-340x227.jpg'></td><td>2015-06-11 11:10:40</td><td><a href='http://www.abc.net.au/news/2015-06-11/blatter-defies-eu-parliament-calls-to-quit-fifa-immediately/6540164'>site</a></td><td>The European Parliament said Blatter's failure to depart immediately would block efforts to rid FIFA of rampant corruption.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/6FqyPUGOqPRBAh1PASp_OQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-06-10T192518Z_1006980001_LYNXMPEB59108_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-ELECTION-ANALYSIS.JPG.cf.jpg'></td><td>2015-06-11 11:34:50</td><td><a href='http://news.yahoo.com/european-lawmakers-urge-fifa-president-blatter-now-113450467.html'>site</a></td><td><table><tr><td>STRASBOURG, France (AP) - European lawmakers have urged FIFA President Sepp Blatter to step down immediately, and for an interim leader to be appointed.</td></tr><tr><td>FIFA is not obliged to heed the parliament and has previously dismissed calls for action made by lawmaker groups, including the Council of Europe.</td></tr></table></td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150611&t=2&i=1055443227&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5A0KT'></td><td>2015-06-11 11:39:51</td><td><a href='http://www.reuters.com/article/2015/06/11/us-soccer-fifa-eu-idUSKBN0OR1BT20150611?feedType=RSS&feedName=sportsNews'>site</a></td><td>"The European Parliament... therefore calls on FIFA to select, in a transparent and inclusive way, an appropriate interim leader to replace Joseph Blatter forthwith."</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-06-11 14:20:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463848&ref=rss'>site</a></td><td>GENEVA (AP) " FIFA's top spokesman left his job Thursday, hours after Sepp Blatter was urged to do the same by the European Parliament.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-06-11 17:46:52</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/11/fifas-top-spokesman-leaves-job-blatter-urged-to-do-same'>site</a></td><td>FIFA responded by announcing that its executive committee will meet on July 20 in Zurich to decide when from December to February the election to decide Blatter's successor should be held.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31300952.ece/2ca60/ALTERNATES/h342/PANews%20BT_P-79f7508b-76f2-46db-b0e5-ab518c0bb287_I1.jpg'></td><td>2015-06-14 10:36:07</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/fifa-boss-insists-blatter-must-quit-31300953.html'>site</a></td><td>The official overseeing the next Fifa presidential election has reminded Sepp Blatter to stick with his plans to step down.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-06-14 14:02:29</td><td><a href='http://www.miamiherald.com/news/politics-government/article24194914.html#storylink=rss'>site</a></td><td><table><tr><td>Sepp Blatter was warned from within FIFA on Sunday not to attempt to backtrack on his pledge to quit as president.</td></tr><tr><td>Asked on Sunday if Blatter was categorically ruling out standing in the new election, FIFA said: "We refer you to the remarks from FIFA President Blatter from 2 June. FIFA has no further comment."</td></tr></table></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-06-28 13:51:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article25701787.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA election monitor urges Blatter to commit to going</td></tr><tr><td>Sepp Blatter got a clear message on Sunday from FIFA election monitor Domenico Scala to end speculation he wants to stay in office.</td></tr></table></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-06-30 13:15:05</td><td><a href='http://www.miamiherald.com/news/politics-government/article25817029.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA hopeful Bility says would step aside for Hayatou</td></tr><tr><td>The Liberian who wants to be FIFA president says he would step aside if longtime African soccer head Issa Hayatou decided to run.</td></tr></table></td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718827525_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-30 18:55:51</td><td><a href='http://www.torontosun.com/2015/06/30/fifas-blatter-will-not-attend-womens-world-cup-final'>site</a></td><td>FIFA president Sepp Blatter will not travel to Canada for the final of the women's World Cup on July 5 for personal reasons, a U.S.-based lawyer for Blatter said on Tuesday.</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-07-02 09:00:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-us-seeks-extradition-fifa-20150702-story.html'>site</a></td><td>Costa Rican soccer federation President Eduardo Li was arrested two days before he was due to formally join FIFA's executive committee.</td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 09:00:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article26486962.html#storylink=rss'>site</a></td><td><table><tr><td>The son of a sultan from northern Cameroon, Issa Hayatou has ruled African soccer for 27 years and counting, a decade longer than Sepp Blatter has been in charge of FIFA.</td></tr><tr><td>Once a critical opponent of Blatter in a FIFA presidential election in 2002, Hayatou re-emerged from a resounding defeat to be a loyal lieutenant, whipping up support for the controversial FIFA president.</td></tr><tr><td>As senior VP, Hayatou was delegated to hand over the women's trophy in Vancouver, pushing African soccer's strongman into the spotlight at a time when FIFA is in crisis.</td></tr></table></td></tr>
+  <tr><td style='display:none'>21</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 09:00:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article26486962.html#storylink=rss'>site</a></td><td><table><tr><td>Hayatou's one failure, though, was the 2002 FIFA presidential election, when Blatter beat him heavily by 139 votes to 56 in a bitter contest.</td></tr><tr><td>With 25 years on FIFA's ruling board, Hayatou the survivor has probably learned when and when not to pick a fight.</td></tr></table></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-07-05 00:49:43</td><td><a href='http://www.nytimes.com/aponline/2015/07/04/world/europe/ap-soc-fifa-investigation-blatter.html?partner=rss&emc=rss&_r=0'>site</a></td><td><table><tr><td>"I'm there now to fight. Not for myself but for FIFA," said Blatter, who added he was on the right path and had no doubts.</td></tr><tr><td>"Everyone has fears, for example of death, but with regard to my work at FIFA I have no fear. I've nothing to be afraid of," said Blatter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-07-06 16:53:00</td><td><a href='http://www.dw.com/en/fifa-bans-world-cup-bid-inspector-for-seven-years-for-breaking-ethics-rules/a-18565281?maca=en-rss-en-world-4025-rdf'>site</a></td><td>FIFA's ethics committee said Monday Mayne-Nicholls would be barred from "any kind of football-related activity at national and international level" for seven years.</td></tr>
+</table></body></html>

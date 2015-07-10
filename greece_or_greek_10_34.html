@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,9 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-10 15:25:05</td><td><a href='http://www.miamiherald.com/news/business/article23646793.html#storylink=rss'>site</a></td><td>A broken sign at the headquarters of National Bank of Greece in Athens, Wednesday, June 10, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 16:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25105846.html#storylink=rss'>site</a></td><td>A girl sits on her father's shoulders as she unfurls the Greek flag during a protest march in solidarity with Greece in the center of Brussels on Sunday, June 21, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/21/d9/aa/d6fd049a1ea4418f815afdce1e3d93ec-9142a1b8966d4573809c45d61eac2188-0.jpg'></td><td>2015-06-21 21:02:27</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greece-presents-new-financial-proposals-to-europea/nmhZY/'>site</a></td><td>Presidential Guards perform a change of shift as anti-austerity protesters hold a rally in front of the parliament in Athens, Greece, on Sunday, June 21, 2015.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 08:34:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25812790.html#storylink=rss'>site</a></td><td>Demonstrators holding letters to form a banner take part in a protest against the European Central Bank, in Trafalgar Square, London, over Greece's debt repayments, Monday June 29, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/8fP.C1.2FZ8vFtfE58PkzQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8193345-1-1-0.jpg.cf.jpg'></td><td>2015-06-10 11:56:40</td><td><a href='http://news.yahoo.com/asian-stocks-uneven-china-msci-result-071358146.html'>site</a></td><td>GREEK TALKS: European markets, in particular, have been under the kosh of late, largely because of renewed worries over the financial future of Greece.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 18:52:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/11/greece-commits-to-step-up-reform-efforts-german-leader-says'>site</a></td><td>Despite the bluster, the financial and economic stakes are such that cutting Greece loose from the eurozone or the global financial network seems improbable.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 21:27:11</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/stocks-up-ahead-of-greece-decision-chinese-stocks-plunge'>site</a></td><td>While Greece has been the main driver in financial markets recent weeks, worries over China have risen the list of concerns.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 05:01:27</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/29/us-stocks-fall-in-early-trade-as-greece-debt-woes-escalate'>site</a></td><td>If Greece defaults and switches to a new currency, it's sure to shake global financial markets.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-03 12:20:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475634&ref=rss'>site</a></td><td>If Greece's financial crisis deepens, as many believe it must, he can feed his children and grandchildren with the bounty of the land in this proud village high in the mountains of the Arcadia Peloponnese.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,4 +49,5 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1309941431583_ORIGINAL.jpg?quality=80&size=650x'></td><td>2015-07-06 19:48:59</td><td><a href='http://www.torontosun.com/2015/07/06/amy-director-on-winehouse-family-reaction-did-they-expect-a-one-direction-movie'>site</a></td><td>'Amy' director on Winehouse family reaction: 'Did they expect a One Direction movie?'</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 15:51:33</td><td><a href='http://jam.canoe.com/Celebrities/2015/07/10/22499016-wenn-story.html?cid=rssentertainmentcelebrities'>site</a></td><td><table><tr><td>One Direction star Harry Styles suffers embarrassing fall onstage</td></tr><tr><td>Harry Styles suffered a humiliating fall onstage with One Direction in San Diego, California on Thursday night.</td></tr></table></td></tr>
 </table></body></html>
