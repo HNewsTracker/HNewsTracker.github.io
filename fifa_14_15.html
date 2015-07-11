@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,7 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6540348-3x2-340x227.jpg'></td><td>2015-06-11 11:10:40</td><td><a href='http://www.abc.net.au/news/2015-06-11/blatter-defies-eu-parliament-calls-to-quit-fifa-immediately/6540164'>site</a></td><td><table><tr><td>The soap opera at FIFA took another turn when it announced that De Gregorio was leaving two days after making a joke at FIFA's expense on a Swiss chat show.</td></tr><tr><td>"The FIFA president, secretary-general and media director are sitting in a car. Who's driving. Answer? The police," De Gregorio said.</td></tr><tr><td>A FIFA statement gave no reason for De Gregorio leaving what had become an increasingly thankless job of defending FIFA during the scandal.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 13:58:21</td><td><a href='http://www.japantimes.co.jp/sports/2015/06/11/soccer/fifa-spokesman-de-gregorio-steps-down/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+japantimes_sports+%28The+Japan+Times+Headline+News+-+Sports%29'>site</a></td><td>FIFA said De Gregorio's deputy, Nicolas Maingot, will step up to the director's position.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 14:12:51</td><td><a href='http://www.foxnews.com/world/2015/06/11/fifa-top-spokesman-leaves-his-job-as-european-lawmakers-urge-sepp-blatter-to-do/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>FIFA communications director Walter De Gregorio, closely tied to the embattled FIFA president since 2011, left his job three days after telling a joke about soccer's governing body on a TV talk show.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 14:20:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463848&ref=rss'>site</a></td><td><table><tr><td>Schawinski closed the show by asking De Gregorio to tell his favorite joke about FIFA.</td></tr><tr><td>De Gregorio set up the punchline by saying the FIFA president, himself and secretary general Jerome Valcke were in a car, so who was driving?</td></tr><tr><td>FIFA announced the exit of De Gregorio in a terse statement that did not have comment from the president or his spokesman.</td></tr><tr><td>FIFA said De Gregorio "would be retained as a consultant until the end of the year."</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-11 15:34:34</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/11/fifas-top-spokesman-leaves-job-blatter-urged-to-do-same'>site</a></td><td>Soccer governing body FIFA said Thursday, June 11, 2015 that its director of public affairs Walter De Gregorio is leaving with immediate effect.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-13T235621Z_1_LYNXMPEB5C0FX_RTROPTP_2_SOCCER-FIFA.JPG?itok=oqQng1Dt'></td><td>2015-06-14 09:08:23</td><td><a href='http://www.sbs.com.au/news/article/2015/06/14/blatter-may-seek-stay-fifa-boss-source-tells-swiss-paper'>site</a></td><td>Blatter's renewed interest in the job was also a reason for the departure of Walter de Gregorio as FIFA's director of communications, since he had argued for a completely new start and advised Blatter to go, the Swiss newspaper said.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-30 20:29:44</td><td><a href='http://www.foxnews.com/sports/2015/06/30/sepp-blatter-not-going-to-women-world-cup-final-in-canada-as-probes-into-fifa/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>FIFA said "due to their current commitments in Zurich, the FIFA President and the FIFA Secretary General will remain at the FIFA Headquarters."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 18:05:14</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11463268&ref=rss'>site</a></td><td><table><tr><td>Swiss attorney general seizes evidence from FIFA offices</td></tr><tr><td>The Swiss federal agency says FIFA handed over seized "IT data" to its officials.</td></tr><tr><td>The evidence gathering follows two weeks after FIFA's offices were raided for the investigation.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 18:18:03</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/10/more-turmoil-for-fifa-and-world-cup-bidding-contests'>site</a></td><td>"FIFA handed over seized IT data," the Swiss attorney general's office said in a statement.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://img.rasset.ie/000aa641-642.jpg'></td><td>2015-06-10 19:28:58</td><td><a href='http://www.rte.ie/news/2015/0610/707267-fifa/'>site</a></td><td><table><tr><td>Swiss authorities have removed computer data from FIFA that a source said included records from the office of its President Sepp Blatter.</td></tr><tr><td>It has also been reported data was also taken from the offices of Mr Valcke and FIFA's head of finance.</td></tr><tr><td>The OAG, which took data and documents from FIFA last month, will speak with Mr Blatter and other officials if they are of interest to its investigation.</td></tr></table></td></tr>
 </table></body></html>

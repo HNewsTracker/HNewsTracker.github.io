@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 00:49:43</td><td><a href='http://www.nytimes.com/aponline/2015/07/04/world/europe/ap-soc-fifa-investigation-blatter.html?partner=rss&emc=rss&_r=0'>site</a></td><td><table><tr><td>Blatter: French, German Presidents Tried Influence WCup Vote</td></tr><tr><td>"Messrs Sarkozy and Wulff tried to influence their voting representatives. That's why we now have a World Cup in Qatar. Those who decided it should take responsibility for it," said Blatter, who said he was tired of taking the blame for something he had no control over.</td></tr><tr><td>"I act on the leadership principal. If a majority of the executive committee wants a World Cup in Qatar then I have to accept that," Blatter said.</td></tr><tr><td>Blatter accepted no responsibly for the plight of migrant laborers building stadiums in Qatar amid reports of human rights abuses.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 20:29:44</td><td><a href='http://www.foxnews.com/sports/2015/06/30/sepp-blatter-not-going-to-women-world-cup-final-in-canada-as-probes-into-fifa/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>Traveling to Canada would have taken Blatter to the doorstep of the United States, where he is a target of the investigation into alleged soccer corruption.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 20:35:18</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11473883&ref=rss'>site</a></td><td>There have been no charges or accusations against Blatter " unlike two of his vice presidents, who remain in custody in Switzerland.</td></tr>
 </table></body></html>

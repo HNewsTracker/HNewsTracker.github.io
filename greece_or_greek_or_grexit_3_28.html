@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000ab5b6-642.jpg'></td><td>2015-06-11 22:57:17</td><td><a href='http://www.rte.ie/news/2015/0611/707313-greece/'>site</a></td><td>Earlier, European Council President Donald Tusk spelled out an unprecedentedly forthright message to Greece's radical anti-austerity government after four months of bitter negotiations.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>European Council President Donald Tusk retorted in a tweet: "Europe wants to help Greece. But cannot help anyone against their own will. Let's wait for the results of the Greek referendum."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 14:36:09</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/11/greece-commits-to-step-up-reform-efforts-german-leader-says'>site</a></td><td>BRUSSELS (AP) - A spokesman for the International Monetary Fund says its team has returned to Washington after negotiators made "no progress" on resolving Greece's debt crisis.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/02/00/8134676/3/628x471.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-building-on-gains-from-the-6320951.php'>site</a></td><td>IMF WALKOUT: The International Monetary Fund said there was no progress in recent Greece bailout talks and pulled negotiators out of the meetings.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-12 21:21:13</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-follow-europe-lower-greek-talks-stall-31718488'>site</a></td><td>An unexpected decision by the International Monetary Fund to walk away from talks with Greece spurred the selling.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-13 00:21:19</td><td><a href='http://www.reuters.com/article/2015/06/13/us-markets-stocks-idUSKBN0OS18420150613?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Also of concern, a day after the International Monetary Fund quit bailout talks with Greece, EU officials said they had held their first formal discussions on the worst-case scenario for the country.</td></tr>
 </table></body></html>

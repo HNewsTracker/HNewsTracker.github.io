@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/876/493/Bank-of-Greece-Statue-Greek-Flag-Building.jpg?ve=1&tl=1'></td><td>2015-06-14 23:00:50</td><td><a href='http://www.foxbusiness.com/economy-policy/2015/06/12/merkel-urges-greece-creditors-to-keep-at-talking/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Failure to keep Greece in the euro, after years of arduous negotiations and two emergency bailouts totaling 240 billion euros, would send it lurching into the unknown and mark a historic blow to the EU's most ambitious project.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td><table><tr><td>Flawed bailouts, political missteps brought Greece to brink</td></tr><tr><td>FRANKFURT, Germany (AP) " After two bailouts totaling 240 billion euros ($266 billion) and six years of depression, spending cuts and lost jobs, Greece teeters on the edge of collapse.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/00/35/8128368/3/square_gallery_thumb.jpg'></td><td>2015-06-10 17:57:46</td><td><a href='http://www.sfgate.com/news/world/article/What-s-holding-up-a-deal-on-Greece-s-bailout-6318778.php'>site</a></td><td>Greece is proposing rates of 6.5, 12 and 23 percent, with key consumer staples, hotels and restaurants in the low and middle brackets.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 11:00:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23737999.html#storylink=rss'>site</a></td><td>Amid the uncertainty, Greece's economy has slipped back into recession, while figures released Thursday showed that unemployment grew again in the first quarter, reaching 26.6 percent - compared to 26.1 percent at the end of last year.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 08:29:19</td><td><a href='http://www.reuters.com/article/2015/06/15/us-markets-global-idUSKBN0OU15F20150615?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greek 10-year yields GR10YT=TWEB rose 61 bps to 12.44 percent.</td></tr>
 </table></body></html>

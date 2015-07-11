@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 20:50:00</td><td><a href='http://www.cnbc.com/id/102749673'>site</a></td><td>Standard and Poor's lowered its long-term sovereign credit rating on Greece to "CCC" from "CCC positive", saying the government would likely default on its commercial debt in the next 12 months in the absence of an agreement with creditors.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 21:36:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/10/greek-leader-heads-to-brussels-to-meet-merkel-hollande'>site</a></td><td>With the onus firmly on Greece and options increasingly limited, Standard & Poor's in New York downgraded Greece's credit rating 1 notch further into junk territory.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-10 22:22:36</td><td><a href='http://www.seattlepi.com/news/article/S-P-downgrades-Greece-says-default-likely-if-no-6319420.php'>site</a></td><td>The move reflects "our opinion that in the absence of an agreement between Greece and its official creditors, the Greek government will likely default on its commercial debt within the next 12 months," the agency said in its report.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:26:40</td><td><a href='http://news.yahoo.com/western-union-restarts-money-transfer-greece-132640414--sector.html'>site</a></td><td><table><tr><td>Western Union restarts money transfer service in Greece</td></tr><tr><td>(Reuters) - Western Union Co said it restarted money transfer service in Greece, allowing customers in the country to receive funds from overseas.</td></tr></table></td></tr>
 </table></body></html>

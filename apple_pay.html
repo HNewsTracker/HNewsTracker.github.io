@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -51,4 +51,5 @@
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 14:46:08</td><td><a href='http://www.nydailynews.com/entertainment/music/taylor-swift-artists-streaming-victims-article-1.2266584'>site</a></td><td>Initially, Apple Music made the miserly decision to not pay artists during the three-month trial period that new subscribers get.</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-06-22 15:49:35</td><td><a href='http://thehill.com/policy/technology/245703-apple-to-pay-royalties-to-artists-during-free-trial-of-apple-music'>site</a></td><td>Apple to pay royalties during service free trial</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:13:12</td><td><a href='http://abcnews.go.com/Entertainment/wireStory/open-letter-swift-criticizes-shocking-apple-music-31924658'>site</a></td><td><table><tr><td>Cue declined to say how much Apple will pay in royalties for streaming during the free trial period.</td></tr><tr><td>He said Apple will share 71.5 percent of its revenue from paid subscriptions within the United States and 73 percent from subscriptions outside the country, while other streaming services generally share about 70 percent.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03366/applepay_3366211b.jpg'></td><td>2015-07-06 14:13:29</td><td><a href='http://www.telegraph.co.uk/technology/apple/11720595/Apple-Pay-Everything-you-need-to-know.html'>site</a></td><td>Apple Pay is said to be launching in the UK on July 14.</td></tr>
 </table></body></html>

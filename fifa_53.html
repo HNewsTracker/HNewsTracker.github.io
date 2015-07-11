@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/06/sp-fifa-a-20150611-200x200.jpg'></td><td>2015-06-10 10:16:02</td><td><a href='http://www.japantimes.co.jp/sports/2015/06/10/soccer/international-soccer/fifa-postpones-2026-world-cup-bidding-amid-turmoil/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+japantimes_sports+%28The+Japan+Times+Headline+News+-+Sports%29'>site</a></td><td><table><tr><td>FIFA secretary general Jerome Valcke says it would be "nonsense" to begin the process now.</td></tr><tr><td>FIFA planned to write to its 209 member federations this week to explain the bidding timetable and rules.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 00:54:58</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123202/Blatter-seek-stay-FIFA-boss-source-tells-Swiss-paper.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Blatter said on June 2 he would step down as FIFA president in the wake of a corruption investigation, having led soccer's world governing body since 1998.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-13T235621Z_1_LYNXMPEB5C0FX_RTROPTP_2_SOCCER-FIFA.JPG?itok=oqQng1Dt'></td><td>2015-06-14 09:08:23</td><td><a href='http://www.sbs.com.au/news/article/2015/06/14/blatter-may-seek-stay-fifa-boss-source-tells-swiss-paper'>site</a></td><td><table><tr><td>Blatter may seek to stay as FIFA boss, source tells Swiss paper</td></tr><tr><td>Blatter's renewed interest in the job was also a reason for the departure of Walter de Gregorio as FIFA's director of communications, since he had argued for a completely new start and advised Blatter to go, the Swiss newspaper said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/13/22/0B5A136C000005DC-0-image-m-6_1434231152380.jpg'></td><td>2015-06-14 11:27:58</td><td><a href='http://www.dailymail.co.uk/news/article-3123245/Sepp-Blatter-planning-RESIGN-receiving-support-African-Asian-football-federations-claim-Swiss-media.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Sepp Blatter may seek to stay on as the president of FIFA, a Swiss newspaper quoted an anonymous source close to Blatter as saying on Sunday.</td></tr>
 </table></body></html>

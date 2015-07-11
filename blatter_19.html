@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/aD0Glfv8C54.xiDdxoZ.kA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/03899b20eab6f719780f6a7067000a20.jpg'></td><td>2015-06-10 09:42:38</td><td><a href='http://news.yahoo.com/uefa-chief-platini-meets-french-president-hollande-083000201.html'>site</a></td><td>Platini, a former France great and a leading candidate to replace Blatter as FIFA president, spoke Wednesday after meeting with French President Francois Hollande.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 23:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-says-he-has-clear-conscience-despite-fifa-/nmqLX/'>site</a></td><td>FIFA President Sepp Blatter has said in a magazine interview that he is not corrupt and that he has a "clear conscience" despite corruption investigations into world soccer's governing body.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 23:51:01</td><td><a href='http://www.ctvnews.ca/sports/sepp-blatter-has-clear-conscience-despite-fifa-corruption-probe-1.2449530'>site</a></td><td>Four days after being re-elected for a fifth term, Blatter said on June 2 that he would step down amid a crisis provoked by American and Swiss federal investigations of corruption linked to FIFA.</td></tr>
 </table></body></html>

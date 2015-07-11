@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/00/35/8128368/3/square_gallery_thumb.jpg'></td><td>2015-06-10 17:57:46</td><td><a href='http://www.sfgate.com/news/world/article/What-s-holding-up-a-deal-on-Greece-s-bailout-6318778.php'>site</a></td><td>Greece is proposing rates of 6.5, 12 and 23 percent, with key consumer staples, hotels and restaurants in the low and middle brackets.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 11:00:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23737999.html#storylink=rss'>site</a></td><td>Amid the uncertainty, Greece's economy has slipped back into recession, while figures released Thursday showed that unemployment grew again in the first quarter, reaching 26.6 percent - compared to 26.1 percent at the end of last year.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 08:29:19</td><td><a href='http://www.reuters.com/article/2015/06/15/us-markets-global-idUSKBN0OU15F20150615?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greek 10-year yields GR10YT=TWEB rose 61 bps to 12.44 percent.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/.wCGYVaaBFrb.sxsjSKDXQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3aec3cfdc9b3421d7b0f6a706700df8c.jpg'></td><td>2015-07-05 06:09:01</td><td><a href='http://news.yahoo.com/family-divided-emotions-run-high-ahead-greek-vote-060901498.html'>site</a></td><td>"This situation will create a war within the people. Greek versus Greek. The people are divided right now, about 50-50. What happens the day after the referendum? I'm afraid."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/AP_GREECE_150706_DG_16x9t_144.jpg'></td><td>2015-07-06 15:41:06</td><td><a href='http://abcnews.go.com/Business/greece-vote-countrys-future/story?id=32248849'>site</a></td><td>Here's What Happens Next in Greece</td></tr>
 </table></body></html>

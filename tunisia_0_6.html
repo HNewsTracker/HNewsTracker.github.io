@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/4/y/z/7/image.related.articleLeadwide.620x349.gi4yyh.png/1435924798553.jpg'></td><td>2015-07-03 11:16:16</td><td><a href='http://www.smh.com.au/world/britain-falls-silent-to-remember-30-killed-in-tunisian-gun-attack-20150703-gi4yyh.html'>site</a></td><td>A Union flag flies at half-mast on Buckingham Palace in London, to mark an official day of mourning a week since the deadly Tunisia beach attack.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/37/06/8253841/7/square_gallery_thumb.jpg'></td><td>2015-07-03 13:12:02</td><td><a href='http://www.sfgate.com/news/world/article/Britain-Tunisia-honor-38-victims-of-beach-resort-6364649.php'>site</a></td><td><table><tr><td>Britain, Tunisia honor 38 victims of beach resort attack</td></tr><tr><td>Flags have been lowered to half-staff at Buckingham Palace and U.K. government buildings as Britain and Tunisia honor the 38 victims of an Islamic extremist's rampage at a Tunisian beach resort.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/37/30/62/8228007/5/square_gallery_thumb.jpg'></td><td>2015-06-28 16:18:00</td><td><a href='http://www.sfgate.com/news/crime/article/The-Latest-Tunisia-puts-1-000-extra-police-on-6354008.php'>site</a></td><td>Tunisia's top security official says 1,000 extra police are being deployed at tourist sites and beaches in the North African nation after Friday's attack.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 08:18:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/10/tunisia-defends-efforts-to-protect-british-tourists'>site</a></td><td>Britain on Thursday told all U.K. tourists to leave Tunisia, saying the North African country hasn't done enough to enhance security.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-11 13:15:37</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/11/tunisia-deploys-100000-security-personnel-to/'>site</a></td><td>Tunisia deploys 100,000 security personnel to avert attacks</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 13:19:45</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27034411.html#storylink=rss'>site</a></td><td>Tunisia's government says it has deployed 100,000 security personnel to protect the country and prevent new attacks, including 3,000 dedicated to protecting beaches, hotels and archaeological sites.</td></tr>
 </table></body></html>

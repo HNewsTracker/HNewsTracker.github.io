@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,10 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 23:06:33</td><td><a href='http://www.cbsnews.com/news/taylor-swift-says-no-to-apple-music/'>site</a></td><td>Swift's previous albums, though, will be available on Apple Music though.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/KkKsMaeJWfXUl8p7VeSZdA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/912e16f4b16d071b7a0f6a706700990c.jpg'></td><td>2015-06-21 15:18:50</td><td><a href='http://news.yahoo.com/open-letter-swift-criticizes-shocking-apple-music-151850692.html'>site</a></td><td>Swift said she would withhold her 2014 album "1989" from Apple Music, which launches June 30.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 15:20:00</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article25108798.html#storylink=rss'>site</a></td><td>Writing on her Tumblr page Sunday in a posting titled "To Apple, Love Taylor," Swift said she would withhold her 2014 album "1989" from Apple Music, which launches June 30.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-21 16:05:47</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift writes open letter to Apple Music bosses</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-21 18:42:15</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift has written an open letter to Apple Music bosses explaining why she is withholding her album 1989 from their service, telling them "it is unfair to ask anyone to work for nothing".</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-25 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article25502572.html#storylink=rss'>site</a></td><td><table><tr><td>Taylor Swift's album "1989" will be available on Apple's new music service, following the company's reversal of a controversial policy on royalties.</td></tr><tr><td>"After the events of this week, I've decided to put 1989 on Apple Music ... and happily so," Swift said on Twitter.</td></tr></table></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-25 16:31:00</td><td><a href='http://www.latimes.com/entertainment/envelope/cotown/la-et-ct-taylor-swift-i-ve-decided-to-put-1989-on-apple-music-20150625-story.html'>site</a></td><td>Swift sought to assure fans that her decision to put "1989" on Apple Music is not part of an exclusive deal.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0625/20150625__0626swift~1.JPG'></td><td>2015-06-25 17:43:43</td><td><a href='http://www.mercurynews.com/business/ci_28380432/apple-gets-stream-taylor-swifts-1989-album-first?source=rss'>site</a></td><td>She added that "in case you're wondering if this is some exclusive deal like you've seen Apple do with other artists, it's not."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 13:17:00</td><td><a href='http://www.cnbc.com/2015/07/08/microsoft-to-restructure-phone-hardware-business-cut-up-to-7800-jobs.html'>site</a></td><td><table><tr><td>Microsoft to cut up to 7,800 jobs</td></tr><tr><td>Microsoft CEO Satya Nadella wrote an email to employees.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/tC8RpZfLnzyw.6U0zAce.Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/64c8a4912ce9191a8be5246c0868a759'></td><td>2015-07-08 13:17:31</td><td><a href='http://finance.yahoo.com/news/microsoft-cut-7-800-jobs-131731526.html'>site</a></td><td>Microsoft announced plans Wednesday to restructure the company's phone hardware business and to cut up to 7,800 positions.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/SCCZEN_AP150907035637_620x310.jpg'></td><td>2015-07-08 21:41:55</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11478110&ref=rss'>site</a></td><td>Microsoft will cut 7,800 jobs and take a US$7.6 billion impairment charge as it attempts to revive its flagging phone hardware business.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0708/20150708__0709microsoft~1.JPG'></td><td>2015-07-08 21:42:23</td><td><a href='http://www.mercurynews.com/business/ci_28451430/microsoft-cutting-7-800-jobs-phone-sales-flag?source=rss'>site</a></td><td><table><tr><td>But Microsoft's new boss, Satya Nadella, has been pulling back from phone hardware and digital advertising after seeing little success in those ventures.</td></tr><tr><td>Microsoft isn't getting out of the hardware business altogether.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/37/44/40/8276022/9/628x471.jpg'></td><td>2015-07-08 23:00:18</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-cuts-7-800-jobs-as-phone-sales-flag-6372554.php'>site</a></td><td>Microsoft cuts 7,800 jobs as phone sales flag</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/37/44/40/8276022/9/square_gallery_thumb.jpg'></td><td>2015-07-08 23:00:18</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-cuts-7-800-jobs-as-phone-sales-flag-6372554.php'>site</a></td><td>Microsoft isn't getting out of the hardware business altogether, although Nadella said the company will no longer focus on building a "stand-alone phone business."</td></tr>
 </table></body></html>

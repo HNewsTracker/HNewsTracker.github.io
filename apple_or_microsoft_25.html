@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 15:01:28</td><td><a href='http://www.hollywoodreporter.com/news/taylor-swift-apple-music-explains-804016?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+thr%2Fnews+%28The+Hollywood+Reporter+-+Top+Stories%29'>site</a></td><td>"We know how astronomically successful Apple has been, and we know that this incredible company has the money to pay artists, writers and producers for the three-month trial period ... even if it is free for the fans trying it out."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434879305504.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/digital-life/digital-life-news/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td>Washington: Apple is diving deeper into the news business with a new application that could make the US tech giant a key industry player.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 04:07:52</td><td></td><td><a href='apple_or_microsoft_25_26.html'>Apple News, part of the upcoming iOS 9 operating system, aims to be the primary news source for users of the iPhone and iPad. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-21 04:07:52</td><td></td><td><a href='apple_or_microsoft_25_27.html'>Although Apple is likely to use some algorithms to filter stories, the hiring of experienced journalists is a positive step, said Dan Kennedy, a journalism professor at Northeastern University. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434859663188.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/world/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td><table><tr><td>Customers browse Apple Watches in New York.</td></tr><tr><td>Partner news organisations include Conde Nast magazines, ESPN, The New York Times, Hearst, Time Inc., CNN and Bloomberg, but Apple will be opening to other publishers and bloggers.</td></tr></table></td></tr>
 </table></body></html>

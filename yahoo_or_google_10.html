@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/RKkBO1TDtUCaj2W_2Lvopw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://d.yimg.com/hd/mlbcom/7/1/0ab30869-87a0-46f9-8239-4fc93e138c66_QcH5hRgkD8TIek8olIS5RKZW3CVqMwSKVFST_ghdtuW-kSvUrclKYuuCYOWtuugBe8G0o1cD1nY-_2_0.jpg?s=dffe8511ff28d52f0060b2ddd581aeb9&c=ac0ff3a941d240a3dd54b866a9ca8ab1&a=mlbcom&mr=0'></td><td>2015-06-27 18:48:01</td><td><a href='http://sports.yahoo.com/news/ap-source-stanton-4-6-weeks-broken-hand-152850587--mlb.html'>site</a></td><td>Marlins' slugger Stanton out 4-6 weeks with broken hand (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 15:49:44</td><td></td><td><a href='yahoo_or_google_10_11.html'>Google, which used Java to design its Android smartphone operating system, said in court papers that an Oracle victory would obstruct "an enormous amount of innovation" because software developers would not be able to build freely on each others' work. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 16:19:21</td><td></td><td><a href='yahoo_or_google_10_12.html'>WASHINGTON - The U.S. Supreme Court on Monday sided with Oracle Corp. and declined to hear Google Inc.'s appeal in a major software copyright case that has been closely followed by the technology industry. (5)</a></td></tr>
 </table></body></html>

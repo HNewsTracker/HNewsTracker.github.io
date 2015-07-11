@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 11:23:14</td><td><a href='http://www.daytondailynews.com/ap/ap/international/official-senior-islamic-state-figure-killed-in-a-u/nmxJZ/'>site</a></td><td>The strike in Nangarhar province killed Islamic State affiliate leader Hafeez Sayeed and others on Friday, said Abdul Hassib Sediqi, a spokesman for Afghanistan's National Directorate of Security.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 11:25:07</td><td><a href='http://www.startribune.com/official-senior-islamic-state-figure-killed-in-a-us-strike/313684091/'>site</a></td><td>The Taliban, at war with the government for nearly 14 years, have warned the Islamic State group to stay out.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 16:10:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11477255&ref=rss'>site</a></td><td>McCain said Islamic State continues to gain territory in Iraq and Syria, while expanding its influence across the Middle East, Africa and Central Asia.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-07 16:24:05</td><td><a href='http://news.yahoo.com/us-military-chiefs-face-tough-questioning-islamic-state-140322065.html'>site</a></td><td>US military chiefs face tough questioning on Islamic State</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/37/43/11/8270400/5/square_gallery_thumb.jpg'></td><td>2015-07-07 16:33:58</td><td><a href='http://www.sfgate.com/news/article/US-military-chiefs-face-tough-questioning-from-6370308.php'>site</a></td><td>Carter backed the president's policy while acknowledging that more needs to be done to strengthen the mission to train local forces to combat the Islamic extremists.</td></tr>
 </table></body></html>

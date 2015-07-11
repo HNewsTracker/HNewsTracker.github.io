@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.rt.com/files/news/41/01/70/00/fifa-suspends-bidding.si.jpg'></td><td>2015-06-10 10:11:58</td><td><a href='http://rt.com/news/266263-fifa-suspends-2026-bidding/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td>The host for the tornament is expected to be chosen by the 209 FIFA members in May 2017 at a meeting in Kuala Lumpur, Malaysia.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 18:03:36</td><td><a href='http://news.yahoo.com/fifa-bans-2018-2022-world-cup-bids-inspector-154559106.html'>site</a></td><td>Mayne-Nicholls was appointed by FIFA in 2010 to lead a six-member team evaluating the 2018-2022 World Cup bidders.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 18:05:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article26579593.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA's ethics committee gave no reason for its decision to suspend Harold Mayne-Nicholls, a former president of Chile's football federation who is disputing the sanction.</td></tr><tr><td>Mayne-Nicholls was considering standing in the FIFA presidential election when his ethics case was reported last year.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-06 18:05:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article26579593.html#storylink=rss'>site</a></td><td>The official chosen by FIFA to inspect 2018 and 2022 World Cup hosting candidates was banned from soccer for seven years on Monday for breaking ethics rules.</td></tr>
 </table></body></html>

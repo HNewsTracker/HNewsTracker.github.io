@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201522/SCCZEN_A_2602NZHPKEFIFA3_140x93.jpg'></td><td>2015-06-10 20:30:20</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11463364&ref=rss'>site</a></td><td>Trinidad AG: Gov't feared ex-FIFA VP Warner a flight risk</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 01:52:47</td><td><a href='http://www.miamiherald.com/sports/mls/article26556985.html#storylink=rss'>site</a></td><td>Carli Lloyd #10 of the United States celebrates scoring the opening goal against Japan in the FIFA Women's World Cup Canada 2015 Final at BC Place Stadium on July 5, 2015 in Vancouver, Canada.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 12:29:04</td><td><a href='http://www.charlotteobserver.com/sports/article26942647.html#storylink=rss'>site</a></td><td>The United States has returned to the top of the FIFA women's rankings after winning the World Cup.</td></tr>
 </table></body></html>

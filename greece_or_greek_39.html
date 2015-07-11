@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/podcast/2015-06/site_197_World%2520News_419999.JPG?itok=re3OTVQk'></td><td>2015-06-21 20:41:12</td><td><a href='http://www.sbs.com.au/news/article/2015/06/22/greece-offers-new-proposals-ahead-emergency-summit'>site</a></td><td>After months of wrangling and with anxious depositors pulling billions of euros out of Greek banks, Tsipras's leftist government showed a new willingness this weekend to make concessions that would unlock frozen aid to avert default.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/37/43/07/8270283/3/920x920.jpg'></td><td>2015-07-07 13:41:48</td><td><a href='http://www.sfgate.com/news/article/Exposed-to-Greek-banks-Balkans-brace-for-trouble-6370277.php'>site</a></td><td>"If this crisis persists in Greece, I may consider changing the bank," said Slavica Martinovic, who keeps an account in one of the Greek banks in Belgrade.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:42:16</td><td><a href='http://news.yahoo.com/exposed-greek-banks-balkans-brace-trouble-134216336--finance.html'>site</a></td><td><table><tr><td>SERBIA - It has also limited the amount of money Greek banks can send back to their parent companies in Greece.</td></tr><tr><td>SLOVENIA - Although there are no Greek banks operating in Slovenia, the eurozone member is exposed to the Greek crisis through its funding of aid to Greece.</td></tr></table></td></tr>
 </table></body></html>

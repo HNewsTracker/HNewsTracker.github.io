@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple watch</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 19:30:08</td><td></td><td><a href='apple_watch_0.html'>But if the band purchases are any indication, sales of the watch itself are just the beginning of Apple's profits. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 19:30:08</td><td></td><td><a href='apple_watch_0.html'>The entry-level Apple Watch sport model - which starts at $349 - has been the most popular among early shoppers, according to data from Slice. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 11:24:54</td><td><a href='http://abcnews.go.com/Technology/video/apple-officially-launches-music-streaming-service-32119946'>site</a></td><td>Watch: Apple Officially Launches Music Streaming Service</td></tr>
 </table></body></html>
