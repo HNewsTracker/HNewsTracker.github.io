@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/01/72/8134320/7/square_gallery_thumb.jpg'></td><td>2015-06-11 16:24:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-commits-to-step-up-reform-efforts-German-6320506.php'>site</a></td><td>The Greek market closed up by a hefty 8.1 percent before the IMF's tough statement.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 07:13:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/30/asia-stocks-bounce-back-but-greece-uncertainty-still-looms'>site</a></td><td>Greece's stock market was closed.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Asian stocks fall on Greek standoff, China margin curbs</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 07:13:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/30/asia-stocks-bounce-back-but-greece-uncertainty-still-looms'>site</a></td><td>Asia stocks bounce back but Greece uncertainty still looms</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-02 06:14:45</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-greek-anxiety-004926180.html'>site</a></td><td>Asia stocks rise for third day though Greece, China concerns weigh</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 09:02:00</td><td><a href='http://www.ctvnews.ca/business/greece-to-miss-imf-debt-payment-bailout-to-expire-1.2446852'>site</a></td><td>Greece to miss IMF debt payment, bailout to expire</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 13:15:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475646&ref=rss'>site</a></td><td>Greek PM Tsipras says IMF report fully justifies Greece's position on debt relief</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-03 17:25:49</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-imf-idUSKCN0PD20120150703?feedType=RSS&feedName=topNews'>site</a></td><td>"The IMF published a report on Greece's economy which is a great vindication for the Greek government as it confirms the obvious - that Greek debt is not sustainable."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-09 12:15:28</td><td><a href='http://www.startribune.com/easier-terms-for-greece-could-open-a-can-of-worms-in-europe/312837621/'>site</a></td><td>Greece's request for some relief on its debt burden is not being well-received by some.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://stmedia.stimg.co/1436486463_10109561+1greece071015.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-10 00:34:59</td><td><a href='http://www.startribune.com/greece-racing-to-finalize-reforms-and-remain-in-euro/312788181/'>site</a></td><td>Greece has long argued its debt is too high to be paid back and that the country requires some form of debt relief.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/00/34/8128306/7/square_gallery_thumb.jpg'></td><td>2015-06-10 23:26:24</td><td><a href='http://www.sfgate.com/news/world/article/Greek-leader-heads-to-Brussels-to-meet-Merkel-6317955.php'>site</a></td><td>The lack of visible progress in the negotiations over the past weeks has revived fears Greece could default on its debts and drop out of the euro, a move that would create huge uncertainty for Europe and global markets.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=8007&amp;contextPath=7037-7986-7989-8007-&amp;pubId=13&amp;cat=&amp;meta=read-wirestory&amp;objId=23745514&amp;type=article&amp;title=Asia+stocks+drift+as+Greece+dampens+impact+of+strong+US+data&amp;url=http%3a%2f%2fwww.charlotteobserver.com%2fnews%2fbusiness%2fnational-business%2farticle23745514.html'></td><td>2015-06-12 03:39:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23745514.html#storylink=rss'>site</a></td><td>Asian stock markets were little changed Friday as lack of progress in bailout negotiations between Greece and its creditors dampened the positive impulse from upbeat U.S. retail and jobs data.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/73240f9/2147483647/thumbnail/300x270/format/png/quality/85/?url=%2Fcmsmedia%2F18%2F8a%2Fed8c23064ee8a97e1663a6adfaab%2F20150527edohc-a.tif'></td><td>2015-06-12 21:20:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/12/us-stocks-follow-europe-lower-after-greek-talks-stall'>site</a></td><td>Greek jitters upset US, European stock markets</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/06/876/493/a3119858d256e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-2.jpg?ve=1&tl=1'></td><td>2015-07-06 22:32:32</td><td><a href='http://www.foxbusiness.com/markets/2015/07/06/us-stocks-slip-after-greeks-reject-terms-bailout-deal-european-markets-oil-drop/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>Some analysts attributed the lack of sharper sell-off in stock markets to the resignation of the Greek finance minister, which might help bailout talks resume.</td></tr>
 </table></body></html>

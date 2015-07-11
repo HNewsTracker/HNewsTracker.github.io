@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,10 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-07-06 13:46:52</td><td><a href='http://finance.yahoo.com/news/mohamed-el-erian-grexit-high-130330746.html'>site</a></td><td><table><tr><td>Earlier, Ewald Nowotny, a member of the European Central Bank's governing council, told CNBC the euro nations all have an interest in keeping Greece in the single currency.</td></tr><tr><td>When asked about whether he's optimistic that Greece can remain in the euro, the Austrian central bank governor told CNBC's " Squawk Box " that it's not a matter of being optimistic, but a matter of being "realistic."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-12 21:21:13</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-follow-europe-lower-greek-talks-stall-31718488'>site</a></td><td>A setback in talks between Greece and its creditors helped knock the stock market lower on Friday, amid renewed concerns that the country could default on its debts.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 19:54:02</td><td><a href='http://www.foxnews.com/world/2015/06/13/greek-premier-tsipras-says-no-elections-or-referendum-whatever-outcome-bailout/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Greece agreed on the resumption of talks Friday under intense pressure from creditors.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 15:46:34</td><td><a href='http://www.utsandiego.com/news/2015/jun/14/senior-official-says-germany-wont-be-blackmailed/'>site</a></td><td>Greece said Friday it would present its creditors with new proposals over the weekend in an attempt to breathe life into stalled bailout talks amid fears the country could go bankrupt.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-25 20:34:08</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-edge-higher-surge-consumer-spending-32020835'>site</a></td><td>Stocks edged lower Thursday as talks over keeping Greece solvent stalled and got extended into the weekend.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Most Asian stock indexes fell Friday as a standoff between Greece and its international creditors threatened to drag into the weekend.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 13:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26933650.html#storylink=rss'>site</a></td><td>Asian stock rose for a second day on Friday as the Greek government proposed a broad financial overhaul to its creditors and Beijing's attempts to arrest a sharp slide in the Chinese market appeared to be working.</td></tr>
 </table></body></html>

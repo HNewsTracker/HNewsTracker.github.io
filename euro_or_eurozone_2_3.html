@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/26/ff/c2081be7248c4c4699e99dab785a132b-cb5131321a4745be9138ef9b4ad13ffb-0.jpg'></td><td>2015-07-04 06:33:36</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/would-euro-departure-help-or-hurt-europes-currency/nmrZb/'>site</a></td><td>Here is a look at some of the possible damage - and any benefits - of a Greek-euro divorce.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 06:33:36</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/03/would-euro-departure-help-or-hurt-europes/'>site</a></td><td><table><tr><td>For the long term, a Greek exit would disrupt the euro's "Hotel California" principle: that, as the Eagles put it, you can "check out any time you like, but you can never leave."</td></tr><tr><td>A number of economists, however, think a Greek exit could cause long-lasting damage to the euro.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/06/15/876/493/570cc8c1c15fd410VgnVCM100000d7c1a8c0____-Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-06-15 03:10:52</td><td><a href='http://www.foxbusiness.com/markets/2015/06/14/asian-stock-markets-slip-euro-slides-as-weekend-greek-debt-talks-appear-to-go/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>HONG KONG - Asian stocks slipped and the euro sank Monday as Greece inched closer to a possible default after weekend talks with international creditors over freeing up the rest of its bailout funds went nowhere.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 03:10:52</td><td><a href='http://www.utsandiego.com/news/2015/jun/14/asia-stocks-slip-euro-down-as-greek-debt-talks/'>site</a></td><td>Asia stocks slip, euro down as Greek debt talks falter</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 05:45:15</td><td><a href='http://www.startribune.com/asia-stocks-slip-euro-down-as-greek-debt-talks-falter/307327931/'>site</a></td><td>Asian stock markets slip, euro slides as weekend Greek debt talks appear to go nowhere</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 20:50:00</td><td><a href='http://www.cnbc.com/id/102749673'>site</a></td><td>Standard and Poor's lowered its long-term sovereign credit rating on Greece to "CCC" from "CCC positive", saying the government would likely default on its commercial debt in the next 12 months in the absence of an agreement with creditors.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 21:07:51</td><td><a href='http://news.yahoo.com/p-downgrades-greece-says-default-likely-no-debt-210751450.html'>site</a></td><td>NEW YORK (AP) - Standard & Poor's has downgraded Greece's credit rating one notch further into junk territory, saying it's likely the country will default on its commercial debt within a year if it can't strike a deal with its creditors.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 03:00:04</td><td><a href='http://www.miamiherald.com/news/business/article23723650.html#storylink=rss'>site</a></td><td>S&P lowered Greece's rating to "CCC" from "CCC+" with a "negative" outlook.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 08:00:18</td><td><a href='http://abcnews.go.com/International/wireStory/greek-anti-austerity-protesters-hold-finance-ministry-sit-31684409'>site</a></td><td>Greek left-wing demonstrators are staging a sit-in at the finance ministry building in central Athens, in a protest against the radical, left-led government, which they accuse of planning new austerity measures.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 08:05:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463705&ref=rss'>site</a></td><td>Greek anti-austerity protesters hold finance ministry sit-in</td></tr>
 </table></body></html>

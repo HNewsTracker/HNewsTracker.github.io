@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 00:25:36</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-talks-idUSKBN0OQ0TQ20150611?feedType=RSS&feedName=businessNews'>site</a></td><td>Greece will be in default at the end of June without fresh funds to let it to repay 1.6 billion euros to the IMF.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/06/11/876/493/Belgium EU Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-06-11 08:36:42</td><td><a href='http://www.foxnews.com/world/2015/06/11/greece-commits-to-intensify-reform-efforts-as-debt-deadline-approaches-german/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The creditors have made clear that Greece must improve its offer of reforms it would introduce in exchange for 7.2 billion euros ($8.1 billion) in bailout loans it needs to repay debts due at the end of the month.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/37/01/72/8134320/7/square_gallery_thumb.jpg'></td><td>2015-06-11 16:24:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-commits-to-step-up-reform-efforts-German-6320506.php'>site</a></td><td>The creditors - the IMF and Greece's fellow eurozone states - want the country to commit to new economic reforms before they pay out another 7.2 billion euros ($8.2 billion).</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/ALeBv8Lk.2262iuuobj7NA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8194627-1-1-0.jpg'></td><td>2015-06-15 01:31:43</td><td><a href='http://news.yahoo.com/greece-bailout-talks-end-no-deal-significant-gaps-171655815.html'>site</a></td><td>The Greek proposal "remains incomplete", the EU source said, and was not enough to unlock the 7.2 billion euros still remaining in Greece's international bailout, which expires on June 30.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media1.s-nbcnews.com/j/newscms/2015_27/1107211/150705-greece-no-1248_11313098fbc22543117292a7f9250403.nbcnews-fp-360-360.jpg'></td><td>2015-07-05 16:52:39</td><td><a href='http://www.nbcnews.com/news/world/opinion-polls-show-no-ahead-greek-referendum-vote-count-n387001'>site</a></td><td>Greece's leftwing government called the referendum only a week ago after it rejected the tough terms offered by international creditors as the price for releasing billions of euros in bailout funds.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/14/045fb9fc8fe4591a790f6a7067009930_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-06-14 17:46:34</td><td><a href='http://www.utsandiego.com/news/2015/jun/14/greece-says-it-will-never-accept-wage-pension-cuts/'>site</a></td><td>Greece says it will never accept wage, pension cuts</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/05/50/8149509/5/920x920.jpg'></td><td>2015-06-14 17:46:34</td><td><a href='http://www.sfgate.com/news/world/article/Greece-says-it-will-never-accept-wage-pension-6326500.php'>site</a></td><td>ATHENS, Greece (AP) - Greece will never accept cuts in pensions and wages or extra taxes on necessities such as electricity, a government official says.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 17:38:00</td><td><a href='http://www.ctvnews.ca/business/binges-and-bailouts-how-greece-got-to-the-brink-1.2453818'>site</a></td><td>There was a contradiction that couldn't be resolved: cuts in public spending were needed to reduce Greece's cost base because it couldn't devalue.</td></tr>
 </table></body></html>

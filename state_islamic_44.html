@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2013/06/27/hutchins_r142x90.jpg?a4c645db5e0d43838ff6d631be583dfe8b15e757'></td><td>2015-06-11 11:23:12</td><td><a href='http://www.utsandiego.com/news/2015/jun/11/dempsey-says-new-us-military-base-in-iraq-could/'>site</a></td><td>Dempsey said another could eventually be established in north-central Iraq if and when the Iraqi army is ready to organize a counteroffensive in Mosul, which has been in Islamic State hands for 12 months.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 11:23:12</td><td><a href='http://www.foxnews.com/us/2015/06/11/gen-dempsey-says-new-us-military-base-in-iraq-could-be-model-in-battle-against/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>NAPLES, Italy - The Pentagon's top general says the new U.S. military base being setting up in Iraq's western desert could be a model for more such U.S. hubs if Iraq is able to regain momentum against the Islamic State group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 06:50:25</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/08/a-secret-to-is-success-shock-troops-who-fight-to-the-death'>site</a></td><td>BAGHDAD (AP) - Bearded and wearing bright blue bandanas, the Islamic State group's "special forces" unit gathered around their commander just before they attacked the central Syrian town of al-Sukhna.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 06:52:04</td><td><a href='http://abcnews.go.com/International/wireStory/secret-success-shock-troops-fight-death-32291952'>site</a></td><td><table><tr><td>They are the Islamic State group's elite shock troops.</td></tr><tr><td>Though best known for its horrific brutalities, the Islamic State group has proved to be a highly organized and flexible fighting force, according to senior Iraqi military and intelligence officials and Syrian Kurdish commanders on the front lines.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-08 06:54:51</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article26719306.html#storylink=rss'>site</a></td><td>"People go to the Islamic State looking to die, and the Islamic State is happy to help them."</td></tr>
 </table></body></html>

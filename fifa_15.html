@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 22:19:38</td><td><a href='http://www.usnews.com/news/sports/articles/2015/06/10/former-brazil-star-zico-running-for-fifa-president'>site</a></td><td><table><tr><td>RIO DE JANEIRO (AP) - Former Brazil star Zico wants to run for the presidency of FIFA, even though he believes the odds are stacked against him being elected.</td></tr><tr><td>"I would like to confirm this decision about the possibility of being a candidate in the next FIFA election," Zico told a news conference in his native Rio de Janeiro.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 01:36:18</td><td></td><td><a href='fifa_15_16.html'>Fifa president Sepp Blatter announced his resignation last week amid investigations by US and Swiss authorities into alleged bribery and corruption involving the 2010, 2018 and 2022 World Cups. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 11:34:50</td><td></td><td><a href='fifa_15_16.html'>STRASBOURG, France (AP) - European lawmakers have urged FIFA President Sepp Blatter to step down immediately, and for an interim leader to be appointed. (12)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 13:58:21</td><td></td><td><a href='fifa_15_17.html'>"Walter has worked incredibly hard for the past four years and we are immensely grateful for all he has done. I am glad we will be able to continue to draw on his expertise until the end of the year," FIFA secretary general Jerome Valcke said. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 17:46:52</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/11/fifas-top-spokesman-leaves-job-blatter-urged-to-do-same'>site</a></td><td>FIFA responded by announcing that its executive committee will meet on July 20 in Zurich to decide when from December to February the election to decide Blatter's successor should be held.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/Uyturn_GUb.gIUB5iD181A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nascar.com/27285d19db2cffc5de351f80eae9d8d6'></td><td>2015-07-06 08:08:06</td><td><a href='http://sports.yahoo.com/news/earnhardt-wins-rain-delayed-daytona-ahead-dillons-crash-065523746--nascar.html'>site</a></td><td>Earnhardt wins rain-delayed Daytona ahead of Dillon's crash (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/sX.vaGkA7iXeY0u3B.Lwqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507031535561539882'></td><td>2015-07-03 21:34:27</td><td><a href='http://sports.yahoo.com/news/ap-sources-mavericks-deandre-jordan-agree-4-deal-203329223--nba.html'>site</a></td><td>AP sources: Mavericks, DeAndre Jordan agree to 4-year deal (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/VhRLszeuLM91RFDebR3K8Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nba.com/76679e049f6a247e538e2acffbc6f3d4'></td><td>2015-07-10 03:10:57</td><td><a href='http://sports.yahoo.com/news/matthews-sticks-reeling-mavs-jordan-rejection-202806183--nba.html'>site</a></td><td>Matthews sticks with reeling Mavs after Jordan rejection (Yahoo Sports)</td></tr>
 </table></body></html>

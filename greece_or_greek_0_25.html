@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td>Without access to capital markets, Greek lenders have to rely on almost 86 billion of Emergency Liquidity Assistance to stay afloat, subject to weekly boosts by the European Central Bank.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/jq43UNnsdOmq2.cpHBO_tA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-20T125459Z_1_LYNXMPEB5J07R_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-20 22:16:02</td><td><a href='http://finance.yahoo.com/news/greece-may-offer-more-debt-125459258.html'>site</a></td><td>The ECB on Friday raised the ceiling on the "emergency liquidity assistance" that Greece's banks rely on to keep their doors open.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 03:10:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/14/asia-stocks-slip-euro-down-as-greek-debt-talks-falter'>site</a></td><td>Asia stocks slip, euro down as Greek debt talks falter</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 05:57:14</td><td><a href='http://www.ctvnews.ca/business/asian-stock-markets-slip-euro-slides-as-greek-debt-talks-appear-to-go-nowhere-1.2422640'>site</a></td><td>Asian stock markets slip, euro slides as Greek debt talks appear to go nowhere</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 06:00:39</td><td><a href='http://www.nytimes.com/reuters/2015/06/15/business/15reuters-markets-global.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Asian Shares and Euro Slip as Greece Fails to Reach Debt Deal</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/06/30/876/493/01c1c9753914e410VgnVCM100000d7c1a8c0____-South Korea Financial Markets-2.jpg?ve=1&tl=1'></td><td>2015-06-30 07:13:51</td><td><a href='http://www.foxbusiness.com/markets/2015/06/30/asian-stock-markets-bounce-back-but-risk-greece-crisis-spreading-still-worries/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>TOKYO - Asian stock markets bounced back Tuesday, recouping some of the previous day's sharp losses, but investors remained worried the crisis in Greece could spread to other financially weak countries.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-30 07:13:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/30/asia-stocks-bounce-back-but-greece-uncertainty-still-looms'>site</a></td><td>Investors were concerned that the crisis in Greece could spread to other euro countries that are struggling with high debt and austerity policies or to developing nations in Asia and South America.</td></tr>
 </table></body></html>

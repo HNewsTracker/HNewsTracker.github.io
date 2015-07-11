@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/sX.KMe0ZBmb76qlvlkDSBg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/74c8da98146a121a790f6a706700d48e.jpg'></td><td>2015-06-11 18:52:15</td><td><a href='http://news.yahoo.com/greece-commits-step-reform-efforts-german-leader-says-083648798--finance.html'>site</a></td><td>The IMF's Rice noted that pensions and wages account for 80 percent of Greece's primary spending.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 18:55:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23737999.html#storylink=rss'>site</a></td><td>Greece spends an amount equal to 10 percent of its economic output on pensions, compared to an average 2.5 percent across the eurozone.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/__PDex3E8eFxpckSZgdVjg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-21T130309Z_1_LYNXMPEB5K0DA_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-21 15:44:29</td><td><a href='http://finance.yahoo.com/news/behind-scenes-greece-creditors-push-130309759.html'>site</a></td><td>Under the austerity measures imposed by the IMF, the European Union and the European Central Bank in two bailouts, Greece's economic output has fallen 25 percent, wages and pensions have been slashed, and one in four Greeks is jobless.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/.wCGYVaaBFrb.sxsjSKDXQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3aec3cfdc9b3421d7b0f6a706700df8c.jpg'></td><td>2015-07-05 06:09:01</td><td><a href='http://news.yahoo.com/family-divided-emotions-run-high-ahead-greek-vote-060901498.html'>site</a></td><td>"This situation will create a war within the people. Greek versus Greek. The people are divided right now, about 50-50. What happens the day after the referendum? I'm afraid."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/AP_GREECE_150706_DG_16x9t_144.jpg'></td><td>2015-07-06 15:41:06</td><td><a href='http://abcnews.go.com/Business/greece-vote-countrys-future/story?id=32248849'>site</a></td><td>Here's What Happens Next in Greece</td></tr>
 </table></body></html>

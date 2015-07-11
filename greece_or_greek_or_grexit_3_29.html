@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,11 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/02/00/8134676/3/628x471.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-building-on-gains-from-the-6320951.php'>site</a></td><td>The move increases pressure on Athens to compromise but markets were worried that the outstanding differences between Greece and its creditors would lead to the country defaulting on its debt.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down/_jcr_content/image.adapt.250.low.greece_banks_062915.jpg'></td><td>2015-06-29 11:53:00</td><td><a href='http://america.aljazeera.com/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down.html'>site</a></td><td>The creditors wanted Greece to further cut pensions and raise taxes in ways that Tsipras has long argued would deepen one of the worst economic crises of modern times, in a country where over a quarter of the workforce is already unemployed.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>GREEK SAGA: Greece and its European creditors appeared to be narrowing their differences after Athens offered a raft of proposals to reduce the cost of pensions, hike taxes and cut state spending.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/02/00/8134676/3/628x471.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-building-on-gains-from-the-6320951.php'>site</a></td><td>A possible consequence of a default is Greece leaving the euro currency bloc.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 21:21:13</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-follow-europe-lower-greek-talks-stall-31718488'>site</a></td><td>An unexpected decision by the International Monetary Fund to walk away from talks with Greece spurred the selling.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 17:55:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11465257&ref=rss'>site</a></td><td>BRUSSELS (AP) " The European Commission says that weekend talks to find common ground between international creditors and Greece were unsuccessful and left a wide rift that needs to be closed within two weeks to avoid a possible Greek default.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/809/report-on-business/international-business/european-business/article24953060.ece/ALTERNATES/w220/greece.JPG'></td><td>2015-06-14 21:54:03</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-creditors-fail-in-last-attempt-to-reach-deal/article24953061/?cmpid=rss1'>site</a></td><td>Talks on ending a deadlock between Greece and its international creditors broke up in failure on Sunday, with European leaders venting their frustration as Athens stumbled closer toward a debt default that threatens its future in the euro.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.abc.net.au/news/image/6545688-3x2-340x227.jpg'></td><td>2015-06-15 00:19:45</td><td><a href='http://www.abc.net.au/news/2015-06-15/greece-last-chance-talks-end-with-no-deal/6545624'>site</a></td><td>Last-ditch talks between Greece and its EU-IMF creditors have ended with no deal on Sunday, setting the countdown towards a disastrous default by Athens with the threat of a Greek exit from the euro closer than ever.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/06/15/876/493/570cc8c1c15fd410VgnVCM100000d7c1a8c0____-Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-06-15 03:10:52</td><td><a href='http://www.foxbusiness.com/markets/2015/06/14/asian-stock-markets-slip-euro-slides-as-weekend-greek-debt-talks-appear-to-go/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>HONG KONG - Asian stocks slipped and the euro sank Monday as Greece inched closer to a possible default after weekend talks with international creditors over freeing up the rest of its bailout funds went nowhere.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/30/d2/6c/e2a8d11bfc204081b2da5cf78688f217-e83dae0f6198487f8d6509dc8659efa9-0.jpg'></td><td>2015-06-30 07:13:51</td><td><a href='http://www.daytondailynews.com/ap/ap/business/asia-stocks-bounce-back-but-greece-uncertainty-sti/nmn9N/'>site</a></td><td>Greek leaders pulled out of talks with creditors that include European nations and the International Monetary Fund and called a referendum that's likely to determine if Greece stays in the euro common currency.</td></tr>
 </table></body></html>
