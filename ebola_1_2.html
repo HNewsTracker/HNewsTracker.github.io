@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150630&t=2&i=1060294345&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB5T09D'></td><td>2015-06-30 08:00:03</td><td><a href='http://www.reuters.com/article/2015/06/30/us-health-ebola-liberia-idUSKCN0PA0PB20150630?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>A health worker injects a woman with an Ebola vaccine during a trial in Monrovia, February 2, 2015.</td></tr><tr><td>MONROVIA A Liberian has died of Ebola in the first recorded case since the country at the heart of an epidemic was declared free of the virus on May 9, Deputy Health Minister Tolbert Nyenswah said on Tuesday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/33/17/8238046/7/square_gallery_thumb.jpg'></td><td>2015-06-30 19:53:46</td><td><a href='http://www.sfgate.com/news/medical/article/Liberia-quarantines-community-where-corpse-tested-6357541.php'>site</a></td><td><table><tr><td>Health workers leave after they took a blood specimen from a child to test for the Ebola virus in a area were a 17-year old boy died from the virus on the outskirts of Monrovia, Liberia, Tuesday, June 30, 2015.</td></tr><tr><td>Liberian authorities on Tuesday quarantined an area where the corpse of the boy was found, sparking fears this West African country could face another outbreak of the disease nearly two months after being declared Ebola-free.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pmQa6lTbZKown3vhlxH8_w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b04350ba760a0c1d7b0f6a706700b6a6.jpg'></td><td>2015-07-03 15:56:25</td><td><a href='http://news.yahoo.com/liberia-works-contain-ebola-source-cases-155625276.html'>site</a></td><td>"We will contain it quickly because of where we are in the learning curve as far as Ebola is concerned," said Dr. Philip Ireland at the John F. Kennedy Medical Center in the capital, Monrovia.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150630&t=2&i=1060294345&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB5T09D'></td><td>2015-06-30 08:00:03</td><td><a href='http://www.reuters.com/article/2015/06/30/us-health-ebola-liberia-idUSKCN0PA0PB20150630?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>Liberia announces fresh Ebola death</td></tr><tr><td>MONROVIA A Liberian has died of Ebola in the first recorded case since the country at the heart of an epidemic was declared free of the virus on May 9, Deputy Health Minister Tolbert Nyenswah said on Tuesday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/f92dd96/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F78%2Fb5c0b1e935babb06a975f816404843%2Fmedia%3A4b57b47e0a1b49e29fad7e2fde16de7dLiberiaEbolaWestAfrica.JPEG'></td><td>2015-06-30 12:00:00</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/30/liberia-quarantines-community-where-corpse-tested-for-ebola'>site</a></td><td>The corpse of a 17-year-old man has tested positive for Ebola in Liberia, but no other cases have been reported, the country's deputy health minister said late Monday, June 29, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/33/17/8238046/7/square_gallery_thumb.jpg'></td><td>2015-06-30 19:53:46</td><td><a href='http://www.sfgate.com/news/medical/article/Liberia-quarantines-community-where-corpse-tested-6357541.php'>site</a></td><td><table><tr><td>Liberia quarantines an area where new Ebola case appeared</td></tr><tr><td>Liberian authorities on Tuesday quarantined an area where the corpse of the boy was found, sparking fears this West African country could face another outbreak of the disease nearly two months after being declared Ebola-free.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-01 18:29:33</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/01/2nd-ebola-case-declared-in-liberia-as-health-workers-protest'>site</a></td><td>2nd Ebola case declared in Liberia as health workers protest</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-01 18:29:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/2nd-ebola-case-declared-in-liberia-as-health-worke/nmp4R/'>site</a></td><td><table><tr><td>Health Minister Bernice Dahn said Liberia has paid hazard benefits to "99 percent" of people who worked in the Ebola treatment units in addition to their regular salaries.</td></tr><tr><td>Also Wednesday, workers exhumed the body of the 17-year-old male student whose infection, detected after his death, sparked fears of the return of Ebola to Liberia.</td></tr></table></td></tr>
 </table></body></html>

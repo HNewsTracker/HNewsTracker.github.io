@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 20:13:44</td><td><a href='http://www.reuters.com/article/2015/07/08/us-usa-fbi-islamic-state-idUSKCN0PI24J20150708?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>Comey told a U.S. Senate Judiciary Committee hearing that Islamic State, also known by the acronym ISIL, is imploring supporters through Twitter to carry out attacks.</td></tr><tr><td>Comey later told the Senate Select Committee on Intelligence that the FBI now estimated more than 200 Americans have traveled or attempted to travel to Syria to fight for Islamic militants.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 22:42:05</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3122894/Suicide-bomber-kills-3-Libyas-Derna--residents.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>But local residents say Majlis Mujahideen, with local armed people, have pushed Islamic State out of much of Derna, taking back the courthouse, and killing several of the group's fighters including an Egyptian.</td></tr><tr><td>Islamic State is mostly in the Ras El Hilal and Fattiah areas of the city, residents said.</td></tr><tr><td>Derna, a conservative city where Islamist hardliners resisted Muammar Gaddafi before his 2011 fall, was the first place Islamic State tried to gain support in Libya.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 15:15:27</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123551/Libyan-Islamists-claim-drive-Islamic-State-port-stronghold.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Street fighting has raged for several days between members of the local Islamist umbrella group Majlis Mujahideen and Islamic State loyalists, who have been trying to increase their influence in the port city for more than a year.</td></tr><tr><td>A Majlis spokesman told local Libyan Nabaa TV that more than 70 Islamic State militants had surrendered during the fighting, in which some were severely wounded.</td></tr><tr><td>Forces from both governments have been fighting Islamic State but also each other in a conflict where military alliances are often fluid and based on local interests.</td></tr></table></td></tr>
 </table></body></html>

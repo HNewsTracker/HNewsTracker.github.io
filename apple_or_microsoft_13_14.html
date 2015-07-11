@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,13 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/34a4823d8afe8d83140a6e85e07f5abfab4691bb/r=299&amp;c=299x168/http/videos.usatoday.net/Brightcove2/29906170001/2015/06/29906170001_4276211489001_video-still-for-video-4274287916001.jpg?pubId=29906170001'></td><td>2015-06-08 19:29:55</td><td><a href='http://www.usatoday.com/story/tech/personal/2015/06/08/live-coverage-apple-wwdc/28674973/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomtech-personaltalk'>site</a></td><td>Apple Music unveiled at WWDC</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/s0iSFiZqYvckpp3tmHiMpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/73b26ba59b04d419780f6a70670087fa.jpg'></td><td>2015-06-09 07:02:37</td><td><a href='http://news.yahoo.com/apple-music-brings-change-streaming-enough-070237533.html'>site</a></td><td>Apple Music brings change to streaming, but is it enough?</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-09 17:03:12</td><td><a href='http://www.usnews.com/news/technology/articles/2015/06/09/apple-music-brings-change-to-streaming-but-is-it-enough'>site</a></td><td>Here's a look at some of the major aspects of Apple Music.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/cd/resizer/2.0/FIT_TO_WIDTH-w540/ceaec912bedee2e7705bbceb201bbcee9e861306.png'></td><td>2015-06-21 14:41:50</td><td><a href='https://www.yahoo.com/tech/taylor-swift-wrote-a-break-up-letter-to-apple-122081998994.html?src=rss'>site</a></td><td>I&#x2019;m not sure you know that Apple Music will not be paying writers, producers, or artists for those three months.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 15:01:28</td><td><a href='http://www.hollywoodreporter.com/news/taylor-swift-apple-music-explains-804016?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+thr%2Fnews+%28The+Hollywood+Reporter+-+Top+Stories%29'>site</a></td><td><table><tr><td>"We know how astronomically successful Apple has been, and we know that this incredible company has the money to pay artists, writers and producers for the three-month trial period ... even if it is free for the fans trying it out."</td></tr><tr><td>I'm sure you are aware that Apple Music will be offering a free 3 month trial to anyone who signs up for the service.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-21 15:17:49</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/06/21/in-open-letter-swift-criticizes-shocking-apple-music'>site</a></td><td><table><tr><td>In open letter, Swift criticizes 'shocking' Apple Music</td></tr><tr><td>In an open letter to Apple, on Sunday, June 21, 2015, Swift criticized the company's new streaming music service for failing to pay artists for a free three-month trial.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 15:20:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article25108798.html#storylink=rss'>site</a></td><td>Swift said she would withhold her 2014 album "1989" from Apple Music, which launches June 30.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-21 16:05:47</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift writes open letter to Apple Music bosses</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-21 18:42:15</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift has written an open letter to Apple Music bosses explaining why she is withholding her album 1989 from their service, telling them "it is unfair to ask anyone to work for nothing".</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ichef.bbci.co.uk/news/304/cpsprodpb/75E1/production/_83777103_swift1_624getty.jpg'></td><td>2015-06-22 15:11:33</td><td><a href='http://www.bbc.co.uk/news/entertainment-arts-33220189#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>"We hear you @taylorswift13 and indie artists. Love, Apple," tweeted executive Eddy @Cue.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://wpmedia.news.nationalpost.com/2015/06/taylor-swift.jpg?w=620'></td><td>2015-06-22 16:43:01</td><td><a href='http://news.nationalpost.com/arts/music/apple-bows-to-taylor-swift'>site</a></td><td>Cue declined to say how much Apple will pay in royalties for streaming during the free trial period.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-22 17:13:12</td><td><a href='http://abcnews.go.com/Entertainment/wireStory/open-letter-swift-criticizes-shocking-apple-music-31924658'>site</a></td><td>But Swift said she would withhold her latest album from the service because Apple wasn't planning to pay artists and labels directly for the use of their music during the free, introductory period.</td></tr>
 </table></body></html>

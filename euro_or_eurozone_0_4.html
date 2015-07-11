@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 06:33:36</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/03/would-euro-departure-help-or-hurt-europes/'>site</a></td><td>That would undermine claims for the euro being a key to prosperity.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-07 03:39:09</td><td><a href='http://news.yahoo.com/eurozone-leaders-hold-emergency-summit-greece-033909834.html'>site</a></td><td>"And that is why we are now waiting for very precise proposals from the Greek prime minister, a programme that will allow Greece to return to prosperity," said Merkel, adding that eurozone countries had already shown "a lot of solidarity with Greece".</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/tVJ6fu0nqjgRF.M3PwTXzA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/4431b24e19d2671e7b0f6a7067004551_original.jpg'></td><td>2015-07-07 03:56:10</td><td><a href='http://finance.yahoo.com/news/whats-next-greece-stumbles-toward-154417485.html'>site</a></td><td>Greece, which overspent for years until its troubles became clear in 2009, has already been granted 240 billion euros in loans from the other eurozone countries.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:43:57</td><td><a href='http://www.foxnews.com/world/2015/06/20/greek-premier-tsipras-ministers-discuss-strategy-proposals-for-next-week/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>Greek premier Tsipras, ministers discuss strategy, proposals for next week's Eurozone summit</td></tr><tr><td>ATHENS, Greece - Two days before a crucial summit of Eurozone leaders, Greek ministers are huddling to discuss strategy and assemble a new package of proposals, officials say.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:50:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11468708&ref=rss'>site</a></td><td>Greek officials meet, prepare proposals for Eurozone summit</td></tr>
 </table></body></html>

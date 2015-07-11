@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 22:05:26</td><td></td><td><a href='holmes_0_1.html'>Paul Kahn, Holmes' manager, says the 71-year-old musician died Friday at his home in Rosedale, Maryland. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-19 22:05:26</td><td></td><td><a href='holmes_0_2.html'>Wendell Holmes, the guitarist, pianist and singer and songwriter of the soul and blues band The Holmes Brothers, has died. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 17:31:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-06-11-US--Colorado%20Shooting-The%20Latest/id-7b04c140aa0d42d1a8bd463682a438d3'>site</a></td><td>Prosecutors contend Holmes was sane and are seeking the death penalty.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 21:20:59</td><td><a href='http://www.foxnews.com/us/2015/06/11/colorado-theater-shooter-ex-didnt-see-future-with-him/'>site</a></td><td>After they broke up, Holmes never revealed to her that he was amassing an arsenal of weapons and body armor in meticulous preparation for the attack, prosecutors said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-12 00:57:15</td><td></td><td><a href='holmes_0_1.html'>- Months before James Holmes opened fire in a Colorado movie theater, his ex-girlfriend said she urged him talk to his therapist after he mentioned having thoughts about killing people, thoughts that to her "seemed very philosophical" and not a concrete threat. (11)</a></td></tr>
 </table></body></html>

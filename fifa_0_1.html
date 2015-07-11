@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 19:48:52</td><td><a href='http://www.reuters.com/article/2015/06/21/us-soccer-fifa-banks-exclusive-idUSKBN0P10TB20150621?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>Some European and U.S. banks had already stepped up scrutiny of FIFA-related accounts and at least one said it had stopped handling FIFA business for some time because of corruption allegations.</td></tr><tr><td>In a statement FATF said that "recent reports about alleged corruption and money laundering activities on a large scale by several high-ranking FIFA officials underscore how important it is that financial institutions identify and monitor high-risk customers."</td></tr><tr><td>"Sports associations like the International Federation of Association Football (FIFA) or the International Olympic Committee are not businesses but associations. They do not pay taxes and, as associations, are exempt from the Swiss anti-corruption legal framework," the State Department said in the report.</td></tr><tr><td>The involvement of anti-money-laundering monitors in current investigations of FIFA corruption was highlighted last week by Michael Lauber, attorney general of Switzerland.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150610&t=2&i=1055268556&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB59108'></td><td>2015-06-11 09:37:50</td><td><a href='http://www.reuters.com/article/2015/06/11/us-soccer-fifa-election-analysis-idUSKBN0OQ2HH20150611?feedType=RSS&feedName=sportsNews'>site</a></td><td><table><tr><td>FIFA to hold new election but under same old rules</td></tr><tr><td>However, the rules governing the election will remain the same as they are enshrined in the FIFA statutes and can only be changed by Congress.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-10T193519Z_1_LYNXMPEB5910D_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-ELECTION-ANALYSIS.JPG?itok=kXkmCjYC'></td><td>2015-06-11 10:02:38</td><td><a href='http://www.sbs.com.au/news/article/2015/06/11/analysis-fifa-hold-new-election-concerns-it-under-old-rules'>site</a></td><td>The U.S. indicted nine current or former FIFA officials and five business executives only days before the last election.</td></tr>
 </table></body></html>

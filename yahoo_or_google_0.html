@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Did you know that Google has been known to rent goats to "mow" its grass at the Googleplex complex in Mountain View, Calif.?</td></tr><tr><td>Of course, Google isn't just all about streaming and websites.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnology'>site</a></td><td><table><tr><td>What does Google have in store for the future?</td></tr><tr><td>The most amazing thing about Google, to me, is that the company isn't even 20 years old.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-27 10:00:00</td><td></td><td><a href='yahoo_or_google_0_1.html'>Rather than just cry about what went wrong and how they lost out on the deal, Google has been hard at work creating its own "Twitch killer." (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0625/20150625__0626google~1_300.JPG'></td><td>2015-06-25 22:01:44</td><td><a href='http://www.mercurynews.com/business/ci_28382756/googles-new-self-driving-cars-cruising-silicon-valley?source=rss'>site</a></td><td>If all goes well, Google hopes to gain regulatory clearance to remove the steering wheel, brake pedal and emergency driver from the prototype.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 22:02:47</td><td></td><td><a href='yahoo_or_google_0_1.html'>The latest models of Google's self-driving cars are now cruising the streets near the Internet company's Silicon Valley headquarters in a test of how they work around other vehicles driven by people. (7)</a></td></tr>
 </table></body></html>

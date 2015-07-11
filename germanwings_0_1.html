@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,9 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-09 21:14:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article23559718.html#storylink=rss'>site</a></td><td>Coffins of the victims of the Germanwings aircraft crash arrive to load aboard a Lufthansa plane to Duesseldorf, at Marseille airport, southeastern France, Tuesday, June 9, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 10:14:21</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/10/bodies-of-15-children-killed-in-germanwings-crash-come-home'>site</a></td><td>DUESSELDORF, Germany (AP) - The coffins of 15 of the 16 German high school students killed in the Germanwings plane crash were leaving Duesseldorf airport on Wednesday in a hearse convoy to their hometown of Haltern.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/l/b/o/5/image.related.articleLeadwide.620x349.ghlbi6.png/1433985069747.jpg'></td><td>2015-06-11 01:13:13</td><td><a href='http://www.smh.com.au/world/remains-of-exchange-students-killed-in-germanwings-crash-arrive-home-20150611-ghlbi6.html'>site</a></td><td>Students from the Joseph-Koenig-Gymnasium watch as hearses carrying the remains of 16 of their fellow students and two teachers who were killed in the Germanwings plane crash in March drive slowly past on Wednesday.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 08:12:32</td><td><a href='http://www.utsandiego.com/news/2015/jun/11/families-of-germanwings-crash-victims-to-meet/'>site</a></td><td>PARIS (AP) - Families of victims of the Germanwings plane crash are gathering in Paris to meet with investigators, amid lingering questions about why the co-pilot destroyed the plane and how families may be compensated for their loss.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 11:15:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23737894.html#storylink=rss'>site</a></td><td>A convoy of hearses drives on the highway in Duisburg, Germany, Wednesday, June 10, 2015, taking home 16 school children who died in the Germanwings plane crash in March.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-11 19:26:30</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/11/families-of-germanwings-crash-victims-to-meet-investigators'>site</a></td><td>Prosecutor Brice Robin, reacts during meeting with media, after the families of Germanwings plane crash victims met with authorities in Paris, Thursday, June 11, 2015.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/11/30/32/d7879e671c18414d86b6d4789aff01b4-07c56bb92e114614b0d48aba5341d543-1.jpg'></td><td>2015-06-11 21:24:40</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/families-of-germanwings-crash-victims-to-meet-inve/nmbCg/'>site</a></td><td>Marseille prosecutor Brice Robin presented new details of his criminal investigation into the case after meeting in Paris with many grieving relatives of the 150 people who died on the Germanwings flight co-piloted by Andreas Lubitz.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-06-12 17:18:31</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/12/germanwings-co-pilot-researched-deadly-drugs-living-will'>site</a></td><td>Germanwings Co-Pilot Researched Deadly Drugs, Living Will</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 08:12:32</td><td><a href='http://www.utsandiego.com/news/2015/jun/11/families-of-germanwings-crash-victims-to-meet/'>site</a></td><td>PARIS (AP) - Families of victims of the Germanwings plane crash are gathering in Paris to meet with investigators, amid lingering questions about why the co-pilot destroyed the plane and how families may be compensated for their loss.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/01/43/8132860/7/square_gallery_thumb.jpg'></td><td>2015-06-11 11:03:42</td><td><a href='http://www.sfgate.com/news/world/article/Families-of-Germanwings-crash-victims-to-meet-6320483.php'>site</a></td><td>German lawyer Peter Kortas, whose firm represents the relatives of 34 victims, said negotiations with Germanwings began several days ago over compensation.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 11:15:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23737894.html#storylink=rss'>site</a></td><td>A convoy of hearses drives on the highway in Duisburg, Germany, Wednesday, June 10, 2015, taking home 16 school children who died in the Germanwings plane crash in March.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 19:26:30</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/11/families-of-germanwings-crash-victims-to-meet-investigators'>site</a></td><td>Prosecutor Brice Robin, reacts during meeting with media, after the families of Germanwings plane crash victims met with authorities in Paris, Thursday, June 11, 2015.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/11/30/32/d7879e671c18414d86b6d4789aff01b4-07c56bb92e114614b0d48aba5341d543-1.jpg'></td><td>2015-06-11 21:24:40</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/families-of-germanwings-crash-victims-to-meet-inve/nmbCg/'>site</a></td><td>Marseille prosecutor Brice Robin presented new details of his criminal investigation into the case after meeting in Paris with many grieving relatives of the 150 people who died on the Germanwings flight co-piloted by Andreas Lubitz.</td></tr>
 </table></body></html>

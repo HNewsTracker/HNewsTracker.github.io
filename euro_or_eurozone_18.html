@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-13 22:02:04</td><td><a href='http://www.charlotteobserver.com/sports/article24030568.html#storylink=rss'>site</a></td><td>Faeroe Islands beat Greece again in Euro 2016 qualifying</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 09:20:10</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/04/would-euro-departure-help-or-hurt-europes-currency-union'>site</a></td><td>Greece could leave the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 12:35:00</td><td><a href='http://www.ctvnews.ca/business/greek-euro-split-could-hurt-greece-short-term-but-long-term-effects-unclear-1.2453626'>site</a></td><td><table><tr><td>FORTRESS EUROZONE?</td></tr><tr><td>There's a widespread view among analysts that the eurozone would not collapse in the short term if Greece left.</td></tr><tr><td>The euro would in fact be stronger.</td></tr><tr><td>A number of economists, however, think a Greek exit could cause long-lasting damage to the euro.</td></tr></table></td></tr>
 </table></body></html>

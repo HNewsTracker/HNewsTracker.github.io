@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/BDvi9wpqrdRb5rnu5Jdtaw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5ODtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-06-11T111223Z_1_LYNXMPEB5A0JD_RTROPTP_2_USA-BUDGET-DEFENSE.JPG'></td><td>2015-06-11 11:38:32</td><td><a href='http://news.yahoo.com/u-military-considering-more-anbar-style-hubs-iraq-111223825.html'>site</a></td><td><table><tr><td>NAPLES, Italy (Reuters) - The United States is considering replicating the creation of a new U.S. military hub in Anbar elsewhere in Iraq as the campaign against Islamic State advances, the top U.S. military officer said on Thursday.</td></tr><tr><td>The hub will be located at the Taqaddum military base, which is only about 15 miles (25 km) from Ramadi, the capital of Anbar province, which fell to Islamic State militants last month.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 21:21:15</td><td><a href='http://www.sfgate.com/news/politics/article/House-votes-down-war-powers-amendment-6321536.php'>site</a></td><td>Before the final vote, the House rejected an amendment to force lawmakers to vote by the end of March on new war powers to fight Islamic State militants.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 21:21:27</td><td><a href='http://news.yahoo.com/house-votes-down-war-powers-amendment-181111519--politics.html'>site</a></td><td>On Wednesday, Obama ordered the deployment of up to 450 more American troops to Iraq in an effort to reverse major battlefield losses to the Islamic State, an escalation but not a significant shift in the struggling U.S. strategy to defeat the extremist group.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-13 22:02:04</td><td><a href='http://www.charlotteobserver.com/sports/article24030568.html#storylink=rss'>site</a></td><td>Faeroe Islands beat Greece again in Euro 2016 qualifying</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 03:10:52</td><td></td><td><a href='euro_or_eurozone_8_9.html'>HONG KONG - Asian stocks slipped and the euro sank Monday as Greece inched closer to a possible default after weekend talks with international creditors over freeing up the rest of its bailout funds went nowhere. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 03:10:52</td><td></td><td><a href='euro_or_eurozone_8_10.html'>CURRENCIES: The euro faltered on news of the Greek debt impasse, falling nearly 0.5 percent to $1.1207 from $1.1260 in late trading Friday. (2)</a></td></tr>
 </table></body></html>

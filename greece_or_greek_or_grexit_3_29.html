@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 17:55:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11465257&ref=rss'>site</a></td><td>BRUSSELS (AP) " The European Commission says that weekend talks to find common ground between international creditors and Greece were unsuccessful and left a wide rift that needs to be closed within two weeks to avoid a possible Greek default.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/809/report-on-business/international-business/european-business/article24953060.ece/ALTERNATES/w220/greece.JPG'></td><td>2015-06-14 21:54:03</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-creditors-fail-in-last-attempt-to-reach-deal/article24953061/?cmpid=rss1'>site</a></td><td>Talks on ending a deadlock between Greece and its international creditors broke up in failure on Sunday, with European leaders venting their frustration as Athens stumbled closer toward a debt default that threatens its future in the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.abc.net.au/news/image/6545688-3x2-340x227.jpg'></td><td>2015-06-15 00:19:45</td><td><a href='http://www.abc.net.au/news/2015-06-15/greece-last-chance-talks-end-with-no-deal/6545624'>site</a></td><td>Last-ditch talks between Greece and its EU-IMF creditors have ended with no deal on Sunday, setting the countdown towards a disastrous default by Athens with the threat of a Greek exit from the euro closer than ever.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/06/15/876/493/570cc8c1c15fd410VgnVCM100000d7c1a8c0____-Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-06-15 03:10:52</td><td><a href='http://www.foxbusiness.com/markets/2015/06/14/asian-stock-markets-slip-euro-slides-as-weekend-greek-debt-talks-appear-to-go/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>HONG KONG - Asian stocks slipped and the euro sank Monday as Greece inched closer to a possible default after weekend talks with international creditors over freeing up the rest of its bailout funds went nowhere.</td></tr>
+</table></body></html>

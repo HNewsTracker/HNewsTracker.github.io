@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/01/72/8134320/7/square_gallery_thumb.jpg'></td><td>2015-06-11 16:24:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-commits-to-step-up-reform-efforts-German-6320506.php'>site</a></td><td>Failing a deal, there are fears that Greece could drop out of the euro, a move that would create huge uncertainty for Europe and global markets.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6540552-3x2-340x227.jpg'></td><td>2015-06-11 22:44:45</td><td><a href='http://www.abc.net.au/news/2015-06-12/imf-abandons-debt-talks-with-greece/6540338'>site</a></td><td>There were fears this could trigger capital controls and push Greece out of the euro zone, with unpredictable consequences for financial markets and the European economy.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td>Without access to capital markets, Greek lenders have to rely on almost 86 billion of Emergency Liquidity Assistance to stay afloat, subject to weekly boosts by the European Central Bank.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/jq43UNnsdOmq2.cpHBO_tA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-20T125459Z_1_LYNXMPEB5J07R_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-20 22:16:02</td><td><a href='http://finance.yahoo.com/news/greece-may-offer-more-debt-125459258.html'>site</a></td><td>The ECB on Friday raised the ceiling on the "emergency liquidity assistance" that Greece's banks rely on to keep their doors open.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-22 15:32:39</td><td><a href='http://www.bbc.co.uk/news/business-33221446#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Markets rise on hopes of Greece deal</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ichef.bbci.co.uk/news/624/cpsprodpb/10A64/production/_83869186_shares.jpg'></td><td>2015-06-26 02:50:11</td><td><a href='http://www.bbc.co.uk/news/business-33281146#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Last-minute talks will resume on Saturday to either avert a Greek default next week or start preparing to protect the euro zone from financial market turmoil.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 07:21:06</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td>If Greece defaults and switches to a new currency, it's sure to shake global financial markets.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-02 06:14:45</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-greek-anxiety-004926180.html'>site</a></td><td>"If this payment is missed, the ECB will most likely pull the plug on liquidity to Greek banks, which would have a more dramatic impact than the latest default, leading to increased uncertainty for Greece, the euro and the financial markets as a whole."</td></tr>
+</table></body></html>

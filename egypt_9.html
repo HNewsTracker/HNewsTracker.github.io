@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 09:12:18</td><td></td><td><a href='egypt_9_11.html'>LUXOR, Egypt: Egyptian officials say a suicide bomber has blown himself up at the ancient temple of Karnak in Luxor, a southern city frequented by millions of foreign and Egyptian tourists every year. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 13:56:13</td><td></td><td><a href='egypt_9_10.html'>A suicide bomber blew himself up near near one of Egypt's most popular tourist destinations on Wednesday, security sources and witnesses said, the second attack in a little more than a week targeting the country's vital tourism industry. (11)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-10 22:25:35</td><td></td><td><a href='egypt_9_13.html'>Karnak, one of Egypt's biggest attractions, is a giant complex of temples, statues, obelisks and columns built by pharaonic dynasties alongside the Nile. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 20:23:39</td><td></td><td><a href='egypt_9_12.html'>Luxor tourism had just been starting to revive after collapsing following Egypt's 2011 uprising. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 12:08:21</td><td></td><td><a href='egypt_9_10.html'>CAIRO - Officials say two separate road accidents in Egypt Sunday have killed 23 Egyptians and injured 17 others. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 13:36:46</td><td><a href='http://abcnews.go.com/International/wireStory/bus-crashes-egypt-kill-23-injure-17-31754170'>site</a></td><td>The World Health Organization says traffic accidents claim the lives of about 12,000 people a year in Egypt.</td></tr>
 </table></body></html>

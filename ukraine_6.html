@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 19:03:44</td><td></td><td><a href='ukraine_6_8.html'>Russia accuses Ukraine of failing to launch political dialogue with the rebellious east and of keeping its economic blockade of areas controlled by pro-Russian rebels. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/37/00/26/8127911/7/square_gallery_thumb.jpg'></td><td>2015-06-10 19:03:44</td><td><a href='http://www.sfgate.com/news/world/article/Putin-visits-Italy-pope-after-G-7-snub-over-6317959.php'>site</a></td><td>Federico Lombardi said their talks concentrated on the Ukraine conflict and the Middle East, where the Holy See is worried about the fate of the Christian minority.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-10 19:36:09</td><td></td><td><a href='ukraine_6_7.html'>Pope Francis has met privately with Russian president Vladimir Putin at the Vatican, using the talks to call for a "sincere and great effort" aimed at bringing peace to Ukraine. (10)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:28:38</td><td></td><td><a href='ukraine_6_7.html'>KIEV, Ukraine (AP) - U.S. Sen. John McCain has said during a visit to Ukraine that it is shameful that Washington's European allies have not done more to assist Ukrainian forces in their quest to defeat Russian-backed separatists in the east. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:28:38</td><td></td><td><a href='ukraine_6_8.html'>McCain has been a lively supporter of legislation passed in the U.S. Senate this week that includes provisions to supply Ukraine with hundreds of millions of dollars in defence military equipment. (3)</a></td></tr>
 </table></body></html>

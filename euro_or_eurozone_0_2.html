@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 03:12:39</td><td><a href='http://abcnews.go.com/Business/wireStory/asia-stocks-slip-euro-greek-debt-talks-falter-31766071'>site</a></td><td>Asian stocks slipped and the euro sank Monday as Greece inched closer to a possible default after weekend talks with international creditors over freeing up the rest of its bailout funds went nowhere.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:43:57</td><td><a href='http://www.foxnews.com/world/2015/06/20/greek-premier-tsipras-ministers-discuss-strategy-proposals-for-next-week/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>ATHENS, Greece - Two days before a crucial summit of Eurozone leaders, Greek ministers are huddling to discuss strategy and assemble a new package of proposals, officials say.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/k4eOOc8sWfl6nyZvuerHOg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f51a45e7da301d1b7a0f6a706700c08d.jpg'></td><td>2015-06-22 17:16:56</td><td><a href='http://news.yahoo.com/latest-greece-markets-surge-hopes-deal-081250477--finance.html'>site</a></td><td>Jeroen Dijsselbloem, the Dutchman who chairs the eurozone finance ministers' meetings, said negotiators would be using Greek proposals made this weekend as a basis for further talks.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/37/25/74/8216344/3/square_gallery_thumb.jpg'></td><td>2015-06-26 03:33:38</td><td><a href='http://www.sfgate.com/news/world/article/Greece-creditors-in-new-bid-for-loan-deal-as-6348253.php'>site</a></td><td>European leaders have tasked finance ministers from the euro countries with concluding a debt financing agreement with Greece over the weekend, just days before Athens has to meet a crucial debt deadline.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/TXSvQSj0ejP1BwtYkdJ1Yw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/528ef41f43fc841e7b0f6a706700ad8d.jpg'></td><td>2015-07-07 15:58:12</td><td><a href='http://news.yahoo.com/latest-lithuanian-finance-minister-sees-compromise-115544872--finance.html'>site</a></td><td>Arriving for talks with his peers in the 19-country eurozone, Dijsselbloem said the Greek government has "a major interest" in bringing forward "serious and credible" proposals that are needed if Greece is to get another bailout.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 04:07:56</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/04/campaigns-halt-as-greeks-face-tough-referendum-choice'>site</a></td><td>"I am voting 'yes' because I believe that my future and even my kids' future, in twenty or thirty years from now, is in the eurozone and the European Union," Spiliotopoulos said on the eve of the referendum.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>Greece votes in referendum with future in euro in doubt</td></tr>
 </table></body></html>

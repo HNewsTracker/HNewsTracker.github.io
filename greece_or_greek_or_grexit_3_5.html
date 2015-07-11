@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 22:22:36</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/10/s-p-downgrades-greece-says-default-likely-if-no-debt-deal'>site</a></td><td>Greece has three weeks left to conclude a deal with its creditors before its bailout program expires at the end of the month.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-10 23:26:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/10/greek-leader-heads-to-brussels-to-meet-merkel-hollande'>site</a></td><td><table><tr><td>The creditors have made it clear that Greece has to improve its offer of economic reforms before they release 7.2 billion euros ($8.1 billion) the country needs to pay debts due at the end of the month.</td></tr><tr><td>Greece has three weeks left to conclude a deal with its creditors before its bailout program expires at the end of the month, when it will also have to repay about 1.6 billion euros ($1.8 billion) to the International Monetary Fund.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-12 16:01:20</td><td><a href='http://www.cbc.ca/news/business/stocks-knocked-back-by-faltering-greek-debt-talks-1.3111015?cmp=rss'>site</a></td><td>Greece has a 1.6 billion-euro ($2.2 billion) IMF debt installment due June 30 and larger debts due to the European Central Bank in July and August.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://img.rasset.ie/000aae32-219.jpg'></td><td>2015-06-12 17:44:29</td><td><a href='http://www.rte.ie/news/business/2015/0612/707569-euro-greece/'>site</a></td><td>The second possibility was a further extension of the current bailout programme, which expires this month at the same time as Greece must repay 1.6bn to the IMF.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/RdCkRpZGr0NH8uZCIA1Ciw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/d1de1cb6bfe2cd1e7b0f6a706700aa00_original.jpg'></td><td>2015-07-10 15:04:42</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-sell-austerity-deal-111433389.html'>site</a></td><td>The package would be far larger than the 7.2 billion euros creditors had been offering to Greece during the previous five months of fruitless negotiations.</td></tr>
+</table></body></html>

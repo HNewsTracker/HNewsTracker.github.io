@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 21:01:24</td><td><a href='http://www.seattlepi.com/business/technology/article/Who-s-Who-in-music-streaming-Apple-Spotify-6316853.php'>site</a></td><td>- With last year's purchase of headphones maker Beats, Apple got Beats Music, which offers unlimited listening and offline playback for $10 a month.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 21:01:24</td><td></td><td><a href='apple_5_6.html'>The maker of iPods and iPhones announced Apple Music, an app that combines Beats 1, a 24-hour, seven-day live radio station, with an on-demand music streaming service. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 15:01:28</td><td></td><td><a href='apple_5_6.html'>"We know how astronomically successful Apple has been, and we know that this incredible company has the money to pay artists, writers and producers for the three-month trial period ... even if it is free for the fans trying it out." (9)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 18:42:15</td><td></td><td><a href='apple_5_7.html'>Taylor Swift has written an open letter to Apple Music bosses explaining why she is withholding her album 1989 from their service, telling them "it is unfair to ask anyone to work for nothing". (9)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-21 22:02:42</td><td><a href='http://www.cbsnews.com/news/taylor-swift-pens-open-letter-to-apple-about-shocking-policy/'>site</a></td><td>But I say to Apple with all due respect, it's not too late to change this policy and change the minds of those in the music industry who will be deeply and gravely affected by this.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-22 16:43:01</td><td></td><td><a href='apple_5_8.html'>"When I woke up this morning and I saw Taylor's note that she had written, it really solidified that we needed to make a change," said Apple senior vice-president Eddy Cue in an interview with The Associated Press. (2)</a></td></tr>
 </table></body></html>

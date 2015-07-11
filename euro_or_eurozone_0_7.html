@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-07 03:39:09</td><td><a href='http://news.yahoo.com/eurozone-leaders-hold-emergency-summit-greece-033909834.html'>site</a></td><td>"It is now up to the government of Alexis Tsipras to make serious, credible proposals so that this willingness to stay in the eurozone can translate into a lasting programme," Hollande said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/45/60/8281109/7/square_gallery_thumb.jpg'></td><td>2015-07-09 13:14:20</td><td><a href='http://www.sfgate.com/news/world/article/Greece-racing-to-finalize-reforms-and-remain-in-6374611.php'>site</a></td><td>After months of fruitless negotiations with Tsipras' government, elected in January on promises to repeal bailout austerity, the skeptical eurozone creditor states have said they want to see a detailed, cost-accounted plan of the reforms.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 07:36:22</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/02/the-latest-european-markets-solid-as-greek-referendum-looms'>site</a></td><td><table><tr><td>French Finance Minister Michel Sapin says Europe remains committed to avoiding "catastrophe" for Greece and keeping it in the eurozone.</td></tr><tr><td>Sapin said on France's iTele television Thursday that "the exit of Greece from the eurozone is not desirable, nor envisaged."</td></tr></table></td></tr>
 </table></body></html>

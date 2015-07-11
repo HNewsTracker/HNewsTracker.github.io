@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 20:39:27</td><td><a href='http://www.reuters.com/article/2015/06/30/us-palestinians-islamicstate-hamas-idUSKCN0PA2TR20150630?feedType=RSS&feedName=worldNews'>site</a></td><td>"At the same time, within Gaza, ISIS (Islamic State) has been flouting Hamas. But they have common cause against the Jews, in Israel or abroad."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/16/51/8186436/7/square_gallery_thumb.jpg'></td><td>2015-06-20 18:33:14</td><td><a href='http://www.sfgate.com/news/world/article/Yemeni-officials-say-car-bomb-exploded-in-Sanaa-6339154.php'>site</a></td><td>The Islamic State group claimed the attack on a Twitter account associated with the extremists, saying it targeted Shiite Houthis, who the Sunni extremists view as heretics.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 18:33:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/20/yemeni-officials-say-car-bomb-exploded-in-sanaa'>site</a></td><td>SANAA, Yemen (AP) - An Islamic State-claimed car bomb exploded outside a mosque in Yemen's capital Saturday, killing at least two people and wounding six amid the country's raging civil war, authorities said.</td></tr>
 </table></body></html>

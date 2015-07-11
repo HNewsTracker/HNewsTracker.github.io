@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/02637/obama-putin_2637988b.jpg'></td><td>2015-06-25 23:42:53</td><td><a href='http://www.telegraph.co.uk/news/worldnews/vladimir-putin/11700224/Vladimir-Putin-calls-Barack-Obama-to-discuss-Ukraine-and-Islamic-State.html'>site</a></td><td>Putin, who has consistently denied backing the pro-Russian rebels in Ukraine, initiated the phone call with Obama, according to the White House.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 03:21:18</td><td><a href='http://www.daytondailynews.com/ap/ap/political/white-house-putin-calls-obama-discuss-ukraine-is-i/nmmD9/'>site</a></td><td>Russian President Vladimir Putin and President Barack Obama spoke by telephone Thursday and discussed continued tensions in eastern Ukraine and the fight against the Islamic State in the Middle East.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 16:38:02</td><td><a href='http://www.reuters.com/article/2015/06/25/us-ukraine-crisis-nato-idUSKBN0P51IU20150625?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>U.S. General Philip Breedlove, NATO's supreme allied commander, said the border between Ukraine and Russia was "wide open," allowing free movement of equipment and supplies.</td></tr><tr><td>Inside Ukraine, where pro-Russian separatists are battling Ukrainian forces, Breedlove said "we see a force that has been trained, that is led by Russian leadership, ... and is ready to do whatever mission is required of it in the Donbass (region)."</td></tr></table></td></tr>
 </table></body></html>

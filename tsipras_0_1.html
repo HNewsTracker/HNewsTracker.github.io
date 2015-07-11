@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,13 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 15:56:04</td><td><a href='http://www.cbsnews.com/news/greek-leader-heads-to-brussels-to-meet-merkel-hollande/'>site</a></td><td>However, Merkel recently indicated she would have an opportunity to speak to Tsipras on Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150612&i=108722162&w=240&r=108722162-1&t=2'></td><td>2015-06-13 17:54:02</td><td><a href='http://www.reuters.com/article/2015/06/13/us-eurozone-greece-idUSKBN0OS0E020150613?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras, who was elected in January on promises to end austerity, made it clear he was willing to give ground but with strings attached that German Chancellor Angela Merkel is unlikely to accept.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td>Ahead of the summit, Tsipras spoke by phone with German Chancellor Angela Merkel.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/greece22.jpg?ve=1&tl=1'></td><td>2015-06-11 11:25:03</td><td><a href='http://www.foxbusiness.com/industries/2015/06/11/greece-pm-pressured-for-debt-talk-concessions/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td><table><tr><td>Tsipras again said he saw a solution at hand.</td></tr><tr><td>Tsipras renewed a call for a restructuring of Athens' debts as part of any solution.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 15:59:55</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-idUSKBN0OR19T20150611?feedType=RSS&feedName=topNews'>site</a></td><td>IMF quits Greek talks; EU tells Tsipras: stop gambling</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/8k.BWiB20Ut5zpjB4kwnUw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-12T074041Z_1_LYNXMPEB5B0AO_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-13 13:12:25</td><td><a href='http://finance.yahoo.com/news/tsipras-seeks-debt-relief-greeks-131225972.html'>site</a></td><td>Tsipras used the term "sustainable solution" to refer to a long-standing demand for large parts of Greece's mountainous debts to be written off - something he believes is vital if the Greek economy is to start getting back on its feet after a five-year depression.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-21 12:43:17</td><td><a href='http://www.reuters.com/article/2015/06/21/us-eurozone-greece-proposal-idUSKBN0P10HQ20150621?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greece's Tsipras presented proposal to EU leaders: PM's office</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-21 13:52:42</td><td><a href='http://www.ctvnews.ca/business/greek-pm-tsipras-presents-new-financial-proposal-to-eu-1.2432946'>site</a></td><td>A government source close to the talks says Tsipras "presented to the three leaders Greece's proposal for a mutually beneficial agreement, which will provide a permanent solution and not just postpone tackling the problem."</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-03 14:53:42</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras dismisses Europe's warnings to Greece on vote</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-03 14:53:42</td><td><a href='http://news.yahoo.com/opinion-poll-shows-yes-vote-slightly-ahead-greece-053427297--business.html'>site</a></td><td>Tsipras is betting Europe will compromise rather than let Greece slip out of the eurozone, even though the continent's leaders say a "No" vote would signal its exit.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww3.hdnux.com/photos/37/41/67/8265186/5/square_gallery_thumb.jpg'></td><td>2015-07-06 17:47:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-still-cash-starved-after-decisive-no-6367753.php'>site</a></td><td>After vote win, Greece's Tsipras looks to rebuild talks</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7hiFTvVkCvqilD9gImAutw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4546f9a81c0c721e7b0f6a7067005f4f.jpg'></td><td>2015-07-07 04:55:11</td><td><a href='http://news.yahoo.com/greek-pm-tsipras-races-restart-talks-vote-win-045305978.html'>site</a></td><td>Greek PM Tsipras races to restart talks after vote win</td></tr>
 </table></body></html>
