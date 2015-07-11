@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 17:03:12</td><td><a href='http://www.usnews.com/news/technology/articles/2015/06/09/apple-music-brings-change-to-streaming-but-is-it-enough'>site</a></td><td>Here's a look at some of the major aspects of Apple Music.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/gPiUl8qvaFEfmyHxR0ZlhQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/d58ed2dda1192d1d7b0f6a706700b98c.jpg'></td><td>2015-07-03 21:15:21</td><td><a href='http://news.yahoo.com/dr-dre-announces-radio-show-apple-music-211521497.html'>site</a></td><td>NEW YORK (AP) - Dr. Dre will be busting through your speakers with a new radio show on Apple Music.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 21:18:52</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article26411590.html#storylink=rss'>site</a></td><td>Apple's new streaming service features live radio programming, including shows hosted by Zane Lowe, Ebro Darden and Julie Adenuga.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 21:18:52</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article26411590.html#storylink=rss'>site</a></td><td>Apple bought Dre and Jimmy Iovine's Beats by Dre company last year.</td></tr>
 </table></body></html>

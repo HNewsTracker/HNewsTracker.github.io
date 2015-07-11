@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,7 +49,8 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 21:21:35</td><td><a href='http://cnews.canoe.com/CNEWS/Crime/2015/06/25/22473106.html?cid=rssnewscrime'>site</a></td><td>-- An unarmed black man was fatally shot Thursday by officers in suburban Baltimore who thought he had a weapon when they were called to a home from which he was barred by protective order, the police chief said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 05:54:31</td><td><a href='http://www.foxnews.com/us/2015/06/26/baltimore-county-police-kill-unarmed-man-after-suicide-threat/'>site</a></td><td><table><tr><td>Baltimore County police kill unarmed man after suicide threat</td></tr><tr><td>Since January 2012, police responded to 17 domestic violence calls at the home in a quiet suburban community outside Baltimore, said Cpl.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-27 18:36:24</td><td><a href='http://www.reuters.com/article/2015/06/27/us-usa-baltimore-shooting-idUSKBN0P70TZ20150627?feedType=RSS&feedName=domesticNews'>site</a></td><td>Baltimore County Police Department salary records show Shenell Wilkes, Jonathan Besaw and Shannon Stargel as the only employees with those last names.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-27 23:58:20</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/06/27/22476531.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>Baltimore police partially identify officers who killed unarmed man</td></tr><tr><td>Officers shot 41-year-old Spencer McCain Thursday in Owings Mills, about 15 miles northwest of Baltimore.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 04:54:53</td><td><a href='http://www.foxnews.com/us/2015/06/26/baltimore-county-police-kill-unarmed-man-after-suicide-threat/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>Also in the home at the time were two of his young daughters and their mother, Shannon Sulton, who told police McCain beat and threatened her, Baltimore County Police Chief Jim Johnson said at a news conference.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 05:54:31</td><td><a href='http://www.foxnews.com/us/2015/06/26/baltimore-county-police-kill-unarmed-man-after-suicide-threat/'>site</a></td><td><table><tr><td>Baltimore County police kill unarmed man after suicide threat</td></tr><tr><td>Since January 2012, police responded to 17 domestic violence calls at the home in a quiet suburban community outside Baltimore, said Cpl.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-27 18:36:24</td><td><a href='http://www.reuters.com/article/2015/06/27/us-usa-baltimore-shooting-idUSKBN0P70TZ20150627?feedType=RSS&feedName=domesticNews'>site</a></td><td>Baltimore County Police Department salary records show Shenell Wilkes, Jonathan Besaw and Shannon Stargel as the only employees with those last names.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-27 23:58:20</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/06/27/22476531.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>Baltimore police partially identify officers who killed unarmed man</td></tr><tr><td>Officers shot 41-year-old Spencer McCain Thursday in Owings Mills, about 15 miles northwest of Baltimore.</td></tr></table></td></tr>
 </table></body></html>

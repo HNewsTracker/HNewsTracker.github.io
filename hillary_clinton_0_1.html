@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 15:09:49</td><td><a href='http://www.usnews.com/news/politics/articles/2015/06/14/kicking-off-campaign-clinton-looking-for-iowa-advantage'>site</a></td><td>Hillary Clinton looks to build organizational edge in Iowa</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-14 15:12:06</td><td><a href='http://www.miamiherald.com/news/nation-world/article24151171.html#storylink=rss'>site</a></td><td><table><tr><td>Seeking an army of volunteers, Hillary Rodham Clinton is trying to build an organizational edge in Iowa as some of her lesser-known Democratic rivals clamor for attention in the state that tripped up her first presidential campaign.</td></tr><tr><td>Democratic presidential hopeful, former Secretary of State Hillary Rodham Clinton, greets a supporter during a campaign house party Saturday, June 13, 2015, in Sioux City, Iowa.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 16:31:29</td><td><a href='http://www.usnews.com/news/politics/articles/2015/06/14/kicking-off-campaign-clinton-looking-for-iowa-advantage'>site</a></td><td>Caitlin Wilson, of Altoona, Iowa, poses with a cardboard cutout of Democratic presidential candidate Hillary Rodham Clinton outside a rally, Sunday, June 14, 2015, in Des Moines, Iowa.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/YmIIz1b6xQzqMsTifgit5w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-06-11T005758Z_2_LYNXMPEB5913U_RTROPTP_2_USA-POLITICS-CUOMO.JPG'></td><td>2015-06-11 00:57:58</td><td><a href='http://news.yahoo.com/bill-clinton-says-stop-giving-paid-speeches-hillary-002742027.html'>site</a></td><td><table><tr><td>DENVER (Reuters) - Bill Clinton said on Wednesday he would no longer give paid speeches if his wife, Hillary Clinton, is elected U.S. president.</td></tr><tr><td>Asked whether he would keep giving paid speeches if Hillary Clinton entered the White House, Clinton said: "No. I don't think so. I don't think that - because once you get to be president then you're just making a daily story."</td></tr></table></td></tr>
 </table></body></html>

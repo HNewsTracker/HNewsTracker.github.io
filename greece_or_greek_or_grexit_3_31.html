@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,13 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/00/35/8128368/3/square_gallery_thumb.jpg'></td><td>2015-06-10 17:57:46</td><td><a href='http://www.sfgate.com/news/world/article/What-s-holding-up-a-deal-on-Greece-s-bailout-6318778.php'>site</a></td><td>Greece refuses both measures.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/05/50/8149509/5/920x920.jpg'></td><td>2015-06-14 17:46:34</td><td><a href='http://www.sfgate.com/news/world/article/Greece-says-it-will-never-accept-wage-pension-6326500.php'>site</a></td><td>"These measures concern the popular classes and employees," said the official, who spoke on condition of anonymity because of the ongoing talks in Brussels between Greece and its creditors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=8007&amp;contextPath=7037-7986-7989-8007-&amp;pubId=13&amp;cat=&amp;meta=read-wirestory&amp;objId=23745514&amp;type=article&amp;title=Asia+stocks+drift+as+Greece+dampens+impact+of+strong+US+data&amp;url=http%3a%2f%2fwww.charlotteobserver.com%2fnews%2fbusiness%2fnational-business%2farticle23745514.html'></td><td>2015-06-12 03:39:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23745514.html#storylink=rss'>site</a></td><td>Asian stock markets were little changed Friday as lack of progress in bailout negotiations between Greece and its creditors dampened the positive impulse from upbeat U.S. retail and jobs data.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/73240f9/2147483647/thumbnail/300x270/format/png/quality/85/?url=%2Fcmsmedia%2F18%2F8a%2Fed8c23064ee8a97e1663a6adfaab%2F20150527edohc-a.tif'></td><td>2015-06-12 21:20:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/12/us-stocks-follow-europe-lower-after-greek-talks-stall'>site</a></td><td>Greek jitters upset US, European stock markets</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-12 21:21:13</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-follow-europe-lower-greek-talks-stall-31718488'>site</a></td><td>A setback in talks between Greece and its creditors helped knock the stock market lower on Friday, amid renewed concerns that the country could default on its debts.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-13 19:54:02</td><td><a href='http://www.foxnews.com/world/2015/06/13/greek-premier-tsipras-says-no-elections-or-referendum-whatever-outcome-bailout/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Greece agreed on the resumption of talks Friday under intense pressure from creditors.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-14 15:46:34</td><td><a href='http://www.utsandiego.com/news/2015/jun/14/senior-official-says-germany-wont-be-blackmailed/'>site</a></td><td>Greece said Friday it would present its creditors with new proposals over the weekend in an attempt to breathe life into stalled bailout talks amid fears the country could go bankrupt.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-25 20:34:08</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-edge-higher-surge-consumer-spending-32020835'>site</a></td><td>Stocks edged lower Thursday as talks over keeping Greece solvent stalled and got extended into the weekend.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Most Asian stock indexes fell Friday as a standoff between Greece and its international creditors threatened to drag into the weekend.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/06/876/493/a3119858d256e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-2.jpg?ve=1&tl=1'></td><td>2015-07-06 22:32:32</td><td><a href='http://www.foxbusiness.com/markets/2015/07/06/us-stocks-slip-after-greeks-reject-terms-bailout-deal-european-markets-oil-drop/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>Some analysts attributed the lack of sharper sell-off in stock markets to the resignation of the Greek finance minister, which might help bailout talks resume.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 13:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26933650.html#storylink=rss'>site</a></td><td>Asian stock rose for a second day on Friday as the Greek government proposed a broad financial overhaul to its creditors and Beijing's attempts to arrest a sharp slide in the Chinese market appeared to be working.</td></tr>
 </table></body></html>

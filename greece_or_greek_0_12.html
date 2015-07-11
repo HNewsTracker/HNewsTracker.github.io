@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/06/11/876/493/Belgium EU Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-06-11 08:36:42</td><td><a href='http://www.foxnews.com/world/2015/06/11/greece-commits-to-intensify-reform-efforts-as-debt-deadline-approaches-german/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>BRUSSELS - German Chancellor Angela Merkel says that Greece has committed to work intensively with international creditors in coming days to resolve outstanding issues holding up its access to vital bailout loans.</td></tr><tr><td>Merkel said Thursday that in overnight talks with Greek Prime Minister Alexis Tsipras a clear consensus emerged that "Greece will now work emphatically and at full steam with the three institutions in coming days to try to clear up all the outstanding issues."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/30/d2/6c/e2a8d11bfc204081b2da5cf78688f217-e83dae0f6198487f8d6509dc8659efa9-0.jpg'></td><td>2015-06-30 07:13:51</td><td><a href='http://www.daytondailynews.com/ap/ap/business/asia-stocks-bounce-back-but-greece-uncertainty-sti/nmn9N/'>site</a></td><td>"The Brazilian real was knocked back hard these past days as have the Turkish lira and most other emerging Asian currencies. These associations are made to Greece as they fall under the labeling of global emerging markets."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 07:21:06</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td>"Most traders are well prepped over the possible fallout of Greece. It's guessing which card will fall next that's the difficult bit," said Nicholas Teo, analyst at CMC Markets in Singapore.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.huffpost.com/images/blank.gif'></td><td>2015-06-14 20:26:35</td><td><a href='http://www.huffingtonpost.com/2015/06/14/greece-bailout-talks-fail_n_7581162.html'>site</a></td><td>European Commission President Jean-Claude Juncker "remains convinced that with stronger reform efforts on the Greek side and political will on all sides, a solution can still be found before the end of the month," the official said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Flawed bailouts, political missteps brought Greece to brink</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/14/045fb9fc8fe4591a790f6a7067009930_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-06-14 17:46:34</td><td><a href='http://www.utsandiego.com/news/2015/jun/14/greece-says-it-will-never-accept-wage-pension-cuts/'>site</a></td><td>Greece says it will never accept wage, pension cuts</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/05/50/8149509/5/920x920.jpg'></td><td>2015-06-14 17:46:34</td><td><a href='http://www.sfgate.com/news/world/article/Greece-says-it-will-never-accept-wage-pension-6326500.php'>site</a></td><td>ATHENS, Greece (AP) - Greece will never accept cuts in pensions and wages or extra taxes on necessities such as electricity, a government official says.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 17:38:00</td><td><a href='http://www.ctvnews.ca/business/binges-and-bailouts-how-greece-got-to-the-brink-1.2453818'>site</a></td><td>There was a contradiction that couldn't be resolved: cuts in public spending were needed to reduce Greece's cost base because it couldn't devalue.</td></tr>
 </table></body></html>
