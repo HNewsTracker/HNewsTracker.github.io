@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150611&t=2&i=1055456863&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5A0O1'></td><td>2015-06-11 12:42:08</td><td><a href='http://www.reuters.com/article/2015/06/11/us-film-holmes-idUSKBN0OR1IE20150611?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Ian McKellen portrays elderly Sherlock in 'Mr Holmes'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media4.s-nbcnews.com/j/newscms/2015_24/1071506/150611-holmes-datta-2049_aa73f006033f4ce298fd59b17b09cf71.nbcnews-fp-1240-520.jpg'></td><td>2015-06-12 00:57:15</td><td><a href='http://www.nbcnews.com/news/us-news/bit-irrational-theater-shooter-james-holmes-ex-girlfriend-asked-him-n374056'>site</a></td><td>- Months before James Holmes opened fire in a Colorado movie theater, his ex-girlfriend said she urged him talk to his therapist after he mentioned having thoughts about killing people, thoughts that to her "seemed very philosophical" and not a concrete threat.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/12/01/6ZDJGGrYGHSK2-3119515-image-a-4_1434067946427.jpg'></td><td>2015-06-12 01:06:08</td><td><a href='http://www.dailymail.co.uk/news/article-3119515/Theater-shooters-ex-I-didnt-future-him.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Datta and Holmes were graduate students at the University of Colorado when they began dating during their first semester in the fall of 2011.</td></tr>
 </table></body></html>

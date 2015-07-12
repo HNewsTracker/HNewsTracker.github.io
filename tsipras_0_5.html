@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 05:28:23</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/tsipras-defiant-as-banks-shut-markets-rocked/nmn73/'>site</a></td><td>Tsipras called the referendum over the weekend, arguing that demands for tougher austerity measures could not be accepted after six years of recession.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td>Tsipras has agreed to imposing more harsh austerity measures, following a six-year recession, but wants eurozone lenders to grant the country better terms for bailout debt repayments.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-02 05:57:03</td><td><a href='http://www.reuters.com/article/2015/07/02/us-eurozone-greece-idUSKBN0P40EO20150702?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>Less than 24 hours after he wrote a conciliatory letter to creditors asking for a new bailout that would accept many of their terms, Tsipras abruptly switched back into combative mode in a television address.</td></tr><tr><td>In his overnight letter to creditors, seen by Reuters, Tsipras agreed to accept most of their demands for taxes and pension cuts and asked for a new 29 billion euro loan to cover all debt service payments in the next two years.</td></tr><tr><td>The Tsipras letter asking for a new bailout deal appeared to move closer to accepting creditor demands.</td></tr></table></td></tr>
 </table></body></html>
