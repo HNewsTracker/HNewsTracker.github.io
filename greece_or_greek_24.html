@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-13 21:42:03</td><td><a href='http://www.miamiherald.com/sports/article24018637.html#storylink=rss'>site</a></td><td><table><tr><td>Faeroe Islands stun Greece again to claim 2nd qualifying win</td></tr><tr><td>The Faeroe Islands claimed a second surprise victory over 2004 European champion Greece in qualifying for the 2016 tournament on Saturday as Group F pacesetters Romania and Northern Ireland drew 0-0.</td></tr><tr><td>Greece, the world's 25th-best team according to FIFA, remained last in the group after being beaten 2-1 by the 102nd-ranked Faeroe Islands.</td></tr><tr><td>Greece's soccer slump comes as the country's government comes under intense pressure from creditors amid bankruptcy fears.</td></tr><tr><td>The Faeroes - with a population of around 50,000 compared with Greece's 11 million - have never even qualified for a major tournament.</td></tr><tr><td>Greece's 1-0 loss at home to the Faeroes in November led to coach Claudio Ranieri being replaced by Sergio Markarian.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/08/7e/96/1c45de82e4f845e4b098c6afd49aba66-2f6d77a03be7484d824c76639c6aa340-0.jpg'></td><td>2015-07-08 10:01:37</td><td><a href='http://www.daytondailynews.com/ap/ap/international/merkel-to-visit-balkans-amid-greek-crisis/nmtGk/'>site</a></td><td><table><tr><td>EU leaders have called for a full EU summit to take place on Sunday, July 12, 2015 to continue discussion on the Greek crisis.</td></tr><tr><td>Angela Merkel begins a two-day tour of the Balkans on Wednesday, visiting three countries whose ambitions to join the European Union have been complicated by the Greek crisis and their mutual rivalries.</td></tr><tr><td>All three states have declared their desire to join the EU, but in the wake of the Greek bailout turmoil Merkel and other EU leaders are likely to be more wary of admitting countries with troubled economies.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 10:02:52</td><td><a href='http://abcnews.go.com/International/wireStory/merkel-visit-balkans-amid-greek-crisis-32292460'>site</a></td><td>Merkel to Visit Balkans Amid Greek Crisis</td></tr>
 </table></body></html>

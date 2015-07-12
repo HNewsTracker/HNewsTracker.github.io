@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/03/57/8141818/3/920x920.jpg'></td><td>2015-06-12 18:47:01</td><td><a href='http://www.sfgate.com/news/world/article/Greece-Market-tumbles-after-IMF-warns-no-6322949.php'>site</a></td><td>The key points of contention appear to be cuts to Greek pensions, changes in the labor market and the size of Greece's government budget.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/05/50/8149509/5/920x920.jpg'></td><td>2015-06-14 17:46:34</td><td><a href='http://www.sfgate.com/news/world/article/Greece-says-it-will-never-accept-wage-pension-6326500.php'>site</a></td><td>ATHENS, Greece (AP) - Greece will never accept cuts in pensions and wages or extra taxes on necessities such as electricity, a government official says.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 17:48:49</td><td><a href='http://abcnews.go.com/International/wireStory/greece-accept-wage-pension-cuts-31759486'>site</a></td><td>Greece Says It Will Never Accept Wage, Pension Cuts</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-14 17:55:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11465257&ref=rss'>site</a></td><td>At the same time, Greece also stuck to a hard line on Sunday, with a government official saying that the country will never accept cuts in pensions and wages or extra taxes on necessities such as electricity.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 19:21:45</td><td><a href='http://www.reuters.com/article/2015/06/14/us-eurozone-greece-idUSKBN0OS0E020150614?feedType=RSS&feedName=worldNews'>site</a></td><td>"While some progress was made, the talks did not succeed as there remains a significant gap between the plans of the Greek authorities and the joint requirements of Commission, ECB and IMF," it said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 19:45:41</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/14/greece-says-it-will-never-accept-wage-pension-cuts'>site</a></td><td>An EU Commission official, who refused to be identified because of the sensitivity of the negotiations, said that "the talks did not succeed as there remains a significant gap between the plans of the Greek authorities and" the demands of the international creditors.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-06 02:47:37</td><td><a href='http://news.yahoo.com/greece-votes-high-stakes-bailout-referendum-050534077--finance.html'>site</a></td><td>"We will now wait for the initiatives of the Greek authorities."</td></tr>
 </table></body></html>

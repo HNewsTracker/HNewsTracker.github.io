@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/06/11/876/493/Belgium EU Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-06-11 08:36:42</td><td><a href='http://www.foxnews.com/world/2015/06/11/greece-commits-to-intensify-reform-efforts-as-debt-deadline-approaches-german/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>BRUSSELS - German Chancellor Angela Merkel says that Greece has committed to work intensively with international creditors in coming days to resolve outstanding issues holding up its access to vital bailout loans.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 15:55:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11465245&ref=rss'>site</a></td><td>Gabriel, who is also vice-chancellor, told German public broadcaster ARD on Sunday that Europe's patience with Greece is running out.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 05:50:50</td><td><a href='http://www.reuters.com/article/2015/06/26/us-eurozone-greece-idUSKBN0P40EO20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>German Chancellor Angela Merkel, whose country is Greece's biggest creditor, said the next meeting of Eurogroup ministers on Saturday would be "of decisive importance" for a Greek solution since time was running out.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/7/1/greek-bailout-money-went-to-banks-not-greece/_jcr_content/image.adapt.480.low.greece_newlede_070215.jpg'></td><td>2015-07-04 12:25:00</td><td><a href='http://america.aljazeera.com/articles/2015/7/4/greek-minister-europe-cant-afford-to-let-athens-go-under.html'>site</a></td><td>"As much for Greece as for Europe, I'm sure," Varoufakis told the Spanish newspaper El Mundo.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-07 15:57:33</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/the-latest-france-pledges-effort-to-keep-greece-in-euro'>site</a></td><td>Rutte, a close ally of German Chancellor Angela Merkel, told reporters Tuesday he was "extremely somber about this summit. I'm also somber about the question of whether Greece really wants to come up with proposals, with a solution."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Greece did get some easier terms on interest and time to pay.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/09/876/493/Portugal Greece Other Debtors-3.jpg?ve=1&tl=1'></td><td>2015-07-09 12:10:04</td><td><a href='http://www.foxnews.com/world/2015/07/09/if-greece-gets-easier-rescue-terms-other-bailout-states-could-face-popular/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>LISBON, Portugal - Eurozone governments taking a tough line on Greece's demand for debt relief and easier bailout terms fear opening a can of worms.</td></tr>
 </table></body></html>

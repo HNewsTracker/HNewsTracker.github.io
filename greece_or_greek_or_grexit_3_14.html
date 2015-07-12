@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>He said an agreement between Greece and its creditors is still not certain but the fact that Greece has proposed a fiscal package along the lines of the one recently demanded by its European creditors is a "significant step in the direction of compromise."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>The Latest: Greek creditors want 'more binding commitments'</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 21:20:08</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27032884.html#storylink=rss'>site</a></td><td>Greece struggling to convince creditors it's for real</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 17:39:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article26573452.html#storylink=rss'>site</a></td><td>A stock ticker carries news of the "No" vote on the Greek debt referendum, on the floor of the New York Stock Exchange, Monday, July 6, 2015, in New York.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 17:50:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26562994.html#storylink=rss'>site</a></td><td>Varoufakis has resigned on Monday, July 6, 2015 saying he was told shortly after the Greek referendum result that the some eurozone finance ministers and Greece's other creditors would prefer he not attend the ministers' meetings.</td></tr>
 </table></body></html>

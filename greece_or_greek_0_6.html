@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td>Before the European project, Greece had spent decades in turmoil.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 09:01:35</td><td><a href='http://time.com/3945519/poll-shows-even-divide-greek-referendum/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>The vote is set to be one of the most important in Greece's modern history, but many voters are confused about what's at stake.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 09:20:10</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/04/would-euro-departure-help-or-hurt-europes-currency-union'>site</a></td><td>What would that mean for the Greek people and for the European Union's 16-year-old shared currency - the crown jewel of a six-decade-old project in binding Europe's countries closer together?</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td><table><tr><td>And they share a sense that Greece, so rich with history and culture, has fallen tragically short of its potential.</td></tr><tr><td>The ballot question does not address whether Greece should abandon the euro currency or leave the 28-member European Union, but many voters believe those issues are at stake.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>His European partners, however, say rejection would set Greece on a path out of the euro, with potentially far-reaching consequences for the global economy and Europe's grand project of an unbreakable union.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-09 12:15:28</td><td><a href='http://www.startribune.com/easier-terms-for-greece-could-open-a-can-of-worms-in-europe/312837621/'>site</a></td><td>That makes the Greek debt controversy a political threat in Spain, with potential economic consequences spilling beyond the borders of the European Union's fifth-largest economy.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 14:00:40</td><td><a href='http://www.upi.com/Top_News/World-News/2015/06/28/European-Central-Bank-to-maintain-Greek-emergency-funding/8711435497439/'>site</a></td><td>"We continue to work closely with the Bank of Greece and we strongly endorse the commitment of Member States in pledging to take action to address the fragilities of euro area economies," ECB President Mario Draghi said in a statement.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 06:14:45</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-greek-anxiety-004926180.html'>site</a></td><td>"If this payment is missed, the ECB will most likely pull the plug on liquidity to Greek banks, which would have a more dramatic impact than the latest default, leading to increased uncertainty for Greece, the euro and the financial markets as a whole."</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/02/3e/4d/57fb7fe90ab14500a696e008d6addaa8-bbaf592126074996bb6d2a945013513d-1.jpg'></td><td>2015-07-02 07:36:22</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/the-latest-european-markets-solid-as-greek-referen/nmqWY/'>site</a></td><td>The Latest: France's Sapin says committed to Greece in euro</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/yes-or-no-what-greeces-landmark-vote-might-bring/nmrrq/'>site</a></td><td>It's urging a "no" vote and says that will have no impact on Greece's euro status.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/876/493/Bank-of-Greece-Statue-Greek-Flag-Building.jpg?ve=1&tl=1'></td><td>2015-06-14 23:00:50</td><td><a href='http://www.foxbusiness.com/economy-policy/2015/06/12/merkel-urges-greece-creditors-to-keep-at-talking/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Failure to keep Greece in the euro, after years of arduous negotiations and two emergency bailouts totaling 240 billion euros, would send it lurching into the unknown and mark a historic blow to the EU's most ambitious project.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td><table><tr><td>Flawed bailouts, political missteps brought Greece to brink</td></tr><tr><td>FRANKFURT, Germany (AP) " After two bailouts totaling 240 billion euros ($266 billion) and six years of depression, spending cuts and lost jobs, Greece teeters on the edge of collapse.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/73240f9/2147483647/thumbnail/300x270/format/png/quality/85/?url=%2Fcmsmedia%2F18%2F8a%2Fed8c23064ee8a97e1663a6adfaab%2F20150527edohc-a.tif'></td><td>2015-06-12 21:20:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/12/us-stocks-follow-europe-lower-after-greek-talks-stall'>site</a></td><td>Greek jitters upset US, European stock markets</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 14:32:54</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/03/world-stocks-drift-lower-ahead-of-greek-vote-china-plunges'>site</a></td><td>World stock markets mostly drifted lower Friday ahead of Greece's weekend referendum, while China's main stock benchmark plunged as government efforts failed to reassure panicky investors.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/06/08/a5/2cad9380cf31467a80ecb8a2be6458f3-3b6df2687f674c7891cc0ad8a9fe510b-0.jpg'></td><td>2015-07-06 17:36:57</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-slip-after-greek-no-vote-european-market/nmsFn/'>site</a></td><td>When the Greek government announced June 29 plans to hold a referendum and the closure of the country's banks, markets plunged around the world.</td></tr>
 </table></body></html>

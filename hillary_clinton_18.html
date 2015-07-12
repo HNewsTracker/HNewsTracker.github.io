@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/140612112132-hillary-clinton-natural-topics.jpg'></td><td>2015-07-08 14:10:15</td><td><a href='http://edition.cnn.com/2015/07/07/politics/hillary-clinton-iowa-first-interview/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_us+%28RSS%3A+CNN+-+U.S.%29'>site</a></td><td>Hillary Clinton: 'People should and do trust me'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 15:40:11</td><td><a href='http://www.usnews.com/news/politics/articles/2015/06/11/rival-challenges-clinton-to-say-where-she-stands-on-trade'>site</a></td><td>Rival challenges Clinton to say where she stands on trade</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 16:11:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article23747548.html#storylink=rss'>site</a></td><td>Sanders called on Democratic presidential rival Hillary Rodham Clinton on Thursday to say exactly where she stands on President Barack Obama's trade agenda now that it's coming in front of Congress.</td></tr>
 </table></body></html>

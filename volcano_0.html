@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 05:46:08</td><td></td><td><a href='volcano_0_1.html'>Ash spewing from a volcano on Indonesia's main island of Java has sparked chaos for holidaymakers as airports close and international airlines cancel flights to tourist hotspot Bali. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 05:46:08</td><td></td><td><a href='volcano_0_2.html'>Evacuation of residents living near the volcano is still considered unnecessary, but authorities are urging people to wear masks. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31366235.ece/a3b07/ALTERNATES/h342/PANews%20BT_P-e20bfe8d-a710-46f7-aab6-60bb90ab80eb_I1.jpg'></td><td>2015-07-10 05:46:08</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/volcano-sparks-java-travel-chaos-31366236.html'>site</a></td><td>The volcano has proven particularly problematic for Australians, who flock to Bali during Australia's school holidays.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03370/Mount-Raung_3370672b.jpg'></td><td>2015-07-10 06:55:45</td><td><a href='http://www.telegraph.co.uk/news/worldnews/asia/indonesia/11730452/Thousands-stranded-in-Indonesia-as-volcano-closes-airports.html'>site</a></td><td>Thousands stranded in Indonesian as volcano closes airports</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 18:55:09</td><td></td><td><a href='volcano_0_1.html'>MEXICO CITY - Ash and cinders spewing from the Colima Volcano in western Mexico have prompted authorities to evacuate 19 people from a nearby village. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 18:55:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11479587&ref=rss'>site</a></td><td>The volcano began erupting on Thursday and has become increasingly active, leading officials to relocate people from the community of Yerbabuena in the municipality of Comala.</td></tr>
 </table></body></html>
