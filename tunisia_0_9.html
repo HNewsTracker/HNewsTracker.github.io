@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/37/30/62/8228007/5/square_gallery_thumb.jpg'></td><td>2015-06-28 16:18:00</td><td><a href='http://www.sfgate.com/news/crime/article/The-Latest-Tunisia-puts-1-000-extra-police-on-6354008.php'>site</a></td><td><table><tr><td>The Latest: Queen Elizabeth II shocked about Tunisia attack</td></tr><tr><td>Queen Elizabeth II says the attack on a beach resort in Tunisia has left her and her husband, Prince Philip, shocked.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/33/12/8237701/3/square_gallery_thumb.jpg'></td><td>2015-06-30 17:42:06</td><td><a href='http://www.sfgate.com/news/world/article/Tunisia-chief-New-security-system-had-been-set-6357384.php'>site</a></td><td>APNewsBreak: Tunisia beach killer trained with museum gunmen</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/1/0/y/i/image.related.articleLeadwide.620x349.gi2045.png/1435695282569.jpg'></td><td>2015-06-30 20:32:06</td><td><a href='http://www.smh.com.au/world/tunisia-gunman-saif-rezgui-trained-in-libya-at-time-of-bardo-museum-plotters-20150630-gi2045'>site</a></td><td><table><tr><td>Tunisia gunman Saif Rezgui trained in Libya at same time as Bardo museum killers</td></tr><tr><td>Tunis: The Tunisian gunman who carried out a deadly attack on a hotel last Friday trained in a jihadist camp in Libya last year, Tunisia's government said on Tuesday.</td></tr></table></td></tr>
 </table></body></html>

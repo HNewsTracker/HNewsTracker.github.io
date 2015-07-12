@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 14:40:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23737999.html#storylink=rss'>site</a></td><td>IMF throws cold water on hopes for Greece deal</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/01/72/8134320/7/square_gallery_thumb.jpg'></td><td>2015-06-11 16:24:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-commits-to-step-up-reform-efforts-German-6320506.php'>site</a></td><td>Failing a deal, there are fears that Greece could drop out of the euro, a move that would create huge uncertainty for Europe and global markets.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-22 15:32:39</td><td><a href='http://www.bbc.co.uk/news/business-33221446#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Markets rise on hopes of Greece deal</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-29 22:46:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-29-EU--Greece-The%20Road%20Ahead-QandA/id-738103fd8b7b414f90b799397ed22ead'>site</a></td><td>Q: Is a deal to save Greece still possible?</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 16:28:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23737999.html#storylink=rss'>site</a></td><td>"It's not possible for Greece to achieve targets without reforms" especially in pensions, he said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-28 00:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25651300.html#storylink=rss'>site</a></td><td><table><tr><td>Greek parliament approves referendum on creditor reforms</td></tr><tr><td>Greek Prime Minister Alexis Tsipras has once more urged Greeks to vote against creditor proposals for reforms in exchange for loans in a referendum he has called for next week.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 14:03:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-28-EU--Greece%20Bailout-The%20Latest/id-fb5799103c44457a8a545e4ac58c9db9'>site</a></td><td>The move comes after Tsipras called for a referendum on creditor proposals for Greek reforms in return for bailout cash - a decision which shocked Greece's European partners.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000ab5b6-642.jpg'></td><td>2015-06-11 22:57:17</td><td><a href='http://www.rte.ie/news/2015/0611/707313-greece/'>site</a></td><td>Earlier, European Council President Donald Tusk spelled out an unprecedentedly forthright message to Greece's radical anti-austerity government after four months of bitter negotiations.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>European Council President Donald Tusk retorted in a tweet: "Europe wants to help Greece. But cannot help anyone against their own will. Let's wait for the results of the Greek referendum."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 03:29:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26211073.html#storylink=rss'>site</a></td><td><table><tr><td>Elderly men chat in the northern Greek port city of Thessaloniki, Friday, July 3, 2015.</td></tr><tr><td>A Greek Orthodox priest gives money to a man who begs for alms under a banner reading "No" referring to the upcoming referendum in the northern Greek port city of Thessaloniki, Friday, July 3, 2015.</td></tr><tr><td>A woman holds a banner reading, "No to the Troika, I support Greece" during a a pro Greece demonstration at the European Union office in Barcelona, Spain, Friday, July 3, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 04:09:10</td><td><a href='http://www.miamiherald.com/news/business/article26480347.html#storylink=rss'>site</a></td><td>A banner reading ''NO for democracy and for dignity'' referring to the upcoming referendum is placed outside a Greek Orthodox church at Monastiraki square in central Athens, Saturday, July 4, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/05/74/db/d166cdd5b6d4413d87d1dbef377c7017-69be0247745d4af1918ec168ad14ffa4-8.jpg'></td><td>2015-07-05 17:07:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-votes-on-high-stakes-bailout-referendum/nmrrZ/'>site</a></td><td>An elderly man casts his vote at a polling station in the northern Greek port city of Thessaloniki, Sunday, July 5, 2015.</td></tr>
 </table></body></html>

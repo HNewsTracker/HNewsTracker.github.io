@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 22:05:15</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11464990&ref=rss'>site</a></td><td>Mexico, last in its group, plays Wednesday in Ottawa against the French, while England will take on the upstart Colombians.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 00:32:37</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123197/Kirby-inspires-England-2-1-win-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>England, 1-0-1, will finish its Group F stage against Colombia in Montreal, while Mexico, 0-1-1, will play France in Ottawa.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/11/ca10ef3210c7f61f7b0f6a7067005abf_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-12 06:41:05</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/11/mexico-top-drug-lord-joaquin-el-chapo-guzman/'>site</a></td><td>Guzman, who headed the powerful Sinaloa Cartel, was last seen in the area of the showers in the Altiplano prison outside of Mexico City.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/23/cb/2c8e5292db3a4b00b5afcb3f42757df6-ab7a5dfe8e1647ebb3e46b6ba97dc774-0.jpg'></td><td>2015-07-12 08:17:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/mexico-top-drug-lord-joaquin-el-chapo-guzman-escap/nmxY8/'>site</a></td><td>Sinaloa is believed now to control most of the major crossing points for drugs at the U.S. border with Mexico.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/23/cb/2c8e5292db3a4b00b5afcb3f42757df6-ab7a5dfe8e1647ebb3e46b6ba97dc774-0.jpg'></td><td>2015-07-12 14:34:03</td><td><a href='http://www.daytondailynews.com/news/ap/international/mexico-top-drug-lord-joaquin-el-chapo-guzman-escap/nmxY8/'>site</a></td><td><table><tr><td>A manhunt began immediately late Saturday for the head of the powerful Sinaloa Cartel, which has an international reach and is believed to control most of the major crossing points for drugs at the U.S. border with Mexico.</td></tr><tr><td>Guzman is known for the elaborate tunnels his cartel has built underneath the Mexico-U.S. border to transport cocaine, methamphetamines and marijuana, with ventilation, lighting and even railcars to easily move products.</td></tr></table></td></tr>
 </table></body></html>

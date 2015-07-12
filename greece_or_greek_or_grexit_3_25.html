@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 11:00:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article23737999.html#storylink=rss'>site</a></td><td>Amid the uncertainty, Greece's economy has slipped back into recession, while figures released Thursday showed that unemployment grew again in the first quarter, reaching 26.6 percent - compared to 26.1 percent at the end of last year.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/03/876/493/abb781a9fc15e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-1.jpg?ve=1&tl=1'></td><td>2015-07-03 14:32:54</td><td><a href='http://www.foxbusiness.com/markets/2015/07/03/world-stocks-drift-lower-ahead-greek-vote-chinese-stocks-plunge-as-support/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>World stocks drift lower ahead of Greek vote; China plunges</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>A family divided: Emotions run high ahead of Greek vote</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-06 16:59:21</td><td><a href='http://www.reuters.com/article/2015/07/06/us-markets-oil-idUSKCN0PG00520150706?feedType=RSS&feedName=businessNews'>site</a></td><td>Oil tumbles 6 percent after Greek 'No' vote, ahead of Iran deadline</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/06/876/493/a3119858d256e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-2.jpg?ve=1&tl=1'></td><td>2015-07-06 22:32:32</td><td><a href='http://www.foxbusiness.com/markets/2015/07/06/us-stocks-slip-after-greeks-reject-terms-bailout-deal-european-markets-oil-drop/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>US stocks slip amid global sell-off after Greek 'no' vote</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/02/00/8134676/3/628x471.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-building-on-gains-from-the-6320951.php'>site</a></td><td>IMF WALKOUT: The International Monetary Fund said there was no progress in recent Greece bailout talks and pulled negotiators out of the meetings.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 21:21:13</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-follow-europe-lower-greek-talks-stall-31718488'>site</a></td><td>An unexpected decision by the International Monetary Fund to walk away from talks with Greece spurred the selling.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-13 00:21:19</td><td><a href='http://www.reuters.com/article/2015/06/13/us-markets-stocks-idUSKBN0OS18420150613?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Also of concern, a day after the International Monetary Fund quit bailout talks with Greece, EU officials said they had held their first formal discussions on the worst-case scenario for the country.</td></tr>
 </table></body></html>

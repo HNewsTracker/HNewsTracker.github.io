@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-06-25 21:03:53</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/25/googles-new-self-driving-cars-cruising-silicon-valley-roads'>site</a></td><td><table><tr><td>FILE - In this May 13, 2015, file photo, Google's new self-driving prototype car is presented during a demonstration at the Google campus in Mountain View, Calif.</td></tr><tr><td>California's Department of Motor Vehicles have given Google permission to send up to 25 of its latest self-driving cars on neighborhood roads.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0625/20150625__0626google~1_300.JPG'></td><td>2015-06-25 22:01:44</td><td><a href='http://www.mercurynews.com/business/ci_28382756/googles-new-self-driving-cars-cruising-silicon-valley?source=rss'>site</a></td><td><table><tr><td>Google's new self-driving cars cruising Silicon Valley roads</td></tr><tr><td>If all goes well, Google hopes to gain regulatory clearance to remove the steering wheel, brake pedal and emergency driver from the prototype.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-06-25 22:02:47</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/25/googles-new-self-driving-cars-cruising-silicon-valley-roads'>site</a></td><td>The latest models of Google's self-driving cars are now cruising the streets near the Internet company's Silicon Valley headquarters in a test of how they work around other vehicles driven by people.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww4.hdnux.com/photos/37/25/33/8214215/5/628x471.jpg'></td><td>2015-06-25 22:02:47</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-s-new-self-driving-cars-cruising-Silicon-6349564.php'>site</a></td><td><table><tr><td>This marks the first time that the pod-like, two-seat vehicles have been allowed on public roads since Google unveiled the next generation of its self-driving fleet more than a year ago.</td></tr><tr><td>Google had installed its robotic driving technology in Lexus sports utility vehicles and Toyota Priuses during the first few years of testing before developing the smaller prototype.</td></tr><tr><td>The earlier models of Google's self-driving cars had been involved in 13 minor accidents through more than 1.8 million miles on the roads, according to the company.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-25 22:06:06</td><td><a href='http://www.miamiherald.com/news/business/article25501123.html#storylink=rss'>site</a></td><td>Last year, Google Inc. told reporters it hoped to have a 100 of the self-driving prototypes in its fleet by now, but the company said it has only built 25 of them so far.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnologynews'>site</a></td><td>Google lost out on buying the live-streaming site Twitch last year.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnology'>site</a></td><td>Rather than just cry about what went wrong and how they lost out on the deal, Google has been hard at work creating its own "Twitch killer."</td></tr>
 </table></body></html>

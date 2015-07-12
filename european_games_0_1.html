@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>european games</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 09:29:04</td><td><a href='http://www.charlotteobserver.com/sports/article23737825.html#storylink=rss'>site</a></td><td>Without any high-level track and field or swimming competitions - traditionally the two most popular Olympic sports - there are questions over the European Games' credibility as a sports event.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 09:29:04</td><td><a href='http://www.miamiherald.com/sports/article23737825.html#storylink=rss'>site</a></td><td><table><tr><td>"It was ridiculous why Europe did not have its own games," says Patrick Hickey, the head of the European Olympic Committees and the main driving force behind the creation of the June 12-28 games.</td></tr><tr><td>Athletics and swimming are already involved in a rival to the European Games, which would bring together rescheduled versions of existing continental competitions under the name of the European Sports Championships.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/w3Ql1b6cdsxzYStaVlR41Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/948593c1da9f1f1b7a0f6a706700ce83.jpg'></td><td>2015-06-22 17:35:28</td><td><a href='http://news.yahoo.com/european-games-athletics-attracts-motley-crew-173528203.html'>site</a></td><td><table><tr><td>BAKU, Azerbaijan (AP) - With a vast, brand new stadium and passionate home crowds, European Games athletics offers a near-Olympic experience.</td></tr><tr><td>For the next edition of the European Games in 2019, however, organizers hope to bring in top-level athletics and swimming, hoping that the other 18 sports on the program in Azerbaijan have built an attractive brand.</td></tr></table></td></tr>
 </table></body></html>

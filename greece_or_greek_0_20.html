@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 12:31:46</td><td><a href='http://www.utsandiego.com/news/2015/jun/28/european-central-bank-maintains-emergency-credit/'>site</a></td><td>European Central Bank maintains emergency credit to Greek banks at current level</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 13:25:57</td><td><a href='http://www.cbc.ca/news/world/greek-banks-to-remain-closed-withdrawals-to-be-restricted-1.3131048?cmp=rss'>site</a></td><td>The ECB's decision keeps a key financial lifeline open but does not provide further credit to Greece's banks.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/37/30/73/8228583/5/square_gallery_thumb.jpg'></td><td>2015-06-28 18:03:24</td><td><a href='http://www.sfgate.com/news/science/article/The-Latest-Greece-wants-ECB-to-keep-giving-6354011.php'>site</a></td><td>It has been allowing Greek banks to draw emergency credit from Greece's central bank, a financial lifeline that has been keeping Greece's four major banks going during the country's tense bailout negotiations with creditors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 09:01:35</td><td><a href='http://time.com/3945519/poll-shows-even-divide-greek-referendum/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>(ATHENS, Greece) -The brief but intense campaign in Greece's critical bailout referendum ends Friday, with simultaneous rallies in Athens for "Yes" and "No" supporters in what an opinion poll shows will be a very close race.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/5/0/m/e/image.related.articleLeadwide.620x349.gi5dzf.png/1436072178448.jpg'></td><td>2015-07-05 04:53:45</td><td><a href='http://www.brisbanetimes.com.au/world/polls-open-in-historic-greek-bailout-referendum-20150705-gi5dzf.html'>site</a></td><td>Referendum campaign posters that reads "No" and "Yes" in Greek in Athens, Greece.</td></tr>
 </table></body></html>

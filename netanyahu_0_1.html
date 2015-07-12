@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 09:49:29</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article25103563.html#storylink=rss'>site</a></td><td>Netanyahu said that attacks against Israelis will continue with any international proposal that does not take Israel's security concerns into account.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6562276-3x2-340x227.jpg'></td><td>2015-06-21 19:53:01</td><td><a href='http://www.abc.net.au/news/2015-06-22/netanyahu-rejects-french-led-palestine-peace-plan/6562274'>site</a></td><td><table><tr><td>"In the international proposals that have been suggested to us - which they are actually trying to force upon us - there is no real reference to Israel's security needs or our other national interests," Mr Netanyahu said.</td></tr><tr><td>"The only way to reach agreements is through bilateral negotiations [between Israel and Palestine], and we will firmly reject attempts to force international dictates on us," Mr Netanyahu said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 15:30:38</td><td><a href='http://www.startribune.com/israeli-exhibit-revisits-famed-1976-entebbe-rescue-raid/314315321/'>site</a></td><td><table><tr><td>Yonatan Netanyahu, brother of Prime Minister Benjamin Netanyahu.</td></tr><tr><td>At the exhibit's opening Thursday, Netanyahu was visibly emotional as he spoke of his brother, calling the exhibit "something special."</td></tr></table></td></tr>
 </table></body></html>

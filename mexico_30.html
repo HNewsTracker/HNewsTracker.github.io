@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/z/7/3/x/image.related.articleLeadwide.620x349.ghz710.png/1435369844099.jpg'></td><td>2015-06-27 01:50:53</td><td><a href='http://www.brisbanetimes.com.au/world/donald-trump-pinata-all-the-rage-in-mexico-20150627-ghz710.html'>site</a></td><td><table><tr><td>A pinata depicting US Republican presidential candidate Donald Trump hangs outside a workshop in Reynosa, Mexico.</td></tr><tr><td>On Thursday, Mr Trump said he has great respect for Mexico and loves Mexicans.</td></tr><tr><td>Mr Trump said last week on Twitter: "I like Mexico and love the spirit of the Mexican people."</td></tr><tr><td>"Oscars were a great night for Mexico & why not - they are ripping off the US more than almost any other nation," Mr Trump tweeted.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-12 22:40:55</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-supreme-court-opens-door-gay-marriage-nationwide-31733845'>site</a></td><td><table><tr><td>Mexico's supreme court has ruled it is unconstitutional for Mexican states to bar same-sex marriages.</td></tr><tr><td>Gay marriage is legal in some parts of Mexico, including Mexico City and the northern state of Coahuila.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47650981,width-300,resizemode-4/Idaho-Same-Sex-Marriage.jpg'></td><td>2015-06-12 23:22:29</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Mexico-supreme-court-opens-door-to-gay-marriage-nationwide/articleshow/47650904.cms'>site</a></td><td>Mexico supreme court opens door to gay marriage nationwide</td></tr>
 </table></body></html>

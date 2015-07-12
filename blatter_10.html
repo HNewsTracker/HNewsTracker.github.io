@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 01:25:32</td><td><a href='http://www.theguardian.com/football/2015/jul/05/france-and-germany-intervened-over-world-cup-votes-says-sepp-blatter'>site</a></td><td><table><tr><td>Blatter said in June that he would stand down as pressure built from the American case and a separate Swiss federal investigation focused on possible money laundering linked to the awarding of the World Cups to Russia and Qatar.</td></tr><tr><td>"Is Fifa responsible from the top down for everything in football, what happens in some village somewhere around the world?" asked Blatter, also a target of the American investigation.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/03/b6/f4/27ab516aa43d4a648906eabf7901a1c8-30c68c007e95440d8f5f4229cffc2fa9-0.jpg'></td><td>2015-07-04 01:00:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fifa-deflects-criticism-about-absence-of-blatter-f/nmrTX/'>site</a></td><td>FIFA deflects criticism about absence of Blatter from final</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/Sports/gty_japan_vs_usa_soccer_mm_150702_4x3t_96.jpg'></td><td>2015-07-04 01:01:06</td><td><a href='http://abcnews.go.com/Sports/wireStory/fifa-deflects-criticism-absence-blatter-final-32215657'>site</a></td><td>While both organizations raved about the successes of the event, the absence of Blatter and Valcke because of the FIFA corruption investigation lingered.</td></tr>
 </table></body></html>

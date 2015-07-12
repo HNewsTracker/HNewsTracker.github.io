@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 10:20:22</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11465192&ref=rss'>site</a></td><td>ZURICH (AP) " The official overseeing the next FIFA presidential election has reminded Sepp Blatter to stick with his plans to step down.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 13:38:50</td><td><a href='http://news.yahoo.com/fifa-election-chief-reminds-blatter-step-down-101618357.html'>site</a></td><td><table><tr><td>FIFA election chief reminds Blatter of need to step down</td></tr><tr><td>Scala, head of FIFA's audit and compliance committee, is urging Blatter not to consider back-tracking on that pledge.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 14:02:29</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article24194914.html#storylink=rss'>site</a></td><td>Asked on Sunday if Blatter was categorically ruling out standing in the new election, FIFA said: "We refer you to the remarks from FIFA President Blatter from 2 June. FIFA has no further comment."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-14 14:02:29</td><td><a href='http://www.miamiherald.com/news/politics-government/article24194914.html#storylink=rss'>site</a></td><td>Sepp Blatter was warned from within FIFA on Sunday not to attempt to backtrack on his pledge to quit as president.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 07:14:21</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/02/switzerland-us-seeks-extradition-of-7-fifa-officials'>site</a></td><td>Switzerland: US seeks extradition of 7 FIFA officials</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 07:15:36</td><td><a href='http://news.yahoo.com/switzerland-us-seeks-extradition-7-fifa-officials-071536033.html'>site</a></td><td>ZURICH (AP) - The United States has submitted a formal request for Switzerland to extradite seven FIFA officials arrested as part of a corruption probe in Zurich in May, Swiss officials said Thursday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 14:17:37</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/10/swiss-say-1-of-7-fifa-officials-agrees-to/'>site</a></td><td>Swiss say 1 of 7 FIFA officials agrees to extradition to US</td></tr>
 </table></body></html>

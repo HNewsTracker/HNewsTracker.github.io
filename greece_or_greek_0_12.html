@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/01/72/8134320/7/square_gallery_thumb.jpg'></td><td>2015-06-11 16:24:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-commits-to-step-up-reform-efforts-German-6320506.php'>site</a></td><td>The Greek market closed up by a hefty 8.1 percent before the IMF's tough statement.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 07:13:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/30/asia-stocks-bounce-back-but-greece-uncertainty-still-looms'>site</a></td><td>Greece's stock market was closed.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/20/41/8194144/5/square_gallery_thumb.jpg'></td><td>2015-06-22 16:05:23</td><td><a href='http://www.sfgate.com/news/world/article/Markets-surge-ahead-of-last-ditch-summit-on-Greece-6341079.php'>site</a></td><td>A debt default by Greece could destabilize its banks - Greeks are already withdrawing increasingly large amounts of money - and could in a worst case scenario cause the country to have to leave the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 16:05:23</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/22/markets-surge-ahead-of-last-ditch-summit-on-greece'>site</a></td><td><table><tr><td>Europe cautiously optimistic of Greek debt deal this week</td></tr><tr><td>The concern is that a debt default by Greece could destabilize the country enough that it might eventually have to leave the euro.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 16:11:04</td><td><a href='http://www.charlotteobserver.com/news/business/article25139845.html#storylink=rss'>site</a></td><td>Eurozone nations were cautiously optimistic on Monday that a deal on Greece's bailout was finally within reach this week, amid fears the country might otherwise default on its debts and fall out of the euro.</td></tr>
 </table></body></html>

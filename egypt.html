@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 19,
+            max: 20,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 19 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 20 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -67,4 +67,5 @@
   <tr><td style='display:none'>0</td><td></td><td>2015-07-05 12:35:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476257&ref=rss'>site</a></td><td><table><tr><td>Egypt's currency drops to new low against the dollar</td></tr><tr><td>CAIRO (AP) " Egypt's central bank says the Egyptian pound has fallen to a new low against the dollar, its second such drop since Thursday.</td></tr></table></td></tr>
   <tr><td style='display:none'>17</td><td></td><td>2015-07-10 14:20:21</td><td></td><td><a href='egypt_6.html'>Yousra, Egypt's biggest actress for much of the past 30 years and a close friend of Sharif, compared Sharif to a "clean-cut" diamond. (5)</a></td></tr>
   <tr><td style='display:none'>18</td><td></td><td>2015-07-11 12:50:24</td><td></td><td><a href='egypt_3.html'>A policeman stands at the base of the crumbled facade of the Italian consulate following a blast that killed at least one person in Cairo, Egypt, Saturday, July 11, 2015. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 15:32:40</td><td><a href='http://www.sfgate.com/news/crime/article/Egyptian-lawyers-protest-colleague-s-shooting-at-6380196.php'>site</a></td><td>CAIRO (AP) - Members of Egypt's lawyers union say it has suspended work in Cairo's Nasr City criminal court to protest a police officer shooting a lawyer there.</td></tr>
 </table></body></html>

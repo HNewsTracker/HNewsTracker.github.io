@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-12 16:01:20</td><td><a href='http://www.cbc.ca/news/business/stocks-knocked-back-by-faltering-greek-debt-talks-1.3111015?cmp=rss'>site</a></td><td>Greece has a 1.6 billion-euro ($2.2 billion) IMF debt installment due June 30 and larger debts due to the European Central Bank in July and August.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26032012.html#storylink=rss'>site</a></td><td>In a story July 2 about the Greek referendum, The Associated Press reported erroneously that the International Monetary Fund had said Greece would need debt relief worth 50 billion euros.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-07 03:39:09</td><td><a href='http://news.yahoo.com/eurozone-leaders-hold-emergency-summit-greece-033909834.html'>site</a></td><td>Greece last week defaulted on a 1.5 billion euro repayment to the International Monetary Fund but Lagarde said her organisation was "ready to assist Greece if requested to do so".</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/46/40/8284214/15/square_gallery_thumb.jpg'></td><td>2015-07-09 22:38:04</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-EU-economics-chief-says-Greece-deal-6374574.php'>site</a></td><td><table><tr><td>The Latest: Greece seeks 53.5B euros in new bailout package</td></tr><tr><td>Greece is seeking 53.5 billion euros ($59 billion) as part of a new bailout package, according to draft legislation submitted to parliament early Friday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-10 07:35:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479009&ref=rss'>site</a></td><td>Greece has requested a third bailout of 53.5 billion euros ($59 billion) and seemingly caved in to a large chunk of creditor demands for a new round of austerity measures.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/RdCkRpZGr0NH8uZCIA1Ciw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/d1de1cb6bfe2cd1e7b0f6a706700aa00_original.jpg'></td><td>2015-07-10 15:04:42</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-sell-austerity-deal-111433389.html'>site</a></td><td>The package would be far larger than the 7.2 billion euros creditors had been offering to Greece during the previous five months of fruitless negotiations.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-10 15:41:26</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/10/the-latest-tsipras-meets-party-lawmakers-to-discuss-package'>site</a></td><td>Greece has sent creditors a list of reform proposals in order to get 53.5 billion euros ($59.5 billion) of financing for three years and is hopeful of getting some sort of debt relief in return.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 00:14:33</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27013450.html#storylink=rss'>site</a></td><td>If approved, Greece would in turn get a three-year loan package worth nearly $60 billion (53.5 billion euros) as well as some form of debt relief.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 05:25:00</td><td><a href='http://www.cnbc.com/id/102758015'>site</a></td><td>"We don't want any more money," Varoufakis said, adding that Germany and the rest of the Eurozone had already given Greece "far too much" money.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 06:10:25</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-01-EU--Greece-The%20Latest/id-4d2487f8f71b456ca073b3e80baf9214'>site</a></td><td>"It is our duty to keep Greece in the eurozone," he said.</td></tr>
 </table></body></html>
