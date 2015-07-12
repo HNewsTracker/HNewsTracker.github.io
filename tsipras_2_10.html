@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,10 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>Tsipras has suggested he would step aside if Greeks vote "Yes" in Sunday's referendum.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 14:53:42</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=topNews'>site</a></td><td>Already, Tsipras' coalition is under strain as a succession of deputies from the right-wing Independent Greeks, his junior partners, have backed the 'Yes' vote.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150708&i=109455277&w=240&r=109455277-1&t=2'></td><td>2015-07-09 10:41:44</td><td><a href='http://www.reuters.com/article/2015/07/09/us-eurozone-greece-idUSKBN0P40EO20150709?feedType=RSS&feedName=topNews'>site</a></td><td>Such measures may face resistance from the hard-left wing of Tsipras' Syriza party and from his junior coalition partner, the Independent Greeks, after the government won a resounding 'No' to more austerity in a referendum on July 5.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 12:43:17</td><td><a href='http://www.reuters.com/article/2015/06/21/us-eurozone-greece-proposal-idUSKBN0P10HQ20150621?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greece's Tsipras presented proposal to EU leaders: PM's office</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 13:52:42</td><td><a href='http://www.ctvnews.ca/business/greek-pm-tsipras-presents-new-financial-proposal-to-eu-1.2432946'>site</a></td><td>A government source close to the talks says Tsipras "presented to the three leaders Greece's proposal for a mutually beneficial agreement, which will provide a permanent solution and not just postpone tackling the problem."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-03 14:53:42</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras dismisses Europe's warnings to Greece on vote</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-03 14:53:42</td><td><a href='http://news.yahoo.com/opinion-poll-shows-yes-vote-slightly-ahead-greece-053427297--business.html'>site</a></td><td>Tsipras is betting Europe will compromise rather than let Greece slip out of the eurozone, even though the continent's leaders say a "No" vote would signal its exit.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/37/41/67/8265186/5/square_gallery_thumb.jpg'></td><td>2015-07-06 17:47:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-still-cash-starved-after-decisive-no-6367753.php'>site</a></td><td>After vote win, Greece's Tsipras looks to rebuild talks</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7hiFTvVkCvqilD9gImAutw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4546f9a81c0c721e7b0f6a7067005f4f.jpg'></td><td>2015-07-07 04:55:11</td><td><a href='http://news.yahoo.com/greek-pm-tsipras-races-restart-talks-vote-win-045305978.html'>site</a></td><td>Greek PM Tsipras races to restart talks after vote win</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/World/2015/06/11/RE_JehJohnson650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-06-11 16:31:38</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/06/11/22447431.html?cid=rssnewsworld'>site</a></td><td>Homeland Security Secretary Jeh Johnson was meeting on Thursday with a Muslim group in nearby Sterling as part of the department's outreach to Islamic communities around the country.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/23b/news/world/article24919144.ece/ALTERNATES/w220/web-virginia-0611.JPG'></td><td>2015-06-11 18:34:37</td><td><a href='http://www.theglobeandmail.com/news/world/american-teenager-pleads-guilty-to-charges-of-helping-islamic-state/article24919145/?cmpid=rss1'>site</a></td><td>A 17-year-old from Virginia pleaded guilty in court on Thursday to charges of conspiring to help Islamic State militants, the first time the United States has prosecuted a minor as an adult in such a case.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 19:40:22</td><td><a href='http://abcnews.go.com/US/wireStory/northern-virginia-teen-admits-guilt-terror-related-charge-31689340'>site</a></td><td><table><tr><td>Teen Pleads Guilty to Helping Friend Join Islamic State</td></tr><tr><td>A 17-year-old who otherwise would have been graduating with honors from high school this week instead pleaded guilty Thursday to terrorism charges for helping another teen travel to Syria to join the Islamic State.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 19:40:22</td><td><a href='http://abcnews.go.com/US/wireStory/northern-virginia-teen-admits-guilt-terror-related-charge-31689340'>site</a></td><td><table><tr><td>Teen Pleads Guilty to Helping Friend Join Islamic State</td></tr><tr><td>A 17-year-old who otherwise would have been graduating with honors from high school this week instead pleaded guilty Thursday to terrorism charges for helping another teen travel to Syria to join the Islamic State.</td></tr><tr><td>In addition to helping 18-year-old Reza Niknejad of Prince William County travel to Syria, Amin also admitted using Twitter and other social media to solicit donations and support for the Islamic State.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 19:44:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article23744893.html#storylink=rss'>site</a></td><td>Among other things, Amin advocates for establishing a website for distributing Islamic State press releases and used his Twitter feed to persuade others to help develop such a site, according to court records.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 19:44:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article23744893.html#storylink=rss'>site</a></td><td>Last year, Amin's Twitter feed drew the attention of the State Department, which under its "Think Again Turn Away" social media campaign sought to counter Amin's glorification of the Islamic State and debated him directly online, at one point telling AmreekiWitness to "join reality."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 19:45:18</td><td><a href='http://news.yahoo.com/us-teen-admits-guilt-terror-related-charge-142624177.html'>site</a></td><td>Authorities said Amin was a sophisticated user of social media and that he also helped people make anonymous financial contributions to the Islamic State using Bitcoin.</td></tr>
 </table></body></html>

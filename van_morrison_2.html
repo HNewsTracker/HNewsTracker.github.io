@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>van morrison</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 17:18:39</td><td><a href='http://www.ctvnews.ca/entertainment/poem-by-jim-morrison-found-in-hotel-room-where-he-died-is-being-auctioned-online-1.2417595'>site</a></td><td><table><tr><td>Morrison was the lead singer of the 1960s rock group the Doors.</td></tr><tr><td>This undated photo provided by Paddle8 shows a hand-written poem by Jim Morrison that is being auctioned, with bidding expected to reach 60,000 to $80,000 by the time it ends June 25.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 17:23:41</td><td></td><td><a href='van_morrison_2_3.html'>NEW YORK (AP) - A handwritten poem by Jim Morrison found among his possessions in the Paris hotel where he died in 1971 ends with the line "Last words, Last words out." (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-19 06:51:04</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article24950686.html#storylink=rss'>site</a></td><td><table><tr><td>Morrison and Lady Gaga picked up honorary prizes, while awards also were presented to Nate Ruess and the former CEO of the American Society of Composers Authors and Publishers (ASCAP), John LoFrumento.</td></tr><tr><td>Honoree Van Morrison performs at the 46th Annual Songwriters Hall Of Fame Induction and Awards Gala at the Marriott Marquis on Thursday, June 18, 2015, in New York.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif?m=1315610318g'></td><td>2015-06-19 10:17:27</td><td><a href='http://nypost.com/2015/06/19/lady-gaga-van-morrison-honored-at-songwriters-ceremony/'>site</a></td><td>Lady Gaga, Van Morrison honored at songwriters ceremony</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150617&i=108846877&w=240&r=108846877-1&t=2'></td><td>2015-06-19 18:40:27</td><td><a href='http://www.reuters.com/article/2015/06/19/us-music-gaga-award-idUSKBN0OZ1HN20150619?feedType=RSS&feedName=peopleNews'>site</a></td><td>Recording artist Van Morrison gestures on the red carpet before the Songwriters Hall of Fame ceremony in New York, June 18, 2015.</td></tr>
 </table></body></html>

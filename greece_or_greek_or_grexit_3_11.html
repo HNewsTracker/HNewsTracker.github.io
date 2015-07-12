@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>He said an agreement between Greece and its creditors is still not certain but the fact that Greece has proposed a fiscal package along the lines of the one recently demanded by its European creditors is a "significant step in the direction of compromise."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>The Latest: Greek creditors want 'more binding commitments'</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 21:20:08</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27032884.html#storylink=rss'>site</a></td><td>Greece struggling to convince creditors it's for real</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 08:29:19</td><td><a href='http://www.reuters.com/article/2015/06/15/us-markets-global-idUSKBN0OU15F20150615?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greek talks failure hits shares, buoys low-risk debt</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greece mulls next move as clock ticks on debt talks</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/37/24/70/8211972/3/628x471.jpg'></td><td>2015-06-25 20:33:17</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-edge-higher-following-a-surge-in-6348752.php'>site</a></td><td>Greece has a small economy and its debt problems have been long known by investors.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>GREEK TALKS: Global investors are watching closely as Greek debt talks go down to the wire.</td></tr>
 </table></body></html>

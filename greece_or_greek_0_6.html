@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 15:32:39</td><td><a href='http://www.bbc.co.uk/news/business-33221446#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Markets rise on hopes of Greece deal</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 22:46:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-29-EU--Greece-The%20Road%20Ahead-QandA/id-738103fd8b7b414f90b799397ed22ead'>site</a></td><td>Q: Is a deal to save Greece still possible?</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 03:10:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/14/asia-stocks-slip-euro-down-as-greek-debt-talks-falter'>site</a></td><td>Asia stocks slip, euro down as Greek debt talks falter</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 05:57:14</td><td><a href='http://www.ctvnews.ca/business/asian-stock-markets-slip-euro-slides-as-greek-debt-talks-appear-to-go-nowhere-1.2422640'>site</a></td><td>Asian stock markets slip, euro slides as Greek debt talks appear to go nowhere</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 06:00:39</td><td><a href='http://www.nytimes.com/reuters/2015/06/15/business/15reuters-markets-global.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Asian Shares and Euro Slip as Greece Fails to Reach Debt Deal</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Asian stocks fall on Greek standoff, China margin curbs</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-30 07:13:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/30/asia-stocks-bounce-back-but-greece-uncertainty-still-looms'>site</a></td><td>Asia stocks bounce back but Greece uncertainty still looms</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-02 06:14:45</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-greek-anxiety-004926180.html'>site</a></td><td>Asia stocks rise for third day though Greece, China concerns weigh</td></tr>
 </table></body></html>
