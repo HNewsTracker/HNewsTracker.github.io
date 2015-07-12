@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td>Without access to capital markets, Greek lenders have to rely on almost 86 billion of Emergency Liquidity Assistance to stay afloat, subject to weekly boosts by the European Central Bank.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/jq43UNnsdOmq2.cpHBO_tA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-20T125459Z_1_LYNXMPEB5J07R_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-20 22:16:02</td><td><a href='http://finance.yahoo.com/news/greece-may-offer-more-debt-125459258.html'>site</a></td><td>The ECB on Friday raised the ceiling on the "emergency liquidity assistance" that Greece's banks rely on to keep their doors open.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 21:28:20</td><td><a href='http://abcnews.go.com/Business/wireStory/stocks-ahead-greece-decision-chinese-stocks-plunge-32050783'>site</a></td><td>Stocks had a mixed day Friday, as investors waited for negotiators to finish their work on a solution to Greece's debt problems.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 03:40:04</td><td><a href='http://www.charlotteobserver.com/news/business/article26854624.html#storylink=rss'>site</a></td><td>U.S. stocks opened with big gains, bouncing back from a loss the day before, as investors hoped that last-ditch talks would produce an agreement between Greece and its creditors.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 13:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26933650.html#storylink=rss'>site</a></td><td><table><tr><td>Asian stocks rose for a second day on Friday as the Greek government proposed a broad financial overhaul to its creditors and Beijing's attempts to arrest a sharp slide in the Chinese market appeared to be working.</td></tr><tr><td>U.S. stocks are posting solid gains in early trading as Greece moves closer to sealing a deal for new loans from its creditors.</td></tr></table></td></tr>
 </table></body></html>

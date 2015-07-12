@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 11:30:52</td><td><a href='http://www.ctvnews.ca/sci-tech/apple-launches-cars-for-mapping-service-to-rival-google-1.2416977'>site</a></td><td>Apple said Wednesday that it is cruising streets in specially equipped cars to gather pictures and other data for its free online mapping service.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://resources1.news.com.au/images/2015/06/12/1227394/499801-fbfd9c3e-10a7-11e5-97cb-591a1d9825c0.jpg'></td><td>2015-06-12 02:22:00</td><td><a href='http://www.news.com.au/technology/gadgets/apple-using-specially-equipped-cars-to-collect-date-for-its-free-online-mapping-service/story-fn6vihic-1227394484965?from=public_rss'>site</a></td><td>Following in its tracks, Apple promised to safeguard privacy while gathering mapping data on the road.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434859663188.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/world/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td><table><tr><td>Apple puts news at core of revamped system</td></tr><tr><td>Apple News, part of the upcoming iOS 9 operating system, aims to be the primary news source for users of the iPhone and iPad.</td></tr></table></td></tr>
 </table></body></html>

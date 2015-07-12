@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-06-14 20:25:33</td><td><a href='http://news.yahoo.com/greeks-seek-debt-relief-eu-steps-warnings-104038579--sector.html'>site</a></td><td>"While some progress was made, the talks did not succeed as there remains a significant gap between the plans of the Greek authorities and the joint requirements of Commission, ECB and IMF," it said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.huffpost.com/images/blank.gif'></td><td>2015-06-14 20:26:35</td><td><a href='http://www.huffingtonpost.com/2015/06/14/greece-bailout-talks-fail_n_7581162.html'>site</a></td><td>An EU Commission official, who refused to be identified because of the sensitivity of the negotiations, said that "the talks did not succeed as there remains a significant gap between the plans of the Greek authorities and" the demands of the international creditors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201525/AP150506205731_140x93.jpg'></td><td>2015-06-30 18:25:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11473789&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Greek official: eurozone finance ministers' teleconference over, will continue Wed morning.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47887523,width-300,resizemode-4/greece.jpg'></td><td>2015-06-30 18:43:52</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Eurogroup-refuses-Greece-bailout-extension-talks-to-continue/articleshow/47887342.cms'>site</a></td><td>"The Eurogroup just finished. We will continue tomorrow morning to allow finance ministers to examine the proposals of the Greek government," the source said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-02 06:19:10</td><td><a href='http://www.miamiherald.com/news/business/article26032012.html#storylink=rss'>site</a></td><td>Eurozone finance ministers were set to weigh Greece's latest proposal for aid Wednesday.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-07 15:57:33</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/the-latest-france-pledges-effort-to-keep-greece-in-euro'>site</a></td><td>"And it is really up to the Greek government to come up with far-reaching proposals. If they don't do that, then I think it will be over quickly."</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/r15bf4Pkg4YBFczrFWLUYw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/94e02a62be7cc71e7b0f6a7067001e05_original.jpg'></td><td>2015-07-10 11:14:42</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-sell-austerity-deal-111433389.html'>site</a></td><td>European Commission spokesman Margaritis Schinas says they will likely send their assessment of the Greek proposal to the eurozone finance ministers later Friday.</td></tr>
 </table></body></html>

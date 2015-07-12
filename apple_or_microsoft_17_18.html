@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/e878100539384fc53e3134739df4f737446d0b07/0_0_4056_2437/500.jpg'></td><td>2015-06-11 03:13:36</td><td><a href='http://www.theguardian.com/technology/2015/jun/11/apple-knew-about-demeaning-bag-checks-on-employees-before-lawsuit'>site</a></td><td><table><tr><td>The employee complaints, which a judge ordered unsealed, are part of a 2013 lawsuit alleging Apple should compensate employees for the time it takes to conduct the searches.</td></tr><tr><td>In the 2012 email to Cook, with a subject line "Fearless feedback from Apple retail specialist", the employee said Apple's policy implied the company did not trust its workers.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 13:36:07</td><td><a href='http://nypost.com/2015/06/11/apples-bag-search-policy-treats-workers-as-criminals-suit/'>site</a></td><td>Another email, sent by a retail worker in Beijing to Cook and other managers in 2013, said Apple treats its employees "as animals" and thieves.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 08:00:00</td><td><a href='http://www.miamiherald.com/entertainment/music-news-reviews/article25830955.html#storylink=rss'>site</a></td><td><table><tr><td>Daniel Ek of Spotify, the Beggars Group label consortium and the almighty Taylor Swift (among many others) are among the many who have all inveighed, quipped or protested against Apple Music, which stands to profoundly reshape the music industry with its launch this week.</td></tr><tr><td>With just one recent op-ed, Taylor Swift reset the whole argument about Apple's planned free three-month subscription (or, as artists see it, a quarter of a year without royalty payments).</td></tr></table></td></tr>
 </table></body></html>

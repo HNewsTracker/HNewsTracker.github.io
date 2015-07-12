@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/JY7nJS81OnSdt.gkY7._hA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5NDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201507071126411814731'></td><td>2015-07-07 21:23:10</td><td><a href='http://sports.yahoo.com/news/pga-grand-slam-move-trump-course-los-angeles-160615915--golf.html'>site</a></td><td>PGA Grand Slam to move from Trump Course in Los Angeles (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.chron.com/img/hdn/share/fb_share_2.png'></td><td>2015-06-25 12:36:06</td><td><a href='http://www.chron.com/business/article/Yahoo-s-Sullivan-to-become-Facebook-s-chief-6348486.php'>site</a></td><td><table><tr><td>Yahoo's Stamos to become Facebook's chief security officer</td></tr><tr><td>NEW YORK (AP) - Yahoo's cybersecurity chief says he's heading to Facebook to become its chief security officer.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 13:21:08</td><td><a href='http://www.ctvnews.ca/sci-tech/yahoo-s-stamos-joining-facebook-as-its-chief-security-officer-1.2439714'>site</a></td><td>Stamos served as Yahoo Inc.'s chief information security officer for a little over a year, having started there in March 2014, according to his Linkedin account.</td></tr>
 </table></body></html>
