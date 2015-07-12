@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/navigation/abc-logo.png'></td><td>2015-06-21 00:11:07</td><td><a href='http://abcnews.go.com/International/wireStory/soldiers-kill-presumed-criminals-northern-mexico-31917445'>site</a></td><td>Soldiers Kill 6 Presumed Criminals in Northern Mexico</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-01 23:39:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article26004295.html#storylink=rss'>site</a></td><td>Last year, she won re-election in blue-leaning New Mexico, the state with the largest number of Hispanic residents, by a wide margin.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 23:39:04</td><td></td><td><a href='mexico_36_37.html'>New Mexico Gov. Susana Martinez denounced GOP presidential hopeful Donald Trump's recent remarks about Mexican immigrants and called his comments "horrible." (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-01 23:39:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article26004295.html#storylink=rss'>site</a></td><td>In addition, Martinez has gone on a number of trade missions to Mexico and has been pushing for more infrastructure at the booming border town of Santa Teresa.</td></tr>
 </table></body></html>

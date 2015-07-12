@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/06/15/876/493/Mexico Former First Lady-1.jpg?ve=1&tl=1'></td><td>2015-06-15 00:15:05</td><td><a href='http://www.foxnews.com/world/2015/06/14/former-first-lady-in-mexico-says-will-compete-for-presidency-in-2018-election/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>FILE - In this Jan. 13, 2008, file photo, Mexico's former president Felipe Calderon, right, accompanied by his wife Margarita Zabala, waves upon their arrival to a military airport in Guatemala City.</td></tr><tr><td>Zabala announced on Sunday, June 14, 2015, her intention to run for president of Mexico in the 2018 elections.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 00:20:21</td><td><a href='http://www.startribune.com/ex-first-lady-says-she-ll-seek-mexico-s-presidency-in-2018/307314591/'>site</a></td><td>MEXICO CITY - The wife of Mexico's former President Felipe Calderon says she intends to run for president in the 2018 election.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 00:20:22</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11465451&ref=rss'>site</a></td><td>Ex-first lady says she'll seek Mexico's presidency in 2018</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/YT.6T8l55W004uOeekXulg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ0NztpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/bb27ac3b77d1141d7b0f6a706700d3ae.jpg'></td><td>2015-07-02 20:49:35</td><td><a href='http://news.yahoo.com/cartel-land-shows-good-bad-vigilantes-mexico-us-175859421.html'>site</a></td><td><table><tr><td>'Cartel Land' shows good and bad of vigilantes in Mexico, US</td></tr><tr><td>MEXICO CITY (AP) - The documentary "Cartel Land" opens with chilling night scenes of large-scale methamphetamine cooking in rural Mexico.</td></tr></table></td></tr>
 </table></body></html>
