@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/26/f1/8f/96a19408ee194fceb462340613a61bb4-d6f3fddb976a40f9bd49cfb9a6e555fe-0.jpg'></td><td>2015-06-26 18:30:07</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/the-latest-attack-on-french-gas-factory-1-decapita/nmmP6/'>site</a></td><td><table><tr><td>White House Press Secretary Josh Earnest says "the United States condemns in the strongest terms the terrorist attacks in France, Kuwait and Tunisia today."</td></tr><tr><td>The international police agency Interpol is offering its investigative help to Tunisia, France, Kuwait and Somalia after separate attacks that have killed more than 80 people.</td></tr><tr><td>The French attack Friday came on the same day as a gunman mowed down scores of tourists on a beach in Tunisia and a suicide bomber killed over two dozen worshippers at a Shiite mosque in Kuwait.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 06:07:29</td><td></td><td><a href='tunisia_16_17.html'>London (AFP) - Britain will on Tuesday mark 10 years since the London bombings with a minute's silence for the 52 victims, less than a fortnight after an attack in Tunisia highlighted the ongoing Islamist threat. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000ad2a3-642.jpg'></td><td>2015-07-07 06:35:23</td><td><a href='http://www.rte.ie/news/2015/0707/713115-july-7-bombings-london/'>site</a></td><td>He said: "The murder of 30 innocent Britons whilst holidaying in Tunisia is a brutal reminder of that fact. But we will never be cowed by terrorism."</td></tr>
 </table></body></html>
