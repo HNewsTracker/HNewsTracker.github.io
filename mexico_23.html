@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 20:49:35</td><td></td><td><a href='mexico_23_24.html'>MEXICO CITY (AP) - The documentary "Cartel Land" opens with chilling night scenes of large-scale methamphetamine cooking in rural Mexico. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 20:49:35</td><td></td><td><a href='mexico_23_25.html'>The film, with the Academy Award-winning director Kathryn Bigelow as executive producer, opens in Mexico on Thursday, in New York on Friday and later in other U.S. cities. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 06:41:05</td><td></td><td><a href='mexico_23_27.html'>MEXICO CITY (AP) - Mexico's top drug lord Joaquin 'El Chapo' Guzman has escaped from a maximum security prison for the second time, security officials announced late Saturday. (11)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 14:34:03</td><td></td><td><a href='mexico_23_26.html'>A manhunt began immediately late Saturday for the head of the powerful Sinaloa Cartel, which has an international reach and is believed to control most of the major crossing points for drugs at the U.S. border with Mexico. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 12:00:54</td><td></td><td><a href='mexico_23_24.html'>"All the accolades that Mexico has received in their counter-drug efforts will be erased by this one event" if Guzman is not recaptured, said Michael S. Vigil, a retired U.S. Drug Enforcement Administration chief of international operations. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 12:00:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/13/escape-by-top-drug-lord-a-strong-blow-to-mexicos-government'>site</a></td><td>According to a report from the Congressional Research Service in May, extraditions from Mexico to the U.S. peaked at 115 in 2012, the last year of Pena Nieto's predecessor, Felipe Calderon.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-13 18:00:16</td><td></td><td><a href='mexico_23_25.html'>The White House says U.S. Attorney General Loretta Lynch spoke with Mexico's attorney general on Sunday. (2)</a></td></tr>
 </table></body></html>

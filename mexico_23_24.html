@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/YT.6T8l55W004uOeekXulg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ0NztpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/bb27ac3b77d1141d7b0f6a706700d3ae.jpg'></td><td>2015-07-02 20:49:35</td><td><a href='http://news.yahoo.com/cartel-land-shows-good-bad-vigilantes-mexico-us-175859421.html'>site</a></td><td><table><tr><td>'Cartel Land' shows good and bad of vigilantes in Mexico, US</td></tr><tr><td>MEXICO CITY (AP) - The documentary "Cartel Land" opens with chilling night scenes of large-scale methamphetamine cooking in rural Mexico.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/23/cb/2c8e5292db3a4b00b5afcb3f42757df6-ab7a5dfe8e1647ebb3e46b6ba97dc774-0.jpg'></td><td>2015-07-12 08:17:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/mexico-top-drug-lord-joaquin-el-chapo-guzman-escap/nmxY8/'>site</a></td><td>The cartel has been heavily involved in the bloody drug war that has torn through parts of Mexico for the last decade, taking at least an estimated 100,000 lives.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48043399,width-300,resizemode-4/gunman.jpg'></td><td>2015-07-12 13:22:59</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Mexicos-drug-lord-El-Chapo-Guzman-escapes-through-tunnel/articleshow/48043391.cms'>site</a></td><td>Guzman faces multiple federal drug trafficking indictments in the U.S. as well as Mexico, and was on the U.S. Drug Enforcement Administration's most-wanted list.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 12:00:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/13/escape-by-top-drug-lord-a-strong-blow-to-mexicos-government'>site</a></td><td>"All the accolades that Mexico has received in their counter-drug efforts will be erased by this one event" if Guzman is not recaptured, said Michael S. Vigil, a retired U.S. Drug Enforcement Administration chief of international operations.</td></tr>
 </table></body></html>
