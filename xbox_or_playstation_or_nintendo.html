@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,4 +49,5 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 20:18:52</td><td><a href='http://www.mercurynews.com/business/ci_28382298/nintendo-mario-and-his-mushroom-kingdom-hopping-into?source=rss'>site</a></td><td><table><tr><td>"We've come to the point where the kids who grew up playing Nintendo games are now parents who have their own kids," said the veteran game designer during an interview translated by Bill Trinen, product marketing director at Nintendo of America.</td></tr><tr><td>Nintendo Co. announced plans last month for immersive experiences featuring the Japanese gaming giant's characters at Universal theme parks, but it didn't provide any details.</td></tr><tr><td>He noted Nintendo has been working closely with the theme park behemoth on the project.</td></tr><tr><td>"For me, because it's Mr. Miyamoto, I want him to continue making things as long as he wants to continue making things," said Shinya Takahashi, general manager of the software planning and development division at Kyoto, Japan-based Nintendo.</td></tr><tr><td>Nintendo is celebrating the 30th anniversary of its groundbreaking platformer "Super Mario Bros." throughout the year, culminating with the Sept.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 00:55:09</td><td></td><td><a href='xbox_or_playstation_or_nintendo_1.html'>TOKYO (Reuters) - Japanese videogame maker Nintendo Co Ltd's chief executive and president, Satoru Iwata, died on Saturday due to a growth in his bile duct, the company said. (5)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=topNews'>site</a></td><td>But after months of fractious negotiations, some European leaders are now openly contemplating the possibility of Greece becoming the first nation to be dumped out of the euro zone.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 09:06:06</td><td><a href='http://www.reuters.com/article/2015/06/21/us-global-economy-weekahead-idUSKBN0P109V20150621?feedType=RSS&feedName=businessNews'>site</a></td><td>If Greece does default on its debts, which remains a real possibility, it could require capital controls that would potentially turf it out of the euro zone or even the European Union itself, becoming the first country ever to leave the bloc.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/sOLg7viY9rtZHq0qy4NlSQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/eff9f6c18091841c7a0f6a7067003ced_original.jpg'></td><td>2015-06-26 22:15:47</td><td><a href='http://finance.yahoo.com/news/greece-sets-referendum-july-5-221547489.html'>site</a></td><td>Greece sets referendum for July 5 on rescue deal</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 04:09:10</td><td><a href='http://www.miamiherald.com/news/business/article26480347.html#storylink=rss'>site</a></td><td>A banner reading ''NO for democracy and for dignity'' referring to the upcoming referendum is placed outside a Greek Orthodox church at Monastiraki square in central Athens, Saturday, July 4, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/05/74/db/d166cdd5b6d4413d87d1dbef377c7017-69be0247745d4af1918ec168ad14ffa4-8.jpg'></td><td>2015-07-05 17:07:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-votes-on-high-stakes-bailout-referendum/nmrrZ/'>site</a></td><td>Bathers lie on the beach during Greece's referendum day in southern Athens, Sunday, July 5, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 17:50:07</td><td><a href='http://www.miamiherald.com/news/business/article26562994.html#storylink=rss'>site</a></td><td>A supporter of the No vote waves a Greek flag as celebrates after the results of the referendum in Synatagma square in central Athens, Sunday, July 5, 2015.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -55,4 +55,6 @@
   <tr><td style='display:none'>4</td><td></td><td>2015-07-04 14:56:43</td><td><a href='http://time.com/3945789/tunisia-president-state-of-emergency/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>"Tunisia faces a very serious danger and it should take any possible measures to maintain security and safety," he said.</td></tr>
   <tr><td style='display:none'>5</td><td></td><td>2015-07-04 16:19:48</td><td><a href='http://www.nydailynews.com/news/world/tunisian-leader-calls-state-emergency-beach-attack-article-1.2281304'>site</a></td><td>With a nationwide televised address, President Beji Caid Essebsi officially reintroduced urgent security measures for Tunisia that had been lifted in March 2014.</td></tr>
   <tr><td style='display:none'>6</td><td></td><td>2015-07-04 19:18:42</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/04/tunisian-leader-calls-state-of-emergency-state-media-says'>site</a></td><td>Tunisia was under a state of emergency from January 2011, at the outbreak of the Arab Spring, until March 2014.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-10 08:18:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/10/tunisia-defends-efforts-to-protect-british-tourists'>site</a></td><td>Britain on Thursday told all U.K. tourists to leave Tunisia, saying the North African country hasn't done enough to enhance security.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-12 23:38:21</td><td><a href='http://www.ctvnews.ca/world/top-terrorists-killed-in-tunisia-minister-says-1.2466010'>site</a></td><td>Tunisia, the only country to succeed in building a democracy after Arab Spring uprisings, is trying to defuse criticism from Britain and others that it hasn't done enough to protect tourists.</td></tr>
 </table></body></html>

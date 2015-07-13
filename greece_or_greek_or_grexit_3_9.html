@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 14:03:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-28-EU--Greece%20Bailout-The%20Latest/id-fb5799103c44457a8a545e4ac58c9db9'>site</a></td><td>The Latest: Bank of Greece recommends banks remain closed</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 17:55:03</td><td><a href='http://news.yahoo.com/greek-prime-minister-says-greek-bank-deposits-completely-175453977.html'>site</a></td><td>ATHENS, Greece (AP) - Greek prime minister says Greek bank deposits completely safe.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/30/62/8228018/3/square_gallery_thumb.jpg'></td><td>2015-06-28 18:24:13</td><td><a href='http://www.sfgate.com/news/world/article/Greece-awaits-European-Central-Bank-decision-on-6354017.php'>site</a></td><td>ATHENS, Greece (AP) - Greek banks will remain shut for an unspecified time and the country is imposing restrictions on bank withdrawals following a recommendation by the Bank of Greece, the country's prime minister said Sunday.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-07 13:41:48</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/exposed-to-greek-banks-balkans-brace-for-trouble/'>site</a></td><td><table><tr><td>Millions of people in Serbia, Albania, Bulgaria, Macedonia and Romania have their deposits in Greek bank subsidiaries in their own countries, putting the Balkans on the front line in the Greek crisis.</td></tr><tr><td>Though Greece's limits on cash withdrawals have not extended to subsidiaries in the Balkans, the deposits could be at risk if the parent banks collapse.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:42:16</td><td><a href='http://news.yahoo.com/exposed-greek-banks-balkans-brace-trouble-134216336--finance.html'>site</a></td><td>Two Greek banks in Macedonia represent 22 percent of total bank assets in the country.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td><table><tr><td>Another meeting, and again a lack of clear Greek proposals, German Finance Wolgang Schaeuble groused Monday.</td></tr><tr><td>Schaeuble said Monday ahead of a finance ministers' meeting on the issue: "We are still in the same situation as last Thursday," when the 19 ministers of the eurozone last assessed Greece's proposals.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/49/square_gallery_thumb.jpg'></td><td>2015-07-11 12:39:35</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>Italian Finance Minister Pier Carlo Padoan sought to downplay expectations that a decisive deal over Greece's bailout request will emerge at Saturday's meeting of the eurozone's 19 finance ministers.</td></tr>
 </table></body></html>

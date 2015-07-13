@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-06-14 20:25:33</td><td><a href='http://news.yahoo.com/greeks-seek-debt-relief-eu-steps-warnings-104038579--sector.html'>site</a></td><td>"While some progress was made, the talks did not succeed as there remains a significant gap between the plans of the Greek authorities and the joint requirements of Commission, ECB and IMF," it said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.huffpost.com/images/blank.gif'></td><td>2015-06-14 20:26:35</td><td><a href='http://www.huffingtonpost.com/2015/06/14/greece-bailout-talks-fail_n_7581162.html'>site</a></td><td>An EU Commission official, who refused to be identified because of the sensitivity of the negotiations, said that "the talks did not succeed as there remains a significant gap between the plans of the Greek authorities and" the demands of the international creditors.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201525/SCCZEN_AP151206233052_620x310.jpg'></td><td>2015-06-14 21:00:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11465257&ref=rss'>site</a></td><td>The European Commission said overnight that weekend talks to find common ground between international creditors and Greece were unsuccessful and left a wide rift that needs to be closed within two weeks to avoid a possible Greek default.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td>A top European Union official says that debt talks between Greece and its international creditors have made some progress but that a deal to avoid potential bankruptcy remains elusive.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 07:21:06</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td>If Greece defaults and switches to a new currency, it's sure to shake global financial markets.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/w1wFS0Z3BRlOpklqj1UG7w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b4126b422151d11d7a0f6a7067007cbb.jpg'></td><td>2015-06-30 07:53:19</td><td><a href='http://news.yahoo.com/latest-markets-edgy-greek-imf-payment-looms-072344112--finance.html'>site</a></td><td>The mood in European financial markets remained edgy amid growing expectations that Greece will not make a repayment to the International Monetary Fund.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Despite its rickety finances, Greece shaped up a little for a few years and qualified to join the single currency in 2001.</td></tr>
 </table></body></html>

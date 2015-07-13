@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 21:27:11</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/stocks-up-ahead-of-greece-decision-chinese-stocks-plunge'>site</a></td><td>While Greece has been the main driver in financial markets recent weeks, worries over China have risen the list of concerns.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/07/247976c86b65931e7b0f6a70670071db_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-08 06:23:55</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/china-leads-dive-in-asia-stocks-as-greece-rattles/'>site</a></td><td>"Still, for traders there are only two games in town and these remain China's equity markets and the Greek negotiations."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:26:40</td><td><a href='http://news.yahoo.com/western-union-restarts-money-transfer-greece-132640414--sector.html'>site</a></td><td><table><tr><td>Western Union restarts money transfer service in Greece</td></tr><tr><td>(Reuters) - Western Union Co said it restarted money transfer service in Greece, allowing customers in the country to receive funds from overseas.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:43:57</td><td><a href='http://www.foxnews.com/world/2015/06/20/greek-premier-tsipras-ministers-discuss-strategy-proposals-for-next-week/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>ATHENS, Greece - Two days before a crucial summit of Eurozone leaders, Greek ministers are huddling to discuss strategy and assemble a new package of proposals, officials say.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:50:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11468708&ref=rss'>site</a></td><td>Greek officials meet, prepare proposals for Eurozone summit</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/6/i/p/image.related.articleLeadwide.620x349.ghykvh.png/1435293816058.jpg'></td><td>2015-06-26 04:43:45</td><td><a href='http://www.brisbanetimes.com.au/world/germany-and-france-tell-greece-to-sort-debt-deal-this-weekend-20150626-ghykvh.html'>site</a></td><td>"After the comprehensive Greek proposals, I'm confident we'll reach a compromise that will help the eurozone and Greece to overcome the crisis," Tsipras said as he arrived at the summit.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 05:50:50</td><td><a href='http://www.reuters.com/article/2015/06/26/us-eurozone-greece-idUSKBN0P40EO20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>"The door is still open for the Greek side to come with new proposals or accept what is on the table," Eurogroup chairman Jeroen Dijsselbloem told reporters before briefing European Union leaders, meeting at a summit next door, on the impasse.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47887523,width-300,resizemode-4/greece.jpg'></td><td>2015-06-30 18:43:52</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Eurogroup-refuses-Greece-bailout-extension-talks-to-continue/articleshow/47887342.cms'>site</a></td><td>"The Eurogroup just finished. We will continue tomorrow morning to allow finance ministers to examine the proposals of the Greek government," the source said.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-11 15:19:07</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/11/greeks-heading-to-brussels-for-crucial-talks'>site</a></td><td>Over and over, finance ministers and top officials of the eurozone arrived for a key meeting on Greece's package with the same message - we don't trust fully you.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/73240f9/2147483647/thumbnail/300x270/format/png/quality/85/?url=%2Fcmsmedia%2F18%2F8a%2Fed8c23064ee8a97e1663a6adfaab%2F20150527edohc-a.tif'></td><td>2015-06-12 21:20:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/12/us-stocks-follow-europe-lower-after-greek-talks-stall'>site</a></td><td>Greek jitters upset US, European stock markets</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 05:07:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25747720.html#storylink=rss'>site</a></td><td>"Most traders are well prepped over the possible fallout of Greece. It's guessing which card will fall next that's the difficult bit," said Nicholas Teo, analyst at CMC Markets in Singapore.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>THE QUOTE: "Greece's proposal to its European creditors appears to significantly improve the prospects for a weekend agreement on extending further credit," said Ric Spooner, chief market analyst at CMC Markets.</td></tr>
 </table></body></html>

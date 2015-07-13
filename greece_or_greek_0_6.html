@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 03:10:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/14/asia-stocks-slip-euro-down-as-greek-debt-talks-falter'>site</a></td><td>Asia stocks slip, euro down as Greek debt talks falter</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 05:57:14</td><td><a href='http://www.ctvnews.ca/business/asian-stock-markets-slip-euro-slides-as-greek-debt-talks-appear-to-go-nowhere-1.2422640'>site</a></td><td>Asian stock markets slip, euro slides as Greek debt talks appear to go nowhere</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 06:00:39</td><td><a href='http://www.nytimes.com/reuters/2015/06/15/business/15reuters-markets-global.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Asian Shares and Euro Slip as Greece Fails to Reach Debt Deal</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Asian stocks fall on Greek standoff, China margin curbs</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-30 07:13:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/30/asia-stocks-bounce-back-but-greece-uncertainty-still-looms'>site</a></td><td>Asia stocks bounce back but Greece uncertainty still looms</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-02 06:14:45</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-greek-anxiety-004926180.html'>site</a></td><td>Asia stocks rise for third day though Greece, China concerns weigh</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 15:55:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11465245&ref=rss'>site</a></td><td>Gabriel said "a couple of game theorists in the Greek government believe that in the end the fear in Europe that Greece might leave (the euro) is so great that we'll agree to anything. That's not the case."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 09:01:35</td><td><a href='http://time.com/3945519/poll-shows-even-divide-greek-referendum/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>The vote is set to be one of the most important in Greece's modern history, but many voters are confused about what's at stake.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>The ballot question does not address whether Greece should abandon the euro currency or leave the 28-member European Union, but many voters believe those issues are at stake.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/yes-or-no-what-greeces-landmark-vote-might-bring/nmrrq/'>site</a></td><td>It's urging a "no" vote and says that will have no impact on Greece's euro status.</td></tr>
 </table></body></html>
