@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/U.S./876/493/putin-italy.jpg?ve=1&tl=1'></td><td>2015-06-10 11:36:39</td><td><a href='http://www.foxnews.com/world/2015/06/10/putin-visits-italy-pope-while-us-encourages-vatican-to-condemn-russia/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>MILAN - Russian President Vladimir Putin was meeting Wednesday with Italian officials and Pope Francis as the U.S. sought to encourage the Vatican to join the West in condemning Moscow's actions in Ukraine.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 13:16:50</td><td></td><td><a href='ukraine_14_15.html'>BUCHAREST, Romania (AP) - Italy's foreign minister has discussed the situations in Greece, Moldova and Ukraine with Romanian officials. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-09 13:16:50</td><td><a href='http://news.yahoo.com/romania-italian-foreign-minister-discusses-greece-ukraine-124342819.html'>site</a></td><td>Iohannis and Gentiloni also talked about Romania's eastern neighbors, Moldova and Ukraine, which have both signed EU association agreements.</td></tr>
 </table></body></html>

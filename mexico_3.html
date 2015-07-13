@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 21:39:50</td><td><a href='http://www.reuters.com/article/2015/07/06/us-usa-election-trump-idUSKCN0PG2FQ20150706?feedType=RSS&feedName=domesticNews'>site</a></td><td>"This is merely one of thousands of similar incidents throughout the United States. In other words, the worst elements in Mexico are being pushed into the United States by the Mexican government," he said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 21:43:50</td><td></td><td><a href='mexico_3_4.html'>After days of outrage, Republican presidential candidate Donald Trump said on Monday that some of his criticism of Mexico has been distorted but stuck to his stance that many illegal immigrants coming across the Mexican border are criminals. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/CDRHF.371YA3A7EMxi0K1A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/fc9a7393693e4d1a790f6a706700fe5e.jpg'></td><td>2015-06-13 22:02:01</td><td><a href='http://news.yahoo.com/england-beats-mexico-2-0-womens-world-cup-220201638.html'>site</a></td><td>Fran Kirby and Karen Carney scored in the second half, and England beat Mexico 2-1 Saturday at the Women's World Cup in Moncton, New Brunswick.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 00:32:37</td><td></td><td><a href='mexico_3_4.html'>6 to a much-needed lead before Mexico's Fabiola Ibarra gave her team hope with a goal in stoppage time, but there was little time for an equaliser. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 00:32:37</td><td></td><td><a href='mexico_3_5.html'>England, 1-0-1, will finish its Group F stage against Colombia in Montreal, while Mexico, 0-1-1, will play France in Ottawa. (2)</a></td></tr>
 </table></body></html>

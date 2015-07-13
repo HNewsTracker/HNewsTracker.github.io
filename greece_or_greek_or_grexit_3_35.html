@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 17:21:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25139878.html#storylink=rss'>site</a></td><td>The eurozone's top official says creditors aim to get a deal on Greece's bailout later in the week.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 05:50:50</td><td><a href='http://www.reuters.com/article/2015/06/26/us-eurozone-greece-idUSKBN0P40EO20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>"The door is still open for the Greek side to come with new proposals or accept what is on the table," Eurogroup chairman Jeroen Dijsselbloem told reporters before briefing European Union leaders, meeting at a summit next door, on the impasse.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-30 15:35:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-30-EU--Greece-Bailout/id-cb00954a6fe4410cb3e160813b23616d'>site</a></td><td>An EU official said Greece's creditors would not agree Tuesday night on a new bailout deal or extension and would instead, starting Wednesday, focus on a new plan for the country.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 20:32:51</td><td><a href='http://abcnews.go.com/International/wireStory/latest-markets-edgy-greek-imf-payment-looms-32118010'>site</a></td><td>The eurozone's top official, Jeroen Dijsselbloem, says "it would be crazy to extend" the Greek bailout beyond its midnight expiration since Greece won't accept the European proposals on the table.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://img.rasset.ie/000ad2a2-117.jpg'></td><td>2015-07-06 23:09:09</td><td><a href='http://www.rte.ie/news/2015/0706/712881-greece-economy/'>site</a></td><td>He said: "It is up to Greece to make something of this. We are waiting to see which proposals the Greek government makes to its European partners".</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/08/f7/e6/e5b5b559978d43cc96a459643dce34dd-5c77eca77128473a9ca666e3fe2c34c1-0_1.jpg'></td><td>2015-07-08 10:52:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/the-latest-tsipras-says-greece-is-preparing-detail/nmtHb/'>site</a></td><td><table><tr><td>Greece submitted a request for a new support program from the European Stability Mechanism Wednesday morning.</td></tr><tr><td>Michel Reijns, the spokesman for the eurozone's top official Jeroen Dijsselbloem, says Greece submitted the request for a new support program from the European Stability Mechanism Wednesday morning.</td></tr></table></td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/49/square_gallery_thumb.jpg'></td><td>2015-07-11 12:39:35</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>Jeroen Dijsselbloem, the eurozone's top official, is the latest in a long line of Greece's creditors to publicly bemoan the lack of trust with the Greek government as crunch bailout discussion begin.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/35/41/8247381/5/920x920.jpg'></td><td>2015-07-02 07:36:22</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-European-markets-solid-as-Greek-6362262.php'>site</a></td><td>The Latest: France's Sapin says committed to Greece in euro</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 06:35:08</td><td><a href='http://www.startribune.com/would-euro-departure-help-or-hurt-europe-s-currency-union/311627101/'>site</a></td><td>Since the Greek crisis started in 2009, the governments that use the euro have come up with crisis backstops.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=topNews'>site</a></td><td>While France and Italy have emphasized the importance of more talks, a big majority of the 19 euro zone governments favor taking a hard line with Greece, diplomats said.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150710&i=109507389&w=240&r=109507389-1&t=2'></td><td>2015-07-10 23:26:28</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>France, Greece's strongest supporter in the euro zone, rushed to offer praise.</td></tr><tr><td>Greece still has to overcome hardening attitudes toward it among euro zone partners.</td></tr></table></td></tr>
 </table></body></html>

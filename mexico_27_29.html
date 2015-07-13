@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,13 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150614&t=2&i=1056179873&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5D0E7'></td><td>2015-06-14 17:06:26</td><td><a href='http://www.reuters.com/article/2015/06/14/us-storm-carlos-mexico-idUSKBN0OU0UI20150614?feedType=RSS&feedName=environmentNews'>site</a></td><td>Meanwhile on the other side of the country, a low pressure system in the Gulf of Mexico was producing showers on the coast of Guatemala, Belize, and the Yucatan peninsula, and it could become a tropical storm in the next two days, the NHC said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 04:02:48</td><td><a href='http://abcnews.go.com/International/wireStory/tropical-storm-carlos-batters-mexicos-southwest-coast-31766312'>site</a></td><td>Officials ordered schools closed Monday and readied shelters along Mexico's southwestern coast as Tropical Storm Carlos battered beaches with high waves and strong wind as it swirled just offshore.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/11/ca10ef3210c7f61f7b0f6a7067005abf_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-12 06:41:05</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/11/mexico-top-drug-lord-joaquin-el-chapo-guzman/'>site</a></td><td>MEXICO CITY (AP) - Mexico's top drug lord Joaquin 'El Chapo' Guzman has escaped from a maximum security prison for the second time, security officials announced late Saturday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/23/cb/2c8e5292db3a4b00b5afcb3f42757df6-ab7a5dfe8e1647ebb3e46b6ba97dc774-0.jpg'></td><td>2015-07-12 08:17:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/mexico-top-drug-lord-joaquin-el-chapo-guzman-escap/nmxY8/'>site</a></td><td>Guzman was caught by authorities for the first time in Guatemala in 1993, extradited and sentenced to 20 years in prison in Mexico for murder and drug trafficking.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/12/9983559f10d7f61f7b0f6a7067007c94_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-12 13:10:12</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/12/top-mexico-drug-lord-el-chapo-guzman-escapes-from/'>site</a></td><td>Mexico's top security official says top drug lord Joaquin "El Chapo" Guzman has escaped through a 1.5-kilometer (1 mile) tunnel that opened into the shower area of his cell.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48043399,width-300,resizemode-4/gunman.jpg'></td><td>2015-07-12 13:22:59</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Mexicos-drug-lord-El-Chapo-Guzman-escapes-through-tunnel/articleshow/48043391.cms'>site</a></td><td>Guzman faces multiple federal drug trafficking indictments in the U.S. as well as Mexico, and was on the U.S. Drug Enforcement Administration's most-wanted list.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 14:36:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27071770.html#storylink=rss'>site</a></td><td><table><tr><td>FILE - In this Feb. 22, 2014 file photo, Joaquin "El Chapo" Guzman is escorted to a helicopter in handcuffs by Mexican navy marines at a navy hanger in Mexico City.</td></tr><tr><td>Former Mexican Attorney General Jesus Murillo Karam told the AP earlier this year that the U.S. would get Guzman in "about 300 or 400 years" after he served time for all his crimes in Mexico.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 18:40:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27071770.html#storylink=rss'>site</a></td><td><table><tr><td>Mexican navy marines patrol near the maximum security prison Altiplano in Almoloya, west of Mexico City, Sunday, July 12, 2015.</td></tr><tr><td>Police inspect a vehicle as they search for escaped drug lord Joaquin "El Chapo" Guzman, around the Almoloya de Juarez prison in Toluca, Mexico, Sunday, July 12, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150713&i=109557109&w=240&r=109557109-1&t=2'></td><td>2015-07-13 02:54:38</td><td><a href='http://www.reuters.com/article/2015/07/13/us-mexcio-guzman-idUSKCN0PM07020150713?feedType=RSS&feedName=topNews'>site</a></td><td>Mexico kingpin 'Chapo' Guzman stages brazen jailbreak in blow to president</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-13 12:00:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/13/escape-by-top-drug-lord-a-strong-blow-to-mexicos-government'>site</a></td><td>"All the accolades that Mexico has received in their counter-drug efforts will be erased by this one event" if Guzman is not recaptured, said Michael S. Vigil, a retired U.S. Drug Enforcement Administration chief of international operations.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 12:05:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27105415.html#storylink=rss'>site</a></td><td>Escape by top drug lord a strong blow to Mexico's government</td></tr>
 </table></body></html>

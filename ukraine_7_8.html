@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 15:00:52</td><td><a href='http://www.startribune.com/ukraine-says-7-wounded-in-armed-gang-attack-in-western-city/313763881/'>site</a></td><td>MOSCOW - Ukraine's Interior Minister says four civilians and three police officers have been wounded in an attack by armed men whose weapons include grenades in a western city.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/11/9b/dd/0e38676b4cd947c385fc030fcd29bd02-b3c6a39a35b4482e876f3afaafc220da-0.jpg'></td><td>2015-07-11 19:05:54</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/at-least-2-dead-in-in-ukraine-sports-club-attack/nmxPp/'>site</a></td><td>Right Sector was one of the most militant factions in the massive protests in Ukraine's capital that led to pro-Russia President Viktor Yanukovych fleeing the country in February 2014.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-11 19:05:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/11/at-least-2-dead-in-in-ukraine-sports-club-attack'>site</a></td><td><table><tr><td>At least 2 dead in in Ukraine sports club attack</td></tr><tr><td>At least two people were killed Saturday in a gun and grenade attack in a western Ukraine city involving the country's notorious nationalist militia Right Sector.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 15:00:52</td><td><a href='http://www.startribune.com/ukraine-says-7-wounded-in-armed-gang-attack-in-western-city/313763881/'>site</a></td><td><table><tr><td>MOSCOW - Ukraine's Interior Minister says four civilians and three police officers have been wounded in an attack by armed men whose weapons include grenades in a western city.</td></tr><tr><td>Mukhachevo is in far western Ukraine, near the border with Poland and Slovakia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 19:05:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/11/at-least-2-dead-in-in-ukraine-sports-club-attack'>site</a></td><td>At least 2 dead in in Ukraine sports club attack</td></tr>
 </table></body></html>

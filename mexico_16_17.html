@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 04:01:40</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/03/police-beltran-leyva-cartel-boss-arrested-in/'>site</a></td><td><table><tr><td>With the takedown of the Beltran Leyva leadership, the cartel splintered into smaller gangs that operated in central and southern Mexico, including the states of Morelos and Guerrero south of Mexico City.</td></tr><tr><td>Authorities in Mexico say Villegas controlled the Guerrero-Morelos-Mexico City corridor.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 04:02:06</td><td><a href='http://abcnews.go.com/International/wireStory/police-beltran-leyva-cartel-boss-arrested-mexico-city-32217913'>site</a></td><td>He allegedly used warehouses in Mexico City's main wholesale market as cover for his drug trafficking activities.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-14 19:55:56</td><td><a href='http://www.miamiherald.com/news/nation-world/article24146758.html#storylink=rss'>site</a></td><td><table><tr><td>Two convicted murders who used power tools to cut their way out of a prison near the Canadian border could be nearby or "in Mexico by now," New York Gov. Andrew Cuomo said Sunday.</td></tr><tr><td>"We don't know if they are still in the area or if they're in Mexico by now," Cuomo said in response to a question at a news conference on school aid in the New York City suburbs.</td></tr></table></td></tr>
 </table></body></html>

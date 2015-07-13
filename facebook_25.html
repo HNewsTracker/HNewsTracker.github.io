@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 21:06:53</td><td><a href='http://www.seattlepi.com/news/texas/article/Facebook-to-add-more-computing-power-with-Texas-6371030.php'>site</a></td><td><table><tr><td>Facebook to add more computing power with Texas data center</td></tr><tr><td>Facebook Inc. initially expects to employ 40 people at the data center, which will rely solely on wind power to keep its computer servers running.</td></tr><tr><td>This will be Facebook's fourth data center in the U.S., joining others in Oregon, Iowa and North Carolina.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/b/h/a/m/image.related.articleLeadwide.620x349.gibh4s.png/1436788708971.jpg'></td><td>2015-07-13 11:51:52</td><td><a href='http://www.smh.com.au/world/australian-woman-jailed-in-abu-dhabi-for-facebook-post-20150713-gibh4s.html'>site</a></td><td>A Facebook page called Savvy Women Abu Dhabi said that Ms Magi had lived in Abu Dhabi since early 2012 and she is there to teach Emirate women art, illustration and graphic design.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/b/h/a/m/image.related.articleLeadwide.620x349.gibh4s.png/1436796931875.jpg'></td><td>2015-07-13 14:15:42</td><td><a href='http://www.smh.com.au/world/australian-woman-jailed-in-abu-dhabi-for-facebook-post-20150713-gibh4s.html'>site</a></td><td><table><tr><td>Jodi Magi, aged 39, posted a photo to Facebook she had taken of a car parked across two disabled parking spaces outside her apartment in Abu Dhabi.</td></tr><tr><td>Australian woman jailed in Abu Dhabi for Facebook...</td></tr></table></td></tr>
 </table></body></html>
