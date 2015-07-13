@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/73240f9/2147483647/thumbnail/300x270/format/png/quality/85/?url=%2Fcmsmedia%2F18%2F8a%2Fed8c23064ee8a97e1663a6adfaab%2F20150527edohc-a.tif'></td><td>2015-06-12 21:20:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/12/us-stocks-follow-europe-lower-after-greek-talks-stall'>site</a></td><td>Greek jitters upset US, European stock markets</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 05:07:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25747720.html#storylink=rss'>site</a></td><td>"Most traders are well prepped over the possible fallout of Greece. It's guessing which card will fall next that's the difficult bit," said Nicholas Teo, analyst at CMC Markets in Singapore.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>THE QUOTE: "Greece's proposal to its European creditors appears to significantly improve the prospects for a weekend agreement on extending further credit," said Ric Spooner, chief market analyst at CMC Markets.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td>Hollande is urging Greece to find an agreement at a Monday summit in Brussels between Greece and its creditors.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 10:29:11</td><td><a href='http://www.smh.com.au//breaking-news-world/eu-summit-on-greece-scrapped-20150712-3z5ra.html'>site</a></td><td>EU summit on Greece scrapped</td></tr>
 </table></body></html>

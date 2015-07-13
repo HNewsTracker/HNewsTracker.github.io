@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434859663188.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/world/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td><table><tr><td>Apple puts news at core of revamped system</td></tr><tr><td>Apple News, part of the upcoming iOS 9 operating system, aims to be the primary news source for users of the iPhone and iPad.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 06:04:18</td><td><a href='http://www.reuters.com/article/2015/07/08/us-microsoft-redundancies-idUSKCN0PI0GL20150708?feedType=RSS&feedName=technologyNews'>site</a></td><td>Microsoft plans major job cuts: NYT</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 07:23:08</td><td><a href='http://www.reuters.com/article/2015/07/08/us-microsoft-redundancies-idUSKCN0PI0GL20150708?feedType=RSS&feedName=businessNews'>site</a></td><td>The latest job cuts are in addition to the 18,000 jobs Microsoft said it planned to cut a year ago, the newspaper said, citing sources familiar with the matter.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03285/windows10_3285069b.jpg'></td><td>2015-07-08 08:40:06</td><td><a href='http://www.telegraph.co.uk/technology/microsoft/11725629/Microsoft-expected-to-announce-major-job-cuts.html'>site</a></td><td>Microsoft expected to announce major job cuts</td></tr>
 </table></body></html>

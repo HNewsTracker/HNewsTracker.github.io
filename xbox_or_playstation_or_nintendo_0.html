@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>xbox or playstation or nintendo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 16:10:43</td><td></td><td><a href='xbox_or_playstation_or_nintendo_0_1.html'>NEWARK, N.J. (AP) - A New Jersey woman accused of fatally stabbing her boyfriend during a dispute over their Xbox console has pleaded not guilty to aggravated manslaughter. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 16:10:43</td><td><a href='http://www.seattlepi.com/news/crime/article/Woman-pleads-not-guilty-in-deadly-Xbox-dispute-6316167.php'>site</a></td><td>According to police reports, the couple began arguing over Xbox and the dispute turned physical.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 02:25:32</td><td><a href='http://www.cbc.ca/news/technology/satoru-iwata-nintendo-president-dead-at-55-1.3148935?cmp=rss'>site</a></td><td>Iwata led Nintendo's development into a global company, with its hit Wii home console and DS handheld, and also through its recent woes caused by the popularity of smartphones.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/52/01/8298572/15/square_gallery_thumb.jpg'></td><td>2015-07-13 02:48:08</td><td><a href='http://www.sfgate.com/business/technology/article/Nintendo-President-Satoru-Iwata-dies-of-tumor-6380787.php'>site</a></td><td><table><tr><td>FILE - In this Jan. 31, 2013 file photo, Nintendo Co. President Satoru Iwata speaks during a news conference in Tokyo.</td></tr><tr><td>Nintendo said President Iwata died Saturday, July 11, 2015, of a bile duct tumor in a Kyoto hospital, western Japan.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 02:55:18</td><td><a href='http://www.startribune.com/nintendo-president-satoru-iwata-dies-of-tumor/314490081/'>site</a></td><td>Iwata had been poised to lead Nintendo through another stage after it recently did an about-face and said it will start making games for smartphones - meaning that Super Mario the plumber will start arriving on cellphones and tablets.</td></tr>
 </table></body></html>

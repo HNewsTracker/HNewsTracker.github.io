@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434859663188.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/world/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td><table><tr><td>Apple puts news at core of revamped system</td></tr><tr><td>Apple News, part of the upcoming iOS 9 operating system, aims to be the primary news source for users of the iPhone and iPad.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297716860750_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-25 20:09:08</td><td><a href='http://www.torontosun.com/2015/06/25/apple-removes-games-featuring-confederate-flags-from-app-store'>site</a></td><td><table><tr><td>Apple removes games featuring Confederate flags from App Store</td></tr><tr><td>"Apple has removed our game from AppStore because of usage of the Confederate Flag," Game-Labs, developer of Ultimate General: Gettysburg said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 20:17:26</td><td><a href='http://technology.canoe.com/Gaming/News/2015/06/25/22472946.html?cid=rsstechnology'>site</a></td><td>Apple Inc has removed several civil war games featuring Confederate flags from its App Store, some game developers said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/2/g/j/image.related.articleLeadwide.620x349.ghy26q.png/1435267528353.jpg'></td><td>2015-06-25 21:25:34</td><td><a href='http://www.brisbanetimes.com.au/digital-life/games/apple-removes-civil-war-games-featuring-confederate-flag-from-appstore-20150625-ghy26q'>site</a></td><td>The move by Apple prompted some criticism from users online, concerned the ban was ignoring the context in which the symbol was used in some cases and pointing out that World War II games featuring Nazi insignia were still being sold from the store.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 00:19:00</td><td><a href='http://www.utsandiego.com/news/2015/jun/25/apple-removing-games-with-confederate-flag-from/'>site</a></td><td><table><tr><td>Apple removing games with Confederate flag from App Store</td></tr><tr><td>Apple said in a statement Thursday that apps are being removed "that use the Confederate flag in offensive or mean-spirited ways, which is in violation of our guidelines."</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201526/flag_140x9390303.jpg'></td><td>2015-06-26 00:25:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11471647&ref=rss'>site</a></td><td>Apple Inc., which is based in Cupertino, California, is the latest company to distance itself from the divisive symbol after the shooting suspect, Dylann Storm Roof, appeared in photos holding the flag.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.images.express.co.uk/img/page/placeholder-horizontal.gif'></td><td>2015-06-08 19:24:00</td><td><a href='http://www.express.co.uk/life-style/science-technology/583070/Apple-Music-Spotify-Rival-WWDC-2015-Live-Announcement-WatchOS-iOS-9-Mac-OS-X?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-tech+%28Daily+Express+%3A%3A+Science+%26+Tech+Feed%29'>site</a></td><td>Stories that use Apple's new News format will look best on the app.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/06/08/20/2974CD3D00000578-3115680-image-a-38_1433791873946.jpg'></td><td>2015-06-08 22:07:02</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-3115680/Apple-faces-music-iPhone-make-unveiling-streaming-music-service-Spotify-Tidal.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Susan Prescott of Apple showed off the new app.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cdn2.belfasttelegraph.co.uk/incoming/article31287358.ece/64b5c/ALTERNATES/w90square/US%20Apple%2018544.jpg'></td><td>2015-06-08 23:21:13</td><td><a href='http://www.belfasttelegraph.co.uk/entertainment/music/news/apple-unveils-musicstreaming-app-31287859.html'>site</a></td><td>"This will be the first Apple-branded app or service to reach Android and is a strategic shift for Apple in its approach to the main rival smartphone platform," he said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 23:02:43</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-sheds-some-of-its-ad-business-mapping-6356522.php'>site</a></td><td><table><tr><td>That means Microsoft will get a share of revenue from advertising that's tied directly to Internet searches performed on AOL.</td></tr><tr><td>Under its agreement with AOL, Microsoft is unloading a business that's declined in importance over recent years.</td></tr><tr><td>Microsoft and AOL declined to reveal details of how they will share revenue from the new pact.</td></tr></table></td></tr>
 </table></body></html>
