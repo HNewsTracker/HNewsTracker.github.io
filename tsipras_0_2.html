@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 13:15:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475646&ref=rss'>site</a></td><td>Greek PM Tsipras says IMF report fully justifies Greece's position on debt relief</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/9/t/4/4/image.related.articleLeadwide.620x349.gi9co0.png/1436513280293.jpg'></td><td>2015-07-10 07:26:35</td><td><a href='http://www.brisbanetimes.com.au/world/greek-debt-crisis-france-to-the-rescue-as-athens-accepts-austerity-for-relief-20150710-gi9co0'>site</a></td><td><table><tr><td>Greek debt crisis: France to the rescue as Tsipras accepts austerity for relief</td></tr><tr><td>But Mr Tsipras seemed to have gained ground on debt relief, his one bedrock demand.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 09:40:15</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=topNews'>site</a></td><td>Greek PM Tsipras seeks party backing after abrupt concessions</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/1/7/x/image.related.articleLeadwide.620x349.gia16t.png/1436579147577.jpg'></td><td>2015-07-11 01:22:15</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-muse-on-future-path-after-alexis-tsipras-abrupt-reversal-20150711-gia16t.html'>site</a></td><td>Greek debt crisis: Greeks muse on future path after Alexis Tsipras' abrupt reversal</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 18:10:16</td><td><a href='http://www.startribune.com/greek-officials-meet-prepare-proposals-for-eurozone-summit/308681621/'>site</a></td><td>Greek Premier Tsipras, ministers discuss strategy, proposals for next week's Eurozone summit</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td><table><tr><td>That meeting is meant to seek the basis for a deal that European leaders, including Tsipras, might discuss at an emergency summit later in the day.</td></tr><tr><td>Ahead of the summit, Tsipras spoke by phone with German Chancellor Angela Merkel.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31374878.ece/aebdf/ALTERNATES/h342/PANews%20BT_P-8bd34f8e-2093-4d6c-83d4-1d3f28dae5a6_I1.jpg'></td><td>2015-07-14 06:21:16</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/tsipras-faces-bailout-deal-dissent-31374879.html'>site</a></td><td>"This deal introduced many new issues ... we cannot agree with it," he said after meeting Mr Tsipras.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 18:45:21</td><td><a href='http://www.usnews.com/news/politics/articles/2015/06/10/clinton-building-vast-network-of-campaign-staff-volunteers'>site</a></td><td>(AP) - Hillary Rodham Clinton has launched a sweeping national jobs program - for her presidential campaign.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 01:47:26</td><td><a href='http://www.nydailynews.com/news/politics/american-federation-teachers-endorses-hillary-clinton-article-1.2289470'>site</a></td><td>"Hillary Clinton is a tested leader who shares our values, is supported by our members, and is prepared for a tough fight on behalf of students, families and communities."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 01:47:26</td><td><a href='http://www.nydailynews.com/news/politics/american-federation-teachers-endorses-hillary-clinton-article-1.2289470?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>"In vision, in experience and in leadership, Hillary Clinton is the champion working families need in the White House," AFT President Randi Weingarten said in a statement.</td></tr>
 </table></body></html>

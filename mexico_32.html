@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 00:15:05</td><td></td><td><a href='mexico_32_33.html'>FILE - In this Jan. 13, 2008, file photo, Mexico's former president Felipe Calderon, right, accompanied by his wife Margarita Zabala, waves upon their arrival to a military airport in Guatemala City. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 00:20:21</td><td><a href='http://www.startribune.com/ex-first-lady-says-she-ll-seek-mexico-s-presidency-in-2018/307314591/'>site</a></td><td>Zabala said the party needs to find "a national leader of consensus" and narrow the gap between politicians and Mexico's voters, many of whom complain about corruption in government.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-01 23:39:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article26004295.html#storylink=rss'>site</a></td><td>Last year, she won re-election in blue-leaning New Mexico, the state with the largest number of Hispanic residents, by a wide margin.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 23:39:04</td><td></td><td><a href='mexico_32_33.html'>New Mexico Gov. Susana Martinez denounced GOP presidential hopeful Donald Trump's recent remarks about Mexican immigrants and called his comments "horrible." (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-01 23:39:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article26004295.html#storylink=rss'>site</a></td><td>In addition, Martinez has gone on a number of trade missions to Mexico and has been pushing for more infrastructure at the booming border town of Santa Teresa.</td></tr>
 </table></body></html>

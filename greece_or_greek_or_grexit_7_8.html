@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/08/7e/96/1c45de82e4f845e4b098c6afd49aba66-2f6d77a03be7484d824c76639c6aa340-0.jpg'></td><td>2015-07-08 10:01:37</td><td><a href='http://www.daytondailynews.com/ap/ap/international/merkel-to-visit-balkans-amid-greek-crisis/nmtGk/'>site</a></td><td><table><tr><td>Angela Merkel begins a two-day tour of the Balkans on Wednesday, visiting three countries whose ambitions to join the European Union have been complicated by the Greek crisis and their mutual rivalries.</td></tr><tr><td>All three states have declared their desire to join the EU, but in the wake of the Greek bailout turmoil Merkel and other EU leaders are likely to be more wary of admitting countries with troubled economies.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 15:01:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/14/greece-pledges-to-get-rid-of-tax-evasion-as-a-way-of-life'>site</a></td><td>Greece pledges to get rid of tax evasion as a way of life</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKv0lNp8kcOXDeTOwVqByw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/1cd165db64d32e1f7c0f6a706700900e_original.jpg'></td><td>2015-07-14 15:04:45</td><td><a href='http://finance.yahoo.com/news/greece-pledges-rid-tax-evasion-150445104.html'>site</a></td><td><table><tr><td>The experts say Greece has largely failed in previous crackdowns on tax evasion, which has been rampant for generations.</td></tr><tr><td>This kind of tax dodging is a Greek national pastime, costing the state billions of euros in revenue.</td></tr><tr><td>Greece promised last week to get tough on tax evasion in return for a third European bailout expected to be negotiated over the next month.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:04:56</td><td><a href='http://www.miamiherald.com/news/business/article27206317.html#storylink=rss'>site</a></td><td>More enforcement will be needed, but Artavanis said many parts of Greece rarely see a tax inspector.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 15:29:27</td><td><a href='http://www.reuters.com/article/2015/06/28/us-usa-newmexico-boyscout-idUSKCN0P80PO20150628?feedType=RSS&feedName=domesticNews'>site</a></td><td><table><tr><td>A Boy Scout was killed when a flash flood triggered by heavy rains swept through a canyon on a New Mexico ranch where he was camping, authorities said on Sunday.</td></tr><tr><td>The boy was swept away in flood waters in the North Ponil Canyon, the New Mexico station said.</td></tr><tr><td>A spokesman for the New Mexico State Police could not immediately be reached for comment.</td></tr><tr><td>Some 20,000 Boy Scouts visit the 214-square-mile Philmont ranch in northern New Mexico annually for backpacking, camping and other programs, according to its website.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 15:30:54</td><td><a href='http://news.yahoo.com/boy-scout-dies-flash-flood-while-camping-mexico-153054001.html'>site</a></td><td>CIMARRON, N.M. (AP) - New Mexico State Police say a Boy Scout on a camping trip with his troop has died after he and three other teens were swept away in a flash flood.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 17:16:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article25705087.html#storylink=rss'>site</a></td><td>The teen was one of eight Boy Scouts participating in a 12-day trek at the Philmont Scout Ranch when the flooding hit, New Mexico State Police spokesman Chad Pierce said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/YT.6T8l55W004uOeekXulg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ0NztpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/bb27ac3b77d1141d7b0f6a706700d3ae.jpg'></td><td>2015-07-02 20:49:35</td><td><a href='http://news.yahoo.com/cartel-land-shows-good-bad-vigilantes-mexico-us-175859421.html'>site</a></td><td><table><tr><td>'Cartel Land' shows good and bad of vigilantes in Mexico, US</td></tr><tr><td>MEXICO CITY (AP) - The documentary "Cartel Land" opens with chilling night scenes of large-scale methamphetamine cooking in rural Mexico.</td></tr></table></td></tr>
 </table></body></html>

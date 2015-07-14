@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/sOLg7viY9rtZHq0qy4NlSQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/eff9f6c18091841c7a0f6a7067003ced_original.jpg'></td><td>2015-06-26 22:15:47</td><td><a href='http://finance.yahoo.com/news/greece-sets-referendum-july-5-221547489.html'>site</a></td><td>Greece sets referendum for July 5 on rescue deal</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 04:09:10</td><td><a href='http://www.miamiherald.com/news/business/article26480347.html#storylink=rss'>site</a></td><td>A banner reading ''NO for democracy and for dignity'' referring to the upcoming referendum is placed outside a Greek Orthodox church at Monastiraki square in central Athens, Saturday, July 4, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/05/74/db/d166cdd5b6d4413d87d1dbef377c7017-69be0247745d4af1918ec168ad14ffa4-8.jpg'></td><td>2015-07-05 17:07:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-votes-on-high-stakes-bailout-referendum/nmrrZ/'>site</a></td><td>Bathers lie on the beach during Greece's referendum day in southern Athens, Sunday, July 5, 2015.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 17:50:07</td><td><a href='http://www.miamiherald.com/news/business/article26562994.html#storylink=rss'>site</a></td><td>A supporter of the No vote waves a Greek flag as celebrates after the results of the referendum in Synatagma square in central Athens, Sunday, July 5, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 13:41:48</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/exposed-to-greek-banks-balkans-brace-for-trouble/'>site</a></td><td><table><tr><td>Millions of people in Serbia, Albania, Bulgaria, Macedonia and Romania have their deposits in Greek bank subsidiaries in their own countries, putting the Balkans on the front line in the Greek crisis.</td></tr><tr><td>Though Greece's limits on cash withdrawals have not extended to subsidiaries in the Balkans, the deposits could be at risk if the parent banks collapse.</td></tr></table></td></tr>
 </table></body></html>
