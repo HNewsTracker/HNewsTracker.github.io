@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150628&i=109158692&w=240&r=109158692-1&t=2'></td><td>2015-06-28 18:45:54</td><td><a href='http://www.reuters.com/article/2015/06/28/us-eurozone-greece-idUSKBN0P40EO20150628?feedType=RSS&feedName=businessNews'>site</a></td><td>The creditors want Greece to cut pensions and raise taxes in ways that Tsipras has long argued would deepen one of the worst economic crises of modern times in a country where a quarter of the workforce is already unemployed.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/1/7/x/image.related.articleLeadwide.620x349.gia16t.png/1436579147577.jpg'></td><td>2015-07-11 01:22:15</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-muse-on-future-path-after-alexis-tsipras-abrupt-reversal-20150711-gia16t.html'>site</a></td><td>Those are the questions being asked across Greece in the wake of Mr Tsipras' abrupt decision to give the creditors nearly all of what they have sought throughout the long and contentious negotiations over keeping Greece afloat.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>Tsipras has suggested he would step aside if Greeks vote "Yes" in Sunday's referendum.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 14:53:42</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=topNews'>site</a></td><td>Already, Tsipras' coalition is under strain as a succession of deputies from the right-wing Independent Greeks, his junior partners, have backed the 'Yes' vote.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150708&i=109455277&w=240&r=109455277-1&t=2'></td><td>2015-07-09 10:41:44</td><td><a href='http://www.reuters.com/article/2015/07/09/us-eurozone-greece-idUSKBN0P40EO20150709?feedType=RSS&feedName=topNews'>site</a></td><td>Such measures may face resistance from the hard-left wing of Tsipras' Syriza party and from his junior coalition partner, the Independent Greeks, after the government won a resounding 'No' to more austerity in a referendum on July 5.</td></tr>
 </table></body></html>

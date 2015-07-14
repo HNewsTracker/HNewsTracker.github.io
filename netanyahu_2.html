@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/_qsiLZ5wQsO.8wJUOiBVBw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b64b45429613b21e7b0f6a7067007a57.jpg'></td><td>2015-07-09 12:55:59</td><td><a href='http://news.yahoo.com/latest-2nd-israeli-held-gaza-bedouin-093504309.html'>site</a></td><td><table><tr><td>The Latest: Netanyahu says Israel working to release men</td></tr><tr><td>In a statement Thursday, Prime Minister Benjamin Netanyahu said he spoke to the family of one of the men, an Israeli Ethiopian, telling them he "has not spared any effort" to return the man to Israel.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 19:53:01</td><td></td><td><a href='netanyahu_2_4.html'>"The only way to reach agreements is through bilateral negotiations [between Israel and Palestine], and we will firmly reject attempts to force international dictates on us," Mr Netanyahu said. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 17:03:53</td><td><a href='http://www.utsandiego.com/news/2015/jun/25/israels-netanyahu-says-better-iran-deal-still/'>site</a></td><td>Netanyahu has dubbed it a "bad deal," saying it would leave Iran with the ability to rapidly obtain nuclear weapons.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-12 09:14:42</td><td></td><td><a href='netanyahu_2_3.html'>Responding to the Iranian supreme leader's call to continue the struggle against the United States regardless of the outcome of nuclear talks, Benjamin Netanyahu says Sunday his country will not accept such a reality. (4)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-12 09:14:42</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27072607.html#storylink=rss'>site</a></td><td>Netanyahu says that Iran "does not hide its intentions" and warned the world against placating it.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-14 11:51:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-14-Iran-Nuclear%20Talks-The%20Latest/id-8af4298d9e8247c38d3a6f06e011936e'>site</a></td><td>Netanyahu has been at the forefront of efforts to block an agreement that would lift sanctions on Iran.</td></tr>
 </table></body></html>

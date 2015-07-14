@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 14,
+            max: 15,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -62,4 +62,5 @@
   <tr><td style='display:none'>0</td><td></td><td>2015-07-12 18:57:05</td><td><a href='http://abcnews.go.com/International/wireStory/latest-pope-stop-flood-prone-paraguayan-slum-32392691'>site</a></td><td>The Latest: Greek Orthodox Metropolitan on Hand for Pope</td></tr>
   <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 19:00:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27073696.html#storylink=rss'>site</a></td><td>The head of the Greek Orthodox Church in South America has had a privileged spot at Pope Francis' events this week.</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-14 10:20:02</td><td><a href='http://abcnews.go.com/Business/wireStory/german-investor-optimism-undeterred-greece-32433763'>site</a></td><td>German Investor Optimism Undeterred by Greece</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-07-14 15:04:45</td><td></td><td><a href='greece_or_greek_or_grexit_62.html'>The experts say Greece has largely failed in previous crackdowns on tax evasion, which has been rampant for generations. (5)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/World/2015/07/01/clinton.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-07-01 22:49:33</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/07/01/22483311.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>Emails show top U.S. officials knew about Hillary Clinton's private email address</td></tr><tr><td>Axelrod said Wednesday that while he knew Clinton had a private email address, "I did not know that she used it exclusively or that she had her server in her home."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 17:12:48</td><td><a href='http://www.nytimes.com/2015/07/12/us/politics/hillary-clinton-to-outline-economic-policy-on-monday.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Hillary Clinton to Outline Economic Policy on Monday</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 17:50:22</td><td><a href='http://www.startribune.com/clinton-to-make-boosting-wages-central-to-her-economic-plan/313812761/'>site</a></td><td>Clinton to outline steps to bolster middle class income in campaign economic speech on Monday</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 20:33:31</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27047974.html#storylink=rss'>site</a></td><td>Clinton plans to make boosting middle-class incomes and wages the focus of her presidential campaign's economic agenda.</td></tr>
 </table></body></html>

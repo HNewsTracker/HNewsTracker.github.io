@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150612&i=108722162&w=240&r=108722162-1&t=2'></td><td>2015-06-13 17:54:02</td><td><a href='http://www.reuters.com/article/2015/06/13/us-eurozone-greece-idUSKBN0OS0E020150613?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras, who was elected in January on promises to end austerity, made it clear he was willing to give ground but with strings attached that German Chancellor Angela Merkel is unlikely to accept.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td>Ahead of the summit, Tsipras spoke by phone with German Chancellor Angela Merkel.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 18:10:16</td><td><a href='http://www.startribune.com/greek-officials-meet-prepare-proposals-for-eurozone-summit/308681621/'>site</a></td><td>Greek Premier Tsipras, ministers discuss strategy, proposals for next week's Eurozone summit</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td>That meeting is meant to seek the basis for a deal that European leaders, including Tsipras, might discuss at an emergency summit later in the day.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31374878.ece/aebdf/ALTERNATES/h342/PANews%20BT_P-8bd34f8e-2093-4d6c-83d4-1d3f28dae5a6_I1.jpg'></td><td>2015-07-14 06:21:16</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/tsipras-faces-bailout-deal-dissent-31374879.html'>site</a></td><td>"This deal introduced many new issues ... we cannot agree with it," he said after meeting Mr Tsipras.</td></tr>
 </table></body></html>

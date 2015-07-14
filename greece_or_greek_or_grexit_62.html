@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,15 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>tsipras</h3>
+    <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150628&i=109158692&w=240&r=109158692-1&t=2'></td><td>2015-06-28 18:45:54</td><td><a href='http://www.reuters.com/article/2015/06/28/us-eurozone-greece-idUSKBN0P40EO20150628?feedType=RSS&feedName=businessNews'>site</a></td><td>The creditors want Greece to cut pensions and raise taxes in ways that Tsipras has long argued would deepen one of the worst economic crises of modern times in a country where a quarter of the workforce is already unemployed.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/1/7/x/image.related.articleLeadwide.620x349.gia16t.png/1436579147577.jpg'></td><td>2015-07-11 01:22:15</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-muse-on-future-path-after-alexis-tsipras-abrupt-reversal-20150711-gia16t.html'>site</a></td><td>Those are the questions being asked across Greece in the wake of Mr Tsipras' abrupt decision to give the creditors nearly all of what they have sought throughout the long and contentious negotiations over keeping Greece afloat.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 15:01:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/14/greece-pledges-to-get-rid-of-tax-evasion-as-a-way-of-life'>site</a></td><td>Greece pledges to get rid of tax evasion as a way of life</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKv0lNp8kcOXDeTOwVqByw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/1cd165db64d32e1f7c0f6a706700900e_original.jpg'></td><td>2015-07-14 15:04:45</td><td><a href='http://finance.yahoo.com/news/greece-pledges-rid-tax-evasion-150445104.html'>site</a></td><td><table><tr><td>The experts say Greece has largely failed in previous crackdowns on tax evasion, which has been rampant for generations.</td></tr><tr><td>This kind of tax dodging is a Greek national pastime, costing the state billions of euros in revenue.</td></tr><tr><td>Greece promised last week to get tough on tax evasion in return for a third European bailout expected to be negotiated over the next month.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:04:56</td><td><a href='http://www.miamiherald.com/news/business/article27206317.html#storylink=rss'>site</a></td><td>More enforcement will be needed, but Artavanis said many parts of Greece rarely see a tax inspector.</td></tr>
 </table></body></html>

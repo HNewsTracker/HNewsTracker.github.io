@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,16 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>tsipras</h3>
+    <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150628&i=109158692&w=240&r=109158692-1&t=2'></td><td>2015-06-28 18:45:54</td><td><a href='http://www.reuters.com/article/2015/06/28/us-eurozone-greece-idUSKBN0P40EO20150628?feedType=RSS&feedName=businessNews'>site</a></td><td>The creditors want Greece to cut pensions and raise taxes in ways that Tsipras has long argued would deepen one of the worst economic crises of modern times in a country where a quarter of the workforce is already unemployed.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/1/7/x/image.related.articleLeadwide.620x349.gia16t.png/1436579147577.jpg'></td><td>2015-07-11 01:22:15</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-muse-on-future-path-after-alexis-tsipras-abrupt-reversal-20150711-gia16t.html'>site</a></td><td>Those are the questions being asked across Greece in the wake of Mr Tsipras' abrupt decision to give the creditors nearly all of what they have sought throughout the long and contentious negotiations over keeping Greece afloat.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 17:04:38</td><td><a href='http://abcnews.go.com/International/wireStory/israels-netanyahu-iran-deal-32027279'>site</a></td><td>Benjamin Netanyahu told a graduating class of pilots Thursday that "it is still not too late to insist on a good deal."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 09:14:42</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27072607.html#storylink=rss'>site</a></td><td>Responding to the Iranian supreme leader's call to continue the struggle against the United States regardless of the outcome of nuclear talks, Benjamin Netanyahu says Sunday his country will not accept such a reality.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 11:51:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-14-Iran-Nuclear%20Talks-The%20Latest/id-8af4298d9e8247c38d3a6f06e011936e'>site</a></td><td>Benjamin Netanyahu said Tuesday that an accord with Iran will allow it "to continue to pursue its aggression and terror in the region."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:25:06</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27190630.html#storylink=rss'>site</a></td><td>Benjamin Netanyahu says the world is now a "much more dangerous place" and criticized Tuesday's agreement as a "stunning historic mistake."</td></tr>
 </table></body></html>
