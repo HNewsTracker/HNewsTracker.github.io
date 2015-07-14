@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/sOLg7viY9rtZHq0qy4NlSQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/eff9f6c18091841c7a0f6a7067003ced_original.jpg'></td><td>2015-06-26 22:15:47</td><td><a href='http://finance.yahoo.com/news/greece-sets-referendum-july-5-221547489.html'>site</a></td><td>Greece sets referendum for July 5 on rescue deal</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 04:09:10</td><td><a href='http://www.miamiherald.com/news/business/article26480347.html#storylink=rss'>site</a></td><td>A banner reading ''NO for democracy and for dignity'' referring to the upcoming referendum is placed outside a Greek Orthodox church at Monastiraki square in central Athens, Saturday, July 4, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/5/0/m/e/image.related.articleLeadwide.620x349.gi5dzf.png/1436072178448.jpg'></td><td>2015-07-05 04:53:45</td><td><a href='http://www.brisbanetimes.com.au/world/polls-open-in-historic-greek-bailout-referendum-20150705-gi5dzf.html'>site</a></td><td>Referendum campaign posters that reads "No" and "Yes" in Greek in Athens, Greece.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/05/74/db/d166cdd5b6d4413d87d1dbef377c7017-69be0247745d4af1918ec168ad14ffa4-8.jpg'></td><td>2015-07-05 17:07:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-votes-on-high-stakes-bailout-referendum/nmrrZ/'>site</a></td><td>Bathers lie on the beach during Greece's referendum day in southern Athens, Sunday, July 5, 2015.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 17:50:07</td><td><a href='http://www.miamiherald.com/news/business/article26562994.html#storylink=rss'>site</a></td><td>A supporter of the No vote waves a Greek flag as celebrates after the results of the referendum in Synatagma square in central Athens, Sunday, July 5, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 13:21:03</td><td><a href='http://www.utsandiego.com/news/2015/jun/21/greece-presents-new-financial-proposals-to/'>site</a></td><td>Tsipras "presented to the three leaders Greece's proposal for a mutually beneficial agreement, which will provide a permanent solution and not just postpone tackling the problem," the press office statement said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 16:14:47</td><td><a href='http://abcnews.go.com/International/wireStory/greece-presents-financial-proposals-european-leaders-31922497'>site</a></td><td>Renzi added that European leaders were working to have an agreement with Greece "in the next hours," but didn't provide any details.</td></tr>
 </table></body></html>

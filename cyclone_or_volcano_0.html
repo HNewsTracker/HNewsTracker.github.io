@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>cyclone or volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 11:08:44</td><td></td><td><a href='cyclone_or_volcano_0_1.html'>A 2010 eruption of Iceland's Eyjafjallajokul volcano produced an ash cloud that caused a week of international aviation chaos, with more than 100,000 flights canceled. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-07-10 11:08:44</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/10/eruption-of-indonesian-volcano-sparks-travel-chaos'>site</a></td><td>The volcano has proven particularly problematic for Australians, who flock to Bali during Australia's school holidays.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 11:09:11</td><td></td><td><a href='cyclone_or_volcano_0_2.html'>Evacuation of residents living near the volcano is still considered unnecessary, but authorities are urging people to wear masks. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 15:15:19</td><td></td><td><a href='cyclone_or_volcano_0_1.html'>MEXICO CITY (AP) " A volcano in western Mexico has erupted, spewing ash more than 4 miles (7 kilometers) into the air and sending lava down its flanks. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 15:15:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11479220&ref=rss'>site</a></td><td><table><tr><td>The activity at the Colima Volcano began Thursday and continued Friday morning.</td></tr><tr><td>The volcano is also known as the Volcano of Fire.</td></tr></table></td></tr>
 </table></body></html>

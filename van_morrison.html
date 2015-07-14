@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>van morrison</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-12 21:33:05</td><td></td><td><a href='van_morrison_0.html'>The Belfast-born Morrison was honored Friday by Queen Elizabeth II for his services to music and tourism in Northern Ireland, the inspiration for many of his classics. (4)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000ab706-642.jpg'></td><td>2015-06-12 22:42:34</td><td><a href='http://www.rte.ie/news/2015/0612/707614-queens-honours-list/'>site</a></td><td>Van Morrison knighted in Queen's honours list</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-15 03:09:04</td><td><a href='http://www.miamiherald.com/sports/article24379024.html#storylink=rss'>site</a></td><td><table><tr><td>Only one pitcher in TCU history has won more games than Preston Morrison, and none has worked more innings.</td></tr><tr><td>Schlossnagle said he wants Morrison well-rested because he anticipates needing the Chicago Cubs' eighth-round draft pick again.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-19 06:51:04</td><td></td><td><a href='van_morrison_2.html'>Honoree Van Morrison performs at the 46th Annual Songwriters Hall Of Fame Induction and Awards Gala at the Marriott Marquis on Thursday, June 18, 2015, in New York. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-15 03:09:04</td><td><a href='http://www.miamiherald.com/sports/article24379024.html#storylink=rss'>site</a></td><td><table><tr><td>Only one pitcher in TCU history has won more games than Preston Morrison, and none has worked more innings.</td></tr><tr><td>Schlossnagle said he wants Morrison well-rested because he anticipates needing the Chicago Cubs' eighth-round draft pick again.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-19 06:51:04</td><td></td><td><a href='van_morrison_0.html'>Morrison and Lady Gaga picked up honorary prizes, while awards also were presented to Nate Ruess and the former CEO of the American Society of Composers Authors and Publishers (ASCAP), John LoFrumento. (4)</a></td></tr>
 </table></body></html>

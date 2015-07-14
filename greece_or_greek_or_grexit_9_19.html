@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td>Another meeting, and again a lack of clear Greek proposals, German Finance Wolgang Schaeuble groused Monday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47975022,width-300,resizemode-4/Euclid-Tsakalotos-Greeces-new-finance-minister.jpg'></td><td>2015-07-07 11:58:03</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Greece-faces-last-chance-to-stay-in-euro-as-cash-runs-out/articleshow/47974144.cms'>site</a></td><td>He did not name names but may have been referring to German finance minister Wolfgang Schaeuble, who has made no secret of his scepticism about Greece's fitness to stay in the euro and last week suggested a possible "temporary" exit.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td><table><tr><td>The Greek government is denying a report that the German finance ministry has proposed a temporary, five-year euro exit for Greece.</td></tr><tr><td>According to the report, the German finance ministry also proposed that the Greek government sells off some 50 billion euros ($56 billion) in unspecified property assets to pay off debts.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-12 10:00:39</td><td><a href='http://www.startribune.com/the-latest-greece-bailout-talks-hinge-on-trust-issues/314127791/'>site</a></td><td>The finance minister of Cyprus, a traditional ally of Greece, says a way can be found to secure Greece's place in the euro.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150712&i=109547919&w=240&r=109547919-1&t=2'></td><td>2015-07-13 00:15:54</td><td><a href='http://www.reuters.com/article/2015/07/13/us-eurozone-greece-idUSKBN0P40EO20150713?feedType=RSS&feedName=topNews'>site</a></td><td>If Greece meets the conditions, the German parliament would meet on Thursday to mandate Merkel and Finance Minister Wolfgang Schaeuble to open the talks on a new loan.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150713001154948815-minihighres.jpg?itok=G-2UngSU'></td><td>2015-07-13 01:02:30</td><td><a href='http://www.sbs.com.au/news/article/2015/07/13/greece-must-do-more-earn-rescue-eurozone-leaders'>site</a></td><td>One diplomat said that was tantamount to turning Greece into a "German protectorate".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/05/50/8149509/5/920x920.jpg'></td><td>2015-06-14 17:46:34</td><td><a href='http://www.sfgate.com/news/world/article/Greece-says-it-will-never-accept-wage-pension-6326500.php'>site</a></td><td>ATHENS, Greece (AP) - Greece will never accept cuts in pensions and wages or extra taxes on necessities such as electricity, a government official says.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 17:48:49</td><td><a href='http://abcnews.go.com/International/wireStory/greece-accept-wage-pension-cuts-31759486'>site</a></td><td>Greece Says It Will Never Accept Wage, Pension Cuts</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 17:55:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11465257&ref=rss'>site</a></td><td>At the same time, Greece also stuck to a hard line on Sunday, with a government official saying that the country will never accept cuts in pensions and wages or extra taxes on necessities such as electricity.</td></tr>
 </table></body></html>

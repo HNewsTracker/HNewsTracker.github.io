@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 07:28:58</td><td></td><td><a href='cia_2_4.html'>And the most interesting accolades are coming from CIA insiders, who marvel at how he manages to slip so much past the agency's censors, portraying the heart-pounding rhythms of on-the-street espionage better that any novelist in recent memory. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 08:14:10</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article23737729.html#storylink=rss'>site</a></td><td>The sum total of the CIA's work has been a force for good, he said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 12:07:50</td><td></td><td><a href='cia_2_3.html'>In this June 4, 2015, photo, CIA operative turned best-selling author, Jason Matthews, a 30-year CIA veteran and author of the new novel, "Palace of Treason," poses for a portrait in Washington. (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 06:15:04</td><td></td><td><a href='cia_2_3.html'>Camp Chapman was the site where seven CIA employees and a Jordanian intelligence officer were killed in a Pakistani Taliban suicide bombing in December 2009. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 06:15:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27072271.html#storylink=rss'>site</a></td><td>Six more agency personnel were wounded in what was considered the most lethal attack for the CIA since the war in Afghanistan began in 2001 and possibly even since the 1983 embassy bombing in Beirut.</td></tr>
 </table></body></html>

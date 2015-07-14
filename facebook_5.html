@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 12:36:06</td><td></td><td><a href='facebook_5_6.html'>NEW YORK (AP) - Yahoo's cybersecurity chief says he's heading to Facebook to become its chief security officer. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 13:21:08</td><td><a href='http://www.ctvnews.ca/sci-tech/yahoo-s-stamos-joining-facebook-as-its-chief-security-officer-1.2439714'>site</a></td><td>Alex Stamos said in a Facebook post that he will be joining the social networking company on Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/b/h/a/m/image.related.articleLeadwide.620x349.gibh4s.png/1436788708971.jpg'></td><td>2015-07-13 11:51:52</td><td><a href='http://www.smh.com.au/world/australian-woman-jailed-in-abu-dhabi-for-facebook-post-20150713-gibh4s.html'>site</a></td><td>A Facebook page called Savvy Women Abu Dhabi said that Ms Magi had lived in Abu Dhabi since early 2012 and she is there to teach Emirate women art, illustration and graphic design.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/b/h/a/m/image.related.articleLeadwide.620x349.gibh4s.png/1436796931875.jpg'></td><td>2015-07-13 14:15:42</td><td><a href='http://www.smh.com.au/world/australian-woman-jailed-in-abu-dhabi-for-facebook-post-20150713-gibh4s.html'>site</a></td><td><table><tr><td>Jodi Magi, aged 39, posted a photo to Facebook she had taken of a car parked across two disabled parking spaces outside her apartment in Abu Dhabi.</td></tr><tr><td>Australian woman jailed in Abu Dhabi for Facebook...</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 07:58:29</td><td><a href='http://time.com/3956784/abu-dhabi-uae-jodi-magi-facebook-disabled-parking-photo-jailed/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>An Australian Woman Is to Be Deported From the UAE for ‘Writing Bad Words’ on Facebook</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 07:41:24</td><td><a href='http://www.utsandiego.com/news/2015/jun/13/egypt-opens-borders-with-gaza-for-the-first-time/'>site</a></td><td><table><tr><td>Egypt opens borders with Gaza for the first time in months</td></tr><tr><td>Egypt has kept it mostly closed since the militant Hamas group seized control of the coastal strip in 2007.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 07:41:37</td><td><a href='http://news.yahoo.com/egypt-opens-borders-gaza-first-time-months-074137951.html'>site</a></td><td>Last month, it allowed the return of Palestinians stranded in Egypt.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/yWqA1haM4NiLugo_XRp0WA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/fbcd124866d7421a790f6a7067001c11.jpg'></td><td>2015-06-13 11:48:27</td><td><a href='http://news.yahoo.com/egypt-opens-borders-gaza-first-time-months-074137951.html'>site</a></td><td>RAFAH, Gaza Strip (AP) - Egypt opened its borders with the Gaza Strip for the first time in months Saturday, allowing Palestinians to enter and leave the isolated coastal strip.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 12:08:21</td><td><a href='http://www.foxnews.com/world/2015/06/14/separate-bus-crashes-in-egypt-kill-23-injure-17-others/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>CAIRO - Officials say two separate road accidents in Egypt Sunday have killed 23 Egyptians and injured 17 others.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 12:15:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11465212&ref=rss'>site</a></td><td>Bus crashes in Egypt kill 23, injure 17 others</td></tr>
 </table></body></html>

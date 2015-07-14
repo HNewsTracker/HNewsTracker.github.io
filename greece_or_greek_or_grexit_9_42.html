@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150619&i=108919947&w=240&r=108919947-1&t=2'></td><td>2015-06-19 22:01:05</td><td><a href='http://www.reuters.com/article/2015/06/19/us-eurozone-greece-pm-idUSKBN0OZ0DP20150619?feedType=RSS&feedName=businessNews'>site</a></td><td>"There will be a solution based on respecting EU rules and democracy which would allow Greece to return to growth in the euro," Tsipras said in a statement issued by his office.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=worldNews'>site</a></td><td>Lew voiced hope such an outcome "will allow Greece to make difficult but necessary fiscal and structural reforms, return to growth, and achieve debt sustainability within the euro zone," the Treasury statement said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:43:57</td><td><a href='http://www.foxnews.com/world/2015/06/20/greek-premier-tsipras-ministers-discuss-strategy-proposals-for-next-week/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>ATHENS, Greece - Two days before a crucial summit of Eurozone leaders, Greek ministers are huddling to discuss strategy and assemble a new package of proposals, officials say.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:50:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11468708&ref=rss'>site</a></td><td>Greek officials meet, prepare proposals for Eurozone summit</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/6/i/p/image.related.articleLeadwide.620x349.ghykvh.png/1435293816058.jpg'></td><td>2015-06-26 04:43:45</td><td><a href='http://www.brisbanetimes.com.au/world/germany-and-france-tell-greece-to-sort-debt-deal-this-weekend-20150626-ghykvh.html'>site</a></td><td>"After the comprehensive Greek proposals, I'm confident we'll reach a compromise that will help the eurozone and Greece to overcome the crisis," Tsipras said as he arrived at the summit.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-11 15:19:07</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/11/greeks-heading-to-brussels-for-crucial-talks'>site</a></td><td>Over and over, finance ministers and top officials of the eurozone arrived for a key meeting on Greece's package with the same message - we don't trust fully you.</td></tr>
 </table></body></html>

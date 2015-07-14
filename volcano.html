@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 13:12:59</td><td></td><td><a href='volcano_7.html'>JAKARTA, Indonesia (AP) - A volcano in western Indonesia unleashed a new powerful burst high into the sky on Saturday, sending hot ash far down the mountain's slopes, an official said. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 20:53:00</td><td></td><td><a href='volcano_8.html'>Six scientists who have been living under a dome on the slopes of a dormant Hawaii volcano for eight months to simulate life on Mars have emerged from isolation. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 05:46:08</td><td></td><td><a href='volcano_0.html'>Ash spewing from a volcano on Indonesia's main island of Java has sparked chaos for holidaymakers as airports close and international airlines cancel flights to tourist hotspot Bali. (7)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-10 15:15:21</td><td></td><td><a href='volcano_9.html'>A volcano in western Mexico has erupted, spewing ash more than 4 miles (7 kilometers) into the air and sending lava down its flanks. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-12 04:26:55</td><td></td><td><a href='volcano_3.html'>Ash and cinders spewed Saturday from the Colima Volcano in western Mexico, prompting authorities to close the airport in the state capital of Colima and order the evacuation of a half dozen hamlets on the flanks of the peak. (7)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-13 08:25:17</td><td></td><td><a href='volcano_5.html'>At just 361 meters (1,184 feet) elevation, the volcano on the Pacific archipelago of Vanuatu is particularly accessible, and spectacularly active. (7)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 20:53:00</td><td></td><td><a href='volcano_7.html'>Six scientists who have been living under a dome on the slopes of a dormant Hawaii volcano for eight months to simulate life on Mars have emerged from isolation. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 05:46:08</td><td></td><td><a href='volcano_0.html'>Ash spewing from a volcano on Indonesia's main island of Java has sparked chaos for holidaymakers as airports close and international airlines cancel flights to tourist hotspot Bali. (7)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 15:15:21</td><td></td><td><a href='volcano_8.html'>A volcano in western Mexico has erupted, spewing ash more than 4 miles (7 kilometers) into the air and sending lava down its flanks. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-12 04:26:55</td><td></td><td><a href='volcano_3.html'>Ash and cinders spewed Saturday from the Colima Volcano in western Mexico, prompting authorities to close the airport in the state capital of Colima and order the evacuation of a half dozen hamlets on the flanks of the peak. (7)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-13 08:25:17</td><td></td><td><a href='volcano_5.html'>At just 361 meters (1,184 feet) elevation, the volcano on the Pacific archipelago of Vanuatu is particularly accessible, and spectacularly active. (7)</a></td></tr>
 </table></body></html>

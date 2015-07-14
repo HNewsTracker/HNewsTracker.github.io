@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 11:48:12</td><td></td><td><a href='egypt_2_4.html'>The Rafah border crossing will operate for six hours a day for the coming three days and 15,000 people Palestinians have applied to exit to Egypt, said Maher Abu Sabha, head of the Gaza side of the crossing. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 11:48:27</td><td></td><td><a href='egypt_2_3.html'>RAFAH, Gaza Strip (AP) - Egypt opened its borders with the Gaza Strip for the first time in months Saturday, allowing Palestinians to enter and leave the isolated coastal strip. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 12:50:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27031450.html#storylink=rss'>site</a></td><td>Italian Premier Matteo Renzi spoke with Egyptian President Abdel Fattah el-Sissi after the attack, saying in a statement: "We will not leave Egypt alone: Italy and Egypt are and will always be together in the fight against terrorism."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/AP_Egypt_explosion_150711_DC_16x9_992.jpg'></td><td>2015-07-11 12:50:24</td><td><a href='http://abcnews.go.com/International/wireStory/egyptian-official-explosion-italian-consulate-cairo-damages-building-32376971'>site</a></td><td>A policeman stands at the base of the crumbled facade of the Italian consulate following a blast that killed at least one person in Cairo, Egypt, Saturday, July 11, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-11 13:42:59</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/11/egypt-official-explosion-outside-italian-consulate-in-cairo'>site</a></td><td><table><tr><td>Car bombing at Italian Consulate in Egypt's capital kills 1</td></tr><tr><td>No group immediately claimed responsibility for the blast, though Egypt faces threats from insurgent factions including an Islamic State affiliate in its restive Sinai Peninsula that the military says killed at least 17 soldiers in a recent assault there.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 13:45:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27031450.html#storylink=rss'>site</a></td><td>Italian Foreign Minister Paolo Gentiloni said that Italy would increase security at Italian sites in Cairo and greater Egypt.</td></tr>
 </table></body></html>

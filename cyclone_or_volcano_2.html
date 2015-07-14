@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>cyclone or volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 20:53:00</td><td><a href='http://tvnz.co.nz/world-news/scientists-emerge-isolated-dome-hawaii-volcano-slope-6337424?ref=rss'>site</a></td><td>Six scientists who have been living under a dome on the slopes of a dormant Hawaii volcano for eight months to simulate life on Mars have emerged from isolation.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-13 21:12:13</td><td><a href='http://www.usnews.com/news/science/news/articles/2015/06/13/scientists-emerge-from-isolated-dome-on-hawaii-volcano-slope'>site</a></td><td>Scientists emerge from isolated dome on Hawaii volcano slope</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 11:08:44</td><td></td><td><a href='cyclone_or_volcano_2_3.html'>A 2010 eruption of Iceland's Eyjafjallajokul volcano produced an ash cloud that caused a week of international aviation chaos, with more than 100,000 flights canceled. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-07-10 11:08:44</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/10/eruption-of-indonesian-volcano-sparks-travel-chaos'>site</a></td><td>The volcano has proven particularly problematic for Australians, who flock to Bali during Australia's school holidays.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 11:09:11</td><td></td><td><a href='cyclone_or_volcano_2_4.html'>Evacuation of residents living near the volcano is still considered unnecessary, but authorities are urging people to wear masks. (2)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/11/46580c8c1265081a790f6a7067005f29_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-06-11 07:10:25</td><td><a href='http://www.utsandiego.com/news/2015/jun/11/retired-cia-operative-becomes-breakout-spy/'>site</a></td><td><table><tr><td>WASHINGTON (AP) - When Jason Matthews retired after more than three decades as a CIA operative, writing fiction proved a form of therapy.</td></tr><tr><td>Matthews speaks six languages and helped manage seven CIA stations, sometimes working in tandem with his wife, Suzanne, also a retired CIA officer.</td></tr><tr><td>Human intelligence, or HUMINT, is the "the patrimony of CIA," Matthews says.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 07:28:58</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/06/11/retired-cia-operative-becomes-breakout-spy-novelist'>site</a></td><td>Retired CIA operative becomes breakout spy novelist</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/37/01/42/8132767/5/920x920.jpg'></td><td>2015-06-11 12:07:50</td><td><a href='http://www.sfgate.com/news/politics/article/Retired-CIA-operative-becomes-breakout-spy-6320320.php'>site</a></td><td>In this June 4, 2015, photo, CIA operative turned best-selling author, Jason Matthews, a 30-year CIA veteran and author of the new novel, "Palace of Treason," poses for a portrait in Washington.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 06:15:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27072271.html#storylink=rss'>site</a></td><td><table><tr><td>Camp Chapman was the site where seven CIA employees and a Jordanian intelligence officer were killed in a Pakistani Taliban suicide bombing in December 2009.</td></tr><tr><td>It's not clear whether the CIA still operates out of Camp Chapman.</td></tr></table></td></tr>
 </table></body></html>
