@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,7 +49,8 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 05:46:08</td><td></td><td><a href='volcano_0.html'>Ash spewing from a volcano on Indonesia's main island of Java has sparked chaos for holidaymakers as airports close and international airlines cancel flights to tourist hotspot Bali. (7)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 15:15:21</td><td></td><td><a href='volcano_7.html'>A volcano in western Mexico has erupted, spewing ash more than 4 miles (7 kilometers) into the air and sending lava down its flanks. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 15:15:21</td><td></td><td><a href='volcano_8.html'>A volcano in western Mexico has erupted, spewing ash more than 4 miles (7 kilometers) into the air and sending lava down its flanks. (2)</a></td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-07-12 04:26:55</td><td></td><td><a href='volcano_3.html'>Ash and cinders spewed Saturday from the Colima Volcano in western Mexico, prompting authorities to close the airport in the state capital of Colima and order the evacuation of a half dozen hamlets on the flanks of the peak. (7)</a></td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-07-13 08:25:17</td><td></td><td><a href='volcano_5.html'>At just 361 meters (1,184 feet) elevation, the volcano on the Pacific archipelago of Vanuatu is particularly accessible, and spectacularly active. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 16:23:11</td><td><a href='http://www.smh.com.au//breaking-news-national/bali-return-flights-hinge-on-wind-20150715-3za6u.html'>site</a></td><td>Stephanie Bond, from the Volcanic Ash Advisory Centre, says light variable winds around the volcano, which lies about 150km west of Bali's Denpasar airport, are unpredictable.</td></tr>
 </table></body></html>
