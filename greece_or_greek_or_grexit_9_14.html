@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,14 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-06-14 18:37:10</td><td><a href='http://finance.yahoo.com/news/greece-still-ready-negotiate-solution-180051732.html'>site</a></td><td>"Although during the leaders' meeting Greece was told to negotiate with the institutions, the institutions today said that they were not authorized to negotiate further," a Greek government official told Reuters.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 14:37:00</td><td><a href='http://www.npr.org/sections/thetwo-way/2015/06/20/415990263/greece-pledges-new-proposal-to-resolve-debt-crisis?utm_medium=RSS&utm_campaign=storiesfromnpr'>site</a></td><td>"We will try to supplement our proposal so that we get closer to a solution," State Minister Alekos Flabouraris told Greek Mega television in a morning news show, according to Reuters.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-04 09:06:33</td><td><a href='http://news.yahoo.com/greek-finance-minister-accuses-creditors-terrorism-eve-referendum-082946525.html'>site</a></td><td>"What they're doing with Greece has a name -- terrorism," he told the Spanish El Mundo daily.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/7e5/report-on-business/article25033715.ece/ALTERNATES/w220/560488467-477632014.JPG'></td><td>2015-06-21 16:01:04</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-offers-new-proposals-ahead-of-emergency-summit/article25049138/?cmpid=rss1'>site</a></td><td>"Either Greece declares itself willing for a viable solution or the country must leave the euro. The euro zone could cope with the consequences of a Greek exit," he said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-open-higher-following-gains-in-european-/nmpyy/'>site</a></td><td>WALL STREET: Wall Street closed higher on Wednesday on hopes that a deal could be reached between Greece and its creditors.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 06:35:08</td><td><a href='http://www.startribune.com/would-euro-departure-help-or-hurt-europe-s-currency-union/311627101/'>site</a></td><td>A number of economists, however, think a Greek exit could cause long-lasting damage to the euro.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>For the long term, a Greek exit would disrupt the euro's "Hotel California" principle: that, as the Eagles put it, you can "check out any time you like, but you can never leave."</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/06/4431b24e19d2671e7b0f6a7067004551_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-06 15:44:00</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/06/whats-next-as-greece-stumbles-toward-euro-exit/'>site</a></td><td>What's next, as Greece stumbles toward euro exit</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-07 11:31:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/greek-pm-tsipras-races-to-restart-talks-after-vote-win'>site</a></td><td>The situation is urgent - without a deal, Greece's banks could go bust within days, the first step in the country's potential exit from the euro currency union.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww3.hdnux.com/photos/37/46/40/8284214/15/square_gallery_thumb.jpg'></td><td>2015-07-09 22:38:04</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-EU-economics-chief-says-Greece-deal-6374574.php'>site</a></td><td>Hopes that Greece can get a rescue deal that will prevent a catastrophic exit from the euro rose on Thursday, after key creditors said they were open to discussing how to ease the country's debt load, a long-time sticking point in their talks.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-12 09:41:51</td><td><a href='http://www.reuters.com/article/2015/07/12/eurozone-greece-reaction-idUSL5N0ZS04J20150712?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Highlighting the reluctance to grant another rescue, Germany's finance ministry floated proposals demanding stronger Greek measures or a five-year "time-out" from the euro zone.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-13 08:00:31</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480263&ref=rss'>site</a></td><td>Greece reaches deal with creditors, avoids euro exit</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-15 06:34:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/what-relief-greek-economy-on-its-knees-despite-bailout-deal'>site</a></td><td>ATHENS, Greece (AP) - Greece has a tentative rescue deal, but relief that it is not falling out of the euro is unlikely to last long: its economy has taken a huge hit.</td></tr>
 </table></body></html>

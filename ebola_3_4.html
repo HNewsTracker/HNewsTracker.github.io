@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -53,4 +53,5 @@
   <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/33/17/8238046/7/square_gallery_thumb.jpg'></td><td>2015-06-30 19:53:46</td><td><a href='http://www.sfgate.com/news/medical/article/Liberia-quarantines-community-where-corpse-tested-6357541.php'>site</a></td><td><table><tr><td>Liberia quarantines an area where new Ebola case appeared</td></tr><tr><td>Liberian authorities on Tuesday quarantined an area where the corpse of the boy was found, sparking fears this West African country could face another outbreak of the disease nearly two months after being declared Ebola-free.</td></tr></table></td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-07-01 18:29:33</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/01/2nd-ebola-case-declared-in-liberia-as-health-workers-protest'>site</a></td><td>2nd Ebola case declared in Liberia as health workers protest</td></tr>
   <tr><td style='display:none'>4</td><td></td><td>2015-07-01 18:29:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/2nd-ebola-case-declared-in-liberia-as-health-worke/nmp4R/'>site</a></td><td><table><tr><td>Health Minister Bernice Dahn said Liberia has paid hazard benefits to "99 percent" of people who worked in the Ebola treatment units in addition to their regular salaries.</td></tr><tr><td>Also Wednesday, workers exhumed the body of the 17-year-old male student whose infection, detected after his death, sparked fears of the return of Ebola to Liberia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-15 12:05:04</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/15/liberia-confirms-2nd-ebola-death-in-resurgent/'>site</a></td><td><table><tr><td>Liberia confirms 2nd Ebola death in resurgent outbreak</td></tr><tr><td>Liberia lost more than 4,800 lives to Ebola before it contained transmission in May. These are the first known cases since then.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 00:02:28</td><td><a href='http://news.sky.com/story/1501619/uk-pulls-spies-after-snowden-files-cracked'>site</a></td><td>"Snowden has done incalculable damage. In some cases the agencies have been forced to intervene and lift their agents from operations to prevent them from being identified and killed."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 14:29:00</td><td><a href='http://www.cbc.ca/news/world/russia-china-crack-edward-snowden-files-u-k-pulls-out-spies-1.3112907?cmp=rss'>site</a></td><td>"As to the specific allegations this morning, we never comment on operational intelligence matters so I'm not going to talk about what we have or haven't done in order to mitigate the effect of the Snowden revelations, but nobody should be in any doubt that Edward Snowden has caused immense damage," he told Sky News.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/World/2015/06/14/snowden_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-06-14 18:47:26</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/06/14/22452086.html?cid=rssnewsworld'>site</a></td><td>British Foreign Secretary Philip Hammond said Snowden had done a huge amount of damage to the West's ability to protect its citizens.</td></tr>
 </table></body></html>

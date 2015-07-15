@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150614&t=2&i=1056179873&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5D0E7'></td><td>2015-06-14 17:06:26</td><td><a href='http://www.reuters.com/article/2015/06/14/us-storm-carlos-mexico-idUSKBN0OU0UI20150614?feedType=RSS&feedName=environmentNews'>site</a></td><td>Meanwhile on the other side of the country, a low pressure system in the Gulf of Mexico was producing showers on the coast of Guatemala, Belize, and the Yucatan peninsula, and it could become a tropical storm in the next two days, the NHC said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 04:02:48</td><td><a href='http://abcnews.go.com/International/wireStory/tropical-storm-carlos-batters-mexicos-southwest-coast-31766312'>site</a></td><td>Officials ordered schools closed Monday and readied shelters along Mexico's southwestern coast as Tropical Storm Carlos battered beaches with high waves and strong wind as it swirled just offshore.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/YT.6T8l55W004uOeekXulg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ0NztpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/bb27ac3b77d1141d7b0f6a706700d3ae.jpg'></td><td>2015-07-02 20:49:35</td><td><a href='http://news.yahoo.com/cartel-land-shows-good-bad-vigilantes-mexico-us-175859421.html'>site</a></td><td>The film, with the Academy Award-winning director Kathryn Bigelow as executive producer, opens in Mexico on Thursday, in New York on Friday and later in other U.S. cities.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-02 20:55:06</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article26056504.html#storylink=rss'>site</a></td><td>The film opens on July 2, 2015 in Mexico, a day later in New York and and later in other U.S. cities.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-02 20:55:06</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article26056504.html#storylink=rss'>site</a></td><td>"The central question I'm trying to answer in this film is whether it's just for citizens to take the law into their own hands," Heineman said at a recent news conference in Mexico City.</td></tr>
 </table></body></html>

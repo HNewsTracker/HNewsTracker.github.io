@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-11T235952Z_1_LYNXNPEB6A0M5_RTROPTP_2_USA-SPORT.JPG?itok=L6tuJQxk'></td><td>2015-07-12 01:02:56</td><td><a href='http://www.sbs.com.au/news/article/2015/07/12/mexicos-pacheco-wins-springboard-gold-earns-rio-berth'>site</a></td><td>TORONTO (Reuters) - Mexico's Rommel Pacheco won the gold medal in men's 3m springboard at the Pan American Games on Saturday to earn an automatic qualifying spot for the 2016 Rio Olympics.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 02:50:02</td><td><a href='http://www.reuters.com/article/2015/07/13/us-games-panam-olympics-diving-idUSKCN0PN01120150713?feedType=RSS&feedName=sportsNews'>site</a></td><td>Canada's Abel, Mexico's Garcia win diving gold, earn Rio berth</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 15:29:27</td><td><a href='http://www.reuters.com/article/2015/06/28/us-usa-newmexico-boyscout-idUSKCN0P80PO20150628?feedType=RSS&feedName=domesticNews'>site</a></td><td><table><tr><td>A Boy Scout was killed when a flash flood triggered by heavy rains swept through a canyon on a New Mexico ranch where he was camping, authorities said on Sunday.</td></tr><tr><td>The boy was swept away in flood waters in the North Ponil Canyon, the New Mexico station said.</td></tr><tr><td>A spokesman for the New Mexico State Police could not immediately be reached for comment.</td></tr><tr><td>Some 20,000 Boy Scouts visit the 214-square-mile Philmont ranch in northern New Mexico annually for backpacking, camping and other programs, according to its website.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 15:30:54</td><td><a href='http://news.yahoo.com/boy-scout-dies-flash-flood-while-camping-mexico-153054001.html'>site</a></td><td>CIMARRON, N.M. (AP) - New Mexico State Police say a Boy Scout on a camping trip with his troop has died after he and three other teens were swept away in a flash flood.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 17:16:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article25705087.html#storylink=rss'>site</a></td><td>The teen was one of eight Boy Scouts participating in a 12-day trek at the Philmont Scout Ranch when the flooding hit, New Mexico State Police spokesman Chad Pierce said.</td></tr>
 </table></body></html>

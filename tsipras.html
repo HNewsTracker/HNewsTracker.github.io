@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 05:13:30</td><td></td><td><a href='tsipras_0.html'>Greek Prime Minister Alexis Tsipras was defiant, urging voters to reject creditors' demands, insisting a "No" vote in next Sunday's referendum would strengthen Athens' negotiating hand. (74)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 05:13:30</td><td></td><td><a href='tsipras_0.html'>Greek Prime Minister Alexis Tsipras was defiant, urging voters to reject creditors' demands, insisting a "No" vote in next Sunday's referendum would strengthen Athens' negotiating hand. (78)</a></td></tr>
   <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/AP150624080213_140x93.jpg'></td><td>2015-07-13 08:15:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480272&ref=rss'>site</a></td><td>BRUSSELS (AP) " Greece's Tsipras says deal allows Greece to stand on own feet, averted "extreme measures".</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 09:29:30</td><td><a href='http://www.independent.co.uk/news/business/news/greece-news-live-alexis-tsipras-admits-he-got-a-bad-deal-from-brussels-ahead-of-parliamentary-vote--and-rules-out-resigning-10389869.html'>site</a></td><td>"I am fully assuming my responsibilities, for mistakes and for oversights, and for the responsibility of signing a text that I do not believe in, but that I am obliged to implement," Tsipras said.</td></tr>
 </table></body></html>

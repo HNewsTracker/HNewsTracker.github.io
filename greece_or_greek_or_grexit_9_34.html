@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 21:27:11</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/stocks-up-ahead-of-greece-decision-chinese-stocks-plunge'>site</a></td><td>While Greece has been the main driver in financial markets recent weeks, worries over China have risen the list of concerns.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 05:07:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25747720.html#storylink=rss'>site</a></td><td><table><tr><td>"Most traders are well prepped over the possible fallout of Greece. It's guessing which card will fall next that's the difficult bit," said Nicholas Teo, analyst at CMC Markets in Singapore.</td></tr><tr><td>If Greece defaults and switches to a new currency, it's sure to shake global financial markets.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/07/247976c86b65931e7b0f6a70670071db_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-08 06:23:55</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/china-leads-dive-in-asia-stocks-as-greece-rattles/'>site</a></td><td>"Still, for traders there are only two games in town and these remain China's equity markets and the Greek negotiations."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/10/72/f9/4cd0d6169f9f4465bcbb14277df4c5d4-60a8fd8e71c24ca2be414e631b642799-0.jpg'></td><td>2015-07-10 11:14:16</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-to-sell-last-ditch-deal-to-relucta/nmwYc/'>site</a></td><td>Greece's Tsipras to sell austerity deal to reluctant party</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 00:55:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26934703.html#storylink=rss'>site</a></td><td>He added that he doesn't have the right to hide from the Greek people that the measures Greece must take are far from his left-wing party's pre-election pledges.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 05:29:18</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27190549.html#storylink=rss'>site</a></td><td>Since his election in January, the youthful Tsipras has faced intense pressure to backpedal on many of his promises to Greece's exhausted electorate.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>Dissent in Greece over austerity deal grows ahead of vote</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/7c/6f/543c75cc1136487b8016ed9a7a6e9897-99116c2b650b47438d532092b2ce1202-14.jpg'></td><td>2015-07-15 04:31:40</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/dissent-in-greece-over-austerity-deal-grows-ahead-/nmy2J/'>site</a></td><td>Many in Tsipras' party have indicated they will refuse to vote for the deal because it goes back on election pledges to repeal austerity measures that have been imposed on Greece for years.</td></tr>
 </table></body></html>

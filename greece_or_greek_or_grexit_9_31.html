@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 20:41:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/29/the-latest-french-minister-sees-greek-moment-of-truth'>site</a></td><td>European Union President Donald Tusk has warned the Greek people that a "no" vote in the referendum won't give their government more leverage to seek a better deal with Greece's creditors.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>European Council President Donald Tusk retorted in a tweet: "Europe wants to help Greece. But cannot help anyone against their own will. Let's wait for the results of the Greek referendum."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td><table><tr><td>Dimitris is voting "yes" because he fears Greece would be in danger if it leaves the European Union.</td></tr><tr><td>His daughter Alexandra is voting "no" because she is tired of richer European nations bossing Greece around.</td></tr></table></td></tr>
 </table></body></html>

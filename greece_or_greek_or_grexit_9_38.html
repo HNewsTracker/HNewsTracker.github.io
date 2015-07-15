@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-07-06 13:46:52</td><td><a href='http://finance.yahoo.com/news/mohamed-el-erian-grexit-high-130330746.html'>site</a></td><td><table><tr><td>Earlier, Ewald Nowotny, a member of the European Central Bank's governing council, told CNBC the euro nations all have an interest in keeping Greece in the single currency.</td></tr><tr><td>When asked about whether he's optimistic that Greece can remain in the euro, the Austrian central bank governor told CNBC's " Squawk Box " that it's not a matter of being optimistic, but a matter of being "realistic."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26032012.html#storylink=rss'>site</a></td><td>A strong "No" vote, he argued, would help Greece win a new deal with the eurozone's rescue mechanism that would include terms to make the country's 320 billion euro national debt sustainable.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/09/be/89/b83626de333e41c8951f22ef0872759d-89c39f46c9974064b391f12f6ee7aeab-0.jpg'></td><td>2015-07-09 12:10:04</td><td><a href='http://www.daytondailynews.com/ap/ap/business/easier-terms-for-greece-could-open-a-can-of-worms-/nmt28/'>site</a></td><td>Eurozone governments taking a tough line on Greece's demand for debt relief and easier bailout terms fear opening a can of worms.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 00:55:05</td><td><a href='http://www.miamiherald.com/news/business/article26934703.html#storylink=rss'>site</a></td><td>But he said it was the only chance for Greece to win a much-needed bailout that will include measures to address the country's debt and will provide adequate financing.</td></tr>
 </table></body></html>

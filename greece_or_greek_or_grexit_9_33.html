@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:26:40</td><td><a href='http://news.yahoo.com/western-union-restarts-money-transfer-greece-132640414--sector.html'>site</a></td><td><table><tr><td>Western Union restarts money transfer service in Greece</td></tr><tr><td>(Reuters) - Western Union Co said it restarted money transfer service in Greece, allowing customers in the country to receive funds from overseas.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td>Hollande is urging Greece to find an agreement at a Monday summit in Brussels between Greece and its creditors.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 10:29:11</td><td><a href='http://www.smh.com.au//breaking-news-world/eu-summit-on-greece-scrapped-20150712-3z5ra.html'>site</a></td><td>EU summit on Greece scrapped</td></tr>
 </table></body></html>

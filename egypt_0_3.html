@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,15 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>fifa</h3>
+    <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 18:03:36</td><td><a href='http://news.yahoo.com/fifa-bans-2018-2022-world-cup-bids-inspector-154559106.html'>site</a></td><td>Mayne-Nicholls was appointed by FIFA in 2010 to lead a six-member team evaluating the 2018-2022 World Cup bidders.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 18:05:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article26579593.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA's ethics committee gave no reason for its decision to suspend Harold Mayne-Nicholls, a former president of Chile's football federation who is disputing the sanction.</td></tr><tr><td>Mayne-Nicholls was considering standing in the FIFA presidential election when his ethics case was reported last year.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-06 18:05:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article26579593.html#storylink=rss'>site</a></td><td>The official chosen by FIFA to inspect 2018 and 2022 World Cup hosting candidates was banned from soccer for seven years on Monday for breaking ethics rules.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 19:35:52</td><td><a href='http://www.reuters.com/article/2015/06/30/us-egypt-anniversary-court-idUSKCN0PA1W120150630?feedType=RSS&feedName=worldNews'>site</a></td><td>Western governments have criticized the mass death sentences but are unlikely to take strong measures against Egypt, seen as a vital partner for security in a region beset by turmoil.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/32/74/8236805/5/square_gallery_thumb.jpg'></td><td>2015-06-30 19:52:13</td><td><a href='http://www.sfgate.com/news/crime/article/Egypt-prepares-for-burial-of-slain-prosecutor-6357320.php'>site</a></td><td>Despite an international outcry against legal abuses and lack of due process, Egypt has waged a 2-year-old crackdown that has led to thousands of arrests, mass convictions and death sentences.</td></tr>
 </table></body></html>
