@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>european games</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 17:32:03</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article24194872.html#storylink=rss'>site</a></td><td>IOC's Bach praises European Games harmony</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 17:35:28</td><td></td><td><a href='european_games_0.html'>For the next edition of the European Games in 2019, however, organizers hope to bring in top-level athletics and swimming, hoping that the other 18 sports on the program in Azerbaijan have built an attractive brand. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 18:50:23</td><td></td><td><a href='european_games_2.html'>Actors perform during the closing ceremony of the 2015 European Games in Baku, Azerbaijan, Sunday, June 28, 2015. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:35:28</td><td></td><td><a href='european_games_0.html'>For the next edition of the European Games in 2019, however, organizers hope to bring in top-level athletics and swimming, hoping that the other 18 sports on the program in Azerbaijan have built an attractive brand. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 18:50:23</td><td></td><td><a href='european_games_2.html'>Actors perform during the closing ceremony of the 2015 European Games in Baku, Azerbaijan, Sunday, June 28, 2015. (3)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 19:21:45</td><td><a href='http://www.reuters.com/article/2015/06/14/us-eurozone-greece-idUSKBN0OS0E020150614?feedType=RSS&feedName=worldNews'>site</a></td><td>"While some progress was made, the talks did not succeed as there remains a significant gap between the plans of the Greek authorities and the joint requirements of Commission, ECB and IMF," it said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 19:45:41</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/14/greece-says-it-will-never-accept-wage-pension-cuts'>site</a></td><td>An EU Commission official, who refused to be identified because of the sensitivity of the negotiations, said that "the talks did not succeed as there remains a significant gap between the plans of the Greek authorities and" the demands of the international creditors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 13:41:48</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/exposed-to-greek-banks-balkans-brace-for-trouble/'>site</a></td><td><table><tr><td>Millions of people in Serbia, Albania, Bulgaria, Macedonia and Romania have their deposits in Greek bank subsidiaries in their own countries, putting the Balkans on the front line in the Greek crisis.</td></tr><tr><td>Though Greece's limits on cash withdrawals have not extended to subsidiaries in the Balkans, the deposits could be at risk if the parent banks collapse.</td></tr></table></td></tr>
 </table></body></html>

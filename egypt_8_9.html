@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 19:07:16</td><td><a href='http://www.sfgate.com/news/crime/article/Egypt-orders-retrial-for-militants-accused-of-6325141.php'>site</a></td><td>Egypt sentences 23 to prison for killing 4 Shiite men</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 19:35:52</td><td><a href='http://www.reuters.com/article/2015/06/30/us-egypt-anniversary-court-idUSKCN0PA1W120150630?feedType=RSS&feedName=worldNews'>site</a></td><td>Western governments have criticized the mass death sentences but are unlikely to take strong measures against Egypt, seen as a vital partner for security in a region beset by turmoil.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/37/32/74/8236805/5/square_gallery_thumb.jpg'></td><td>2015-06-30 19:52:13</td><td><a href='http://www.sfgate.com/news/crime/article/Egypt-prepares-for-burial-of-slain-prosecutor-6357320.php'>site</a></td><td>Despite an international outcry against legal abuses and lack of due process, Egypt has waged a 2-year-old crackdown that has led to thousands of arrests, mass convictions and death sentences.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 14:18:00</td><td><a href='http://www.ctvnews.ca/entertainment/lawrence-of-arabia-actor-omar-sharif-dies-at-83-1.2463209'>site</a></td><td>Sharif was Egypt's biggest box-office star when David Lean cast him in 1962's "Lawrence of Arabia," but he was a virtual unknown elsewhere.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 14:20:21</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11479204&ref=rss'>site</a></td><td>Yousra, Egypt's biggest actress for much of the past 30 years and a close friend of Sharif, compared Sharif to a "clean-cut" diamond.</td></tr>
 </table></body></html>

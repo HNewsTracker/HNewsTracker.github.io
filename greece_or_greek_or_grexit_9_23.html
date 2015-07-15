@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 12,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,16 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 17:55:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11465257&ref=rss'>site</a></td><td>BRUSSELS (AP) " The European Commission says that weekend talks to find common ground between international creditors and Greece were unsuccessful and left a wide rift that needs to be closed within two weeks to avoid a possible Greek default.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/809/report-on-business/international-business/european-business/article24953060.ece/ALTERNATES/w220/greece.JPG'></td><td>2015-06-14 21:54:03</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-creditors-fail-in-last-attempt-to-reach-deal/article24953061/?cmpid=rss1'>site</a></td><td>Talks on ending a deadlock between Greece and its international creditors broke up in failure on Sunday, with European leaders venting their frustration as Athens stumbled closer toward a debt default that threatens its future in the euro.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.abc.net.au/news/image/6545688-3x2-340x227.jpg'></td><td>2015-06-15 00:19:45</td><td><a href='http://www.abc.net.au/news/2015-06-15/greece-last-chance-talks-end-with-no-deal/6545624'>site</a></td><td>Last-ditch talks between Greece and its EU-IMF creditors have ended with no deal on Sunday, setting the countdown towards a disastrous default by Athens with the threat of a Greek exit from the euro closer than ever.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-15 01:33:12</td><td><a href='http://finance.yahoo.com/news/asian-shares-euro-slip-greece-013312393.html'>site</a></td><td>Asian shares and euro slip as Greece fails to reach debt deal</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/06/15/876/493/570cc8c1c15fd410VgnVCM100000d7c1a8c0____-Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-06-15 03:10:52</td><td><a href='http://www.foxbusiness.com/markets/2015/06/14/asian-stock-markets-slip-euro-slides-as-weekend-greek-debt-talks-appear-to-go/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>HONG KONG - Asian stocks slipped and the euro sank Monday as Greece inched closer to a possible default after weekend talks with international creditors over freeing up the rest of its bailout funds went nowhere.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-15 03:10:52</td><td><a href='http://www.utsandiego.com/news/2015/jun/14/asia-stocks-slip-euro-down-as-greek-debt-talks/'>site</a></td><td>Asia stocks slip, euro down as Greek debt talks falter</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-25 20:33:17</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/25/us-stocks-edge-higher-following-a-surge-in-consumer-spending'>site</a></td><td>The bitter standoff between Greece and its international creditors was extended into the weekend, days before Athens has to meet a crucial debt deadline which could decide whether it defaults on its debt and has to drop out of the euro.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-06-25 20:34:08</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-edge-higher-surge-consumer-spending-32020835'>site</a></td><td>Stocks edged lower Thursday as talks over keeping Greece solvent stalled and got extended into the weekend.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Most Asian stock indexes fell Friday as a standoff between Greece and its international creditors threatened to drag into the weekend.</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/30/d2/6c/e2a8d11bfc204081b2da5cf78688f217-e83dae0f6198487f8d6509dc8659efa9-0.jpg'></td><td>2015-06-30 07:13:51</td><td><a href='http://www.daytondailynews.com/ap/ap/business/asia-stocks-bounce-back-but-greece-uncertainty-sti/nmn9N/'>site</a></td><td>Greek leaders pulled out of talks with creditors that include European nations and the International Monetary Fund and called a referendum that's likely to determine if Greece stays in the euro common currency.</td></tr>
-  <tr><td style='display:none'>10</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>Asia stocks gains as Greece, creditors narrow differences</td></tr>
-  <tr><td style='display:none'>11</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/iBxMB9pdmLaDZOm2QFNoLw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/544dd0c81343021f7c0f6a706700be43_original.jpg'></td><td>2015-07-12 22:39:12</td><td><a href='http://finance.yahoo.com/news/greece-faces-pressure-back-deal-223800302.html'>site</a></td><td>It highlighted the increasing frustration of European leaders during five months of fruitless talks with Greece.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:26:40</td><td><a href='http://news.yahoo.com/western-union-restarts-money-transfer-greece-132640414--sector.html'>site</a></td><td><table><tr><td>Western Union restarts money transfer service in Greece</td></tr><tr><td>(Reuters) - Western Union Co said it restarted money transfer service in Greece, allowing customers in the country to receive funds from overseas.</td></tr></table></td></tr>
 </table></body></html>

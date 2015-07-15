@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-12 20:30:40</td><td><a href='http://www.reuters.com/article/2015/06/12/us-google-youtube-gaming-idUSKBN0OS27C20150612?feedType=RSS&feedName=businessNews'>site</a></td><td>Google launches a YouTube built for gamers</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 21:29:02</td><td></td><td><a href='google_2_3.html'>SAN FRANCISCO -- Google plans to censor unauthorized nude photos from its influential Internet search engine in a policy change aimed at cracking down on a malicious practice known as "revenge porn." (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-19 23:48:35</td><td></td><td><a href='google_2_4.html'>Google says it is taking steps to remove sexually explicit images of people posted without their consent - known as "revenge porn" - from their search results. (3)</a></td></tr>
 </table></body></html>
