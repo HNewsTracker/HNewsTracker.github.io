@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47975022,width-300,resizemode-4/Euclid-Tsakalotos-Greeces-new-finance-minister.jpg'></td><td>2015-07-07 11:58:03</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Greece-faces-last-chance-to-stay-in-euro-as-cash-runs-out/articleshow/47974144.cms'>site</a></td><td>He did not name names but may have been referring to German finance minister Wolfgang Schaeuble, who has made no secret of his scepticism about Greece's fitness to stay in the euro and last week suggested a possible "temporary" exit.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150712&i=109547919&w=240&r=109547919-1&t=2'></td><td>2015-07-13 00:15:54</td><td><a href='http://www.reuters.com/article/2015/07/13/us-eurozone-greece-idUSKBN0P40EO20150713?feedType=RSS&feedName=topNews'>site</a></td><td>If Greece meets the conditions, the German parliament would meet on Thursday to mandate Merkel and Finance Minister Wolfgang Schaeuble to open the talks on a new loan.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/08/f7/e6/e5b5b559978d43cc96a459643dce34dd-5c77eca77128473a9ca666e3fe2c34c1-0_1.jpg'></td><td>2015-07-08 10:52:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/the-latest-tsipras-says-greece-is-preparing-detail/nmtHb/'>site</a></td><td><table><tr><td>Greece submitted a request for a new support program from the European Stability Mechanism Wednesday morning.</td></tr><tr><td>Michel Reijns, the spokesman for the eurozone's top official Jeroen Dijsselbloem, says Greece submitted the request for a new support program from the European Stability Mechanism Wednesday morning.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 04:10:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479406&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Greece's negotiators head to Brussels on Saturday armed with their reform proposals and parliamentary backing to seek a third bailout, but with the shadow of severe dissent from governing lawmakers hanging over them.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/07/b-greece-a-20150712-200x200.jpg'></td><td>2015-07-11 05:29:00</td><td><a href='http://www.japantimes.co.jp/news/2015/07/11/business/economy-business/greek-lawmakers-back-bailout-reform-plan/?utm_source=feedburner&amp%3Butm_medium=rss&amp%3Butm_campaign=greek-lawmakers-back-bailout-reform-plan&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td>ATHENS - Greece's parliament backed the government's reform plan to win a third bailout early Saturday, but with the government suffering significant losses from lawmakers dissenting over the plan's austerity measures.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-11 12:39:35</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/11/the-latest-finance-ministers-arrive-for-crunch-greek-talks'>site</a></td><td>The ministers will assess Greece's bailout request and its accompanying economic reform proposals, which won the overwhelming backing of the Greek parliament early Saturday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=topNews'>site</a></td><td>U.S. Treasury Secretary Jack Lew spoke with both Tsipras the his new finance minister and said Washington looked forward to Athens and other parties resuming conversations toward resolving the Greek situation, a Treasury spokeswoman said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150710&i=109507389&w=240&r=109507389-1&t=2'></td><td>2015-07-10 23:26:28</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=businessNews'>site</a></td><td>U.S. Treasury Secretary Jack Lew said Greece and its creditors appeared to be closer to a deal, calling for an adjustment to Athens' debt burden to ease its cash flow.</td></tr>
 </table></body></html>

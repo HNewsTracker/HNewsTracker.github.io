@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:26:40</td><td><a href='http://news.yahoo.com/western-union-restarts-money-transfer-greece-132640414--sector.html'>site</a></td><td><table><tr><td>Western Union restarts money transfer service in Greece</td></tr><tr><td>(Reuters) - Western Union Co said it restarted money transfer service in Greece, allowing customers in the country to receive funds from overseas.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/__PDex3E8eFxpckSZgdVjg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-21T130309Z_1_LYNXMPEB5K0DA_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-21 15:44:29</td><td><a href='http://finance.yahoo.com/news/behind-scenes-greece-creditors-push-130309759.html'>site</a></td><td>German Chancellor Angela Merkel is under pressure from within her ranks not to give in to Greek demands, even if that means contemplating Greece leaving the euro zone.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 05:50:50</td><td><a href='http://www.reuters.com/article/2015/06/26/us-eurozone-greece-idUSKBN0P40EO20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>German Chancellor Angela Merkel, whose country is Greece's biggest creditor, said the next meeting of Eurogroup ministers on Saturday would be "of decisive importance" for a Greek solution since time was running out.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150712&i=109547919&w=240&r=109547919-1&t=2'></td><td>2015-07-13 00:15:54</td><td><a href='http://www.reuters.com/article/2015/07/13/us-eurozone-greece-idUSKBN0P40EO20150713?feedType=RSS&feedName=topNews'>site</a></td><td>The document included a German proposal to make Greece take a "time-out" from the euro zone if it fails to meet the conditions.</td></tr>
 </table></body></html>
