@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 16:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25105846.html#storylink=rss'>site</a></td><td>Greece's Defense Minister Panos Kamenos arrives for a cabinet meeting at Greek Prime Minister's office in Athens, Greece, on Sunday, June 21, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 21:06:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25105846.html#storylink=rss'>site</a></td><td>A girl sits on her father's shoulders as she unfurls the Greek flag during a protest march in solidarity with Greece in the center of Brussels on Sunday, June 21, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 21:06:06</td><td><a href='http://www.miamiherald.com/news/business/article25105846.html#storylink=rss'>site</a></td><td>An anti-austerity protester waves a Greek flag during a rally in front of the parliament in Athens, Greece, on Sunday, June 21, 2015.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 08:34:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25812790.html#storylink=rss'>site</a></td><td>People sit at a restaurant and watch a live TV interview with the Greek Prime Minister, Alexis Tsipras, in Athens, Monday, June 29, 2015.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 03:29:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26211073.html#storylink=rss'>site</a></td><td><table><tr><td>An Associated Press TV producer edits the video of Greece's Prime Minister Alexis Tsipras televised address to the nation in Athens, Friday, July 3, 2015.</td></tr><tr><td>A Greek Orthodox priest gives money to a man who begs for alms under a banner reading "No" referring to the upcoming referendum in the northern Greek port city of Thessaloniki, Friday, July 3, 2015.</td></tr><tr><td>A woman holds a banner reading, "No to the Troika, I support Greece" during a a pro Greece demonstration at the European Union office in Barcelona, Spain, Friday, July 3, 2015.</td></tr></table></td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 04:09:10</td><td><a href='http://www.miamiherald.com/news/business/article26480347.html#storylink=rss'>site</a></td><td><table><tr><td>Greece's Prime Minister Alexis Tsipras delivers a speech during a rally organized by supporters of the No vote at Syntagma square in Athens, Friday, July 3, 2015.</td></tr><tr><td>A demonstrator holds a Greek flag and another one reading ''Yes'' during a rally organized by supporters of the Yes vote in Athens, Friday, July 3, 2015.</td></tr><tr><td>A banner reading ''NO for democracy and for dignity'' referring to the upcoming referendum is placed outside a Greek Orthodox church at Monastiraki square in central Athens, Saturday, July 4, 2015.</td></tr></table></td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/05/74/db/d166cdd5b6d4413d87d1dbef377c7017-69be0247745d4af1918ec168ad14ffa4-8.jpg'></td><td>2015-07-05 17:07:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-votes-on-high-stakes-bailout-referendum/nmrrZ/'>site</a></td><td>Bathers lie on the beach during Greece's referendum day in southern Athens, Sunday, July 5, 2015.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 17:15:06</td><td><a href='http://www.miamiherald.com/news/business/article26524165.html#storylink=rss'>site</a></td><td>Greece's Prime Minister Alexis Tsipras, foreground, is escorted by police officers after voting at a polling station in Athens, Sunday, July 5, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/.wCGYVaaBFrb.sxsjSKDXQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3aec3cfdc9b3421d7b0f6a706700df8c.jpg'></td><td>2015-07-05 06:09:01</td><td><a href='http://news.yahoo.com/family-divided-emotions-run-high-ahead-greek-vote-060901498.html'>site</a></td><td>"This situation will create a war within the people. Greek versus Greek. The people are divided right now, about 50-50. What happens the day after the referendum? I'm afraid."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/AP_GREECE_150706_DG_16x9t_144.jpg'></td><td>2015-07-06 15:41:06</td><td><a href='http://abcnews.go.com/Business/greece-vote-countrys-future/story?id=32248849'>site</a></td><td>Here's What Happens Next in Greece</td></tr>
 </table></body></html>

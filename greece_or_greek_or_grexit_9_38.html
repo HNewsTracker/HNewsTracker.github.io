@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26032012.html#storylink=rss'>site</a></td><td>A strong "No" vote, he argued, would help Greece win a new deal with the eurozone's rescue mechanism that would include terms to make the country's 320 billion euro national debt sustainable.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/09/be/89/b83626de333e41c8951f22ef0872759d-89c39f46c9974064b391f12f6ee7aeab-0.jpg'></td><td>2015-07-09 12:10:04</td><td><a href='http://www.daytondailynews.com/ap/ap/business/easier-terms-for-greece-could-open-a-can-of-worms-/nmt28/'>site</a></td><td>Eurozone governments taking a tough line on Greece's demand for debt relief and easier bailout terms fear opening a can of worms.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 00:55:05</td><td><a href='http://www.miamiherald.com/news/business/article26934703.html#storylink=rss'>site</a></td><td>But he said it was the only chance for Greece to win a much-needed bailout that will include measures to address the country's debt and will provide adequate financing.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 13:21:03</td><td><a href='http://www.utsandiego.com/news/2015/jun/21/greece-presents-new-financial-proposals-to/'>site</a></td><td>Tsipras "presented to the three leaders Greece's proposal for a mutually beneficial agreement, which will provide a permanent solution and not just postpone tackling the problem," the press office statement said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 16:14:47</td><td><a href='http://abcnews.go.com/International/wireStory/greece-presents-financial-proposals-european-leaders-31922497'>site</a></td><td>Renzi added that European leaders were working to have an agreement with Greece "in the next hours," but didn't provide any details.</td></tr>
 </table></body></html>

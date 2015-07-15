@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>He said an agreement between Greece and its creditors is still not certain but the fact that Greece has proposed a fiscal package along the lines of the one recently demanded by its European creditors is a "significant step in the direction of compromise."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>The Latest: Greek creditors want 'more binding commitments'</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 21:20:08</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27032884.html#storylink=rss'>site</a></td><td>Greece struggling to convince creditors it's for real</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-12 04:30:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/12/greek-talks-with-skeptical-creditors-to-resume-sunday'>site</a></td><td>BRUSSELS (AP) - Greece will have another, possibly its last, chance Sunday to convince skeptical European creditors it can be trusted to enact wide-ranging economic reforms that would safeguard its future in the euro.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 08:35:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11478406&ref=rss'>site</a></td><td>Greece rushing to finalize reforms and remain in euro</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.npr.org/assets/img/2015/07/13/ap_673645529107_wide-30107de784ce44d9b3707fad9a380dcdb4f9ce12-s1100-c15.jpg'></td><td>2015-07-13 07:56:00</td><td><a href='http://www.npr.org/sections/thetwo-way/2015/07/13/422489174/greece-eurozone-leaders-reach-agreement-on-a-new-bailout?utm_medium=RSS&utm_campaign=economy'>site</a></td><td>The summit reached a tentative agreement with Greece for a bailout program that includes "serious reforms," removing an immediate threat that Greece could collapse financially and leave the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 17:41:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27192415.html#storylink=rss'>site</a></td><td>It includes reforms to Greece's consumer tax.</td></tr>
 </table></body></html>

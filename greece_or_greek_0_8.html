@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 07:21:06</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td>If Greece defaults and switches to a new currency, it's sure to shake global financial markets.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/w1wFS0Z3BRlOpklqj1UG7w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b4126b422151d11d7a0f6a7067007cbb.jpg'></td><td>2015-06-30 07:53:19</td><td><a href='http://news.yahoo.com/latest-markets-edgy-greek-imf-payment-looms-072344112--finance.html'>site</a></td><td>The mood in European financial markets remained edgy amid growing expectations that Greece will not make a repayment to the International Monetary Fund.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Despite its rickety finances, Greece shaped up a little for a few years and qualified to join the single currency in 2001.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Greece did get some easier terms on interest and time to pay.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/09/876/493/Portugal Greece Other Debtors-3.jpg?ve=1&tl=1'></td><td>2015-07-09 12:10:04</td><td><a href='http://www.foxnews.com/world/2015/07/09/if-greece-gets-easier-rescue-terms-other-bailout-states-could-face-popular/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>LISBON, Portugal - Eurozone governments taking a tough line on Greece's demand for debt relief and easier bailout terms fear opening a can of worms.</td></tr>
 </table></body></html>
