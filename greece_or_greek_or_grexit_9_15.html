@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,11 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 09:01:35</td><td><a href='http://time.com/3945519/poll-shows-even-divide-greek-referendum/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>(ATHENS, Greece) -The brief but intense campaign in Greece's critical bailout referendum ends Friday, with simultaneous rallies in Athens for "Yes" and "No" supporters in what an opinion poll shows will be a very close race.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 03:24:10</td><td><a href='http://abcnews.go.com/International/wireStory/greece-referendum-campaigns-squeezed-deadline-32198424'>site</a></td><td>Rallies for both campaigns were also held in 10 other Greek cities Friday.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/5/0/m/e/image.related.articleLeadwide.620x349.gi5dzf.png/1436072178448.jpg'></td><td>2015-07-05 04:53:45</td><td><a href='http://www.brisbanetimes.com.au/world/polls-open-in-historic-greek-bailout-referendum-20150705-gi5dzf.html'>site</a></td><td>Referendum campaign posters that reads "No" and "Yes" in Greek in Athens, Greece.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/06/15/876/493/570cc8c1c15fd410VgnVCM100000d7c1a8c0____-Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-06-15 03:10:52</td><td><a href='http://www.foxbusiness.com/markets/2015/06/14/asian-stock-markets-slip-euro-slides-as-weekend-greek-debt-talks-appear-to-go/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>HONG KONG - Asian stocks slipped and the euro sank Monday as Greece inched closer to a possible default after weekend talks with international creditors over freeing up the rest of its bailout funds went nowhere.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td>A weekend of fear in Greece as Monday promises salvation or ruin</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 20:34:08</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-edge-higher-surge-consumer-spending-32020835'>site</a></td><td>Stocks edged lower Thursday as talks over keeping Greece solvent stalled and got extended into the weekend.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Most Asian stock indexes fell Friday as a standoff between Greece and its international creditors threatened to drag into the weekend.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/37/24/70/8211972/3/628x471.jpg'></td><td>2015-06-26 03:16:14</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-edge-higher-following-a-surge-in-6348752.php'>site</a></td><td>Asian stocks fall on Greek standoff, China margin curbs</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-following-gains-in-European-6360385.php'>site</a></td><td>Asian stocks gain as US data eclipses Greek risk</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-open-higher-following-gains-in-european-/nmpyy/'>site</a></td><td>Asian stocks were higher on Thursday as strong U.S. payroll data overshadowed worries about Greek debt.</td></tr>
 </table></body></html>

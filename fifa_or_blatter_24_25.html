@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 07:14:21</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/02/switzerland-us-seeks-extradition-of-7-fifa-officials'>site</a></td><td>Switzerland: US seeks extradition of 7 FIFA officials</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 07:32:02</td><td><a href='http://www.smh.com.au//breaking-news-sport/us-seeks-extradition-of-7-fifa-officials-20150702-3yp2d.html'>site</a></td><td>Swiss justice officials say they have received a formal request from the United States to extradite seven FIFA officials arrested in May in Zurich.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 14:17:37</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/10/swiss-say-1-of-7-fifa-officials-agrees-to/'>site</a></td><td>Swiss say 1 of 7 FIFA officials agrees to extradition to US</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-10 14:25:18</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11479206&ref=rss'>site</a></td><td>BERN, Switzerland (AP) " One of the seven FIFA officials arrested in Zurich as part of an American corruption probe has agreed to be extradited to the United States, Swiss authorities said Friday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 21:26:03</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/06/world-cup-moments-distanced-women-from-fifa-scandal'>site</a></td><td><table><tr><td>World Cup moments distanced women from FIFA scandal</td></tr><tr><td>VANCOUVER, British Columbia (AP) - For a few moments over the past month, the Women's World Cup seemed to push aside the FIFA scandal that is simmering a half planet away.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-08 18:25:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11462067&ref=rss'>site</a></td><td>Police guarding Greece's parliament say they are no longer being allowed inside the building to use its bathrooms.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-08 19:17:53</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3115834/Greek-police-say-theyre-banned-parliament-bathrooms.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Greek police say they're banned from parliament bathrooms</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 02:32:13</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article26206801.html#storylink=rss'>site</a></td><td><table><tr><td>Reverend Father Vasilios Louros of St. Demetrios, which helped a Greek couple left penniless in New York City on their honeymoon thanks to the Greek financial crisis.</td></tr><tr><td>Strangers from two Greek Orthodox churches in the city's Queens borough came to the rescue, giving them survival cash until their flight home to Greece on Friday.</td></tr><tr><td>On Tuesday, in despair, they reached out to the New York-based Greek Orthodox Archdiocese of America, which contacted the churches in Queens' Astoria neighborhood.</td></tr><tr><td>In addition, an undisclosed amount came from a New York-based Greek journalist who hails from Volos.</td></tr></table></td></tr>
 </table></body></html>

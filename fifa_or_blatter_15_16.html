@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31294224.ece/ef9f4/ALTERNATES/h342/PANews%20BT_P-b6298dcd-08db-47e9-8127-18e176b363f1_I1.jpg'></td><td>2015-06-11 01:36:18</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/zico-wants-to-run-for-fifa-chief-31294225.html'>site</a></td><td>Fifa president Sepp Blatter announced his resignation last week amid investigations by US and Swiss authorities into alleged bribery and corruption involving the 2010, 2018 and 2022 World Cups.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 04:35:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article23684263.html#storylink=rss'>site</a></td><td>Marin was one of seven top soccer officials arrested two weeks ago in connection with the growing bribery and corruption scandal surrounding FIFA.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 13:51:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article25701787.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA election monitor urges Blatter to commit to going</td></tr><tr><td>Sepp Blatter got a clear message on Sunday from FIFA election monitor Domenico Scala to end speculation he wants to stay in office.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=topNews'>site</a></td><td>But after months of fractious negotiations, some European leaders are now openly contemplating the possibility of Greece becoming the first nation to be dumped out of the euro zone.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 09:06:06</td><td><a href='http://www.reuters.com/article/2015/06/21/us-global-economy-weekahead-idUSKBN0P109V20150621?feedType=RSS&feedName=businessNews'>site</a></td><td>If Greece does default on its debts, which remains a real possibility, it could require capital controls that would potentially turf it out of the euro zone or even the European Union itself, becoming the first country ever to leave the bloc.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/7e5/report-on-business/article25033715.ece/ALTERNATES/w220/560488467-477632014.JPG'></td><td>2015-06-21 16:01:04</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-offers-new-proposals-ahead-of-emergency-summit/article25049138/?cmpid=rss1'>site</a></td><td>"Either Greece declares itself willing for a viable solution or the country must leave the euro. The euro zone could cope with the consequences of a Greek exit," he said.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>For the long term, a Greek exit would disrupt the euro's "Hotel California" principle: that, as the Eagles put it, you can "check out any time you like, but you can never leave."</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>The ballot question does not address whether Greece should abandon the euro currency or leave the 28-member European Union, but many voters believe those issues are at stake.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/o/4/9/image.related.articleLeadwide.620x349.giao2w.png/1436698684738.jpg'></td><td>2015-07-12 10:58:12</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-rail-at-german-humiliation-20150712-giao2w.html'>site</a></td><td>Brussels: Euro zone leaders said they would fight to the finish to keep near-bankrupt Greece in the euro zone on Sunday after the European Union's chairman cancelled a planned summit of all 28 EU leaders that would have been needed in case of a "Grexit".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/KwcGNS34YafYSZ0gwG6nyQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-15T043002Z_2_LYNXMPEB5E048_RTROPTP_3_CBUSINESS-US-EUROZONE-GREECE-IMF_original.jpg'></td><td>2015-06-15 04:30:02</td><td><a href='http://finance.yahoo.com/news/varoufakis-rules-grexit-deal-possible-033921912.html'>site</a></td><td>BERLIN (Reuters) - Greece Finance Minister Yanis Varoufakis said he could rule out a 'Grexit' because it would not be a sensible solution to the Greek debt crisis and in a German newspaper interview on Monday also said a debt restructuring was the only way forward.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 18:14:50</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-06-EU--Greece-Bailout-The%20Latest/id-835d02b519244af1896325b38e3e8329'>site</a></td><td>Government spokesman Nicos Christodoulides has told state radio that Cyprus' president and finance minister backed a restructuring of Greek debt and negotiations between Greece and its creditors need to begin immediately.</td></tr>
 </table></body></html>
