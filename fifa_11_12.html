@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,4 +50,5 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 07:14:21</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/02/switzerland-us-seeks-extradition-of-7-fifa-officials'>site</a></td><td>Switzerland: US seeks extradition of 7 FIFA officials</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-07-02 07:15:36</td><td><a href='http://news.yahoo.com/switzerland-us-seeks-extradition-7-fifa-officials-071536033.html'>site</a></td><td>ZURICH (AP) - The United States has submitted a formal request for Switzerland to extradite seven FIFA officials arrested as part of a corruption probe in Zurich in May, Swiss officials said Thursday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 14:17:37</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/10/swiss-say-1-of-7-fifa-officials-agrees-to/'>site</a></td><td>Swiss say 1 of 7 FIFA officials agrees to extradition to US</td></tr>
 </table></body></html>

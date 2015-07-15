@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 17:31:05</td><td><a href='http://www.charlotteobserver.com/sports/article25154227.html#storylink=rss'>site</a></td><td>If Diego Maradona is serious about running for the FIFA presidency, he still has a lot of work to do just to get on the ballot.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/22/80/4d/3bf5679348544fdd8c2000ee1d0ae246-8641ace0f84c419a94d55eb994db41de-0.jpg'></td><td>2015-06-22 17:55:15</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/maradonas-road-to-fifa-presidency-filled-with-obst/nmh4w/'>site</a></td><td>Maradona's road to FIFA presidency filled with obstacles</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 13:38:50</td><td><a href='http://news.yahoo.com/fifa-election-chief-reminds-blatter-step-down-101618357.html'>site</a></td><td><table><tr><td>FIFA election chief reminds Blatter of need to step down</td></tr><tr><td>Scala, head of FIFA's audit and compliance committee, is urging Blatter not to consider back-tracking on that pledge.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 14:02:29</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article24194914.html#storylink=rss'>site</a></td><td>Asked on Sunday if Blatter was categorically ruling out standing in the new election, FIFA said: "We refer you to the remarks from FIFA President Blatter from 2 June. FIFA has no further comment."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 14:02:29</td><td><a href='http://www.miamiherald.com/news/politics-government/article24194914.html#storylink=rss'>site</a></td><td>Sepp Blatter was warned from within FIFA on Sunday not to attempt to backtrack on his pledge to quit as president.</td></tr>
 </table></body></html>

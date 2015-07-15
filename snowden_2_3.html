@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/dPrmBgL3QLy00zsTr5sZBQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/4cea136b882a8729bb7e680c9887958ff92f5c9a.jpg'></td><td>2015-06-14 08:46:43</td><td><a href='http://news.yahoo.com/britain-pulls-spies-moscow-cracks-snowden-files-011744817.html'>site</a></td><td>Snowden worked as a contractor at the CIA and National Security Agency, where he was able to download 1.7 million secret documents that showed how hundreds of millions of people had been under surveillance by the authorities.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/0007976f-642.jpg'></td><td>2015-06-14 08:48:40</td><td><a href='http://www.rte.ie/news/2015/0614/708021-edward-snowden/'>site</a></td><td><table><tr><td>Britain has been forced to remove some of its spies after Russia and China accessed the top-secret raft of documents taken by former US intelligence contractor Edward Snowden, British media have reported.</td></tr><tr><td>Mr Snowden fled to Russia after leaking the documents to the press in 2013 to expose the extent of US online surveillance programmes and to protect "privacy and basic liberties".</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/h/n/t/d/l/image.related.articleLeadwide.620x349.ghntcv.png/1434283771919.jpg'></td><td>2015-06-14 12:09:22</td><td><a href='http://www.smh.com.au/world/britain-pulls-out-spies-as-russia-china-reportedly-crack-snowden-files-20150614-ghntcv.html'>site</a></td><td>Mr Snowden downloaded more than 1.7 million secret files from security agencies in the US and Britain in 2013, and leaked details about mass surveillance of phone and internet communications.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-14 12:46:47</td><td><a href='http://news.yahoo.com/britain-pulls-spies-russia-china-crack-snowden-files-115045691.html'>site</a></td><td>The revelations about the impact of Snowden on intelligence operations comes days after Britain's terrorism law watchdog said the rules governing the security services' abilities to spy on the public needed to be overhauled.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-06-14 14:29:00</td><td><a href='http://www.cbc.ca/news/world/russia-china-crack-edward-snowden-files-u-k-pulls-out-spies-1.3112907?cmp=rss'>site</a></td><td>"As to the specific allegations this morning, we never comment on operational intelligence matters so I'm not going to talk about what we have or haven't done in order to mitigate the effect of the Snowden revelations, but nobody should be in any doubt that Edward Snowden has caused immense damage," he told Sky News.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/n/t/d/l/image.related.articleLeadwide.620x349.ghntcv.png/1434283771919.jpg'></td><td>2015-06-14 12:09:22</td><td><a href='http://www.smh.com.au/world/britain-pulls-out-spies-as-russia-china-reportedly-crack-snowden-files-20150614-ghntcv.html'>site</a></td><td>Mr Snowden downloaded more than 1.7 million secret files from security agencies in the US and Britain in 2013, and leaked details about mass surveillance of phone and internet communications.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 12:46:47</td><td><a href='http://news.yahoo.com/britain-pulls-spies-russia-china-crack-snowden-files-115045691.html'>site</a></td><td>The revelations about the impact of Snowden on intelligence operations comes days after Britain's terrorism law watchdog said the rules governing the security services' abilities to spy on the public needed to be overhauled.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 14:29:00</td><td><a href='http://www.cbc.ca/news/world/russia-china-crack-edward-snowden-files-u-k-pulls-out-spies-1.3112907?cmp=rss'>site</a></td><td>"As to the specific allegations this morning, we never comment on operational intelligence matters so I'm not going to talk about what we have or haven't done in order to mitigate the effect of the Snowden revelations, but nobody should be in any doubt that Edward Snowden has caused immense damage," he told Sky News.</td></tr>
 </table></body></html>

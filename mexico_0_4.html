@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/23/cb/2c8e5292db3a4b00b5afcb3f42757df6-ab7a5dfe8e1647ebb3e46b6ba97dc774-0.jpg'></td><td>2015-07-12 08:17:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/mexico-top-drug-lord-joaquin-el-chapo-guzman-escap/nmxY8/'>site</a></td><td>Guzman was caught by authorities for the first time in Guatemala in 1993, extradited and sentenced to 20 years in prison in Mexico for murder and drug trafficking.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48043399,width-300,resizemode-4/gunman.jpg'></td><td>2015-07-12 13:22:59</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Mexicos-drug-lord-El-Chapo-Guzman-escapes-through-tunnel/articleshow/48043391.cms'>site</a></td><td>Guzman faces multiple federal drug trafficking indictments in the U.S. as well as Mexico, and was on the U.S. Drug Enforcement Administration's most-wanted list.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 14:36:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27071770.html#storylink=rss'>site</a></td><td>Former Mexican Attorney General Jesus Murillo Karam told the AP earlier this year that the U.S. would get Guzman in "about 300 or 400 years" after he served time for all his crimes in Mexico.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/11/ca10ef3210c7f61f7b0f6a7067005abf_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-12 06:41:05</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/11/mexico-top-drug-lord-joaquin-el-chapo-guzman/'>site</a></td><td>Guzman, who headed the powerful Sinaloa Cartel, was last seen in the area of the showers in the Altiplano prison outside of Mexico City.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/23/cb/2c8e5292db3a4b00b5afcb3f42757df6-ab7a5dfe8e1647ebb3e46b6ba97dc774-0.jpg'></td><td>2015-07-12 08:17:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/mexico-top-drug-lord-joaquin-el-chapo-guzman-escap/nmxY8/'>site</a></td><td>Sinaloa is believed now to control most of the major crossing points for drugs at the U.S. border with Mexico.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/23/cb/2c8e5292db3a4b00b5afcb3f42757df6-ab7a5dfe8e1647ebb3e46b6ba97dc774-0.jpg'></td><td>2015-07-12 14:34:03</td><td><a href='http://www.daytondailynews.com/news/ap/international/mexico-top-drug-lord-joaquin-el-chapo-guzman-escap/nmxY8/'>site</a></td><td><table><tr><td>A manhunt began immediately late Saturday for the head of the powerful Sinaloa Cartel, which has an international reach and is believed to control most of the major crossing points for drugs at the U.S. border with Mexico.</td></tr><tr><td>Guzman is known for the elaborate tunnels his cartel has built underneath the Mexico-U.S. border to transport cocaine, methamphetamines and marijuana, with ventilation, lighting and even railcars to easily move products.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-12 20:05:06</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/12/detentions-of-top-allege-mexico-drug-chiefs-in-recent-years'>site</a></td><td>He was allegedly the financial operator for the New Generation Cartel of Jalisco, a former Sinaloa ally that has grown rapidly into one of Mexico's most powerful drug-trafficking organizations.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://resources1.news.com.au/images/2015/07/15/1227442/204681-c04b676c-2a64-11e5-acb7-33c75d95366a.jpg'></td><td>2015-07-15 05:34:00</td><td><a href='http://www.news.com.au/lifestyle/real-life/how-mexicos-most-powerful-drug-lord-rode-to-freedom/story-fnq2oad4-1227442204709?from=public_rss'>site</a></td><td><table><tr><td>If anyone was capable of pulling off such a feat, it was Guzman, who is believed to have at least a quarter-century of experience in building large, sophisticated tunnels to smuggle drugs under the US-Mexico border and to escape from hideouts as authorities closed in.</td></tr><tr><td>He said the tunnel at Altiplano was longer than any passage ever found on the US-Mexico border.</td></tr></table></td></tr>
 </table></body></html>

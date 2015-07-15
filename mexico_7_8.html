@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 21:39:50</td><td><a href='http://www.reuters.com/article/2015/07/06/us-usa-election-trump-idUSKCN0PG2FQ20150706?feedType=RSS&feedName=domesticNews'>site</a></td><td>However, he said, the United States has become "a dumping ground for Mexico" with illegal border-crossers smuggling illicit drugs and carrying "tremendous infectious disease."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/af3/video/article25224820.ece/ALTERNATES/w140/Video%3A+%E2%80%98You%E2%80%99re+fired%21%E2%80%99+Macy%E2%80%99s+cuts+ties+with+Donald+Trump'></td><td>2015-07-06 21:43:50</td><td><a href='http://www.theglobeandmail.com/news/world/donald-trump-says-some-of-his-comments-about-mexico-distorted/article25330622/?cmpid=rss1'>site</a></td><td><table><tr><td>After days of outrage, Republican presidential candidate Donald Trump said on Monday that some of his criticism of Mexico has been distorted but stuck to his stance that many illegal immigrants coming across the Mexican border are criminals.</td></tr><tr><td>Trump said the recent killing of a woman in San Francisco by a illegal immigrant from Mexico with a criminal record proves him right.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 12:28:03</td><td><a href='http://www.miamiherald.com/news/nation-world/article23758078.html#storylink=rss'>site</a></td><td><table><tr><td>Hurricane Carlos weakens some, nearly stationary off Mexico</td></tr><tr><td>Hurricane Carlos has weakened slightly but is expected to regain punch, hovering stationary over the Pacific Ocean off Mexico.</td></tr></table></td></tr>
 </table></body></html>

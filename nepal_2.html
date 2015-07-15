@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/zS2EqyhGtIxJ5OXXKRDRfA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/8e9f0f0b238bdc1d7a0f6a7067005787.jpg'></td><td>2015-06-30 13:54:44</td><td><a href='http://news.yahoo.com/image-asia-celebrating-while-planting-paddy-nepal-135444316.html'>site</a></td><td>In this photo by Niranjan Shrestha, farmers play with sludge as they plant paddy saplings in a field outside Kathmandu, Nepal, on Asar Pandhra day.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/RT_indonesia_plane_crash5_ml_150629_mn_16x9t_384.jpg'></td><td>2015-06-30 13:55:31</td><td><a href='http://abcnews.go.com/International/wireStory/image-asia-celebrating-planting-paddy-nepal-32124618'>site</a></td><td>Image of Asia: Celebrating While Planting Paddy in Nepal</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 06:23:19</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article24391621.html#storylink=rss'>site</a></td><td><table><tr><td>Nepal has reopened most of the heritage sites that were damaged in a pair of strong earthquakes that devastated parts of the country recently, hoping to bring back foreign tourists.</td></tr><tr><td>About 800,000 foreign tourists visit Nepal every year and the government is worried that the fear of earthquakes will stop many from visiting the Himalayan country.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 08:02:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article24391621.html#storylink=rss'>site</a></td><td><table><tr><td>The April 25 and May 12 quakes killed more than 8,700 people and damaged hundreds of thousands of buildings in Nepal, including old temples, palaces and other historical structures that are popular with tourists.</td></tr><tr><td>"We are urging people to come to Nepal for holiday to help Nepal rebuild," Sherpa said in Bhaktapur, a city filled with ancient temples that is among the reopened heritage sites.</td></tr><tr><td>Bhesh Narayan Dahal, chief of Nepal's Department of Archaeology, said that measures have been taken to ensure that tourists are safe, and that there are plans to provide safety helmets for visitors in some places.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-15 08:49:00</td><td><a href='http://tvnz.co.nz/world-news/damaged-heritage-sites-reopened-in-nepal-6338501?ref=rss'>site</a></td><td>Tourists fled Nepal after the first quake, but it also is currently rainy season, a time when relatively few foreign visitors are usually around.</td></tr>
 </table></body></html>

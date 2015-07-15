@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 19:40:22</td><td><a href='http://abcnews.go.com/US/wireStory/northern-virginia-teen-admits-guilt-terror-related-charge-31689340'>site</a></td><td><table><tr><td>Teen Pleads Guilty to Helping Friend Join Islamic State</td></tr><tr><td>A 17-year-old who otherwise would have been graduating with honors from high school this week instead pleaded guilty Thursday to terrorism charges for helping another teen travel to Syria to join the Islamic State.</td></tr><tr><td>In addition to helping 18-year-old Reza Niknejad of Prince William County travel to Syria, Amin also admitted using Twitter and other social media to solicit donations and support for the Islamic State.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 19:44:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article23744893.html#storylink=rss'>site</a></td><td>Among other things, Amin advocates for establishing a website for distributing Islamic State press releases and used his Twitter feed to persuade others to help develop such a site, according to court records.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 19:44:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article23744893.html#storylink=rss'>site</a></td><td>Last year, Amin's Twitter feed drew the attention of the State Department, which under its "Think Again Turn Away" social media campaign sought to counter Amin's glorification of the Islamic State and debated him directly online, at one point telling AmreekiWitness to "join reality."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-11 19:45:18</td><td><a href='http://news.yahoo.com/us-teen-admits-guilt-terror-related-charge-142624177.html'>site</a></td><td>Authorities said Amin was a sophisticated user of social media and that he also helped people make anonymous financial contributions to the Islamic State using Bitcoin.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 15:15:27</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123551/Libyan-Islamists-claim-drive-Islamic-State-port-stronghold.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Street fighting has raged for several days between members of the local Islamist umbrella group Majlis Mujahideen and Islamic State loyalists, who have been trying to increase their influence in the port city for more than a year.</td></tr><tr><td>A Majlis spokesman told local Libyan Nabaa TV that more than 70 Islamic State militants had surrendered during the fighting, in which some were severely wounded.</td></tr><tr><td>Forces from both governments have been fighting Islamic State but also each other in a conflict where military alliances are often fluid and based on local interests.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 02:30:15</td><td></td><td><a href='fifa_or_blatter_0_1.html'>"The chairman of the FIFA Disciplinary Committee took into consideration all the circumstances of the case, including the fact that Abby Wambach took full ownership and apologized for her comments in a timely manner," the statement said. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-26 02:36:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25541320.html#storylink=rss'>site</a></td><td>The warning cited article 57 of FIFA's disciplinary code, which concerns sportsmanlike conduct.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/9c3193a1390d875be4fe0f3261691deb218fcdb6/c=0-505-1819-1873&amp;r=x404&amp;c=534x401/local/-/media/2015/06/14/USATODAY/USATODAY/635698708111172260-RSI-SOCCER-FIFA-.jpg'></td><td>2015-06-14 13:34:14</td><td><a href='http://www.usatoday.com/story/sports/soccer/2015/06/14/fifa-election-chief-reminds-blatter--need--step-down/71206912/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomsports-topstories'>site</a></td><td>FIFA election chief reminds Sepp Blatter of need to step down</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 13:38:50</td><td><a href='http://news.yahoo.com/fifa-election-chief-reminds-blatter-step-down-101618357.html'>site</a></td><td>Scala, head of FIFA's audit and compliance committee, is urging Blatter not to consider back-tracking on that pledge.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 14:02:29</td><td></td><td><a href='fifa_or_blatter_0_1.html'>Sepp Blatter was warned from within FIFA on Sunday not to attempt to backtrack on his pledge to quit as president. (2)</a></td></tr>
 </table></body></html>
