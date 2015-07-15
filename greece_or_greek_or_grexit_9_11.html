@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/21/ea/c5/a247a179e8294a87b629e79c1cf2f577-8f1788eb9707458b99c176c303702464-0_1.jpg'></td><td>2015-06-21 13:25:01</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/game-of-chicken-over-greece-risks-slipping-out-of-/nmhZd/'>site</a></td><td><table><tr><td>Game of chicken over Greece risks slipping out of control</td></tr><tr><td>In the game of chicken between Greece and its creditors over whether the troubled country gets more bailout cash, each side has played its part, refusing to back down.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 15:46:34</td><td><a href='http://www.utsandiego.com/news/2015/jun/14/senior-official-says-germany-wont-be-blackmailed/'>site</a></td><td>Greece said Friday it would present its creditors with new proposals over the weekend in an attempt to breathe life into stalled bailout talks amid fears the country could go bankrupt.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/14/045fb9fc8fe4591a790f6a7067009930_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-06-14 17:46:34</td><td><a href='http://www.utsandiego.com/news/2015/jun/14/greece-says-it-will-never-accept-wage-pension-cuts/'>site</a></td><td>He added that Greece will no longer accept measures that undermine growth and has submitted proposals that cover creditors' demands for a primary budget surplus without doing so.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/21/ea/c5/a247a179e8294a87b629e79c1cf2f577-8f1788eb9707458b99c176c303702464-0_1.jpg'></td><td>2015-06-21 13:25:01</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/game-of-chicken-over-greece-risks-slipping-out-of-/nmhZd/'>site</a></td><td><table><tr><td>Game of chicken over Greece risks slipping out of control</td></tr><tr><td>In the game of chicken between Greece and its creditors over whether the troubled country gets more bailout cash, each side has played its part, refusing to back down.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 15:45:07</td><td><a href='http://www.miamiherald.com/news/business/article26934703.html#storylink=rss'>site</a></td><td>Austrian Chancellor Werner Faymann says he sees a chance of an agreement with Greece after the country submitted reform proposals to creditors.</td></tr>
 </table></body></html>

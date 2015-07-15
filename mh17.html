@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -55,4 +55,5 @@
   <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000ad7dd-642.jpg'></td><td>2015-07-11 16:32:06</td><td><a href='http://www.rte.ie/news/2015/0711/714089-mh17-families-seek-justice/'>site</a></td><td><table><tr><td>Service ahead of MH17 disaster anniversary</td></tr><tr><td>Families of those killed when Malaysia Airlines flight MH17 was shot down over Ukraine last year demanded justice at a memorial ceremony ahead of the first anniversary of the disaster.</td></tr></table></td></tr>
   <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/b/a/w/v/image.related.articleLeadwide.620x349.gi8t3p.png/1436802510623.jpg'></td><td>2015-07-13 15:48:42</td><td><a href='http://www.brisbanetimes.com.au/world/mh17-the-sunflowers-profile-of-quinn-schansman-headline-20150713-gi8t3p'>site</a></td><td>MH17 victim Quinn Schansman.</td></tr>
   <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/8/m/u/r/image.related.articleLeadwide.620x349.gi8wj3.png/1436417888889.jpg'></td><td>2015-07-13 15:50:33</td><td><a href='http://www.smh.com.au/world/mh17-the-sunflowers-profile-of-sister-philomene-tiernan-headline-20150713-gi8wj3'>site</a></td><td>17th of July is the anniversary of the downing of flight MH17.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-15 06:24:53</td><td></td><td><a href='mh17_0.html'>FILE - In this July 20, 2014, file photo, a picture of Bryce Fredriksz and his girlfriend Daisy Oehlers who died on flight MH17, is surrounded by flowers at Schiphol airport in Amsterdam. (4)</a></td></tr>
 </table></body></html>
