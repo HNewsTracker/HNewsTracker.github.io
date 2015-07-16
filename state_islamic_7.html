@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 18:28:42</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/13/son-of-boston-police-captain-charged-in-terror/'>site</a></td><td>BOSTON (AP) - Prosecutors have arrested the son of a Boston police captain in a plot to commit terrorist acts on behalf of the Islamic State group.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 23:16:47</td><td></td><td><a href='state_islamic_7_8.html'>In the post-arrest video played in court on Tuesday, Ciccolo did not detail an attack plot but defended Islamic State's hostage executions and agreed with an FBI interviewer that all Americans should be considered "enemies". (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/Crime/2015/07/14/TCP_Ciccolo650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-07-14 23:16:47</td><td><a href='http://cnews.canoe.com/CNEWS/Crime/2015/07/14/22506011.html?cid=rssnewscrime'>site</a></td><td>The case follows a handful of "lone wolf" attacks in the United States and Canada since last year by people authorities say were inspired by Islamic State, which controls parts of Syria and Iraq and has vowed attacks on the West.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 22:44:54</td><td><a href='http://www.reuters.com/article/2015/06/26/us-kuwait-blast-idUSKBN0P618L20150626?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>Islamic State suicide bomber kills 27, wounds 227 in Kuwait mosque</td></tr><tr><td>The Islamic State militant group claimed responsibility for the attack, which also wounded 227 people according to the interior ministry, in the district of Sawaber in the eastern part of the Kuwaiti capital.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 22:44:54</td><td></td><td><a href='state_islamic_7_8.html'>Islamic State named the bomber as Abu Suleiman al-Muwahed and said in a statement posted on social media that he had targeted a "temple of the rejectionists" -- a term it generally uses to refer to Shi'ites, whom it regards as heretics. (2)</a></td></tr>
 </table></body></html>

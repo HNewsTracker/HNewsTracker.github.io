@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 08:50:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11465653&ref=rss'>site</a></td><td>Investors rattled by Greek bailout impasse</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31333970.ece/7e830/ALTERNATES/h342/PANews%20BT_P-81ca7e2d-aa7c-4326-bd44-2d8f1ad6ef0d_I1.jpg'></td><td>2015-06-27 03:36:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/eu-rejects-bailout-extension-plea-31333972.html'>site</a></td><td>Greece announces bailout referendum</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150705&i=109339515&w=240&r=109339515-1&t=2'></td><td>2015-07-03 22:08:36</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Greece's top administrative court, however, rejected an appeal against the referendum by two Greek citizens, who argued that the constitution bars plebiscites on fiscal issues and that the question is too complex.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-05 04:10:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11476143&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Polling stations open in Greece for crucial bailout referendum.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31333970.ece/7e830/ALTERNATES/h342/PANews%20BT_P-81ca7e2d-aa7c-4326-bd44-2d8f1ad6ef0d_I1.jpg'></td><td>2015-06-27 03:36:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/eu-rejects-bailout-extension-plea-31333972.html'>site</a></td><td>Greece announces bailout referendum</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150705&i=109339515&w=240&r=109339515-1&t=2'></td><td>2015-07-03 22:08:36</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Greece's top administrative court, however, rejected an appeal against the referendum by two Greek citizens, who argued that the constitution bars plebiscites on fiscal issues and that the question is too complex.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-05 04:10:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11476143&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Polling stations open in Greece for crucial bailout referendum.</td></tr>
 </table></body></html>

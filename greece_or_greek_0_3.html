@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 11,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,15 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 08:50:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11465653&ref=rss'>site</a></td><td><table><tr><td>Investors rattled by Greek bailout impasse</td></tr><tr><td>ATHENS, Greece (AP) " Investors in Greece have been rattled by the failure over the weekend to break a months-long deadlock in the country's bailout talks with creditors.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-u-data-003850377.html'>site</a></td><td>"Attention will be pinned on Greece and this is likely to see investors cautious as we head into the weekend ... Even if we get a Yes' vote, this means the country must go back to the negotiation table and try to knock something together again," IG market analyst Stan Shamu said.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-03 13:00:52</td><td><a href='http://news.yahoo.com/greece-limbo-shuttered-banks-keep-lifeline-040225058--finance.html'>site</a></td><td>Correction: Greece-Bailout story</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td><table><tr><td>She was too scared to take her lifesavings back to her Greek bank.</td></tr><tr><td>Without access to capital markets, Greek lenders have to rely on almost 86 billion of Emergency Liquidity Assistance to stay afloat, subject to weekly boosts by the European Central Bank.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/jq43UNnsdOmq2.cpHBO_tA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-20T125459Z_1_LYNXMPEB5J07R_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-20 22:16:02</td><td><a href='http://finance.yahoo.com/news/greece-may-offer-more-debt-125459258.html'>site</a></td><td>The ECB on Friday raised the ceiling on the "emergency liquidity assistance" that Greece's banks rely on to keep their doors open.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 12:31:46</td><td><a href='http://www.utsandiego.com/news/2015/jun/28/european-central-bank-maintains-emergency-credit/'>site</a></td><td>European Central Bank maintains emergency credit to Greek banks at current level</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-28 13:25:57</td><td><a href='http://www.cbc.ca/news/world/greek-banks-to-remain-closed-withdrawals-to-be-restricted-1.3131048?cmp=rss'>site</a></td><td>The ECB's decision keeps a key financial lifeline open but does not provide further credit to Greece's banks.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-28 14:00:40</td><td><a href='http://www.upi.com/Top_News/World-News/2015/06/28/European-Central-Bank-to-maintain-Greek-emergency-funding/8711435497439/'>site</a></td><td>"We continue to work closely with the Bank of Greece and we strongly endorse the commitment of Member States in pledging to take action to address the fragilities of euro area economies," ECB President Mario Draghi said in a statement.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-28 14:03:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-28-EU--Greece%20Bailout-The%20Latest/id-fb5799103c44457a8a545e4ac58c9db9'>site</a></td><td>The Latest: Bank of Greece recommends banks remain closed</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-28 17:54:03</td><td><a href='http://abcnews.go.com/International/wireStory/greek-premier-bank-greece-recommended-banks-close-capital-32085919'>site</a></td><td>Greek premier: Bank of Greece has recommended banks to close, capital controls be imposed.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-28 17:55:03</td><td><a href='http://news.yahoo.com/greek-prime-minister-says-greek-bank-deposits-completely-175453977.html'>site</a></td><td>ATHENS, Greece (AP) - Greek prime minister says Greek bank deposits completely safe.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww4.hdnux.com/photos/37/30/73/8228583/5/square_gallery_thumb.jpg'></td><td>2015-06-28 18:03:24</td><td><a href='http://www.sfgate.com/news/science/article/The-Latest-Greece-wants-ECB-to-keep-giving-6354011.php'>site</a></td><td>It has been allowing Greek banks to draw emergency credit from Greece's central bank, a financial lifeline that has been keeping Greece's four major banks going during the country's tense bailout negotiations with creditors.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww3.hdnux.com/photos/37/30/62/8228018/3/square_gallery_thumb.jpg'></td><td>2015-06-28 18:24:13</td><td><a href='http://www.sfgate.com/news/world/article/Greece-awaits-European-Central-Bank-decision-on-6354017.php'>site</a></td><td>ATHENS, Greece (AP) - Greek banks will remain shut for an unspecified time and the country is imposing restrictions on bank withdrawals following a recommendation by the Bank of Greece, the country's prime minister said Sunday.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-02 06:14:45</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-greek-anxiety-004926180.html'>site</a></td><td>"If this payment is missed, the ECB will most likely pull the plug on liquidity to Greek banks, which would have a more dramatic impact than the latest default, leading to increased uncertainty for Greece, the euro and the financial markets as a whole."</td></tr>
 </table></body></html>

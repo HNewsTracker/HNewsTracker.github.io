@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,11 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/6/18/eurozone-leaders-to-hold-emergency-summit-on-greece/_jcr_content/image.adapt.480.low.Varoufakis_061815.jpg'></td><td>2015-06-20 15:27:00</td><td><a href='http://america.aljazeera.com/articles/2015/6/20/greece-to-offer-more-in-debt-talks.html'>site</a></td><td>"If EU wants Greece to pay its debts it should be interested in growing the Greek economy ... helping it pay its debts," he said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 14:03:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-28-EU--Greece%20Bailout-The%20Latest/id-fb5799103c44457a8a545e4ac58c9db9'>site</a></td><td>A failure by Greece's government to get more aid before its bailout ends Tuesday and a big payment to the International Monetary Fund is due could prompt the ECB to decide the Greek banks are not financially solid any more.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/w1wFS0Z3BRlOpklqj1UG7w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b4126b422151d11d7a0f6a7067007cbb.jpg'></td><td>2015-06-30 07:53:19</td><td><a href='http://news.yahoo.com/latest-markets-edgy-greek-imf-payment-looms-072344112--finance.html'>site</a></td><td>The mood in European financial markets remained edgy amid growing expectations that Greece will not make a repayment to the International Monetary Fund.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 08:35:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-30-EU--Greece-Bailout/id-635b590f42644a2bb99c0a3343af1966'>site</a></td><td>It's crunch time for Greece, with the European part of its international bailout expiring Tuesday and with it any possible access to the remaining rescue loans it contains that it needs to pay its debts.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/04/03/4d7c45f8e53545e1bd8b1bfdff82fa00-12f627ee4b0340fb874125c50e5b8ae8-0.jpg'></td><td>2015-07-15 15:59:41</td><td><a href='http://www.daytondailynews.com/ap/ap/business/why-germany-refuses-to-write-off-greeces-debts/nmzGf/'>site</a></td><td>The International Monetary Fund says Greece's debts are too big to pay and need to be partly forgiven.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 16:05:23</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/22/markets-surge-ahead-of-last-ditch-summit-on-greece'>site</a></td><td>Europe cautiously optimistic of Greek debt deal this week</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 16:11:04</td><td><a href='http://www.charlotteobserver.com/news/business/article25139845.html#storylink=rss'>site</a></td><td>Eurozone nations were cautiously optimistic on Monday that a deal on Greece's bailout was finally within reach this week, amid fears the country might otherwise default on its debts and fall out of the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 17:21:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25139878.html#storylink=rss'>site</a></td><td>The eurozone's top official says creditors aim to get a deal on Greece's bailout later in the week.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 15:35:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-30-EU--Greece-Bailout/id-cb00954a6fe4410cb3e160813b23616d'>site</a></td><td>An EU official said Greece's creditors would not agree Tuesday night on a new bailout deal or extension and would instead, starting Wednesday, focus on a new plan for the country.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-open-higher-following-gains-in-european-/nmpyy/'>site</a></td><td>WALL STREET: Wall Street closed higher on Wednesday on hopes that a deal could be reached between Greece and its creditors.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>But that might prove more difficult if Greece was no longer a part of the euro - and did not face external pressure from fellow eurozone states to modernize its economy.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 09:54:03</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26523319.html#storylink=rss'>site</a></td><td>Instead, they argue voting "yes" will allow Greece to get a new bailout deal quickly to shore up the economy.</td></tr>
 </table></body></html>

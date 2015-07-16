@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,11 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 15:15:27</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123551/Libyan-Islamists-claim-drive-Islamic-State-port-stronghold.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Libyan Islamists claim to drive Islamic State from port stronghold</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 15:15:27</td><td></td><td><a href='state_islamic_19_20.html'>Street fighting has raged for several days between members of the local Islamist umbrella group Majlis Mujahideen and Islamic State loyalists, who have been trying to increase their influence in the port city for more than a year. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150622&t=2&i=1058220867&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5L0M8'></td><td>2015-06-22 15:14:11</td><td><a href='http://www.reuters.com/article/2015/06/22/us-mideast-crisis-syria-kurds-idUSKBN0P21HV20150622?feedType=RSS&feedName=worldNews'>site</a></td><td>Syrian Kurds, on the offensive, push deeper into Islamic State territory</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 15:14:11</td><td></td><td><a href='state_islamic_19_21.html'>The Kurdish front in northern Syria has been one of the few sources of good news for the global campaign against Islamic State since the jihadists made major advances last month in western Iraq and central Syria. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 19:34:29</td><td></td><td><a href='state_islamic_19_23.html'>After weeks of setbacks, militants from the Islamic State group launched swift counteroffensives Thursday on predominantly Kurdish areas of northern Syria, killing and wounding dozens and setting off car bombs, activists and officials said. (5)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 16:46:41</td><td></td><td><a href='state_islamic_19_22.html'>While Islamic State had managed to advance slightly in Hasaka on Friday, seizing one army position, fierce army air strikes had hindered the attack, Abdulrahman said. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-26 16:46:41</td><td></td><td><a href='state_islamic_19_20.html'>Islamic State pressed a separate assault to capture government-held parts of the northeastern city of Hasaka, blowing up a security building and triggering a government appeal for all residents to take up arms. (4)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-30 13:45:46</td><td><a href='http://www.startribune.com/syrian-troops-regain-area-from-is-in-northeastern-city/310927191/'>site</a></td><td>Syrian troops regain neighborhood they lost earlier in battles with Islamic State group</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-07 13:19:15</td><td></td><td><a href='state_islamic_19_24.html'>The YPG, backed by small Syrian rebel groups, has made significant gains against Islamic State in Raqqa province in recent weeks, seizing Tel Abyad at the Turkish border on June 15 before advancing south to Ain Issa. (2)</a></td></tr>
 </table></body></html>
