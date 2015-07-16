@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,13 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>greece or greek or grexit</h3>
+    <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-28 00:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25651300.html#storylink=rss'>site</a></td><td><table><tr><td>Greek parliament approves referendum on creditor reforms</td></tr><tr><td>Speaking in parliament, Tsipras said the reforms proposed by Greece's creditor institutions - the International Monetary Fund, European Central Bank and European Commission, were an ultimatum and an insult.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/0009844c-642.jpg'></td><td>2015-07-03 14:50:34</td><td><a href='http://www.rte.ie/news/2015/0703/712481-dutch-seek-un-tribunal-to-prosecute-downing-of-mh1/'>site</a></td><td><table><tr><td>Dutch seek UN tribunal over downing of MH17</td></tr><tr><td>Moscow has suggested MH17 was downed by a Ukrainian fighter jet and denied a widely supported theory that the rebels shot it out of the sky with a Russian-supplied BUK missile.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 11:58:27</td><td><a href='http://www.rferl.org/content/putin-russia-mh17-tribunal/27130964.html'>site</a></td><td>Putin Says MH17 Tribunal Would Be ‘Premature, Counterproductive’</td></tr>
 </table></body></html>

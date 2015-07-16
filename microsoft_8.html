@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297716290062_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-24 18:32:12</td><td><a href='http://www.torontosun.com/2015/06/24/microsoft-office-finally-available-for-android'>site</a></td><td><table><tr><td>Well, you're in luck, because Microsoft Office apps for Android are now available, the company said in a blog post on Wednesday.</td></tr><tr><td>For full access, users need a Microsoft Office 365 subscription.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 23:02:43</td><td></td><td><a href='microsoft_8_9.html'>Both companies characterized the deal as a win-win because Microsoft will gain more search advertising while AOL, which has been beefing up its display business, will now add Microsoft's websites to a host of other online properties where AOL can place messages for advertising clients. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 23:02:43</td><td></td><td><a href='microsoft_8_10.html'>That means Microsoft will get a share of revenue from advertising that's tied directly to Internet searches performed on AOL. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-29 23:02:43</td><td><a href='http://www.usnews.com/news/technology/articles/2015/06/29/microsoft-sheds-some-of-its-ad-business-mapping-service'>site</a></td><td>AOL, meanwhile, is adopting Microsoft's Bing search engine, replacing Google as the default option for visitors who want to search the Internet on AOL websites.</td></tr>
 </table></body></html>

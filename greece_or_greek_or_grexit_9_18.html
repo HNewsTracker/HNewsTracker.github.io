@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/__PDex3E8eFxpckSZgdVjg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-21T130309Z_1_LYNXMPEB5K0DA_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-21 15:44:29</td><td><a href='http://finance.yahoo.com/news/behind-scenes-greece-creditors-push-130309759.html'>site</a></td><td>German Chancellor Angela Merkel is under pressure from within her ranks not to give in to Greek demands, even if that means contemplating Greece leaving the euro zone.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 05:50:50</td><td><a href='http://www.reuters.com/article/2015/06/26/us-eurozone-greece-idUSKBN0P40EO20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>German Chancellor Angela Merkel, whose country is Greece's biggest creditor, said the next meeting of Eurogroup ministers on Saturday would be "of decisive importance" for a Greek solution since time was running out.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47975022,width-300,resizemode-4/Euclid-Tsakalotos-Greeces-new-finance-minister.jpg'></td><td>2015-07-07 11:58:03</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Greece-faces-last-chance-to-stay-in-euro-as-cash-runs-out/articleshow/47974144.cms'>site</a></td><td>He did not name names but may have been referring to German finance minister Wolfgang Schaeuble, who has made no secret of his scepticism about Greece's fitness to stay in the euro and last week suggested a possible "temporary" exit.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td><table><tr><td>The Greek government is denying a report that the German finance ministry has proposed a temporary, five-year euro exit for Greece.</td></tr><tr><td>According to the report, the German finance ministry also proposed that the Greek government sells off some 50 billion euros ($56 billion) in unspecified property assets to pay off debts.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150712&i=109547919&w=240&r=109547919-1&t=2'></td><td>2015-07-13 00:15:54</td><td><a href='http://www.reuters.com/article/2015/07/13/us-eurozone-greece-idUSKBN0P40EO20150713?feedType=RSS&feedName=topNews'>site</a></td><td>If Greece meets the conditions, the German parliament would meet on Thursday to mandate Merkel and Finance Minister Wolfgang Schaeuble to open the talks on a new loan.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150713001154948815-minihighres.jpg?itok=G-2UngSU'></td><td>2015-07-13 01:02:30</td><td><a href='http://www.sbs.com.au/news/article/2015/07/13/greece-must-do-more-earn-rescue-eurozone-leaders'>site</a></td><td>One diplomat said that was tantamount to turning Greece into a "German protectorate".</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-15 15:59:41</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/15/why-germany-refuses-to-write-off-greeces-debts/'>site</a></td><td>German officials, led by Chancellor Angela Merkel and Finance Minister Wolfgang Schaeuble, say that as part of a new rescue package for Greece they will consider giving it more time to pay its debts and perhaps lower interest rates.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td><table><tr><td>The Greek government is denying a report that the German finance ministry has proposed a temporary, five-year euro exit for Greece.</td></tr><tr><td>According to the report, the German finance ministry also proposed that the Greek government sells off some 50 billion euros ($56 billion) in unspecified property assets to pay off debts.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150713001154948815-minihighres.jpg?itok=G-2UngSU'></td><td>2015-07-13 01:02:30</td><td><a href='http://www.sbs.com.au/news/article/2015/07/13/greece-must-do-more-earn-rescue-eurozone-leaders'>site</a></td><td>One diplomat said that was tantamount to turning Greece into a "German protectorate".</td></tr>
 </table></body></html>
