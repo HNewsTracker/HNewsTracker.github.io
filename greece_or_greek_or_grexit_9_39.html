@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 06:10:25</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-01-EU--Greece-The%20Latest/id-4d2487f8f71b456ca073b3e80baf9214'>site</a></td><td>Eurozone finance ministers were set to weigh Greece's latest proposal for aid Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-02 07:39:26</td><td><a href='http://www.miamiherald.com/news/business/article26034718.html#storylink=rss'>site</a></td><td>Sapin had been pushing for an agreement with Greece before Sunday's referendum, but after a fruitless meeting of European finance ministers Wednesday, he conceded that there's no point negotiating until after the vote.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 05:25:00</td><td><a href='http://www.cnbc.com/id/102758015'>site</a></td><td>"We don't want any more money," Varoufakis said, adding that Germany and the rest of the Eurozone had already given Greece "far too much" money.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 06:10:25</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-01-EU--Greece-The%20Latest/id-4d2487f8f71b456ca073b3e80baf9214'>site</a></td><td>"It is our duty to keep Greece in the eurozone," he said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/9/t/4/4/image.related.articleLeadwide.620x349.gi9co0.png/1436513280293.jpg'></td><td>2015-07-10 07:26:35</td><td><a href='http://www.brisbanetimes.com.au/world/greek-debt-crisis-france-to-the-rescue-as-athens-accepts-austerity-for-relief-20150710-gi9co0'>site</a></td><td>She has been forced to balance an angry German public, which sees no reason to give Greece billions of additional bailout money or to write down any more of its debt, against the danger of a Greek exit from the eurozone.</td></tr>
 </table></body></html>

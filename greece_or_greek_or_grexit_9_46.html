@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150710&i=109507389&w=240&r=109507389-1&t=2'></td><td>2015-07-10 23:26:28</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=businessNews'>site</a></td><td>He urged them to help Greece stay with the euro, but he faced some resistance from leftists stunned by his acceptance of previously spurned austerity measures.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 22:40:04</td><td><a href='http://www.miamiherald.com/news/business/article27069493.html#storylink=rss'>site</a></td><td>But other leaders in Brussels say Greece needs even more than that, and are demanding tough austerity measures in exchange.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/08/f7/e6/e5b5b559978d43cc96a459643dce34dd-5c77eca77128473a9ca666e3fe2c34c1-0_1.jpg'></td><td>2015-07-08 10:52:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/the-latest-tsipras-says-greece-is-preparing-detail/nmtHb/'>site</a></td><td><table><tr><td>Greece submitted a request for a new support program from the European Stability Mechanism Wednesday morning.</td></tr><tr><td>Michel Reijns, the spokesman for the eurozone's top official Jeroen Dijsselbloem, says Greece submitted the request for a new support program from the European Stability Mechanism Wednesday morning.</td></tr></table></td></tr>
 </table></body></html>

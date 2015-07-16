@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 09:20:20</td><td><a href='http://www.startribune.com/eurozone-inflation-rate-dips-but-still-remains-positive/310870871/'>site</a></td><td>Earlier this year, when prices were falling, there were fears the eurozone was set for a potentially debilitating period of deflation - falling prices can weigh on economic activity by making consumers postpone purchases.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/26/ff/c2081be7248c4c4699e99dab785a132b-cb5131321a4745be9138ef9b4ad13ffb-0.jpg'></td><td>2015-07-04 06:33:36</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/would-euro-departure-help-or-hurt-europes-currency/nmrZb/'>site</a></td><td>But that might prove more difficult if Greece was no longer a part of the euro - and did not face external pressure from fellow eurozone states to modernize its economy.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 09:20:10</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/04/would-euro-departure-help-or-hurt-europes-currency-union'>site</a></td><td>Greece could leave the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 12:35:00</td><td><a href='http://www.ctvnews.ca/business/greek-euro-split-could-hurt-greece-short-term-but-long-term-effects-unclear-1.2453626'>site</a></td><td><table><tr><td>FORTRESS EUROZONE?</td></tr><tr><td>There's a widespread view among analysts that the eurozone would not collapse in the short term if Greece left.</td></tr><tr><td>The euro would in fact be stronger.</td></tr><tr><td>A number of economists, however, think a Greek exit could cause long-lasting damage to the euro.</td></tr></table></td></tr>
 </table></body></html>

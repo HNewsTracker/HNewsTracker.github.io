@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ZVpfF_LPEfbzAf10.vijKQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/293bae0d95c6b11e7b0f6a706700eb97.jpg'></td><td>2015-07-09 11:08:19</td><td><a href='http://news.yahoo.com/latest-eu-economics-chief-says-greece-deal-possible-074059545.html'>site</a></td><td>EU Economics Commissioner Pierre Moscovici is hopeful that a new Greek bailout deal is possible, in exchange for "concrete, complete" reform proposals from Greece's government.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 11:50:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26934703.html#storylink=rss'>site</a></td><td>French Prime Minister Manuel Valls laid out his hopes for an imminent Greek bailout deal after the country's government sent "solid, serious and complete" reform proposals to creditors.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 15:45:07</td><td><a href='http://www.miamiherald.com/news/business/article26934703.html#storylink=rss'>site</a></td><td>Austrian Chancellor Werner Faymann says he sees a chance of an agreement with Greece after the country submitted reform proposals to creditors.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436995239589.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150715-gidayi'>site</a></td><td>French Prime Minister Manuel Valls delivers his speech about the situation in Greece before a non-binding vote at the National Assembly in Paris.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-07-06 13:46:52</td><td><a href='http://finance.yahoo.com/news/mohamed-el-erian-grexit-high-130330746.html'>site</a></td><td><table><tr><td>Earlier, Ewald Nowotny, a member of the European Central Bank's governing council, told CNBC the euro nations all have an interest in keeping Greece in the single currency.</td></tr><tr><td>When asked about whether he's optimistic that Greece can remain in the euro, the Austrian central bank governor told CNBC's " Squawk Box " that it's not a matter of being optimistic, but a matter of being "realistic."</td></tr></table></td></tr>
 </table></body></html>

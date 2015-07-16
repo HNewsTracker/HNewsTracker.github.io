@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>euro or eurozone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.euronews.com/articles/307930/606x340_307930.jpg?1434140456'></td><td>2015-06-12 20:20:56</td><td><a href='http://www.euronews.com/2015/06/12/interpol-suspends-20-million-euro-partnership-with-fifa/'>site</a></td><td>Interpol suspends 20 million euro partnership with Fifa</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 05:45:15</td><td><a href='http://www.startribune.com/asia-stocks-slip-euro-down-as-greek-debt-talks-falter/307327931/'>site</a></td><td>Asian stock markets slip, euro slides as weekend Greek debt talks appear to go nowhere</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 06:10:14</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/asian-stocks-fall-on-greek-standoff-china-margin-curbs'>site</a></td><td>CURRENCIES: The euro fell to $1.1186 from $1.1205 in the previous trading session.</td></tr>
 </table></body></html>
