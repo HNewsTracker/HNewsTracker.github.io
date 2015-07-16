@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 20:41:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/29/the-latest-french-minister-sees-greek-moment-of-truth'>site</a></td><td>European Union President Donald Tusk has warned the Greek people that a "no" vote in the referendum won't give their government more leverage to seek a better deal with Greece's creditors.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>European Council President Donald Tusk retorted in a tweet: "Europe wants to help Greece. But cannot help anyone against their own will. Let's wait for the results of the Greek referendum."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-06 02:47:37</td><td><a href='http://news.yahoo.com/greece-votes-high-stakes-bailout-referendum-050534077--finance.html'>site</a></td><td>"We will now wait for the initiatives of the Greek authorities."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ZVpfF_LPEfbzAf10.vijKQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/293bae0d95c6b11e7b0f6a706700eb97.jpg'></td><td>2015-07-09 11:08:19</td><td><a href='http://news.yahoo.com/latest-eu-economics-chief-says-greece-deal-possible-074059545.html'>site</a></td><td>Donald Tusk, who will chair this Sunday's meeting of European leaders, says any Greek deal has to be matched with realistic proposals from creditors over how to make the country's debts sustainable.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/.wCGYVaaBFrb.sxsjSKDXQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3aec3cfdc9b3421d7b0f6a706700df8c.jpg'></td><td>2015-07-05 06:09:01</td><td><a href='http://news.yahoo.com/family-divided-emotions-run-high-ahead-greek-vote-060901498.html'>site</a></td><td>"This situation will create a war within the people. Greek versus Greek. The people are divided right now, about 50-50. What happens the day after the referendum? I'm afraid."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/AP_GREECE_150706_DG_16x9t_144.jpg'></td><td>2015-07-06 15:41:06</td><td><a href='http://abcnews.go.com/Business/greece-vote-countrys-future/story?id=32248849'>site</a></td><td>Here's What Happens Next in Greece</td></tr>
 </table></body></html>

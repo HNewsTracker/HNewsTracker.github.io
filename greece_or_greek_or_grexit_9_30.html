@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/KwcGNS34YafYSZ0gwG6nyQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-15T043002Z_2_LYNXMPEB5E048_RTROPTP_3_CBUSINESS-US-EUROZONE-GREECE-IMF_original.jpg'></td><td>2015-06-15 04:30:02</td><td><a href='http://finance.yahoo.com/news/varoufakis-rules-grexit-deal-possible-033921912.html'>site</a></td><td>BERLIN (Reuters) - Greece Finance Minister Yanis Varoufakis said he could rule out a 'Grexit' because it would not be a sensible solution to the Greek debt crisis and in a German newspaper interview on Monday also said a debt restructuring was the only way forward.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 18:14:50</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-06-EU--Greece-Bailout-The%20Latest/id-835d02b519244af1896325b38e3e8329'>site</a></td><td>Government spokesman Nicos Christodoulides has told state radio that Cyprus' president and finance minister backed a restructuring of Greek debt and negotiations between Greece and its creditors need to begin immediately.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-07-06 13:46:52</td><td><a href='http://finance.yahoo.com/news/mohamed-el-erian-grexit-high-130330746.html'>site</a></td><td><table><tr><td>Earlier, Ewald Nowotny, a member of the European Central Bank's governing council, told CNBC the euro nations all have an interest in keeping Greece in the single currency.</td></tr><tr><td>When asked about whether he's optimistic that Greece can remain in the euro, the Austrian central bank governor told CNBC's " Squawk Box " that it's not a matter of being optimistic, but a matter of being "realistic."</td></tr></table></td></tr>
 </table></body></html>
