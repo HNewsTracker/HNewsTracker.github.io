@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 11:05:40</td><td><a href='http://www.utsandiego.com/news/2015/jun/10/spotify-gets-investment-as-it-faces-competition/'>site</a></td><td><table><tr><td>Spotify gets investment as it faces competition from Apple</td></tr><tr><td>COPENHAGEN, Denmark (AP) - Music streaming company Spotify says it has gotten a new investment from TeliaSonera, a Nordic telecoms company, as it looks to compete globally with similar services from Apple Inc. and others.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/36/75/67/8117713/3/headline_list_thumb137.jpg'></td><td>2015-06-10 12:38:24</td><td><a href='http://www.chron.com/business/technology/article/Spotify-gets-investment-as-it-faces-competition-6318117.php'>site</a></td><td>It is seeing increasing competition, however, with Apple launching its Apple Music streaming service at the end of June.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434879305504.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/digital-life/digital-life-news/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td>Washington: Apple is diving deeper into the news business with a new application that could make the US tech giant a key industry player.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 04:07:52</td><td></td><td><a href='apple_11_12.html'>Apple News, part of the upcoming iOS 9 operating system, aims to be the primary news source for users of the iPhone and iPad. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-21 04:07:52</td><td></td><td><a href='apple_11_13.html'>Although Apple is likely to use some algorithms to filter stories, the hiring of experienced journalists is a positive step, said Dan Kennedy, a journalism professor at Northeastern University. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434859663188.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/world/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td>Customers browse Apple Watches in New York.</td></tr>
 </table></body></html>

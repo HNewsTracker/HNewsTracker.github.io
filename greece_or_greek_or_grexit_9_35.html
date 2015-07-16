@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td>Hollande is urging Greece to find an agreement at a Monday summit in Brussels between Greece and its creditors.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>He said an agreement between Greece and its creditors is still not certain but the fact that Greece has proposed a fiscal package along the lines of the one recently demanded by its European creditors is a "significant step in the direction of compromise."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/ikisj9uV_2rvCZj.JoUvIw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/35ebbe8a5d9dd01b790f6a7067002973_original.jpg'></td><td>2015-06-19 10:39:04</td><td><a href='http://finance.yahoo.com/news/europe-scrambles-pick-pieces-greek-074848977.html'>site</a></td><td>The hope is that technical talks between Greece and its creditors will resume over the weekend before another meeting of the eurozone's finance ministers on Monday in the lead-up to the leaders' summit.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td><table><tr><td>Another meeting, and again a lack of clear Greek proposals, German Finance Wolgang Schaeuble groused Monday.</td></tr><tr><td>Schaeuble said Monday ahead of a finance ministers' meeting on the issue: "We are still in the same situation as last Thursday," when the 19 ministers of the eurozone last assessed Greece's proposals.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47887523,width-300,resizemode-4/greece.jpg'></td><td>2015-06-30 18:43:52</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Eurogroup-refuses-Greece-bailout-extension-talks-to-continue/articleshow/47887342.cms'>site</a></td><td>"The Eurogroup just finished. We will continue tomorrow morning to allow finance ministers to examine the proposals of the Greek government," the source said.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-02 06:10:25</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-01-EU--Greece-The%20Latest/id-4d2487f8f71b456ca073b3e80baf9214'>site</a></td><td>Eurozone finance ministers were set to weigh Greece's latest proposal for aid Wednesday.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-06 02:47:37</td><td><a href='http://news.yahoo.com/greece-votes-high-stakes-bailout-referendum-050534077--finance.html'>site</a></td><td>The referendum result was "very regrettable for the future of Greece," said Jeroen Dijsselbloem, head of the eurozone finance ministers' meeting known as the Eurogroup, which also will meet Tuesday.</td></tr>
 </table></body></html>

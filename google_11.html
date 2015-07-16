@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/06/29/1297515602005.jpg&size=104x59&quality=85'></td><td>2015-06-29 16:19:21</td><td><a href='http://technology.canoe.com/News/2015/06/29/22479026.html?cid=rsstechnologynews'>site</a></td><td>WASHINGTON - The U.S. Supreme Court on Monday sided with Oracle Corp. and declined to hear Google Inc.'s appeal in a major software copyright case that has been closely followed by the technology industry.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297515602005_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-29 16:20:38</td><td><a href='http://www.torontosun.com/2015/06/29/google-denied-appeal-in-oracle-software-fight'>site</a></td><td>A Google representative did not immediately comment on the court's decision, and an Oracle spokeswoman could not immediately be reached.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Did you know that Google has been known to rent goats to "mow" its grass at the Googleplex complex in Mountain View, Calif.?</td></tr><tr><td>Of course, Google isn't just all about streaming and websites.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnology'>site</a></td><td>What does Google have in store for the future?</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-27 10:00:00</td><td></td><td><a href='google_11_12.html'>Rather than just cry about what went wrong and how they lost out on the deal, Google has been hard at work creating its own "Twitch killer." (2)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 15:09:35</td><td><a href='http://www.ctvnews.ca/sci-tech/apple-s-ipod-touch-getting-faster-processor-better-cameras-1.2470289'>site</a></td><td><table><tr><td>Apple's iPod Touch getting faster processor, better cameras</td></tr><tr><td>NEW YORK -- Apple is updating its iPod Touch music player for the first time in nearly three years, as the company seeks to make music a central part of its devices once again.</td></tr><tr><td>But the latest move shows Apple isn't giving up on the iPod.</td></tr><tr><td>Beyond music, the iPod Touch might get new customers hooked on Apple's apps, video and other content -- such that they'll turn to an iPhone, iPad or Mac when they are ready to buy a device that does more.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 15:11:13</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/apples-ipod-touch-update-brings-faster-chip-better-cameras'>site</a></td><td>Apple's iPod Touch update brings faster chip, better cameras</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/55/20/8311830/7/628x471.jpg'></td><td>2015-07-15 17:09:57</td><td><a href='http://www.seattlepi.com/business/technology/article/Apple-s-iPod-Touch-update-brings-faster-chip-6385999.php'>site</a></td><td>Apple's updates iPod Touch amid declining sales</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0715/20150715__0716apple~1.JPG'></td><td>2015-07-15 17:16:12</td><td><a href='http://www.mercurynews.com/business/ci_28487011/apple-updates-ipod-touch-first-time-three-years?source=rss'>site</a></td><td>NEW YORK -- Although the iPod's popularity has waned, Apple is updating its music player for the first time in nearly three years by giving the flagship Touch model a faster processor and better cameras.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 18:46:28</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article27306205.html#storylink=rss'>site</a></td><td>This composite product image provided by Apple shows varieties of the new iPod Touch, available for sale on Wednesday, July 15, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 14:35:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11482364&ref=rss'>site</a></td><td><table><tr><td>But Apple Music feels like an attempt to take on every competitive app from Pandora to Spotify to YouTube and advance the idea of online radio at the same time.</td></tr><tr><td>" Then there's the "Radio" tab, which debuts not only Apple's new 24/7 online radio station, Beats1, but contains several stations specializing in various genres. These are like playlists, but you can't see all the songs that are up next.</td></tr></table></td></tr>
 </table></body></html>

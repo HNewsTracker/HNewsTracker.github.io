@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,7 +50,6 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td><table><tr><td>Dimitris is voting "yes" because he fears Greece would be in danger if it leaves the European Union.</td></tr><tr><td>His daughter Alexandra is voting "no" because she is tired of richer European nations bossing Greece around.</td></tr></table></td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 04:09:03</td><td><a href='http://news.yahoo.com/campaigns-halt-greeks-face-tough-referendum-choice-040313872--finance.html'>site</a></td><td>He said if the European Union wants to keep Greece in the eurozone, it will have to come up with "a very generous plan" since the cost of the crisis has shot up to unanticipated levels.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480388&ref=rss'>site</a></td><td>In Britain " a European Union member that decided against joining the euro " treasury chief George Osborne responded to the deal brokered on Greece with "a cautious welcome that the Eurozone has stepped back from the brink."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480388&ref=rss'>site</a></td><td>Now that the immediate Greek bankruptcy crisis is seen to be receding, a crisis of confidence over the European project may be taking its place.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 17:41:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27192415.html#storylink=rss'>site</a></td><td>Gramegna, whose country holds the rotating presidency of the 28-country European Union, said Tuesday that the 19-country eurozone handled the Greek crisis in a more "efficient way" than it did five years ago when Greece's debt crisis first exploded.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=topNews'>site</a></td><td>Similarly, Japan's economics minister, Akira Amari, said Greece and the European Union should work hard to strike a win-win deal that would keep Greece in the currency union.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480388&ref=rss'>site</a></td><td>In Britain " a European Union member that decided against joining the euro " treasury chief George Osborne responded to the deal brokered on Greece with "a cautious welcome that the Eurozone has stepped back from the brink."</td></tr>
 </table></body></html>
