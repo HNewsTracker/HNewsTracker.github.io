@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/podcast/2015-06/site_197_World%2520News_419999.JPG?itok=re3OTVQk'></td><td>2015-06-21 20:41:12</td><td><a href='http://www.sbs.com.au/news/article/2015/06/22/greece-offers-new-proposals-ahead-emergency-summit'>site</a></td><td>After months of wrangling and with anxious depositors pulling billions of euros out of Greek banks, Tsipras's leftist government showed a new willingness this weekend to make concessions that would unlock frozen aid to avert default.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>A "no" could mean no more loans, leaving Greece little choice but to print its own currency after running out of euros needed to pay government wages and pension and to refloat troubled banks.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 14:00:40</td><td><a href='http://www.upi.com/Top_News/World-News/2015/06/28/European-Central-Bank-to-maintain-Greek-emergency-funding/8711435497439/'>site</a></td><td>"We continue to work closely with the Bank of Greece and we strongly endorse the commitment of Member States in pledging to take action to address the fragilities of euro area economies," ECB President Mario Draghi said in a statement.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 06:34:06</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/14/what-relief-greek-economy-on-its-knees-despite/'>site</a></td><td>Imports in Greece have been hammered by the limits on money transfers that the government imposed two weeks ago to prevent a bank run.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 04:20:04</td><td><a href='http://www.miamiherald.com/news/business/article27374527.html#storylink=rss'>site</a></td><td>The other big Greek issue at the meeting will likely be Draghi re-stating that the bank is willing to use all the stimulus measures at its disposal to prevent turmoil from Greece spreading to government bond markets or the economies of other countries.</td></tr>
 </table></body></html>

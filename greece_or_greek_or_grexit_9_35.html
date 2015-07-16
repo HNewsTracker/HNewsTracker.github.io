@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 16:21:14</td><td><a href='http://news.yahoo.com/greece-votes-referendum-future-euro-doubt-042002265--sector.html'>site</a></td><td>However central bankers warned before the vote that a 'No' would make it almost impossible for the ECB to turn on the taps, leaving the Greek financial system without funds and facing imminent collapse.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297724874909_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-16 02:15:37</td><td><a href='http://www.torontosun.com/2015/07/15/greek-civil-servants-pharmacists-strike-against-bailout-reforms'>site</a></td><td>Speaking in parliament before the vote, Tsipras made clear he was supporting the package against his will but there was no alternative if Greece was to avoid financial collapse.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=wtMostRead'>site</a></td><td>However it remains unclear how far Tsipras, whose leftist Syriza government came to power in January vowing to lift Greece out of austerity, is willing to bend.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 08:05:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475895&ref=rss'>site</a></td><td>But months of talks without real results have eroded the Greek government's credibility in the eyes of Europe's power circles.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='https://timedotcom.files.wordpress.com/2015/07/greece-bailout_wong-3.jpg?quality=65&#038;strip=color&#038;w=560&#038;h=374&#038;crop=1'></td><td>2015-07-07 23:36:17</td><td><a href='http://time.com/3948957/greece-grexit-alexis-tsipras-deadline/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>Highlighting the rising anger with Tsipras over months of foot-dragging and surprising negotiating twists, European Commission President Jean-Claude Juncker had a stark warning for Greece.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-09 12:15:28</td><td><a href='http://www.startribune.com/easier-terms-for-greece-could-open-a-can-of-worms-in-europe/312837621/'>site</a></td><td>Its economic policies are similar to those of Syriza, and it has been one of the Greek government's biggest supporters in Europe.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-12 09:41:51</td><td><a href='http://www.reuters.com/article/2015/07/12/eurozone-greece-reaction-idUSL5N0ZS04J20150712?feedType=RSS&feedName=wtMostRead'>site</a></td><td>"What is at play here is an attempt to humiliate Greece and Greeks, or to overthrow the Tsipras government," Dimitrios Papadimoulis, Vice-President of the European Parliament and member of Greece's ruling Syriza party, told Mega TV.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 06:10:25</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-01-EU--Greece-The%20Latest/id-4d2487f8f71b456ca073b3e80baf9214'>site</a></td><td>Eurozone finance ministers were set to weigh Greece's latest proposal for aid Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-02 07:39:26</td><td><a href='http://www.miamiherald.com/news/business/article26034718.html#storylink=rss'>site</a></td><td>Sapin had been pushing for an agreement with Greece before Sunday's referendum, but after a fruitless meeting of European finance ministers Wednesday, he conceded that there's no point negotiating until after the vote.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/35/41/8247381/5/920x920.jpg'></td><td>2015-07-02 07:36:22</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-European-markets-solid-as-Greek-6362262.php'>site</a></td><td>The Latest: France's Sapin says committed to Greece in euro</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150706&i=109377974&w=240&r=109377974-1&t=2'></td><td>2015-07-06 23:51:45</td><td><a href='http://www.reuters.com/article/2015/07/06/us-eurozone-greece-idUSKBN0P40EO20150706?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Hollande said, "It's now up to the government of Alexis Tsipras to offer serious, credible proposals so that this can be turned into a program which gives a long-term perspective, because Greece needs a long-term perspective in the euro zone with stable rules, as the euro zone itself does."</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=topNews'>site</a></td><td>While France and Italy have emphasized the importance of more talks, a big majority of the 19 euro zone governments favor taking a hard line with Greece, diplomats said.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150710&i=109507389&w=240&r=109507389-1&t=2'></td><td>2015-07-10 23:26:28</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>France, Greece's strongest supporter in the euro zone, rushed to offer praise.</td></tr><tr><td>Greece still has to overcome hardening attitudes toward it among euro zone partners.</td></tr></table></td></tr>
 </table></body></html>

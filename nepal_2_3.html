@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 02:30:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11462358&ref=rss'>site</a></td><td>KATHMANDU, Nepal (AP) " Nepal's main political parties have reached agreements on several disputed issues that could lead to the drafting of a much-delayed constitution in the Himalayan nation.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 03:55:58</td><td><a href='http://www.sfgate.com/news/world/article/Political-agreement-pave-the-way-for-new-Nepal-6314982.php'>site</a></td><td>Political agreement paves the way for new Nepal constitution</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-15 08:02:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article24391621.html#storylink=rss'>site</a></td><td><table><tr><td>The April 25 and May 12 quakes killed more than 8,700 people and damaged hundreds of thousands of buildings in Nepal, including old temples, palaces and other historical structures that are popular with tourists.</td></tr><tr><td>"We are urging people to come to Nepal for holiday to help Nepal rebuild," Sherpa said in Bhaktapur, a city filled with ancient temples that is among the reopened heritage sites.</td></tr></table></td></tr>
 </table></body></html>

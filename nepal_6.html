@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 11:40:30</td><td><a href='http://www.daytondailynews.com/ap/ap/international/21-dead-dozens-missing-as-landslide-buries-nepal-v/nmbDB/'>site</a></td><td>21 dead, dozens missing as landslide buries Nepal villages</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/zS2EqyhGtIxJ5OXXKRDRfA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/8e9f0f0b238bdc1d7a0f6a7067005787.jpg'></td><td>2015-06-30 13:54:44</td><td><a href='http://news.yahoo.com/image-asia-celebrating-while-planting-paddy-nepal-135444316.html'>site</a></td><td>In this photo by Niranjan Shrestha, farmers play with sludge as they plant paddy saplings in a field outside Kathmandu, Nepal, on Asar Pandhra day.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/RT_indonesia_plane_crash5_ml_150629_mn_16x9t_384.jpg'></td><td>2015-06-30 13:55:31</td><td><a href='http://abcnews.go.com/International/wireStory/image-asia-celebrating-planting-paddy-nepal-32124618'>site</a></td><td>Image of Asia: Celebrating While Planting Paddy in Nepal</td></tr>
 </table></body></html>

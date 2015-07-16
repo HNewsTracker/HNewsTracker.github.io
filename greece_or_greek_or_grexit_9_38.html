@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,11 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 20:33:17</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/25/us-stocks-edge-higher-following-a-surge-in-consumer-spending'>site</a></td><td>The bitter standoff between Greece and its international creditors was extended into the weekend, days before Athens has to meet a crucial debt deadline which could decide whether it defaults on its debt and has to drop out of the euro.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Most Asian stock indexes fell Friday as a standoff between Greece and its international creditors threatened to drag into the weekend.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 16:05:23</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/22/markets-surge-ahead-of-last-ditch-summit-on-greece'>site</a></td><td>Europe cautiously optimistic of Greek debt deal this week</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 16:11:04</td><td><a href='http://www.charlotteobserver.com/news/business/article25139845.html#storylink=rss'>site</a></td><td>Eurozone nations were cautiously optimistic on Monday that a deal on Greece's bailout was finally within reach this week, amid fears the country might otherwise default on its debts and fall out of the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 17:21:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25139878.html#storylink=rss'>site</a></td><td>The eurozone's top official says creditors aim to get a deal on Greece's bailout later in the week.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 15:35:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-30-EU--Greece-Bailout/id-cb00954a6fe4410cb3e160813b23616d'>site</a></td><td>An EU official said Greece's creditors would not agree Tuesday night on a new bailout deal or extension and would instead, starting Wednesday, focus on a new plan for the country.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>But that might prove more difficult if Greece was no longer a part of the euro - and did not face external pressure from fellow eurozone states to modernize its economy.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 09:54:03</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26523319.html#storylink=rss'>site</a></td><td>Instead, they argue voting "yes" will allow Greece to get a new bailout deal quickly to shore up the economy.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-15 06:34:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/what-relief-greek-economy-on-its-knees-despite-bailout-deal'>site</a></td><td>ATHENS, Greece (AP) - Greece has a tentative rescue deal, but relief that it is not falling out of the euro is unlikely to last long: its economy has taken a huge hit.</td></tr>
 </table></body></html>
