@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td>A weekend of fear in Greece as Monday promises salvation or ruin</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://www.reuters.com/article/2015/07/03/us-markets-global-idUSKCN0PD01T20150703?feedType=RSS&feedName=wtMostRead'>site</a></td><td>"With liquidity thin and the Greek referendum coming up, not many would want to take large positions going into the weekend. The U.S. jobs report has taken the wind out of the sails for the dollar for the time being," said Alvin Tan, currency strategist at Societe Generale.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greece mulls next move as clock ticks on debt talks</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/24/70/8211972/3/628x471.jpg'></td><td>2015-06-25 20:33:17</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-edge-higher-following-a-surge-in-6348752.php'>site</a></td><td>Greece has a small economy and its debt problems have been long known by investors.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>GREEK TALKS: Global investors are watching closely as Greek debt talks go down to the wire.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/37/32/32/8234652/7/gallery_thumb.jpg'></td><td>2015-06-30 05:01:27</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-fall-in-early-trade-as-Greece-debt-woes-6355425.php'>site</a></td><td>Investors were concerned that the crisis in Greece could spread to other euro countries that are struggling with high debt and austerity policies or to developing nations in Asia and South America.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150710&i=109507389&w=240&r=109507389-1&t=2'></td><td>2015-07-10 23:26:28</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=businessNews'>site</a></td><td>Five of them signed a letter saying it would be better to return to the drachma, Greece's pre-euro currency, than to swallow more austerity with no debt write-off.</td></tr>
 </table></body></html>

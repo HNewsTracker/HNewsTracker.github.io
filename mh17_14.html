@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,16 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>fifa or blatter</h3>
+    <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 07:49:13</td><td></td><td><a href='fifa_or_blatter_23_25.html'>The officials were detained in a dawn raid on 27 May on a luxury Zurich hotel two days before FIFA's annual congress, throwing soccer's governing body into turmoil. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 11:26:47</td><td></td><td><a href='fifa_or_blatter_23_24.html'>They did not name the official, but the news came six days after a source told Reuters that Jeffrey Webb - one of seven current and former FIFA employees arrested in Switzerland in May - had agreed not to fight his extradition. (13)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cbsnews1.cbsistatic.com/hub/i/r/2015/05/27/144c144d-00c0-4d79-8f7b-85e2067ec4b3/thumbnail/620x350/72e19a6c60b153315b0f8b47c329b055/rtx1ese1.jpg'></td><td>2015-07-16 13:02:17</td><td><a href='http://www.cbsnews.com/news/fifa-official-switzerland-corruption-bribery-raids-extradited-to-us/'>site</a></td><td>Both have been suspended from football duty by FIFA's ethics committee.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://static01.nyt.com/images/2015/07/11/sports/Y-FIFA/Y-FIFA-thumbStandard.jpg'></td><td>2015-07-16 18:14:26</td><td><a href='http://www.nytimes.com/2015/07/17/sports/soccer/ex-fifa-executive-jeffrey-webb-extradited-to-us.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Blatter has not been charged.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/0009844c-642.jpg'></td><td>2015-07-03 14:50:34</td><td><a href='http://www.rte.ie/news/2015/0703/712481-dutch-seek-un-tribunal-to-prosecute-downing-of-mh1/'>site</a></td><td><table><tr><td>Dutch seek UN tribunal over downing of MH17</td></tr><tr><td>Moscow has suggested MH17 was downed by a Ukrainian fighter jet and denied a widely supported theory that the rebels shot it out of the sky with a Russian-supplied BUK missile.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 11:58:27</td><td><a href='http://www.rferl.org/content/putin-russia-mh17-tribunal/27130964.html'>site</a></td><td>Putin Says MH17 Tribunal Would Be ‘Premature, Counterproductive’</td></tr>
 </table></body></html>

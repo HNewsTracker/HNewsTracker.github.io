@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 07:49:13</td><td></td><td><a href='fifa_or_blatter_23_25.html'>The officials were detained in a dawn raid on 27 May on a luxury Zurich hotel two days before FIFA's annual congress, throwing soccer's governing body into turmoil. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 11:26:47</td><td></td><td><a href='fifa_or_blatter_23_24.html'>They did not name the official, but the news came six days after a source told Reuters that Jeffrey Webb - one of seven current and former FIFA employees arrested in Switzerland in May - had agreed not to fight his extradition. (13)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cbsnews1.cbsistatic.com/hub/i/r/2015/05/27/144c144d-00c0-4d79-8f7b-85e2067ec4b3/thumbnail/620x350/72e19a6c60b153315b0f8b47c329b055/rtx1ese1.jpg'></td><td>2015-07-16 13:02:17</td><td><a href='http://www.cbsnews.com/news/fifa-official-switzerland-corruption-bribery-raids-extradited-to-us/'>site</a></td><td>Both have been suspended from football duty by FIFA's ethics committee.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://static01.nyt.com/images/2015/07/11/sports/Y-FIFA/Y-FIFA-thumbStandard.jpg'></td><td>2015-07-16 18:14:26</td><td><a href='http://www.nytimes.com/2015/07/17/sports/soccer/ex-fifa-executive-jeffrey-webb-extradited-to-us.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Blatter has not been charged.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000aa993-120.jpg'></td><td>2015-07-02 07:49:13</td><td><a href='http://www.rte.ie/sport/soccer/2015/0702/712109-fifa/'>site</a></td><td>The officials were detained in a dawn raid on 27 May on a luxury Zurich hotel two days before FIFA's annual congress, throwing soccer's governing body into turmoil.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/Sports/WireAP_516940a8e2d24d22bcc848191700520a_16x9_992.jpg'></td><td>2015-07-16 15:58:23</td><td><a href='http://abcnews.go.com/Sports/wireStory/swiss-extradite-detained-fifa-official-united-states-32485677'>site</a></td><td>FILE - In this May 27, 2015, file photo, two persons are reflected in the FIFA logo at the FIFA headquarters in Zurich, Switzerland.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-16T171501Z_1_LYNXNPEB6F10A_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-TRANSPARENCY.JPG?itok=iGDzoBjj'></td><td>2015-07-16 19:02:08</td><td><a href='http://www.sbs.com.au/news/article/2015/07/17/fifa-hires-crisis-consultants-first-official-extradited-us'>site</a></td><td>Amid an international uproar, Blatter announced days after the arrests that he would lay down his mandate at an extraordinary FIFA Congress which will take place between December and February, and would not stand again.</td></tr>
 </table></body></html>

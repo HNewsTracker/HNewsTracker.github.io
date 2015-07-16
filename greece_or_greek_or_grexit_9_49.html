@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150710&i=109527262&w=240&r=109527262-1&t=2'></td><td>2015-07-11 11:31:56</td><td><a href='http://www.reuters.com/article/2015/07/11/us-eurozone-greece-idUSKBN0P40EO20150711?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>He said officials believed Greece may need 82 billion euros, factoring in cash from the IMF and other EU sources.</td></tr><tr><td>In addition to cash from the euro zone, if Greece makes payments it missed last month to the IMF, the global lender still has a facility to lend Greece some 16 billion euros.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 09:41:51</td><td><a href='http://www.reuters.com/article/2015/07/12/eurozone-greece-reaction-idUSL5N0ZS04J20150712?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Highlighting the reluctance to grant another rescue, Germany's finance ministry floated proposals demanding stronger Greek measures or a five-year "time-out" from the euro zone.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150712&i=109547919&w=240&r=109547919-1&t=2'></td><td>2015-07-13 00:15:54</td><td><a href='http://www.reuters.com/article/2015/07/13/us-eurozone-greece-idUSKBN0P40EO20150713?feedType=RSS&feedName=topNews'>site</a></td><td>The document included a German proposal to make Greece take a "time-out" from the euro zone if it fails to meet the conditions.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 19:18:25</td><td><a href='http://www.foxbusiness.com/technology/2015/07/09/review-microsoft-navigates-shift-in-how-use-multiple-devices-with-new-office/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Review: Microsoft Office in a world of multiple devices</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/56/60/8317961/3/gallery_thumb.jpg'></td><td>2015-07-16 17:49:39</td><td><a href='http://www.seattlepi.com/business/technology/article/In-Tech-Comcast-games-Microsoft-music-HBO-6388860.php'>site</a></td><td><table><tr><td>Maybe that's why Microsoft is revamping the service formerly known as Xbox Music.</td></tr><tr><td>Like the Xbox Music service, Groove will also offer unlimited streaming from Microsoft's music catalog for $10 a month.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 17:54:47</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article27407653.html#storylink=rss'>site</a></td><td><table><tr><td>In Tech: Comcast games, Microsoft music, HBO online</td></tr><tr><td>Microsoft has a streaming music service, too - though it was mostly overlooked as attention turned to Apple's entry into a business crowded with Spotify, Google Play and others.</td></tr></table></td></tr>
 </table></body></html>
