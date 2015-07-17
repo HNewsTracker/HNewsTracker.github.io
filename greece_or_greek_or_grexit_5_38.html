@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=topNews'>site</a></td><td>But after months of fractious negotiations, some European leaders are now openly contemplating the possibility of Greece becoming the first nation to be dumped out of the euro zone.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 09:06:06</td><td><a href='http://www.reuters.com/article/2015/06/21/us-global-economy-weekahead-idUSKBN0P109V20150621?feedType=RSS&feedName=businessNews'>site</a></td><td>If Greece does default on its debts, which remains a real possibility, it could require capital controls that would potentially turf it out of the euro zone or even the European Union itself, becoming the first country ever to leave the bloc.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/7e5/report-on-business/article25033715.ece/ALTERNATES/w220/560488467-477632014.JPG'></td><td>2015-06-21 16:01:04</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-offers-new-proposals-ahead-of-emergency-summit/article25049138/?cmpid=rss1'>site</a></td><td>"Either Greece declares itself willing for a viable solution or the country must leave the euro. The euro zone could cope with the consequences of a Greek exit," he said.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>The ballot question does not address whether Greece should abandon the euro currency or leave the 28-member European Union, but many voters believe those issues are at stake.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/o/4/9/image.related.articleLeadwide.620x349.giao2w.png/1436698684738.jpg'></td><td>2015-07-12 10:58:12</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-rail-at-german-humiliation-20150712-giao2w.html'>site</a></td><td>Brussels: Euro zone leaders said they would fight to the finish to keep near-bankrupt Greece in the euro zone on Sunday after the European Union's chairman cancelled a planned summit of all 28 EU leaders that would have been needed in case of a "Grexit".</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480388&ref=rss'>site</a></td><td>Euro currency emerges intact _ for now _ from Greek crisis</td></tr>
+</table></body></html>

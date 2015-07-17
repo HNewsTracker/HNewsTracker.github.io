@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,14 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 16:32:06</td><td></td><td><a href='mh17_0_5.html'>Families of those killed when Malaysia Airlines flight MH17 was shot down over Ukraine last year demanded justice at a memorial ceremony ahead of the first anniversary of the disaster. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 17:00:50</td><td></td><td><a href='mh17_0_1.html'>Just minutes after the crash, a posting appeared on the social media account of then-rebel commander Igor Girkin, saying that the rebels had shot down a Ukrainian An-26 transport plane and it crashed in the same area as MH17. (9)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 17:45:15</td><td><a href='http://www.smh.com.au//breaking-news-national/mh17-video-shows-it-was-no-accident-pm-20150717-3zf6t.html'>site</a></td><td>New footage emerges of MH17 crash</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 05:45:20</td><td></td><td><a href='mh17_0_4.html'>Ukrainians, Australian kin mark year since MH17 downing (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-17 06:10:27</td><td></td><td><a href='mh17_0_2.html'>Relatives of the Australian victims of Malaysia Airlines Flight MH17 arrive at a memorial that was unveiled outside Parliament House in Canberra, Australia, Friday, July 17, 2015. (4)</a></td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 08:42:03</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27471565.html#storylink=rss'>site</a></td><td>In the Netherlands, hundreds of relatives of those killed on MH17 were gathering Friday afternoon at a conference center near the central city of Utrecht, an event organizaed by the relatives themselves.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-17 12:13:24</td><td></td><td><a href='mh17_0_3.html'>Speaking Friday to reporters in Kiev, he said he was shocked at "how little has changed. Ordinary people in Donbass (eastern Ukraine), like the 298 on board MH17, continue to die and suffer." (3)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-07-17 12:13:24</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>But the rebel denials of shooting down MH17 have been increasingly challenged by resident accounts, journalists' observations on the ground and the statements of one rebel official.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 13:25:06</td><td><a href='http://www.seattlepi.com/news/crime/article/Investigators-still-have-no-suspects-in-downing-6357628.php'>site</a></td><td>Investigators still have no suspects in downing of MH17</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 12:21:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27382204.html#storylink=rss'>site</a></td><td>Hours before the MH17 went down, AP journalists saw a Buk M-1 launcher moving through the rebel-controlled town of Snizhne, carrying four 18-foot (5.5-meter) missiles.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 17:00:50</td><td></td><td><a href='mh17_0_5.html'>Just minutes after the crash, a posting appeared on the social media account of then-rebel commander Igor Girkin, saying that the rebels had shot down a Ukrainian An-26 transport plane and it crashed in the same area as MH17. (4)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-16 17:40:58</td><td></td><td><a href='mh17_0_4.html'>Russian President Vladimir Putin says establishing an international tribunal to prosecute those behind the downing of Malaysia Airlines flight MH17 would be counterproductive. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-17 04:12:28</td><td></td><td><a href='mh17_0_2.html'>Soft toys are seen near the crash site of the Malaysia Airlines Boeing 777 plane (Flight MH17) near the settlement of Grabovo in the Donetsk region. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-17 05:45:20</td><td></td><td><a href='mh17_0_3.html'>Ukrainians, Australian kin mark year since MH17 downing (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-17 06:10:27</td><td></td><td><a href='mh17_0_1.html'>Relatives of the Australian victims of Malaysia Airlines Flight MH17 arrive at a memorial that was unveiled outside Parliament House in Canberra, Australia, Friday, July 17, 2015. (20)</a></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 08:42:03</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27471565.html#storylink=rss'>site</a></td><td>In the Netherlands, hundreds of relatives of those killed on MH17 were gathering Friday afternoon at a conference center near the central city of Utrecht, an event organizaed by the relatives themselves.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-17 11:38:00</td><td></td><td><a href='mh17_0_6.html'>In the Netherlands, the names of all 298 victims were read out - a process that took 27 minutes - before a minute's silence was held at the time when exactly a year earlier air traffic controllers lost contact with MH17. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-17 12:13:24</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>But the rebel denials of shooting down MH17 have been increasingly challenged by resident accounts, journalists' observations on the ground and the statements of one rebel official.</td></tr>
 </table></body></html>

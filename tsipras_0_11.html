@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>Greece's Tsipras digs in against bailout</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 04:05:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11478922&ref=rss'>site</a></td><td>Greece's Tsipras to sell last-ditch deal to reluctant party</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 09:40:15</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=topNews'>site</a></td><td>After walking into a party meeting to applause, Tsipras rallied his Syriza lawmakers to throw their weight behind the new proposals ahead of a snap vote in parliament on the negotiations, urging them to help keep Greece in the euro.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>Many in Tsipras' party have indicated they will refuse to vote for the deal because it goes back on election pledges to repeal austerity measures that have been imposed on Greece for years.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-15 06:53:36</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/the-latest-german-official-says-tsipras-criticism-/nmy3c/'>site</a></td><td>Tsipras told state TV that "the policies imposed on us were irrational" but the deal was the best Greece could get.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-15 13:01:52</td><td><a href='http://www.sbs.com.au/news/article/2015/07/15/reluctant-tsipras-fights-pass-reforms-greek-parliament'>site</a></td><td>Tsipras has described the deal as a "one-way street" imposed on Greece and the rest of his government shared his scepticism.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436995239589.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150715-gidayi'>site</a></td><td>The ruling Syriza party, elected in January on an anti-austerity platform, has been deeply split by the bailout deal that a reluctant Tsipras was forced to accept after gruelling negotiations in Brussels this week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td>Ahead of the summit, Tsipras spoke by phone with German Chancellor Angela Merkel.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 18:15:42</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/16/on-the-brink-eu-leaders-clinched-bailout-deal-_/'>site</a></td><td>For three hours, Merkel, Tsipras, Tusk and French President Francois Hollande had been stuck in dead-end closed-door talks, and the message suddenly made something click.</td></tr>
 </table></body></html>

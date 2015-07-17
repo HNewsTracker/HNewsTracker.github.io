@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 16:03:26</td><td><a href='http://www.miamiherald.com/news/business/article26650732.html#storylink=rss'>site</a></td><td>Google did not say exactly where the driverless cars would be tested.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-07-17 20:57:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/17/google-gains-50b-in-value-on-day-that-may-set-a-record'>site</a></td><td><table><tr><td>Google shares gain a record $65B in value</td></tr><tr><td>Google's Class C shares rose 16.1 percent to $672.93.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/images/miamiherald/logo-sm.png'></td><td>2015-07-17 21:02:04</td><td><a href='http://www.miamiherald.com/news/business/technology/article27501394.html#storylink=rss'>site</a></td><td><table><tr><td>The combined gains include Google Inc.'s Class A and non-voting Class C shares.</td></tr><tr><td>Google's Class A shares gained $97.84, or 16.3 percent, to close at $699.62.</td></tr></table></td></tr>
 </table></body></html>

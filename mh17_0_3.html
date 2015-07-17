@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 06:25:37</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-world/draft-report-of-mh17-crash-handed-over-20150702-3yov1.html'>site</a></td><td>The Dutch Safety Board has handed a draft report on the downing of Malaysia Airlines flight MH17 in eastern Ukraine to the countries involved in the investigation.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 11:23:02</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/16/russia-lashes-out-at-leaks-of-mh17-draft-report/'>site</a></td><td>Russia lashes out at leaks of MH17 draft report</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 12:13:24</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>Speaking Friday to reporters in Kiev, he said he was shocked at "how little has changed. Ordinary people in Donbass (eastern Ukraine), like the 298 on board MH17, continue to die and suffer."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 05:45:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11482792&ref=rss'>site</a></td><td>Ukrainians, Australian kin mark year since MH17 downing</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 15:41:28</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>Dutch, Ukrainians, Australians mark year since MH17 downing</td></tr>
 </table></body></html>

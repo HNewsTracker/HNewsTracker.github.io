@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150614&t=2&i=1056179873&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5D0E7'></td><td>2015-06-14 17:06:26</td><td><a href='http://www.reuters.com/article/2015/06/14/us-storm-carlos-mexico-idUSKBN0OU0UI20150614?feedType=RSS&feedName=environmentNews'>site</a></td><td>Meanwhile on the other side of the country, a low pressure system in the Gulf of Mexico was producing showers on the coast of Guatemala, Belize, and the Yucatan peninsula, and it could become a tropical storm in the next two days, the NHC said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-15 04:02:48</td><td><a href='http://abcnews.go.com/International/wireStory/tropical-storm-carlos-batters-mexicos-southwest-coast-31766312'>site</a></td><td>Officials ordered schools closed Monday and readied shelters along Mexico's southwestern coast as Tropical Storm Carlos battered beaches with high waves and strong wind as it swirled just offshore.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 15:10:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27108004.html#storylink=rss'>site</a></td><td>Tropical Storm Dolores strengthens off coast of Mexico</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 04:00:04</td><td><a href='http://www.miamiherald.com/sports/article27370504.html#storylink=rss'>site</a></td><td>"We had an objective to get to the quarterfinals. We wanted to win the first game and get the result from Cuba (a 2-0 win on July 12), and not have to play Mexico to get to the quarterfinals."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/56/23/8316105/3/920x920.jpg'></td><td>2015-07-16 04:33:08</td><td><a href='http://www.sfgate.com/sports/article/Mexico-draws-in-frenetic-finish-gets-Costa-Rica-6387609.php'>site</a></td><td>Trinidad and Tobago (2-0-1, 7 points) took Group C's top seed into the quarterfinals, and will face Panama on Sunday in East Rutherford, N.J. Mexico (1-0-2, 5 points) will play Costa Rica in the second game Sunday.</td></tr>
 </table></body></html>

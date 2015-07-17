@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 21:25:03</td><td></td><td><a href='ukraine_22_23.html'>"And as far as I can tell, the only country that has stood side by side with Ukraine has been Canada, even during the Maidan by closing the embassy in Moscow. These are the right things to do. In finding that friendship, you keep finding the strength to move forward." (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://wpmedia.news.nationalpost.com/2015/07/cda_ukraine_embassy_201507121.jpg?w=620'></td><td>2015-07-12 21:25:03</td><td><a href='http://news.nationalpost.com/news/canada/investigation-uncovers-canadian-embassy-in-ukraine-was-used-as-haven-for-a-week-by-anti-government-protesters'>site</a></td><td>"Generally speaking in Ukrainian public opinion, as well in the Ukraine government of that time, there was a common understanding that Canadian sympathies are on the side of the protesters, pro-European, pro-democratic."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 16:55:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/16/little-certainty-1-year-after-airliner-shot-down-in-ukraine'>site</a></td><td>A year since a Malaysia Airlines Boeing 777 was blown out of the sky over war-ravaged eastern Ukraine, killing 298 people, there has been little definitive progress in determining what brought down Flight MH17.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 16:55:14</td><td></td><td><a href='ukraine_22_23.html'>A draft version of the final report was circulated this month to representatives of Malaysia, Ukraine, the U.S., Russia, Britain, Australia and the Netherlands for their comments and suggested revisions. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 16:55:14</td><td><a href='http://www.seattlepi.com/news/crime/article/Little-certainty-1-year-after-airliner-shot-down-6388730.php'>site</a></td><td>Little certainty 1 year after airliner shot down in Ukraine</td></tr>
 </table></body></html>

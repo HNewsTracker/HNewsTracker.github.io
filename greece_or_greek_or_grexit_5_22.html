@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/1/z/d/p/image.related.articleLeadwide.620x349.gi1z8m.png/1435695297740.jpg'></td><td>2015-06-30 17:36:00</td><td><a href='http://www.brisbanetimes.com.au/world/greece-asks-for-another-bailout-but-angela-merkel-says-no-deals-before-referendum-20150630-gi1z8m'>site</a></td><td>The growing risk of Athens being forced out of the single currency brought into sharp focus the chaos likely to be unleashed in Greece and the risks to the stability of the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Despite its rickety finances, Greece shaped up a little for a few years and qualified to join the single currency in 2001.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/iBxMB9pdmLaDZOm2QFNoLw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/544dd0c81343021f7c0f6a706700be43_original.jpg'></td><td>2015-07-12 22:39:12</td><td><a href='http://finance.yahoo.com/news/greece-faces-pressure-back-deal-223800302.html'>site</a></td><td>If the talks don't succeed, some of Greece's eurozone partners warned, the country could be temporarily forced out of the euro, the European single currency that Greece has been a part of since 2002.</td></tr>
+</table></body></html>
