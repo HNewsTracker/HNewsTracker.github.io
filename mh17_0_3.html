@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/0009844c-642.jpg'></td><td>2015-07-03 14:50:34</td><td><a href='http://www.rte.ie/news/2015/0703/712481-dutch-seek-un-tribunal-to-prosecute-downing-of-mh1/'>site</a></td><td>Moscow has suggested MH17 was downed by a Ukrainian fighter jet and denied a widely supported theory that the rebels shot it out of the sky with a Russian-supplied BUK missile.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 17:00:50</td><td><a href='http://www.startribune.com/little-certainty-1-year-after-airliner-shot-down-in-ukraine/315883861/'>site</a></td><td><table><tr><td>Just minutes after the crash, a posting appeared on the social media account of then-rebel commander Igor Girkin, saying that the rebels had shot down a Ukrainian An-26 transport plane and it crashed in the same area as MH17.</td></tr><tr><td>The rebels had shot down several Ukrainian planes in the early months of the war, but apparently with shoulder-fired missiles that could not reach the altitude at which MH17 was flying.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/e/e/w/b/image.related.articleLeadwide.620x349.giebhg.png/1437096360160.jpg'></td><td>2015-07-17 04:26:22</td><td><a href='http://www.smh.com.au/federal-politics/political-news/mh17-anniversary-foreign-minister-julie-bishop-sickened-by-crash-site-footage-20150717-giebhg.html'>site</a></td><td>"It is sickening to watch and, 12 months on from the downing of MH17, it is deeply concerning that this footage has emerged now," she told the Nine Network.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.independent.co.uk/incoming/article10396175.ece/alternates/w460/MH17-video2.jpg'></td><td>2015-07-17 10:35:05</td><td><a href='http://www.independent.co.uk/news/world/europe/mh17-disaster-new-footage-shows-rebels-picking-through-dead-passengers-luggage-10396132.html'>site</a></td><td>"It is certainly consistent with the intelligence advice that we received 12 months ago, that Malaysia Airlines flight MH17 had been shot down by a surface-to-air missile."</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 12:17:03</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27471565.html#storylink=rss'>site</a></td><td>Rebel leader Alexander Zakharchenko, who arrived at the commemoration ceremony on crutches, accused the Ukrainian government of taking down MH17.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 06:25:37</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-world/draft-report-of-mh17-crash-handed-over-20150702-3yov1.html'>site</a></td><td>The Dutch Safety Board has handed a draft report on the downing of Malaysia Airlines flight MH17 in eastern Ukraine to the countries involved in the investigation.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 11:23:02</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/16/russia-lashes-out-at-leaks-of-mh17-draft-report/'>site</a></td><td>Russia lashes out at leaks of MH17 draft report</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 12:13:24</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>Speaking Friday to reporters in Kiev, he said he was shocked at "how little has changed. Ordinary people in Donbass (eastern Ukraine), like the 298 on board MH17, continue to die and suffer."</td></tr>
 </table></body></html>

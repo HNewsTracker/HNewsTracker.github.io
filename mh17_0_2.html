@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000ad7dd-642.jpg'></td><td>2015-07-11 16:32:06</td><td><a href='http://www.rte.ie/news/2015/0711/714089-mh17-families-seek-justice/'>site</a></td><td><table><tr><td>Service ahead of MH17 disaster anniversary</td></tr><tr><td>Families of those killed when Malaysia Airlines flight MH17 was shot down over Ukraine last year demanded justice at a memorial ceremony ahead of the first anniversary of the disaster.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/b5/1c/6cb0f1c2e1c64dbdba8d1ee70f6a69f4-20123b60fc754d9bba88b3dddc1f31df-0.jpg'></td><td>2015-07-17 06:10:27</td><td><a href='http://www.daytondailynews.com/ap/ap/international/ukrainian-village-marks-anniversary-of-malaysian-p/nm2JG/'>site</a></td><td><table><tr><td>Relatives of the Australian victims of Malaysia Airlines Flight MH17 arrive at a memorial that was unveiled outside Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr><tr><td>A Rizk family member sheds a tear during a memorial service for the one year anniversary for Australians that lost their lives in the MH17 disaster at Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/b5/1c/6cb0f1c2e1c64dbdba8d1ee70f6a69f4-20123b60fc754d9bba88b3dddc1f31df-0.jpg'></td><td>2015-07-17 06:10:27</td><td><a href='http://www.daytondailynews.com/ap/ap/international/ukrainian-village-marks-anniversary-of-malaysian-p/nm2JG/'>site</a></td><td><table><tr><td>Relatives of the Australian victims of Malaysia Airlines Flight MH17 arrive at a memorial that was unveiled outside Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr><tr><td>A Rizk family member sheds a tear during a memorial service for the one year anniversary for Australians that lost their lives in the MH17 disaster at Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 12:13:24</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>Some of the mourners held banners accusing the Kiev government of waging a war on them and likening the MH17 victims to those killed in indiscriminate shelling in the past year and a half.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/b5/1c/6cb0f1c2e1c64dbdba8d1ee70f6a69f4-20123b60fc754d9bba88b3dddc1f31df-0.jpg'></td><td>2015-07-17 15:41:28</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ukrainian-village-marks-anniversary-of-malaysian-p/nm2JG/'>site</a></td><td>Ukrainian men hold flowers as they offer them at the Netherlands Embassy for the Malaysia Airlines Flight MH17 crash victims, in Kiev, Ukraine, Friday, July 17, 2015.</td></tr>
 </table></body></html>
