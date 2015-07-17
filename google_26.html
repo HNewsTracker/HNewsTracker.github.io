@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 13:43:11</td><td><a href='http://www.seattlepi.com/business/technology/article/Justices-won-t-hear-Google-appeal-in-dispute-with-6355350.php'>site</a></td><td><table><tr><td>Justices won't hear Google appeal in dispute with Oracle</td></tr><tr><td>WASHINGTON (AP) - The Supreme Court is staying out of a long-running legal battle between technology giants Oracle and Google over copyright protection for a computer program that powers most of the world's smartphones and computer tablets.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0511/20150511__0512selfdrive~1.JPG'></td><td>2015-07-17 00:30:23</td><td><a href='http://www.mercurynews.com/business/ci_28495535/google-self-driving-car-involved-first-injury-accident?source=rss'>site</a></td><td><table><tr><td>Google revealed Thursday that one of its self-driving car prototypes was involved in an injury accident for the first time.</td></tr><tr><td>In the collision, a Lexus SUV that the tech giant outfitted with sensors and cameras was rear-ended in Google's home city of Mountain View, where more than 20 prototypes have been self-maneuvering through traffic.</td></tr><tr><td>Google's SUV was going about 15 mph in self-driving mode behind two other cars as the group approached an intersection with a green light.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31383691.ece/6a03b/ALTERNATES/h342/PANews%20BT_P-0ebddfbc-a765-46e7-9d4b-22a6b6e1500c_I1.jpg'></td><td>2015-07-17 00:31:09</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/crouch-google-selfdriving-car-has-first-injury-accident-31383692.html'>site</a></td><td>Google has said that its car has not caused any of the collisions, though in 2011 an employee who took a car to run an errand rear-ended another vehicle while the Google car was out of self-driving mode.</td></tr>
 </table></body></html>

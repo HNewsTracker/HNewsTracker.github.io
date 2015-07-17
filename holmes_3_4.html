@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-27 00:38:19</td><td><a href='http://www.daytondailynews.com/ap/ap/us/prosecutors-question-doctor-who-found-theater-shoo/nmmPD/'>site</a></td><td><table><tr><td>Doctor who found Holmes insane didn't watch much of video</td></tr><tr><td>Brauchler pointed out that Woodcock didn't talk to Holmes about the crime or his plans for the shooting in either interview and already completed a report concluding he was insane before the second, one-hour interview.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-27 00:38:19</td><td><a href='http://www.daytondailynews.com/ap/ap/us/prosecutors-question-doctor-who-found-theater-shoo/nmmPD/'>site</a></td><td><table><tr><td>Doctor who found Holmes insane didn't watch much of video</td></tr><tr><td>Brauchler pointed out that Woodcock didn't talk to Holmes about the crime or his plans for the shooting in either interview and already completed a report concluding he was insane before the second, one-hour interview.</td></tr><tr><td>But, pressed further by defense attorney Daniel King, Woodcock said he reviewed Reid's report based on the interview and many other records and evidence and did not find anything that would have changed his own conclusion about Holmes.</td></tr></table></td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-06-27 00:39:14</td><td><a href='http://abcnews.go.com/US/wireStory/prosecutors-question-doctor-found-theater-shooter-insane-32043308'>site</a></td><td>In response to their inquiries, Woodcock reaffirmed his conclusion that Holmes was insane.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-27 00:41:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article25553560.html#storylink=rss'>site</a></td><td>Brauchler suggested that jurors and others in the courtroom who had watched all 22 hours of Dr. William Reid's interview, in which Holmes talked at length about his planning and preparation for the shooting, had observed him longer than Woodcock had.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-16 20:58:35</td><td><a href='http://www.reuters.com/article/2015/07/16/us-usa-shooting-denver-verdict-idUSKCN0PQ2DU20150716?feedType=RSS&feedName=topNews'>site</a></td><td>Holmes did not testify in his own defense, but jurors watched video of some 23 hours of interviews conducted with him by one of the court-appointed psychiatrists.</td></tr>
 </table></body></html>

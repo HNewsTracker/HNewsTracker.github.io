@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150625&t=2&i=1059059743&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5O0NL'></td><td>2015-06-25 13:13:38</td><td><a href='http://www.reuters.com/article/2015/06/25/us-soccer-fifa-blatter-idUSKBN0P51NW20150625?feedType=RSS&feedName=sportsNews'>site</a></td><td>ZURICH A celebration of Sepp Blatter's departure as the head of world soccer's governing body has attracted more than 21,000 would-be guests via Facebook.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 14:00:10</td><td><a href='http://www.sport24.co.za/Soccer/International/1000s-sign-up-for-Blatters-leaving-party-20150625'>site</a></td><td>With FIFA mired in a corruption scandal, Blatter, 79, delighted critics this month by announcing he would stand down as president of the governing body and call a leadership election, due between December and February.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 13:51:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article25701787.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA election monitor urges Blatter to commit to going</td></tr><tr><td>Sepp Blatter got a clear message on Sunday from FIFA election monitor Domenico Scala to end speculation he wants to stay in office.</td></tr></table></td></tr>
 </table></body></html>
