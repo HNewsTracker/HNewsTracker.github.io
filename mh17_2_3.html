@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 13:01:53</td><td><a href='http://www.brisbanetimes.com.au/world/mh17-anniversary-in-russia-conspiracy-theories-on-downed-plane-still-find-believers-20150715-gicj7o.html'>site</a></td><td>This can be the only explanation for one of the craziest theories: the one about MH17 really being MH370, rebadged and loaded with explosives and dead bodies.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 14:43:07</td><td><a href='http://www.brisbanetimes.com.au/world/mh17-anniversary-in-russia-conspiracy-theories-on-downed-plane-still-find-believers-20150715-gicj7o.html'>site</a></td><td>MH17 anniversary: In Russia, conspiracy theories on downed plane still find believers</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/b5/1c/6cb0f1c2e1c64dbdba8d1ee70f6a69f4-20123b60fc754d9bba88b3dddc1f31df-0.jpg'></td><td>2015-07-17 06:10:27</td><td><a href='http://www.daytondailynews.com/ap/ap/international/ukrainian-village-marks-anniversary-of-malaysian-p/nm2JG/'>site</a></td><td><table><tr><td>Relatives of the Australian victims of Malaysia Airlines Flight MH17 arrive at a memorial that was unveiled outside Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr><tr><td>A Rizk family member sheds a tear during a memorial service for the one year anniversary for Australians that lost their lives in the MH17 disaster at Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr></table></td></tr>
 </table></body></html>

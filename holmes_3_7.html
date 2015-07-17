@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/25/b2/39/d95ef8b21d1c4f068f1813a1ab34f038-01e1db1ff8a3404aa6c1d0d9e57471ba-1.jpg'></td><td>2015-06-25 21:21:57</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-defense-begins-present/nmkw7/'>site</a></td><td><table><tr><td>Dr. Jonathan Woodcock interviewed Holmes four days after the attack and concluded that he wasn't sane.</td></tr><tr><td>Jonathan Woodcock said Holmes' emotions also were extremely flat.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-27 00:38:19</td><td><a href='http://www.daytondailynews.com/ap/ap/us/prosecutors-question-doctor-who-found-theater-shoo/nmmPD/'>site</a></td><td>Dr. Jonathan Woodcock, one of the first defense witnesses to take the stand, interviewed Holmes four days after the July 20, 2012, shooting to determine if he was competent to stand trial and then again earlier this year when he was asked by the defense to testify on Holmes' sanity.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-25 21:26:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article25481296.html#storylink=rss'>site</a></td><td>Defense attorneys for Holmes are preparing to open their case on Thursday, June 25, 2015 with witnesses they hope can illustrate the severity of his mental illness at the time of the attack on July 20, 2012.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 18:28:08</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/13/after-all-is-said-in-theater-shooting-trial-was-he-sane'>site</a></td><td>The hideous details of the attack, the heartbreaking survival stories, the signs of mental illness that Holmes showed well before the events of July 20, 2012 - they shouldn't matter.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 23:43:29</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article27262330.html#storylink=rss'>site</a></td><td><table><tr><td>Daniel King said Holmes had been mentally ill even before the 2012 attack on the movie theater in Aurora, Colo., and urged the jurors to look beyond how the gunman planned his attack.</td></tr><tr><td>The prosecution had earlier argued that the deliberate nature of the planning and execution of the attack showed that Holmes was not mentally ill.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 00:43:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27191842.html#storylink=rss'>site</a></td><td>King pleaded with jurors to believe that Holmes' mental illness was the sole cause of the attack.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-17 06:15:38</td><td><a href='http://www.startribune.com/despite-quick-conviction-theater-shooting-trial-isn-t-over/316095901/'>site</a></td><td><table><tr><td>Starting next week, jurors will hear testimony about Holmes' mental illness and his childhood.</td></tr><tr><td>Prosecutors may counter with even more heartbreaking accounts from victims, ranging from those Holmes maimed to the father of his youngest victim, a 6-year-old girl who died in the 2012 attack.</td></tr></table></td></tr>
 </table></body></html>
