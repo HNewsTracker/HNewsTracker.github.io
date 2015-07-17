@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 06:57:34</td><td></td><td><a href='ukraine_2_3.html'>At the White House, President Barack Obama echoed the need for Ukraine to stick with austerity measures during a meeting Monday with Yatsenyuk and Vice President Joe Biden. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 06:57:34</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/14/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers'>site</a></td><td>Yatsenyuk's U.S. visit came amid growing global concerns over proposed legislation in Ukraine's parliament that would water down economic reforms demanded by the international community.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 16:30:17</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/14/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers'>site</a></td><td><table><tr><td>Ukraine PM says reforms continue despite 'lunatic' lawmakers</td></tr><tr><td>A day earlier, the International Monetary Fund insisted that Ukraine must "stay the course," suggesting that rolling back the changes could jeopardize the IMF's $40 billion support package for Ukraine.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 16:38:02</td><td></td><td><a href='ukraine_2_3.html'>Inside Ukraine, where pro-Russian separatists are battling Ukrainian forces, Breedlove said "we see a force that has been trained, that is led by Russian leadership, ... and is ready to do whatever mission is required of it in the Donbass (region)." (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/U.S./876/493/0626 nato meeting.jpg?ve=1&tl=1'></td><td>2015-06-26 05:54:31</td><td><a href='http://www.foxnews.com/world/2015/06/26/nato-fears-return-escalated-violence-in-eastern-ukraine/'>site</a></td><td>June 25, 2015: NATO Secretary General Jens Stoltenberg, second right, speaks with Ukraine's Defense Minister Stepan Poltorak, second left, during a meeting of the NATO-Ukraine Commission at NATO headquarters in Brussels.</td></tr>
 </table></body></html>

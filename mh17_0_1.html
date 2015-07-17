@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,10 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/b5/1c/6cb0f1c2e1c64dbdba8d1ee70f6a69f4-20123b60fc754d9bba88b3dddc1f31df-0.jpg'></td><td>2015-07-17 06:10:27</td><td><a href='http://www.daytondailynews.com/ap/ap/international/ukrainian-village-marks-anniversary-of-malaysian-p/nm2JG/'>site</a></td><td><table><tr><td>Relatives of the Australian victims of Malaysia Airlines Flight MH17 arrive at a memorial that was unveiled outside Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr><tr><td>A Rizk family member sheds a tear during a memorial service for the one year anniversary for Australians that lost their lives in the MH17 disaster at Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 06:25:37</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-world/draft-report-of-mh17-crash-handed-over-20150702-3yov1.html'>site</a></td><td>The Dutch Safety Board has handed a draft report on the downing of Malaysia Airlines flight MH17 in eastern Ukraine to the countries involved in the investigation.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/0009844c-642.jpg'></td><td>2015-07-03 14:50:34</td><td><a href='http://www.rte.ie/news/2015/0703/712481-dutch-seek-un-tribunal-to-prosecute-downing-of-mh1/'>site</a></td><td>Dutch seek UN tribunal over downing of MH17</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 11:23:02</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/16/russia-lashes-out-at-leaks-of-mh17-draft-report/'>site</a></td><td>Russia lashes out at leaks of MH17 draft report</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-16 11:58:27</td><td><a href='http://www.rferl.org/content/putin-russia-mh17-tribunal/27130964.html'>site</a></td><td>Putin Says MH17 Tribunal Would Be ‘Premature, Counterproductive’</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/1/1/111014_MH17_800x600.jpg?itok=3yaaZmpc'></td><td>2015-07-16 17:40:58</td><td><a href='http://www.sbs.com.au/news/article/2015/07/17/new-footage-emerges-mh17-crash'>site</a></td><td>Russian President Vladimir Putin says establishing an international tribunal to prosecute those behind the downing of Malaysia Airlines flight MH17 would be counterproductive.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-17 12:13:24</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>Speaking Friday to reporters in Kiev, he said he was shocked at "how little has changed. Ordinary people in Donbass (eastern Ukraine), like the 298 on board MH17, continue to die and suffer."</td></tr>
 </table></body></html>
