@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 14:18:00</td><td></td><td><a href='egypt_7_8.html'>Sharif was Egypt's biggest box-office star when David Lean cast him in 1962's "Lawrence of Arabia," but he was a virtual unknown elsewhere. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 14:18:00</td><td><a href='http://www.ctvnews.ca/entertainment/lawrence-of-arabia-actor-omar-sharif-dies-at-83-1.2463209'>site</a></td><td><table><tr><td>The 1968 film was banned in his native Egypt because he was cast as a Jew.</td></tr><tr><td>Born Michael Shalhoub in Egypt's Mediterranean coastal city of Alexandria, Sharif was the son of Christian Syrian-Lebanese parents.</td></tr><tr><td>Some of Egypt's most iconic film posters are of Hamama and Sharif.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 13:13:41</td><td></td><td><a href='egypt_7_8.html'>Al-Jazeera journalist Ahmed Mansour was being held in Berlin police custody today awaiting a judge's decision on his further detention on an international arrest warrant issued by his native Egypt, authorities said. (6)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47758590,width-300,resizemode-4/Germany-Egypt-Al-Jazeera.jpg'></td><td>2015-06-21 13:13:41</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Al-Jazeera-reporter-still-held-in-Berlin-on-Egypt-warrant/articleshow/47758578.cms'>site</a></td><td>"The Berlin prosecutor's office is examining the legal assistance request" from Egypt, he added.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/22/51/e6/f551a93b33c541edaf7defdb13be7ac3-c6bc6743a6a94c43ba7e38b844d7d78a-8.jpg'></td><td>2015-06-22 17:45:47</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/german-court-to-decide-on-al-jazeera-journalists-f/nmhn9/'>site</a></td><td>A dual Egyptian-British citizen, he was convicted in absentia in Egypt on charges that his lawyers and reporters' groups call politically motivated.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/bXCAL_QhlwS1vySK8co17Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4473da64b1ae081b7a0f6a7067009ca4.jpg'></td><td>2015-06-22 17:46:42</td><td><a href='http://news.yahoo.com/german-court-decide-al-jazeera-journalists-fate-073150993.html'>site</a></td><td>Dozens of demonstrators gathered outside the justice building before Mansour was released, carrying signs with slogans including "stop the bloodbath in Egypt" and "freedom for Ahmed Mansour."</td></tr>
 </table></body></html>

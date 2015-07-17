@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/b5/1c/6cb0f1c2e1c64dbdba8d1ee70f6a69f4-20123b60fc754d9bba88b3dddc1f31df-0.jpg'></td><td>2015-07-17 06:10:27</td><td><a href='http://www.daytondailynews.com/ap/ap/international/ukrainian-village-marks-anniversary-of-malaysian-p/nm2JG/'>site</a></td><td><table><tr><td>Relatives of the Australian victims of Malaysia Airlines Flight MH17 arrive at a memorial that was unveiled outside Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr><tr><td>A Rizk family member sheds a tear during a memorial service for the one year anniversary for Australians that lost their lives in the MH17 disaster at Parliament House in Canberra, Australia, Friday, July 17, 2015.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 12:13:52</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/16/a-year-on-ukrainian-villagers-recall-horrors-of-mh17-crash'>site</a></td><td>The rebels had shot down several Ukrainian transport jets in the weeks before the MH17 crash, including an Il-76 on June 14, killing 49 people onboard.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/16/80/04/2b00cc91de724097b7082135861b4f01-3f56c7e02bb84e0faa4e4cc3de783cfc-0.jpg'></td><td>2015-07-16 12:13:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/a-year-on-ukrainian-villagers-recall-horrors-of-mh/nmznH/'>site</a></td><td><table><tr><td>But the downing of Malaysian Airlines Flight MH17 still haunts residents, who remember the bodies that fell from the sky above their sleepy village in eastern Ukraine.</td></tr><tr><td>All 298 people onboard MH17 were killed when the plane was downed on July 17, 2014, over rebel-controlled territory in eastern Ukraine, where government forces and the Russia-backed separatists had been fighting for months.</td></tr></table></td></tr>
 </table></body></html>
