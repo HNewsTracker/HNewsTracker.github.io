@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,4 +50,5 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 05:13:30</td><td></td><td><a href='tsipras_0.html'>Greek Prime Minister Alexis Tsipras was defiant, urging voters to reject creditors' demands, insisting a "No" vote in next Sunday's referendum would strengthen Athens' negotiating hand. (90)</a></td></tr>
   <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/AP150624080213_140x93.jpg'></td><td>2015-07-13 08:15:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480272&ref=rss'>site</a></td><td>BRUSSELS (AP) " Greece's Tsipras says deal allows Greece to stand on own feet, averted "extreme measures".</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/AP150624080213_140x93.jpg'></td><td>2015-07-17 17:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483051&ref=rss'>site</a></td><td>Greece's Tsipras reshuffles Cabinet after austerity vote prompted dissent in his party</td></tr>
 </table></body></html>

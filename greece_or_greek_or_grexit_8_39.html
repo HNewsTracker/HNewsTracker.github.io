@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-28 00:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25651300.html#storylink=rss'>site</a></td><td><table><tr><td>Greek parliament approves referendum on creditor reforms</td></tr><tr><td>Speaking in parliament, Tsipras said the reforms proposed by Greece's creditor institutions - the International Monetary Fund, European Central Bank and European Commission, were an ultimatum and an insult.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 18:14:50</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-06-EU--Greece-Bailout-The%20Latest/id-835d02b519244af1896325b38e3e8329'>site</a></td><td>Government spokesman Nicos Christodoulides has told state radio that Cyprus' president and finance minister backed a restructuring of Greek debt and negotiations between Greece and its creditors need to begin immediately.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150710&i=109527262&w=240&r=109527262-1&t=2'></td><td>2015-07-11 11:31:56</td><td><a href='http://www.reuters.com/article/2015/07/11/us-eurozone-greece-idUSKBN0P40EO20150711?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Even French Finance Minister Michel Sapin, Greece's most powerful ally in the euro zone, said: "Confidence has been ruined by every Greek government over many years which have sometimes made promises without making good on them at all.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-12 10:00:39</td><td><a href='http://www.startribune.com/the-latest-greece-bailout-talks-hinge-on-trust-issues/314127791/'>site</a></td><td>The finance minister of Cyprus, a traditional ally of Greece, says a way can be found to secure Greece's place in the euro.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 09:06:06</td><td><a href='http://finance.yahoo.com/news/greek-drama-nears-final-act-090606892.html'>site</a></td><td>Greek drama nears final act, ending uncertain</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://images.tvnz.co.nz/tvnz_images/world_news/2015/06/greece_s_parliament_voted_to_hold_a_referendum_on_creditor_proposals_for_reforms_E1.jpg'></td><td>2015-06-28 08:57:00</td><td><a href='http://tvnz.co.nz/world-news/greece-s-future-in-eurozone-looking-increasingly-shaky-6348510?ref=rss'>site</a></td><td>If Greece's banks collapse, the government would have to support them itself.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/30/a5/e3/0910698112c24d5d96fbf47030c700c6-5b5f5318747b45cda51c9da2a32e4b61-0.jpg'></td><td>2015-06-30 08:34:57</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/tsipras-defiant-as-banks-shut-markets-rocked/nmn73/'>site</a></td><td>European officials and Greek opposition parties have warned that a rejection of the creditor proposals in Sunday's popular vote will lead Greece out of the eurozone and potentially out of the European Union itself.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=8007&amp;contextPath=7037-7986-7989-8007-&amp;pubId=13&amp;cat=&amp;meta=read-wirestory&amp;objId=26213863&amp;type=article&amp;title=World+stocks+drift+lower+ahead+of+Greek+vote%3b+China+plunges&amp;url=http%3a%2f%2fwww.charlotteobserver.com%2fnews%2fbusiness%2fnational-business%2farticle26213863.html'></td><td>2015-07-03 09:15:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26213863.html#storylink=rss'>site</a></td><td>The government says a "No" vote will put it in a better bargaining position for new terms, while European officials and the opposition say a rejection could lead to Greece's exit from the euro and Europe.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>Ironically, a few experts think one of the most devastating outcomes for the euro would be if Greece leaves and, against all expectation, thrives.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.sfgate.com/news/world/article/Yes-or-no-What-Greece-s-landmark-vote-might-bring-6366902.php'>site</a></td><td>Despite the Greek government's assertion that a "no" vote will not lead to a euro exit, most people agree it would open up more uncertain outcomes, especially if the ECB halts its life-support measures to Greece's banks.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 09:06:06</td><td><a href='http://www.reuters.com/article/2015/06/21/us-global-economy-weekahead-idUSKBN0P109V20150621?feedType=RSS&feedName=businessNews'>site</a></td><td>Merkel faces growing opposition from within her ruling conservatives to granting Greece any more bailout money, with a recent opinion poll showing a narrow majority of Germans now in favor of Greece leaving the currency union.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 08:41:43</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27472690.html#storylink=rss'>site</a></td><td>Bailing out Greece isn't popular among Merkel's conservatives and the chancellor acknowledged concerns over the chances of a successful bailout.</td></tr>
 </table></body></html>

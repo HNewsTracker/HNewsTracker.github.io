@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/0Mgm.DnF3vLpFkNJPbTddA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/34133eea8e7940259e09b28d21b4fb73'></td><td>2015-06-24 23:22:33</td><td><a href='http://finance.yahoo.com/news/google-makes-big-bet-alabama-232233891.html'>site</a></td><td><table><tr><td>Google makes a big bet on... Alabama?</td></tr><tr><td>Google has emphasized using clean energy to power the centers.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 05:38:00</td><td><a href='http://www.nydailynews.com/news/national/google-employees-injured-self-driving-suv-rear-ended-article-1.2295302?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+NydnRss+%28Top+Stories+-+NY+Daily+News%29'>site</a></td><td>The Google car and the other car in front of it also stopped.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 17:47:16</td><td></td><td><a href='google_15_16.html'>DETROIT - One of Google Inc's self-driving cars was involved in an accident early in July, in which three employees were injured when a vehicle equipped with Google technology was rear-ended by another vehicle, the company said. (8)</a></td></tr>
 </table></body></html>

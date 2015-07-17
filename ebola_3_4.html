@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -56,4 +56,6 @@
   <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pmQa6lTbZKown3vhlxH8_w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b04350ba760a0c1d7b0f6a706700b6a6.jpg'></td><td>2015-07-03 15:56:25</td><td><a href='http://news.yahoo.com/liberia-works-contain-ebola-source-cases-155625276.html'>site</a></td><td>"We will contain it quickly because of where we are in the learning curve as far as Ebola is concerned," said Dr. Philip Ireland at the John F. Kennedy Medical Center in the capital, Monrovia.</td></tr>
   <tr><td style='display:none'>6</td><td><img src='http://ww3.hdnux.com/photos/37/47/55/8289110/7/920x920.jpg'></td><td>2015-07-10 20:02:25</td><td><a href='http://www.chron.com/news/medical/article/Tests-show-Ebola-in-Liberia-linked-to-virus-found-6377690.php'>site</a></td><td>Five new cases of Ebola have been confirmed in the town of Nedowein, including the teen who died June 28.</td></tr>
   <tr><td style='display:none'>7</td><td></td><td>2015-07-15 12:05:04</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/15/liberia-confirms-2nd-ebola-death-in-resurgent/'>site</a></td><td><table><tr><td>Liberia confirms 2nd Ebola death in resurgent outbreak</td></tr><tr><td>Liberia lost more than 4,800 lives to Ebola before it contained transmission in May. These are the first known cases since then.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-17 16:45:21</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483039&ref=rss'>site</a></td><td>Liberia says 4 remaining Ebola patients have recovered</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-17 17:02:00</td><td><a href='http://www.ctvnews.ca/health/liberia-says-4-remaining-ebola-patients-have-recovered-1.2474199'>site</a></td><td>MONROVIA, Liberia -- The four remaining patients infected during Liberia's recent string of Ebola cases have recovered, meaning there are currently no confirmed cases in the country though more than 100 people are still under surveillance, a health official said Friday.</td></tr>
 </table></body></html>

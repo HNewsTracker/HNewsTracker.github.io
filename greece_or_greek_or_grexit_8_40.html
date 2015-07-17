@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718629215_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-30 16:40:38</td><td><a href='http://www.torontosun.com/2015/06/30/eu-in-last-ditch-bid-to-greece-urges-yes-vote-to-bailout'>site</a></td><td>Dozens of pensioners line up outside a branch of the National Bank of Greece hoping to get their pensions, in Athens, Greece June 29, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.miamiherald.com/news/business/article26032012.html#storylink=rss'>site</a></td><td>Pensioners wait to be allowed into the National Bank of Greece to withdraw a maximum of 120 euros ($134) for the week, Thursday, July 2, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKv0lNp8kcOXDeTOwVqByw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/1cd165db64d32e1f7c0f6a706700900e_original.jpg'></td><td>2015-07-14 15:04:45</td><td><a href='http://finance.yahoo.com/news/greece-pledges-rid-tax-evasion-150445104.html'>site</a></td><td>This kind of tax dodging is a Greek national pastime, costing the state billions of euros in revenue.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/14/d6/60/ae143f5d47164fce86a77de4a72b6f4a-6e04fd279b1540979adf82af0e16ca5f-1.jpg'></td><td>2015-07-14 21:04:02</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-tsipras-faces-dissent-on-bailout-deal/nmyPH/'>site</a></td><td>A pensioner stands outside the main gate of the national bank of Greece as he waits to withdraw a maximum of 120 euros ($134) for the week in Athens, on Tuesday, June 14, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150619&i=108919947&w=240&r=108919947-1&t=2'></td><td>2015-06-19 22:01:05</td><td><a href='http://www.reuters.com/article/2015/06/19/us-eurozone-greece-pm-idUSKBN0OZ0DP20150619?feedType=RSS&feedName=businessNews'>site</a></td><td>"There will be a solution based on respecting EU rules and democracy which would allow Greece to return to growth in the euro," Tsipras said in a statement issued by his office.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 13:21:03</td><td><a href='http://www.utsandiego.com/news/2015/jun/21/greece-presents-new-financial-proposals-to/'>site</a></td><td>Tsipras "presented to the three leaders Greece's proposal for a mutually beneficial agreement, which will provide a permanent solution and not just postpone tackling the problem," the press office statement said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=worldNews'>site</a></td><td>Lew voiced hope such an outcome "will allow Greece to make difficult but necessary fiscal and structural reforms, return to growth, and achieve debt sustainability within the euro zone," the Treasury statement said.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -51,5 +51,6 @@
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000aaebc-630.jpg'></td><td>2015-06-19 16:14:20</td><td><a href='http://www.rte.ie/ten/news/2015/0619/709247-movie-review-mr-holmes/'>site</a></td><td>Movie review: Mr Holmes</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-06-19 22:05:26</td><td></td><td><a href='holmes_0.html'>Wendell Holmes, the guitarist, pianist and singer and songwriter of the soul and blues band The Holmes Brothers, has died. (5)</a></td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-06-27 00:38:19</td><td></td><td><a href='holmes_3.html'>Dr. Jonathan Woodcock, one of the first defense witnesses to take the stand, interviewed Holmes four days after the July 20, 2012, shooting to determine if he was competent to stand trial and then again earlier this year when he was asked by the defense to testify on Holmes' sanity. (42)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 08:00:00</td><td><a href='http://www.miamiherald.com/entertainment/movies-news-reviews/article27490408.html#storylink=rss'>site</a></td><td>Ian McKellen delivers in 'Mr. Holmes'</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-17 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article27473875.html#storylink=rss'>site</a></td><td><table><tr><td>Movie review: 'Mr Holmes' makes Sherlock seem real</td></tr><tr><td>In "Mr. Holmes," Ian McKellen and director Bill Condon reunite for another story about an aging man confronting his mortality.</td></tr></table></td></tr>
 </table></body></html>
