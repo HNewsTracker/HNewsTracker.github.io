@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 08:35:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11478406&ref=rss'>site</a></td><td>Greece rushing to finalize reforms and remain in euro</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150710&i=109527262&w=240&r=109527262-1&t=2'></td><td>2015-07-11 11:31:56</td><td><a href='http://www.reuters.com/article/2015/07/11/us-eurozone-greece-idUSKBN0P40EO20150711?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Euro lenders to pass bailout judgment as Greece backs reforms</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.npr.org/assets/img/2015/07/13/ap_673645529107_wide-30107de784ce44d9b3707fad9a380dcdb4f9ce12-s1100-c15.jpg'></td><td>2015-07-13 07:56:00</td><td><a href='http://www.npr.org/sections/thetwo-way/2015/07/13/422489174/greece-eurozone-leaders-reach-agreement-on-a-new-bailout?utm_medium=RSS&utm_campaign=economy'>site</a></td><td>The summit reached a tentative agreement with Greece for a bailout program that includes "serious reforms," removing an immediate threat that Greece could collapse financially and leave the euro.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/podcast/2015-06/site_197_World%2520News_419999.JPG?itok=re3OTVQk'></td><td>2015-06-21 20:41:12</td><td><a href='http://www.sbs.com.au/news/article/2015/06/22/greece-offers-new-proposals-ahead-emergency-summit'>site</a></td><td>After months of wrangling and with anxious depositors pulling billions of euros out of Greek banks, Tsipras's leftist government showed a new willingness this weekend to make concessions that would unlock frozen aid to avert default.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKv0lNp8kcOXDeTOwVqByw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/1cd165db64d32e1f7c0f6a706700900e_original.jpg'></td><td>2015-07-14 15:04:45</td><td><a href='http://finance.yahoo.com/news/greece-pledges-rid-tax-evasion-150445104.html'>site</a></td><td>This kind of tax dodging is a Greek national pastime, costing the state billions of euros in revenue.</td></tr>
 </table></body></html>
