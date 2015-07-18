@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0511/20150511__0512selfdrive~1.JPG'></td><td>2015-07-17 00:30:23</td><td><a href='http://www.mercurynews.com/business/ci_28495535/google-self-driving-car-involved-first-injury-accident?source=rss'>site</a></td><td><table><tr><td>Google revealed Thursday that one of its self-driving car prototypes was involved in an injury accident for the first time.</td></tr><tr><td>In the collision, a Lexus SUV that the tech giant outfitted with sensors and cameras was rear-ended in Google's home city of Mountain View, where more than 20 prototypes have been self-maneuvering through traffic.</td></tr><tr><td>Google's SUV was going about 15 mph in self-driving mode behind two other cars as the group approached an intersection with a green light.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31383691.ece/6a03b/ALTERNATES/h342/PANews%20BT_P-0ebddfbc-a765-46e7-9d4b-22a6b6e1500c_I1.jpg'></td><td>2015-07-17 00:31:09</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/crouch-google-selfdriving-car-has-first-injury-accident-31383692.html'>site</a></td><td>Google has said that its car has not caused any of the collisions, though in 2011 an employee who took a car to run an errand rear-ended another vehicle while the Google car was out of self-driving mode.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 17:05:01</td><td><a href='http://technology.canoe.com/News/2015/07/02/22484626.html?cid=rsstechnology'>site</a></td><td><table><tr><td>NEW YORK -- Google is apologizing after reports surfaced that an automatic image-recognition feature in its Photos application was identifying images of some black people as "gorillas."</td></tr><tr><td>A New York man posted a picture of himself and a female friend on Twitter earlier this week, showing that the Google image software had tagged both of them as "gorillas," which is sometimes used as a racial slur.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2014/1203/20141203__1204google~1_300.JPG'></td><td>2015-07-02 21:27:05</td><td><a href='http://www.mercurynews.com/business/ci_28423440/googles-new-app-blunders-by-calling-black-people?source=rss'>site</a></td><td><table><tr><td>Google's new app blunders by calling black people 'gorillas'</td></tr><tr><td>The images showed the recently released Google Photos app had sorted a picture of two black people into a category labeled as "gorillas."</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297714606967_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-03 14:28:54</td><td><a href='http://www.torontosun.com/2015/07/02/google-apologizes-after-report-of-photo-app-tagging-black-people-as-gorillas'>site</a></td><td>Google says it's "appalled and genuinely sorry" for what happened with the image-recognition feature.</td></tr>
 </table></body></html>
