@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 12:09:44</td><td></td><td><a href='germanwings_0_1.html'>All airline pilots should undergo psychological screening and allow details of medical visits to be shared in a proposed European database, according to recommendations delivered to the European Commission in the wake of the Germanwings disaster. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6355202-3x2-340x227.jpg'></td><td>2015-07-17 14:36:30</td><td><a href='http://www.abc.net.au/news/2015-07-18/eu-panel-urges-pilot-screening-after-germanwings-crash/6629876'>site</a></td><td>That would go beyond the traditional regulations and may have alerted colleagues sooner to the condition of the Germanwings pilot.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 12:53:51</td><td><a href='http://www.seattlepi.com/news/world/article/Lawyer-Lufthansa-makes-Germanwings-compensation-6357652.php'>site</a></td><td>Lawyer: Lufthansa makes Germanwings compensation offer</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718766106_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-30 17:21:16</td><td><a href='http://www.torontosun.com/2015/06/30/germanwings-offers-emotional-damage-payments-to-crash-victims-families'>site</a></td><td><table><tr><td>Germanwings offers emotional damage payments to crash victims' families</td></tr><tr><td>BERLIN - Germanwings is offering 25,000 euros ($27,958) compensation payments to close relatives of those killed in the March 24 plane crash for their pain and suffering, it said on Tuesday.</td></tr><tr><td>Germanwings, a unit of Lufthansa, said on Tuesday it wished to treat everyone fairly, although one lawyer said the offer was not sufficient.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-18 15:47:56</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/18/attorney-for-germanwings-victims-says/'>site</a></td><td><table><tr><td>Attorney for Germanwings victims says compensation too low</td></tr><tr><td>BERLIN (AP) - A German attorney representing some 30 families of victims of the March Germanwings plane crash says his clients are rejecting the airline's initial compensation offer as far too low.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/35/41/8247381/5/920x920.jpg'></td><td>2015-07-02 07:36:22</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-European-markets-solid-as-Greek-6362262.php'>site</a></td><td>The Latest: France's Sapin says committed to Greece in euro</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=topNews'>site</a></td><td>While France and Italy have emphasized the importance of more talks, a big majority of the 19 euro zone governments favor taking a hard line with Greece, diplomats said.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150710&i=109507389&w=240&r=109507389-1&t=2'></td><td>2015-07-10 23:26:28</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>France, Greece's strongest supporter in the euro zone, rushed to offer praise.</td></tr><tr><td>Greece still has to overcome hardening attitudes toward it among euro zone partners.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 05:07:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25747720.html#storylink=rss'>site</a></td><td>"Most traders are well prepped over the possible fallout of Greece. It's guessing which card will fall next that's the difficult bit," said Nicholas Teo, analyst at CMC Markets in Singapore.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>THE QUOTE: "Greece's proposal to its European creditors appears to significantly improve the prospects for a weekend agreement on extending further credit," said Ric Spooner, chief market analyst at CMC Markets.</td></tr>
 </table></body></html>

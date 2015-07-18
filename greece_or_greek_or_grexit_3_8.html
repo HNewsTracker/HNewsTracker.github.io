@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,4 +50,5 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 04:10:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479406&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Greece's negotiators head to Brussels on Saturday armed with their reform proposals and parliamentary backing to seek a third bailout, but with the shadow of severe dissent from governing lawmakers hanging over them.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/07/b-greece-a-20150712-200x200.jpg'></td><td>2015-07-11 05:29:00</td><td><a href='http://www.japantimes.co.jp/news/2015/07/11/business/economy-business/greek-lawmakers-back-bailout-reform-plan/?utm_source=feedburner&amp%3Butm_medium=rss&amp%3Butm_campaign=greek-lawmakers-back-bailout-reform-plan&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td>ATHENS - Greece's parliament backed the government's reform plan to win a third bailout early Saturday, but with the government suffering significant losses from lawmakers dissenting over the plan's austerity measures.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>Greek Economy Minister Giorgos Stathakis says lawmakers from the governing Syriza party who disagree with government's bailout policy should resign and give up their seats in parliament.</td></tr>
 </table></body></html>

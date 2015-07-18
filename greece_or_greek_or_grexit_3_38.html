@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:55:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11468710&ref=rss'>site</a></td><td>Greece's new radical leftist government is in a stand-off with international creditors to reach a loan deal to avoid defaulting on debt payments at the end of the month, threatening an exit from the 19-nation eurozone.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td>Leaders of the 19-nation eurozone are gathering in Brussels for a last-ditch summit aimed at clinching a deal between Greece and international lenders as a major debt payment deadline looms.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>The European Central Bank said it would maintain emergency lending that is keeping Greek banks afloat at the same level as late last week, keeping pressure on Greece as its lenders run out of cash.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 16:21:14</td><td><a href='http://news.yahoo.com/greece-votes-referendum-future-euro-doubt-042002265--sector.html'>site</a></td><td>Greek banks, which have been closed all week and rationing withdrawals from cash machines, are expected to run out of money within days unless the European Central Bank provides an emergency lifeline.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-11 10:59:00</td><td><a href='http://www.ctvnews.ca/business/greek-bailout-talks-creditors-looking-for-more-specific-commitments-1.2464622'>site</a></td><td>Greece's banks, according to some accounts, have barely enough cash in their vaults to see the country through the week.</td></tr>
 </table></body></html>
