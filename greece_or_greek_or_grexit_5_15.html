@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td>Before the European project, Greece had spent decades in turmoil.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 06:35:08</td><td><a href='http://www.startribune.com/would-euro-departure-help-or-hurt-europe-s-currency-union/311627101/'>site</a></td><td>What would that mean for the Greek people and for the European Union's 16-year-old shared currency - the crown jewel of a six-decade-old project in binding Europe's countries closer together?</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>For Greece, the short-term pain and turmoil could be extreme whereas the currency union would likely survive the initial shock.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>The ballot question does not address whether Greece should abandon the euro currency or leave the 28-member European Union, but many voters believe those issues are at stake.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 04:09:03</td><td><a href='http://news.yahoo.com/campaigns-halt-greeks-face-tough-referendum-choice-040313872--finance.html'>site</a></td><td>He said if the European Union wants to keep Greece in the eurozone, it will have to come up with "a very generous plan" since the cost of the crisis has shot up to unanticipated levels.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>His European partners, however, say rejection would set Greece on a path out of the euro, with potentially far-reaching consequences for the global economy and Europe's grand project of an unbreakable union.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://cdn.sandiegouniontrib.com/static/utsd/v1/images/sdut-logo-white-stacked.svg'></td><td>2015-07-13 14:38:45</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/13/euro-currency-emerges-intact-_-for-now-_-from/'>site</a></td><td>Although relief prevailed after Monday's Greek bailout announcement, key questions remain about whether the euro currency will remain sustainable in the long-term - and even whether the European Union itself remains a viable project.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480388&ref=rss'>site</a></td><td>In Britain " a European Union member that decided against joining the euro " treasury chief George Osborne responded to the deal brokered on Greece with "a cautious welcome that the Eurozone has stepped back from the brink."</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480388&ref=rss'>site</a></td><td><table><tr><td>Euro currency emerges intact _ for now _ from Greek crisis</td></tr><tr><td>Now that the immediate Greek bankruptcy crisis is seen to be receding, a crisis of confidence over the European project may be taking its place.</td></tr></table></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-07-15 06:34:06</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/14/what-relief-greek-economy-on-its-knees-despite/'>site</a></td><td>Economists estimate that if Greece falls out of the currency union, its economy could shrink by another 10 or 20 percent.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/c/q/f/image.related.articleLeadwide.620x349.ghtclv.png/1434859922124.jpg'></td><td>2015-06-20 16:15:19</td><td><a href='http://www.brisbanetimes.com.au/world/a-weekend-of-fear-in-greece-as-monday-promises-salvation-or-ruin-20150621-ghtclv.html'>site</a></td><td>Without access to capital markets, Greek lenders have to rely on almost 86 billion of Emergency Liquidity Assistance to stay afloat, subject to weekly boosts by the European Central Bank.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=wtMostRead'>site</a></td><td>The ECB on Friday raised the ceiling on the "emergency liquidity assistance" that Greece's banks rely on to keep their doors open.</td></tr>
 </table></body></html>

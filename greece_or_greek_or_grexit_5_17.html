@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/__PDex3E8eFxpckSZgdVjg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-21T130309Z_1_LYNXMPEB5K0DA_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-21 15:44:29</td><td><a href='http://finance.yahoo.com/news/behind-scenes-greece-creditors-push-130309759.html'>site</a></td><td>German Chancellor Angela Merkel is under pressure from within her ranks not to give in to Greek demands, even if that means contemplating Greece leaving the euro zone.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 05:50:50</td><td><a href='http://www.reuters.com/article/2015/06/26/us-eurozone-greece-idUSKBN0P40EO20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>German Chancellor Angela Merkel, whose country is Greece's biggest creditor, said the next meeting of Eurogroup ministers on Saturday would be "of decisive importance" for a Greek solution since time was running out.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 12:45:38</td><td><a href='http://time.com/3962411/german-parliament-greece-bailout-plan/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>(BERLIN)-German lawmakers voted Friday overwhelmingly in favor of the new bailout plan for Greece after Chancellor Angela Merkel argued that the cash-strapped country would face chaos without a deal.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td>Berlin: German lawmakers cleared the way for talks on a third Greek bailout after Chancellor Angela Merkel warned that failing to try would be reckless and sow chaos.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/1/z/d/p/image.related.articleLeadwide.620x349.gi1z8m.png/1435695297740.jpg'></td><td>2015-06-30 17:36:00</td><td><a href='http://www.brisbanetimes.com.au/world/greece-asks-for-another-bailout-but-angela-merkel-says-no-deals-before-referendum-20150630-gi1z8m'>site</a></td><td>The growing risk of Athens being forced out of the single currency brought into sharp focus the chaos likely to be unleashed in Greece and the risks to the stability of the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Despite its rickety finances, Greece shaped up a little for a few years and qualified to join the single currency in 2001.</td></tr>
 </table></body></html>

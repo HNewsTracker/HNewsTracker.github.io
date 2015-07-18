@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/7e5/report-on-business/article25033715.ece/ALTERNATES/w220/560488467-477632014.JPG'></td><td>2015-06-21 16:01:04</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-offers-new-proposals-ahead-of-emergency-summit/article25049138/?cmpid=rss1'>site</a></td><td>Money has drained out of Greek banks after a breakdown in talks last weekend, and Greece might have to impose capital controls within days if there is no breakthrough.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 17:54:03</td><td><a href='http://abcnews.go.com/International/wireStory/greek-premier-bank-greece-recommended-banks-close-capital-32085919'>site</a></td><td>Greek premier: Bank of Greece has recommended banks to close, capital controls be imposed.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 06:34:06</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/14/what-relief-greek-economy-on-its-knees-despite/'>site</a></td><td>Imports in Greece have been hammered by the limits on money transfers that the government imposed two weeks ago to prevent a bank run.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=topNews'>site</a></td><td>But after months of fractious negotiations, some European leaders are now openly contemplating the possibility of Greece becoming the first nation to be dumped out of the euro zone.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 09:06:06</td><td><a href='http://www.reuters.com/article/2015/06/21/us-global-economy-weekahead-idUSKBN0P109V20150621?feedType=RSS&feedName=businessNews'>site</a></td><td>If Greece does default on its debts, which remains a real possibility, it could require capital controls that would potentially turf it out of the euro zone or even the European Union itself, becoming the first country ever to leave the bloc.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>The ballot question does not address whether Greece should abandon the euro currency or leave the 28-member European Union, but many voters believe those issues are at stake.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/o/4/9/image.related.articleLeadwide.620x349.giao2w.png/1436698684738.jpg'></td><td>2015-07-12 10:58:12</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-rail-at-german-humiliation-20150712-giao2w.html'>site</a></td><td>Brussels: Euro zone leaders said they would fight to the finish to keep near-bankrupt Greece in the euro zone on Sunday after the European Union's chairman cancelled a planned summit of all 28 EU leaders that would have been needed in case of a "Grexit".</td></tr>
 </table></body></html>

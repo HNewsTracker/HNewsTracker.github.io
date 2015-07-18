@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 15:35:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-30-EU--Greece-Bailout/id-cb00954a6fe4410cb3e160813b23616d'>site</a></td><td>An EU official said Greece's creditors would not agree Tuesday night on a new bailout deal or extension and would instead, starting Wednesday, focus on a new plan for the country.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-open-higher-following-gains-in-european-/nmpyy/'>site</a></td><td>WALL STREET: Wall Street closed higher on Wednesday on hopes that a deal could be reached between Greece and its creditors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/ikisj9uV_2rvCZj.JoUvIw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/35ebbe8a5d9dd01b790f6a7067002973_original.jpg'></td><td>2015-06-19 10:39:04</td><td><a href='http://finance.yahoo.com/news/europe-scrambles-pick-pieces-greek-074848977.html'>site</a></td><td>The hope is that technical talks between Greece and its creditors will resume over the weekend before another meeting of the eurozone's finance ministers on Monday in the lead-up to the leaders' summit.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:50:41</td><td><a href='http://www.startribune.com/french-leftists-rally-in-support-of-greece/308682341/'>site</a></td><td>French leftists rally in support of Greece ahead of Monday eurozone summit</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td><table><tr><td>Another meeting, and again a lack of clear Greek proposals, German Finance Wolgang Schaeuble groused Monday.</td></tr><tr><td>Schaeuble said Monday ahead of a finance ministers' meeting on the issue: "We are still in the same situation as last Thursday," when the 19 ministers of the eurozone last assessed Greece's proposals.</td></tr></table></td></tr>
 </table></body></html>
