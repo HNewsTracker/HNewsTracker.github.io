@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/02637/obama-putin_2637988b.jpg'></td><td>2015-06-25 23:42:53</td><td><a href='http://www.telegraph.co.uk/news/worldnews/vladimir-putin/11700224/Vladimir-Putin-calls-Barack-Obama-to-discuss-Ukraine-and-Islamic-State.html'>site</a></td><td>Putin, who has consistently denied backing the pro-Russian rebels in Ukraine, initiated the phone call with Obama, according to the White House.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 03:21:18</td><td><a href='http://www.daytondailynews.com/ap/ap/political/white-house-putin-calls-obama-discuss-ukraine-is-i/nmmD9/'>site</a></td><td>Russian President Vladimir Putin and President Barack Obama spoke by telephone Thursday and discussed continued tensions in eastern Ukraine and the fight against the Islamic State in the Middle East.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/11/9b/dd/0e38676b4cd947c385fc030fcd29bd02-b3c6a39a35b4482e876f3afaafc220da-0.jpg'></td><td>2015-07-11 19:05:54</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/at-least-2-dead-in-in-ukraine-sports-club-attack/nmxPp/'>site</a></td><td>Right Sector was one of the most militant factions in the massive protests in Ukraine's capital that led to pro-Russia President Viktor Yanukovych fleeing the country in February 2014.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 19:05:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/11/at-least-2-dead-in-in-ukraine-sports-club-attack'>site</a></td><td>At least two people were killed Saturday in a gun and grenade attack in a western Ukraine city involving the country's notorious nationalist militia Right Sector.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 14:07:01</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/13/right-sector-gunmen-take-boy-hostage-in-western-ukraine'>site</a></td><td><table><tr><td>Right Sector gunmen take boy hostage in western Ukraine</td></tr><tr><td>KIEV, Ukraine (AP) - Two gunmen from Ukraine's nationalist Right Sector militia on Monday briefly took a 6-year-old boy hostage in western Ukraine as a standoff between the gunmen and police entered its third day.</td></tr></table></td></tr>
 </table></body></html>

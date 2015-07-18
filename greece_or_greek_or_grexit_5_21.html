@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 05:07:05</td><td><a href='http://www.miamiherald.com/news/business/article25747720.html#storylink=rss'>site</a></td><td>Asian stock markets bounced back Tuesday, recouping some of the previous day's sharp losses, but investors remained worried the crisis in Greece could spread to other financially weak countries.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 03:44:38</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-heads-lower-greece-debt-talks-proceed-32273588'>site</a></td><td>Chinese stocks led a slump in Asian markets on Wednesday as the sell-off in Shanghai intensified and Greece's future in the euro remained highly uncertain.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-08 03:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26651365.html#storylink=rss'>site</a></td><td>Global stocks mostly fell on Tuesday as Greece's spiraling crisis kept investors on edge and as Chinese markets dropped despite government intervention.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 13:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26933650.html#storylink=rss'>site</a></td><td>Asian stock rose for a second day on Friday as the Greek government proposed a broad financial overhaul to its creditors and Beijing's attempts to arrest a sharp slide in the Chinese market appeared to be working.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/.wCGYVaaBFrb.sxsjSKDXQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3aec3cfdc9b3421d7b0f6a706700df8c.jpg'></td><td>2015-07-05 06:09:01</td><td><a href='http://news.yahoo.com/family-divided-emotions-run-high-ahead-greek-vote-060901498.html'>site</a></td><td>"This situation will create a war within the people. Greek versus Greek. The people are divided right now, about 50-50. What happens the day after the referendum? I'm afraid."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/AP_GREECE_150706_DG_16x9t_144.jpg'></td><td>2015-07-06 15:41:06</td><td><a href='http://abcnews.go.com/Business/greece-vote-countrys-future/story?id=32248849'>site</a></td><td>Here's What Happens Next in Greece</td></tr>
 </table></body></html>

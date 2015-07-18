@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 15,
+            max: 16,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -63,4 +63,5 @@
   <tr><td style='display:none'>12</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/10/b7856f27bfc0cd1e7b0f6a706700c002_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-10 14:10:38</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/10/us-stocks-open-higher-as-greece-moves-closer-to-a/'>site</a></td><td>US stocks rise on optimism that Greek-debt deal will be done</td></tr>
   <tr><td style='display:none'>13</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03368/greece-speech-1_3368264f.jpg'></td><td>2015-07-10 15:46:15</td><td><a href='http://www.telegraph.co.uk/finance/economics/11734310/Greece-news-live-EU-leaders-summit-cancelled-as-finance-ministers-say-not-possible-to-do-deal-today.html'>site</a></td><td>Good morning and welcome to our coverage of the Greek debt crisis.</td></tr>
   <tr><td style='display:none'>14</td><td></td><td>2015-07-14 10:25:09</td><td><a href='http://www.startribune.com/german-investor-optimism-undeterred-by-greece/314852531/'>site</a></td><td>FRANKFURT, Germany - Investor optimism about Germany decreased by only a little in July, as the crisis in Greece and falling stocks in China had minimal effect.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='ww.smh.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.smh.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td>"A lot more is at stake" than Greece, she said, citing conflicts in Ukraine and the Middle East and Europe's refugee crisis.</td></tr>
 </table></body></html>

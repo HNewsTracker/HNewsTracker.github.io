@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 20:33:17</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/25/us-stocks-edge-higher-following-a-surge-in-consumer-spending'>site</a></td><td>The bitter standoff between Greece and its international creditors was extended into the weekend, days before Athens has to meet a crucial debt deadline which could decide whether it defaults on its debt and has to drop out of the euro.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Most Asian stock indexes fell Friday as a standoff between Greece and its international creditors threatened to drag into the weekend.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 19:17:35</td><td><a href='http://www.reuters.com/article/2015/06/20/us-eurozone-greece-idUSKBN0P00GQ20150620?feedType=RSS&feedName=topNews'>site</a></td><td>But after months of fractious negotiations, some European leaders are now openly contemplating the possibility of Greece becoming the first nation to be dumped out of the euro zone.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 09:06:06</td><td><a href='http://www.reuters.com/article/2015/06/21/us-global-economy-weekahead-idUSKBN0P109V20150621?feedType=RSS&feedName=businessNews'>site</a></td><td>If Greece does default on its debts, which remains a real possibility, it could require capital controls that would potentially turf it out of the euro zone or even the European Union itself, becoming the first country ever to leave the bloc.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/o/4/9/image.related.articleLeadwide.620x349.giao2w.png/1436698684738.jpg'></td><td>2015-07-12 10:58:12</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-rail-at-german-humiliation-20150712-giao2w.html'>site</a></td><td>Brussels: Euro zone leaders said they would fight to the finish to keep near-bankrupt Greece in the euro zone on Sunday after the European Union's chairman cancelled a planned summit of all 28 EU leaders that would have been needed in case of a "Grexit".</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/iBxMB9pdmLaDZOm2QFNoLw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/544dd0c81343021f7c0f6a706700be43_original.jpg'></td><td>2015-07-12 22:39:12</td><td><a href='http://finance.yahoo.com/news/greece-faces-pressure-back-deal-223800302.html'>site</a></td><td>It highlighted the increasing frustration of European leaders during five months of fruitless talks with Greece.</td></tr>
 </table></body></html>
