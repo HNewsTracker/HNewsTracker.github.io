@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -53,4 +53,5 @@
   <tr><td style='display:none'>2</td><td></td><td>2015-06-27 00:38:19</td><td></td><td><a href='holmes_3.html'>Dr. Jonathan Woodcock, one of the first defense witnesses to take the stand, interviewed Holmes four days after the July 20, 2012, shooting to determine if he was competent to stand trial and then again earlier this year when he was asked by the defense to testify on Holmes' sanity. (43)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-17 08:00:00</td><td><a href='http://www.miamiherald.com/entertainment/movies-news-reviews/article27490408.html#storylink=rss'>site</a></td><td>Ian McKellen delivers in 'Mr. Holmes'</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-17 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article27473875.html#storylink=rss'>site</a></td><td><table><tr><td>Movie review: 'Mr Holmes' makes Sherlock seem real</td></tr><tr><td>In "Mr. Holmes," Ian McKellen and director Bill Condon reunite for another story about an aging man confronting his mortality.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 16:45:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-07-17-US-Colorado-Shooting/id-4ab6a1acb3e4457a9b15bcb308d487dd'>site</a></td><td>Holmes will join many other mentally ill inmates in prison</td></tr>
 </table></body></html>
