@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>Greek Economy Minister Giorgos Stathakis says lawmakers from the governing Syriza party who disagree with government's bailout policy should resign and give up their seats in parliament.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 09:41:51</td><td><a href='http://www.reuters.com/article/2015/07/12/eurozone-greece-reaction-idUSL5N0ZS04J20150712?feedType=RSS&feedName=wtMostRead'>site</a></td><td>"What is at play here is an attempt to humiliate Greece and Greeks, or to overthrow the Tsipras government," Dimitrios Papadimoulis, Vice-President of the European Parliament and member of Greece's ruling Syriza party, told Mega TV.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>The Tsipras government holds 162 seats in Greece's 300-member Parliament.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:55:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11468710&ref=rss'>site</a></td><td>Greece's new radical leftist government is in a stand-off with international creditors to reach a loan deal to avoid defaulting on debt payments at the end of the month, threatening an exit from the 19-nation eurozone.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td>Leaders of the 19-nation eurozone are gathering in Brussels for a last-ditch summit aimed at clinching a deal between Greece and international lenders as a major debt payment deadline looms.</td></tr>
 </table></body></html>

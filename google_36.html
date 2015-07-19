@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,13 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>greece or greek or grexit</h3>
+    <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-28 00:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25651300.html#storylink=rss'>site</a></td><td><table><tr><td>Greek parliament approves referendum on creditor reforms</td></tr><tr><td>Speaking in parliament, Tsipras said the reforms proposed by Greece's creditor institutions - the International Monetary Fund, European Central Bank and European Commission, were an ultimatum and an insult.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 20:26:10</td><td><a href='http://abcnews.go.com/Business/wireStory/hertz-google-big-market-movers-32525143'>site</a></td><td>Hertz and Google Are Big Market Movers</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 20:30:16</td><td><a href='http://www.startribune.com/hertz-and-google-are-big-market-movers/316271551/'>site</a></td><td>Hertz, Google, Mattel, Honeywell and SolarWinds are big market movers</td></tr>
 </table></body></html>

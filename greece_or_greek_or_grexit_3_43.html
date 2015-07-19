@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 11:36:52</td><td><a href='http://finance.yahoo.com/news/greek-pm-tsipras-faces-party-022322066.html'>site</a></td><td>Fighting its own battle with Brussels to secure reforms of the European Union, British Finance Minister George Osborne has ruled out any financial involvement in a fresh bailout for Greece.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000adc0e-117.jpg'></td><td>2015-07-15 15:58:06</td><td><a href='http://www.rte.ie/news/2015/0715/714852-greece/'>site</a></td><td>Fighting his own battle with Brussels to reform the EU, British Prime Minister David Cameron joined calls to give Greece debt relief but ruled out contributing to the bailout.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 06:10:25</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-01-EU--Greece-The%20Latest/id-4d2487f8f71b456ca073b3e80baf9214'>site</a></td><td>"It is our duty to keep Greece in the eurozone," he said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 04:09:03</td><td><a href='http://news.yahoo.com/campaigns-halt-greeks-face-tough-referendum-choice-040313872--finance.html'>site</a></td><td>He said if the European Union wants to keep Greece in the eurozone, it will have to come up with "a very generous plan" since the cost of the crisis has shot up to unanticipated levels.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480388&ref=rss'>site</a></td><td>Now that the immediate Greek bankruptcy crisis is seen to be receding, a crisis of confidence over the European project may be taking its place.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/v/c/j/image.related.articleLeadwide.620x349.gifvb6.png/1437305921195.jpg'></td><td>2015-07-19 11:38:57</td><td><a href='http://www.brisbanetimes.com.au/world/french-president-francois-hollande-calls-for-creation-of-eurozone-government-after-greece-crisis-20150719-gifvb6.html'>site</a></td><td><table><tr><td>French President Francois Hollande calls for creation of eurozone government after Greece crisis</td></tr><tr><td>Paris: French President Francois Hollande on Sunday called for the creation of a eurozone government and for citizens to renew their faith in the European project, which has been weakened by the Greek crisis.</td></tr></table></td></tr>
 </table></body></html>

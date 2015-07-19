@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/6/i/p/image.related.articleLeadwide.620x349.ghykvh.png/1435293816058.jpg'></td><td>2015-06-26 04:43:45</td><td><a href='http://www.brisbanetimes.com.au/world/germany-and-france-tell-greece-to-sort-debt-deal-this-weekend-20150626-ghykvh.html'>site</a></td><td>The EU leaders held two hours of unscheduled talks on Greece at their summit on Thursday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/AP150624080213_140x93.jpg'></td><td>2015-07-12 08:15:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11479768&ref=rss'>site</a></td><td>BRUSSELS (AP) " EU President Tusk says eurozone summit to last until Greece talks concluded, scraps EU summit.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-12 10:29:11</td><td><a href='http://www.smh.com.au//breaking-news-world/eu-summit-on-greece-scrapped-20150712-3z5ra.html'>site</a></td><td>EU summit on Greece scrapped</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 21:35:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27072166.html#storylink=rss'>site</a></td><td>The U.S. Treasury Department says Secretary Jacob Lew is "encouraged by reports of some progress" in Brussels at an emergency summit of eurozone leaders about Greece.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 15:35:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-30-EU--Greece-Bailout/id-cb00954a6fe4410cb3e160813b23616d'>site</a></td><td>An EU official said Greece's creditors would not agree Tuesday night on a new bailout deal or extension and would instead, starting Wednesday, focus on a new plan for the country.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-open-higher-following-gains-in-european-/nmpyy/'>site</a></td><td>WALL STREET: Wall Street closed higher on Wednesday on hopes that a deal could be reached between Greece and its creditors.</td></tr>
 </table></body></html>
