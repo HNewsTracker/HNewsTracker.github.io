@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 22:15:46</td><td><a href='http://www.seattlepi.com/business/technology/article/Yahoo-gives-Alibaba-spinoff-a-name-Aabaco-6391554.php'>site</a></td><td>Yahoo gives Alibaba spinoff a name: Aabaco</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 22:16:44</td><td><a href='http://www.miamiherald.com/news/business/article27533056.html#storylink=rss'>site</a></td><td><table><tr><td>Yahoo is moving forward with the spinoff of its sizable stake in China's Alibaba Group, and announced a name for it: Aabaco.</td></tr><tr><td>Yahoo stockholders will get shares in the new entity, Aabaco Holdings Inc., which will hold nearly 384 million shares in Alibaba, according to documents filed Friday with regulators.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 22:16:44</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27533056.html#storylink=rss'>site</a></td><td>The filing says Yahoo won't proceed without assurances the deal is tax-free for investors, but Aabaco could be liable if authorities ultimately determine that taxes are owed.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.chron.com/img/hdn/share/fb_share_2.png'></td><td>2015-06-25 12:36:06</td><td><a href='http://www.chron.com/business/article/Yahoo-s-Sullivan-to-become-Facebook-s-chief-6348486.php'>site</a></td><td><table><tr><td>Yahoo's Stamos to become Facebook's chief security officer</td></tr><tr><td>NEW YORK (AP) - Yahoo's cybersecurity chief says he's heading to Facebook to become its chief security officer.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 13:21:08</td><td><a href='http://www.ctvnews.ca/sci-tech/yahoo-s-stamos-joining-facebook-as-its-chief-security-officer-1.2439714'>site</a></td><td>Stamos served as Yahoo Inc.'s chief information security officer for a little over a year, having started there in March 2014, according to his Linkedin account.</td></tr>
 </table></body></html>

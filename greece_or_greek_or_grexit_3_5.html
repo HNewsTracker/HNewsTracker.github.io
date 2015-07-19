@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 17,
+            max: 18,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 17 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 18 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -65,4 +65,5 @@
   <tr><td style='display:none'>14</td><td></td><td>2015-07-14 10:25:09</td><td><a href='http://www.startribune.com/german-investor-optimism-undeterred-by-greece/314852531/'>site</a></td><td>FRANKFURT, Germany - Investor optimism about Germany decreased by only a little in July, as the crisis in Greece and falling stocks in China had minimal effect.</td></tr>
   <tr><td style='display:none'>15</td><td><img src='ww.smh.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.smh.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td>"A lot more is at stake" than Greece, she said, citing conflicts in Ukraine and the Middle East and Europe's refugee crisis.</td></tr>
   <tr><td style='display:none'>16</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td>In Greek crisis, one big unhappy EU family</td></tr>
+  <tr><td style='display:none'>17</td><td><img src='ww.smh.com.au/content/dam/images/g/i/f/x/9/y/image.related.articleLeadwide.620x349.gifwkc.png/1437341923052.jpg'></td><td>2015-07-19 21:36:02</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-prices-for-everyday-items-shoot-up-in-greece-20150719-gifwkc'>site</a></td><td>Greek debt crisis: Prices for everyday items shoot up in Greece</td></tr>
 </table></body></html>
