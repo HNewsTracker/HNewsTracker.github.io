@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 15:35:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-30-EU--Greece-Bailout/id-cb00954a6fe4410cb3e160813b23616d'>site</a></td><td>An EU official said Greece's creditors would not agree Tuesday night on a new bailout deal or extension and would instead, starting Wednesday, focus on a new plan for the country.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-open-higher-following-gains-in-european-/nmpyy/'>site</a></td><td>WALL STREET: Wall Street closed higher on Wednesday on hopes that a deal could be reached between Greece and its creditors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/35/e5/a082f47d84a94af0a47d4d82904f22e3-4a864986000e45d6aa9c3db3f4996795-0.jpg'></td><td>2015-07-19 07:11:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ious-for-rips-greeces-cash-crisis-hurts-funeral-in/nm3Cq/'>site</a></td><td><table><tr><td>Credit cards and especially checks are rarely used for such transactions in Greece, which remains a cash-based economy.</td></tr><tr><td>Cash controls have choked the country's economy as Greece sinks back in recession, according to most major forecasts.</td></tr></table></td></tr>
 </table></body></html>
