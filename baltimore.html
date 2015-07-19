@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 12,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -59,4 +59,5 @@
   <tr><td style='display:none'>0</td><td></td><td>2015-07-16 16:39:53</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article27401119.html#storylink=rss'>site</a></td><td><table><tr><td>'Wire' cast members to reunite for Baltimore performance</td></tr><tr><td>Cast members from HBO's "The Wire" are reuniting for a special performance to honor four of Baltimore's "unsung heroes."</td></tr></table></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-17 18:46:55</td><td><a href='http://www.miamiherald.com/news/business/technology/article27506683.html#storylink=rss'>site</a></td><td>The Baltimore District of the Army Corps of Engineers is welcoming a new commander.</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-18 18:52:55</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/18/baltimore-officers-claim-they-gave-statements/'>site</a></td><td>BALTIMORE (AP) - Lawyers for three of the Baltimore police officers charged in the death of Freddie Gray have argued in court filings that their clients gave initial statements under duress because they were afraid of being fired.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 00:45:07</td><td><a href='http://www.startribune.com/man-charged-with-attempted-murder-after-officer-stabbed/317060291/'>site</a></td><td>BALTIMORE - A 20-year-old man has been charged with attempted murder after Baltimore police say he stabbed an officer after a domestic dispute inside a student apartment building.</td></tr>
 </table></body></html>

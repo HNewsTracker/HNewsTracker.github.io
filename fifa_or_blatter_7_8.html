@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 18:56:59</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27507625.html#storylink=rss'>site</a></td><td>FIFA sponsor Coca-Cola has told soccer's governing body to appoint an independent commission to lead the reform process required to clean up the scandal-ridden organization.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 18:56:59</td><td><a href='http://www.miamiherald.com/news/business/article27507625.html#storylink=rss'>site</a></td><td>Coca-Cola tells FIFA to back independent reform commission</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 19:00:26</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11483061&ref=rss'>site</a></td><td><table><tr><td>The soft drinks giant wrote to FIFA asking for a third-party commission, overseen by "one or more eminent, impartial leaders," to look at how the organization can regain its credibility and the trust of fans.</td></tr><tr><td>Coca-Cola has sponsored FIFA since 1974 with its branding prominent at World Cups.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-17T233340Z_2_LYNXNPEB6G11M_RTROPTP_2_COCA-COLA-RUSSIA-ADVERTISING.JPG?itok=zlRGCoI4'></td><td>2015-07-17 23:34:16</td><td><a href='http://www.sbs.com.au/news/article/2015/07/18/major-sponsors-coca-cola-mcdonalds-demand-reforms-fifa'>site</a></td><td><table><tr><td>Coca-Cola Co and McDonald's Corp both made it clear that they are deeply unhappy with the way FIFA is governed and want major change.</td></tr><tr><td>"We have written to FIFA and asked them to support an independent third-party commission for reforms," a spokeswoman for Coca-Cola said on Friday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 19:48:52</td><td><a href='http://www.reuters.com/article/2015/06/21/us-soccer-fifa-banks-exclusive-idUSKBN0P10TB20150621?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>Some European and U.S. banks had already stepped up scrutiny of FIFA-related accounts and at least one said it had stopped handling FIFA business for some time because of corruption allegations.</td></tr><tr><td>"Sports associations like the International Federation of Association Football (FIFA) or the International Olympic Committee are not businesses but associations. They do not pay taxes and, as associations, are exempt from the Swiss anti-corruption legal framework," the State Department said in the report.</td></tr></table></td></tr>
 </table></body></html>
