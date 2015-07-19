@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,11 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 22:46:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-29-EU--Greece-The%20Road%20Ahead-QandA/id-738103fd8b7b414f90b799397ed22ead'>site</a></td><td>Q: Is a deal to save Greece still possible?</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 15:02:34</td><td><a href='http://www.reuters.com/article/2015/07/10/us-markets-stocks-idUSKCN0PK17A20150710?feedType=RSS&feedName=businessNews'>site</a></td><td>"Greece isn't a done deal but the probability of a 'Grexit' is reducing."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 12:10:06</td><td><a href='http://www.miamiherald.com/news/business/article27104662.html#storylink=rss'>site</a></td><td>The deal needs approval from Greece's parliament, among others.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 20:18:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27189817.html#storylink=rss'>site</a></td><td>He also criticized the deal, but said it was the best Greece could get.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/ab/a3/0a41acc38ac944e8a1dbf4cd7520eecf-ce9206ade7ca43bca7d4b0a0a1e8b926-0.jpg'></td><td>2015-07-12 14:46:20</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greek-tourist-hotspots-face-big-bailout-tax-hikes/nmxcT/'>site</a></td><td><table><tr><td>Greek tourist hotspots face big bailout tax hikes</td></tr><tr><td>Cromba noted that many small Greek businesses already evade sales taxes where some owners "don't give a receipt so they save the tax for the business and the customer."</td></tr><tr><td>Economists say the increased sales taxes will almost certainly lead to a rise in tax evasion, which Greek officials have vowed for years to rectify, with negligible results.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 14:55:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479857&ref=rss'>site</a></td><td>In Schinos, beachside bar and pizzeria owner Stavros Koteas sees the tax hikes as a final blow to what he calls the "slow strangulation" of small Greek businesses.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 15:01:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/14/greece-pledges-to-get-rid-of-tax-evasion-as-a-way-of-life'>site</a></td><td>Greece pledges to get rid of tax evasion as a way of life</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKv0lNp8kcOXDeTOwVqByw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/1cd165db64d32e1f7c0f6a706700900e_original.jpg'></td><td>2015-07-14 15:04:45</td><td><a href='http://finance.yahoo.com/news/greece-pledges-rid-tax-evasion-150445104.html'>site</a></td><td>The experts say Greece has largely failed in previous crackdowns on tax evasion, which has been rampant for generations.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:04:56</td><td><a href='http://www.miamiherald.com/news/business/article27206317.html#storylink=rss'>site</a></td><td>More enforcement will be needed, but Artavanis said many parts of Greece rarely see a tax inspector.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-16 05:30:36</td><td><a href='http://time.com/3960349/greece-europe-lenders-relief/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>In a post-midnight vote, Greece's parliament voted 229-64 to implement more austerity measures that include pension cuts and sweeping sales tax hikes.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/e0/af/8dde92b77e134cc5917d37839df1599b-af673b315e3d4d0d95e8da06bd9ed51c-0.jpg'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-does-about-face-pledges-big-privatization-p/nm2yX/'>site</a></td><td>Greece does about-face, pledges big privatization push</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td><table><tr><td>The Greek government is denying a report that the German finance ministry has proposed a temporary, five-year euro exit for Greece.</td></tr><tr><td>According to the report, the German finance ministry also proposed that the Greek government sells off some 50 billion euros ($56 billion) in unspecified property assets to pay off debts.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150713001154948815-minihighres.jpg?itok=G-2UngSU'></td><td>2015-07-13 01:02:30</td><td><a href='http://www.sbs.com.au/news/article/2015/07/13/greece-must-do-more-earn-rescue-eurozone-leaders'>site</a></td><td>One diplomat said that was tantamount to turning Greece into a "German protectorate".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 22:46:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-29-EU--Greece-The%20Road%20Ahead-QandA/id-738103fd8b7b414f90b799397ed22ead'>site</a></td><td>Q: Is a deal to save Greece still possible?</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 15:02:34</td><td><a href='http://www.reuters.com/article/2015/07/10/us-markets-stocks-idUSKCN0PK17A20150710?feedType=RSS&feedName=businessNews'>site</a></td><td>"Greece isn't a done deal but the probability of a 'Grexit' is reducing."</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 12:10:06</td><td><a href='http://www.miamiherald.com/news/business/article27104662.html#storylink=rss'>site</a></td><td>The deal needs approval from Greece's parliament, among others.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 20:18:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27189817.html#storylink=rss'>site</a></td><td>He also criticized the deal, but said it was the best Greece could get.</td></tr>
 </table></body></html>

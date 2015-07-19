@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 21:26:23</td><td><a href='http://www.reuters.com/article/2015/07/09/us-usa-security-fourth-idUSKCN0PJ2AU20150709?feedType=RSS&feedName=topNews'>site</a></td><td>Separately, a national security source said multiple overseas plots by Islamic State sympathizers had also been halted in recent days.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-09 21:26:23</td><td><a href='http://www.reuters.com/article/2015/07/09/us-usa-security-fourth-idUSKCN0PJ2AU20150709?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>Some of those arrested were communicating with Islamic State via encrypted data, a second U.S. security source said.</td></tr><tr><td>Comey estimated that dozens of people influenced by Islamic State have "gone dark" and disappeared from the FBI's watch because of encrypted data.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/Crime/2015/07/14/TCP_Ciccolo650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-07-14 23:16:47</td><td><a href='http://cnews.canoe.com/CNEWS/Crime/2015/07/14/22506011.html?cid=rssnewscrime'>site</a></td><td><table><tr><td>In the post-arrest video played in court on Tuesday, Ciccolo did not detail an attack plot but defended Islamic State's hostage executions and agreed with an FBI interviewer that all Americans should be considered "enemies".</td></tr><tr><td>His attorney, David Hoose, said Ciccolo had so far only been charged with gun violations and that his views on Islamic State should not be considered.</td></tr></table></td></tr>
 </table></body></html>
