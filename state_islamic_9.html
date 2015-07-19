@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31386331.ece/5c081/ALTERNATES/h342/PANews%20BT_P-7fc194eb-9143-462f-82a5-7f0edbeaf9cd_I1.jpg'></td><td>2015-07-18 11:17:28</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/islamic-state-marketplace-attack-in-iraq-kills-115-31386332.html'>site</a></td><td>The mostly-Shiite victims had gathered to mark the end of the Islamic holy month of Ramadan, which ended Friday for Iraqi Shiites and a day earlier for Iraqi Sunni Muslims.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 11:27:07</td><td></td><td><a href='state_islamic_9_11.html'>Diyala, which borders Iran, is the only province in Iraq where Iranian jets are known to have conducted airstrikes against the Islamic State group earlier this year. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-18 11:28:53</td><td></td><td><a href='state_islamic_9_10.html'>An attack by the Islamic State group on a crowded marketplace in Iraq's eastern Diyala province has killed 115 people, including women and children, in one of the deadliest single attacks in the country in the past decade. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 22:44:54</td><td><a href='http://www.reuters.com/article/2015/06/26/us-kuwait-blast-idUSKBN0P618L20150626?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>Islamic State suicide bomber kills 27, wounds 227 in Kuwait mosque</td></tr><tr><td>The Islamic State militant group claimed responsibility for the attack, which also wounded 227 people according to the interior ministry, in the district of Sawaber in the eastern part of the Kuwaiti capital.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 22:44:54</td><td></td><td><a href='state_islamic_9_10.html'>Islamic State named the bomber as Abu Suleiman al-Muwahed and said in a statement posted on social media that he had targeted a "temple of the rejectionists" -- a term it generally uses to refer to Shi'ites, whom it regards as heretics. (2)</a></td></tr>
 </table></body></html>

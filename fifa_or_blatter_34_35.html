@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/10/a9/b7/d6dbc85eb015423a906ffdf574ee7e68-4d22b438b944419f99ea73a7fef1667d-0_1.jpg'></td><td>2015-07-10 11:11:44</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/lifting-the-lid-on-one-of-fifas-big-secrets-execut/nmwgS/'>site</a></td><td><table><tr><td>Failing to publish the pay of Blatter and other executives gives the impression that FIFA must still have something to hide, when it should set an example for football to follow.</td></tr><tr><td>That included Blatter and the 24 other members of his executive committee, plus 12 executives at FIFA headquarters.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 11:14:04</td><td><a href='http://www.miamiherald.com/news/business/article26940259.html#storylink=rss'>site</a></td><td>Failing to publish the amounts paid to Blatter and other top executives vehicles the impression that FIFA must still have something to hide, when it should be setting an example for the rest of football to follow.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/03/b6/f4/27ab516aa43d4a648906eabf7901a1c8-30c68c007e95440d8f5f4229cffc2fa9-0.jpg'></td><td>2015-07-04 01:00:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fifa-deflects-criticism-about-absence-of-blatter-f/nmrTX/'>site</a></td><td><table><tr><td>While both organizations raved about the successes of the event, the absence of Blatter and Valcke because of the FIFA corruption investigation lingered.</td></tr><tr><td>It provided a bookend to the tournament that opened in the wake of the initial wave from the FIFA corruption investigation, but has mostly become a secondary story during the tournament, just as organizers had hoped when the event opened a month ago.</td></tr></table></td></tr>
 </table></body></html>

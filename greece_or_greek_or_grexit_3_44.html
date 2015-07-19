@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/ab/a3/0a41acc38ac944e8a1dbf4cd7520eecf-ce9206ade7ca43bca7d4b0a0a1e8b926-0.jpg'></td><td>2015-07-12 14:46:20</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greek-tourist-hotspots-face-big-bailout-tax-hikes/nmxcT/'>site</a></td><td>Greek tourist hotspots face big bailout tax hikes</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 14:55:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479857&ref=rss'>site</a></td><td>In Schinos, beachside bar and pizzeria owner Stavros Koteas sees the tax hikes as a final blow to what he calls the "slow strangulation" of small Greek businesses.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 05:30:36</td><td><a href='http://time.com/3960349/greece-europe-lenders-relief/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>In a post-midnight vote, Greece's parliament voted 229-64 to implement more austerity measures that include pension cuts and sweeping sales tax hikes.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/35/e5/a082f47d84a94af0a47d4d82904f22e3-4a864986000e45d6aa9c3db3f4996795-0.jpg'></td><td>2015-07-19 07:11:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ious-for-rips-greeces-cash-crisis-hurts-funeral-in/nm3Cq/'>site</a></td><td>IOUs for RIPs: Greece's cash crisis hurts funeral industry</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 07:11:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/19/ious-for-rips-greeces-cash-crisis-hurts-funeral-industry'>site</a></td><td><table><tr><td>ATHENS, Greece (AP) - Greece's cash crisis has disrupted all aspects of daily life - death included.</td></tr><tr><td>Even a modest funeral service in Greece costs more than 15 times that, in a country that traditionally carries out funerals shortly after death and pays for them almost entirely in cash.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 07:15:18</td><td></td><td><a href='fifa_or_blatter_21_26.html'>Swiss say US has filed formal request to extradite 7 FIFA officials arrested in May (5)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-09 08:29:15</td><td></td><td><a href='fifa_or_blatter_21_22.html'>GENEVA (AP) - Chuck Blazer was banned for life by FIFA's ethics committee on Thursday for widespread corruption, finally ending the career of the longtime most senior American in world football. (10)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 11:26:47</td><td></td><td><a href='fifa_or_blatter_21_23.html'>They did not name the official, but the news came six days after a source told Reuters that Jeffrey Webb - one of seven current and former FIFA employees arrested in Switzerland in May - had agreed not to fight his extradition. (20)</a></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://static01.nyt.com/images/2015/07/11/sports/Y-FIFA/Y-FIFA-thumbStandard.jpg'></td><td>2015-07-16 18:14:26</td><td><a href='http://www.nytimes.com/2015/07/17/sports/soccer/ex-fifa-executive-jeffrey-webb-extradited-to-us.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Blatter has not been charged.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-16 19:02:08</td><td></td><td><a href='fifa_or_blatter_21_24.html'>Amid an international uproar, Blatter announced days after the arrests that he would lay down his mandate at an extraordinary FIFA Congress which will take place between December and February, and would not stand again. (2)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-16 19:02:08</td><td></td><td><a href='fifa_or_blatter_21_25.html'>The allegations have roiled the world's most popular sport, prompting FIFA President Sepp Blatter to say he plans to step down and raising uncomfortable questions for the body's corporate sponsors. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 09:15:14</td><td><a href='http://www.charlotteobserver.com/sports/article26934976.html#storylink=rss'>site</a></td><td><table><tr><td>Adidas chief: Platini the best choice to succeed Blatter</td></tr><tr><td>The chief executive of Adidas, a major FIFA sponsor, believes UEFA President Michel Platini would be the best choice of successor to Sepp Blatter at the head of world football's governing body.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 09:15:14</td><td><a href='http://www.miamiherald.com/sports/article26934976.html#storylink=rss'>site</a></td><td><table><tr><td>German football federation chief Wolfgang Niersbach would be "the ideal UEFA president" if Platini wins the FIFA leadership, Hainer said.</td></tr><tr><td>Former France captain Platini hasn't yet said whether he will look to succeed Blatter in the FIFA presidential election expected in a few months.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 09:50:52</td><td><a href='http://www.sport24.co.za/Soccer/International/Platini-best-choice-to-succeed-Blatter-20150710'>site</a></td><td>Hainer said that the events of recent months "have damaged everyone: football, the sponsors, but above all FIFA."</td></tr>
 </table></body></html>

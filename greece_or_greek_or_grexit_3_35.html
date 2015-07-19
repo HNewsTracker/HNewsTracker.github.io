@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:43:57</td><td><a href='http://www.foxnews.com/world/2015/06/20/greek-premier-tsipras-ministers-discuss-strategy-proposals-for-next-week/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>ATHENS, Greece - Two days before a crucial summit of Eurozone leaders, Greek ministers are huddling to discuss strategy and assemble a new package of proposals, officials say.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:50:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11468708&ref=rss'>site</a></td><td>Greek officials meet, prepare proposals for Eurozone summit</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/6/i/p/image.related.articleLeadwide.620x349.ghykvh.png/1435293816058.jpg'></td><td>2015-06-26 04:43:45</td><td><a href='http://www.brisbanetimes.com.au/world/germany-and-france-tell-greece-to-sort-debt-deal-this-weekend-20150626-ghykvh.html'>site</a></td><td>"After the comprehensive Greek proposals, I'm confident we'll reach a compromise that will help the eurozone and Greece to overcome the crisis," Tsipras said as he arrived at the summit.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-02 06:10:25</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-01-EU--Greece-The%20Latest/id-4d2487f8f71b456ca073b3e80baf9214'>site</a></td><td>"It is our duty to keep Greece in the eurozone," he said.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-07 16:12:20</td><td><a href='http://www.miamiherald.com/news/business/article26647294.html#storylink=rss'>site</a></td><td>Arriving at an emergency meeting of eurozone finance ministers to discuss the Greek crisis, Noonan said Ireland was also able to work with its debt load to make it more manageable, He suggested Greece could also come forward with debt proposals, even if they would be different from Ireland's.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-11 15:19:07</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/11/greeks-heading-to-brussels-for-crucial-talks'>site</a></td><td>Over and over, finance ministers and top officials of the eurozone arrived for a key meeting on Greece's package with the same message - we don't trust fully you.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718629215_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-30 16:40:38</td><td><a href='http://www.torontosun.com/2015/06/30/eu-in-last-ditch-bid-to-greece-urges-yes-vote-to-bailout'>site</a></td><td>Dozens of pensioners line up outside a branch of the National Bank of Greece hoping to get their pensions, in Athens, Greece June 29, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-01 21:47:50</td><td><a href='http://www.reuters.com/article/2015/07/01/us-eurozone-greece-idUSKBN0P40EO20150701?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Kiki Rizopoulou, a 79-year-old pensioner from Lamia in central Greece, had to travel to Athens to collect her pension, spending 20 euros of the 120 euros she was allowed to withdraw.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.miamiherald.com/news/business/article26032012.html#storylink=rss'>site</a></td><td>Pensioners wait to be allowed into the National Bank of Greece to withdraw a maximum of 120 euros ($134) for the week, Thursday, July 2, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKv0lNp8kcOXDeTOwVqByw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/1cd165db64d32e1f7c0f6a706700900e_original.jpg'></td><td>2015-07-14 15:04:45</td><td><a href='http://finance.yahoo.com/news/greece-pledges-rid-tax-evasion-150445104.html'>site</a></td><td>This kind of tax dodging is a Greek national pastime, costing the state billions of euros in revenue.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/14/d6/60/ae143f5d47164fce86a77de4a72b6f4a-6e04fd279b1540979adf82af0e16ca5f-1.jpg'></td><td>2015-07-14 21:04:02</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-tsipras-faces-dissent-on-bailout-deal/nmyPH/'>site</a></td><td>A pensioner stands outside the main gate of the national bank of Greece as he waits to withdraw a maximum of 120 euros ($134) for the week in Athens, on Tuesday, June 14, 2015.</td></tr>
 </table></body></html>
