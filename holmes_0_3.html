@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-09 19:57:44</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-06-09-US-Colorado-Shooting/id-6f68c790b1cf424ba257372859c52a09'>site</a></td><td>The judge was concerned that none of the other jurors came forward in James Holmes' high-profile trial.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-09 21:46:05</td><td><a href='http://www.usnews.com/news/us/articles/2015/06/09/judge-in-colorado-theater-shooting-trial-dismisses-2-jurors'>site</a></td><td>Judge Carlos A. Samour Jr. found the three women violated his orders to avoid outside information on James Holmes' death penalty trial and to not talk about the case with anyone.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 17:31:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-06-11-US--Colorado%20Shooting-The%20Latest/id-7b04c140aa0d42d1a8bd463682a438d3'>site</a></td><td>Prosecutors contend Holmes was sane and are seeking the death penalty.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-27 00:38:19</td><td><a href='http://www.daytondailynews.com/ap/ap/us/prosecutors-question-doctor-who-found-theater-shoo/nmmPD/'>site</a></td><td><table><tr><td>Doctor who found Holmes insane didn't watch much of video</td></tr><tr><td>Brauchler pointed out that Woodcock didn't talk to Holmes about the crime or his plans for the shooting in either interview and already completed a report concluding he was insane before the second, one-hour interview.</td></tr><tr><td>But, pressed further by defense attorney Daniel King, Woodcock said he reviewed Reid's report based on the interview and many other records and evidence and did not find anything that would have changed his own conclusion about Holmes.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-27 00:39:14</td><td><a href='http://abcnews.go.com/US/wireStory/prosecutors-question-doctor-found-theater-shooter-insane-32043308'>site</a></td><td>In response to their inquiries, Woodcock reaffirmed his conclusion that Holmes was insane.</td></tr>
 </table></body></html>

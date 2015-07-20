@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 18:10:16</td><td><a href='http://www.startribune.com/greek-officials-meet-prepare-proposals-for-eurozone-summit/308681621/'>site</a></td><td>Greek Premier Tsipras, ministers discuss strategy, proposals for next week's Eurozone summit</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>So after a marathon eurozone summit, Tsipras agreed to tough new measures that mean economically-battered Greeks will pay more for most goods and services by the end of the week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7hiFTvVkCvqilD9gImAutw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4546f9a81c0c721e7b0f6a7067005f4f.jpg'></td><td>2015-07-07 04:55:11</td><td><a href='http://news.yahoo.com/greek-pm-tsipras-races-restart-talks-vote-win-045305978.html'>site</a></td><td>Tsipras faces intense pressure from creditors abroad and banks at home who all demand what Greece lacks: money.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/1/7/x/image.related.articleLeadwide.620x349.gia16t.png/1436579147577.jpg'></td><td>2015-07-11 01:22:15</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-muse-on-future-path-after-alexis-tsipras-abrupt-reversal-20150711-gia16t.html'>site</a></td><td>Those are the questions being asked across Greece in the wake of Mr Tsipras' abrupt decision to give the creditors nearly all of what they have sought throughout the long and contentious negotiations over keeping Greece afloat.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31374878.ece/aebdf/ALTERNATES/h342/PANews%20BT_P-8bd34f8e-2093-4d6c-83d4-1d3f28dae5a6_I1.jpg'></td><td>2015-07-14 06:21:16</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/tsipras-faces-bailout-deal-dissent-31374879.html'>site</a></td><td>Since his election in January, Mr Tsipras has faced intense pressure to backpedal on many of his promises to Greece's exhausted electorate.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,16 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>greece or greek or grexit</h3>
+    <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:43:57</td><td><a href='http://www.foxnews.com/world/2015/06/20/greek-premier-tsipras-ministers-discuss-strategy-proposals-for-next-week/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>ATHENS, Greece - Two days before a crucial summit of Eurozone leaders, Greek ministers are huddling to discuss strategy and assemble a new package of proposals, officials say.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:50:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11468708&ref=rss'>site</a></td><td>Greek officials meet, prepare proposals for Eurozone summit</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-20 17:50:41</td><td><a href='http://www.startribune.com/french-leftists-rally-in-support-of-greece/308682341/'>site</a></td><td><table><tr><td>French leftists rally in support of Greece ahead of Monday eurozone summit</td></tr><tr><td>PARIS - Several thousand leftists have rallied in Paris to "give Greece a chance" two days ahead of a critical summit of eurozone leaders on a bailout.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-02 06:10:25</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-01-EU--Greece-The%20Latest/id-4d2487f8f71b456ca073b3e80baf9214'>site</a></td><td>"It is our duty to keep Greece in the eurozone," he said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-07-17 15:27:47</td><td><a href='http://www.reuters.com/article/2015/07/17/us-google-research-idUSKCN0PR1FG20150717?feedType=RSS&feedName=businessNews'>site</a></td><td>YouTube has an edge over Facebook as it has a more mature monetization platform that seems to attract the best content, Piper Jaffray analyst Gene Munster said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-07-17 15:27:47</td><td><a href='http://www.reuters.com/article/2015/07/17/us-google-research-idUSKCN0PR1FG20150717?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>Google shares soar as YouTube growth allays fears over Facebook</td></tr><tr><td>Google and Facebook are trying to woo big companies to market their products via online videos.</td></tr></table></td></tr>
 </table></body></html>

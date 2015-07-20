@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,12 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 15:01:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/14/greece-pledges-to-get-rid-of-tax-evasion-as-a-way-of-life'>site</a></td><td>Greece pledges to get rid of tax evasion as a way of life</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKv0lNp8kcOXDeTOwVqByw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/1cd165db64d32e1f7c0f6a706700900e_original.jpg'></td><td>2015-07-14 15:04:45</td><td><a href='http://finance.yahoo.com/news/greece-pledges-rid-tax-evasion-150445104.html'>site</a></td><td>The experts say Greece has largely failed in previous crackdowns on tax evasion, which has been rampant for generations.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/e0/af/8dde92b77e134cc5917d37839df1599b-af673b315e3d4d0d95e8da06bd9ed51c-0.jpg'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-does-about-face-pledges-big-privatization-p/nm2yX/'>site</a></td><td><table><tr><td>Greece does about-face, pledges big privatization push</td></tr><tr><td>Greece notably failed to meet initial targets.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 22:46:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-29-EU--Greece-The%20Road%20Ahead-QandA/id-738103fd8b7b414f90b799397ed22ead'>site</a></td><td>A "no" vote could mean euro exit is closer for Greece, as the country would have no outside financial aid.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-04 06:35:08</td><td><a href='http://www.startribune.com/would-euro-departure-help-or-hurt-europe-s-currency-union/311627101/'>site</a></td><td>A number of economists, however, think a Greek exit could cause long-lasting damage to the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/06/4431b24e19d2671e7b0f6a7067004551_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-06 15:44:00</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/06/whats-next-as-greece-stumbles-toward-euro-exit/'>site</a></td><td>What's next, as Greece stumbles toward euro exit</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-07 11:31:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/greek-pm-tsipras-races-to-restart-talks-after-vote-win'>site</a></td><td>The situation is urgent - without a deal, Greece's banks could go bust within days, the first step in the country's potential exit from the euro currency union.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-10 21:29:00</td><td><a href='http://www.latimes.com/business/la-fi-wall-street-20150710-story.html'>site</a></td><td>U.S. stocks logged their best day in two months Friday as Greece appeared to move closer to securing a bailout deal that will enable it to avoid bankruptcy and keep the country in the euro.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-13 08:00:31</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480263&ref=rss'>site</a></td><td>Greece reaches deal with creditors, avoids euro exit</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480388&ref=rss'>site</a></td><td>Euro currency emerges intact _ for now _ from Greek crisis</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-15 21:30:23</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-with-small-gains-as-investor-6385910.php'>site</a></td><td>Stocks have surged in the past week as a slump in China's stock market abated and Greece reached a deal with its creditors for more loans to avoid bankruptcy and a possible exit from the euro.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/RTOngiSunHMssF3kLtddAA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201506272055753138044'></td><td>2015-06-28 03:40:30</td><td><a href='http://sports.yahoo.com/news/england-eliminates-host-canada-world-cup-q-final-013032759--sow.html'>site</a></td><td>England eliminates host Canada in World Cup Q-final, 2-1 (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/1qRoNxrPgAwqEeTwdDK7LQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507012013727944660'></td><td>2015-07-02 03:52:33</td><td><a href='http://sports.yahoo.com/news/own-goal-gives-japan-2-1-win-over-010740421--sow.html'>site</a></td><td>Own goal gives Japan 2-1 win over England in World Cup semi (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/bt/api/res/1.2/IQbXJ8b.F4NaCSWB3rBPjw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507041741636926053'></td><td>2015-07-05 01:30:13</td><td><a href='https://sports.yahoo.com/news/england-beats-germany-1-0-extra-time-finish-224317305--sow.html'>site</a></td><td>England beats Germany 1-0 in extra time to finish 3rd (Yahoo Sports)</td></tr>
 </table></body></html>

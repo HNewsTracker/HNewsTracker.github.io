@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-02 05:57:03</td><td><a href='http://www.reuters.com/article/2015/07/02/us-eurozone-greece-idUSKBN0P40EO20150702?feedType=RSS&feedName=topNews'>site</a></td><td>The Tsipras letter asking for a new bailout deal appeared to move closer to accepting creditor demands.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 21:00:04</td><td><a href='http://www.miamiherald.com/news/business/article27069493.html#storylink=rss'>site</a></td><td>The broad outlines of a deal appeared to consist of a long series commitments from Tsipras to push through much of a drastic austerity program within days, while the 18 other eurozone leaders would commit to start talks on a new bailout program.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:43:57</td><td><a href='http://www.foxnews.com/world/2015/06/20/greek-premier-tsipras-ministers-discuss-strategy-proposals-for-next-week/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>Minister of State Alekos Flambouraris said in a TV interview earlier Saturday that there could be a phone discussion between Tsipras and European Commission President Jean-Claude Juncker later Saturday, although it had not been scheduled yet.</td></tr><tr><td>The government on Saturday said Tsipras has cancelled a visit to Strasbourg Tuesday, where he was scheduled to speak at the Council of Europe.</td></tr></table></td></tr>
 </table></body></html>
