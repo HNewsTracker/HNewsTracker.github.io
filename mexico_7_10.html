@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 20:44:15</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article25837624.html#storylink=rss'>site</a></td><td><table><tr><td>1 year after Mexico army slayings, calls for justice mount</td></tr><tr><td>One year after soldiers executed as many as 15 suspects at a grain warehouse in southern Mexico, many say justice has still not been done.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 03:40:16</td><td></td><td><a href='mexico_18_19.html'>Three women who survived came forward to say that agents of the Mexico State prosecutor's office had tortured them to support the army's version. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/07/14/world/mexico-el-chapo-escape/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-07-14 12:19:14</td><td><a href='http://edition.cnn.com/2015/07/14/world/mexico-el-chapo-escape/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_world+%28RSS%3A+CNN+-+World%29'>site</a></td><td>Mexico offers $3.8M reward for 'El Chapo'</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://news.sky.com/story/1518482/data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></td><td>2015-07-14 12:28:11</td><td><a href='http://news.sky.com/story/1518482/mexico-prison-boss-sacked-after-el-chapo-escape'>site</a></td><td>Mexico Prison Boss Sacked After El Chapo Escape</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/cd/c1/00553b0d0ff64e39964702baa3c80551-622ae684b25c4853a32d9838c82f144e-0_1.jpg'></td><td>2015-07-15 08:31:43</td><td><a href='http://www.daytondailynews.com/ap/ap/international/mexico-drug-lord-escape-tunnel-is-audacious-engine/nmy5F/'>site</a></td><td>Seven more strides and the man who Mexico's government said could not possibly repeat his 2001 prison escape stepped through a sliding steel door into the chilly night on a high plain west of the capital.</td></tr>
 </table></body></html>

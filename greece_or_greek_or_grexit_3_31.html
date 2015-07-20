@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down/_jcr_content/image.adapt.250.low.greece_banks_062915.jpg'></td><td>2015-06-29 11:53:00</td><td><a href='http://america.aljazeera.com/articles/2015/6/29/greece-in-shock-as-banks-shut-after-creditor-talks-break-down.html'>site</a></td><td>The creditors wanted Greece to further cut pensions and raise taxes in ways that Tsipras has long argued would deepen one of the worst economic crises of modern times, in a country where over a quarter of the workforce is already unemployed.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>GREEK SAGA: Greece and its European creditors appeared to be narrowing their differences after Athens offered a raft of proposals to reduce the cost of pensions, hike taxes and cut state spending.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-28 00:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25651300.html#storylink=rss'>site</a></td><td><table><tr><td>Greek parliament approves referendum on creditor reforms</td></tr><tr><td>Speaking in parliament, Tsipras said the reforms proposed by Greece's creditor institutions - the International Monetary Fund, European Central Bank and European Commission, were an ultimatum and an insult.</td></tr></table></td></tr>
 </table></body></html>

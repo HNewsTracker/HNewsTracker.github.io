@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 04:00:04</td><td><a href='http://www.charlotteobserver.com/sports/article27370504.html#storylink=rss'>site</a></td><td><table><tr><td>Mexico, Trinidad and Tobago draw in Gold Cup</td></tr><tr><td>Two goals in stoppage time led to a 4-4 draw between Mexico and Trinidad and Tobago on Wednesday night in their final group match at the CONCACAF Gold Cup.</td></tr><tr><td>Tied 3-3 through regulation, Mexico pulled ahead on an own goal by Trinidad and Tobago defender Cordell Cato in the first minute of extra play.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/06/f-inmates-a-20150701-200x200.jpg'></td><td>2015-06-29 20:34:00</td><td><a href='http://www.japantimes.co.jp/news/2015/06/30/world/crime-legal-world/escapees-ride-mexico-show-pair-tried-walk-canada-cuomo/?utm_source=feedburner&amp%3Butm_medium=rss&amp%3Butm_campaign=escapees-ride-mexico-show-pair-tried-walk-canada-cuomo&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td>"When Mitchell doesn't show up, the Mexico plan gets foiled, and they head north toward Canada."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 23:12:20</td><td><a href='http://www.nbcnews.com/storyline/new-york-prison-escape/prison-escapee-david-sweat-upgraded-critical-serious-condition-n383786'>site</a></td><td>"The plan was to head to Mexico, which would have been aided by Joyce Mitchell's vehicle," Cuomo said.</td></tr>
 </table></body></html>

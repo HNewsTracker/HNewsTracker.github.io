@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>The European Central Bank said it would maintain emergency lending that is keeping Greek banks afloat at the same level as late last week, keeping pressure on Greece as its lenders run out of cash.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 16:21:14</td><td><a href='http://news.yahoo.com/greece-votes-referendum-future-euro-doubt-042002265--sector.html'>site</a></td><td>Greek banks, which have been closed all week and rationing withdrawals from cash machines, are expected to run out of money within days unless the European Central Bank provides an emergency lifeline.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-11 10:59:00</td><td><a href='http://www.ctvnews.ca/business/greek-bailout-talks-creditors-looking-for-more-specific-commitments-1.2464622'>site</a></td><td>Greece's banks, according to some accounts, have barely enough cash in their vaults to see the country through the week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718629215_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-30 16:40:38</td><td><a href='http://www.torontosun.com/2015/06/30/eu-in-last-ditch-bid-to-greece-urges-yes-vote-to-bailout'>site</a></td><td>Dozens of pensioners line up outside a branch of the National Bank of Greece hoping to get their pensions, in Athens, Greece June 29, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-01 21:47:50</td><td><a href='http://www.reuters.com/article/2015/07/01/us-eurozone-greece-idUSKBN0P40EO20150701?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Kiki Rizopoulou, a 79-year-old pensioner from Lamia in central Greece, had to travel to Athens to collect her pension, spending 20 euros of the 120 euros she was allowed to withdraw.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.miamiherald.com/news/business/article26032012.html#storylink=rss'>site</a></td><td>Pensioners wait to be allowed into the National Bank of Greece to withdraw a maximum of 120 euros ($134) for the week, Thursday, July 2, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKv0lNp8kcOXDeTOwVqByw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/1cd165db64d32e1f7c0f6a706700900e_original.jpg'></td><td>2015-07-14 15:04:45</td><td><a href='http://finance.yahoo.com/news/greece-pledges-rid-tax-evasion-150445104.html'>site</a></td><td>This kind of tax dodging is a Greek national pastime, costing the state billions of euros in revenue.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/14/d6/60/ae143f5d47164fce86a77de4a72b6f4a-6e04fd279b1540979adf82af0e16ca5f-1.jpg'></td><td>2015-07-14 21:04:02</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-tsipras-faces-dissent-on-bailout-deal/nmyPH/'>site</a></td><td>A pensioner stands outside the main gate of the national bank of Greece as he waits to withdraw a maximum of 120 euros ($134) for the week in Athens, on Tuesday, June 14, 2015.</td></tr>
 </table></body></html>

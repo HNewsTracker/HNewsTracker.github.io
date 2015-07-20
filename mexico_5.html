@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 04:45:04</td><td><a href='http://www.charlotteobserver.com/sports/article27104380.html#storylink=rss'>site</a></td><td>Mexico had two other near misses.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 04:00:04</td><td></td><td><a href='mexico_5_6.html'>Two goals in stoppage time led to a 4-4 draw between Mexico and Trinidad and Tobago on Wednesday night in their final group match at the CONCACAF Gold Cup. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 04:33:08</td><td></td><td><a href='mexico_5_7.html'>Trinidad and Tobago (2-0-1, 7 points) took Group C's top seed into the quarterfinals, and will face Panama on Sunday in East Rutherford, N.J. Mexico (1-0-2, 5 points) will play Costa Rica in the second game Sunday. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 23:12:20</td><td></td><td><a href='mexico_5_6.html'>"The plan was to head to Mexico, which would have been aided by Joyce Mitchell's vehicle," Cuomo said. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://edition.cnn.com/2015/06/29/us/new-york-prison-break/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-06-30 05:11:37</td><td><a href='http://edition.cnn.com/2015/06/29/us/new-york-prison-break/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_topstories+%28RSS%3A+CNN+-+Top+Stories%29'>site</a></td><td>Escapees planned to go to Mexico</td></tr>
 </table></body></html>

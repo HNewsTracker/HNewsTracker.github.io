@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 20:44:15</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article25837624.html#storylink=rss'>site</a></td><td><table><tr><td>1 year after Mexico army slayings, calls for justice mount</td></tr><tr><td>One year after soldiers executed as many as 15 suspects at a grain warehouse in southern Mexico, many say justice has still not been done.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 03:40:16</td><td></td><td><a href='mexico_18_19.html'>Three women who survived came forward to say that agents of the Mexico State prosecutor's office had tortured them to support the army's version. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 14:36:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27071770.html#storylink=rss'>site</a></td><td>FILE - In this Feb. 22, 2014 file photo, Joaquin "El Chapo" Guzman is escorted to a helicopter in handcuffs by Mexican navy marines at a navy hanger in Mexico City.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 18:40:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27071770.html#storylink=rss'>site</a></td><td>Mexican navy marines patrol near the maximum security prison Altiplano in Almoloya, west of Mexico City, Sunday, July 12, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.cbc.ca/1.3148789.1436733646!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/mexico-guzman.jpg'></td><td>2015-07-14 05:55:48</td><td><a href='http://www.cbc.ca/news/world/el-chapo-guzman-s-escape-tunnel-required-prison-blueprints-planning-1.3150688?cmp=rss'>site</a></td><td>The entrance would have to be in a place beyond the view of security cameras at Mexico's toughest prison.</td></tr>
 </table></body></html>
