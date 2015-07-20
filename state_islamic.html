@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 57,
+            max: 58,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 57 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 58 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -105,4 +105,5 @@
   <tr><td style='display:none'>0</td><td></td><td>2015-07-19 15:38:47</td><td><a href='http://www.telegraph.co.uk/news/worldnews/middleeast/gaza/11749679/Gaza-car-blasts-targeting-Hamas-blamed-on-Isil-supporters.html'>site</a></td><td>The blasts rocked an area in the north of Gaza City and destroyed five cars belonging to members of the Ezzedine al-Qassam and Al-Quds brigades, the armed wings of Hamas and Islamic Jihad, a separate group.</td></tr>
   <tr><td style='display:none'>55</td><td></td><td>2015-07-19 16:57:09</td><td></td><td><a href='state_islamic_11.html'>An anti-Islamic State group called Raqqa is Being Silently Slaughtered and the Britain-based Syrian Observatory for Human Rights said the leaflets had drawings showing dead extremists and their flag turned upside down. (4)</a></td></tr>
   <tr><td style='display:none'>56</td><td></td><td>2015-07-19 18:07:05</td><td></td><td><a href='state_islamic_2.html'>He explained how more than 120 children inside the camp had to line up and they were each given a doll and a sword, waiting for their next lesson by their Islamic State group instructors: Behead the doll. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 18:13:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27896119.html#storylink=rss'>site</a></td><td>Twitter and Facebook accounts affiliated with the Islamic State group said 26 people were killed and around 100 others wounded in the attacks.</td></tr>
 </table></body></html>

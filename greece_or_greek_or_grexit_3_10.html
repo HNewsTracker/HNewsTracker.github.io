@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,14 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 17:59:16</td><td><a href='http://www.utsandiego.com/news/2015/jun/25/greece-grants-nationality-to-2nd-generation/'>site</a></td><td>Greece grants nationality to 2nd generation immigrants</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 17:59:16</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/25/greece-grants-nationality-to-2nd-generation-immigrants'>site</a></td><td>The new law is expected to affect up to 200,000 second-generation immigrants, many of whose parents arrived in Greece during a big migratory flow from eastern Europe since the early 1990s.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/__PDex3E8eFxpckSZgdVjg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-21T130309Z_1_LYNXMPEB5K0DA_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-21 15:44:29</td><td><a href='http://finance.yahoo.com/news/behind-scenes-greece-creditors-push-130309759.html'>site</a></td><td>German Chancellor Angela Merkel is under pressure from within her ranks not to give in to Greek demands, even if that means contemplating Greece leaving the euro zone.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 21:53:42</td><td><a href='http://finance.yahoo.com/news/greece-defaults-imf-payment-despite-013431592.html'>site</a></td><td>Greece's Tsipras digs in against bailout</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150713001154948815-minihighres.jpg?itok=G-2UngSU'></td><td>2015-07-13 01:02:30</td><td><a href='http://www.sbs.com.au/news/article/2015/07/13/greece-must-do-more-earn-rescue-eurozone-leaders'>site</a></td><td>One diplomat said that was tantamount to turning Greece into a "German protectorate".</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 08:41:43</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27472690.html#storylink=rss'>site</a></td><td>Bailing out Greece isn't popular among Merkel's conservatives and the chancellor acknowledged concerns over the chances of a successful bailout.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-17 12:45:38</td><td><a href='http://time.com/3962411/german-parliament-greece-bailout-plan/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>(BERLIN)-German lawmakers voted Friday overwhelmingly in favor of the new bailout plan for Greece after Chancellor Angela Merkel argued that the cash-strapped country would face chaos without a deal.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td><table><tr><td>Berlin: German lawmakers cleared the way for talks on a third Greek bailout after Chancellor Angela Merkel warned that failing to try would be reckless and sow chaos.</td></tr><tr><td>In a sign of growing exasperation with Greece, the number of dissenters in Mrs Merkel's bloc more than doubled from the 29 who voted against extending the second Greek bailout in February.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-17 17:25:30</td><td><a href='http://www.startribune.com/mixed-german-messages-on-greece-serve-a-purpose/316176251/'>site</a></td><td>Lawmakers voted 439-119, with 40 abstentions, to give the government a mandate for talks with Greece.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/germany_bailout.jpg?itok=6U7qXOHf'></td><td>2015-07-17 21:13:26</td><td><a href='http://www.sbs.com.au/news/article/2015/07/18/german-lawmakers-back-greek-bailout-tsipras-sacks-dissenters'>site</a></td><td>German lawmakers back Greek bailout, Tsipras sacks dissenters</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-20 05:43:53</td><td><a href='http://www.reuters.com/article/2015/07/20/us-eurozone-greece-idUSKCN0PT0FV20150720?feedType=RSS&feedName=topNews'>site</a></td><td>Greek banks ready to open Monday as Merkel urges swift bailout talks</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-20 06:39:35</td><td><a href='http://www.cbc.ca/news/business/greece-crisis-banks-reopen-as-government-eyes-return-to-normalcy-1.3159623?cmp=rss'>site</a></td><td>Greek banks opened their branches across the country on Monday after a three-week shutdown, while German Chancellor Angela Merkel called for swift aid talks so Athens could also lift withdrawal limits.</td></tr>
 </table></body></html>

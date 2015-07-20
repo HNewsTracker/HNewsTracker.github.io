@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 13:45:43</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-07-AF--Boko%20Haram/id-152e363ed3594aeeb1ebf43cf32320cf'>site</a></td><td>Boko Haram wants to install an Islamic state across the West African nation of about 170 million people divided between a predominantly Muslim north and Christian south.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 15:55:17</td><td><a href='http://www.sfgate.com/news/world/article/Nigerian-military-frees-180-Boko-Haram-suspects-6368414.php'>site</a></td><td>Others said they were arrested because their brothers were suspected Boko Haram members.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 15:55:17</td><td><a href='http://www.daytondailynews.com/ap/ap/international/nigerian-military-frees-180-boko-haram-suspects-so/nmsHr/'>site</a></td><td>Nigerian military frees 180 Boko Haram suspects, some babies</td></tr>
 </table></body></html>

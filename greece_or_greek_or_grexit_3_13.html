@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 14,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,18 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>The Latest: Greek creditors want 'more binding commitments'</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 21:20:08</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27032884.html#storylink=rss'>site</a></td><td>Greece struggling to convince creditors it's for real</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-12 04:30:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/12/greek-talks-with-skeptical-creditors-to-resume-sunday'>site</a></td><td>BRUSSELS (AP) - Greece will have another, possibly its last, chance Sunday to convince skeptical European creditors it can be trusted to enact wide-ranging economic reforms that would safeguard its future in the euro.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 16:05:23</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/22/markets-surge-ahead-of-last-ditch-summit-on-greece'>site</a></td><td>Europe cautiously optimistic of Greek debt deal this week</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/26/15/8217453/3/628x471.jpg'></td><td>2015-06-26 21:27:11</td><td><a href='http://www.seattlepi.com/business/energy/article/Stocks-up-ahead-of-Greece-decision-Chinese-6351425.php'>site</a></td><td>NEW YORK (AP) - Stocks had a mixed day Friday, as investors waited for negotiators to finish their work on a solution to Greece's debt problems.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 21:27:11</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/stocks-up-ahead-of-greece-decision-chinese-stocks-plunge'>site</a></td><td>Stocks end mostly lower as Greece debt deadline approaches</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-29 13:42:23</td><td><a href='http://news.yahoo.com/asian-stock-markets-sink-greece-closes-banks-032205086--finance.html'>site</a></td><td><table><tr><td>US stocks fall in early trade as Greece debt woes escalate</td></tr><tr><td>NEW YORK (AP) - Stocks are falling in early trading in the U.S., but not as much as in Europe as Greece's debt woes deepen.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-29 20:04:21</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-worst-day-year-investors-worry-fallout-32109339'>site</a></td><td>US stocks have worst day of the year as investors worry about fallout from Greek debt crisis.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5091&amp;contextPath=3179-5019-5091-&amp;pubId=7&amp;cat=&amp;meta=read-story&amp;objId=25775965&amp;type=article&amp;title=US+stocks+plummet+as+Greece+crisis+reverberates&amp;url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fnation-world%2farticle25775965.html'></td><td>2015-06-29 20:17:14</td><td><a href='http://www.miamiherald.com/news/nation-world/article25775965.html#storylink=rss'>site</a></td><td>US stocks plummet as Greece crisis reverberates</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://cdn3.belfasttelegraph.co.uk/incoming/article31339073.ece/d92f1/ALTERNATES/w620/478990132.jpg'></td><td>2015-06-29 20:38:46</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/greece-debt-crisis-where-next-for-athens-if-it-doesnt-pay-31339092.html'>site</a></td><td>Greece debt crisis: Where next for Athens if it doesn?t pay?</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww1.hdnux.com/photos/37/32/32/8234652/7/square_gallery_thumb.jpg'></td><td>2015-06-30 05:01:27</td><td><a href='http://www.sfgate.com/business/energy/article/US-stocks-fall-in-early-trade-as-Greece-debt-woes-6355425.php'>site</a></td><td>Stocks are closed with their biggest losses of the year as investors worry about fallout from Greece's worsening debt crisis.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 13:44:10</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td>U.S. stocks are rising broadly in early trading as investors hope for a last-minute deal on Greece's debt woes.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-07 14:43:00</td><td><a href='http://www.ctvnews.ca/business/all-greek-to-you-a-guide-to-greece-debt-crisis-lexicon-1.2457463'>site</a></td><td>All Greek to you? A guide to Greece debt crisis lexicon</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/10/b7856f27bfc0cd1e7b0f6a706700c002_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-10 14:10:38</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/10/us-stocks-open-higher-as-greece-moves-closer-to-a/'>site</a></td><td>US stocks rise on optimism that Greek-debt deal will be done</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03368/greece-speech-1_3368264f.jpg'></td><td>2015-07-10 15:46:15</td><td><a href='http://www.telegraph.co.uk/finance/economics/11734310/Greece-news-live-EU-leaders-summit-cancelled-as-finance-ministers-say-not-possible-to-do-deal-today.html'>site</a></td><td>Good morning and welcome to our coverage of the Greek debt crisis.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td>In Greek crisis, one big unhappy EU family</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='ww.smh.com.au/content/dam/images/g/i/f/x/9/y/image.related.articleLeadwide.620x349.gifwkc.png/1437341923052.jpg'></td><td>2015-07-19 21:36:02</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-prices-for-everyday-items-shoot-up-in-greece-20150719-gifwkc'>site</a></td><td>Greek debt crisis: Prices for everyday items shoot up in Greece</td></tr>
 </table></body></html>
