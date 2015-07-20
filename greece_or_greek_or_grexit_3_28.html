@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.seattlepi.com/news/article/Yellen-Draghi-upbeat-despite-tumult-in-Greece-6389141.php'>site</a></td><td><table><tr><td>Yellen, Draghi upbeat despite tumult in Greece, China</td></tr><tr><td>Yellen said this week that the Fed might reconsider a 2015 rate hike if the tumult in China or Greece threatened to spread.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/10/72/f9/4cd0d6169f9f4465bcbb14277df4c5d4-60a8fd8e71c24ca2be414e631b642799-0.jpg'></td><td>2015-07-10 11:14:16</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-to-sell-last-ditch-deal-to-relucta/nmwYc/'>site</a></td><td>Greece's Tsipras to sell austerity deal to reluctant party</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 00:55:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26934703.html#storylink=rss'>site</a></td><td>He added that he doesn't have the right to hide from the Greek people that the measures Greece must take are far from his left-wing party's pre-election pledges.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 18:58:22</td><td><a href='http://abcnews.go.com/International/wireStory/greece-tsipras-faces-dissent-bailout-deal-32430791'>site</a></td><td>Greece: Revolt Over Austerity Deal Reaches Cabinet</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>Dissent in Greece over austerity deal grows ahead of vote</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/7c/6f/543c75cc1136487b8016ed9a7a6e9897-99116c2b650b47438d532092b2ce1202-14.jpg'></td><td>2015-07-15 04:31:40</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/dissent-in-greece-over-austerity-deal-grows-ahead-/nmy2J/'>site</a></td><td>Many in Tsipras' party have indicated they will refuse to vote for the deal because it goes back on election pledges to repeal austerity measures that have been imposed on Greece for years.</td></tr>
 </table></body></html>
