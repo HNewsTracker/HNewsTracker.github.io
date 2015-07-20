@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 08:35:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11478406&ref=rss'>site</a></td><td>Greece rushing to finalize reforms and remain in euro</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150710&i=109527262&w=240&r=109527262-1&t=2'></td><td>2015-07-11 11:31:56</td><td><a href='http://www.reuters.com/article/2015/07/11/us-eurozone-greece-idUSKBN0P40EO20150711?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Euro lenders to pass bailout judgment as Greece backs reforms</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.npr.org/assets/img/2015/07/13/ap_673645529107_wide-30107de784ce44d9b3707fad9a380dcdb4f9ce12-s1100-c15.jpg'></td><td>2015-07-13 07:56:00</td><td><a href='http://www.npr.org/sections/thetwo-way/2015/07/13/422489174/greece-eurozone-leaders-reach-agreement-on-a-new-bailout?utm_medium=RSS&utm_campaign=economy'>site</a></td><td>The summit reached a tentative agreement with Greece for a bailout program that includes "serious reforms," removing an immediate threat that Greece could collapse financially and leave the euro.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 17:41:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27192415.html#storylink=rss'>site</a></td><td>It includes reforms to Greece's consumer tax.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:26:40</td><td><a href='http://news.yahoo.com/western-union-restarts-money-transfer-greece-132640414--sector.html'>site</a></td><td><table><tr><td>Western Union restarts money transfer service in Greece</td></tr><tr><td>(Reuters) - Western Union Co said it restarted money transfer service in Greece, allowing customers in the country to receive funds from overseas.</td></tr></table></td></tr>
 </table></body></html>

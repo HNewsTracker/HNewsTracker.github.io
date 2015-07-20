@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,17 +48,8 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 13:51:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article25701787.html#storylink=rss'>site</a></td><td>"I call on all concerned - including Mr. Blatter - to endorse in the interest of the reforms unequivocally the announced changing of the guard at the top of FIFA," Scala said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 23:22:15</td><td></td><td><a href='fifa_or_blatter_14_15.html'>FIFA President Sepp Blatter has said in a magazine interview that he is not corrupt and that he has a "clear conscience" despite corruption investigations into world soccer's governing body. (69)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-01 23:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-says-he-has-clear-conscience-despite-fifa-/nmqLX/'>site</a></td><td>The 79-year-old told Bunte that he happily accepts "fair and constructive criticism, also to consider what can be done differently. But when someone says, 'Blatter is corrupt because FIFA is corrupt', I can only shake my head. Anyone who makes such claims without proof should be jailed."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-02 07:15:18</td><td></td><td><a href='fifa_or_blatter_14_20.html'>Swiss say US has filed formal request to extradite 7 FIFA officials arrested in May (6)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-05 00:49:43</td><td><a href='http://www.nytimes.com/aponline/2015/07/04/world/europe/ap-soc-fifa-investigation-blatter.html?partner=rss&emc=rss&_r=0'>site</a></td><td><table><tr><td>Blatter: French, German Presidents Tried Influence WCup Vote</td></tr><tr><td>"I'm there now to fight. Not for myself but for FIFA," said Blatter, who added he was on the right path and had no doubts.</td></tr></table></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-05 14:07:01</td><td></td><td><a href='fifa_or_blatter_14_16.html'>Welt am Sonntag quoted Blatter as saying the German football federation, DFB, had "received a recommendation (from Wulff) that Germany should vote for Qatar for economic interests". (4)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-09 08:28:44</td><td></td><td><a href='fifa_or_blatter_14_17.html'>FIFA's ethics panel says American Blazer "was a key player in schemes involving the offer, acceptance, payment and receipt of undisclosed and illegal payments, bribes and kickbacks as well as other money-making schemes." (5)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-07-16 09:36:00</td><td></td><td><a href='fifa_or_blatter_14_18.html'>"The first of the seven FIFA officials being held in custody in Switzerland was extradited to the U.S. on 15 July," the justice office said. (5)</a></td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://static01.nyt.com/images/2015/07/11/sports/Y-FIFA/Y-FIFA-thumbStandard.jpg'></td><td>2015-07-16 18:14:26</td><td><a href='http://www.nytimes.com/2015/07/17/sports/soccer/ex-fifa-executive-jeffrey-webb-extradited-to-us.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Blatter has not been charged.</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-07-16 19:02:08</td><td></td><td><a href='fifa_or_blatter_14_21.html'>In another sign of how FIFA is grappling with pressure to improve transparency, its ethics committee, responsible for investigating the corruption allegations, on Thursday called for a change in rules to let it release more information about ongoing investigations. (4)</a></td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-07-17 18:56:59</td><td></td><td><a href='fifa_or_blatter_14_23.html'>FIFA sponsor Coca-Cola has told soccer's governing body to appoint an independent commission to lead the reform process required to clean up the scandal-ridden organization. (4)</a></td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-07-17 23:34:16</td><td></td><td><a href='fifa_or_blatter_14_19.html'>Coca-Cola Co and McDonald's Corp both made it clear that they are deeply unhappy with the way FIFA is governed and want major change. (3)</a></td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-07-18 13:35:17</td><td></td><td><a href='fifa_or_blatter_14_22.html'>GENEVA (AP) " FIFA leaders this weekend return to the scene of a criminal investigation which sent football's governing body into crisis eight weeks ago. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715337520_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-22 16:18:20</td><td><a href='http://www.torontosun.com/2015/06/22/diego-maradona-plans-run-for-fifa-presidency'>site</a></td><td>Diego Maradona plans run for FIFA presidency</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 17:31:05</td><td><a href='http://www.charlotteobserver.com/sports/article25154227.html#storylink=rss'>site</a></td><td><table><tr><td>If Diego Maradona is serious about running for the FIFA presidency, he still has a lot of work to do just to get on the ballot.</td></tr><tr><td>Maradona's desire to run for FIFA's top job was reported by Victor Hugo Morales, a journalist close to the retired great.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/22/80/4d/3bf5679348544fdd8c2000ee1d0ae246-8641ace0f84c419a94d55eb994db41de-0.jpg'></td><td>2015-06-22 17:55:15</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/maradonas-road-to-fifa-presidency-filled-with-obst/nmh4w/'>site</a></td><td><table><tr><td>Maradona's road to FIFA presidency filled with obstacles</td></tr><tr><td>Journalist Victor Hugo Morales said on Twitter late Sunday, June 21, 2015 that Maradona plans to run for president of FIFA.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 18:01:06</td><td><a href='http://www.miamiherald.com/news/politics-government/article25154227.html#storylink=rss'>site</a></td><td><table><tr><td>In the often mysterious world of FIFA politics, it is far from clear which five of the 209 member federations would choose to nominate Maradona and why they would do it.</td></tr><tr><td>Many football officials worldwide who still support Blatter will not have forgotten Maradona's language toward the now-outgoing FIFA president during his recent re-election campaign.</td></tr></table></td></tr>
 </table></body></html>
