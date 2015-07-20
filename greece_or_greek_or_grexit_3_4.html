@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 261,
+            max: 262,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 261 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 262 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -309,4 +309,5 @@
   <tr><td style='display:none'>258</td><td></td><td>2015-07-20 05:43:53</td><td><a href='http://www.reuters.com/article/2015/07/20/us-eurozone-greece-idUSKCN0PT0FV20150720?feedType=RSS&feedName=topNews'>site</a></td><td>Greek banks ready to open Monday as Merkel urges swift bailout talks</td></tr>
   <tr><td style='display:none'>259</td><td></td><td>2015-07-20 06:39:35</td><td><a href='http://www.cbc.ca/news/business/greece-crisis-banks-reopen-as-government-eyes-return-to-normalcy-1.3159623?cmp=rss'>site</a></td><td>Greek banks opened their branches across the country on Monday after a three-week shutdown, while German Chancellor Angela Merkel called for swift aid talks so Athens could also lift withdrawal limits.</td></tr>
   <tr><td style='display:none'>260</td><td></td><td>2015-07-20 06:50:16</td><td><a href='http://www.reuters.com/article/2015/07/20/us-eurozone-greece-idUSKCN0PU0DJ20150720?feedType=RSS&feedName=topNews'>site</a></td><td>The decision to reopen banks was the first action by Greece's new cabinet after the 40-year-old leftist prime minister sacked rebels who had opposed the deal he struck with EU leaders last week.</td></tr>
+  <tr><td style='display:none'>261</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/V9g3M9Yz6YDRJqtLq6WUnA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102845120-GettyImages-480891308.1910x1000.jpg'></td><td>2015-07-20 09:35:52</td><td><a href='http://finance.yahoo.com/news/imf-offer-greece-debt-relief-074303788.html'>site</a></td><td>Mody's comments come at a time when the IMF has raised concerns over debt relief for Greece, with Managing Director Christine Lagarde advocating extending the maturities on Greek loans.</td></tr>
 </table></body></html>

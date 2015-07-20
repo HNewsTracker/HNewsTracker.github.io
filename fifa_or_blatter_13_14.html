@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 20:55:20</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11481880&ref=rss'>site</a></td><td>"I had no hard evidence, and we wanted to try to continue to participate and influence (FIFA) as one of 209 members," Flynn said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 20:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481880&ref=rss'>site</a></td><td><table><tr><td>The other choice, Flynn said, was to opt out entirely of FIFA, which would've basically eliminated the United States from all global competitions.</td></tr><tr><td>While Flynn pledged to push for reforms and pointed to measures adapted by CONCACAF earlier this month, investigative journalist and filmmaker Andrew Jennings suggested FIFA was beyond repair.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 21:48:17</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/15/us-soccer-chief-felt-discomfort-during-fifa-proceedings'>site</a></td><td>When Blumenthal later asked if Flynn or others in the USSF should've pushed FIFA or CONCACAF earlier for more transparency, Flynn said doing so may have jeopardized the United States' sway and any chance to make reforms.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 06:15:20</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11484035&ref=rss'>site</a></td><td>"If a December election is called, there will not be the meaningful change in the leadership of FIFA that we so desperately need."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/12/3d/0e746a8eadbf4c489979579946fae32b-60fcd86c0ae6471497f215cf3ae6b6d4-0_1.jpg'></td><td>2015-07-20 09:43:20</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/fifa-to-decide-on-election-date-platini-gains-supp/nm3TZ/'>site</a></td><td>Prince Ali broke more than a month of silence on Monday to tell The Associated Press that a December election would not provide enough time for the "meaningful change in the leadership of FIFA that we so desperately need."</td></tr>
 </table></body></html>

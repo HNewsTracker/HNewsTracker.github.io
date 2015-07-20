@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 13:51:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article25701787.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA election monitor urges Blatter to commit to going</td></tr><tr><td>Sepp Blatter got a clear message on Sunday from FIFA election monitor Domenico Scala to end speculation he wants to stay in office.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 20:55:20</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11481880&ref=rss'>site</a></td><td>"I had no hard evidence, and we wanted to try to continue to participate and influence (FIFA) as one of 209 members," Flynn said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 20:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481880&ref=rss'>site</a></td><td><table><tr><td>The other choice, Flynn said, was to opt out entirely of FIFA, which would've basically eliminated the United States from all global competitions.</td></tr><tr><td>While Flynn pledged to push for reforms and pointed to measures adapted by CONCACAF earlier this month, investigative journalist and filmmaker Andrew Jennings suggested FIFA was beyond repair.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 21:48:17</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/15/us-soccer-chief-felt-discomfort-during-fifa-proceedings'>site</a></td><td>When Blumenthal later asked if Flynn or others in the USSF should've pushed FIFA or CONCACAF earlier for more transparency, Flynn said doing so may have jeopardized the United States' sway and any chance to make reforms.</td></tr>
 </table></body></html>

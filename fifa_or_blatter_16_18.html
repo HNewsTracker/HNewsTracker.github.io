@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 00:54:58</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123202/Blatter-seek-stay-FIFA-boss-source-tells-Swiss-paper.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Blatter said on June 2 he would step down as FIFA president in the wake of a corruption investigation, having led soccer's world governing body since 1998.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 10:54:22</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123385/Blatter-seek-stay-FIFA-boss-source-tells-Swiss-paper.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>FIFA, in an emailed statement, referred Reuters to the speech Blatter made on June 2 and said they had "no further comment to make".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 20:55:20</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11481880&ref=rss'>site</a></td><td>Meanwhile, the government of Switzerland, the home of FIFA's global headquarters, has launched a separate probe into suspected money laundering connected to the bidding process for the 2018 and 2022 World Cups.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 20:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481880&ref=rss'>site</a></td><td><table><tr><td>US soccer chief felt 'discomfort' during FIFA proceedings</td></tr><tr><td>WASHINGTON (AP) " U.S. Soccer Federation chief executive Dan Flynn said Wednesday he had no direct knowledge of bribery or kickbacks exchanged by FIFA officials but experienced moments of "discomfort" during meetings.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 23:29:22</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27356605.html#storylink=rss'>site</a></td><td><table><tr><td>Senators: Why didn’t U.S. Soccer expose FIFA corruption?</td></tr><tr><td>The U.S. Soccer Federation got kicked around Wednesday at a Senate subcommittee hearing that looked into the corruption of FIFA, soccer's international governing organization.</td></tr><tr><td>Blumenthal criticized U.S. Soccer for not exposing FIFA's corruption long before the U.S. Department of Justice indicted nine FIFA officials and five corporate executives for racketeering, bribery, wire fraud and money laundering this May.</td></tr><tr><td>Flynn told the Senators that he didn't know anything about corruption in either FIFA or CONCACAF, the division of FIFA that the U.S. is a part of.</td></tr><tr><td>Opting to stay in, they worked to get Sunil Gulati, the president of U.S. Soccer elected to a position in FIFA.</td></tr></table></td></tr>
 </table></body></html>

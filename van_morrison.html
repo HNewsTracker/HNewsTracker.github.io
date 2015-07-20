@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>van morrison</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif?m=1315610318g'></td><td>2015-06-19 10:17:27</td><td><a href='http://nypost.com/2015/06/19/lady-gaga-van-morrison-honored-at-songwriters-ceremony/'>site</a></td><td>Lady Gaga, Van Morrison honored at songwriters ceremony</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150617&i=108846877&w=240&r=108846877-1&t=2'></td><td>2015-06-19 18:40:27</td><td><a href='http://www.reuters.com/article/2015/06/19/us-music-gaga-award-idUSKBN0OZ1HN20150619?feedType=RSS&feedName=peopleNews'>site</a></td><td>Recording artist Van Morrison gestures on the red carpet before the Songwriters Hall of Fame ceremony in New York, June 18, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150617&i=108846877&w=240&r=108846877-1&t=2'></td><td>2015-06-19 18:40:27</td><td><a href='http://www.reuters.com/article/2015/06/19/us-music-gaga-award-idUSKBN0OZ1HN20150619?feedType=RSS&feedName=peopleNews'>site</a></td><td>Recording artist Van Morrison gestures on the red carpet before the Songwriters Hall of Fame ceremony in New York, June 18, 2015.</td></tr>
 </table></body></html>
