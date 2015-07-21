@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/03/876/493/abb781a9fc15e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-1.jpg?ve=1&tl=1'></td><td>2015-07-03 14:32:54</td><td><a href='http://www.foxbusiness.com/markets/2015/07/03/world-stocks-drift-lower-ahead-greek-vote-chinese-stocks-plunge-as-support/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>World stocks drift lower ahead of Greek vote; China plunges</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 14:32:54</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/03/world-stocks-drift-lower-ahead-of-greek-vote-china-plunges'>site</a></td><td>World stock markets mostly drifted lower Friday ahead of Greece's weekend referendum, while China's main stock benchmark plunged as government efforts failed to reassure panicky investors.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>A family divided: Emotions run high ahead of Greek vote</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/20/41/8194144/5/square_gallery_thumb.jpg'></td><td>2015-06-22 16:05:23</td><td><a href='http://www.sfgate.com/news/world/article/Markets-surge-ahead-of-last-ditch-summit-on-Greece-6341079.php'>site</a></td><td>A debt default by Greece could destabilize its banks - Greeks are already withdrawing increasingly large amounts of money - and could in a worst case scenario cause the country to have to leave the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 16:05:23</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/22/markets-surge-ahead-of-last-ditch-summit-on-greece'>site</a></td><td><table><tr><td>Europe cautiously optimistic of Greek debt deal this week</td></tr><tr><td>The concern is that a debt default by Greece could destabilize the country enough that it might eventually have to leave the euro.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 16:11:04</td><td><a href='http://www.charlotteobserver.com/news/business/article25139845.html#storylink=rss'>site</a></td><td>Eurozone nations were cautiously optimistic on Monday that a deal on Greece's bailout was finally within reach this week, amid fears the country might otherwise default on its debts and fall out of the euro.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ichef.bbci.co.uk/news/624/cpsprodpb/10A64/production/_83869186_shares.jpg'></td><td>2015-06-26 02:50:11</td><td><a href='http://www.bbc.co.uk/news/business-33281146#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Last-minute talks will resume on Saturday to either avert a Greek default next week or start preparing to protect the euro zone from financial market turmoil.</td></tr>
 </table></body></html>
