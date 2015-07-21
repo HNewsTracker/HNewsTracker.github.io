@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 11:23:14</td><td></td><td><a href='state_islamic_18_19.html'>The strike in Nangarhar province killed Islamic State affiliate leader Hafeez Sayeed and others on Friday, said Abdul Hassib Sediqi, a spokesman for Afghanistan's National Directorate of Security. (8)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 11:25:07</td><td><a href='http://www.startribune.com/official-senior-islamic-state-figure-killed-in-a-us-strike/313684091/'>site</a></td><td>The Taliban, at war with the government for nearly 14 years, have warned the Islamic State group to stay out.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 11:35:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480342&ref=rss'>site</a></td><td>In the audio, which was posted on known militant websites, a man speaking Pashtun calls on listeners to join the Islamic State group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 20:47:00</td><td></td><td><a href='state_islamic_18_19.html'>A knife and the decapitated body of Salhi's employer were found at the site of the explosion, and the severed head was posted on a gate at the factory entrance with two flags bearing proclamations of Islamic faith, the prosecutor said. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 20:47:00</td><td><a href='http://tvnz.co.nz/world-news/french-beheading-suspect-previously-investigated-radical-islamic-ties-6347844?ref=rss'>site</a></td><td>followed a call by Islamic State extremists to target "nonbelievers."</td></tr>
 </table></body></html>

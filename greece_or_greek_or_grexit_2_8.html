@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -52,4 +52,5 @@
   <tr><td style='display:none'>1</td><td></td><td>2015-07-12 14:55:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479857&ref=rss'>site</a></td><td>In Schinos, beachside bar and pizzeria owner Stavros Koteas sees the tax hikes as a final blow to what he calls the "slow strangulation" of small Greek businesses.</td></tr>
   <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:04:56</td><td><a href='http://www.miamiherald.com/news/business/article27206317.html#storylink=rss'>site</a></td><td>More enforcement will be needed, but Artavanis said many parts of Greece rarely see a tax inspector.</td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-07-16 05:30:36</td><td><a href='http://time.com/3960349/greece-europe-lenders-relief/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>In a post-midnight vote, Greece's parliament voted 229-64 to implement more austerity measures that include pension cuts and sweeping sales tax hikes.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-21 12:30:08</td><td><a href='http://www.startribune.com/greece-new-bailout-talks-to-start-after-bank-laws-passed/317785231/'>site</a></td><td>Gerovasili said Greece already met other conditions outlined by creditors for bailout talks to begin when lawmakers voted through package of measures including wide-ranging sales tax hikes.</td></tr>
 </table></body></html>
