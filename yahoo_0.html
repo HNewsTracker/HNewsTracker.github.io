@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/e2krA.hTUDE7ER1KzxD14w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201506091548569383343'></td><td>2015-06-09 20:51:47</td><td><a href='http://sports.yahoo.com/news/soriano-agrees-minor-league-deal-cubs-162628406--mlb.html'>site</a></td><td>Soriano agrees to minor league deal with Cubs (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 21:00:48</td><td></td><td><a href='yahoo_0_1.html'>Yahoo is still limping along as the Internet company prepares to shed the financial crutch that has been propping up its stock during the three-year reign of CEO Marissa Mayer. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 21:00:48</td><td></td><td><a href='yahoo_0_2.html'>Yahoo's posted a loss of nearly $22 million, while its net revenue remained unchanged from the previous year at $1.04 billion. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/64/40/8341538/3/square_gallery_thumb.jpg'></td><td>2015-07-21 21:00:48</td><td><a href='http://www.chron.com/business/technology/article/Yahoo-suffers-2Q-loss-as-revenue-growth-eludes-6397835.php'>site</a></td><td><table><tr><td>This Jan. 14, 2015 photo shows signage outside Yahoo's headquarters in Sunnyvale, Calif.</td></tr><tr><td>Yahoo reports quarterly financial results on Tuesday, July 21, 2015.</td></tr></table></td></tr>
 </table></body></html>

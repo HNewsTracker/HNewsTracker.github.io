@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/20/41/8194144/5/square_gallery_thumb.jpg'></td><td>2015-06-22 16:05:23</td><td><a href='http://www.sfgate.com/news/world/article/Markets-surge-ahead-of-last-ditch-summit-on-Greece-6341079.php'>site</a></td><td>A debt default by Greece could destabilize its banks - Greeks are already withdrawing increasingly large amounts of money - and could in a worst case scenario cause the country to have to leave the euro.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 16:05:23</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/22/markets-surge-ahead-of-last-ditch-summit-on-greece'>site</a></td><td><table><tr><td>Europe cautiously optimistic of Greek debt deal this week</td></tr><tr><td>The concern is that a debt default by Greece could destabilize the country enough that it might eventually have to leave the euro.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-22 16:11:04</td><td><a href='http://www.charlotteobserver.com/news/business/article25139845.html#storylink=rss'>site</a></td><td>Eurozone nations were cautiously optimistic on Monday that a deal on Greece's bailout was finally within reach this week, amid fears the country might otherwise default on its debts and fall out of the euro.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ichef.bbci.co.uk/news/624/cpsprodpb/10A64/production/_83869186_shares.jpg'></td><td>2015-06-26 02:50:11</td><td><a href='http://www.bbc.co.uk/news/business-33281146#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Last-minute talks will resume on Saturday to either avert a Greek default next week or start preparing to protect the euro zone from financial market turmoil.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 12:31:46</td><td><a href='http://www.utsandiego.com/news/2015/jun/28/european-central-bank-maintains-emergency-credit/'>site</a></td><td>European Central Bank maintains emergency credit to Greek banks at current level</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 13:25:57</td><td><a href='http://www.cbc.ca/news/world/greek-banks-to-remain-closed-withdrawals-to-be-restricted-1.3131048?cmp=rss'>site</a></td><td>The ECB's decision keeps a key financial lifeline open but does not provide further credit to Greece's banks.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/37/30/73/8228583/5/square_gallery_thumb.jpg'></td><td>2015-06-28 18:03:24</td><td><a href='http://www.sfgate.com/news/science/article/The-Latest-Greece-wants-ECB-to-keep-giving-6354011.php'>site</a></td><td>It has been allowing Greek banks to draw emergency credit from Greece's central bank, a financial lifeline that has been keeping Greece's four major banks going during the country's tense bailout negotiations with creditors.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 23:25:31</td><td><a href='http://www.reuters.com/article/2015/06/29/us-microsoft-employment-idUSKCN0P92PT20150629?feedType=RSS&feedName=technologyNews'>site</a></td><td>Microsoft hands display ads to AOL, maps to Uber</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/46/13/8282862/3/gallery_thumb.jpg'></td><td>2015-07-09 19:18:25</td><td><a href='http://www.seattlepi.com/business/technology/article/Review-Microsoft-Office-in-a-world-of-multiple-6375843.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Microsoft's new Office apps do a good job of helping us navigate a world in which we frequently switch from one device to another - from a Mac to a Windows PC, with a smartphone or tablet along the way.</td></tr><tr><td>Those with an Office 365 subscription can get the Mac Office starting Thursday at http://office.microsoft.com.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 10:01:49</td><td><a href='http://www.sbs.com.au/news/article/2015/07/10/microsoft-office-now-multiple-devices'>site</a></td><td>The company released Microsoft Office 2016 for Mac on Thursday and new apps for Android phones two weeks ago.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 15:05:28</td><td><a href='http://www.sbs.com.au/news/article/2015/07/10/microsoft-office-now-multiple-devices'>site</a></td><td>Microsoft will sell Office for a one-time payment starting in September.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0710/20150710__0711microsoft~2_300.JPG'></td><td>2015-07-10 23:32:11</td><td><a href='http://www.mercurynews.com/business/ci_28466575/review-microsoft-office-navigates-world-multiple-devices?source=rss'>site</a></td><td>This product image provided by Microsoft shows Microsoft Word for Mac, part of the new Microsoft Office 2016 Mac suite.</td></tr>
 </table></body></html>

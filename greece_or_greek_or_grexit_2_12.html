@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 10:25:09</td><td><a href='http://www.startribune.com/german-investor-optimism-undeterred-by-greece/314852531/'>site</a></td><td>ZEW head Clemens Fuest said Tuesday that neither Greece nor China seemed to hurt the outlook among the investment analysts surveyed for the index.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.seattlepi.com/news/article/Yellen-Draghi-upbeat-despite-tumult-in-Greece-6389141.php'>site</a></td><td><table><tr><td>Yellen, Draghi upbeat despite tumult in Greece, China</td></tr><tr><td>Yellen said this week that the Fed might reconsider a 2015 rate hike if the tumult in China or Greece threatened to spread.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150407001119486943-minihighres.jpg?itok=p9fJCWZO'></td><td>2015-07-21 01:36:08</td><td><a href='http://www.sbs.com.au/news/article/2015/07/21/rba-look-greece-china-rates'>site</a></td><td>RBA keeps close eye on China and Greece</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-21 01:54:11</td><td><a href='http://www.smh.com.au//breaking-news-business/rba-to-look-at-greece-china-on-rates-20150721-3zn6h.html'>site</a></td><td>The Reserve Bank will keep a close watch on China's stock markets, the Greek debt crisis and soft local business investment to see if further rate cuts are needed.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-21 01:54:11</td><td><a href='http://www.smh.com.au//breaking-news-business/rba-keeps-close-eye-on-china-and-greece-20150721-3zn6h.html'>site</a></td><td>The Reserve Bank said economic growth in Australia's major trading partners was around average, but key considerations remained turbulence on China's stock markets and Greece's ongoing debt saga.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 13:41:48</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/exposed-to-greek-banks-balkans-brace-for-trouble/'>site</a></td><td>Though Greece's limits on cash withdrawals have not extended to subsidiaries in the Balkans, the deposits could be at risk if the parent banks collapse.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 05:35:42</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/16/greece-seeks-relief-from-lenders-after-first-bailout-test'>site</a></td><td>Dangerously low on liquidity at banks and with the state practically out of cash, Greece desperately needs funds.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/32/e2/f2e092ef255347d3933e2886e5b35321-ee454d7079094ee085c092947af431e1-0_1.jpg'></td><td>2015-07-20 10:58:49</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeks-will-find-banks-open-but-restrictions-still/nm3RW/'>site</a></td><td><table><tr><td>Greek banks reopen but cash limits remain; taxes soar</td></tr><tr><td>"If that had not been removed, the Greek banks would not have had a liquidity problem," she said.</td></tr></table></td></tr>
 </table></body></html>

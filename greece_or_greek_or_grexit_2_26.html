@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-u-data-003850377.html'>site</a></td><td>LONDON (Reuters) - European bonds and stocks traded cautiously on Friday before a Greek referendum on EU-prescribed reforms that could determine the country's future in the euro zone and which polls suggest could go either way.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://www.reuters.com/article/2015/07/03/us-markets-global-idUSKCN0PD01T20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>European bonds and stocks on the defensive before tight Greek vote</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/06/876/493/a3119858d256e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-2.jpg?ve=1&tl=1'></td><td>2015-07-06 22:32:32</td><td><a href='http://www.foxbusiness.com/markets/2015/07/06/us-stocks-slip-after-greeks-reject-terms-bailout-deal-european-markets-oil-drop/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>US stocks slip amid global sell-off after Greek 'no' vote</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 05:07:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25747720.html#storylink=rss'>site</a></td><td>"Most traders are well prepped over the possible fallout of Greece. It's guessing which card will fall next that's the difficult bit," said Nicholas Teo, analyst at CMC Markets in Singapore.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/07/247976c86b65931e7b0f6a70670071db_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-08 06:23:55</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/china-leads-dive-in-asia-stocks-as-greece-rattles/'>site</a></td><td>"Still, for traders there are only two games in town and these remain China's equity markets and the Greek negotiations."</td></tr>
 </table></body></html>

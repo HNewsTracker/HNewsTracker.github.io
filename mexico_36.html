@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-01 23:39:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article26004295.html#storylink=rss'>site</a></td><td>Last year, she won re-election in blue-leaning New Mexico, the state with the largest number of Hispanic residents, by a wide margin.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 23:39:04</td><td></td><td><a href='mexico_36_37.html'>New Mexico Gov. Susana Martinez denounced GOP presidential hopeful Donald Trump's recent remarks about Mexican immigrants and called his comments "horrible." (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-01 23:39:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article26004295.html#storylink=rss'>site</a></td><td>In addition, Martinez has gone on a number of trade missions to Mexico and has been pushing for more infrastructure at the booming border town of Santa Teresa.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 20:30:38</td><td><a href='http://www.startribune.com/mexico-s-first-auction-of-oil-sites-draws-few-bids/315500301/'>site</a></td><td><table><tr><td>Only two of 14 exploration and production blocks in the Gulf of Mexico put up for auction Wednesday attracted bids, and the auction did not attract the world's biggest oil companies.</td></tr><tr><td>Until last year's legislative overhaul, Mexico's oil sector had been closed to private companies since nationalization in 1938.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 20:35:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481864&ref=rss'>site</a></td><td>MEXICO CITY (AP) " Mexico is getting off to a rough start in its effort to attract investment for its oil fields by allowing private companies to enter the energy sector after a seven-decade state monopoly.</td></tr>
 </table></body></html>
