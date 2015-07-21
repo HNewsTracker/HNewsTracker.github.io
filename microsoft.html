@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 12,
+            max: 13,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -60,4 +60,5 @@
   <tr><td style='display:none'>9</td><td></td><td>2015-07-09 19:18:25</td><td></td><td><a href='microsoft_15.html'>Those with an Office 365 subscription can get the Mac Office starting Thursday at http://office.microsoft.com. (5)</a></td></tr>
   <tr><td style='display:none'>10</td><td></td><td>2015-07-16 17:49:39</td><td></td><td><a href='microsoft_4.html'>Like the Xbox Music service, Groove will also offer unlimited streaming from Microsoft's music catalog for $10 a month. (6)</a></td></tr>
   <tr><td style='display:none'>11</td><td></td><td>2015-07-17 00:16:35</td><td></td><td><a href='microsoft_8.html'>Prime Minister Juha Sipila called Microsoft's decision last week "a big blow," and visited Salo on Monday to hear from locals how the government could best help the town. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/08-825489+0005FESTIVAL072015.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-21 01:25:28</td><td><a href='http://www.startribune.com/miley-cyrus-to-host-mtv-video-music-awards/317663321/'>site</a></td><td>The 2015 MTV Video Music Awards will air live on MTV from the Microsoft Theater in Los Angeles.</td></tr>
 </table></body></html>
