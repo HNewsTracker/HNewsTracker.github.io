@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 16:02:26</td><td><a href='http://news.yahoo.com/bomb-blamed-boko-haram-kills-20-northern-nigeria-120305360.html'>site</a></td><td>Nigeria's police force announced heightened security around mosques and churches after Boko Haram assaults Sunday killed more than 60 people.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:01:58</td><td></td><td><a href='boko_haram_3_4.html'>Boko Haram has kidnapped hundreds and hundreds of girls and women and the numbers of female suicide bombers has raised fears that it is using the captives in its campaign. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 17:01:58</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/22/witness-2-girls-blow-selves-up-in-northeast-nigeria'>site</a></td><td>The attacks come as Nigeria and its neighbors are preparing to strengthen a multinational army that this year drove Boko Haram out of the towns and villages where it had set up a so-called Islamic caliphate.</td></tr>
 </table></body></html>

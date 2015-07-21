@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 13:38:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26528617.html#storylink=rss'>site</a></td><td><table><tr><td>Greek foreign minister visits Israel amid crisis at home</td></tr><tr><td>Israel is welcoming the Greek foreign minister for a three-day visit as his country faces a financial crisis at home, with Greeks voting on a referendum about their country's future.</td></tr><tr><td>Emmanuel Nahshon, Israel's Foreign Ministry spokesman, said Sunday that the visit from Greek Foreign Minister Nikolaos Kotzias would have an "economic emphasis" but would not elaborate.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 10:59:00</td><td><a href='http://www.ctvnews.ca/business/greek-bailout-talks-creditors-looking-for-more-specific-commitments-1.2464622'>site</a></td><td>Greece's banks, according to some accounts, have barely enough cash in their vaults to see the country through the week.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/35/e5/a082f47d84a94af0a47d4d82904f22e3-4a864986000e45d6aa9c3db3f4996795-0.jpg'></td><td>2015-07-19 07:11:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ious-for-rips-greeces-cash-crisis-hurts-funeral-in/nm3Cq/'>site</a></td><td><table><tr><td>Credit cards and especially checks are rarely used for such transactions in Greece, which remains a cash-based economy.</td></tr><tr><td>Cash controls have choked the country's economy as Greece sinks back in recession, according to most major forecasts.</td></tr></table></td></tr>
 </table></body></html>

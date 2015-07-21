@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.bbci.co.uk/frameworks/barlesque/2.83.10/orb/4/img/bbc-blocks-dark.png'></td><td>2015-06-14 11:55:52</td><td><a href='http://www.bbc.co.uk/news/uk-33125068#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Mr Snowden leaked data two years ago.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 12:46:47</td><td></td><td><a href='snowden_2_3.html'>The revelations about the impact of Snowden on intelligence operations comes days after Britain's terrorism law watchdog said the rules governing the security services' abilities to spy on the public needed to be overhauled. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/World/2015/06/14/snowden_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-06-14 18:47:26</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/06/14/22452086.html?cid=rssnewsworld'>site</a></td><td>British Foreign Secretary Philip Hammond said Snowden had done a huge amount of damage to the West's ability to protect its citizens.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 16:45:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/21/german-officials-to-ask-us-for-clarity-on-latest-spy-claims'>site</a></td><td>German spy chief sees reason to thank Snowden</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 16:45:14</td><td></td><td><a href='snowden_2_3.html'>BERLIN (AP) - Germany's domestic intelligence chief said Tuesday that the revelations by Edward Snowden have had at least one positive effect, by raising awareness about the importance of counter-espionage. (3)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/n/t/d/l/image.related.articleLeadwide.620x349.ghntcv.png/1434283771919.jpg'></td><td>2015-06-14 12:09:22</td><td><a href='http://www.smh.com.au/world/britain-pulls-out-spies-as-russia-china-reportedly-crack-snowden-files-20150614-ghntcv.html'>site</a></td><td>Mr Snowden downloaded more than 1.7 million secret files from security agencies in the US and Britain in 2013, and leaked details about mass surveillance of phone and internet communications.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 12:46:47</td><td><a href='http://news.yahoo.com/britain-pulls-spies-russia-china-crack-snowden-files-115045691.html'>site</a></td><td>The revelations about the impact of Snowden on intelligence operations comes days after Britain's terrorism law watchdog said the rules governing the security services' abilities to spy on the public needed to be overhauled.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-14 14:29:00</td><td><a href='http://www.cbc.ca/news/world/russia-china-crack-edward-snowden-files-u-k-pulls-out-spies-1.3112907?cmp=rss'>site</a></td><td>"As to the specific allegations this morning, we never comment on operational intelligence matters so I'm not going to talk about what we have or haven't done in order to mitigate the effect of the Snowden revelations, but nobody should be in any doubt that Edward Snowden has caused immense damage," he told Sky News.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 16:45:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/21/german-officials-to-ask-us-for-clarity-on-latest-spy-claims'>site</a></td><td><table><tr><td>BERLIN (AP) - Germany's domestic intelligence chief said Tuesday that the revelations by Edward Snowden have had at least one positive effect, by raising awareness about the importance of counter-espionage.</td></tr><tr><td>"So maybe one can be grateful to Snowden that he has put a spotlight on the issue of counter-espionage in Germany," dpa quoted Maassen as saying.</td></tr><tr><td>Although the reports didn't explicitly cite documents leaked to the media by Snowden, they came amid a flurry of similar claims about alleged U.S. surveillance in Germany that were linked to the former NSA contractor.</td></tr></table></td></tr>
 </table></body></html>
