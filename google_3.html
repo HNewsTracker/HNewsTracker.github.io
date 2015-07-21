@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Did you know that Google has been known to rent goats to "mow" its grass at the Googleplex complex in Mountain View, Calif.?</td></tr><tr><td>Of course, Google isn't just all about streaming and websites.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnology'>site</a></td><td>What does Google have in store for the future?</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-27 10:00:00</td><td></td><td><a href='google_3_4.html'>Rather than just cry about what went wrong and how they lost out on the deal, Google has been hard at work creating its own "Twitch killer." (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 17:21:00</td><td></td><td><a href='google_3_4.html'>Shares of e-commerce website Etsy jumped as much as 30 percent on Friday thanks to a nod from Google during its quarterly conference call. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/16/102840624-c2967d5b1259ab2becba3ac73f8f74a6cae48a01.80x60.jpg?v=1437074264'></td><td>2015-07-17 17:21:00</td><td><a href='http://www.cnbc.com/2015/07/17/etsy-shares-soar-after-google-mention.html'>site</a></td><td>"It started with (the) Google commentary last night," Wedbush analyst Gil Luria said, adding that short sellers closing their bets were driving the stock up further.</td></tr>
 </table></body></html>

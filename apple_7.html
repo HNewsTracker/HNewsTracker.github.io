@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 08:40:05</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article27378223.html#storylink=rss'>site</a></td><td>In fact, if Apple Music had only these two features, I'd feel satisfied.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 14:35:17</td><td></td><td><a href='apple_7_8.html'>" Then there's the "Radio" tab, which debuts not only Apple's new 24/7 online radio station, Beats1, but contains several stations specializing in various genres. These are like playlists, but you can't see all the songs that are up next. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434879305504.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/digital-life/digital-life-news/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td>Washington: Apple is diving deeper into the news business with a new application that could make the US tech giant a key industry player.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 04:07:52</td><td></td><td><a href='apple_7_8.html'>Apple News, part of the upcoming iOS 9 operating system, aims to be the primary news source for users of the iPhone and iPad. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-21 04:07:52</td><td></td><td><a href='apple_7_9.html'>Although Apple is likely to use some algorithms to filter stories, the hiring of experienced journalists is a positive step, said Dan Kennedy, a journalism professor at Northeastern University. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434859663188.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/world/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td>Customers browse Apple Watches in New York.</td></tr>
 </table></body></html>

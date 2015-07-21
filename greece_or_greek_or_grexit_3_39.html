@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 16:42:12</td><td><a href='http://da.feedsportal.com/c/33039/f/533917/s/47a5291b/sc/3/l/0Ltimesofindia0Bindiatimes0N0Cworld0Ceurope0CGreece0Eto0Eshut0Ebanks0Estock0Eexchange0Eon0EMonday0Eas0Ecrisis0Edeepens0Carticleshow0C478557580Bcms/ia1.htm'>site</a></td><td>Greece to shut banks, stock exchange on Monday as crisis deepens</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 17:39:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article26573452.html#storylink=rss'>site</a></td><td>A stock ticker carries news of the "No" vote on the Greek debt referendum, on the floor of the New York Stock Exchange, Monday, July 6, 2015, in New York.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150705&i=109339515&w=240&r=109339515-1&t=2'></td><td>2015-07-03 22:08:36</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>His European partners say a 'No' vote will jeopardize Greece's membership of the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/yes-or-no-what-greeces-landmark-vote-might-bring/nmrrq/'>site</a></td><td>Proponents of a "yes" vote, including a parade of former prime ministers and the main opposition party, say backing the government will jeopardize Greece's place in the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.sfgate.com/news/world/article/Yes-or-no-What-Greece-s-landmark-vote-might-bring-6366902.php'>site</a></td><td>It's urging a "no" vote and says that will have no impact on Greece's euro status.</td></tr>
 </table></body></html>

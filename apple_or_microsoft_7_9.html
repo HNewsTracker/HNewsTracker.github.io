@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-19 23:06:33</td><td><a href='http://www.cbsnews.com/news/taylor-swift-says-no-to-apple-music/'>site</a></td><td><table><tr><td>Taylor Swift says no to Apple Music</td></tr><tr><td>Swift's previous albums, though, will be available on Apple Music though.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 15:17:49</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/06/21/in-open-letter-swift-criticizes-shocking-apple-music'>site</a></td><td>In open letter, Swift criticizes 'shocking' Apple Music</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 15:20:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article25108798.html#storylink=rss'>site</a></td><td>Swift said she would withhold her 2014 album "1989" from Apple Music, which launches June 30.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-21 16:05:47</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift writes open letter to Apple Music bosses</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-21 18:42:15</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift has written an open letter to Apple Music bosses explaining why she is withholding her album 1989 from their service, telling them "it is unfair to ask anyone to work for nothing".</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-06-25 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article25502572.html#storylink=rss'>site</a></td><td><table><tr><td>Taylor Swift's album "1989" will be available on Apple's new music service, following the company's reversal of a controversial policy on royalties.</td></tr><tr><td>"After the events of this week, I've decided to put 1989 on Apple Music ... and happily so," Swift said on Twitter.</td></tr></table></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-06-25 15:53:07</td><td><a href='http://www.nydailynews.com/entertainment/music/taylor-swift-happily-stream-1989-apple-music-article-1.2270905'>site</a></td><td>"This is simply the first time it's felt right in my gut to stream my album. Thank you, Apple, for your change of heart."</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-06-25 16:20:00</td><td><a href='http://www.ctvnews.ca/entertainment/taylor-swift-will-allow-apple-music-to-stream-1989-album-1.2440077'>site</a></td><td>NEW YORK -- Taylor Swift is letting Apple Music stream her "1989" album -- the only streaming service allowed to do so.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-06-25 16:31:00</td><td><a href='http://www.latimes.com/entertainment/envelope/cotown/la-et-ct-taylor-swift-i-ve-decided-to-put-1989-on-apple-music-20150625-story.html'>site</a></td><td>Swift sought to assure fans that her decision to put "1989" on Apple Music is not part of an exclusive deal.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 06:04:18</td><td><a href='http://www.reuters.com/article/2015/07/08/us-microsoft-redundancies-idUSKCN0PI0GL20150708?feedType=RSS&feedName=technologyNews'>site</a></td><td>The layoffs are expected to affect employees at the hardware group and other parts of the company, including the smartphone business that Microsoft acquired from Nokia last year, the newspaper said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/3f6/report-on-business/article25349385.ece/ALTERNATES/w220/-OUKBS-UK-MICROSOFT-REDUNDA.JPG'></td><td>2015-07-08 07:11:49</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/microsoft-plans-major-job-cuts-report/article25349386/?cmpid=rss1'>site</a></td><td>Microsoft Corp, the world's largest software company, plans to announce a new round of layoffs as early as Wednesday as it tries to cut costs further, the New York Times reported.</td></tr>
 </table></body></html>

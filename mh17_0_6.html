@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 11:38:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-mh17-anniversary-20150717-story.html'>site</a></td><td>In the Netherlands, the names of all 298 victims were read out - a process that took 27 minutes - before a minute's silence was held at the time when exactly a year earlier air traffic controllers lost contact with MH17.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 12:13:24</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>Some of the mourners held banners accusing the Kiev government of waging a war on them and likening the MH17 victims to those killed in indiscriminate shelling in the past year and a half.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 12:13:52</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/16/a-year-on-ukrainian-villagers-recall-horrors-of-mh17-crash'>site</a></td><td>The rebels had shot down several Ukrainian transport jets in the weeks before the MH17 crash, including an Il-76 on June 14, killing 49 people onboard.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/16/80/04/2b00cc91de724097b7082135861b4f01-3f56c7e02bb84e0faa4e4cc3de783cfc-0.jpg'></td><td>2015-07-16 12:13:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/a-year-on-ukrainian-villagers-recall-horrors-of-mh/nmznH/'>site</a></td><td>All 298 people onboard MH17 were killed when the plane was downed on July 17, 2014, over rebel-controlled territory in eastern Ukraine, where government forces and the Russia-backed separatists had been fighting for months.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 17:00:50</td><td><a href='http://www.startribune.com/little-certainty-1-year-after-airliner-shot-down-in-ukraine/315883861/'>site</a></td><td><table><tr><td>Just minutes after the crash, a posting appeared on the social media account of then-rebel commander Igor Girkin, saying that the rebels had shot down a Ukrainian An-26 transport plane and it crashed in the same area as MH17.</td></tr><tr><td>The rebels had shot down several Ukrainian planes in the early months of the war, but apparently with shoulder-fired missiles that could not reach the altitude at which MH17 was flying.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 12:17:03</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27471565.html#storylink=rss'>site</a></td><td>Rebel leader Alexander Zakharchenko, who arrived at the commemoration ceremony on crutches, accused the Ukrainian government of taking down MH17.</td></tr>
 </table></body></html>

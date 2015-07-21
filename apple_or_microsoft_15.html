@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 08:00:00</td><td><a href='http://www.miamiherald.com/entertainment/music-news-reviews/article25830955.html#storylink=rss'>site</a></td><td><table><tr><td>5 things for Apple (and you) to keep in mind as Apple Music is launched</td></tr><tr><td>Here are five things for Apple to keep an eye on as it rolls out.</td></tr><tr><td>Apple can make people spend $700 on a phone without blinking, but can it get a critical mass to pay another $10 a month?</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 08:00:00</td><td></td><td><a href='apple_or_microsoft_15_16.html'>Daniel Ek of Spotify, the Beggars Group label consortium and the almighty Taylor Swift (among many others) are among the many who have all inveighed, quipped or protested against Apple Music, which stands to profoundly reshape the music industry with its launch this week. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 15:17:49</td><td></td><td><a href='apple_or_microsoft_15_16.html'>In an open letter to Apple, on Sunday, June 21, 2015, Swift criticized the company's new streaming music service for failing to pay artists for a free three-month trial. (18)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 22:02:42</td><td><a href='http://www.cbsnews.com/news/taylor-swift-pens-open-letter-to-apple-about-shocking-policy/'>site</a></td><td>But I say to Apple with all due respect, it's not too late to change this policy and change the minds of those in the music industry who will be deeply and gravely affected by this.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 15:53:07</td><td><a href='http://www.nydailynews.com/entertainment/music/taylor-swift-happily-stream-1989-apple-music-article-1.2270905'>site</a></td><td>"This is simply the first time it's felt right in my gut to stream my album. Thank you, Apple, for your change of heart."</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-06-09 11:34:01</td><td><a href='http://news.yahoo.com/islamic-state-attacks-government-office-western-fringe-baghdad-113401892.html'>site</a></td><td>Located on the western fringe of Baghdad, Amiriyat al-Falluja is one of the few remaining pockets of territory under government control in Anbar province, most of which is held by Islamic State.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 18:11:15</td><td><a href='http://abcnews.go.com/International/wireStory/israel-arrests-bedouin-supporting-islamic-state-group-32255857'>site</a></td><td>Israel Arrests 6 Bedouin for Supporting Islamic State Group</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 18:15:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11476800&ref=rss'>site</a></td><td>JERUSALEM (AP) " Israel's Shin Bet security agency says it has arrested six Bedouin for establishing a cell supportive of the Islamic State group.</td></tr>
 </table></body></html>
