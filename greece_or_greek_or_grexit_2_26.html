@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 13:38:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26528617.html#storylink=rss'>site</a></td><td><table><tr><td>Greek foreign minister visits Israel amid crisis at home</td></tr><tr><td>Israel is welcoming the Greek foreign minister for a three-day visit as his country faces a financial crisis at home, with Greeks voting on a referendum about their country's future.</td></tr><tr><td>Emmanuel Nahshon, Israel's Foreign Ministry spokesman, said Sunday that the visit from Greek Foreign Minister Nikolaos Kotzias would have an "economic emphasis" but would not elaborate.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 16:05:23</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/22/markets-surge-ahead-of-last-ditch-summit-on-greece'>site</a></td><td>Europe cautiously optimistic of Greek debt deal this week</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 21:27:11</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/stocks-up-ahead-of-greece-decision-chinese-stocks-plunge'>site</a></td><td>Stocks end mostly lower as Greece debt deadline approaches</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-29 13:42:23</td><td><a href='http://news.yahoo.com/asian-stock-markets-sink-greece-closes-banks-032205086--finance.html'>site</a></td><td><table><tr><td>US stocks fall in early trade as Greece debt woes escalate</td></tr><tr><td>NEW YORK (AP) - Stocks are falling in early trading in the U.S., but not as much as in Europe as Greece's debt woes deepen.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 13:44:10</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td>U.S. stocks are rising broadly in early trading as investors hope for a last-minute deal on Greece's debt woes.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/10/b7856f27bfc0cd1e7b0f6a706700c002_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-10 14:10:38</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/10/us-stocks-open-higher-as-greece-moves-closer-to-a/'>site</a></td><td>US stocks rise on optimism that Greek-debt deal will be done</td></tr>
 </table></body></html>
