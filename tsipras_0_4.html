@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/9/t/4/4/image.related.articleLeadwide.620x349.gi9co0.png/1436513280293.jpg'></td><td>2015-07-10 07:26:35</td><td><a href='http://www.brisbanetimes.com.au/world/greek-debt-crisis-france-to-the-rescue-as-athens-accepts-austerity-for-relief-20150710-gi9co0'>site</a></td><td>Greek Prime Minister Alexis Tsipras (seated) is applauded by his colleagues in the ruling Syriza party inside the Greek parliament.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.cbc.ca/1.3150743.1436868828!/cpImage/httpImage/image.jpg_gen/derivatives/original_620/greece-bailout.jpg'></td><td>2015-07-14 05:29:11</td><td><a href='http://www.cbc.ca/news/business/greece-crisis-pm-alexis-tsipras-faces-tough-sell-on-bailout-deal-1.3150675?cmp=rss'>site</a></td><td>Energy Minister Panagiotis Lafazanis, one of the hardliners in Tsipras' radical left Syriza party, denounced the deal and called on the prime minister to cancel it before legislation reaches Parliament.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td>Ahead of the summit, Tsipras spoke by phone with German Chancellor Angela Merkel.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 06:53:36</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/the-latest-german-official-says-tsipras-criticism-unhelpful'>site</a></td><td>The Latest: German official says Tsipras criticism unhelpful</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 18:15:42</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/16/on-the-brink-eu-leaders-clinched-bailout-deal-_/'>site</a></td><td>For three hours, Merkel, Tsipras, Tusk and French President Francois Hollande had been stuck in dead-end closed-door talks, and the message suddenly made something click.</td></tr>
 </table></body></html>

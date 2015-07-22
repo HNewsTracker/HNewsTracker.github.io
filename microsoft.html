@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 14,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -61,4 +61,5 @@
   <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/08-825489+0005FESTIVAL072015.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-21 01:25:28</td><td><a href='http://www.startribune.com/miley-cyrus-to-host-mtv-video-music-awards/317663321/'>site</a></td><td>The 2015 MTV Video Music Awards will air live on MTV from the Microsoft Theater in Los Angeles.</td></tr>
   <tr><td style='display:none'>11</td><td></td><td>2015-07-21 20:43:03</td><td></td><td><a href='microsoft_1.html'>Microsoft Corp (MSFT.O) reported a $3.2 billion quarterly net loss as it wrote down its Nokia phone business and demand fell for its Windows operating system. (27)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-21 23:25:24</td><td><a href='http://abcnews.go.com/Technology/wireStory/microsoft-books-84-billion-write-phones-4q-32602478'>site</a></td><td>Microsoft Books $8.4 Billion Write-Down on Phones in 4Q</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 15:55:42</td><td><a href='http://www.startribune.com/tech-shares-lead-an-early-slump-for-us-stocks/318126131/'>site</a></td><td>Technology shares are leading the way lower on the stock market after Apple and Microsoft turned in disappointing results.</td></tr>
 </table></body></html>

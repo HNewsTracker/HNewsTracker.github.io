@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/10/72/f9/4cd0d6169f9f4465bcbb14277df4c5d4-60a8fd8e71c24ca2be414e631b642799-0.jpg'></td><td>2015-07-10 08:14:47</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-to-sell-last-ditch-deal-to-relucta/nmwYc/'>site</a></td><td>Tsipras could face a tough battle to convince his party hardliners to back his proposal.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/7c/6f/543c75cc1136487b8016ed9a7a6e9897-99116c2b650b47438d532092b2ce1202-14.jpg'></td><td>2015-07-15 04:31:40</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/dissent-in-greece-over-austerity-deal-grows-ahead-/nmy2J/'>site</a></td><td>Hard-liners in Tsipras' own Cabinet and his radical leftist Syriza party are in open revolt.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/d5b/report-on-business/international-business/european-business/article25582700.ece/ALTERNATES/w220/CHM63_OUKBS_UK_EUROZONE_GREECE.JPG'></td><td>2015-07-18 13:23:29</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greek-banks-to-re-open-monday-as-tsipras-eyes-new-start/article25582701/?cmpid=rss1'>site</a></td><td>The decree to re-open the banks came hours after new ministers were sworn in following a cabinet reshuffle in which Tsipras replaced dissident members of his ruling Syriza party following a revolt over the tough bailout terms.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 14:53:42</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras dismisses Europe's warnings to Greece on vote</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-03 14:53:42</td><td><a href='http://news.yahoo.com/opinion-poll-shows-yes-vote-slightly-ahead-greece-053427297--business.html'>site</a></td><td>Tsipras is betting Europe will compromise rather than let Greece slip out of the eurozone, even though the continent's leaders say a "No" vote would signal its exit.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/41/67/8265186/5/square_gallery_thumb.jpg'></td><td>2015-07-06 17:47:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-still-cash-starved-after-decisive-no-6367753.php'>site</a></td><td>After vote win, Greece's Tsipras looks to rebuild talks</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7hiFTvVkCvqilD9gImAutw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4546f9a81c0c721e7b0f6a7067005f4f.jpg'></td><td>2015-07-07 04:55:11</td><td><a href='http://news.yahoo.com/greek-pm-tsipras-races-restart-talks-vote-win-045305978.html'>site</a></td><td>Greek PM Tsipras races to restart talks after vote win</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/N_OQphGwzTSCbACAENlRvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/22/102853163-GettyImages-478813678.1910x1000.jpg'></td><td>2015-07-22 14:24:41</td><td><a href='http://finance.yahoo.com/news/tsipras-rallies-troops-ahead-greek-071442070.html'>site</a></td><td>Tsipras rallies supporters ahead of Greek vote</td></tr>
 </table></body></html>

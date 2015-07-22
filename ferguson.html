@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,6 +50,7 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-24 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/books/article25392502.html#storylink=rss'>site</a></td><td><table><tr><td>"Yet even after Ferguson, unarmed black men continue to die at the hands of police."</td></tr><tr><td>Still, "The Ferguson Report" is especially damning, for it reveals an institutional culture that targets African Americans.</td></tr><tr><td>If "The Ferguson Report" has anything to tell us, it is that.</td></tr></table></td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-06-26 05:36:40</td><td></td><td><a href='ferguson_0.html'>The graffiti reflects the racial tension that permeates post-Ferguson America, more than a week after a white gunman shot and killed nine black congregants at a Charleston, South Carolina, church. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-30 20:33:56</td><td></td><td><a href='ferguson_1.html'>The summary is part of a longer after-action report to be released in the coming weeks focusing on the actions of police in Ferguson, St. Louis city and county and the Missouri State Highway Patrol. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-30 20:33:56</td><td></td><td><a href='ferguson_1.html'>The office, which also conducts after-action reports on high-profile police responses, said Tuesday it'll release its final report on the Ferguson response in coming weeks. (5)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-14 18:09:47</td><td><a href='http://www.miamiherald.com/news/nation-world/article27224155.html#storylink=rss'>site</a></td><td><table><tr><td>Federal judge narrows Brown family lawsuit against Ferguson</td></tr><tr><td>Webber says he dismissed two "redundant" counts against former Ferguson Police Chief Thomas Jackson and former Officer Darren Wilson.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/3/3/doj-probe-finds-racial-bias-in-ferguson/_jcr_content/image.adapt.480.low.Ferguson-police-10062014.jpg'></td><td>2015-07-22 14:58:00</td><td><a href='http://america.aljazeera.com/articles/2015/7/22/ferguson-hires-another-interim-police-chief.html'>site</a></td><td><table><tr><td>Ferguson hires new interim police chief</td></tr><tr><td>Anderson previously was police commander in the Phoenix suburb of Glendale, Arizona - the same city from which Ferguson recently hired its interim city manager, Ed Beasley.</td></tr></table></td></tr>
 </table></body></html>

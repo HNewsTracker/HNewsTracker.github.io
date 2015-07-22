@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/00/06/8126894/3/622x350.jpg'></td><td>2015-06-10 08:09:18</td><td><a href='http://www.chron.com/business/technology/article/Review-The-best-new-features-coming-from-Apple-6317745.php'>site</a></td><td><table><tr><td>On Apple Watch, apps from outside parties have essentially been extensions of phone apps.</td></tr><tr><td>Apple Watch will also be able to play video for the first time - if you don't mind the small screen.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.news.nationalpost.com/2015/06/taylor-swift.jpg?w=620'></td><td>2015-06-22 16:43:01</td><td><a href='http://news.nationalpost.com/arts/music/apple-bows-to-taylor-swift'>site</a></td><td>Cue declined to say how much Apple will pay in royalties for streaming during the free trial period.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 17:13:12</td><td><a href='http://abcnews.go.com/Entertainment/wireStory/open-letter-swift-criticizes-shocking-apple-music-31924658'>site</a></td><td>But Swift said she would withhold her latest album from the service because Apple wasn't planning to pay artists and labels directly for the use of their music during the free, introductory period.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article25502572.html#storylink=rss'>site</a></td><td>Apple Music doesn't offer a free tier.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297716732902_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-25 17:10:12</td><td><a href='http://www.torontosun.com/2015/06/25/taylor-swift-will-allow-apple-music-to-stream-1989-album'>site</a></td><td>Swift wrote a critical Tumblr post Sunday about Apple's initial decision to not pay artists during the trial, which begins Tuesday.</td></tr>
 </table></body></html>

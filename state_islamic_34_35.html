@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150622&t=2&i=1058220867&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5L0M8'></td><td>2015-06-22 15:14:11</td><td><a href='http://www.reuters.com/article/2015/06/22/us-mideast-crisis-syria-kurds-idUSKBN0P21HV20150622?feedType=RSS&feedName=topNews'>site</a></td><td>Islamic State has held the base, "Liwa 93", since capturing it from the Syrian military last year.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150625&i=109106528&w=240&r=109106528-1&t=2'></td><td>2015-06-25 21:17:05</td><td><a href='http://www.reuters.com/article/2015/06/25/us-mideast-crisis-syria-idUSKBN0P50LA20150625?feedType=RSS&feedName=worldNews'>site</a></td><td>Syrian state TV said Islamic State was expelling residents from their homes in al-Nashwa, executing people and detaining them.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 16:46:41</td><td><a href='http://www.reuters.com/article/2015/06/26/us-mideast-crisis-syria-idUSKBN0P60UY20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>Islamic State pressed a separate assault to capture government-held parts of the northeastern city of Hasaka, blowing up a security building and triggering a government appeal for all residents to take up arms.</td></tr><tr><td>Unlike the Kobani raid, the Islamic State attack on Hasaka appears aimed at wresting control of the government-held parts of city, which is divided into areas run separately by President Bashar al-Assad's government and the YPG.</td></tr></table></td></tr>
+</table></body></html>

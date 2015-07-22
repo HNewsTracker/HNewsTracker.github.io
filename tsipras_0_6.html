@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 02:51:06</td><td><a href='http://www.miamiherald.com/news/business/article25700209.html#storylink=rss'>site</a></td><td>Tsipras defiant as banks shut, markets rocked</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/d5b/report-on-business/international-business/european-business/article25582700.ece/ALTERNATES/w220/CHM63_OUKBS_UK_EUROZONE_GREECE.JPG'></td><td>2015-07-18 13:23:29</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greek-banks-to-re-open-monday-as-tsipras-eyes-new-start/article25582701/?cmpid=rss1'>site</a></td><td>The Greek government ordered banks to open on Monday, three weeks after they were shut down to prevent the system collapsing under a flood of withdrawals, as Prime Minister Alexis Tsipras looked to the start of new bailout talks next week.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-20 06:41:10</td><td><a href='http://www.reuters.com/article/2015/07/20/us-eurozone-greece-idUSKCN0PU0DJ20150720?feedType=RSS&feedName=worldNews'>site</a></td><td>Greek banks reopen as Tsipras eyes return to normal</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>So after a marathon eurozone summit, Tsipras agreed to tough new measures that mean economically-battered Greeks will pay more for most goods and services by the end of the week.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/N_OQphGwzTSCbACAENlRvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/22/102853163-GettyImages-478813678.1910x1000.jpg'></td><td>2015-07-22 14:24:41</td><td><a href='http://finance.yahoo.com/news/tsipras-rallies-troops-ahead-greek-071442070.html'>site</a></td><td>In the first parliamentary vote last week on measures (called "prior actions) including a sales-tax hike, around a quarter of Syriza lawmakers rebelled, making the latest vote tough on Tsipras.</td></tr>
 </table></body></html>
