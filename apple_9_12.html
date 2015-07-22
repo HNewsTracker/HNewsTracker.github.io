@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,17 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>microsoft</h3>
+    <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/06/30/business/Microsoft/Microsoft-thumbStandard.jpg'></td><td>2015-07-08 05:22:48</td><td><a href='http://www.nytimes.com/2015/07/09/technology/microsoft-layoffs.html'>site</a></td><td><table><tr><td>At the end of March, Microsoft had more than 118,000 employees globally.</td></tr><tr><td>Last month, the company said that Stephen Elop, the former chief executive of Nokia who became a senior Microsoft executive after the acquisition, overseeing its devices business, would leave Microsoft.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 07:11:49</td><td></td><td><a href='microsoft_1_4.html'>The latest job cuts are in addition to the 18,000 jobs Microsoft said it planned to cut a year ago, the newspaper said, citing sources familiar with the matter. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 13:17:31</td><td></td><td><a href='microsoft_1_5.html'>Microsoft announced plans Wednesday to restructure the company's phone hardware business and to cut up to 7,800 positions. (4)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-21 21:58:42</td><td></td><td><a href='microsoft_1_2.html'>The net loss in the fourth quarter, which ended June 30, amounted to $3.2 billion, and sales fell 5.1 percent to $22.2 billion, Microsoft said Tuesday in a statement. (15)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-21 23:24:20</td><td></td><td><a href='microsoft_1_3.html'>"The Street continues to be wary of what Windows 10 can bring in terms of a growth profile back to the Microsoft story," Ives said. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/304/cpsprodpb/75E1/production/_83777103_swift1_624getty.jpg'></td><td>2015-06-22 15:11:33</td><td><a href='http://www.bbc.co.uk/news/entertainment-arts-33220189#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>"We hear you @taylorswift13 and indie artists. Love, Apple," tweeted executive Eddy @Cue.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://wpmedia.news.nationalpost.com/2015/06/taylor-swift.jpg?w=620'></td><td>2015-06-22 16:43:01</td><td><a href='http://news.nationalpost.com/arts/music/apple-bows-to-taylor-swift'>site</a></td><td>"When I woke up this morning and I saw Taylor's note that she had written, it really solidified that we needed to make a change," said Apple senior vice-president Eddy Cue in an interview with The Associated Press.</td></tr>
 </table></body></html>

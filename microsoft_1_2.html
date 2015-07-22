@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -57,4 +57,5 @@
   <tr><td style='display:none'>6</td><td></td><td>2015-07-21 21:22:07</td><td><a href='http://www.miamiherald.com/news/business/article28042351.html#storylink=rss'>site</a></td><td>Microsoft booked an $8.4 billion charge in the fourth quarter, swallowing a bitter pill by writing off the Nokia phone business it bought just over a year ago.</td></tr>
   <tr><td style='display:none'>7</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0721/20150721__0722microsoft~1_300.JPG'></td><td>2015-07-21 21:58:42</td><td><a href='http://www.mercurynews.com/business/ci_28517511/microsoft-posts-largest-ever-net-loss-after-nokia?source=rss'>site</a></td><td>The net loss in the fourth quarter, which ended June 30, amounted to $3.2 billion, and sales fell 5.1 percent to $22.2 billion, Microsoft said Tuesday in a statement.</td></tr>
   <tr><td style='display:none'>8</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/k8UBiuQWEHUR15tUJACXQg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-07-21T201708Z_1_LYNXNPEB6K0YX_RTROPTP_2_MICROSOFT-REDUNDANCIES.JPG'></td><td>2015-07-21 22:58:11</td><td><a href='http://finance.yahoo.com/news/microsoft-reports-3-2-billion-quarterly-loss-201708912--finance.html'>site</a></td><td>Sales of Windows to businesses fell 21 percent from the year-earlier quarter, when demand for the operating system had surged after Microsoft discontinued support for Windows XP.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww2.hdnux.com/photos/37/64/37/8341469/11/920x920.jpg'></td><td>2015-07-21 23:24:20</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-books-8-4-billion-write-down-on-phones-6397814.php'>site</a></td><td>The decline was exacerbated by a temporary bump last year when Microsoft ended support for Windows XP, which resulted in a one-time boost to Windows 7 sales.</td></tr>
 </table></body></html>

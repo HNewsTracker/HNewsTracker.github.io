@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/3f6/report-on-business/article25349385.ece/ALTERNATES/w220/-OUKBS-UK-MICROSOFT-REDUNDA.JPG'></td><td>2015-07-08 07:11:49</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/microsoft-plans-major-job-cuts-report/article25349386/?cmpid=rss1'>site</a></td><td><table><tr><td>Microsoft plans major job cuts: report</td></tr><tr><td>The latest job cuts are in addition to the 18,000 jobs Microsoft said it planned to cut a year ago, the newspaper said, citing sources familiar with the matter.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/64/37/8341469/11/920x920.jpg'></td><td>2015-07-21 23:24:20</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-books-8-4-billion-write-down-on-phones-6397814.php'>site</a></td><td>"The Street continues to be wary of what Windows 10 can bring in terms of a growth profile back to the Microsoft story," Ives said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-21 23:32:04</td><td><a href='http://www.miamiherald.com/news/business/article28042351.html#storylink=rss'>site</a></td><td>Microsoft plans for Windows 10 to be its last version of Windows before transitioning the business to a fee-for-service model down the road, although how that will work is unclear.</td></tr>
 </table></body></html>
