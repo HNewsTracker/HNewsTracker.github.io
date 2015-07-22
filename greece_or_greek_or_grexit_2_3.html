@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 282,
+            max: 283,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 282 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 283 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -330,4 +330,5 @@
   <tr><td style='display:none'>279</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td>As Greece's economy tanked under his leadership, Tsipras' own popularity only grew.</td></tr>
   <tr><td style='display:none'>280</td><td></td><td>2015-07-21 19:27:35</td><td><a href='http://www.seattlepi.com/news/article/S-P-upgrades-Greece-s-credit-rating-after-6397601.php'>site</a></td><td>Standard & Poor's has raised Greece's credit rating after a European bailout reduced the chances of the country's government defaulting on its massive debts during the next year.</td></tr>
   <tr><td style='display:none'>281</td><td></td><td>2015-07-21 19:35:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484861&ref=rss'>site</a></td><td>That classification means Greece is still on shaky financial ground, but less likely to face an immediate credit crisis.</td></tr>
+  <tr><td style='display:none'>282</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48167539,width-300,resizemode-4/Greece.jpg'></td><td>2015-07-22 00:45:48</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Greece-wants-final-bailout-deal-by-August-20/articleshow/48167536.cms'>site</a></td><td>Asked if the threat of a Greek exit from the euro, or "Grexit", had passed, EU Economic Affairs Commissioner Pierre Moscovici said on Tuesday: "I think we've made a big step in that direction."</td></tr>
 </table></body></html>
