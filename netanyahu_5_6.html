@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 15:20:41</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/16/netanyahu-british-fm-spar-over-iran-deal-disagreements'>site</a></td><td><table><tr><td>Netanyahu, British FM spar over Iran deal disagreements</td></tr><tr><td>"We would have wanted to see a deal that says the following: 'Iran, you will get the easing on the restrictions on your nuclear program, and you will get sanctions relief if you change your behavior first,'" Netanyahu said, calling it "perplexing" that the deal does not address Iran's calls to annihilate Israel.</td></tr><tr><td>Hammond said he understood Netanyahu's concerns, but added "We have always been clear that this deal was about the nuclear file."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 17:04:38</td><td><a href='http://abcnews.go.com/International/wireStory/israels-netanyahu-iran-deal-32027279'>site</a></td><td>Benjamin Netanyahu told a graduating class of pilots Thursday that "it is still not too late to insist on a good deal."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 09:14:42</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27072607.html#storylink=rss'>site</a></td><td>Responding to the Iranian supreme leader's call to continue the struggle against the United States regardless of the outcome of nuclear talks, Benjamin Netanyahu says Sunday his country will not accept such a reality.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 11:51:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-14-Iran-Nuclear%20Talks-The%20Latest/id-8af4298d9e8247c38d3a6f06e011936e'>site</a></td><td>Benjamin Netanyahu said Tuesday that an accord with Iran will allow it "to continue to pursue its aggression and terror in the region."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:25:06</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27190630.html#storylink=rss'>site</a></td><td>Benjamin Netanyahu says the world is now a "much more dangerous place" and criticized Tuesday's agreement as a "stunning historic mistake."</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 21:21:35</td><td><a href='http://cnews.canoe.com/CNEWS/Crime/2015/06/25/22473106.html?cid=rssnewscrime'>site</a></td><td>-- An unarmed black man was fatally shot Thursday by officers in suburban Baltimore who thought he had a weapon when they were called to a home from which he was barred by protective order, the police chief said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 05:54:31</td><td><a href='http://www.foxnews.com/us/2015/06/26/baltimore-county-police-kill-unarmed-man-after-suicide-threat/'>site</a></td><td>Since January 2012, police responded to 17 domestic violence calls at the home in a quiet suburban community outside Baltimore, said Cpl.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-27 23:58:20</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/06/27/22476531.html?cid=rssnewsworld'>site</a></td><td>Officers shot 41-year-old Spencer McCain Thursday in Owings Mills, about 15 miles northwest of Baltimore.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 09:10:15</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/22/in-wake-of-riots-and-crime-spike-baltimore-mayor/'>site</a></td><td><table><tr><td>But for many in Baltimore, the memory of how Rawlings-Blake responded to the riots is too raw, and the city's unmet expectations are overwhelming.</td></tr><tr><td>The Baltimore Sun questioned Rawlings-Blake's leadership.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 09:17:03</td><td><a href='http://www.miamiherald.com/news/nation-world/article28082416.html#storylink=rss'>site</a></td><td>In this photo taken Tuesday, July 21, 2015, Baltimore Mayor Stephanie Rawlings-Blake stands outside vacant homes before a ceremony to kick off their restoration in Baltimore.</td></tr>
 </table></body></html>

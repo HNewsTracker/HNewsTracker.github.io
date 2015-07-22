@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150610&t=2&i=1055216241&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB590RP'></td><td>2015-06-10 15:28:57</td><td><a href='http://www.reuters.com/article/2015/06/10/us-usa-police-baltimore-idUSKBN0OQ1WT20150610?feedType=RSS&feedName=domesticNews'>site</a></td><td><table><tr><td>Baltimore prosecutors had asked police to focus drug enforcement efforts on the corner where Freddie Gray was chased by officers before he allegedly suffered a fatal injury in police custody, the Baltimore Sun reported on Wednesday.</td></tr><tr><td>Mosby's request means she should be removed from the high-profile case, the Sun quoted the motion in Baltimore City Circuit Court as saying.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 21:21:35</td><td></td><td><a href='baltimore_3_4.html'>-- An unarmed black man was fatally shot Thursday by officers in suburban Baltimore who thought he had a weapon when they were called to a home from which he was barred by protective order, the police chief said. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 04:54:53</td><td><a href='http://www.foxnews.com/us/2015/06/26/baltimore-county-police-kill-unarmed-man-after-suicide-threat/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>According to 2013 census figures, 27.5 percent of Baltimore County's population is black and 64.1 percent is white.</td></tr>
 </table></body></html>
