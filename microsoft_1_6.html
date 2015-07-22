@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,15 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>apple</h3>
+    <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 09:36:03</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-global-stocks-sour-as-apple-results-leave-bitter-aftertaste/article25624358/?cmpid=rss1'>site</a></td><td>Although ARM posted a 32 per cent rise in second-quarter profit, the results from Apple, a major customer, hit hard.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 17:01:23</td><td><a href='http://finance.yahoo.com/news/u-stock-futures-fall-apple-112526132.html'>site</a></td><td>Apple (AAPL.O) shares slumped as much as 6.7 percent to $121.99, a day after the iPhone maker's revenue forecast for the fourth quarter fell below expectations.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 18:20:05</td><td><a href='http://www.miamiherald.com/news/business/article28221517.html#storylink=rss'>site</a></td><td>APPLE WORRIES: Apple slumped 4.6 percent a day after the company gave a cautious outlook for the current quarter and didn't provide much detail on how its new smartwatch was doing.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066230947&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L0XA'></td><td>2015-07-22 18:42:20</td><td><a href='http://www.reuters.com/article/2015/07/22/us-microsoft-hardware-idUSKCN0PW25U20150722?feedType=RSS&feedName=businessNews'>site</a></td><td>Microsoft doesn't break out operating margins for its hardware business, but Jefferies & Co analyst John DiFucci told Reuters he believed the Xbox business was at best break-even and that Surface was unprofitable on an operating basis.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/62FYNnbym_J8zgP_N_ZoZA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-07-22T184220Z_1_LYNXNPEB6L0XA_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-07-22 18:42:20</td><td><a href='http://finance.yahoo.com/news/microsofts-hardware-strategy-under-scrutiny-184220481.html'>site</a></td><td><table><tr><td>(Reuters) - Sales of Microsoft Corp's Surface tablets and Xbox gaming consoles are soaring.</td></tr><tr><td>Still, Bernstein analyst Mark Moerdler said he didn't expect Microsoft to drop either Surface or Xbox.</td></tr></table></td></tr>
 </table></body></html>

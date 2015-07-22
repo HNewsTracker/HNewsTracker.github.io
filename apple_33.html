@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 08:41:58</td><td><a href='http://finance.yahoo.com/news/asian-shares-dragged-down-wall-003647188.html'>site</a></td><td>LONDON (Reuters) - Disappointment over U.S. corporate earnings, most notably at Apple Inc (AAPL.O), the world's largest company, pushed stocks lower on Wednesday and investors towards the shelter of bonds.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 09:36:03</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-global-stocks-sour-as-apple-results-leave-bitter-aftertaste/article25624358/?cmpid=rss1'>site</a></td><td><table><tr><td>Premarket: Global stocks sour as Apple results leave bitter aftertaste</td></tr><tr><td>Although ARM posted a 32 per cent rise in second-quarter profit, the results from Apple, a major customer, hit hard.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/21/4725e7daac3be4207c0f6a706700f1f9_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-22 04:05:38</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/21/time-will-tell-if-apple-watch-catches-on-as-apple/'>site</a></td><td>Time will tell if Apple Watch catches on, as Apple fans wait</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 04:10:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485148&ref=rss'>site</a></td><td><table><tr><td>NEW YORK (AP) " For all those who hailed the iPhone as the "Jesus Phone" in 2007, the Apple Watch's arrival has hardly been the second coming.</td></tr><tr><td>And of the more than a dozen early Apple Watch owners interviewed by the AP by phone, email or in person, most of them love their watch.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 04:41:59</td><td><a href='http://www.seattlepi.com/business/technology/article/Time-will-tell-if-Apple-Watch-catches-on-as-6398508.php'>site</a></td><td>That's not to say the Apple Watch is a bomb.</td></tr>
 </table></body></html>

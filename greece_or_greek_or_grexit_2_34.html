@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/35/41/8247381/5/920x920.jpg'></td><td>2015-07-02 07:36:22</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-European-markets-solid-as-Greek-6362262.php'>site</a></td><td>The Latest: France's Sapin says committed to Greece in euro</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20120917&i=48252570&w=240&r=48252570-1&t=2'></td><td>2015-07-07 06:26:58</td><td><a href='http://www.reuters.com/article/2015/07/07/us-eurozone-greece-idUSKBN0P40EO20150707?feedType=RSS&feedName=topNews'>site</a></td><td>While France and Italy have emphasized the importance of more talks, a big majority of the 19 euro zone governments favor taking a hard line with Greece, diplomats said.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150710&i=109507389&w=240&r=109507389-1&t=2'></td><td>2015-07-10 23:26:28</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>France, Greece's strongest supporter in the euro zone, rushed to offer praise.</td></tr><tr><td>Greece still has to overcome hardening attitudes toward it among euro zone partners.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 13:41:48</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/exposed-to-greek-banks-balkans-brace-for-trouble/'>site</a></td><td>Though Greece's limits on cash withdrawals have not extended to subsidiaries in the Balkans, the deposits could be at risk if the parent banks collapse.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/32/e2/f2e092ef255347d3933e2886e5b35321-ee454d7079094ee085c092947af431e1-0_1.jpg'></td><td>2015-07-20 10:58:49</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeks-will-find-banks-open-but-restrictions-still/nm3RW/'>site</a></td><td>Greek banks reopen but cash limits remain; taxes soar</td></tr>
 </table></body></html>

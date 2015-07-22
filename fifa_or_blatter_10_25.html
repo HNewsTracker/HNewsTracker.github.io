@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,15 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>apple</h3>
+    <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 09:36:03</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-global-stocks-sour-as-apple-results-leave-bitter-aftertaste/article25624358/?cmpid=rss1'>site</a></td><td>Although ARM posted a 32 per cent rise in second-quarter profit, the results from Apple, a major customer, hit hard.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 17:01:23</td><td><a href='http://finance.yahoo.com/news/u-stock-futures-fall-apple-112526132.html'>site</a></td><td>Apple (AAPL.O) shares slumped as much as 6.7 percent to $121.99, a day after the iPhone maker's revenue forecast for the fourth quarter fell below expectations.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 18:20:05</td><td><a href='http://www.miamiherald.com/news/business/article28221517.html#storylink=rss'>site</a></td><td>APPLE WORRIES: Apple slumped 4.6 percent a day after the company gave a cautious outlook for the current quarter and didn't provide much detail on how its new smartwatch was doing.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/dba/news/world/article25306764.ece/ALTERNATES/w220/NY150_FIFA_Investigation_Blatter.JPG'></td><td>2015-07-05 14:07:01</td><td><a href='http://www.theglobeandmail.com/news/world/blatter-alleges-france-germany-tried-to-influence-world-cup-hosting-decision-report/article25306765/?cmpid=rss1'>site</a></td><td>Also in May, U.S. prosecutors announced they had indicted nine current and former FIFA officials and five sports marketing businessmen in connection with a corruption investigation.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 23:29:22</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27356605.html#storylink=rss'>site</a></td><td>Blumenthal criticized U.S. Soccer for not exposing FIFA's corruption long before the U.S. Department of Justice indicted nine FIFA officials and five corporate executives for racketeering, bribery, wire fraud and money laundering this May.</td></tr>
 </table></body></html>

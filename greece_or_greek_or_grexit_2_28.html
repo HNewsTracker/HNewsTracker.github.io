@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -52,4 +52,5 @@
   <tr><td style='display:none'>1</td><td></td><td>2015-07-06 16:59:21</td><td><a href='http://www.reuters.com/article/2015/07/06/us-markets-oil-idUSKCN0PG00520150706?feedType=RSS&feedName=businessNews'>site</a></td><td>Oil tumbles 6 percent after Greek 'No' vote, ahead of Iran deadline</td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>Dissent in Greece over austerity deal grows ahead of vote</td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-07-15 11:45:49</td><td><a href='http://finance.yahoo.com/news/futures-steady-ahead-yellen-speech-114549812.html'>site</a></td><td>Futures steady ahead of Yellen speech, Greek vote</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 18:14:17</td><td><a href='http://www.miamiherald.com/news/business/article28082050.html#storylink=rss'>site</a></td><td>Greece gets new liquidity boost ahead of key reform vote</td></tr>
 </table></body></html>
