@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-21 19:48:52</td><td><a href='http://www.reuters.com/article/2015/06/21/us-soccer-fifa-banks-exclusive-idUSKBN0P10TB20150621?feedType=RSS&feedName=businessNews'>site</a></td><td>Exclusive: Banks did not do enough to police FIFA transactions, says global agency</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-21 19:48:52</td><td></td><td><a href='fifa_or_blatter_2_3.html'>"Sports associations like the International Federation of Association Football (FIFA) or the International Olympic Committee are not businesses but associations. They do not pay taxes and, as associations, are exempt from the Swiss anti-corruption legal framework," the State Department said in the report. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-21 19:48:52</td><td></td><td><a href='fifa_or_blatter_2_4.html'>In a statement FATF said that "recent reports about alleged corruption and money laundering activities on a large scale by several high-ranking FIFA officials underscore how important it is that financial institutions identify and monitor high-risk customers." (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 14:00:10</td><td></td><td><a href='fifa_or_blatter_2_3.html'>With FIFA mired in a corruption scandal, Blatter, 79, delighted critics this month by announcing he would stand down as president of the governing body and call a leadership election, due between December and February. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297716699635_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-25 15:12:55</td><td><a href='http://www.torontosun.com/2015/06/25/thousands-sign-up-for-leaving-party-for-fifas-blatter'>site</a></td><td>Thousands sign up for 'leaving party' for FIFA's Blatter</td></tr>
 </table></body></html>

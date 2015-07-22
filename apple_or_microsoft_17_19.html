@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434879305504.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/digital-life/digital-life-news/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td>"Apple is eager to have news created by human beings and not algorithms - it fits in with the brand statement Apple has been making," said Judd Slivka, a professor of mobile journalism at the University of Missouri.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434879305504.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.brisbanetimes.com.au/digital-life/digital-life-news/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td>In a surprising move, Apple has unveiled it will be hiring experienced journalists to manage its news feeds.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/k/8/9/image.related.articleLeadNarrow.300x0.ghtgwi.png/1434859663188.jpg'></td><td>2015-06-21 04:07:52</td><td><a href='http://www.smh.com.au/world/apple-puts-news-at-core-of-revamped-system-20150621-ghtgwi.html'>site</a></td><td>Although Apple is likely to use some algorithms to filter stories, the hiring of experienced journalists is a positive step, said Dan Kennedy, a journalism professor at Northeastern University.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article25502572.html#storylink=rss'>site</a></td><td><table><tr><td>Taylor Swift's album "1989" will be available on Apple's new music service, following the company's reversal of a controversial policy on royalties.</td></tr><tr><td>"After the events of this week, I've decided to put 1989 on Apple Music ... and happily so," Swift said on Twitter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 15:53:07</td><td><a href='http://www.nydailynews.com/entertainment/music/taylor-swift-happily-stream-1989-apple-music-article-1.2270905'>site</a></td><td>"This is simply the first time it's felt right in my gut to stream my album. Thank you, Apple, for your change of heart."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 16:20:00</td><td><a href='http://www.ctvnews.ca/entertainment/taylor-swift-will-allow-apple-music-to-stream-1989-album-1.2440077'>site</a></td><td>NEW YORK -- Taylor Swift is letting Apple Music stream her "1989" album -- the only streaming service allowed to do so.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-25 16:31:00</td><td><a href='http://www.latimes.com/entertainment/envelope/cotown/la-et-ct-taylor-swift-i-ve-decided-to-put-1989-on-apple-music-20150625-story.html'>site</a></td><td>Swift sought to assure fans that her decision to put "1989" on Apple Music is not part of an exclusive deal.</td></tr>
 </table></body></html>
