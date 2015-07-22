@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/21/d9/aa/d6fd049a1ea4418f815afdce1e3d93ec-9142a1b8966d4573809c45d61eac2188-0.jpg'></td><td>2015-06-21 21:02:27</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greece-presents-new-financial-proposals-to-europea/nmhZY/'>site</a></td><td>Presidential Guards perform a change of shift as anti-austerity protesters hold a rally in front of the parliament in Athens, Greece, on Sunday, June 21, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/AP150624080213_140x93.jpg'></td><td>2015-07-15 18:20:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481760&ref=rss'>site</a></td><td>Clashes break out at Greek anti-austerity rally by thousands of protesters outside Parliament</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 00:04:51</td><td><a href='http://www.reuters.com/article/2015/07/16/eurozone-greece-latest-idUSL8N0ZR0TG20150716?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>1833 - Greek anti-establishment protesters threw dozens of petrol bombs at police in front of parliament ahead of a key vote on a bailout deal, in some of the most serious violence in over two years.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150705&i=109339515&w=240&r=109339515-1&t=2'></td><td>2015-07-03 22:08:36</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Louka Katseli, head of Greece's Bank Association and chair of the National Bank of Greece, dismissed the report as "completely baseless".</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/7/16/13f8cfb2079b4b1b8c19d7c5c6d984da_18.jpg'></td><td>2015-07-20 06:31:55</td><td><a href='http://www.aljazeera.com/news/2015/07/greek-banks-reopen-150720044008477.html'>site</a></td><td>"Capital controls and restrictions on withdrawals will remain in place but we are entering a new stage which we all hope will be one of normality," the head of Greece's banking association Louka Katseli told Skai television.</td></tr>
 </table></body></html>

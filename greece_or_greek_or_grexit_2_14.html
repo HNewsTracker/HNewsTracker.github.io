@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 15:25:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476766&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Greek government names lead bailout negotiator Euclid Tsakalotos as new finance minister.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/06/876/493/a3119858d256e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-2.jpg?ve=1&tl=1'></td><td>2015-07-06 22:32:32</td><td><a href='http://www.foxbusiness.com/markets/2015/07/06/us-stocks-slip-after-greeks-reject-terms-bailout-deal-european-markets-oil-drop/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>Some analysts attributed the lack of sharper sell-off in stock markets to the resignation of the Greek finance minister, which might help bailout talks resume.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 15:20:09</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27032884.html#storylink=rss'>site</a></td><td>The task facing the new Greek finance minister, Euclid Tsakalotos, is to convince his skeptical counterparts that Greece deserves another bailout, which would be its third in five years.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 23:30:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27032884.html#storylink=rss'>site</a></td><td>Assuaging those concerns is the task facing Euclid Tsakalotos, who has been Greek finance minister for barely a week, following the resignation of his outspoken predecessor Yanis Varoufakis.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/d1/48/4aa4b15279d64899ada6ab58e89a65d7-b4e00b39cac84417afcf91f9665c4171-0.jpg'></td><td>2015-07-12 15:44:26</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-talks-with-skeptical-creditors-to-resume-sun/nmxXs/'>site</a></td><td>Greek Finance Minister Euclid Tsakalotos waits for the start of a round table meeting of eurogroup finance ministers at the EU Lex building in Brussels on Sunday, July 12, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 00:55:05</td><td><a href='http://www.miamiherald.com/news/business/article26934703.html#storylink=rss'>site</a></td><td><table><tr><td>The official vote count for Greece's parliament vote to back reform proposals has been announced, with 251 lawmakers voting in favor, 32 against and 8 voting 'present' - a form of abstention.</td></tr><tr><td>The vote in the 300-member parliament was to authorize the government to use its reform proposals as a basis for negotiation with Greece's international creditors.</td></tr><tr><td>Greek lawmakers have approved a government motion seeking authorization for reform proposals as a basis for negotiations for a third bailout in talks with international creditors this weekend.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>The Tsipras government holds 162 seats in Greece's 300-member Parliament.</td></tr>
 </table></body></html>

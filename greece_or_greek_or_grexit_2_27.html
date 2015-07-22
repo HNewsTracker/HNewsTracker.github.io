@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 00:55:05</td><td><a href='http://www.miamiherald.com/news/business/article26934703.html#storylink=rss'>site</a></td><td><table><tr><td>The vote in the 300-member parliament was to authorize the government to use its reform proposals as a basis for negotiation with Greece's international creditors.</td></tr><tr><td>Greek lawmakers have approved a government motion seeking authorization for reform proposals as a basis for negotiations for a third bailout in talks with international creditors this weekend.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>The Tsipras government holds 162 seats in Greece's 300-member Parliament.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-u-data-003850377.html'>site</a></td><td>LONDON (Reuters) - European bonds and stocks traded cautiously on Friday before a Greek referendum on EU-prescribed reforms that could determine the country's future in the euro zone and which polls suggest could go either way.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://www.reuters.com/article/2015/07/03/us-markets-global-idUSKCN0PD01T20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>European bonds and stocks on the defensive before tight Greek vote</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/06/876/493/a3119858d256e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-2.jpg?ve=1&tl=1'></td><td>2015-07-06 22:32:32</td><td><a href='http://www.foxbusiness.com/markets/2015/07/06/us-stocks-slip-after-greeks-reject-terms-bailout-deal-european-markets-oil-drop/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>US stocks slip amid global sell-off after Greek 'no' vote</td></tr>
 </table></body></html>
