@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,15 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>apple</h3>
+    <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.news.nationalpost.com/2015/06/taylor-swift.jpg?w=620'></td><td>2015-06-22 16:43:01</td><td><a href='http://news.nationalpost.com/arts/music/apple-bows-to-taylor-swift'>site</a></td><td>"When I woke up this morning and I saw Taylor's note that she had written, it really solidified that we needed to make a change," said Apple senior vice-president Eddy Cue in an interview with The Associated Press.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article25502572.html#storylink=rss'>site</a></td><td>Apple has promised to pay rights holders at least 71.5 percent of its streaming revenue when customers pay the $9.99 a month subscription.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 16:21:04</td><td></td><td><a href='apple_10_11.html'>The singer tweeted Thursday, June 25, that after Apple decided it would pay artists royalties during the free, three-month trial of Apple Music, Swift "decided to put 1989 on Apple Music...and happily so." (9)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 19:35:52</td><td><a href='http://www.reuters.com/article/2015/06/30/us-egypt-anniversary-court-idUSKCN0PA1W120150630?feedType=RSS&feedName=worldNews'>site</a></td><td>Western governments have criticized the mass death sentences but are unlikely to take strong measures against Egypt, seen as a vital partner for security in a region beset by turmoil.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/32/74/8236805/5/square_gallery_thumb.jpg'></td><td>2015-06-30 19:52:13</td><td><a href='http://www.sfgate.com/news/crime/article/Egypt-prepares-for-burial-of-slain-prosecutor-6357320.php'>site</a></td><td>Despite an international outcry against legal abuses and lack of due process, Egypt has waged a 2-year-old crackdown that has led to thousands of arrests, mass convictions and death sentences.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,11 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-21 16:05:47</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift writes open letter to Apple Music bosses</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297715040508_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-06-21 18:42:15</td><td><a href='http://www.torontosun.com/2015/06/21/taylor-swift-writes-open-letter-apple-music-bosses'>site</a></td><td>Taylor Swift has written an open letter to Apple Music bosses explaining why she is withholding her album 1989 from their service, telling them "it is unfair to ask anyone to work for nothing".</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article25502572.html#storylink=rss'>site</a></td><td>Taylor Swift's album "1989" will be available on Apple's new music service, following the company's reversal of a controversial policy on royalties.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-25 16:31:00</td><td><a href='http://www.latimes.com/entertainment/envelope/cotown/la-et-ct-taylor-swift-i-ve-decided-to-put-1989-on-apple-music-20150625-story.html'>site</a></td><td>Swift sought to assure fans that her decision to put "1989" on Apple Music is not part of an exclusive deal.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0625/20150625__0626swift~1.JPG'></td><td>2015-06-25 17:43:43</td><td><a href='http://www.mercurynews.com/business/ci_28380432/apple-gets-stream-taylor-swifts-1989-album-first?source=rss'>site</a></td><td>She added that "in case you're wondering if this is some exclusive deal like you've seen Apple do with other artists, it's not."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 12:58:26</td><td><a href='http://finance.yahoo.com/news/futures-little-changed-ahead-apple-113205365.html'>site</a></td><td><table><tr><td>Stock futures little changed ahead of Apple earnings</td></tr><tr><td>Tech giants such as Yahoo, Microsoft and Apple are scheduled to report results after the closing.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 08:41:58</td><td><a href='http://finance.yahoo.com/news/asian-shares-dragged-down-wall-003647188.html'>site</a></td><td>LONDON (Reuters) - Disappointment over U.S. corporate earnings, most notably at Apple Inc (AAPL.O), the world's largest company, pushed stocks lower on Wednesday and investors towards the shelter of bonds.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 09:36:03</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-global-stocks-sour-as-apple-results-leave-bitter-aftertaste/article25624358/?cmpid=rss1'>site</a></td><td>Premarket: Global stocks sour as Apple results leave bitter aftertaste</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 11:47:06</td><td><a href='http://www.miamiherald.com/news/business/article28080421.html#storylink=rss'>site</a></td><td><table><tr><td>Apple outlook weighs on global markets</td></tr><tr><td>A cautious outlook from Apple coupled with indifferent earnings from U.S. technology firms weighed on global stock markets Wednesday ahead of another key vote in the Greek Parliament.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 17:01:23</td><td><a href='http://finance.yahoo.com/news/u-stock-futures-fall-apple-112526132.html'>site</a></td><td>Apple, other tech stocks weigh on Wall St.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww2.hdnux.com/photos/37/65/21/8344701/13/628x471.jpg'></td><td>2015-07-22 18:15:57</td><td><a href='http://www.seattlepi.com/business/energy/article/Tech-shares-lead-an-early-slump-for-US-stocks-6399228.php'>site</a></td><td><table><tr><td>Technology shares lead a slump in US stocks; Apple sinks</td></tr><tr><td>Weak showings from Apple, Microsoft and other companies pulled stocks lower in afternoon trading Wednesday, pointing the market toward its second decline in as many days.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-22 20:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/22/tech-shares-lead-an-early-slump-for-us-stocks'>site</a></td><td>The major stock indexes declined from the get-go as traders reacted to weaker showings late Tuesday from Microsoft, Yahoo and Apple.</td></tr>
 </table></body></html>

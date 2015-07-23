@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 14:03:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-28-EU--Greece%20Bailout-The%20Latest/id-fb5799103c44457a8a545e4ac58c9db9'>site</a></td><td>The Latest: Bank of Greece recommends banks remain closed</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 17:54:03</td><td><a href='http://abcnews.go.com/International/wireStory/greek-premier-bank-greece-recommended-banks-close-capital-32085919'>site</a></td><td>Greek premier: Bank of Greece has recommended banks to close, capital controls be imposed.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 17:55:03</td><td><a href='http://news.yahoo.com/greek-prime-minister-says-greek-bank-deposits-completely-175453977.html'>site</a></td><td>ATHENS, Greece (AP) - Greek prime minister says Greek bank deposits completely safe.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/30/62/8228018/3/square_gallery_thumb.jpg'></td><td>2015-06-28 18:24:13</td><td><a href='http://www.sfgate.com/news/world/article/Greece-awaits-European-Central-Bank-decision-on-6354017.php'>site</a></td><td>ATHENS, Greece (AP) - Greek banks will remain shut for an unspecified time and the country is imposing restrictions on bank withdrawals following a recommendation by the Bank of Greece, the country's prime minister said Sunday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 17:20:35</td><td><a href='http://www.startribune.com/the-latest-on-greece-markets-surge-on-hopes-for-a-deal/308962711/'>site</a></td><td>Noonan said there was confusion with proposals that Greek officials submitted overnight.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/TXSvQSj0ejP1BwtYkdJ1Yw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/528ef41f43fc841e7b0f6a706700ad8d.jpg'></td><td>2015-07-07 15:58:12</td><td><a href='http://news.yahoo.com/latest-lithuanian-finance-minister-sees-compromise-115544872--finance.html'>site</a></td><td>Arriving at an emergency meeting of eurozone finance ministers to discuss the Greek crisis, Noonan said Ireland was also able to work with its debt load to make it more manageable, He suggested Greece could also come forward with debt proposals, even if they would be different from Ireland's.</td></tr>
 </table></body></html>

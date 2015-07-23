@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 05:56:00</td><td><a href='http://www.ctvnews.ca/business/greek-banks-open-under-restrictions-1.2477310'>site</a></td><td>ATHENS, Greece -- Greeks woke up Monday morning to a new era: banks finally reopened after three weeks of being closed but new austerity taxes meant that most everything was more expensive -- from coffee to taxis to cooking oil.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 20:28:02</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/20/greeks-will-find-banks-open-but-restrictions-still-in-place'>site</a></td><td>The new rates have been imposed on basic goods, from cooking oil to condoms, as well as to popular services, such as taxi rides, eating out at restaurants and ferry transport to the Greek islands.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:26:40</td><td><a href='http://news.yahoo.com/western-union-restarts-money-transfer-greece-132640414--sector.html'>site</a></td><td><table><tr><td>Western Union restarts money transfer service in Greece</td></tr><tr><td>(Reuters) - Western Union Co said it restarted money transfer service in Greece, allowing customers in the country to receive funds from overseas.</td></tr></table></td></tr>
 </table></body></html>

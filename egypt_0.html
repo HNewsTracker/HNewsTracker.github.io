@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,8 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 13:58:05</td><td></td><td><a href='egypt_0_1.html'>Policemen investigate the site of a car bomb attack on the convoy of Egyptian public prosecutor Hisham Barakat near his house at Heliopolis district in Cairo, Egypt, June 29, 2015. (17)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 14:59:59</td><td><a href='http://www.nydailynews.com/news/world/car-bomb-kills-egypt-top-prosecutor-article-1.2275009'>site</a></td><td>Egypt's main Islamic militant group Ansar Beit al-Maqdis - which has pledged allegiance to the Islamic State group fighting in Iraq and Syria - has claimed responsibility for that attack.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-30 19:35:52</td><td></td><td><a href='egypt_0_3.html'>Militant attacks that have killed hundreds of soldiers and police -- focused mainly in the North Sinai region but also extending to Egypt's main cities -- have increased since Mursi's toppling. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 19:52:13</td><td></td><td><a href='egypt_0_5.html'>Despite an international outcry against legal abuses and lack of due process, Egypt has waged a 2-year-old crackdown that has led to thousands of arrests, mass convictions and death sentences. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-06 20:58:28</td><td></td><td><a href='egypt_0_4.html'>The New York-based Committee to Protect Journalists has said that at least 18 journalists were behind bars in Egypt as of June 1 and accused the government of using the pretext of national security to crackdown on freedoms. (2)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-07 06:30:14</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-06-ML-Egypt-Terrorism/id-1d57610f5bba4bf7b6c897c2243179e3'>site</a></td><td>The leaked copy of the bill brought an outcry and demands for changes in the draft from Egypt's journalists union and from senior judges.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-15 17:55:30</td><td></td><td><a href='egypt_0_2.html'>CAIRO - Egypt's Cabinet has decided to rename a square where security forces broke up a pro-Islamist sit-in two years ago in honor of the country's chief prosecutor, who was assassinated last month. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 22:34:03</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/22/15-drowned-when-boats-collided-on-the-nile-in/'>site</a></td><td>15 drowned when boats collided on the Nile in Egypt</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 22:40:23</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485610&ref=rss'>site</a></td><td>CAIRO (AP) " Egypt's Interior ministry says at least 15 civilians have drowned when a passenger boat traveling down the Nile near Cairo collided with a scow, causing the boat to capsize.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 15:34:11</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28401973.html#storylink=rss'>site</a></td><td>Egypt death toll rises to 17 in Nile collision; 2 detained</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-23 15:35:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485992&ref=rss'>site</a></td><td>CAIRO (AP) " Egypt's health ministry says the death toll from a collision of two boats on the Nile the night before has risen to 17, after two more bodies were retrieved from the river.</td></tr>
 </table></body></html>

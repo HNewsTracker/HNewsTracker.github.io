@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,15 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>apple</h3>
+    <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.news.nationalpost.com/2015/06/taylor-swift.jpg?w=620'></td><td>2015-06-22 16:43:01</td><td><a href='http://news.nationalpost.com/arts/music/apple-bows-to-taylor-swift'>site</a></td><td>"When I woke up this morning and I saw Taylor's note that she had written, it really solidified that we needed to make a change," said Apple senior vice-president Eddy Cue in an interview with The Associated Press.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article25502572.html#storylink=rss'>site</a></td><td>Apple has promised to pay rights holders at least 71.5 percent of its streaming revenue when customers pay the $9.99 a month subscription.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 16:21:04</td><td></td><td><a href='apple_10_11.html'>The singer tweeted Thursday, June 25, that after Apple decided it would pay artists royalties during the free, three-month trial of Apple Music, Swift "decided to put 1989 on Apple Music...and happily so." (9)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 05:20:10</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/23/guardados-goals-lift-mexico-past-panama-2-1-in-gold-cup'>site</a></td><td>Panama played at a disadvantage after forward Luis Tejada drew a red card and was ejected for his contact with Mexico's Francisco Rodriguez about 25 minutes into the match.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 05:25:42</td><td><a href='http://www.nytimes.com/2015/07/23/sports/soccer/mexico-reaches-gold-cup-final-after-heated-win-over-panama.html?partner=rss&emc=rss&_r=0'>site</a></td><td><table><tr><td>There was tension from both teams as Mexico players pushed Panama's players away from Rodriguez, who remained on the ground.</td></tr><tr><td>Finally, Tejada departed into the tunnel, leaving Panama with the difficult task of taking on Mexico with 10 players.</td></tr></table></td></tr>
 </table></body></html>
