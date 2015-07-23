@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Asian stocks fall on Greek standoff, China margin curbs</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 07:13:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/30/asia-stocks-bounce-back-but-greece-uncertainty-still-looms'>site</a></td><td>Asia stocks bounce back but Greece uncertainty still looms</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-02 06:14:45</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-greek-anxiety-004926180.html'>site</a></td><td>Asia stocks rise for third day though Greece, China concerns weigh</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/30/d2/6c/e2a8d11bfc204081b2da5cf78688f217-e83dae0f6198487f8d6509dc8659efa9-0.jpg'></td><td>2015-06-30 07:13:51</td><td><a href='http://www.daytondailynews.com/ap/ap/business/asia-stocks-bounce-back-but-greece-uncertainty-sti/nmn9N/'>site</a></td><td>"The Brazilian real was knocked back hard these past days as have the Turkish lira and most other emerging Asian currencies. These associations are made to Greece as they fall under the labeling of global emerging markets."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 07:21:06</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td>"Most traders are well prepped over the possible fallout of Greece. It's guessing which card will fall next that's the difficult bit," said Nicholas Teo, analyst at CMC Markets in Singapore.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 21:27:11</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/stocks-up-ahead-of-greece-decision-chinese-stocks-plunge'>site</a></td><td>While Greece has been the main driver in financial markets recent weeks, worries over China have risen the list of concerns.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/03/876/493/abb781a9fc15e410VgnVCM100000d7c1a8c0____-Financial Markets Wall Street-1.jpg?ve=1&tl=1'></td><td>2015-07-03 14:32:54</td><td><a href='http://www.foxbusiness.com/markets/2015/07/03/world-stocks-drift-lower-ahead-greek-vote-chinese-stocks-plunge-as-support/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>World stocks drift lower ahead of Greek vote; China plunges</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-03 14:32:54</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/03/world-stocks-drift-lower-ahead-of-greek-vote-china-plunges'>site</a></td><td>World stock markets mostly drifted lower Friday ahead of Greece's weekend referendum, while China's main stock benchmark plunged as government efforts failed to reassure panicky investors.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/06/08/a5/2cad9380cf31467a80ecb8a2be6458f3-3b6df2687f674c7891cc0ad8a9fe510b-0.jpg'></td><td>2015-07-06 17:36:57</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-slip-after-greek-no-vote-european-market/nmsFn/'>site</a></td><td>When the Greek government announced June 29 plans to hold a referendum and the closure of the country's banks, markets plunged around the world.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 10:25:09</td><td><a href='http://www.startribune.com/german-investor-optimism-undeterred-by-greece/314852531/'>site</a></td><td>ZEW head Clemens Fuest said Tuesday that neither Greece nor China seemed to hurt the outlook among the investment analysts surveyed for the index.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.seattlepi.com/news/article/Yellen-Draghi-upbeat-despite-tumult-in-Greece-6389141.php'>site</a></td><td><table><tr><td>Yellen, Draghi upbeat despite tumult in Greece, China</td></tr><tr><td>Yellen said this week that the Fed might reconsider a 2015 rate hike if the tumult in China or Greece threatened to spread.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150407001119486943-minihighres.jpg?itok=p9fJCWZO'></td><td>2015-07-21 01:36:08</td><td><a href='http://www.sbs.com.au/news/article/2015/07/21/rba-look-greece-china-rates'>site</a></td><td>RBA keeps close eye on China and Greece</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,11 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/.wCGYVaaBFrb.sxsjSKDXQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3aec3cfdc9b3421d7b0f6a706700df8c.jpg'></td><td>2015-07-05 06:09:01</td><td><a href='http://news.yahoo.com/family-divided-emotions-run-high-ahead-greek-vote-060901498.html'>site</a></td><td>"This situation will create a war within the people. Greek versus Greek. The people are divided right now, about 50-50. What happens the day after the referendum? I'm afraid."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/AP_GREECE_150706_DG_16x9t_144.jpg'></td><td>2015-07-06 15:41:06</td><td><a href='http://abcnews.go.com/Business/greece-vote-countrys-future/story?id=32248849'>site</a></td><td>Here's What Happens Next in Greece</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 16:42:12</td><td><a href='http://da.feedsportal.com/c/33039/f/533917/s/47a5291b/sc/3/l/0Ltimesofindia0Bindiatimes0N0Cworld0Ceurope0CGreece0Eto0Eshut0Ebanks0Estock0Eexchange0Eon0EMonday0Eas0Ecrisis0Edeepens0Carticleshow0C478557580Bcms/ia1.htm'>site</a></td><td>Greece to shut banks, stock exchange on Monday as crisis deepens</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 06:10:25</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-01-EU--Greece-The%20Latest/id-4d2487f8f71b456ca073b3e80baf9214'>site</a></td><td>"It is our duty to keep Greece in the eurozone," he said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 04:09:03</td><td><a href='http://news.yahoo.com/campaigns-halt-greeks-face-tough-referendum-choice-040313872--finance.html'>site</a></td><td>He said if the European Union wants to keep Greece in the eurozone, it will have to come up with "a very generous plan" since the cost of the crisis has shot up to unanticipated levels.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-07 13:41:48</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/exposed-to-greek-banks-balkans-brace-for-trouble/'>site</a></td><td>"If this crisis persists in Greece, I may consider changing the bank," said Slavica Martinovic, who keeps an account in one of the Greek banks in Belgrade.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:42:16</td><td><a href='http://news.yahoo.com/exposed-greek-banks-balkans-brace-trouble-134216336--finance.html'>site</a></td><td>SLOVENIA - Although there are no Greek banks operating in Slovenia, the eurozone member is exposed to the Greek crisis through its funding of aid to Greece.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td><table><tr><td>Reopening the doors of Greek banks Monday was just the beginning.</td></tr><tr><td>Some elements of a rescue plan for Greek banks are beginning to take shape.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='ww.rte.ie//img.rasset.ie/000ae224-180.jpg'></td><td>2015-07-21 06:56:20</td><td><a href='http://www.rte.ie/news/business/2015/0721/716134-greece-legislation/'>site</a></td><td>It puts into Greek law new European Union rules on propping up failed banks, decreed after the 2008 financial crisis and aimed at shielding taxpayers from the risk of having to bail out troubled lenders.</td></tr>
 </table></body></html>

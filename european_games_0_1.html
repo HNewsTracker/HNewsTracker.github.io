@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>european games</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/w3Ql1b6cdsxzYStaVlR41Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/948593c1da9f1f1b7a0f6a706700ce83.jpg'></td><td>2015-06-22 17:35:28</td><td><a href='http://news.yahoo.com/european-games-athletics-attracts-motley-crew-173528203.html'>site</a></td><td><table><tr><td>BAKU, Azerbaijan (AP) - With a vast, brand new stadium and passionate home crowds, European Games athletics offers a near-Olympic experience.</td></tr><tr><td>For the next edition of the European Games in 2019, however, organizers hope to bring in top-level athletics and swimming, hoping that the other 18 sports on the program in Azerbaijan have built an attractive brand.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/j1SOLuQKtlrbkfScK44gTg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/20a667ccd227b01c7a0f6a7067003ed9.jpg'></td><td>2015-06-28 17:22:30</td><td><a href='http://news.yahoo.com/european-games-come-close-azerbaijan-125950382.html'>site</a></td><td>European Games come to a close in Azerbaijan</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-28 18:50:23</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25713118.html#storylink=rss'>site</a></td><td>Actors perform during the closing ceremony of the 2015 European Games in Baku, Azerbaijan, Sunday, June 28, 2015.</td></tr>
 </table></body></html>

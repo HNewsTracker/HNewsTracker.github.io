@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cbsnews1.cbsistatic.com/hub/i/r/2015/05/27/144c144d-00c0-4d79-8f7b-85e2067ec4b3/thumbnail/620x350/72e19a6c60b153315b0f8b47c329b055/rtx1ese1.jpg'></td><td>2015-07-16 13:02:17</td><td><a href='http://www.cbsnews.com/news/fifa-official-switzerland-corruption-bribery-raids-extradited-to-us/'>site</a></td><td>U.S. authorities have said more indictments should follow, and FIFA President Sepp Blatter is a target of the widening case.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/83/29/0e746a8eadbf4c489979579946fae32b-c1c864e63e574fd8a52873a64eed9de8-1.jpg'></td><td>2015-07-20 15:57:02</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/fifa-to-decide-on-election-date-platini-gains-supp/nm3TZ/'>site</a></td><td>FIFA president Sepp Blatter, left, looks on as British comedian Simon Brodkin protests during a news conference at FIFA headquarters in Zurich, Switzerland, Monday, July 20, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/83/29/0e746a8eadbf4c489979579946fae32b-c1c864e63e574fd8a52873a64eed9de8-1.jpg'></td><td>2015-07-20 21:05:25</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/fifa-to-decide-on-election-date-platini-gains-supp/nm3TZ/'>site</a></td><td>Sepp Blatter had a good day at the office on Monday, even if a prankster tried to spoil it by showering the FIFA president with fake dollar bills at a news conference.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-21 05:24:24</td><td><a href='http://www.sport24.co.za/Soccer/International/Blatter-defies-calls-to-go-now-20150721'>site</a></td><td>On Monday, Blatter remained the face of FIFA, insisting he wants to rebuild its reputation.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 18:20:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28265995.html#storylink=rss'>site</a></td><td>FIFA President Sepp Blatter is due in Russia on Thursday for his first overseas trip since the arrests of fellow soccer executives in May left him unwilling to leave the safety of Switzerland.</td></tr>
+</table></body></html>

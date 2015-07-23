@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>Most Asian stock indexes fell Friday as a standoff between Greece and its international creditors threatened to drag into the weekend.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 21:28:20</td><td><a href='http://abcnews.go.com/Business/wireStory/stocks-ahead-greece-decision-chinese-stocks-plunge-32050783'>site</a></td><td>Stocks had a mixed day Friday, as investors waited for negotiators to finish their work on a solution to Greece's debt problems.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/06/30/876/493/01c1c9753914e410VgnVCM100000d7c1a8c0____-South Korea Financial Markets-2.jpg?ve=1&tl=1'></td><td>2015-06-30 07:13:51</td><td><a href='http://www.foxbusiness.com/markets/2015/06/30/asian-stock-markets-bounce-back-but-risk-greece-crisis-spreading-still-worries/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>TOKYO - Asian stock markets bounced back Tuesday, recouping some of the previous day's sharp losses, but investors remained worried the crisis in Greece could spread to other financially weak countries.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 07:13:51</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/30/asia-stocks-bounce-back-but-greece-uncertainty-still-looms'>site</a></td><td>Investors were concerned that the crisis in Greece could spread to other euro countries that are struggling with high debt and austerity policies or to developing nations in Asia and South America.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 03:40:04</td><td><a href='http://www.charlotteobserver.com/news/business/article26854624.html#storylink=rss'>site</a></td><td>U.S. stocks opened with big gains, bouncing back from a loss the day before, as investors hoped that last-ditch talks would produce an agreement between Greece and its creditors.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 13:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26933650.html#storylink=rss'>site</a></td><td>Asian stocks rose for a second day on Friday as the Greek government proposed a broad financial overhaul to its creditors and Beijing's attempts to arrest a sharp slide in the Chinese market appeared to be working.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 05:50:50</td><td><a href='http://www.reuters.com/article/2015/06/26/us-eurozone-greece-idUSKBN0P40EO20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>German Chancellor Angela Merkel, whose country is Greece's biggest creditor, said the next meeting of Eurogroup ministers on Saturday would be "of decisive importance" for a Greek solution since time was running out.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 15:57:33</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/the-latest-france-pledges-effort-to-keep-greece-in-euro'>site</a></td><td>Rutte, a close ally of German Chancellor Angela Merkel, told reporters Tuesday he was "extremely somber about this summit. I'm also somber about the question of whether Greece really wants to come up with proposals, with a solution."</td></tr>
 </table></body></html>

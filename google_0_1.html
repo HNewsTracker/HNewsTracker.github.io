@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-07-17 15:27:47</td><td><a href='http://www.reuters.com/article/2015/07/17/us-google-research-idUSKCN0PR1FG20150717?feedType=RSS&feedName=businessNews'>site</a></td><td>Google shares soar as YouTube growth allays fears over Facebook</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150716&i=109710534&w=240&r=109710534-1&t=2'></td><td>2015-07-17 20:51:49</td><td><a href='http://www.reuters.com/article/2015/07/17/us-google-research-idUSKCN0PR1FG20150717?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>Google gains billions in value as YouTube drives ad growth</td></tr><tr><td>Up to Friday's close, Google shares had risen about 32 percent this year.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 20:51:49</td><td><a href='http://www.reuters.com/article/2015/07/17/us-google-research-idUSKCN0PR1FG20150717?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Google's class A shares chalked up their largest single-day percentage change in more than seven years on Friday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/16/102840624-c2967d5b1259ab2becba3ac73f8f74a6cae48a01.80x60.jpg?v=1437074264'></td><td>2015-07-17 17:21:00</td><td><a href='http://www.cnbc.com/2015/07/17/etsy-shares-soar-after-google-mention.html'>site</a></td><td><table><tr><td>Etsy shares spike after Google mention</td></tr><tr><td>Shares of e-commerce website Etsy jumped as much as 30 percent on Friday thanks to a nod from Google during its quarterly conference call.</td></tr></table></td></tr>
 </table></body></html>
