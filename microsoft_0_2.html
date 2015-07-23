@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/tC8RpZfLnzyw.6U0zAce.Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/64c8a4912ce9191a8be5246c0868a759'></td><td>2015-07-08 13:17:31</td><td><a href='http://finance.yahoo.com/news/microsoft-cut-7-800-jobs-131731526.html'>site</a></td><td><table><tr><td>Microsoft to cut up to 7,800 jobs</td></tr><tr><td>Microsoft announced plans Wednesday to restructure the company's phone hardware business and to cut up to 7,800 positions.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/SCCZEN_AP150907035637_620x310.jpg'></td><td>2015-07-08 21:41:55</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11478110&ref=rss'>site</a></td><td>Microsoft will cut 7,800 jobs and take a US$7.6 billion impairment charge as it attempts to revive its flagging phone hardware business.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/Microgalleries/2015/06/15/minecrafthololens650.jpg&amp;size=200x112&amp;quality=85'></td><td>2015-07-22 21:50:13</td><td><a href='http://technology.canoe.com/News/2015/07/22/22520121-relaxnews.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>"When someone shares intimate images of another person online without that person's consent, the effects can be truly devastating," said Microsoft chief online safety office Jacqueline Beauchere in a blog post.</td></tr><tr><td>Beauchere said Microsoft has honoured requests to take down such content, but that it has now established a new reporting page that makes the process easier.</td></tr></table></td></tr>
 </table></body></html>

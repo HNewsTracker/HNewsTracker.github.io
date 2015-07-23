@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 12,
+            max: 13,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -60,4 +60,5 @@
   <tr><td style='display:none'>0</td><td></td><td>2015-07-18 18:52:55</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/18/baltimore-officers-claim-they-gave-statements/'>site</a></td><td>BALTIMORE (AP) - Lawyers for three of the Baltimore police officers charged in the death of Freddie Gray have argued in court filings that their clients gave initial statements under duress because they were afraid of being fired.</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-19 00:45:07</td><td><a href='http://www.startribune.com/man-charged-with-attempted-murder-after-officer-stabbed/317060291/'>site</a></td><td>BALTIMORE - A 20-year-old man has been charged with attempted murder after Baltimore police say he stabbed an officer after a domestic dispute inside a student apartment building.</td></tr>
   <tr><td style='display:none'>11</td><td></td><td>2015-07-22 09:10:15</td><td></td><td><a href='baltimore_0.html'>But for many in Baltimore, the memory of how Rawlings-Blake responded to the riots is too raw, and the city's unmet expectations are overwhelming. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 04:01:45</td><td><a href='http://www.cbsnews.com/news/ex-baltimore-cop-planning-blackface-fundraising-performance/'>site</a></td><td>-- A former Baltimore police officer said Wednesday that he plans to perform an Al Jolson routine in blackface to raise money for the six Baltimore officers who have been indicted in the death of Freddie Gray.</td></tr>
 </table></body></html>
