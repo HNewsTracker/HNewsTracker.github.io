@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/06/30/business/Microsoft/Microsoft-thumbStandard.jpg'></td><td>2015-07-08 05:22:48</td><td><a href='http://www.nytimes.com/2015/07/09/technology/microsoft-layoffs.html'>site</a></td><td>Last month, the company said that Stephen Elop, the former chief executive of Nokia who became a senior Microsoft executive after the acquisition, overseeing its devices business, would leave Microsoft.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0708/20150708__0709microsoft~1.JPG'></td><td>2015-07-08 21:42:23</td><td><a href='http://www.mercurynews.com/business/ci_28451430/microsoft-cutting-7-800-jobs-phone-sales-flag?source=rss'>site</a></td><td>Microsoft isn't getting out of the hardware business altogether.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/44/40/8276022/9/628x471.jpg'></td><td>2015-07-08 23:00:18</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-cuts-7-800-jobs-as-phone-sales-flag-6372554.php'>site</a></td><td>Analysts have said the Nokia business was a drag on Microsoft's profits.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/Microgalleries/2015/06/15/minecrafthololens650.jpg&amp;size=200x112&amp;quality=85'></td><td>2015-07-22 21:50:13</td><td><a href='http://technology.canoe.com/News/2015/07/22/22520121-relaxnews.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>"When someone shares intimate images of another person online without that person's consent, the effects can be truly devastating," said Microsoft chief online safety office Jacqueline Beauchere in a blog post.</td></tr><tr><td>Beauchere said Microsoft has honoured requests to take down such content, but that it has now established a new reporting page that makes the process easier.</td></tr></table></td></tr>
 </table></body></html>
