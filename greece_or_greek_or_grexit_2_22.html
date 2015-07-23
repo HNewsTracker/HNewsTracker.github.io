@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 14,
+            max: 15,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -61,5 +61,6 @@
   <tr><td style='display:none'>10</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 15:04:14</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27374224.html#storylink=rss'>site</a></td><td>Finally, the European Central Bank agreed to increase the amount of emergency credit available to Greek banks by 900 million euros ($980 million) over one week, a first step toward helping them reopen.</td></tr>
   <tr><td style='display:none'>11</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/yellen-draghi-upbeat-despite-tumult-in-greece-chin/nmz5T/'>site</a></td><td>And he did his part for Greece, too: The ECB on Thursday agreed to increase financial support for Greece's banks, which have been closed since June 29 and were in danger of collapsing entirely.</td></tr>
   <tr><td style='display:none'>12</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297725078816_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-18 13:38:09</td><td><a href='http://www.torontosun.com/2015/07/18/greek-banks-to-re-open-monday-as-tsipras-eyes-new-start'>site</a></td><td>The move had been widely expected after the European Central Bank agreed to re-open the emergency credit lines which the tottering Greek banking sector needs to survive.</td></tr>
-  <tr><td style='display:none'>13</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>In the meantime, Greek banks are dependent on the central bank for the cash they need to operate.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-07-19 23:21:23</td><td><a href='http://www.reuters.com/article/2015/07/19/eurozone-greece-idUSL1N0ZZ0FN20150719?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>EU officials hope the bailout deal will be in place by mid-August when Greece needs to make new payments to the European Central Bank to redeem its maturing debt.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>In the meantime, Greek banks are dependent on the central bank for the cash they need to operate.</td></tr>
 </table></body></html>

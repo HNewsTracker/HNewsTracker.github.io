@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-11T235952Z_1_LYNXNPEB6A0M5_RTROPTP_2_USA-SPORT.JPG?itok=L6tuJQxk'></td><td>2015-07-12 01:02:56</td><td><a href='http://www.sbs.com.au/news/article/2015/07/12/mexicos-pacheco-wins-springboard-gold-earns-rio-berth'>site</a></td><td>TORONTO (Reuters) - Mexico's Rommel Pacheco won the gold medal in men's 3m springboard at the Pan American Games on Saturday to earn an automatic qualifying spot for the 2016 Rio Olympics.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 02:50:02</td><td><a href='http://www.reuters.com/article/2015/07/13/us-games-panam-olympics-diving-idUSKCN0PN01120150713?feedType=RSS&feedName=sportsNews'>site</a></td><td>Canada's Abel, Mexico's Garcia win diving gold, earn Rio berth</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 20:44:03</td><td><a href='http://abcnews.go.com/International/wireStory/year-mexico-army-slayings-calls-justice-mount-32133154'>site</a></td><td>None has been charged, although about 20 are under investigation, the Mexico State prosecutors' office said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 03:40:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11474776&ref=rss'>site</a></td><td><table><tr><td>Mexico: 7 police charged with torture in army slaying case</td></tr><tr><td>Four of the police officers have been detained and a judge is expected to issue an arrest warrant for the other three, according to a statement from the Attorney General's Office in Mexico State, where the killings took place.</td></tr><tr><td>Three women who survived came forward to say that agents of the Mexico State prosecutor's office had tortured them to support the army's version.</td></tr><tr><td>Before Wednesday, no charges had been filed against any of the detectives or prosecutor's agents accused of trying to cover up the case, although the Mexico State prosecutor had said about 20 were under investigation.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-02 03:40:45</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-police-charged-torture-army-slaying-case-32172699'>site</a></td><td>Authorities in Mexico on Wednesday formally accused seven state police officers of torturing three women who survived a confrontation a year ago in which soldiers allegedly killed at least a dozen suspected gang members after they surrendered.</td></tr>
 </table></body></html>
