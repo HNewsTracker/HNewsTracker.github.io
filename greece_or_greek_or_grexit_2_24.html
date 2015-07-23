@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,11 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-22 16:05:23</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/22/markets-surge-ahead-of-last-ditch-summit-on-greece'>site</a></td><td>Europe cautiously optimistic of Greek debt deal this week</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/24/70/8211972/3/628x471.jpg'></td><td>2015-06-26 03:16:14</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-edge-higher-following-a-surge-in-6348752.php'>site</a></td><td>Asian stocks fall on Greek standoff, China margin curbs</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 21:27:11</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/stocks-up-ahead-of-greece-decision-chinese-stocks-plunge'>site</a></td><td>Stocks end mostly lower as Greece debt deadline approaches</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-29 13:42:23</td><td><a href='http://news.yahoo.com/asian-stock-markets-sink-greece-closes-banks-032205086--finance.html'>site</a></td><td><table><tr><td>US stocks fall in early trade as Greece debt woes escalate</td></tr><tr><td>NEW YORK (AP) - Stocks are falling in early trading in the U.S., but not as much as in Europe as Greece's debt woes deepen.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 13:44:10</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td>U.S. stocks are rising broadly in early trading as investors hope for a last-minute deal on Greece's debt woes.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-following-gains-in-European-6360385.php'>site</a></td><td>Asian stocks gain as US data eclipses Greek risk</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-open-higher-following-gains-in-european-/nmpyy/'>site</a></td><td>Asian stocks were higher on Thursday as strong U.S. payroll data overshadowed worries about Greek debt.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/10/b7856f27bfc0cd1e7b0f6a706700c002_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-10 14:10:38</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/10/us-stocks-open-higher-as-greece-moves-closer-to-a/'>site</a></td><td>US stocks rise on optimism that Greek-debt deal will be done</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-07-14 10:25:09</td><td><a href='http://www.startribune.com/german-investor-optimism-undeterred-by-greece/314852531/'>site</a></td><td>FRANKFURT, Germany - Investor optimism about Germany decreased by only a little in July, as the crisis in Greece and falling stocks in China had minimal effect.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>A family divided: Emotions run high ahead of Greek vote</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 16:59:21</td><td><a href='http://www.reuters.com/article/2015/07/06/us-markets-oil-idUSKCN0PG00520150706?feedType=RSS&feedName=businessNews'>site</a></td><td>Oil tumbles 6 percent after Greek 'No' vote, ahead of Iran deadline</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>Dissent in Greece over austerity deal grows ahead of vote</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-15 11:45:49</td><td><a href='http://finance.yahoo.com/news/futures-steady-ahead-yellen-speech-114549812.html'>site</a></td><td>Futures steady ahead of Yellen speech, Greek vote</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-16 00:04:51</td><td><a href='http://www.reuters.com/article/2015/07/16/eurozone-greece-latest-idUSL8N0ZR0TG20150716?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>1833 - Greek anti-establishment protesters threw dozens of petrol bombs at police in front of parliament ahead of a key vote on a bailout deal, in some of the most serious violence in over two years.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-17 17:30:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483049&ref=rss'>site</a></td><td>Even after that deal, Schaeuble continued talking about a potential "Grexit" ahead of a Greek Parliament vote Wednesday on new austerity measures and Friday's German Parliament vote to approve detailed bailout talks.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 18:14:17</td><td><a href='http://www.miamiherald.com/news/business/article28082050.html#storylink=rss'>site</a></td><td>Greece gets new liquidity boost ahead of key reform vote</td></tr>
 </table></body></html>

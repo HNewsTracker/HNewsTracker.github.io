@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>A family divided: Emotions run high ahead of Greek vote</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 16:59:21</td><td><a href='http://www.reuters.com/article/2015/07/06/us-markets-oil-idUSKCN0PG00520150706?feedType=RSS&feedName=businessNews'>site</a></td><td>Oil tumbles 6 percent after Greek 'No' vote, ahead of Iran deadline</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>Dissent in Greece over austerity deal grows ahead of vote</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-15 11:45:49</td><td><a href='http://finance.yahoo.com/news/futures-steady-ahead-yellen-speech-114549812.html'>site</a></td><td>Futures steady ahead of Yellen speech, Greek vote</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-16 00:04:51</td><td><a href='http://www.reuters.com/article/2015/07/16/eurozone-greece-latest-idUSL8N0ZR0TG20150716?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>1833 - Greek anti-establishment protesters threw dozens of petrol bombs at police in front of parliament ahead of a key vote on a bailout deal, in some of the most serious violence in over two years.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-17 17:30:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483049&ref=rss'>site</a></td><td>Even after that deal, Schaeuble continued talking about a potential "Grexit" ahead of a Greek Parliament vote Wednesday on new austerity measures and Friday's German Parliament vote to approve detailed bailout talks.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 18:14:17</td><td><a href='http://www.miamiherald.com/news/business/article28082050.html#storylink=rss'>site</a></td><td>Greece gets new liquidity boost ahead of key reform vote</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 14:00:40</td><td><a href='http://www.upi.com/Top_News/World-News/2015/06/28/European-Central-Bank-to-maintain-Greek-emergency-funding/8711435497439/'>site</a></td><td>"We continue to work closely with the Bank of Greece and we strongly endorse the commitment of Member States in pledging to take action to address the fragilities of euro area economies," ECB President Mario Draghi said in a statement.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static01.nyt.com/images/2015/07/15/business/15imf-web/15imf-web-thumbStandard.jpg'></td><td>2015-07-16 18:57:57</td><td><a href='http://www.nytimes.com/2015/07/17/business/international/european-central-bank-meeting-greece.html?partner=rss&emc=rss&_r=0'>site</a></td><td>"Our mandate is to act based on the assumption Greece will be a member of the euro area," Mr. Draghi said.</td></tr>
 </table></body></html>

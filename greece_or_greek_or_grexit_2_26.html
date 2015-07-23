@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 13:38:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26528617.html#storylink=rss'>site</a></td><td><table><tr><td>Greek foreign minister visits Israel amid crisis at home</td></tr><tr><td>Israel is welcoming the Greek foreign minister for a three-day visit as his country faces a financial crisis at home, with Greeks voting on a referendum about their country's future.</td></tr><tr><td>Emmanuel Nahshon, Israel's Foreign Ministry spokesman, said Sunday that the visit from Greek Foreign Minister Nikolaos Kotzias would have an "economic emphasis" but would not elaborate.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000adc0e-117.jpg'></td><td>2015-07-15 15:58:06</td><td><a href='http://www.rte.ie/news/2015/0715/714852-greece/'>site</a></td><td><table><tr><td>But Germany insists on having the IMF in the negotiations to help keep Greece in line, and may countenance extending maturities for Greek debt provided there was no write down.</td></tr><tr><td>"Technically, this possibility exists," said finance ministry spokesman Martin Jaeger when asked about the option of extending the maturities of Greek debt to 30 years or so.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/V9g3M9Yz6YDRJqtLq6WUnA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102845120-GettyImages-480891308.1910x1000.jpg'></td><td>2015-07-20 09:35:52</td><td><a href='http://finance.yahoo.com/news/imf-offer-greece-debt-relief-074303788.html'>site</a></td><td>Mody's comments come at a time when the IMF has raised concerns over debt relief for Greece, with Managing Director Christine Lagarde advocating extending the maturities on Greek loans.</td></tr>
 </table></body></html>

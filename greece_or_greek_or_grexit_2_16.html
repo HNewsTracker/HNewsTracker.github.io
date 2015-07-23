@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 14:03:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-28-EU--Greece%20Bailout-The%20Latest/id-fb5799103c44457a8a545e4ac58c9db9'>site</a></td><td>The Latest: Bank of Greece recommends banks remain closed</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 17:54:03</td><td><a href='http://abcnews.go.com/International/wireStory/greek-premier-bank-greece-recommended-banks-close-capital-32085919'>site</a></td><td>Greek premier: Bank of Greece has recommended banks to close, capital controls be imposed.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 17:55:03</td><td><a href='http://news.yahoo.com/greek-prime-minister-says-greek-bank-deposits-completely-175453977.html'>site</a></td><td>ATHENS, Greece (AP) - Greek prime minister says Greek bank deposits completely safe.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/30/62/8228018/3/square_gallery_thumb.jpg'></td><td>2015-06-28 18:24:13</td><td><a href='http://www.sfgate.com/news/world/article/Greece-awaits-European-Central-Bank-decision-on-6354017.php'>site</a></td><td>ATHENS, Greece (AP) - Greek banks will remain shut for an unspecified time and the country is imposing restrictions on bank withdrawals following a recommendation by the Bank of Greece, the country's prime minister said Sunday.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150705&i=109339515&w=240&r=109339515-1&t=2'></td><td>2015-07-03 22:08:36</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Louka Katseli, head of Greece's Bank Association and chair of the National Bank of Greece, dismissed the report as "completely baseless".</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:42:16</td><td><a href='http://news.yahoo.com/exposed-greek-banks-balkans-brace-trouble-134216336--finance.html'>site</a></td><td>Two Greek banks in Macedonia represent 22 percent of total bank assets in the country.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='ww.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/7/16/13f8cfb2079b4b1b8c19d7c5c6d984da_18.jpg'></td><td>2015-07-20 06:31:55</td><td><a href='http://www.aljazeera.com/news/2015/07/greek-banks-reopen-150720044008477.html'>site</a></td><td>"Capital controls and restrictions on withdrawals will remain in place but we are entering a new stage which we all hope will be one of normality," the head of Greece's banking association Louka Katseli told Skai television.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>For Greece, the short-term pain and turmoil could be extreme whereas the currency union would likely survive the initial shock.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn.sandiegouniontrib.com/static/utsd/v1/images/sdut-logo-white-stacked.svg'></td><td>2015-07-13 14:38:45</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/13/euro-currency-emerges-intact-_-for-now-_-from/'>site</a></td><td>Although relief prevailed after Monday's Greek bailout announcement, key questions remain about whether the euro currency will remain sustainable in the long-term - and even whether the European Union itself remains a viable project.</td></tr>
 </table></body></html>
