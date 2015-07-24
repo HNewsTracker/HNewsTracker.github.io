@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,5 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:20:01</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/families-of-germanwings-victims-honor-unidentified-remains'>site</a></td><td>The company was represented at the ceremony by Germanwings chief Thomas Winkelmann and Lufthansa chief financial offer Simone Menne.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 18:35:08</td><td></td><td><a href='germanwings_4_5.html'>Families of Germanwings victims release white balloons after an homage ceremony in front of a stele, in Le Vernet, French Alps, Friday, July 24, 2015. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 18:35:08</td><td></td><td><a href='germanwings_4_5.html'>Families of those killed in the Germanwings crash are in the Alpine village where the plane went down to commemorate the dead and bury unidentified remains. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 19:15:21</td><td></td><td><a href='germanwings_4_6.html'>A stele, a stone slab erected as a monument, set up in the area near where a Germanwings aircraft crashed in the French Alps, in Le Vernet, French Alps, Friday, July 24, 2015. (2)</a></td></tr>
 </table></body></html>

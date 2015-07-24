@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718766106_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-30 17:21:16</td><td><a href='http://www.torontosun.com/2015/06/30/germanwings-offers-emotional-damage-payments-to-crash-victims-families'>site</a></td><td><table><tr><td>Germanwings offers emotional damage payments to crash victims' families</td></tr><tr><td>BERLIN - Germanwings is offering 25,000 euros ($27,958) compensation payments to close relatives of those killed in the March 24 plane crash for their pain and suffering, it said on Tuesday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 18:35:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28497337.html#storylink=rss'>site</a></td><td>Families of Germanwings victims release white balloons after an homage ceremony in front of a stele, in Le Vernet, French Alps, Friday, July 24, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/00/a9/59496a56ce76411fb244d63dfdbd6cf0-4ecd12d4c36848e78bf091f72b545501-1.jpg'></td><td>2015-07-24 19:15:21</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/families-of-germanwings-victims-honor-unidentified/nm6Dt/'>site</a></td><td>A stele, a stone slab erected as a monument, set up in the area near where a Germanwings aircraft crashed in the French Alps, in Le Vernet, French Alps, Friday, July 24, 2015.</td></tr>
 </table></body></html>
