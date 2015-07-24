@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 18:48:52</td><td><a href='http://www.torontosun.com/2015/07/18/tennessee-shooting-suspect-texted-friend-link-to-islamic-verse-before-attack'>site</a></td><td>Tennessee shooting suspect texted friend link to Islamic verse before attack [Video]</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201507/2030/1745097732_4360613477001_SPL1081676-tmb1.jpg?pubId=1745097732'></td><td>2015-07-18 18:57:28</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/07/18/22513361.html?cid=rssnewsworld'>site</a></td><td>The night before the attack, Wednesday, Abdulazeez sent the text message with the link to a Hadith, or Islamic teaching, a move that the friend said was unusual.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/16/8324ca9bb5b4571f7c0f6a706700ae82_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-16 06:50:46</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/15/muslim-scholars-use-ramadan-to-push-for-an/'>site</a></td><td>ABU DHABI, United Arab Emirates (AP) - During the Islamic holy month of Ramadan, Muslims are called on to reflect on their faith as they conduct their daily fast.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 06:54:44</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27378178.html#storylink=rss'>site</a></td><td><table><tr><td>Muslim scholars use Ramadan to push for an Islamic renewal</td></tr><tr><td>The UAE's counterterrorism lectures, organized by Abu Dhabi's Islamic Affairs authority during the month of Ramadan, which ends Friday, drew more than 300 speakers, many of them from Cairo's al-Azhar.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 06:55:15</td><td><a href='http://www.startribune.com/muslim-scholars-use-ramadan-to-push-for-an-islamic-renewal/315688681/'>site</a></td><td>But one of the Arab world's most famous Muslim televangelists, Amr Khaled, who dedicated his TV show through Ramadan to discussing ways of reform, pointed out that it has been at least 70 years since the last great work on Islamic jurisprudence was written.</td></tr>
 </table></body></html>

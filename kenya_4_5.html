@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297728049130_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-22 15:35:58</td><td><a href='http://www.torontosun.com/2015/07/22/kenya-prepares-to-welcome-president-obama-to-the-country-where-his-father-was-born'>site</a></td><td>Obama is scheduled to arrive in Kenya on Friday, the first stop on his two-nation African tour in which he will also visit Ethiopia.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 15:42:55</td><td><a href='http://www.ctvnews.ca/politics/kenya-prepares-to-welcome-obama-to-the-country-where-his-father-was-born-1.2481678'>site</a></td><td>Kenya prepares to welcome Obama to the country where his father was born</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 21:20:07</td><td><a href='http://www.miamiherald.com/news/politics-government/article28333801.html#storylink=rss'>site</a></td><td>On Friday, July 24, 2015 Obama is due to arrive in Kenya, the country of his father's birth, for the first time since he was a U.S. senator in 2006, and the first stop on his two-nation African tour in which he will also visit Ethiopia.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 10:35:40</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28490806.html#storylink=rss'>site</a></td><td>There also may have been a reluctance in the first term to feed the conspiracy theorists who refuse to believe that Obama was born in Hawaii, not in Kenya.</td></tr>
+</table></body></html>

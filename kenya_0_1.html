@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 05:46:24</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/06/kenya-says-islamic-extremists-kill-14-in-kenyas/'>site</a></td><td>Eleven people were also wounded in the attack which took place in Soko Mbuzi village in Mandera County near Kenya's border with Somalia, said Mandera County Commissioner Alex Nkoyo.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 14:39:23</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/07/kenya-says-islamic-extremists-kill-14-in-kenyas-north'>site</a></td><td>Kenya Police officers carry a body in Mandera, Kenya, Tuesday, July 7, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 18:00:35</td><td><a href='http://www.startribune.com/obama-s-africa-visit-troubles-human-rights-groups/318313551/'>site</a></td><td><table><tr><td>WASHINGTON - President Barack Obama's trip to Kenya and Ethiopia is drawing fresh criticism that the two countries are heavy-handed on human rights and basic democratic freedoms.</td></tr><tr><td>The letter to Obama said he should put the "pressing human rights concerns" in Kenya and Ethiopia "at the forefront of your discussions."</td></tr><tr><td>The letter expressed concern that both countries are using national security concerns to stifle the media as well as civic participation and, in Kenya, to crack down on Somali refugees who have fled the instability in their home country.</td></tr></table></td></tr>
 </table></body></html>
