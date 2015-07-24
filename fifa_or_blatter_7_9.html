@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,4 +50,5 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 08:27:14</td><td><a href='http://www.theguardian.com/football/2015/jul/09/chuck-blazer-lifetime-ban-football-fifa-ethics-committee'>site</a></td><td>In a statement, Fifa's ethics panel said Blazer had "committed many and various acts of misconduct continuously and repeatedly during his time as an official in different high-ranking and influential positions at Fifa and Concacaf.</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-07-09 08:28:44</td><td><a href='http://www.japantimes.co.jp/sports/2015/07/09/soccer/fifa-expels-disgraced-blazer-life/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+japantimes_sports+%28The+Japan+Times+Headline+News+-+Sports%29'>site</a></td><td><table><tr><td>FIFA expels disgraced Blazer for life</td></tr><tr><td>FIFA's ethics panel says American Blazer "was a key player in schemes involving the offer, acceptance, payment and receipt of undisclosed and illegal payments, bribes and kickbacks as well as other money-making schemes."</td></tr><tr><td>Blazer served on FIFA's executive panel for 16 years until 2013.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-09 11:37:33</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article26849170.html#storylink=rss'>site</a></td><td>FIFA opened an ethics investigation against Blazer after the corrupt financial management of CONCACAF was exposed in 2012.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 11:05:40</td><td><a href='http://www.utsandiego.com/news/2015/jun/10/spotify-gets-investment-as-it-faces-competition/'>site</a></td><td><table><tr><td>Spotify gets investment as it faces competition from Apple</td></tr><tr><td>COPENHAGEN, Denmark (AP) - Music streaming company Spotify says it has gotten a new investment from TeliaSonera, a Nordic telecoms company, as it looks to compete globally with similar services from Apple Inc. and others.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 03:15:25</td><td><a href='http://www.reuters.com/article/2015/07/11/us-apple-music-antitrust-idUSKCN0PL03O20150711?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>FTC exploring Apple rules for streaming music rivals in App Store</td></tr><tr><td>Apple takes a 30 percent cut of all in-app purchases for digital goods, such as music streaming subscriptions and games, sold on its platform.</td></tr><tr><td>Apple has long been a leader in digital music through its iTunes Store, but it has been a relatively late entrant to on-demand streaming.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/k0uWYnnLEk1SX.BktVeDhA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-07-11T031525Z_1_LYNXNPEB6A02N_RTROPTP_3_USA-APPLE_original.jpg'></td><td>2015-07-11 03:15:25</td><td><a href='http://finance.yahoo.com/news/ftc-exploring-apple-rules-streaming-031525278.html'>site</a></td><td>Streaming services' chief grievances with Apple stem from the company's 30 percent cut.</td></tr>
 </table></body></html>

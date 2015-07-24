@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -54,4 +54,5 @@
   <tr><td style='display:none'>3</td><td></td><td>2015-07-17 12:09:44</td><td></td><td><a href='germanwings_2.html'>All airline pilots should undergo psychological screening and allow details of medical visits to be shared in a proposed European database, according to recommendations delivered to the European Commission in the wake of the Germanwings disaster. (3)</a></td></tr>
   <tr><td style='display:none'>4</td><td></td><td>2015-07-18 15:47:56</td><td></td><td><a href='germanwings_0.html'>BERLIN (AP) - A German attorney representing some 30 families of victims of the March Germanwings plane crash says his clients are rejecting the airline's initial compensation offer as far too low. (7)</a></td></tr>
   <tr><td style='display:none'>5</td><td></td><td>2015-07-21 12:32:37</td><td></td><td><a href='germanwings_1.html'>BERLIN (AP) - A group of parents whose children were killed in the Germanwings plane crash in March have written a scathing letter to Lufthansa's CEO, accusing him of ignoring their needs and feelings. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 13:42:03</td><td><a href='http://abcnews.go.com/International/wireStory/families-germanwings-victims-gather-bury-remains-32662134'>site</a></td><td>Families of Germanwings Victims Gather to Bury Remains</td></tr>
 </table></body></html>

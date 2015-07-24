@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/dba/news/world/article25306764.ece/ALTERNATES/w220/NY150_FIFA_Investigation_Blatter.JPG'></td><td>2015-07-05 14:07:01</td><td><a href='http://www.theglobeandmail.com/news/world/blatter-alleges-france-germany-tried-to-influence-world-cup-hosting-decision-report/article25306765/?cmpid=rss1'>site</a></td><td>Also in May, U.S. prosecutors announced they had indicted nine current and former FIFA officials and five sports marketing businessmen in connection with a corruption investigation.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 23:29:22</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27356605.html#storylink=rss'>site</a></td><td>Blumenthal criticized U.S. Soccer for not exposing FIFA's corruption long before the U.S. Department of Justice indicted nine FIFA officials and five corporate executives for racketeering, bribery, wire fraud and money laundering this May.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 10:55:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11486553&ref=rss'>site</a></td><td><table><tr><td>Targeting almost $6 billion in revenue from the 2018 tournament, FIFA has not signed any new sponsors since last year's World Cup in Brazil.</td></tr><tr><td>FIFA earned $1.63 billion in marketing revenue tied to the 2014 tournament in Brazil.</td></tr></table></td></tr>
 </table></body></html>

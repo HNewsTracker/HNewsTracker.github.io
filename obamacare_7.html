@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 19:01:13</td><td><a href='http://www.cbsnews.com/news/spending-on-birth-control-much-less-after-obamacare/'>site</a></td><td><table><tr><td>Spending on birth control much less after Obamacare</td></tr><tr><td>Out-of-pocket costs for prescription birth control have dropped significantly since the Affordable Care Act, commonly known as "Obamacare," took effect in the United States, a new study finds.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/37/a4/3f5d128472974f17aa0a61fc9f3de069-4b9bc015708447499ccdfd6610a55cbb-0_1.jpg'></td><td>2015-07-24 14:12:14</td><td><a href='http://www.daytondailynews.com/ap/ap/political/senate-gop-setting-up-obamacare-vote-on-highway-bi/nm559/'>site</a></td><td><table><tr><td>Senate GOP setting up 'Obamacare' vote on highway bill</td></tr><tr><td>Senate Republican leaders announced plans Friday to use a must-pass highway bill to try to overturn President Barack Obama's health care law, in the latest GOP assault on "Obamacare."</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 14:19:15</td><td><a href='http://www.miamiherald.com/news/politics-government/article28496992.html#storylink=rss'>site</a></td><td>Senate Majority Leader Mitch McConnell plans to introduce an amendment to the transportation bill to fully repeal "Obamacare."</td></tr>
 </table></body></html>

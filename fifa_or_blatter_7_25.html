@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/dba/news/world/article25306764.ece/ALTERNATES/w220/NY150_FIFA_Investigation_Blatter.JPG'></td><td>2015-07-05 14:07:01</td><td><a href='http://www.theglobeandmail.com/news/world/blatter-alleges-france-germany-tried-to-influence-world-cup-hosting-decision-report/article25306765/?cmpid=rss1'>site</a></td><td>Also in May, U.S. prosecutors announced they had indicted nine current and former FIFA officials and five sports marketing businessmen in connection with a corruption investigation.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 23:29:22</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27356605.html#storylink=rss'>site</a></td><td>Blumenthal criticized U.S. Soccer for not exposing FIFA's corruption long before the U.S. Department of Justice indicted nine FIFA officials and five corporate executives for racketeering, bribery, wire fraud and money laundering this May.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 11:41:35</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/24/fifa-says-corruption-crisis-hinders-search-for-new-sponsors'>site</a></td><td>Current sponsors will be invited to a briefing next month with FIFA lawyers and marketing officials, Valcke said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 18:14:11</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/22/blatter-heads-to-russia-for-first-foreign-trip-since-crisis'>site</a></td><td><table><tr><td>Blatter heads to Russia for first foreign trip since crisis</td></tr><tr><td>Saturday's qualifying draw in St. Petersburg for the 2018 World Cup will be the 79-year-old Blatter's last official event connected to football's showcase tournament before he prematurely leaves office in February.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 18:35:05</td><td><a href='http://www.miamiherald.com/sports/article28419046.html#storylink=rss'>site</a></td><td>Blatter was accompanied by Mutko as he arrived at his St. Petersburg hotel for the World Cup qualifying draw on his first foreign trip since the FIFA scandal erupted.</td></tr>
 </table></body></html>
