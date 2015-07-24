@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 18:57:28</td><td></td><td><a href='state_islamic_7_8.html'>The night before the attack, Wednesday, Abdulazeez sent the text message with the link to a Hadith, or Islamic teaching, a move that the friend said was unusual. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 04:37:34</td><td><a href='http://www.reuters.com/article/2015/07/19/us-usa-tennessee-shooting-idUSKCN0PS0H120150719?feedType=RSS&feedName=domesticNews'>site</a></td><td>While a firm connection between the 24-year-old suspect and radical Islam has not been established, the shooting follows a series of attacks or thwarted attacks in the United States and other countries by Muslims claiming to be inspired by Islamic State or other militant groups.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 18:28:42</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/13/son-of-boston-police-captain-charged-in-terror/'>site</a></td><td>BOSTON (AP) - Prosecutors have arrested the son of a Boston police captain in a plot to commit terrorist acts on behalf of the Islamic State group.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 23:16:47</td><td></td><td><a href='state_islamic_7_8.html'>In the post-arrest video played in court on Tuesday, Ciccolo did not detail an attack plot but defended Islamic State's hostage executions and agreed with an FBI interviewer that all Americans should be considered "enemies". (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/Crime/2015/07/14/TCP_Ciccolo650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-07-14 23:16:47</td><td><a href='http://cnews.canoe.com/CNEWS/Crime/2015/07/14/22506011.html?cid=rssnewscrime'>site</a></td><td>The case follows a handful of "lone wolf" attacks in the United States and Canada since last year by people authorities say were inspired by Islamic State, which controls parts of Syria and Iraq and has vowed attacks on the West.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-13 11:30:09</td><td><a href='http://www.startribune.com/caught-in-the-middle-war-in-ukraine-creates-no-man-s-lands/307251641/'>site</a></td><td>A craze has swept through Ukraine for the removal of Lenin monuments, regardless of abiding fondness among many elderly people for the communist era.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 12:33:21</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/cars-of-osce-observers-vandalized-in-eastern-ukraine'>site</a></td><td>Cars of OSCE observers vandalized in eastern Ukraine</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 12:40:03</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28489627.html#storylink=rss'>site</a></td><td>A demonstrator uses spray-paint to deface the windshield of a car of the OSCE and the International Committee of the Red Cross during a protest in Donetsk, eastern Ukraine, Thursday, July 23, 2015.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 17:56:32</td><td><a href='http://abcnews.go.com/International/wireStory/greek-prime-minister-renewed-request-extension-days-bailout-32085921'>site</a></td><td>Greek Prime Minister Says He's Renewed Request for an Extension of a Few Days for Bailout</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-04 03:23:47</td><td><a href='http://news.yahoo.com/greece-referendum-campaigns-squeezed-deadline-040512079--finance.html'>site</a></td><td>"This is not a protest. It is a celebration to overcome fear and blackmail," Greek Prime Minister Alexis Tsipras told a crowd of 25,000 in front of parliament, who were chanting "oxi, oxi" - "no, no."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/7/1/greek-bailout-money-went-to-banks-not-greece/_jcr_content/image.adapt.480.low.greece_newlede_070215.jpg'></td><td>2015-07-04 12:25:00</td><td><a href='http://america.aljazeera.com/articles/2015/7/4/greek-minister-europe-cant-afford-to-let-athens-go-under.html'>site</a></td><td><table><tr><td>Finance minister: Europe can't afford to let Greece go under</td></tr><tr><td>Tsipras' finance minister, Yanis Varoufakis, said there was too much at stake for Europe to cast Greece adrift.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/05/yes-or-no-what-greeces-landmark-vote-might-bring'>site</a></td><td>Greek Finance Minister Yanis Varoufakis has said he'll resign in the event of a "yes" vote and Prime Minister Alexis Tsipras has hinted as much.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 08:25:04</td><td><a href='http://www.miamiherald.com/news/business/article27374224.html#storylink=rss'>site</a></td><td>They included Tsipras' powerful energy minister, the speaker of parliament, and Yanis Varoufakis, the former finance minister who headed Greece's bailout strategy until his replacement 10 days ago.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://media.npr.org/assets/img/2015/07/18/53961841_h38247628-b405d0905f59389f23f1c3b078f2afafeb216872-s1100-c15.jpg'></td><td>2015-07-18 14:20:00</td><td><a href='http://www.npr.org/sections/thetwo-way/2015/07/18/424122976/greeces-ex-finance-minister-bailout-reforms-will-fail?utm_medium=RSS&utm_campaign=business'>site</a></td><td>"[Said] Greek Prime Minister Alexis Tsipras, who has admitted that he does not believe in the bailout, had little option but to sign.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 06:35:08</td><td><a href='http://www.startribune.com/would-euro-departure-help-or-hurt-europe-s-currency-union/311627101/'>site</a></td><td>A number of economists, however, think a Greek exit could cause long-lasting damage to the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/06/4431b24e19d2671e7b0f6a7067004551_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-06 15:44:00</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/06/whats-next-as-greece-stumbles-toward-euro-exit/'>site</a></td><td>What's next, as Greece stumbles toward euro exit</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 21:29:00</td><td><a href='http://www.latimes.com/business/la-fi-wall-street-20150710-story.html'>site</a></td><td>U.S. stocks logged their best day in two months Friday as Greece appeared to move closer to securing a bailout deal that will enable it to avoid bankruptcy and keep the country in the euro.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 08:00:31</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480263&ref=rss'>site</a></td><td>Greece reaches deal with creditors, avoids euro exit</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-15 21:30:23</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-with-small-gains-as-investor-6385910.php'>site</a></td><td>Stocks have surged in the past week as a slump in China's stock market abated and Greece reached a deal with its creditors for more loans to avoid bankruptcy and a possible exit from the euro.</td></tr>
 </table></body></html>

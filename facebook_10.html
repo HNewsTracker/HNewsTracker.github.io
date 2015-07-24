@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 13:24:00</td><td><a href='http://www.forbes.com/sites/abigailtracy/2015/07/09/look-out-apple-music-facebook-may-have-its-own-spotify-killer-in-the-works/'>site</a></td><td>Is Facebook Planning To Launch Its Own Music Streaming Service?</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 20:50:19</td><td></td><td><a href='facebook_10_11.html'>Facebook said prosecutors cast too wide a net. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 20:50:19</td><td></td><td><a href='facebook_10_12.html'>"In many cases, evidence on their Facebook accounts directly contradicted the lies the defendants told to the Social Security Administration" about being too psychologically devastated to work, district attorney's office spokeswoman Joan Vollero said Tuesday. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-07-21 23:52:15</td><td><a href='http://www.mercurynews.com/business/ci_28518088/facebook-loses-clash-prosecutors-over-users-data?source=rss'>site</a></td><td><table><tr><td>Facebook had lost earlier rulings and already turned the data over.</td></tr><tr><td>Facebook said it was weighing its options for continuing the fight.</td></tr></table></td></tr>
 </table></body></html>

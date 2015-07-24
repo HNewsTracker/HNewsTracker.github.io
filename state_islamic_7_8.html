@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 18:48:52</td><td><a href='http://www.torontosun.com/2015/07/18/tennessee-shooting-suspect-texted-friend-link-to-islamic-verse-before-attack'>site</a></td><td>Tennessee shooting suspect texted friend link to Islamic verse before attack [Video]</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201507/2030/1745097732_4360613477001_SPL1081676-tmb1.jpg?pubId=1745097732'></td><td>2015-07-18 18:57:28</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/07/18/22513361.html?cid=rssnewsworld'>site</a></td><td>The night before the attack, Wednesday, Abdulazeez sent the text message with the link to a Hadith, or Islamic teaching, a move that the friend said was unusual.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/Crime/2015/07/14/TCP_Ciccolo650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-07-14 23:16:47</td><td><a href='http://cnews.canoe.com/CNEWS/Crime/2015/07/14/22506011.html?cid=rssnewscrime'>site</a></td><td><table><tr><td>In the post-arrest video played in court on Tuesday, Ciccolo did not detail an attack plot but defended Islamic State's hostage executions and agreed with an FBI interviewer that all Americans should be considered "enemies".</td></tr><tr><td>His attorney, David Hoose, said Ciccolo had so far only been charged with gun violations and that his views on Islamic State should not be considered.</td></tr></table></td></tr>
 </table></body></html>

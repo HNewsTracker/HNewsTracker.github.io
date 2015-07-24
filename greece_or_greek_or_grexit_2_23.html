@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 22:55:33</td><td><a href='http://abcnews.go.com/International/wireStory/greek-parliament-passes-austerity-bill-needed-1st-step-32479902'>site</a></td><td>Greek Parliament Passes Austerity Bill Needed as 1st Step to Open Bailout Negotiations</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-open-with-small-gains-as-investor-assess/nmzCH/'>site</a></td><td>Asian stocks edged higher Thursday after Greek lawmakers approved an austerity bill needed for another bailout and the dollar rose after the Fed chief indicated that U.S. interest rates could start rising later this year.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/us-stocks-open-with-small-gains-as-investor-assess-earnings'>site</a></td><td>Most Asia stocks rise after Greece approves austerity bill</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-16 09:25:18</td><td><a href='http://www.sfgate.com/business/energy/article/Most-Asia-stocks-rise-after-Greece-approves-6387709.php'>site</a></td><td>HONG KONG (AP) - European stocks jumped, leading gains in global benchmarks Thursday after Greek lawmakers approved an austerity bill needed for another bailout.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Despite its rickety finances, Greece shaped up a little for a few years and qualified to join the single currency in 2001.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.seattlepi.com/news/article/Yellen-Draghi-upbeat-despite-tumult-in-Greece-6389141.php'>site</a></td><td><table><tr><td>Yellen, Draghi upbeat despite tumult in Greece, China</td></tr><tr><td>Yellen said this week that the Fed might reconsider a 2015 rate hike if the tumult in China or Greece threatened to spread.</td></tr></table></td></tr>
 </table></body></html>

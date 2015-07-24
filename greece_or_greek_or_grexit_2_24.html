@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/18/d752b71908b28a207c0f6a706700d973_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-18 15:51:07</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/18/greek-banks-to-reopen-monday-but-cash/'>site</a></td><td>In a decree Saturday, the Greek government kept the daily cash withdrawal limit at 60 euros ($65) but added a weekly limit.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/35/e5/a082f47d84a94af0a47d4d82904f22e3-4a864986000e45d6aa9c3db3f4996795-0.jpg'></td><td>2015-07-19 07:11:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ious-for-rips-greeces-cash-crisis-hurts-funeral-in/nm3Cq/'>site</a></td><td>IOUs for RIPs: Greece's cash crisis hurts funeral industry</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 07:11:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/19/ious-for-rips-greeces-cash-crisis-hurts-funeral-industry'>site</a></td><td><table><tr><td>ATHENS, Greece (AP) - Greece's cash crisis has disrupted all aspects of daily life - death included.</td></tr><tr><td>Greek funeral homes are struggling to cope with banking restrictions that limit customers to taking out only 60 euros ($65) a day in cash.</td></tr><tr><td>Even a modest funeral service in Greece costs more than 15 times that, in a country that traditionally carries out funerals shortly after death and pays for them almost entirely in cash.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 13:26:40</td><td><a href='http://news.yahoo.com/western-union-restarts-money-transfer-greece-132640414--sector.html'>site</a></td><td><table><tr><td>Western Union restarts money transfer service in Greece</td></tr><tr><td>(Reuters) - Western Union Co said it restarted money transfer service in Greece, allowing customers in the country to receive funds from overseas.</td></tr></table></td></tr>
 </table></body></html>

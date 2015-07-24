@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 02:00:34</td><td></td><td><a href='state_islamic_35_36.html'>ASPEN, Colorado (AP) " The FBI director says the Islamic State group's effort to inspire troubled Americans to kill at home has become more of a terror threat to the U.S. than an external attack by al-Qaida. (5)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/22/eb/e3/5f7dcc94a52442d3aa93ff01bf24cdf6-3c1973ef449c4c8ab346ab0d5c8d9aa8-0.jpg'></td><td>2015-07-23 02:06:58</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fbi-chief-islamic-state-group-bigger-threat-than-a/nm5GJ/'>site</a></td><td>Comey noted that "the people the Islamic State is trying to reach are people that al-Qaida would never use as an operative, because they are often unstable, troubled drug users."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/06/c1/7c/f12e0f8660fd457fabfce7e64db68146-1f89a77dcb6d4272ab245f40a9173b36-0_1.jpg'></td><td>2015-07-06 17:34:22</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/obama-heads-to-pentagon-for-meetings-on-islamic-st/nmsCy/'>site</a></td><td><table><tr><td>Obama heads to Pentagon for meetings on Islamic State</td></tr><tr><td>President Barack Obama will pay a rare visit to the Pentagon on Monday to get an update from military leaders on the campaign against the Islamic State.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 17:40:57</td><td><a href='http://www.reuters.com/article/2015/07/06/us-usa-congress-whitehouse-idUSKCN0PG1YK20150706?feedType=RSS&feedName=politicsNews'>site</a></td><td>WASHINGTON The White House criticized Republicans in the U.S. Senate on Monday for not approving appointments aimed at fighting the Islamic State.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 19:34:07</td><td><a href='http://www.miamiherald.com/news/politics-government/article26569714.html#storylink=rss'>site</a></td><td>President Barack Obama, right, sits next to Defense Secretary Ash Carter, with other military personnel as they wait to receives an update on the Islamic State group at the Pentagon on Monday, July 6, 2015.</td></tr>
 </table></body></html>
