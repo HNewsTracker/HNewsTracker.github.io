@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 05:46:24</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/06/kenya-says-islamic-extremists-kill-14-in-kenyas/'>site</a></td><td>Kenya says Islamic extremists kill 14 in Kenya's north</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 05:46:24</td><td></td><td><a href='kenya_3_4.html'>Eleven people were also wounded in the attack which took place in Soko Mbuzi village in Mandera County near Kenya's border with Somalia, said Mandera County Commissioner Alex Nkoyo. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 21:20:07</td><td></td><td><a href='kenya_3_4.html'>On Friday, July 24, 2015 Obama is due to arrive in Kenya, the country of his father's birth, for the first time since he was a U.S. senator in 2006, and the first stop on his two-nation African tour in which he will also visit Ethiopia. (18)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 22:32:03</td><td></td><td><a href='kenya_3_6.html'>The White House had announced earlier this year that Obama would travel to Kenya to attend a Global Entrepreneurship Summit. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 18:00:35</td><td></td><td><a href='kenya_3_5.html'>The letter expressed concern that both countries are using national security concerns to stifle the media as well as civic participation and, in Kenya, to crack down on Somali refugees who have fled the instability in their home country. (3)</a></td></tr>
 </table></body></html>
