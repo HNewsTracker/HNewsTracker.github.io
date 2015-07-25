@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,15 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>greece or greek or grexit</h3>
+    <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-u-data-003850377.html'>site</a></td><td>LONDON (Reuters) - European bonds and stocks traded cautiously on Friday before a Greek referendum on EU-prescribed reforms that could determine the country's future in the euro zone and which polls suggest could go either way.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://www.reuters.com/article/2015/07/03/us-markets-global-idUSKCN0PD01T20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>European bonds and stocks on the defensive before tight Greek vote</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150630&t=2&i=1060412297&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB5T0WH'></td><td>2015-06-30 20:07:37</td><td><a href='http://www.reuters.com/article/2015/06/30/us-mideast-crisis-syria-idUSKCN0PA21F20150630?feedType=RSS&feedName=worldNews'>site</a></td><td>"Islamic State had withdrawn from most of the districts but did not leave it completely and their snipers in some areas are preventing the full advance of the army," said Ali Hreith, a Hasaka resident on the Turkish-Syrian border.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 13:19:15</td><td><a href='http://www.reuters.com/article/2015/07/07/us-mideast-crisis-syria-idUSKCN0PH0SJ20150707?feedType=RSS&feedName=topNews'>site</a></td><td>The YPG, backed by small Syrian rebel groups, has made significant gains against Islamic State in Raqqa province in recent weeks, seizing Tel Abyad at the Turkish border on June 15 before advancing south to Ain Issa.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/h/3/o/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.smh.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td>A senior Turkish official said there was "strong evidence" to suggest the bomber was a 20-year old man born in the south-eastern province of Adiyaman and of Kurdish origin, who had travelled to Syria last year with the help of a group linked to Islamic State.</td></tr>
 </table></body></html>

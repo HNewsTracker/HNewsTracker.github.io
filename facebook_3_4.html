@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:24:41</td><td><a href='http://www.reuters.com/article/2015/07/24/us-facebook-lawsuit-idUSKCN0PY1MR20150724?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>Facebook defeats shareholder litigation over IPO</td></tr><tr><td>Sweet also oversees shareholder class-action litigation against Facebook itself over the IPO.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/AzdYrdfQ4E10X.ztDy5nSw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-07-24T182441Z_4_LYNXNPEB6N0NC_RTROPTP_3_CTECH-US-FACEBOOK-PRIVACY-WARRANTS_original.jpg'></td><td>2015-07-24 18:24:41</td><td><a href='http://finance.yahoo.com/news/facebook-defeats-shareholder-litigation-over-134742991.html'>site</a></td><td>The case is In re: Facebook Inc Initial Public Offering Derivative Litigation, 2nd U.S. Circuit Court of Appeals, Nos.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297695495280_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-07 15:39:00</td><td><a href='http://www.torontosun.com/2015/07/07/facebook-coo-sheryl-sandberg-joins-surveymonkey-board'>site</a></td><td><table><tr><td>Facebook COO Sheryl Sandberg joins SurveyMonkey board</td></tr><tr><td>SurveyMonkey, a privately held company valued at US$2 billion, also appointed to its board David Ebersman, the chief executive officer of behavioural health company Lyra Health and the former chief financial officer of Facebook.</td></tr><tr><td>Ebersman shepherded Facebook through its 2012 initial public offering.</td></tr></table></td></tr>
 </table></body></html>

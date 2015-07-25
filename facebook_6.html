@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 20:50:19</td><td></td><td><a href='facebook_6_7.html'>Facebook said prosecutors cast too wide a net. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 20:50:19</td><td></td><td><a href='facebook_6_8.html'>"In many cases, evidence on their Facebook accounts directly contradicted the lies the defendants told to the Social Security Administration" about being too psychologically devastated to work, district attorney's office spokeswoman Joan Vollero said Tuesday. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-07-21 23:52:15</td><td><a href='http://www.mercurynews.com/business/ci_28518088/facebook-loses-clash-prosecutors-over-users-data?source=rss'>site</a></td><td><table><tr><td>Facebook had lost earlier rulings and already turned the data over.</td></tr><tr><td>Facebook said it was weighing its options for continuing the fight.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:24:41</td><td><a href='http://www.reuters.com/article/2015/07/24/us-facebook-lawsuit-idUSKCN0PY1MR20150724?feedType=RSS&feedName=topNews'>site</a></td><td>Shareholders said Facebook should have publicly revealed its internal projections on how increased mobile usage might reduce future revenue, rather than quietly warn its underwriters, which then cut their earnings forecasts.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 21:57:20</td><td></td><td><a href='facebook_6_7.html'>Circuit Judge Dennis Jacobs, however, wrote that the plaintiffs could not have owned Facebook shares before the IPO, and thus could not demonstrate "contemporaneous" ownership while the directors were breaching their fiduciary duties. (4)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150710&i=109527262&w=240&r=109527262-1&t=2'></td><td>2015-07-11 11:31:56</td><td><a href='http://www.reuters.com/article/2015/07/11/us-eurozone-greece-idUSKBN0P40EO20150711?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>He said officials believed Greece may need 82 billion euros, factoring in cash from the IMF and other EU sources.</td></tr><tr><td>In addition to cash from the euro zone, if Greece makes payments it missed last month to the IMF, the global lender still has a facility to lend Greece some 16 billion euros.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 13:41:48</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/07/exposed-to-greek-banks-balkans-brace-for-trouble/'>site</a></td><td>Though Greece's limits on cash withdrawals have not extended to subsidiaries in the Balkans, the deposits could be at risk if the parent banks collapse.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/32/e2/f2e092ef255347d3933e2886e5b35321-ee454d7079094ee085c092947af431e1-0_1.jpg'></td><td>2015-07-20 10:58:49</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeks-will-find-banks-open-but-restrictions-still/nm3RW/'>site</a></td><td>Greek banks reopen but cash limits remain; taxes soar</td></tr>
 </table></body></html>
