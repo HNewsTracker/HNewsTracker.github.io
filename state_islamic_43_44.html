@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 16:33:27</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/07/15/22507376.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>U.S. delivers Iraqi antiquities seized in raid on Islamic State</td></tr><tr><td>BAGHDAD - The United States handed back to Iraq on Wednesday antiquities it said it had seized in a raid on Islamic State fighters in Syria, saying the haul was proof the militants were funding their war by smuggling ancient treasures.</td></tr><tr><td>Islamic State, a hardline Sunni Islamist group, has ransacked some of the greatest archaeological sites in northern Iraq, posting video footage of fighters destroying pre-Islamic monuments they consider idolatrous.</td></tr><tr><td>Iraqi officials have been unable to verify the full extent of damage at the sites under Islamic State control, but they have said that footage of the destruction was published in part to distract attention from the fact Islamic State is smuggling antiquities to raise cash.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 02:00:34</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485713&ref=rss'>site</a></td><td>ASPEN, Colorado (AP) " The FBI director says the Islamic State group's effort to inspire troubled Americans to kill at home has become more of a terror threat to the U.S. than an external attack by al-Qaida.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/22/eb/e3/5f7dcc94a52442d3aa93ff01bf24cdf6-3c1973ef449c4c8ab346ab0d5c8d9aa8-0.jpg'></td><td>2015-07-23 02:06:58</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fbi-chief-islamic-state-group-bigger-threat-than-a/nm5GJ/'>site</a></td><td><table><tr><td>Comey spoke July 22 on the threat posed to the U.S. by the Islamic State Group at the Aspen Security Conference in Aspen, Colo.</td></tr><tr><td>Asked if the threat from the Islamic State group had eclipsed that of the rival organization that attacked the U.S. on September 11, 2001, Comey said, "Yes."</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/3006400/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F42%2Fc4%2F569a89f0451d9be3ddbcda89a9dd%2Fresizes%2F500%2F150715reportbigpic-editorial.bigpic.jpg'></td><td>2015-07-23 02:06:58</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/22/fbi-chief-islamic-state-group-bigger-threat-than-al-qaida'>site</a></td><td>Comey has sounded the alarm about domestic radicalization before, but his remarks Wednesday signal a deepening concern among U.S. officials about the impact of the Islamic State's effort to inspire terrorist violence.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-23 06:59:00</td><td><a href='http://www.ctvnews.ca/world/islamic-state-bigger-threat-than-al-qaeda-fbi-chief-1.2483107'>site</a></td><td>Islamic State bigger threat than al Qaeda: FBI chief</td></tr>
 </table></body></html>
