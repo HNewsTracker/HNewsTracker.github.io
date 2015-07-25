@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-04 06:35:08</td><td><a href='http://www.startribune.com/would-euro-departure-help-or-hurt-europe-s-currency-union/311627101/'>site</a></td><td>A number of economists, however, think a Greek exit could cause long-lasting damage to the euro.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/06/4431b24e19d2671e7b0f6a7067004551_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-06 15:44:00</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/06/whats-next-as-greece-stumbles-toward-euro-exit/'>site</a></td><td>What's next, as Greece stumbles toward euro exit</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 21:29:00</td><td><a href='http://www.latimes.com/business/la-fi-wall-street-20150710-story.html'>site</a></td><td>U.S. stocks logged their best day in two months Friday as Greece appeared to move closer to securing a bailout deal that will enable it to avoid bankruptcy and keep the country in the euro.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 08:00:31</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480263&ref=rss'>site</a></td><td>Greece reaches deal with creditors, avoids euro exit</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-15 21:30:23</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-with-small-gains-as-investor-6385910.php'>site</a></td><td>Stocks have surged in the past week as a slump in China's stock market abated and Greece reached a deal with its creditors for more loans to avoid bankruptcy and a possible exit from the euro.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/sOLg7viY9rtZHq0qy4NlSQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/eff9f6c18091841c7a0f6a7067003ced_original.jpg'></td><td>2015-06-26 22:15:47</td><td><a href='http://finance.yahoo.com/news/greece-sets-referendum-july-5-221547489.html'>site</a></td><td>Greece sets referendum for July 5 on rescue deal</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201525/AP150306004003_140x93.jpg'></td><td>2015-06-26 22:20:22</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11472142&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Greek development minister calls on nation to reject bailout deal in July 5 referendum.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31333970.ece/7e830/ALTERNATES/h342/PANews%20BT_P-81ca7e2d-aa7c-4326-bd44-2d8f1ad6ef0d_I1.jpg'></td><td>2015-06-27 03:36:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/eu-rejects-bailout-extension-plea-31333972.html'>site</a></td><td>Greece announces bailout referendum</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-05 04:10:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11476143&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Polling stations open in Greece for crucial bailout referendum.</td></tr>
 </table></body></html>

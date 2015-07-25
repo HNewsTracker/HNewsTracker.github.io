@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-u-data-003850377.html'>site</a></td><td>LONDON (Reuters) - European bonds and stocks traded cautiously on Friday before a Greek referendum on EU-prescribed reforms that could determine the country's future in the euro zone and which polls suggest could go either way.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 11:50:17</td><td><a href='http://www.reuters.com/article/2015/07/03/us-markets-global-idUSKCN0PD01T20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>European bonds and stocks on the defensive before tight Greek vote</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 00:55:05</td><td><a href='http://www.miamiherald.com/news/business/article26934703.html#storylink=rss'>site</a></td><td><table><tr><td>The vote in the 300-member parliament was to authorize the government to use its reform proposals as a basis for negotiation with Greece's international creditors.</td></tr><tr><td>Greek lawmakers have approved a government motion seeking authorization for reform proposals as a basis for negotiations for a third bailout in talks with international creditors this weekend.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>The Tsipras government holds 162 seats in Greece's 300-member Parliament.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 08:20:31</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/22/greece-parliament-to-vote-on-more-bailout-conditions'>site</a></td><td>Greece's parliament has begun an emergency debate on a second round of conditions demanded by international creditors for a new bailout - a vote that could threaten the coalition government.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media2.s-nbcnews.com/j/newscms/2015_30/1136121/150722-greece-hg-2143_dd6473f589f594923946a080724e1f00.nbcnews-fp-360-360.jpg'></td><td>2015-07-23 01:46:38</td><td><a href='http://www.nbcnews.com/news/world/greece-clears-final-reform-hurdle-new-bailout-talks-n396896'>site</a></td><td>Greece Clears Final Reform Hurdle Before New Bailout Talks</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-23 02:45:04</td><td><a href='http://www.miamiherald.com/news/business/article28082050.html#storylink=rss'>site</a></td><td>Addressing parliament before the vote, Tsipras said the reforms were a necessary price to pay to keep Greece alive after stormy talks with its creditors nearly collapsed earlier this month.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/i/z/o/v/image.related.articleLeadwide.620x349.giiwyr.png/1437630488464.jpg'></td><td>2015-07-23 05:37:20</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greek-bailout-leaders-approve-second-set-of-changes-20150723-giiwyr.html'>site</a></td><td><table><tr><td>Mr Tsipras spoke just before the vote, telling members of Parliament that the final terms of the deal with creditors were still under negotiation and that more would be done to protect the poorest members of Greek society.</td></tr><tr><td>He said that passage by the Greek Parliament of other changes would be sufficient to keep bailout talks on track.</td></tr></table></td></tr>
 </table></body></html>

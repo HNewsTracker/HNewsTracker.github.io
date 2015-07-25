@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/03/b6/f4/27ab516aa43d4a648906eabf7901a1c8-30c68c007e95440d8f5f4229cffc2fa9-0.jpg'></td><td>2015-07-04 01:00:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fifa-deflects-criticism-about-absence-of-blatter-f/nmrTX/'>site</a></td><td>"I think FIFA really tries to work with all associations worldwide to make sure that gap doesn't get too big, the teams that maybe now seem a bit behind to help them close the gap," Haenni said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/Sports/gty_japan_vs_usa_soccer_mm_150702_4x3t_96.jpg'></td><td>2015-07-04 01:01:06</td><td><a href='http://abcnews.go.com/Sports/wireStory/fifa-deflects-criticism-absence-blatter-final-32215657'>site</a></td><td>But FIFA officials said the gap needs to close between the countries that have made serious investments in women's soccer and those that are lagging behind, creating imbalance in a tournament that expanded to 24 teams for the first time.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 15:34:09</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28698721.html#storylink=rss'>site</a></td><td><table><tr><td>Despite FIFA's scandals, Sepp Blatter says the organization remains committed to 2018 World Cup host nation Russia.</td></tr><tr><td>During a meeting Saturday with Russian President Vladimir Putin ahead of the qualifying draw, the FIFA president told Putin that "we say yes to Russia, we are providing our support" and that the Russian people "can be proud" of Putin.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 15:34:09</td><td><a href='http://www.miamiherald.com/news/politics-government/article28698721.html#storylink=rss'>site</a></td><td>In brief comments, Putin welcomed Blatter, saying that Russia would "do everything that depends on us" to make players and fans feel at home in 2018.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 15:44:09</td><td><a href='http://www.miamiherald.com/news/politics-government/article28699174.html#storylink=rss'>site</a></td><td>Dressed in a dark blue suit and dark blue tie, Putin stood beside FIFA President Sepp Blatter and said "today is a special day for millions of fans of the game," according to a translator.</td></tr>
 </table></body></html>

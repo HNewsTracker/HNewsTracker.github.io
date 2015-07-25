@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/1d/2f/04c0fd8dd4b841808b6cd3471bd3ad99-ca919ea1e25c4202aee541a736e6c772-0_1.jpg'></td><td>2015-07-17 11:39:55</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/firefighters-battle-large-forest-fire-in-southern-/nm2Mb/'>site</a></td><td>In the Greek capital of Athens, a large brush fire burned across Ymittos hill.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.cbc.ca/1.3156470.1437133447!/cpImage/httpImage/image.jpg_gen/derivatives/original_620/greece-fire.jpg'></td><td>2015-07-17 11:50:36</td><td><a href='http://www.cbc.ca/news/world/greek-firefighters-battle-wildfires-near-athens-other-areas-1.3156467?cmp=rss'>site</a></td><td><table><tr><td>Firefighters battle blazes in southern Greece</td></tr><tr><td>Greek firefighters battled large brush and forest fires on the outskirts of Athens and in the country's southern Peloponnese region Friday that forced the evacuation of at least three villages and two summer camps.</td></tr><tr><td>Forest and brush fires are common during Greece's hot, dry summers.</td></tr><tr><td>In 2007, massive forest fires ravaged southern Greece, devastating dozens of villages and killing more than 60 people.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/29/ee/1e/adfaea49ca8b4dfd833bf570cc00346b-bc92631047ad4a6d920a8021d2de65e6-0.jpg'></td><td>2015-06-30 00:14:06</td><td><a href='http://www.daytondailynews.com/ap/ap/health/chobani-selected-as-greek-yogurt-provider-for-scho/nmny6/'>site</a></td><td>Chobani, a manufacturer of Greek yogurt, officials announced Monday, June 29, 2015, it had been selected by the U.S. Department of Agriculture to supply the yogurt as part of the federal school lunch program.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/EQJx.ZII0wtDCREYr3i25g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/348b5780fcc3cf1c7a0f6a7067009d91.jpg'></td><td>2015-06-30 00:14:17</td><td><a href='http://news.yahoo.com/chobani-selected-greek-yogurt-provider-school-lunches-213057451.html'>site</a></td><td><table><tr><td>Chobani selected as Greek yogurt provider for school lunches</td></tr><tr><td>Chobani was selected as the exclusive provider after it successfully led a Greek yogurt pilot program over the past year, expanding the program from four to 12 states.</td></tr><tr><td>During the first three months of the pilot program, schools in Idaho, New York, Arizona and Tennessee consumed 200,000 pounds of Chobani Greek yogurt.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 00:16:05</td><td><a href='http://www.charlotteobserver.com/living/health-family/article25762870.html#storylink=rss'>site</a></td><td>Public schools across America will soon offer Greek yogurt as a meat substitute in school lunches beginning this fall.</td></tr>
 </table></body></html>
