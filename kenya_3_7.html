@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 15:42:55</td><td><a href='http://www.ctvnews.ca/politics/kenya-prepares-to-welcome-obama-to-the-country-where-his-father-was-born-1.2481678'>site</a></td><td>Kenya prepares to welcome Obama to the country where his father was born</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/22/33/16/0d87b20ce2d54d7496b13df1a5b356a6-baaefd819c134d3687303d02f01c62e8-1.jpg'></td><td>2015-07-22 21:15:22</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/obama-and-kenya-1st-trip-to-fathers-homeland-as-pr/nm43c/'>site</a></td><td>This week, Obama will make his first visit to Kenya as U.S. president, a trip that will bear little resemblance to the 1988 one, when he arrived aboard commercial flight and his luggage got lost.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 18:00:35</td><td><a href='http://www.startribune.com/obama-s-africa-visit-troubles-human-rights-groups/318313551/'>site</a></td><td>Obama will become the first sitting U.S. president to visit Kenya, his ancestral homeland, when he arrives Friday to attend a business summit and meetings with President Uhuru Kenyatta.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 10:35:40</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28490806.html#storylink=rss'>site</a></td><td>There also may have been a reluctance in the first term to feed the conspiracy theorists who refuse to believe that Obama was born in Hawaii, not in Kenya.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.usnews.com/dims4/USNEWS/940b840/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F59%2F255a90e54f11d3f62a23e84338cdfe%2Fmedia%3A71ae1bbcc77745d7b2318cd85bc07f9eKenyaObama.JPEG'></td><td>2015-07-24 18:22:15</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/24/obama-voices-support-for-gay-rights-as-africa-trip-nears'>site</a></td><td>The president's father, Barack Obama Sr., left Kenya as a young man to study at the University of Hawaii.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/b6/31/af7f80a18eb349d785d5672024c0c875-a90f6d9454c34308af25100a346949a9-0_1.jpg'></td><td>2015-07-24 18:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/obama-voices-support-for-gay-rights-as-africa-trip/nm5zN/'>site</a></td><td>Obama's link to Kenya, where he began his first visit as U.S. president, is a father he barely knew but whose influence can nonetheless be seen in his son's presidency.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-24 20:00:23</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486712&ref=rss'>site</a></td><td>NAIROBI, Kenya (AP) " Fulfilling the hopes of millions of Kenyans, Barack Obama returned to his father's homeland Friday for the first time as U.S. president, a long sought visit by a country that considers him a local son.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48209801,width-300,resizemode-4/Obama.jpg'></td><td>2015-07-24 20:53:33</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Obama-returns-to-Kenya-reunites-with-fathers-family/articleshow/48209777.cms'>site</a></td><td>Auma Obama said she believed her late father would be proud to see his son return to Kenya as American president.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='ww.smh.com.au/content/dam/images/g/i/k/9/m/r/image.related.articleLeadwide.620x349.gik9j9.png/1437786688023.jpg'></td><td>2015-07-25 00:02:06</td><td><a href='http://www.smh.com.au/world/kenya-bids-welcome-home-to-president-obama-20150725-gik9j9.html'>site</a></td><td>Obama's father was born here in 1936 and died in 1982, and Obama is widely viewed as a son of Kenya.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03387/President-Barack-O_3387037g.jpg'></td><td>2015-07-25 09:08:52</td><td><a href='http://www.telegraph.co.uk/news/worldnews/barackobama/11762563/Barack-Obama-in-Kenya-Africa-is-on-the-move.html'>site</a></td><td>President Barack Obama heralded Africa as a continent "on the move" Saturday as he opened a US-sponsored business summit in Kenya, the East African nation where he has deep family ties.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-25 09:35:08</td><td><a href='http://www.cbc.ca/news/world/obama-at-kenya-business-summit-africa-is-on-the-move-1.3167615?cmp=rss'>site</a></td><td>Obama's visit to Kenya - the first by a sitting U.S. president - has been highly anticipated in a nation that views him as a local son.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://cdnph.upi.com/ph/st/th/6901437757392/2015/i/14377837871415/v1.2/Obama-arrives-in-Africa-to-start-weekend-trips-in-Kenya-Ethiopia.jpg?lg=1'></td><td>2015-07-25 12:11:07</td><td><a href='http://www.upi.com/Top_News/World-News/2015/07/25/Obama-kicks-off-Africa-visit-hails-Kenyas-growth-and-potential/1741437822909/'>site</a></td><td>"Kenya is leading the way," Obama said.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/25/07/af/1dfa0d4049354d55a31e13cfe5f08b82-7269603508d240cc8d1b5977b98a71ac-0_1.jpg'></td><td>2015-07-25 19:03:35</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/obama-in-kenya-africa-is-on-the-move/nm6Z4/'>site</a></td><td>In Kenya, Obama blends blunt messages with warm reflections</td></tr>
+</table></body></html>

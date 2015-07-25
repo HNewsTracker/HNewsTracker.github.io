@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 21:20:07</td><td></td><td><a href='kenya_3_4.html'>On Friday, July 24, 2015 Obama is due to arrive in Kenya, the country of his father's birth, for the first time since he was a U.S. senator in 2006, and the first stop on his two-nation African tour in which he will also visit Ethiopia. (22)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 18:00:35</td><td></td><td><a href='kenya_3_6.html'>The letter expressed concern that both countries are using national security concerns to stifle the media as well as civic participation and, in Kenya, to crack down on Somali refugees who have fled the instability in their home country. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 05:45:40</td><td></td><td><a href='kenya_3_5.html'>Despite the intense focus on the American leader's local roots, the White House has cast the trip as one focused on the relationship between the U.S. and Kenya, not the president and his family. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 18:00:35</td><td></td><td><a href='kenya_3_4.html'>The letter expressed concern that both countries are using national security concerns to stifle the media as well as civic participation and, in Kenya, to crack down on Somali refugees who have fled the instability in their home country. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 18:22:15</td><td></td><td><a href='kenya_3_5.html'>President Barack Obama waves as he walks with Kenyan President Uhuru Kenyatta to sign a guest book after arriving at Kenyatta International Airport, on Friday, July 24, 2015, in Nairobi, Kenya. (10)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 20:00:23</td><td></td><td><a href='kenya_3_7.html'>NAIROBI, Kenya (AP) " Fulfilling the hopes of millions of Kenyans, Barack Obama returned to his father's homeland Friday for the first time as U.S. president, a long sought visit by a country that considers him a local son. (13)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-25 05:45:40</td><td></td><td><a href='kenya_3_6.html'>Despite the intense focus on the American leader's local roots, the White House has cast the trip as one focused on the relationship between the U.S. and Kenya, not the president and his family. (3)</a></td></tr>
 </table></body></html>

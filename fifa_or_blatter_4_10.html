@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 13:51:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article25701787.html#storylink=rss'>site</a></td><td>"I call on all concerned - including Mr. Blatter - to endorse in the interest of the reforms unequivocally the announced changing of the guard at the top of FIFA," Scala said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297727194640_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-20 17:46:03</td><td><a href='http://www.torontosun.com/2015/07/20/fifa-to-set-up-taskforce-in-bid-to-reform'>site</a></td><td>FIFA has been under pressure to carry out reforms following a series of scandals over the past few years.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:50:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28700482.html#storylink=rss'>site</a></td><td><table><tr><td>The Latest: O'Neill puzzled by FIFA seeding system</td></tr><tr><td>"I don't know what sort of system FIFA use anymore, and I'm not even sure FIFA know what sort of system they use," said O'Neill, who captained Northern Ireland at the 1982 World Cup, long before FIFA created its rankings.</td></tr></table></td></tr>
 </table></body></html>
