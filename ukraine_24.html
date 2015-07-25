@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 13:49:47</td><td></td><td><a href='ukraine_24_25.html'>MOSCOW (AP) - An unidentified gunman shot and killed three postal workers Friday as they were transporting money in eastern Ukraine, escaping with the equivalent of $115,000, police said. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 13:55:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26943844.html#storylink=rss'>site</a></td><td>Both the government of Ukraine and its people have been under severe economic stress recently.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 16:55:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/16/little-certainty-1-year-after-airliner-shot-down-in-ukraine'>site</a></td><td>A year since a Malaysia Airlines Boeing 777 was blown out of the sky over war-ravaged eastern Ukraine, killing 298 people, there has been little definitive progress in determining what brought down Flight MH17.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 16:55:14</td><td></td><td><a href='ukraine_24_25.html'>The probe is being led by The Netherlands because 196 of the victims were Dutch, and Ukraine agreed to give Holland formal responsibility for the investigation. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 16:55:14</td><td><a href='http://www.seattlepi.com/news/crime/article/Little-certainty-1-year-after-airliner-shot-down-6388730.php'>site</a></td><td>Little certainty 1 year after airliner shot down in Ukraine</td></tr>
 </table></body></html>

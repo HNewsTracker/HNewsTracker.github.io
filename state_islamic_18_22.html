@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,4 +50,6 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150625&i=109106528&w=240&r=109106528-1&t=2'></td><td>2015-06-25 21:17:05</td><td><a href='http://www.reuters.com/article/2015/06/25/us-mideast-crisis-syria-idUSKBN0P50LA20150625?feedType=RSS&feedName=worldNews'>site</a></td><td>Syrian state TV said Islamic State was expelling residents from their homes in al-Nashwa, executing people and detaining them.</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-06-30 13:45:46</td><td><a href='http://www.startribune.com/syrian-troops-regain-area-from-is-in-northeastern-city/310927191/'>site</a></td><td>Syrian troops regain neighborhood they lost earlier in battles with Islamic State group</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 18:13:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27896119.html#storylink=rss'>site</a></td><td>Twitter and Facebook accounts affiliated with the Islamic State group said 26 people were killed and around 100 others wounded in the attacks.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/b1/b2/083f59556c684f57be79753843c7f53e-6ec7eecb3ab44e44871490f7fdbc5855-0.jpg'></td><td>2015-07-24 12:45:32</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/turkey-says-jets-strike-is-targets-in-syria/nm5xs/'>site</a></td><td>For their part, Turkish police launched a major operation Friday against terror groups including Islamic State, carrying out simultaneous raids in Istanbul and 12 provinces and detaining more than 290 people.</td></tr>
 </table></body></html>

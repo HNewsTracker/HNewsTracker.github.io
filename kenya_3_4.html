@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 14,
+            max: 15,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -62,4 +62,5 @@
   <tr><td style='display:none'>11</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/k/9/m/r/image.related.articleLeadwide.620x349.gik9j9.png/1437786688023.jpg'></td><td>2015-07-25 00:02:06</td><td><a href='http://www.brisbanetimes.com.au/world/kenya-bids-welcome-home-to-president-obama-20150725-gik9j9.html'>site</a></td><td>President Barack Obama poses for a photograph with Joan Wamaitha, 8, who gave him flowers on his arrival at the Jomo Kenyatta International Airport in Nairobi, Kenya.</td></tr>
   <tr><td style='display:none'>12</td><td><img src='ww.smh.com.au/content/dam/images/g/i/k/9/m/r/image.related.articleLeadwide.620x349.gik9j9.png/1437786688023.jpg'></td><td>2015-07-25 00:02:06</td><td><a href='http://www.smh.com.au/world/kenya-bids-welcome-home-to-president-obama-20150725-gik9j9.html'>site</a></td><td><table><tr><td>Obama's father was born here in 1936 and died in 1982, and Obama is widely viewed as a son of Kenya.</td></tr><tr><td>Obama first came to Kenya in 1987 to trace his father's story and to meet his Kenyan family.</td></tr></table></td></tr>
   <tr><td style='display:none'>13</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 02:28:32</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28681015.html#storylink=rss'>site</a></td><td>Kenya welcomes President Obama</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-07-25 05:45:40</td><td><a href='http://www.startribune.com/obama-voices-support-for-gay-rights-as-africa-trip-nears/318393691/'>site</a></td><td>Obama's first trip to Kenya nearly 30 years ago was a quest to fill in the gaps in the story of his father's life.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 12:15:17</td><td></td><td><a href='ukraine_19_20.html'>The Communist party has been an important force in Ukraine, polling 13 percent in the 2012 parliamentary election, but its popularity plummeted over its support for ex-President Viktor Yunukovych. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 01:21:55</td><td><a href='http://www.rferl.org/contentlive/ukraine-live-blog/27133576.html'>site</a></td><td>"This training is part of our long-running defense cooperation with Ukraine."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/11/9b/dd/0e38676b4cd947c385fc030fcd29bd02-b3c6a39a35b4482e876f3afaafc220da-0.jpg'></td><td>2015-07-11 19:05:54</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/at-least-2-dead-in-in-ukraine-sports-club-attack/nmxPp/'>site</a></td><td>Right Sector was one of the most militant factions in the massive protests in Ukraine's capital that led to pro-Russia President Viktor Yanukovych fleeing the country in February 2014.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 19:05:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/11/at-least-2-dead-in-in-ukraine-sports-club-attack'>site</a></td><td>At least two people were killed Saturday in a gun and grenade attack in a western Ukraine city involving the country's notorious nationalist militia Right Sector.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 14:07:01</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/13/right-sector-gunmen-take-boy-hostage-in-western-ukraine'>site</a></td><td><table><tr><td>Right Sector gunmen take boy hostage in western Ukraine</td></tr><tr><td>KIEV, Ukraine (AP) - Two gunmen from Ukraine's nationalist Right Sector militia on Monday briefly took a 6-year-old boy hostage in western Ukraine as a standoff between the gunmen and police entered its third day.</td></tr></table></td></tr>
 </table></body></html>
