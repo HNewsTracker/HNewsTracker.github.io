@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:28:38</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/20/us-senator-mccain-slams-european-stance-on-ukraine'>site</a></td><td><table><tr><td>McCain has been a lively supporter of legislation passed in the U.S. Senate this week that includes provisions to supply Ukraine with hundreds of millions of dollars in defence military equipment.</td></tr><tr><td>The U.S. Senate this week approved a bill that includes provisions to supply Ukraine with $300 million worth of defensive military equipment.</td></tr><tr><td>Russia condemns U.S. military aid to Ukraine and says it will foment instability.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 11:38:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-mh17-anniversary-20150717-story.html'>site</a></td><td>Speaking in Kiev late Thursday, Ukrainian President Petro Poroshenko said the flight was the victim of a "terrorist attack launched from the territory occupied by Russian-backed militants in the east of Ukraine."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/7/k/j/image.related.articleLeadwide.620x349.gif7ks.png/1437181815575.jpg'></td><td>2015-07-18 01:12:03</td><td><a href='http://www.brisbanetimes.com.au/world/mh17-crash-ukraine-points-finger-at-russia-as-families-mark-anniversary-20150718-gif7ks.html'>site</a></td><td>Ukraine has consistently blamed Russia, but President Petro Poroshenko's comments were his most direct to date.</td></tr>
 </table></body></html>

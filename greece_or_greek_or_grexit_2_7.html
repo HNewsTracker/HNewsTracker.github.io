@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/.wCGYVaaBFrb.sxsjSKDXQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3aec3cfdc9b3421d7b0f6a706700df8c.jpg'></td><td>2015-07-05 06:09:01</td><td><a href='http://news.yahoo.com/family-divided-emotions-run-high-ahead-greek-vote-060901498.html'>site</a></td><td>"This situation will create a war within the people. Greek versus Greek. The people are divided right now, about 50-50. What happens the day after the referendum? I'm afraid."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-05 06:15:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11476166&ref=rss'>site</a></td><td>"I'm afraid for my future. I see people fired every day. I worry because I see people starving outside on the road. It's scary. All my classmates from high school have left for England or America. Nobody stays in Greece. But we are Greek, we should stay. But how can I say I will find a job?"</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/images/International/AP_GREECE_150706_DG_16x9t_144.jpg'></td><td>2015-07-06 15:41:06</td><td><a href='http://abcnews.go.com/Business/greece-vote-countrys-future/story?id=32248849'>site</a></td><td>Here's What Happens Next in Greece</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150713001154948815-minihighres.jpg?itok=G-2UngSU'></td><td>2015-07-13 01:02:30</td><td><a href='http://www.sbs.com.au/news/article/2015/07/13/greece-must-do-more-earn-rescue-eurozone-leaders'>site</a></td><td>One diplomat said that was tantamount to turning Greece into a "German protectorate".</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 12:45:38</td><td><a href='http://time.com/3962411/german-parliament-greece-bailout-plan/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>(BERLIN)-German lawmakers voted Friday overwhelmingly in favor of the new bailout plan for Greece after Chancellor Angela Merkel argued that the cash-strapped country would face chaos without a deal.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td>Berlin: German lawmakers cleared the way for talks on a third Greek bailout after Chancellor Angela Merkel warned that failing to try would be reckless and sow chaos.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/germany_bailout.jpg?itok=6U7qXOHf'></td><td>2015-07-17 21:13:26</td><td><a href='http://www.sbs.com.au/news/article/2015/07/18/german-lawmakers-back-greek-bailout-tsipras-sacks-dissenters'>site</a></td><td>German lawmakers back Greek bailout, Tsipras sacks dissenters</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-24 11:35:12</td><td><a href='http://www.startribune.com/greek-talks-to-begin-after-technical-issues-ironed-out/318406061/'>site</a></td><td>ATHENS, Greece - High-level talks between Greece and its European creditors on a third bailout for the cash-strapped country have been delayed until logistical matters are sorted out.</td></tr>
 </table></body></html>

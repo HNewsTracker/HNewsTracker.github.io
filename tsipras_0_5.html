@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31374878.ece/aebdf/ALTERNATES/h342/PANews%20BT_P-8bd34f8e-2093-4d6c-83d4-1d3f28dae5a6_I1.jpg'></td><td>2015-07-14 06:21:16</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/tsipras-faces-bailout-deal-dissent-31374879.html'>site</a></td><td>Passage of the new measures appears assured, since Greece's opposition parties have pledged to support Mr Tsipras' deal.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 08:09:00</td><td><a href='http://www.ctvnews.ca/business/greece-pm-tsipras-faces-dissent-on-bailout-deal-1.2467994'>site</a></td><td>Tsipras is expected to have the numbers in Parliament to pass the measures, since he will have the support of most opposition parties.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td>Ahead of the summit, Tsipras spoke by phone with German Chancellor Angela Merkel.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 06:53:36</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/the-latest-german-official-says-tsipras-criticism-unhelpful'>site</a></td><td>The Latest: German official says Tsipras criticism unhelpful</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 18:15:42</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/16/on-the-brink-eu-leaders-clinched-bailout-deal-_/'>site</a></td><td>For three hours, Merkel, Tsipras, Tusk and French President Francois Hollande had been stuck in dead-end closed-door talks, and the message suddenly made something click.</td></tr>
 </table></body></html>

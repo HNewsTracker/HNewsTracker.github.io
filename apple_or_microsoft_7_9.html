@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 06:04:18</td><td><a href='http://www.reuters.com/article/2015/07/08/us-microsoft-redundancies-idUSKCN0PI0GL20150708?feedType=RSS&feedName=technologyNews'>site</a></td><td>The layoffs are expected to affect employees at the hardware group and other parts of the company, including the smartphone business that Microsoft acquired from Nokia last year, the newspaper said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/3f6/report-on-business/article25349385.ece/ALTERNATES/w220/-OUKBS-UK-MICROSOFT-REDUNDA.JPG'></td><td>2015-07-08 07:11:49</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/microsoft-plans-major-job-cuts-report/article25349386/?cmpid=rss1'>site</a></td><td>Microsoft Corp, the world's largest software company, plans to announce a new round of layoffs as early as Wednesday as it tries to cut costs further, the New York Times reported.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 23:02:43</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-sheds-some-of-its-ad-business-mapping-6356522.php'>site</a></td><td><table><tr><td>That means Microsoft will get a share of revenue from advertising that's tied directly to Internet searches performed on AOL.</td></tr><tr><td>Under its agreement with AOL, Microsoft is unloading a business that's declined in importance over recent years.</td></tr><tr><td>Microsoft and AOL declined to reveal details of how they will share revenue from the new pact.</td></tr></table></td></tr>
 </table></body></html>

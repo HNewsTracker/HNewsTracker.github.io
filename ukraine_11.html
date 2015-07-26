@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 03:21:18</td><td><a href='http://www.sfgate.com/news/politics/article/White-House-Putin-calls-Obama-discuss-Ukraine-6350088.php'>site</a></td><td>The call came on the same day NATO's supreme allied commander cited a continuous flow of ammunition and other military supplies from Russia across the border to Ukraine.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 03:21:18</td><td></td><td><a href='ukraine_11_12.html'>Russian President Vladimir Putin and President Barack Obama spoke by telephone Thursday and discussed continued tensions in eastern Ukraine and the fight against the Islamic State in the Middle East. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 06:57:34</td><td></td><td><a href='ukraine_11_12.html'>At the White House, President Barack Obama echoed the need for Ukraine to stick with austerity measures during a meeting Monday with Yatsenyuk and Vice President Joe Biden. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 06:57:34</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/14/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers'>site</a></td><td>Yatsenyuk's U.S. visit came amid growing global concerns over proposed legislation in Ukraine's parliament that would water down economic reforms demanded by the international community.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 16:30:17</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/14/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers'>site</a></td><td><table><tr><td>Ukraine PM says reforms continue despite 'lunatic' lawmakers</td></tr><tr><td>A day earlier, the International Monetary Fund insisted that Ukraine must "stay the course," suggesting that rolling back the changes could jeopardize the IMF's $40 billion support package for Ukraine.</td></tr></table></td></tr>
 </table></body></html>
