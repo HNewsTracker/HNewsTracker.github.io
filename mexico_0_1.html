@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/cvmIug0Y6KSg7FdWLi7PCQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f1b4ba88fbc8ca1c7a0f6a706700a6a3.jpg'></td><td>2015-06-30 17:11:30</td><td><a href='http://news.yahoo.com/mexico-wont-send-contestant-miss-universe-161930261.html'>site</a></td><td>MEXICO CITY (AP) - Mexico's national beauty pageant director confirms the country won't send a contestant to the Miss Universe contest because of insulting remarks by Donald Trump, an owner of the pageant.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 17:14:05</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article25832251.html#storylink=rss'>site</a></td><td>Jones was Miss Universe 1991 and runs the Mexico competition.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 21:22:57</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/25/verizon-workers-vote-to-authorize-strike-if/'>site</a></td><td><table><tr><td>Indeed, Mexico did outplay Costa Rica in the quarterfinals, though that game was moments from going to penalty kicks until El Tri benefited from another questionable call in the last minute of extra time.</td></tr><tr><td>The only way Mexico has been able to score during the knockout rounds is on penalty kicks.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 16:57:09</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-led-airdrops-shower-leaflets-over-islamic-state/nm3H2/'>site</a></td><td><table><tr><td>A U.S.-led coalition dropped new leaflets over the de facto capital of the Islamic State group in Syria, promising those below that "freedom will come" to the region, activists said Sunday.</td></tr><tr><td>An anti-Islamic State group called Raqqa is Being Silently Slaughtered and the Britain-based Syrian Observatory for Human Rights said the leaflets had drawings showing dead extremists and their flag turned upside down.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 16:57:09</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/us-led-airdrops-shower-leaflets-over-islamic-state-territory'>site</a></td><td>US-led airdrops shower leaflets over Islamic State territory</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 16:46:41</td><td><a href='http://www.reuters.com/article/2015/06/26/us-mideast-crisis-syria-idUSKBN0P60UY20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>Islamic State pressed a separate assault to capture government-held parts of the northeastern city of Hasaka, blowing up a security building and triggering a government appeal for all residents to take up arms.</td></tr><tr><td>Unlike the Kobani raid, the Islamic State attack on Hasaka appears aimed at wresting control of the government-held parts of city, which is divided into areas run separately by President Bashar al-Assad's government and the YPG.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/q/e/e/image.related.articleLeadwide.620x349.gigq9a.png/1437423230046.jpg'></td><td>2015-07-20 20:14:07</td><td><a href='http://www.smh.com.au/world/suspected-islamic-state-suicide-bomber-kills-30-in-suruc-turkey-20150720-gigq9a'>site</a></td><td>The protesters blamed the Suruc blast on lax government action on Islamic State.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 08:05:12</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28689118.html#storylink=rss'>site</a></td><td>Kurdish groups held the Turkish government responsible for the blast, saying it had not been aggressive in battling the Islamic State group.</td></tr>
 </table></body></html>

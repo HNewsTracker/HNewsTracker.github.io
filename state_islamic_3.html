@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31386331.ece/5c081/ALTERNATES/h342/PANews%20BT_P-7fc194eb-9143-462f-82a5-7f0edbeaf9cd_I1.jpg'></td><td>2015-07-18 11:17:28</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/islamic-state-marketplace-attack-in-iraq-kills-115-31386332.html'>site</a></td><td>The mostly-Shiite victims had gathered to mark the end of the Islamic holy month of Ramadan, which ended Friday for Iraqi Shiites and a day earlier for Iraqi Sunni Muslims.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 11:28:53</td><td></td><td><a href='state_islamic_3_4.html'>An attack by the Islamic State group on a crowded marketplace in Iraq's eastern Diyala province has killed 115 people, including women and children, in one of the deadliest single attacks in the country in the past decade. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 17:41:40</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/in-an-is-training-camp-children-told-behead-the-doll'>site</a></td><td>When Islamic State extremists overran Yazidi towns in northern Iraq last year, they butchered older men and enslaved many of the women and girls.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 18:07:05</td><td></td><td><a href='state_islamic_3_4.html'>He explained how more than 120 children inside the camp had to line up and they were each given a doll and a sword, waiting for their next lesson by their Islamic State group instructors: Behead the doll. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-19 18:07:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27537532.html#storylink=rss'>site</a></td><td>A caliphate is a historic form of Islamic rule that the group claims to be reviving, though the vast majority of Muslims reject its claim.</td></tr>
 </table></body></html>

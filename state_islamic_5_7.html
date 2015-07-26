@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 19:40:22</td><td><a href='http://abcnews.go.com/US/wireStory/northern-virginia-teen-admits-guilt-terror-related-charge-31689340'>site</a></td><td>In addition to helping 18-year-old Reza Niknejad of Prince William County travel to Syria, Amin also admitted using Twitter and other social media to solicit donations and support for the Islamic State.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 19:44:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article23744893.html#storylink=rss'>site</a></td><td>Last year, Amin's Twitter feed drew the attention of the State Department, which under its "Think Again Turn Away" social media campaign sought to counter Amin's glorification of the Islamic State and debated him directly online, at one point telling AmreekiWitness to "join reality."</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-11 19:45:18</td><td><a href='http://news.yahoo.com/us-teen-admits-guilt-terror-related-charge-142624177.html'>site</a></td><td>Authorities said Amin was a sophisticated user of social media and that he also helped people make anonymous financial contributions to the Islamic State using Bitcoin.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:30:57</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/turkish-bombing-of-islamic-state-marks-end-of-tacit-truce'>site</a></td><td><table><tr><td>ISTANBUL (AP) - Last month, the first edition of the Islamic State group's Turkish-language magazine contained not a word of criticism of the Turkish government.</td></tr><tr><td>On Thursday, as Turkey's government tried to counter criticism over the suicide bombing, Islamic State struck again, this time in an ambush along the border that left a Turkish soldier dead.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/24/7bfaf9a700d81e217d0f6a706700bbe1_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-24 18:30:57</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/24/turkish-bombing-of-islamic-state-marks-end-of/'>site</a></td><td><table><tr><td>Turkish bombing of Islamic State marks end of tacit truce</td></tr><tr><td>The abrupt shift in Islamic State's Turkish propaganda magazine shows just how quickly a tacit truce has come apart.</td></tr></table></td></tr>
 </table></body></html>
