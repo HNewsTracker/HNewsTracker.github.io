@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/7/1/greek-bailout-money-went-to-banks-not-greece/_jcr_content/image.adapt.480.low.greece_newlede_070215.jpg'></td><td>2015-07-04 12:25:00</td><td><a href='http://america.aljazeera.com/articles/2015/7/4/greek-minister-europe-cant-afford-to-let-athens-go-under.html'>site</a></td><td>Europe will lose a trillion euros if it allows Greece to go under, the country's finance minister said Saturday, accusing creditors of "terrorizing" Greeks into accepting austerity in a referendum on bailout terms.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media1.s-nbcnews.com/j/newscms/2015_27/1107211/150705-greece-no-1248_11313098fbc22543117292a7f9250403.nbcnews-fp-360-360.jpg'></td><td>2015-07-05 16:52:39</td><td><a href='http://www.nbcnews.com/news/world/opinion-polls-show-no-ahead-greek-referendum-vote-count-n387001'>site</a></td><td>Greece's leftwing government called the referendum only a week ago after it rejected the tough terms offered by international creditors as the price for releasing billions of euros in bailout funds.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-09 12:10:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/09/easier-terms-for-greece-could-open-a-can-of-worms-in-europe'>site</a></td><td>With that in mind, the Irish government's message to Greece is the most clear-cut of Europe's fellow bailout recipients: If you want to get out of the hole, admit you dug it yourself, stop blaming others - and do everything possible to reassure creditors you can be trusted to pay your bills.</td></tr>
+</table></body></html>

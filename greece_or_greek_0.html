@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 24,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 24 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 14:03:00</td><td></td><td><a href='greece_or_greek_0_14.html'>The move comes after Tsipras called for a referendum on creditor proposals for Greek reforms in return for bailout cash - a decision which shocked Greece's European partners. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.independent.co.uk/incoming/article10351197.ece/alternates/w460/Greece-Euro-billboard-Getty.jpg'></td><td>2015-06-28 15:28:34</td><td><a href='http://www.independent.co.uk/news/world/europe/greece-debt-crisis-european-central-bank-says-it-is-not-increasing-emergency-credit-amid-default-fears-10351221.html'>site</a></td><td>Yannis Stournaras, the governor of the Bank of Greece, said the bank would "take all measures necessary to ensure financial stability for Greek citizens in these difficult circumstances".</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 18:03:24</td><td></td><td><a href='greece_or_greek_0_7.html'>It has been allowing Greek banks to draw emergency credit from Greece's central bank, a financial lifeline that has been keeping Greece's four major banks going during the country's tense bailout negotiations with creditors. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-28 18:24:13</td><td></td><td><a href='greece_or_greek_0_3.html'>ATHENS, Greece (AP) - Greek banks will remain shut for an unspecified time and the country is imposing restrictions on bank withdrawals following a recommendation by the Bank of Greece, the country's prime minister said Sunday. (4)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-30 07:13:51</td><td></td><td><a href='greece_or_greek_0_4.html'>"The Brazilian real was knocked back hard these past days as have the Turkish lira and most other emerging Asian currencies. These associations are made to Greece as they fall under the labeling of global emerging markets." (5)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-30 07:13:51</td><td></td><td><a href='greece_or_greek_0_12.html'>TOKYO - Asian stock markets bounced back Tuesday, recouping some of the previous day's sharp losses, but investors remained worried the crisis in Greece could spread to other financially weak countries. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-30 08:34:38</td><td></td><td><a href='greece_or_greek_0_5.html'>Elderly people, who usually get their pensions at the end of the month, wait outside a closed bank in the northern Greek port city of Thessaloniki, Monday, June 29, 2015. (2)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-30 19:35:47</td><td></td><td><a href='greece_or_greek_0_2.html'>The brinkmanship that has characterized Greece's bailout negotiations with its European creditors and the IMF rose several notches over the weekend, when Prime Minister Alexis Tsipras announced he would put a deal proposal by creditors to a referendum on Sunday. (88)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-02 06:14:45</td><td><a href='http://finance.yahoo.com/news/asia-shares-subdued-greek-anxiety-004926180.html'>site</a></td><td>"We are shaping up for a bumpy ride in the summer as the Greek crisis means a risk-on, risk-off approach is seen in the markets," said Tai Hui, chief markets strategist at JP Morgan Asset Management in Hong Kong.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-02 07:01:46</td><td><a href='http://abcnews.go.com/Business/wireStory/crisis-stronger-banks-economies-ease-fear-greece-32174171'>site</a></td><td>Rescuing Greece was one thing.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/T8q75FAY1WwN5utBiYir6A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/aecf6dc774c7061d7b0f6a706700d458.jpg'></td><td>2015-07-02 07:11:42</td><td><a href='http://news.yahoo.com/crisis-stronger-banks-economies-ease-fear-over-greece-070206722.html'>site</a></td><td>European banks, for instance, now have less than $33 billion in loans and other money at risk in Greece, down from $193.5 billion at the end of 2009.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-03 13:30:04</td><td></td><td><a href='greece_or_greek_0_10.html'>A strong "No" vote, he argued, would help Greece win a new deal with the eurozone's rescue mechanism that would include terms to make the country's 320 billion euro national debt sustainable. (4)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-03 14:32:54</td><td></td><td><a href='greece_or_greek_0_1.html'>World stock markets mostly drifted lower Friday ahead of Greece's weekend referendum, while China's main stock benchmark plunged as government efforts failed to reassure panicky investors. (6)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td><table><tr><td>Flawed bailouts, political missteps brought Greece to brink</td></tr><tr><td>FRANKFURT, Germany (AP) " After two bailouts totaling 240 billion euros ($266 billion) and six years of depression, spending cuts and lost jobs, Greece teeters on the edge of collapse.</td></tr><tr><td>Greece was waved in, and promptly went back to its old ways.</td></tr></table></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-07-04 17:38:00</td><td><a href='http://www.ctvnews.ca/business/binges-and-bailouts-how-greece-got-to-the-brink-1.2453818'>site</a></td><td>There was a contradiction that couldn't be resolved: cuts in public spending were needed to reduce Greece's cost base because it couldn't devalue.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>And they share a sense that Greece, so rich with history and culture, has fallen tragically short of its potential.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-07-04 18:55:17</td><td></td><td><a href='greece_or_greek_0_6.html'>"I am forced to vote for 'yes' because I want to stay in the eurozone and the EU. I can't imagine Greece out of Europe and I don't believe that if we say 'no' we can stay. I can't take that risk. We are under the protective umbrella of the EU, a big protective social system, and we need protection. And we have to stay for political and economic reasons." (4)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-07-05 04:09:10</td><td></td><td><a href='greece_or_greek_0_8.html'>Greece's Prime Minister Alexis Tsipras delivers a speech during a rally organized by supporters of the No vote at Syntagma square in Athens, Friday, July 3, 2015. (12)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-07-05 06:09:01</td><td></td><td><a href='greece_or_greek_0_9.html'>"This situation will create a war within the people. Greek versus Greek. The people are divided right now, about 50-50. What happens the day after the referendum? I'm afraid." (2)</a></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-07-05 06:15:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11476166&ref=rss'>site</a></td><td>"I'm afraid for my future. I see people fired every day. I worry because I see people starving outside on the road. It's scary. All my classmates from high school have left for England or America. Nobody stays in Greece. But we are Greek, we should stay. But how can I say I will find a job?"</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-07-06 21:25:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-greece-options-20150706-story.html'>site</a></td><td>What are Greece's options now?</td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-07-07 15:57:33</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/the-latest-france-pledges-effort-to-keep-greece-in-euro'>site</a></td><td>Rutte, a close ally of German Chancellor Angela Merkel, told reporters Tuesday he was "extremely somber about this summit. I'm also somber about the question of whether Greece really wants to come up with proposals, with a solution."</td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-07-09 12:10:04</td><td></td><td><a href='greece_or_greek_0_13.html'>With that in mind, the Irish government's message to Greece is the most clear-cut of Europe's fellow bailout recipients: If you want to get out of the hole, admit you dug it yourself, stop blaming others - and do everything possible to reassure creditors you can be trusted to pay your bills. (4)</a></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-07-10 13:50:04</td><td></td><td><a href='greece_or_greek_0_11.html'>Asian stocks rose for a second day on Friday as the Greek government proposed a broad financial overhaul to its creditors and Beijing's attempts to arrest a sharp slide in the Chinese market appeared to be working. (6)</a></td></tr>
+</table></body></html>
