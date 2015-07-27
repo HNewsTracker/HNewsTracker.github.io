@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-06-21 21:14:37</td><td><a href='http://sports.yahoo.com/news/jd-martinez-hits-3-hrs-tigers-tag-tanaka-203218863--mlb.html'>site</a></td><td>JD Martinez hits 3 HRs, Tigers tag Tanaka and top Yanks 12-4 (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/bt/api/res/1.2/uTx3Y32fjujEh43JwDpTtw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507041140420413307'></td><td>2015-07-04 21:30:28</td><td><a href='https://sports.yahoo.com/news/lamarcus-aldridge-chooses-san-antonio-spurs-170614232--nba.html'>site</a></td><td>LaMarcus Aldridge chooses the San Antonio Spurs (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 21:35:04</td><td><a href='http://www.miamiherald.com/sports/article26493757.html#storylink=rss'>site</a></td><td>Yahoo Sports first reported the agreement.</td></tr>
 </table></body></html>

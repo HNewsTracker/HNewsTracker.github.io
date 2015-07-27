@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-27 00:38:19</td><td><a href='http://www.daytondailynews.com/ap/ap/us/prosecutors-question-doctor-who-found-theater-shoo/nmmPD/'>site</a></td><td><table><tr><td>Doctor who found Holmes insane didn't watch much of video</td></tr><tr><td>Brauchler pointed out that Woodcock didn't talk to Holmes about the crime or his plans for the shooting in either interview and already completed a report concluding he was insane before the second, one-hour interview.</td></tr><tr><td>But, pressed further by defense attorney Daniel King, Woodcock said he reviewed Reid's report based on the interview and many other records and evidence and did not find anything that would have changed his own conclusion about Holmes.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-27 00:39:14</td><td><a href='http://abcnews.go.com/US/wireStory/prosecutors-question-doctor-found-theater-shooter-insane-32043308'>site</a></td><td>In response to their inquiries, Woodcock reaffirmed his conclusion that Holmes was insane.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 16:16:08</td><td><a href='http://www.miamiherald.com/news/nation-world/article27191845.html#storylink=rss'>site</a></td><td><table><tr><td>Holmes surrendered to police outside the theater.</td></tr><tr><td>They also examined scores of pieces of evidence, including Holmes' guns and ammunition.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 23:40:16</td><td><a href='http://www.startribune.com/theater-shooting-key-events-in-the-life-of-james-holmes/316051211/'>site</a></td><td>July 20, 2012 - Holmes slips through a back door of the Century 16 theater in Aurora, where about 420 people are watching a midnight showing of a Batman movie, "The Dark Knight Rises," and opens fire.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 06:15:38</td><td><a href='http://www.startribune.com/despite-quick-conviction-theater-shooting-trial-isn-t-over/316095901/'>site</a></td><td>- Families of the 12 people James Holmes killed and the scores he injured in a packed movie theater were relieved that jurors only needed 12 hours to reject the idea that he was legally insane when he opened fire.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 20:45:37</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/17/despite-quick-conviction-theater-shooting-trial-isnt-over'>site</a></td><td>Despite having convicted Holmes in the killings, jurors must still determine whether to put Holmes on death row for opening fire in the crowded movie theater.</td></tr>
 </table></body></html>

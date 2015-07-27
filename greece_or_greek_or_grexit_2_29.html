@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,14 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/30/a5/e3/0910698112c24d5d96fbf47030c700c6-5b5f5318747b45cda51c9da2a32e4b61-0.jpg'></td><td>2015-06-30 08:34:57</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/tsipras-defiant-as-banks-shut-markets-rocked/nmn73/'>site</a></td><td>European officials and Greek opposition parties have warned that a rejection of the creditor proposals in Sunday's popular vote will lead Greece out of the eurozone and potentially out of the European Union itself.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=8007&amp;contextPath=7037-7986-7989-8007-&amp;pubId=13&amp;cat=&amp;meta=read-wirestory&amp;objId=26213863&amp;type=article&amp;title=World+stocks+drift+lower+ahead+of+Greek+vote%3b+China+plunges&amp;url=http%3a%2f%2fwww.charlotteobserver.com%2fnews%2fbusiness%2fnational-business%2farticle26213863.html'></td><td>2015-07-03 09:15:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26213863.html#storylink=rss'>site</a></td><td>The government says a "No" vote will put it in a better bargaining position for new terms, while European officials and the opposition say a rejection could lead to Greece's exit from the euro and Europe.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150705&i=109339515&w=240&r=109339515-1&t=2'></td><td>2015-07-03 22:08:36</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>His European partners say a 'No' vote will jeopardize Greece's membership of the euro.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>His European partners, however, say rejection would set Greece on a path out of the euro, with potentially far-reaching consequences for the global economy and Europe's grand project of an unbreakable union.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/yes-or-no-what-greeces-landmark-vote-might-bring/nmrrq/'>site</a></td><td>Proponents of a "yes" vote, including a parade of former prime ministers and the main opposition party, say backing the government will jeopardize Greece's place in the euro.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://img.rasset.ie/000ad2a2-117.jpg'></td><td>2015-07-06 23:09:09</td><td><a href='http://www.rte.ie/news/2015/0706/712881-greece-economy/'>site</a></td><td>He said: "It is up to Greece to make something of this. We are waiting to see which proposals the Greek government makes to its European partners".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 09:02:00</td><td><a href='http://www.ctvnews.ca/business/greece-to-miss-imf-debt-payment-bailout-to-expire-1.2446852'>site</a></td><td>Greece to miss IMF debt payment, bailout to expire</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 13:15:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475646&ref=rss'>site</a></td><td>Greek PM Tsipras says IMF report fully justifies Greece's position on debt relief</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-03 17:25:49</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-imf-idUSKCN0PD20120150703?feedType=RSS&feedName=topNews'>site</a></td><td>"The IMF published a report on Greece's economy which is a great vindication for the Greek government as it confirms the obvious - that Greek debt is not sustainable."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-09 12:15:28</td><td><a href='http://www.startribune.com/easier-terms-for-greece-could-open-a-can-of-worms-in-europe/312837621/'>site</a></td><td>Greece's request for some relief on its debt burden is not being well-received by some.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://stmedia.stimg.co/1436486463_10109561+1greece071015.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-10 00:34:59</td><td><a href='http://www.startribune.com/greece-racing-to-finalize-reforms-and-remain-in-euro/312788181/'>site</a></td><td>Greece has long argued its debt is too high to be paid back and that the country requires some form of debt relief.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150714&t=2&i=1064134663&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6D0JB'></td><td>2015-07-14 11:53:51</td><td><a href='http://www.reuters.com/article/2015/07/14/us-eurozone-greece-imf-report-idUSKCN0PO1CB20150714?feedType=RSS&feedName=businessNews'>site</a></td><td>Exclusive: Greece needs debt relief far beyond EU plans - Secret IMF report</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-14 23:53:27</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/14/the-latest-britain-count-us-out-for-greek-rescue-money'>site</a></td><td>But the IMF said Tuesday that "Greece's debt can now only be made sustainable through debt relief measures that go far beyond what Europe has been willing to consider so far."</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436995239589.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150715-gidayi'>site</a></td><td>The European Commission published its own assessment of Greece's debt burden on Wednesday that also offered the prospect of debt relief.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td>As Greece's economy tanked under his leadership, Tsipras' own popularity only grew.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-25 15:17:02</td><td><a href='http://www.reuters.com/article/2015/07/25/us-eurozone-greece-idUSKCN0PZ0BG20150725?feedType=RSS&feedName=worldNews'>site</a></td><td>Greece has repeatedly asked for a debt relief and the IMF has said this is needed for the Greek accord to be viable.</td></tr>
 </table></body></html>

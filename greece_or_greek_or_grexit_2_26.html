@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 09:02:00</td><td><a href='http://www.ctvnews.ca/business/greece-to-miss-imf-debt-payment-bailout-to-expire-1.2446852'>site</a></td><td>Greece to miss IMF debt payment, bailout to expire</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 13:15:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11475646&ref=rss'>site</a></td><td>Greek PM Tsipras says IMF report fully justifies Greece's position on debt relief</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-03 17:25:49</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-imf-idUSKCN0PD20120150703?feedType=RSS&feedName=topNews'>site</a></td><td>"The IMF published a report on Greece's economy which is a great vindication for the Greek government as it confirms the obvious - that Greek debt is not sustainable."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-09 12:15:28</td><td><a href='http://www.startribune.com/easier-terms-for-greece-could-open-a-can-of-worms-in-europe/312837621/'>site</a></td><td>Greece's request for some relief on its debt burden is not being well-received by some.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://stmedia.stimg.co/1436486463_10109561+1greece071015.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-10 00:34:59</td><td><a href='http://www.startribune.com/greece-racing-to-finalize-reforms-and-remain-in-euro/312788181/'>site</a></td><td>Greece has long argued its debt is too high to be paid back and that the country requires some form of debt relief.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150714&t=2&i=1064134663&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6D0JB'></td><td>2015-07-14 11:53:51</td><td><a href='http://www.reuters.com/article/2015/07/14/us-eurozone-greece-imf-report-idUSKCN0PO1CB20150714?feedType=RSS&feedName=businessNews'>site</a></td><td>Exclusive: Greece needs debt relief far beyond EU plans - Secret IMF report</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-14 23:53:27</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/14/the-latest-britain-count-us-out-for-greek-rescue-money'>site</a></td><td>But the IMF said Tuesday that "Greece's debt can now only be made sustainable through debt relief measures that go far beyond what Europe has been willing to consider so far."</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436995239589.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150715-gidayi'>site</a></td><td>The European Commission published its own assessment of Greece's debt burden on Wednesday that also offered the prospect of debt relief.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-07-25 15:17:02</td><td><a href='http://www.reuters.com/article/2015/07/25/us-eurozone-greece-idUSKCN0PZ0BG20150725?feedType=RSS&feedName=worldNews'>site</a></td><td>Greece has repeatedly asked for a debt relief and the IMF has said this is needed for the Greek accord to be viable.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 10:59:00</td><td><a href='http://www.ctvnews.ca/business/greek-bailout-talks-creditors-looking-for-more-specific-commitments-1.2464622'>site</a></td><td>Greece's banks, according to some accounts, have barely enough cash in their vaults to see the country through the week.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/35/e5/a082f47d84a94af0a47d4d82904f22e3-4a864986000e45d6aa9c3db3f4996795-0.jpg'></td><td>2015-07-19 07:11:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ious-for-rips-greeces-cash-crisis-hurts-funeral-in/nm3Cq/'>site</a></td><td><table><tr><td>Credit cards and especially checks are rarely used for such transactions in Greece, which remains a cash-based economy.</td></tr><tr><td>Cash controls have choked the country's economy as Greece sinks back in recession, according to most major forecasts.</td></tr></table></td></tr>
 </table></body></html>

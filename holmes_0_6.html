@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-27 00:41:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article25553560.html#storylink=rss'>site</a></td><td>Brauchler suggested that jurors and others in the courtroom who had watched all 22 hours of Dr. William Reid's interview, in which Holmes talked at length about his planning and preparation for the shooting, had observed him longer than Woodcock had.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 20:58:35</td><td><a href='http://www.reuters.com/article/2015/07/16/us-usa-shooting-denver-verdict-idUSKCN0PQ2DU20150716?feedType=RSS&feedName=topNews'>site</a></td><td>Holmes did not testify in his own defense, but jurors watched video of some 23 hours of interviews conducted with him by one of the court-appointed psychiatrists.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 00:43:36</td><td><a href='http://www.nydailynews.com/news/national/verdict-reached-colorado-theater-gunman-james-holmes-article-1.2294783'>site</a></td><td><table><tr><td>Jurors watched nearly 22 hours of videotaped interviews showing Holmes talking in a flat, mechanical tone about his desire to kill strangers to increase his self-worth.</td></tr><tr><td>Prosecutors showed jurors Holmes' spiral notebook, where he scribbled a self-diagnosis of his "broken mind" and described his "obsession to kill" since childhood.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td>The jurors were given permission to view a recording of Holmes after the shooting in which he asks police officers if any children were hurt.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 06:15:38</td><td><a href='http://www.startribune.com/despite-quick-conviction-theater-shooting-trial-isn-t-over/316095901/'>site</a></td><td>Now the trial enters a new phase as the jury decides whether Holmes should die for his crimes.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td>The penalty phase of the trial starts Wednesday with prosecutors telling jurors why Holmes should be eligible for execution.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/37/65/72/8347309/7/square_gallery_thumb.jpg'></td><td>2015-07-23 00:33:00</td><td><a href='http://www.sfgate.com/news/crime/article/Jurors-to-weigh-whether-Colorado-theater-shooter-6398617.php'>site</a></td><td>The monthlong penalty phase of the trial of Holmes, who could be sentenced to death for killing 12 people in a Colorado movie theater, began Wednesday morning with the judge giving instructions to the jury.</td></tr>
 </table></body></html>

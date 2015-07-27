@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 07:11:31</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/02/what-crisis-stronger-banks-economies-ease-fear-over-greece'>site</a></td><td>What crisis? Stronger banks, economies ease fear over Greece</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/T8q75FAY1WwN5utBiYir6A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/aecf6dc774c7061d7b0f6a706700d458.jpg'></td><td>2015-07-02 07:11:42</td><td><a href='http://news.yahoo.com/crisis-stronger-banks-economies-ease-fear-over-greece-070206722.html'>site</a></td><td>The long-running debt crisis has given global banks plenty of time to cut their exposure to Greece.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/30/d2/6c/e2a8d11bfc204081b2da5cf78688f217-e83dae0f6198487f8d6509dc8659efa9-0.jpg'></td><td>2015-06-30 07:13:51</td><td><a href='http://www.daytondailynews.com/ap/ap/business/asia-stocks-bounce-back-but-greece-uncertainty-sti/nmn9N/'>site</a></td><td>"The Brazilian real was knocked back hard these past days as have the Turkish lira and most other emerging Asian currencies. These associations are made to Greece as they fall under the labeling of global emerging markets."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 07:21:06</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td><table><tr><td>"Most traders are well prepped over the possible fallout of Greece. It's guessing which card will fall next that's the difficult bit," said Nicholas Teo, analyst at CMC Markets in Singapore.</td></tr><tr><td>If Greece defaults and switches to a new currency, it's sure to shake global financial markets.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/w1wFS0Z3BRlOpklqj1UG7w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b4126b422151d11d7a0f6a7067007cbb.jpg'></td><td>2015-06-30 07:53:19</td><td><a href='http://news.yahoo.com/latest-markets-edgy-greek-imf-payment-looms-072344112--finance.html'>site</a></td><td>The mood in European financial markets remained edgy amid growing expectations that Greece will not make a repayment to the International Monetary Fund.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Despite its rickety finances, Greece shaped up a little for a few years and qualified to join the single currency in 2001.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/21/4725e7daac3be4207c0f6a706700f1f9_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-22 04:05:38</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/21/time-will-tell-if-apple-watch-catches-on-as-apple/'>site</a></td><td>Time will tell if Apple Watch catches on, as Apple fans wait</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 04:10:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485148&ref=rss'>site</a></td><td><table><tr><td>NEW YORK (AP) " For all those who hailed the iPhone as the "Jesus Phone" in 2007, the Apple Watch's arrival has hardly been the second coming.</td></tr><tr><td>And of the more than a dozen early Apple Watch owners interviewed by the AP by phone, email or in person, most of them love their watch.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 04:41:59</td><td><a href='http://www.seattlepi.com/business/technology/article/Time-will-tell-if-Apple-Watch-catches-on-as-6398508.php'>site</a></td><td>That's not to say the Apple Watch is a bomb.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 21:18:52</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article26411590.html#storylink=rss'>site</a></td><td><table><tr><td>Apple bought Dre and Jimmy Iovine's Beats by Dre company last year.</td></tr><tr><td>Apple's new streaming service features live radio programming, including shows hosted by Zane Lowe, Ebro Darden and Julie Adenuga.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 21:18:52</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article26411590.html#storylink=rss'>site</a></td><td>Dr. Dre will be busting through your speakers with a new radio show on Apple Music.</td></tr>
 </table></body></html>

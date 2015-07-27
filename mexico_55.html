@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/06/22/8979706edae0201b7a0f6a706700c3ee_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-06-22 15:39:12</td><td><a href='http://www.utsandiego.com/news/2015/jun/22/mexico-deports-49-percent-more-minors-in-first-5/'>site</a></td><td>Mexico's National Immigration Institute says detentions of Central American minors have risen 49 percent compared to the similar period last year.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-22 16:26:35</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-deports-49-percent-minors-months-31942147'>site</a></td><td><table><tr><td>Mexico Deports 49 Percent More Minors in First 5 Months</td></tr><tr><td>While the wave of child and teen migrants has dropped off at the U.S. border, detentions of Central American minors are up sharply in Mexico this year.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 22:10:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11487474&ref=rss'>site</a></td><td><table><tr><td>Mexico search for missing students turns up 129 bodies</td></tr><tr><td>On Sunday, a few hundred people led by parents of the missing youths marched in Mexico City to call for justice in the case.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 01:15:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28771279.html#storylink=rss'>site</a></td><td>The search for 43 missing college students in the southern state of Guerrero has turned up at least 60 clandestine graves and 129 bodies over the last 10 months, Mexico's attorney general's office says.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/suns-prod-images/1297729779663_SMALL_BOX.jpg?quality=80&stmp=1437970855087'></td><td>2015-07-27 01:31:03</td><td><a href='http://www.torontosun.com/2015/07/26/mexico-uncovers-60-graves-with-129-bodies'>site</a></td><td>More than 20,000 people are listed as missing across Mexico, and there are many "disappeared" in Guerrero, a state that is a major opium producer and the battleground among several cartels warring over territory and drug smuggling routes.</td></tr>
 </table></body></html>

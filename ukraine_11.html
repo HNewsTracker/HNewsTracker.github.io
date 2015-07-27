@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 06:57:34</td><td></td><td><a href='ukraine_11_12.html'>At the White House, President Barack Obama echoed the need for Ukraine to stick with austerity measures during a meeting Monday with Yatsenyuk and Vice President Joe Biden. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 06:57:34</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/14/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers'>site</a></td><td>Yatsenyuk's U.S. visit came amid growing global concerns over proposed legislation in Ukraine's parliament that would water down economic reforms demanded by the international community.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 16:30:17</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/14/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers'>site</a></td><td><table><tr><td>Ukraine PM says reforms continue despite 'lunatic' lawmakers</td></tr><tr><td>A day earlier, the International Monetary Fund insisted that Ukraine must "stay the course," suggesting that rolling back the changes could jeopardize the IMF's $40 billion support package for Ukraine.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 14:28:02</td><td></td><td><a href='ukraine_11_12.html'>BRATISLAVA, Slovakia (AP) - Slovakia's spy agency says Russian agents have significantly increased their activities in Slovakia and all other NATO and European Union countries in connection with the crisis in Ukraine. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 14:28:02</td><td><a href='http://news.yahoo.com/slovak-agency-russian-spies-increase-activities-eu-nato-142802669.html'>site</a></td><td>The SIS says Russia has been actively supporting the separatists in Ukraine to keep the country under its sphere of influence.</td></tr>
 </table></body></html>

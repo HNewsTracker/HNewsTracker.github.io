@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/26/3e/9f/efb6f99ff06340049d405c969ef19ce8-ce7c51f36b1f4615939c0bdf3a8b8db1-0_1.jpg'></td><td>2015-06-27 01:31:58</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-official-chance-of-deal-small-in-current-cli/nmmPZ/'>site</a></td><td>Greece desperately needs a deal with its creditors.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 22:46:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-29-EU--Greece-The%20Road%20Ahead-QandA/id-738103fd8b7b414f90b799397ed22ead'>site</a></td><td>Q: Is a deal to save Greece still possible?</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 13:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26933650.html#storylink=rss'>site</a></td><td>U.S. stocks are posting solid gains in early trading as Greece moves closer to sealing a deal for new loans from its creditors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-28 00:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25651300.html#storylink=rss'>site</a></td><td><table><tr><td>Greek parliament approves referendum on creditor reforms</td></tr><tr><td>Greek Prime Minister Alexis Tsipras has once more urged Greeks to vote against creditor proposals for reforms in exchange for loans in a referendum he has called for next week.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 14:03:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-28-EU--Greece%20Bailout-The%20Latest/id-fb5799103c44457a8a545e4ac58c9db9'>site</a></td><td>The move comes after Tsipras called for a referendum on creditor proposals for Greek reforms in return for bailout cash - a decision which shocked Greece's European partners.</td></tr>
 </table></body></html>

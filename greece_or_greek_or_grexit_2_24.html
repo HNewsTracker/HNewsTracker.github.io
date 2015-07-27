@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-07-06 13:46:52</td><td><a href='http://finance.yahoo.com/news/mohamed-el-erian-grexit-high-130330746.html'>site</a></td><td><table><tr><td>Earlier, Ewald Nowotny, a member of the European Central Bank's governing council, told CNBC the euro nations all have an interest in keeping Greece in the single currency.</td></tr><tr><td>When asked about whether he's optimistic that Greece can remain in the euro, the Austrian central bank governor told CNBC's " Squawk Box " that it's not a matter of being optimistic, but a matter of being "realistic."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>His daughter Alexandra is voting "no" because she is tired of richer European nations bossing Greece around.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 05:30:36</td><td><a href='http://time.com/3960349/greece-europe-lenders-relief/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>The European Commission has proposed giving Greece 7 billion euros in loans from a special fund overseen by all 28 EU nations so it can meet its upcoming debts.</td></tr>
 </table></body></html>
