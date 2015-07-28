@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 07:05:27</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11485823&ref=rss'>site</a></td><td>That will go to either Mexico or Jamaica, who meet in Sunday's final at Philadelphia.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-26 02:15:04</td><td><a href='http://www.charlotteobserver.com/sports/article28714150.html#storylink=rss'>site</a></td><td>The next, he was explaining why Jamaica will be going after the victory against Mexico on Sunday.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-26 02:15:04</td><td><a href='http://www.miamiherald.com/sports/article28714150.html#storylink=rss'>site</a></td><td>Mexico's head coach Miguel Herrera speaks during a news conference, Saturday, July 25, 2015, in Philadelphia.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.gannett-cdn.com/-mm-/1df4b8c3280f4f46014a34af2178445b5fd56d55/c=0-0-3704-2785&amp;r=x404&amp;c=534x401/local/-/media/2015/07/26/USATODAY/USATODAY/635735459289380350-USP-SOCCER-GOLD-CUP-FINAL-JAMAICA-AT-MEXICO-74767016.JPG'></td><td>2015-07-27 03:00:35</td><td><a href='http://www.usatoday.com/story/sports/soccer/2015/07/26/mexico-wins-7th-gold-cup-title--3-1-victory-over-jamaica/30717113/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomsports-topstories'>site</a></td><td>Jamaica hadn't trailed since early in the second half of its Gold Cup opener before a yellow card helped lead to Mexico's first goal.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 03:55:05</td><td><a href='http://www.miamiherald.com/sports/article28784872.html#storylink=rss'>site</a></td><td>Mexico's Jesus Duenas celebrates after a goal by teammate Jesus Corona during the second half of the CONCACAF Gold Cup championship soccer match against Jamaica, Sunday, July 26, 2015, in Philadelphia.</td></tr>
+</table></body></html>
