@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 13:58:05</td><td></td><td><a href='egypt_4_5.html'>Policemen investigate the site of a car bomb attack on the convoy of Egyptian public prosecutor Hisham Barakat near his house at Heliopolis district in Cairo, Egypt, June 29, 2015. (17)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 14:59:59</td><td><a href='http://www.nydailynews.com/news/world/car-bomb-kills-egypt-top-prosecutor-article-1.2275009'>site</a></td><td>Egypt's main Islamic militant group Ansar Beit al-Maqdis - which has pledged allegiance to the Islamic State group fighting in Iraq and Syria - has claimed responsibility for that attack.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-30 19:35:52</td><td></td><td><a href='egypt_4_7.html'>Militant attacks that have killed hundreds of soldiers and police -- focused mainly in the North Sinai region but also extending to Egypt's main cities -- have increased since Mursi's toppling. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-30 19:52:13</td><td></td><td><a href='egypt_4_9.html'>Despite an international outcry against legal abuses and lack of due process, Egypt has waged a 2-year-old crackdown that has led to thousands of arrests, mass convictions and death sentences. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-06 20:58:28</td><td></td><td><a href='egypt_4_8.html'>The New York-based Committee to Protect Journalists has said that at least 18 journalists were behind bars in Egypt as of June 1 and accused the government of using the pretext of national security to crackdown on freedoms. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-07 06:30:14</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-06-ML-Egypt-Terrorism/id-1d57610f5bba4bf7b6c897c2243179e3'>site</a></td><td>The leaked copy of the bill brought an outcry and demands for changes in the draft from Egypt's journalists union and from senior judges.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-15 17:55:30</td><td></td><td><a href='egypt_4_6.html'>CAIRO - Egypt's Cabinet has decided to rename a square where security forces broke up a pro-Islamist sit-in two years ago in honor of the country's chief prosecutor, who was assassinated last month. (2)</a></td></tr>
+</table></body></html>

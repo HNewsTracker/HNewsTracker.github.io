@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 21:39:50</td><td><a href='http://www.reuters.com/article/2015/07/06/us-usa-election-trump-idUSKCN0PG2FQ20150706?feedType=RSS&feedName=domesticNews'>site</a></td><td>However, he said, the United States has become "a dumping ground for Mexico" with illegal border-crossers smuggling illicit drugs and carrying "tremendous infectious disease."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/af3/video/article25224820.ece/ALTERNATES/w140/Video%3A+%E2%80%98You%E2%80%99re+fired%21%E2%80%99+Macy%E2%80%99s+cuts+ties+with+Donald+Trump'></td><td>2015-07-06 21:43:50</td><td><a href='http://www.theglobeandmail.com/news/world/donald-trump-says-some-of-his-comments-about-mexico-distorted/article25330622/?cmpid=rss1'>site</a></td><td><table><tr><td>After days of outrage, Republican presidential candidate Donald Trump said on Monday that some of his criticism of Mexico has been distorted but stuck to his stance that many illegal immigrants coming across the Mexican border are criminals.</td></tr><tr><td>Trump said the recent killing of a woman in San Francisco by a illegal immigrant from Mexico with a criminal record proves him right.</td></tr></table></td></tr>
+</table></body></html>

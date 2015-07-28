@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 15:42:55</td><td><a href='http://www.ctvnews.ca/politics/kenya-prepares-to-welcome-obama-to-the-country-where-his-father-was-born-1.2481678'>site</a></td><td>Kenya prepares to welcome Obama to the country where his father was born</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 10:35:40</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28490806.html#storylink=rss'>site</a></td><td>There also may have been a reluctance in the first term to feed the conspiracy theorists who refuse to believe that Obama was born in Hawaii, not in Kenya.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 20:00:23</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486712&ref=rss'>site</a></td><td>Obama returns to Kenya, reunites with father's family</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='ww.smh.com.au/content/dam/images/g/i/k/9/m/r/image.related.articleLeadwide.620x349.gik9j9.png/1437786688023.jpg'></td><td>2015-07-25 00:02:06</td><td><a href='http://www.smh.com.au/world/kenya-bids-welcome-home-to-president-obama-20150725-gik9j9.html'>site</a></td><td><table><tr><td>Obama's father was born here in 1936 and died in 1982, and Obama is widely viewed as a son of Kenya.</td></tr><tr><td>Obama first came to Kenya in 1987 to trace his father's story and to meet his Kenyan family.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://cdnph.upi.com/ph/st/th/6901437757392/2015/i/14377837871415/v1.2/Obama-arrives-in-Africa-to-start-weekend-trips-in-Kenya-Ethiopia.jpg?lg=1'></td><td>2015-07-25 12:11:07</td><td><a href='http://www.upi.com/Top_News/World-News/2015/07/25/Obama-kicks-off-Africa-visit-hails-Kenyas-growth-and-potential/1741437822909/'>site</a></td><td>"Kenya is leading the way," Obama said.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/25/07/af/1dfa0d4049354d55a31e13cfe5f08b82-7269603508d240cc8d1b5977b98a71ac-0_1.jpg'></td><td>2015-07-25 19:03:35</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/obama-in-kenya-africa-is-on-the-move/nm6Z4/'>site</a></td><td>In Kenya, Obama blends blunt messages with warm reflections</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150725174711-16-obama-kenya-0725-super-169.jpg'></td><td>2015-07-26 01:28:02</td><td><a href='http://edition.cnn.com/2015/07/25/politics/obama-birther-joke-kenya/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_latest+%28RSS%3A+CNN+-+Most+Recent%29'>site</a></td><td>Obama cracks 'birther' joke in Kenya</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww1.hdnux.com/photos/37/72/11/8364616/9/920x920.jpg'></td><td>2015-07-26 04:22:46</td><td><a href='http://www.sfgate.com/news/world/article/Obama-to-close-historic-Kenya-visit-with-national-6405986.php'>site</a></td><td>The president's late father was born and is buried in Kenya, and its people have waited for years for the chance to welcome Obama back as president.</td></tr>
+</table></body></html>

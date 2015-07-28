@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/ab/a3/0a41acc38ac944e8a1dbf4cd7520eecf-ce9206ade7ca43bca7d4b0a0a1e8b926-0.jpg'></td><td>2015-07-12 14:46:20</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greek-tourist-hotspots-face-big-bailout-tax-hikes/nmxcT/'>site</a></td><td><table><tr><td>Cromba noted that many small Greek businesses already evade sales taxes where some owners "don't give a receipt so they save the tax for the business and the customer."</td></tr><tr><td>Economists say the increased sales taxes will almost certainly lead to a rise in tax evasion, which Greek officials have vowed for years to rectify, with negligible results.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 15:01:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/14/greece-pledges-to-get-rid-of-tax-evasion-as-a-way-of-life'>site</a></td><td>Greece pledges to get rid of tax evasion as a way of life</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKv0lNp8kcOXDeTOwVqByw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/1cd165db64d32e1f7c0f6a706700900e_original.jpg'></td><td>2015-07-14 15:04:45</td><td><a href='http://finance.yahoo.com/news/greece-pledges-rid-tax-evasion-150445104.html'>site</a></td><td>The experts say Greece has largely failed in previous crackdowns on tax evasion, which has been rampant for generations.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:04:56</td><td><a href='http://www.miamiherald.com/news/business/article27206317.html#storylink=rss'>site</a></td><td>More enforcement will be needed, but Artavanis said many parts of Greece rarely see a tax inspector.</td></tr>
+</table></body></html>
