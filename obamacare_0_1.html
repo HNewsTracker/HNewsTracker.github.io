@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>obamacare</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 20:32:50</td><td><a href='http://www.reuters.com/article/2015/06/25/us-usa-court-healthcare-idUSKBN0P51V220150625?feedType=RSS&feedName=wtMostRead'>site</a></td><td>U.S. top court backs Obamacare, president says it's here to stay</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150625114212-scotus-obamacare-aca-decision-obama-rose-garden-00001611-large-169.jpg'></td><td>2015-06-25 21:03:41</td><td><a href='http://edition.cnn.com/2015/06/25/politics/supreme-court-ruling-obamacare/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_latest+%28RSS%3A+CNN+-+Most+Recent%29'>site</a></td><td>"I disagree with the Court's ruling and believe they have once again erred in trying to correct the mistakes made by President Obama and Congress in forcing Obamacare on the American people," said Florida Sen. Marco Rubio.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Qa9OaRtL4.XbjKYCJ3P0Tg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5ODtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-06-25T200948Z_2_LYNXMPEB5O13M_RTROPTP_2_USA-ELECTION-BUSH.JPG'></td><td>2015-06-25 21:50:04</td><td><a href='http://news.yahoo.com/republicans-vow-keep-fighting-obamacare-despite-court-ruling-160811704.html'>site</a></td><td>Following Thursday's 6-3 court ruling, Republicans quickly vowed to make the 2016 election campaign a referendum on Obamacare, expressing disappointment with the court's decision.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 20:18:01</td><td><a href='http://www.reuters.com/article/2015/06/26/us-usa-court-healthcare-idUSKBN0P51V220150626?feedType=RSS&feedName=healthNews'>site</a></td><td>Congressional Republicans vowed to continue efforts to repeal Obamacare despite appeals from Democrats for them to stop.</td></tr>
+</table></body></html>
