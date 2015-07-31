@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 05:22:48</td><td></td><td><a href='apple_or_microsoft_5_6.html'>Last month, the company said that Stephen Elop, the former chief executive of Nokia who became a senior Microsoft executive after the acquisition, overseeing its devices business, would leave Microsoft. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static01.nyt.com/images/2015/06/30/business/Microsoft/Microsoft-thumbStandard.jpg'></td><td>2015-07-08 05:22:48</td><td><a href='http://www.nytimes.com/2015/07/09/technology/microsoft-layoffs.html'>site</a></td><td><table><tr><td>At the end of March, Microsoft had more than 118,000 employees globally.</td></tr><tr><td>He also warned in the message that Microsoft would need to "make some tough choices in areas where things are not working and solve hard problems in ways that drive customer value."</td></tr><tr><td>Also in June, Microsoft said it was selling its online display advertising business to AOL, as Microsoft exited a business for which it once had high hopes.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 15:15:00</td><td><a href='http://www.chicagotribune.com/bluesky/technology/ct-microsoft-cuts-jobs-layoffs-20150708-story.html'>site</a></td><td>But Microsoft's Windows Phone system has gained little traction against Apple's iPhone and Google's Android system.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-08 21:41:55</td><td></td><td><a href='apple_or_microsoft_5_7.html'>Microsoft will cut 7,800 jobs and take a US$7.6 billion impairment charge as it attempts to revive its flagging phone hardware business. (8)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-08 21:42:23</td><td></td><td><a href='apple_or_microsoft_5_8.html'>Microsoft bought aQuantive for $6.3 billion in a bid to increase its role in the online ad sector that was dominated by the likes of Google and Yahoo. (3)</a></td></tr>
+</table></body></html>

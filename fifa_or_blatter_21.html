@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-01 23:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-says-he-has-clear-conscience-despite-fifa-/nmqLX/'>site</a></td><td>The 79-year-old told Bunte that he happily accepts "fair and constructive criticism, also to consider what can be done differently. But when someone says, 'Blatter is corrupt because FIFA is corrupt', I can only shake my head. Anyone who makes such claims without proof should be jailed."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-09 08:28:44</td><td></td><td><a href='fifa_or_blatter_21_22.html'>FIFA's ethics panel says American Blazer "was a key player in schemes involving the offer, acceptance, payment and receipt of undisclosed and illegal payments, bribes and kickbacks as well as other money-making schemes." (10)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-12 15:54:05</td><td></td><td><a href='fifa_or_blatter_21_28.html'>Swiss federal prosecutors have new evidence of 28 acts of possible money laundering linked to FIFA's 2018 and 2022 World Cup bid contests. (5)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-16 15:58:23</td><td></td><td><a href='fifa_or_blatter_21_29.html'>FILE - In this May 27, 2015, file photo, two persons are reflected in the FIFA logo at the FIFA headquarters in Zurich, Switzerland. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://static01.nyt.com/images/2015/07/11/sports/Y-FIFA/Y-FIFA-thumbStandard.jpg'></td><td>2015-07-16 18:14:26</td><td><a href='http://www.nytimes.com/2015/07/17/sports/soccer/ex-fifa-executive-jeffrey-webb-extradited-to-us.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Blatter has not been charged.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-16 19:02:08</td><td></td><td><a href='fifa_or_blatter_21_27.html'>The allegations have roiled the world's most popular sport, prompting FIFA President Sepp Blatter to say he plans to step down and raising uncomfortable questions for the body's corporate sponsors. (4)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-17 23:34:16</td><td></td><td><a href='fifa_or_blatter_21_24.html'>"We have written to FIFA and asked them to support an independent third-party commission for reforms," a spokeswoman for Coca-Cola said on Friday. (7)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-18 20:35:56</td><td></td><td><a href='fifa_or_blatter_21_23.html'>NEW YORK - Jeffrey Webb, one of seven high-ranking officials of soccer's world governing body FIFA who were arrested in Switzerland on corruption charges, pleaded not guilty in U.S. federal court on Saturday. (35)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-18 22:52:13</td><td></td><td><a href='fifa_or_blatter_21_26.html'>Jeffrey Webb will not be the last charged in the far-reaching corruption case to see the inside of a U.S. courtroom if prosecutors have their way - six more FIFA officials are charged and fighting extradition. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-19 11:27:05</td><td></td><td><a href='fifa_or_blatter_21_25.html'>Sepp Blatter will host Michel Platini and football's other continental presidents later Sunday, in their first formal meeting since the FIFA president announced he would leave office amid a corruption crisis. (2)</a></td></tr>
+</table></body></html>

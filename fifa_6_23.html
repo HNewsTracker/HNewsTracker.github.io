@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/01/55/8133460/3/920x920.jpg'></td><td>2015-06-11 17:46:52</td><td><a href='http://www.sfgate.com/news/crime/article/FIFA-s-top-spokesman-leaves-job-Blatter-urged-to-6320964.php'>site</a></td><td>Still, Blatter praised FIFA's handling of the ongoing corruption crisis in the organization's in-house magazine.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 10:54:22</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3123385/Blatter-seek-stay-FIFA-boss-source-tells-Swiss-paper.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>FIFA, in an emailed statement, referred Reuters to the speech Blatter made on June 2 and said they had "no further comment to make".</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-01 23:51:01</td><td><a href='http://www.ctvnews.ca/sports/sepp-blatter-has-clear-conscience-despite-fifa-corruption-probe-1.2449530'>site</a></td><td>Four days after being re-elected for a fifth term, Blatter said on June 2 that he would step down amid a crisis provoked by American and Swiss federal investigations of corruption linked to FIFA.</td></tr>
+</table></body></html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/1461678/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F8a%2F2e%2F9b7fedd44a0a97a639b8fb25de87%2Fresizes%2F500%2F150528-india-7-editorial.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/11/us-stocks-open-higher-building-on-gains-from-the-day-before'>site</a></td><td>Asia stocks drift as Greece dampens impact of strong US data</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-12 20:31:07</td><td><a href='http://www.reuters.com/article/2015/06/12/us-markets-stocks-idUSKBN0OS18420150612?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>Wall Street falls as Greece crisis unresolved; energy shares dip</td></tr><tr><td>U.S. stocks fell on Friday as Greek debt talks hit a stalemate and as concern over how soon the Federal Reserve might raise interest rates kept investors cautious.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-25 20:34:08</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-edge-higher-surge-consumer-spending-32020835'>site</a></td><td>Stocks Slip as Investors Balance Greece, Consumer Spending</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 03:16:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-edge-higher-following-a-surge-in-consume/nmkr2/'>site</a></td><td>GREEK TALKS: Global investors are watching closely as Greek debt talks go down to the wire.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/37/24/70/8211972/3/628x471.jpg'></td><td>2015-06-26 03:16:14</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-edge-higher-following-a-surge-in-6348752.php'>site</a></td><td>Asian stocks fall on Greek standoff, China margin curbs</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww2.hdnux.com/photos/37/26/15/8217453/3/628x471.jpg'></td><td>2015-06-26 21:27:11</td><td><a href='http://www.seattlepi.com/business/energy/article/Stocks-up-ahead-of-Greece-decision-Chinese-6351425.php'>site</a></td><td>NEW YORK (AP) - Stocks had a mixed day Friday, as investors waited for negotiators to finish their work on a solution to Greece's debt problems.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-06-29 13:42:23</td><td><a href='http://news.yahoo.com/asian-stock-markets-sink-greece-closes-banks-032205086--finance.html'>site</a></td><td>US stocks fall in early trade as Greece debt woes escalate</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-29 20:04:21</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-worst-day-year-investors-worry-fallout-32109339'>site</a></td><td>US Stocks Have Worst Day of the Year as Investors Worry About Fallout From Greek Debt Crisis</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5091&amp;contextPath=3179-5019-5091-&amp;pubId=7&amp;cat=&amp;meta=read-story&amp;objId=25775965&amp;type=article&amp;title=US+stocks+plummet+as+Greece+crisis+reverberates&amp;url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fnation-world%2farticle25775965.html'></td><td>2015-06-29 20:17:14</td><td><a href='http://www.miamiherald.com/news/nation-world/article25775965.html#storylink=rss'>site</a></td><td>US stocks plummet as Greece crisis reverberates</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/29/1c/76/6be55cdd8d6840a99dbd6033e5ab3f65-c7e04fba32314828a7087c4be9e1464a-0.jpg'></td><td>2015-06-30 05:01:27</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-fall-in-early-trade-as-greece-debt-woes-/nmngc/'>site</a></td><td><table><tr><td>Asia stocks bounce back but Greece uncertainty still looms</td></tr><tr><td>Investors were concerned that the crisis in Greece could spread to other euro countries that are struggling with high debt and austerity policies or to developing nations in Asia and South America.</td></tr></table></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-02 03:55:03</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-following-gains-in-European-6360385.php'>site</a></td><td><table><tr><td>Asian stocks gain as US data eclipses Greek risk</td></tr><tr><td>SEOUL, South Korea (AP) - Asian stocks were higher on Thursday as strong U.S. payroll data overshadowed worries about Greek debt.</td></tr></table></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-04 06:35:08</td><td><a href='http://www.startribune.com/would-euro-departure-help-or-hurt-europe-s-currency-union/311627101/'>site</a></td><td>Since the Greek crisis started in 2009, the governments that use the euro have come up with crisis backstops.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-08 03:44:38</td><td><a href='http://abcnews.go.com/Business/wireStory/us-stocks-heads-lower-greece-debt-talks-proceed-32273588'>site</a></td><td>China Leads Dive in Asia Stocks as Greece Rattles Investors</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 03:40:04</td><td><a href='http://www.miamiherald.com/news/business/article26854624.html#storylink=rss'>site</a></td><td>U.S. stocks opened with big gains, bouncing back from a loss the day before, as investors hoped that last-ditch talks would produce an agreement between Greece and its creditors.</td></tr>
+</table></body></html>

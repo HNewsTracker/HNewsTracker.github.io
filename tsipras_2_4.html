@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tsipras</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 05:28:23</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/tsipras-defiant-as-banks-shut-markets-rocked/nmn73/'>site</a></td><td>Tsipras called the referendum over the weekend, arguing that demands for tougher austerity measures could not be accepted after six years of recession.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150701&i=109263044&w=240&r=109263044-1&t=2'></td><td>2015-07-02 05:57:03</td><td><a href='http://www.reuters.com/article/2015/07/02/us-eurozone-greece-idUSKBN0P40EO20150702?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>Less than 24 hours after he wrote a conciliatory letter to creditors asking for a new bailout that would accept many of their terms, Tsipras abruptly switched back into combative mode in a television address.</td></tr><tr><td>In his overnight letter to creditors, seen by Reuters, Tsipras agreed to accept most of their demands for taxes and pension cuts and asked for a new 29 billion euro loan to cover all debt service payments in the next two years.</td></tr><tr><td>The Tsipras letter asking for a new bailout deal appeared to move closer to accepting creditor demands.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td>Tsipras has agreed to imposing more harsh austerity measures, following a six-year recession, but wants eurozone lenders to grant the country better terms for bailout debt repayments.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/10/72/f9/4cd0d6169f9f4465bcbb14277df4c5d4-60a8fd8e71c24ca2be414e631b642799-0.jpg'></td><td>2015-07-10 08:14:47</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-to-sell-last-ditch-deal-to-relucta/nmwYc/'>site</a></td><td>Tsipras will seek backing for a harsh new austerity package from his party Friday to keep his country in the euro - less than a week after urging Greeks to reject milder cuts in a referendum.</td></tr>
+</table></body></html>

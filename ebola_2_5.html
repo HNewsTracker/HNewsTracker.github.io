@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/f92dd96/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F78%2Fb5c0b1e935babb06a975f816404843%2Fmedia%3A4b57b47e0a1b49e29fad7e2fde16de7dLiberiaEbolaWestAfrica.JPEG'></td><td>2015-06-30 12:00:00</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/30/liberia-quarantines-community-where-corpse-tested-for-ebola'>site</a></td><td>The corpse of a 17-year-old man has tested positive for Ebola in Liberia, but no other cases have been reported, the country's deputy health minister said late Monday, June 29, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-01 18:29:33</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/01/2nd-ebola-case-declared-in-liberia-as-health-workers-protest'>site</a></td><td>2nd Ebola case declared in Liberia as health workers protest</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-01 18:29:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/2nd-ebola-case-declared-in-liberia-as-health-worke/nmp4R/'>site</a></td><td>Health Minister Bernice Dahn said Liberia has paid hazard benefits to "99 percent" of people who worked in the Ebola treatment units in addition to their regular salaries.</td></tr>
+</table></body></html>

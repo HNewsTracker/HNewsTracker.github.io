@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>xbox or playstation or nintendo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/uV6y2tKbjV7UdW_j0rliXQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-07-13T000850Z_1_LYNXNPEB6C006_RTROPTP_3_NINTENDO-EMERGINGMARKETS_original.jpg'></td><td>2015-07-13 00:55:09</td><td><a href='http://finance.yahoo.com/news/nintendo-says-ceo-satoru-iwata-000850498.html'>site</a></td><td><table><tr><td>Nintendo CEO Satoru Iwata dies</td></tr><tr><td>TOKYO (Reuters) - Japanese videogame maker Nintendo Co Ltd's chief executive and president, Satoru Iwata, died on Saturday due to a growth in his bile duct, the company said.</td></tr><tr><td>Iwata had been a director at Kyoto-based Nintendo since 2000, and was appointed president in 2002.</td></tr><tr><td>Presiding over a news conference in May to announce Nintendo's full-year financial results, Iwata had said the company's long-awaited entry into smartphone games would help it double annual operating profit in the year to next March.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/07/12/1297723652041.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-07-13 00:57:06</td><td><a href='http://technology.canoe.com/News/2015/07/12/22502416.html?cid=rsstechnology'>site</a></td><td>Nintendo CEO Satoru Iwata dead at 55</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 05:34:41</td><td><a href='http://www.reuters.com/article/2015/07/13/us-nintendo-president-death-idUSKCN0PN00520150713?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Deutsche Bank analyst Hanjoon Kim said Iwata's death was a loss for Nintendo, particularly as he was leading a new strategy in smartphone gaming.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://img.rasset.ie/000ad9c3-642.jpg'></td><td>2015-07-13 09:43:46</td><td><a href='http://www.rte.ie/news/business/2015/0713/714419-nintendo-ceo-dies/'>site</a></td><td><table><tr><td>Iwata long resisted investors' calls to move into mobile games for fear of cannibalising Nintendo's traditional console base.</td></tr><tr><td>The company did not announce a replacement but Genyo Takeda, senior managing director and one of the lead developers of Nintendo's Wii console, will lead the committee for Iwata's funeral - a sign he could be taking on the leadership role.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://img.rasset.ie/000ad9c3-642.jpg'></td><td>2015-07-13 10:27:30</td><td><a href='http://www.rte.ie/news/business/2015/0713/714419-nintendo-ceo-dies/'>site</a></td><td>Nintendo CEO dies of cancer</td></tr>
+</table></body></html>

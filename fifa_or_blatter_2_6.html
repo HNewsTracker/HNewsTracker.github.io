@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 20:55:20</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11481880&ref=rss'>site</a></td><td>"I had no hard evidence, and we wanted to try to continue to participate and influence (FIFA) as one of 209 members," Flynn said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 20:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481880&ref=rss'>site</a></td><td><table><tr><td>The other choice, Flynn said, was to opt out entirely of FIFA, which would've basically eliminated the United States from all global competitions.</td></tr><tr><td>While Flynn pledged to push for reforms and pointed to measures adapted by CONCACAF earlier this month, investigative journalist and filmmaker Andrew Jennings suggested FIFA was beyond repair.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 21:48:17</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/15/us-soccer-chief-felt-discomfort-during-fifa-proceedings'>site</a></td><td>When Blumenthal later asked if Flynn or others in the USSF should've pushed FIFA or CONCACAF earlier for more transparency, Flynn said doing so may have jeopardized the United States' sway and any chance to make reforms.</td></tr>
+</table></body></html>

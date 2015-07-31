@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 19:34:29</td><td></td><td><a href='state_islamic_13_16.html'>After weeks of setbacks, militants from the Islamic State group launched swift counteroffensives Thursday on predominantly Kurdish areas of northern Syria, killing and wounding dozens and setting off car bombs, activists and officials said. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-25 21:17:05</td><td></td><td><a href='state_islamic_13_17.html'>Syrian state TV said Islamic State was expelling residents from their homes in al-Nashwa, executing people and detaining them. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 16:46:41</td><td><a href='http://www.reuters.com/article/2015/06/26/us-mideast-crisis-syria-idUSKBN0P60UY20150626?feedType=RSS&feedName=topNews'>site</a></td><td>While Islamic State had managed to advance slightly in Hasaka on Friday, seizing one army position, fierce army air strikes had hindered the attack, Abdulrahman said.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-26 16:46:41</td><td></td><td><a href='state_islamic_13_14.html'>Unlike the Kobani raid, the Islamic State attack on Hasaka appears aimed at wresting control of the government-held parts of city, which is divided into areas run separately by President Bashar al-Assad's government and the YPG. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-07 13:19:15</td><td></td><td><a href='state_islamic_13_19.html'>The YPG, backed by small Syrian rebel groups, has made significant gains against Islamic State in Raqqa province in recent weeks, seizing Tel Abyad at the Turkish border on June 15 before advancing south to Ain Issa. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='ww.smh.com.au/content/dam/images/g/i/h/k/n/o/image.related.articleLeadwide.620x349.gihkhw.png/1437481152276.jpg'></td><td>2015-07-21 12:19:25</td><td><a href='http://www.smh.com.au/world/turkey-denies-turning-blind-eye-to-islamic-state-as-bombing-stokes-anger-20150721-gihkhw.html'>site</a></td><td>They have also blocked more than half a dozen Islamist news websites, prompting one group claiming allegiance to Islamic State to accuse Turkey of persecuting Muslims and declare: "Muslims might retaliate."</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-22 14:27:35</td><td></td><td><a href='state_islamic_13_15.html'>Many of Turkey's Kurds and opposition supporters suspect President Tayyip Erdogan and the ruling AK Party of covertly backing Islamic State against Kurdish fighters in Syria, something the government has repeatedly denied. (23)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-24 12:45:32</td><td></td><td><a href='state_islamic_13_18.html'>For their part, Turkish police launched a major operation Friday against terror groups including Islamic State, carrying out simultaneous raids in Istanbul and 12 provinces and detaining more than 290 people. (2)</a></td></tr>
+</table></body></html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tsipras</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 14:53:42</td><td><a href='http://www.reuters.com/article/2015/07/03/us-eurozone-greece-idUSKBN0P40EO20150703?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras dismisses Europe's warnings to Greece on vote</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-03 14:53:42</td><td><a href='http://news.yahoo.com/opinion-poll-shows-yes-vote-slightly-ahead-greece-053427297--business.html'>site</a></td><td>Tsipras is betting Europe will compromise rather than let Greece slip out of the eurozone, even though the continent's leaders say a "No" vote would signal its exit.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/41/67/8265186/5/square_gallery_thumb.jpg'></td><td>2015-07-06 17:47:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-still-cash-starved-after-decisive-no-6367753.php'>site</a></td><td>After vote win, Greece's Tsipras looks to rebuild talks</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7hiFTvVkCvqilD9gImAutw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4546f9a81c0c721e7b0f6a7067005f4f.jpg'></td><td>2015-07-07 04:55:11</td><td><a href='http://news.yahoo.com/greek-pm-tsipras-races-restart-talks-vote-win-045305978.html'>site</a></td><td>Greek PM Tsipras races to restart talks after vote win</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/N_OQphGwzTSCbACAENlRvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/22/102853163-GettyImages-478813678.1910x1000.jpg'></td><td>2015-07-22 14:24:41</td><td><a href='http://finance.yahoo.com/news/tsipras-rallies-troops-ahead-greek-071442070.html'>site</a></td><td>Tsipras rallies supporters ahead of Greek vote</td></tr>
+</table></body></html>
