@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:43:57</td><td><a href='http://www.foxnews.com/world/2015/06/20/greek-premier-tsipras-ministers-discuss-strategy-proposals-for-next-week/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>ATHENS, Greece - Two days before a crucial summit of Eurozone leaders, Greek ministers are huddling to discuss strategy and assemble a new package of proposals, officials say.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-20 17:50:41</td><td><a href='http://www.startribune.com/french-leftists-rally-in-support-of-greece/308682341/'>site</a></td><td><table><tr><td>French leftists rally in support of Greece ahead of Monday eurozone summit</td></tr><tr><td>PARIS - Several thousand leftists have rallied in Paris to "give Greece a chance" two days ahead of a critical summit of eurozone leaders on a bailout.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-02 07:38:30</td><td><a href='http://www.foxnews.com/world/2015/07/01/eurozone-finance-ministers-to-weigh-latest-greece-aid-proposal/'>site</a></td><td>"It is our duty to keep Greece in the eurozone," he said.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>There's a widespread view among analysts that the eurozone would not collapse in the short term if Greece left.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-09 11:08:09</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/09/the-latest-eu-economics-chief-says-greece-deal-possible'>site</a></td><td>Jens Weidmann said in a speech Thursday it's up to eurozone governments and Greek leaders themselves to rescue Greece.</td></tr>
+</table></body></html>

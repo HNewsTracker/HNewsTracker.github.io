@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:30:57</td><td></td><td><a href='state_islamic_5_6.html'>Islamic State - also known by acronyms ISIS and ISIL - has spent years building its network inside Turkey, even as Turkish security services monitored the group to glean valuable intelligence. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 18:30:57</td><td></td><td><a href='state_islamic_5_7.html'>The abrupt shift in Islamic State's Turkish propaganda magazine shows just how quickly a tacit truce has come apart. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/24/7bfaf9a700d81e217d0f6a706700bbe1_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-24 18:30:57</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/24/turkish-bombing-of-islamic-state-marks-end-of/'>site</a></td><td>Turkey took a soft line on Islamic State because it was fighting the Syrian regime of President Bashar Assad - Turkey's arch-enemy - and Ankara has actively supported other Islamist groups trying to bring down Assad.</td></tr>
+</table></body></html>

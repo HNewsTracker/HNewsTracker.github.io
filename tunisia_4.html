@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tunisia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 18:30:07</td><td></td><td><a href='tunisia_4_7.html'>The international police agency Interpol is offering its investigative help to Tunisia, France, Kuwait and Somalia after separate attacks that have killed more than 80 people. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 22:16:00</td><td></td><td><a href='tunisia_4_12.html'>In Britain, police said they were tightening security at major events after the attacks in France, Kuwait and Tunisia, including for the weekend events of Armed Forces Day and the Pride London gay and lesbian festival. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 09:57:27</td><td></td><td><a href='tunisia_4_5.html'>SOUSSE, Tunisia Tour companies were evacuating thousands of foreign holidaymakers from Tunisia on Saturday, a day after a gunman killed 39 people at a beach hotel in an attack claimed by Islamic State. (25)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-06-28 16:18:00</td><td></td><td><a href='tunisia_4_9.html'>A Tunisian police officer guards the beach area in front of the attacked Imperial Marhaba Hotel in Sousse, Tunisia, Sunday, June 28, 2015. (9)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-06-28 16:18:00</td><td></td><td><a href='tunisia_4_11.html'>Queen Elizabeth II says the attack on a beach resort in Tunisia has left her and her husband, Prince Philip, shocked. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-06-28 17:38:00</td><td><a href='http://tvnz.co.nz/world-news/tunisian-authorities-hunt-accomplices-gunman-6348581?ref=rss'>site</a></td><td>The attacker has been identified as Seifeddine Rezgui, a 24-year-old graduate of Tunisia's Kairouan University where he had been living with the other students.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/1/o/i/a/image.related.articleLeadwide.620x349.gi1n8o.png/1435662745314.jpg'></td><td>2015-06-30 11:14:16</td><td><a href='http://www.brisbanetimes.com.au/world/solidarity-keeps-some-tourists-in-tunisia-after-terrorist-attack-20150630-gi1n8o.html'>site</a></td><td>Sousse: At a makeshift memorial on the site of last Friday's deadly attack, a steady stream of tourists and locals gathered to lay flowers and notes to remember the victims of Tunisia's worst ever terror attack.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-30 18:36:12</td><td></td><td><a href='tunisia_4_6.html'>The revelation confirms repeated fears that the strong presence of the Islamic State group in neighbouring Libya has become a direct threat to Tunisia, the only democracy to emerge from the Arab Spring uprisings. (6)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-06-30 20:32:06</td><td></td><td><a href='tunisia_4_13.html'>Tunisia's Health Ministry said on Tuesday it had so far identified 33 bodies from Friday's violence, including 25 British, three Irish, one Belgian, two German, a Russian citizen and a Portuguese national. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='ww.smh.com.au/content/dam/images/g/i/4/y/z/7/image.related.articleLeadwide.620x349.gi4yyh.png/1435924798553.jpg'></td><td>2015-07-03 11:16:16</td><td><a href='http://www.smh.com.au/world/britain-falls-silent-to-remember-30-killed-in-tunisian-gun-attack-20150703-gi4yyh.html'>site</a></td><td>The coffin of Denis Thwaites is carried from an RAF C-17, which repatriated the bodies of eight British nationals killed in the Tunisia terror attack, at RAF Brize Norton near Oxford.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-04 19:18:42</td><td></td><td><a href='tunisia_4_10.html'>Tunisia was under a state of emergency from January 2011, at the outbreak of the Arab Spring, until March 2014. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-10 08:25:04</td><td></td><td><a href='tunisia_4_8.html'>Tunisia's prime minister says that his country has done "everything in our power" to protect British and other foreign tourists, as British travelers flock to Tunisian airports under orders from their government to flee amid risks of terror attacks. (6)</a></td></tr>
+</table></body></html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 17,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 17 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 13:51:04</td><td></td><td><a href='fifa_or_blatter_17_18.html'>Sepp Blatter got a clear message on Sunday from FIFA election monitor Domenico Scala to end speculation he wants to stay in office. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 13:51:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article25701787.html#storylink=rss'>site</a></td><td><table><tr><td>"I call on all concerned - including Mr. Blatter - to endorse in the interest of the reforms unequivocally the announced changing of the guard at the top of FIFA," Scala said.</td></tr><tr><td>However, Blatter has since fueled talk of a U-turn at FIFA by saying he technically did not resign.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-01 23:22:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-says-he-has-clear-conscience-despite-fifa-/nmqLX/'>site</a></td><td>The 79-year-old told Bunte that he happily accepts "fair and constructive criticism, also to consider what can be done differently. But when someone says, 'Blatter is corrupt because FIFA is corrupt', I can only shake my head. Anyone who makes such claims without proof should be jailed."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-01 23:51:01</td><td></td><td><a href='fifa_or_blatter_17_22.html'>Four days after being re-elected for a fifth term, Blatter said on June 2 that he would step down amid a crisis provoked by American and Swiss federal investigations of corruption linked to FIFA. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://img.rasset.ie/000aa993-120.jpg'></td><td>2015-07-02 07:49:13</td><td><a href='http://www.rte.ie/sport/soccer/2015/0702/712109-fifa/'>site</a></td><td>The officials were detained in a dawn raid on 27 May on a luxury Zurich hotel two days before FIFA's annual congress, throwing soccer's governing body into turmoil.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-05 00:49:43</td><td><a href='http://www.nytimes.com/aponline/2015/07/04/world/europe/ap-soc-fifa-investigation-blatter.html?partner=rss&emc=rss&_r=0'>site</a></td><td><table><tr><td>Blatter accepted no responsibly for the plight of migrant laborers building stadiums in Qatar amid reports of human rights abuses.</td></tr><tr><td>"I'm there now to fight. Not for myself but for FIFA," said Blatter, who added he was on the right path and had no doubts.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-05 14:07:01</td><td></td><td><a href='fifa_or_blatter_17_23.html'>Welt am Sonntag quoted Blatter as saying the German football federation, DFB, had "received a recommendation (from Wulff) that Germany should vote for Qatar for economic interests". (5)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-06 18:03:36</td><td></td><td><a href='fifa_or_blatter_17_29.html'>FIFA ethics judge Joachim Eckert chaired the panel which conducted a personal hearing for Mayne-Nicholls. (6)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-09 08:28:44</td><td></td><td><a href='fifa_or_blatter_17_20.html'>FIFA's ethics panel says American Blazer "was a key player in schemes involving the offer, acceptance, payment and receipt of undisclosed and illegal payments, bribes and kickbacks as well as other money-making schemes." (4)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-12 15:54:05</td><td></td><td><a href='fifa_or_blatter_17_26.html'>Swiss federal prosecutors have new evidence of 28 acts of possible money laundering linked to FIFA's 2018 and 2022 World Cup bid contests. (9)</a></td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://static01.nyt.com/images/2015/07/11/sports/Y-FIFA/Y-FIFA-thumbStandard.jpg'></td><td>2015-07-16 18:14:26</td><td><a href='http://www.nytimes.com/2015/07/17/sports/soccer/ex-fifa-executive-jeffrey-webb-extradited-to-us.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Blatter has not been charged.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-17 23:34:16</td><td></td><td><a href='fifa_or_blatter_17_21.html'>"We have written to FIFA and asked them to support an independent third-party commission for reforms," a spokeswoman for Coca-Cola said on Friday. (7)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-18 20:35:56</td><td></td><td><a href='fifa_or_blatter_17_19.html'>NEW YORK - Jeffrey Webb, one of seven high-ranking officials of soccer's world governing body FIFA who were arrested in Switzerland on corruption charges, pleaded not guilty in U.S. federal court on Saturday. (57)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-07-18 22:52:13</td><td></td><td><a href='fifa_or_blatter_17_24.html'>Jeffrey Webb will not be the last charged in the far-reaching corruption case to see the inside of a U.S. courtroom if prosecutors have their way - six more FIFA officials are charged and fighting extradition. (3)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-07-20 09:43:20</td><td></td><td><a href='fifa_or_blatter_17_28.html'>Prince Ali broke more than a month of silence on Monday to tell The Associated Press that a December election would not provide enough time for the "meaningful change in the leadership of FIFA that we so desperately need." (2)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-07-20 09:43:20</td><td></td><td><a href='fifa_or_blatter_17_27.html'>Platini decided not to run in the May presidential election when Blatter beat Jordan's Prince Ali bin al-Hussein. (16)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-07-20 12:12:21</td><td></td><td><a href='fifa_or_blatter_17_25.html'>Fifa's 209 members will return to Zurich next year to select a new president almost than nine months after Mr Blatter's resignation statement. (3)</a></td></tr>
+</table></body></html>

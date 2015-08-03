@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 09:00:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-us-seeks-extradition-fifa-20150702-story.html'>site</a></td><td>Costa Rican soccer federation President Eduardo Li was arrested two days before he was due to formally join FIFA's executive committee.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 23:29:22</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27356605.html#storylink=rss'>site</a></td><td>Opting to stay in, they worked to get Sunil Gulati, the president of U.S. Soccer elected to a position in FIFA.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-16T171501Z_1_LYNXNPEB6F10A_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-TRANSPARENCY.JPG?itok=iGDzoBjj'></td><td>2015-07-16 19:02:08</td><td><a href='http://www.sbs.com.au/news/article/2015/07/17/fifa-hires-crisis-consultants-first-official-extradited-us'>site</a></td><td>Amid an international uproar, Blatter announced days after the arrests that he would lay down his mandate at an extraordinary FIFA Congress which will take place between December and February, and would not stand again.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://edition.cnn.com/2015/07/20/football/football-fifa-congress-platini/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-07-20 12:21:25</td><td><a href='http://edition.cnn.com/2015/07/20/football/football-fifa-congress-platini/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_latest+%28RSS%3A+CNN+-+Most+Recent%29'>site</a></td><td>FIFA will elect a new president on February 26</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/VCRWvD.Z0wfFDQnXR5niMA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507200948352913900'></td><td>2015-07-20 16:01:12</td><td><a href='http://sports.yahoo.com/news/fifa-decide-election-date-platini-gains-support-085100846--sow.html'>site</a></td><td>''On the 26th of February FIFA will have a new president,'' Blatter said.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/m8QeLcqFL24XzrWAyk1PZg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507201003361973954'></td><td>2015-07-22 18:15:49</td><td><a href='http://sports.yahoo.com/news/blatter-heads-russia-first-foreign-trip-since-crisis-160938727--sow.html'>site</a></td><td>''FIFA was not stuck because the president was not moving,'' said Blatter, whose successor is due to be elected in February.</td></tr>
+</table></body></html>

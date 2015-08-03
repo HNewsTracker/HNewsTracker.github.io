@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 16:16:08</td><td><a href='http://www.miamiherald.com/news/nation-world/article27191845.html#storylink=rss'>site</a></td><td><table><tr><td>Holmes surrendered to police outside the theater.</td></tr><tr><td>They also examined scores of pieces of evidence, including Holmes' guns and ammunition.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 23:40:16</td><td><a href='http://www.startribune.com/theater-shooting-key-events-in-the-life-of-james-holmes/316051211/'>site</a></td><td>July 20, 2012 - Holmes slips through a back door of the Century 16 theater in Aurora, where about 420 people are watching a midnight showing of a Batman movie, "The Dark Knight Rises," and opens fire.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 06:15:38</td><td><a href='http://www.startribune.com/despite-quick-conviction-theater-shooting-trial-isn-t-over/316095901/'>site</a></td><td>- Families of the 12 people James Holmes killed and the scores he injured in a packed movie theater were relieved that jurors only needed 12 hours to reject the idea that he was legally insane when he opened fire.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 20:45:37</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/17/despite-quick-conviction-theater-shooting-trial-isnt-over'>site</a></td><td>Despite having convicted Holmes in the killings, jurors must still determine whether to put Holmes on death row for opening fire in the crowded movie theater.</td></tr>
+</table></body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 17:59:04</td><td><a href='http://www.chron.com/business/technology/article/Google-unveils-buying-button-in-mobile-shopping-6386520.php'>site</a></td><td><table><tr><td>The feature, called "Purchases on Google," completes sales using financial information that already has been stored with Google.</td></tr><tr><td>Participating merchants can still gather information about customers using Google's buying button.</td></tr><tr><td>About a dozen retailers are initially using Google's buying button.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 17:59:04</td><td><a href='http://www.foxbusiness.com/technology/2015/07/15/google-rolls-outs-tool-designed-to-make-it-easier-for-people-to-buy-products-on/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Google unveils buying button in mobile shopping ads</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 18:02:54</td><td><a href='http://www.miamiherald.com/news/business/article27321748.html#storylink=rss'>site</a></td><td>Google is introducing a way for shoppers browsing on their smartphones to buy merchandise by tapping on a button included in the ads appearing in its search results.</td></tr>
+</table></body></html>

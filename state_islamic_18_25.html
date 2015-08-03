@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/25/20/8213522/7/920x920.jpg'></td><td>2015-06-25 19:33:13</td><td><a href='http://www.sfgate.com/news/world/article/Turk-officials-Islamic-State-group-in-new-attack-6348165.php'>site</a></td><td><table><tr><td>Turkish officials said on Thursday, June 25, 2015 that the Islamic State group has staged a new attack on the Kurdish town of Kobani, which resisted a months-long assault by the Islamic militants until they were pushed out earlier this year.</td></tr><tr><td>The two-pronged attack on the northeastern city of Hassakeh and the border town of Kobani came two days after an Islamic State spokesman acknowledged that the group might lose some battles but would not be defeated.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/assets/images/navigation/abc-logo.png'></td><td>2015-06-25 19:34:29</td><td><a href='http://abcnews.go.com/International/wireStory/turk-officials-islamic-state-group-attack-kobani-32014335'>site</a></td><td>After weeks of setbacks, militants from the Islamic State group launched swift counteroffensives Thursday on predominantly Kurdish areas of northern Syria, killing and wounding dozens and setting off car bombs, activists and officials said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-26 16:46:41</td><td><a href='http://www.reuters.com/article/2015/06/26/us-mideast-crisis-syria-idUSKBN0P60UY20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td>BEIRUT Islamic State fighters killed at least 145 civilians in an attack on the Syrian town of Kobani and a nearby village, in what a monitoring group described on Friday as one of the worst massacres carried out by the hardline group in Syria.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-07 13:19:15</td><td><a href='http://www.reuters.com/article/2015/07/07/us-mideast-crisis-syria-idUSKCN0PH0SJ20150707?feedType=RSS&feedName=topNews'>site</a></td><td>The YPG, backed by small Syrian rebel groups, has made significant gains against Islamic State in Raqqa province in recent weeks, seizing Tel Abyad at the Turkish border on June 15 before advancing south to Ain Issa.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066179776&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L0NW'></td><td>2015-07-22 14:14:59</td><td><a href='http://www.reuters.com/article/2015/07/22/us-mideast-crisis-turkey-idUSKCN0PW0PN20150722?feedType=RSS&feedName=topNews'>site</a></td><td>ANKARA Kurdish militants claimed responsibility for the assassination on Wednesday of two Turkish police officers in what they said was retaliation for a suspected Islamic State suicide bombing which killed 32 mostly young students.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/h/3/o/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.smh.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td>A senior Turkish official said there was "strong evidence" to suggest the bomber was a 20-year old man born in the south-eastern province of Adiyaman and of Kurdish origin, who had travelled to Syria last year with the help of a group linked to Islamic State.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 04:05:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article28435420.html#storylink=rss'>site</a></td><td>Suspected Islamic State militants fired at a Turkish military outpost from a region under IS control, inside Syrian territory Thursday, killing a Turkish soldier and wounding two others, an official said.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/25/14/b7/c02597fc1e114107881568a80b5ba20f-165391881c684e97a48e1e9a5f8d92cb-0.jpg'></td><td>2015-07-25 06:14:07</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/turkish-jets-hit-is-targets-in-syria-kurds-in-iraq/nm6Yk/'>site</a></td><td>Turkish jets struck camps belonging to Kurdish militants in northern Iraq, authorities said Saturday, the first strike since a 2013 peace deal as Ankara also bombed Islamic State positions in Syria.</td></tr>
+</table></body></html>

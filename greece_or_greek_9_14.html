@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 21,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 21 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-10 15:25:05</td><td><a href='http://www.miamiherald.com/news/business/article23646793.html#storylink=rss'>site</a></td><td>A broken sign at the headquarters of National Bank of Greece in Athens, Wednesday, June 10, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 08:45:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11463723&ref=rss'>site</a></td><td>Merkel said that in overnight talks with Greek Prime Minister Alexis Tsipras a clear consensus emerged that "Greece will now work emphatically and at full steam with the three institutions in coming days to try to clear up all the outstanding issues."</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-11 11:00:06</td><td><a href='http://www.miamiherald.com/news/business/article23737999.html#storylink=rss'>site</a></td><td>Greek Prime Minister Alexis Tsipras looks at his watch as he departs the EU-CELAC summit in Brussels on Thursday, June 11, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 15:59:55</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-idUSKBN0OR19T20150611?feedType=RSS&feedName=topNews'>site</a></td><td>IMF quits Greek talks; EU tells Tsipras: stop gambling</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-21 16:21:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25105846.html#storylink=rss'>site</a></td><td>A girl sits on her father's shoulders as she unfurls the Greek flag during a protest march in solidarity with Greece in the center of Brussels on Sunday, June 21, 2015.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/06/21/d9/aa/d6fd049a1ea4418f815afdce1e3d93ec-9142a1b8966d4573809c45d61eac2188-0.jpg'></td><td>2015-06-21 21:02:27</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greece-presents-new-financial-proposals-to-europea/nmhZY/'>site</a></td><td>Presidential Guards perform a change of shift as anti-austerity protesters hold a rally in front of the parliament in Athens, Greece, on Sunday, June 21, 2015.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/6/i/p/image.related.articleLeadwide.620x349.ghykvh.png/1435293816058.jpg'></td><td>2015-06-26 04:43:45</td><td><a href='http://www.brisbanetimes.com.au/world/germany-and-france-tell-greece-to-sort-debt-deal-this-weekend-20150626-ghykvh.html'>site</a></td><td>"After the comprehensive Greek proposals, I'm confident we'll reach a compromise that will help the eurozone and Greece to overcome the crisis," Tsipras said as he arrived at the summit.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-06-26 05:50:50</td><td><a href='http://www.reuters.com/article/2015/06/26/us-eurozone-greece-idUSKBN0P40EO20150626?feedType=RSS&feedName=businessNews'>site</a></td><td>The leaders spent two hours on an unscheduled discussion of the crisis, appealing to Prime Minister Alexis Tsipras to accept the proposals on the table and spare the Greek people worse suffering, EU officials said.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-27 01:36:04</td><td><a href='http://www.miamiherald.com/news/business/article25553692.html#storylink=rss'>site</a></td><td>Greece's Prime Minister Alexis Tsipras waves and smiles as he arrives at Maximos Mansion in Athens, Friday, June 26, 2015.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 08:34:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article25812790.html#storylink=rss'>site</a></td><td>Demonstrators holding letters to form a banner take part in a protest against the European Central Bank, in Trafalgar Square, London, over Greece's debt repayments, Monday June 29, 2015.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-04 03:23:47</td><td><a href='http://news.yahoo.com/greece-referendum-campaigns-squeezed-deadline-040512079--finance.html'>site</a></td><td>"This is not a protest. It is a celebration to overcome fear and blackmail," Greek Prime Minister Alexis Tsipras told a crowd of 25,000 in front of parliament, who were chanting "oxi, oxi" - "no, no."</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 03:29:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26211073.html#storylink=rss'>site</a></td><td><table><tr><td>Elderly men chat in the northern Greek port city of Thessaloniki, Friday, July 3, 2015.</td></tr><tr><td>An Associated Press TV producer edits the video of Greece's Prime Minister Alexis Tsipras televised address to the nation in Athens, Friday, July 3, 2015.</td></tr><tr><td>Greece's Prime Minister Alexis Tsipras delivers a speech during a rally organized by supporters of the No vote at Syntagma square in Athens, Friday, July 3, 2015.</td></tr><tr><td>A Greek Orthodox priest gives money to a man who begs for alms under a banner reading "No" referring to the upcoming referendum in the northern Greek port city of Thessaloniki, Friday, July 3, 2015.</td></tr><tr><td>A woman holds a banner reading, "No to the Troika, I support Greece" during a a pro Greece demonstration at the European Union office in Barcelona, Spain, Friday, July 3, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 04:09:10</td><td><a href='http://www.miamiherald.com/news/business/article26480347.html#storylink=rss'>site</a></td><td>A banner reading ''NO for democracy and for dignity'' referring to the upcoming referendum is placed outside a Greek Orthodox church at Monastiraki square in central Athens, Saturday, July 4, 2015.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.sfgate.com/news/world/article/Yes-or-no-What-Greece-s-landmark-vote-might-bring-6366902.php'>site</a></td><td>Greek Finance Minister Yanis Varoufakis has said he'll resign in the event of a "yes" vote and Prime Minister Alexis Tsipras has hinted as much.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/05/74/db/d166cdd5b6d4413d87d1dbef377c7017-69be0247745d4af1918ec168ad14ffa4-8.jpg'></td><td>2015-07-05 17:07:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-votes-on-high-stakes-bailout-referendum/nmrrZ/'>site</a></td><td>A vendor carries beach items as he passes bathers during Greece's referendum day in southern Athens, Sunday, July 5, 2015.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 17:15:06</td><td><a href='http://www.miamiherald.com/news/business/article26524165.html#storylink=rss'>site</a></td><td>Greece's Prime Minister Alexis Tsipras, foreground, is escorted by police officers after voting at a polling station in Athens, Sunday, July 5, 2015.</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/06/08/a5/2cad9380cf31467a80ecb8a2be6458f3-3b6df2687f674c7891cc0ad8a9fe510b-0.jpg'></td><td>2015-07-06 17:36:57</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-slip-after-greek-no-vote-european-market/nmsFn/'>site</a></td><td>A stock ticker carries news of the "No" vote on the Greek debt referendum, on the floor of the New York Stock Exchange, Monday, July 6, 2015, in New York.</td></tr>
+  <tr><td style='display:none'>17</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 17:50:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26562994.html#storylink=rss'>site</a></td><td>Varoufakis has resigned on Monday, July 6, 2015 saying he was told shortly after the Greek referendum result that the some eurozone finance ministers and Greece's other creditors would prefer he not attend the ministers' meetings.</td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-07 03:39:09</td><td><a href='http://news.yahoo.com/eurozone-leaders-hold-emergency-summit-greece-033909834.html'>site</a></td><td>"And that is why we are now waiting for very precise proposals from the Greek prime minister, a programme that will allow Greece to return to prosperity," said Merkel, adding that eurozone countries had already shown "a lot of solidarity with Greece".</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-07-07 06:33:19</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-07-EU--Greece-Bailout/id-e59a4f4bfc844eada58da1d7bc0033c4'>site</a></td><td>New Greek Finance Minister Euclid Tsakalotos, right, looks at outgoing Finance Minister as he speaks during a hand over ceremony in Athens, Monday, July 6, 2015.</td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-08 10:06:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article26719537.html#storylink=rss'>site</a></td><td>EU leaders have called for a full EU summit to take place on Sunday, July 12, 2015 to continue discussion on the Greek crisis.</td></tr>
+</table></body></html>
