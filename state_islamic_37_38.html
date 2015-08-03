@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 22:44:54</td><td><a href='http://www.reuters.com/article/2015/06/26/us-kuwait-blast-idUSKBN0P618L20150626?feedType=RSS&feedName=topNews'>site</a></td><td>Islamic State named the bomber as Abu Suleiman al-Muwahed and said in a statement posted on social media that he had targeted a "temple of the rejectionists" -- a term it generally uses to refer to Shi'ites, whom it regards as heretics.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297717188405_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-26 23:16:23</td><td><a href='http://www.torontosun.com/2015/06/26/islamic-state-suicide-bomber-kills-more-than-10-in-kuwait-mosque'>site</a></td><td>Islamic State had urged its followers on Tuesday to step up attacks during the Ramadan fasting month against Christians, Shi'ites and Sunni Muslims fighting with a U.S.-led coalition against the ultra-hardline jihadist group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 16:33:27</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/07/15/22507376.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>U.S. delivers Iraqi antiquities seized in raid on Islamic State</td></tr><tr><td>BAGHDAD - The United States handed back to Iraq on Wednesday antiquities it said it had seized in a raid on Islamic State fighters in Syria, saying the haul was proof the militants were funding their war by smuggling ancient treasures.</td></tr><tr><td>Islamic State, a hardline Sunni Islamist group, has ransacked some of the greatest archaeological sites in northern Iraq, posting video footage of fighters destroying pre-Islamic monuments they consider idolatrous.</td></tr><tr><td>Iraqi officials have been unable to verify the full extent of damage at the sites under Islamic State control, but they have said that footage of the destruction was published in part to distract attention from the fact Islamic State is smuggling antiquities to raise cash.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 08:00:18</td><td><a href='http://abcnews.go.com/International/wireStory/greek-anti-austerity-protesters-hold-finance-ministry-sit-31684409'>site</a></td><td>Greek left-wing demonstrators are staging a sit-in at the finance ministry building in central Athens, in a protest against the radical, left-led government, which they accuse of planning new austerity measures.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-11 08:05:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11463705&ref=rss'>site</a></td><td>Greek anti-austerity protesters hold finance ministry sit-in</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/aqUBDbJIacJ2tU._PWAnUg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-06-11T125303Z_1_LYNXMPEB5A0OV_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-06-11 17:32:19</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-under-pressure-concessions-111748901.html'>site</a></td><td>However, European Council President Donald Tusk delivered an unprecedentedly forthright message to Greece's radical anti-austerity government after four months of bitter negotiations.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/TXSvQSj0ejP1BwtYkdJ1Yw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/528ef41f43fc841e7b0f6a706700ad8d.jpg'></td><td>2015-07-07 15:58:12</td><td><a href='http://news.yahoo.com/latest-lithuanian-finance-minister-sees-compromise-115544872--finance.html'>site</a></td><td>Arriving at an emergency meeting of eurozone finance ministers to discuss the Greek crisis, Noonan said Ireland was also able to work with its debt load to make it more manageable, He suggested Greece could also come forward with debt proposals, even if they would be different from Ireland's.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/09/876/493/Portugal Greece Other Debtors-3.jpg?ve=1&tl=1'></td><td>2015-07-09 12:10:04</td><td><a href='http://www.foxnews.com/world/2015/07/09/if-greece-gets-easier-rescue-terms-other-bailout-states-could-face-popular/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Greece's request for some relief on its debt burden is not being well-received by some.</td></tr>
 </table></body></html>

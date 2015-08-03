@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 02:32:13</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article26206801.html#storylink=rss'>site</a></td><td><table><tr><td>Reverend Father Vasilios Louros of St. Demetrios, which helped a Greek couple left penniless in New York City on their honeymoon thanks to the Greek financial crisis.</td></tr><tr><td>Strangers from two Greek Orthodox churches in the city's Queens borough came to the rescue, giving them survival cash until their flight home to Greece on Friday.</td></tr><tr><td>On Tuesday, in despair, they reached out to the New York-based Greek Orthodox Archdiocese of America, which contacted the churches in Queens' Astoria neighborhood.</td></tr><tr><td>In addition, an undisclosed amount came from a New York-based Greek journalist who hails from Volos.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/.wCGYVaaBFrb.sxsjSKDXQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3aec3cfdc9b3421d7b0f6a706700df8c.jpg'></td><td>2015-07-05 06:09:01</td><td><a href='http://news.yahoo.com/family-divided-emotions-run-high-ahead-greek-vote-060901498.html'>site</a></td><td>"This situation will create a war within the people. Greek versus Greek. The people are divided right now, about 50-50. What happens the day after the referendum? I'm afraid."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/AP_GREECE_150706_DG_16x9t_144.jpg'></td><td>2015-07-06 15:41:06</td><td><a href='http://abcnews.go.com/Business/greece-vote-countrys-future/story?id=32248849'>site</a></td><td>Here's What Happens Next in Greece</td></tr>
 </table></body></html>

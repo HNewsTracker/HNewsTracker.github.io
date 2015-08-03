@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 13:17:00</td><td><a href='http://www.cnbc.com/2015/07/08/microsoft-to-restructure-phone-hardware-business-cut-up-to-7800-jobs.html'>site</a></td><td><table><tr><td>Microsoft to cut up to 7,800 jobs</td></tr><tr><td>Microsoft CEO Satya Nadella wrote an email to employees.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/tC8RpZfLnzyw.6U0zAce.Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/64c8a4912ce9191a8be5246c0868a759'></td><td>2015-07-08 13:17:31</td><td><a href='http://finance.yahoo.com/news/microsoft-cut-7-800-jobs-131731526.html'>site</a></td><td>Microsoft announced plans Wednesday to restructure the company's phone hardware business and to cut up to 7,800 positions.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/SCCZEN_AP150907035637_620x310.jpg'></td><td>2015-07-08 21:41:55</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11478110&ref=rss'>site</a></td><td>Microsoft will cut 7,800 jobs and take a US$7.6 billion impairment charge as it attempts to revive its flagging phone hardware business.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0708/20150708__0709microsoft~1.JPG'></td><td>2015-07-08 21:42:23</td><td><a href='http://www.mercurynews.com/business/ci_28451430/microsoft-cutting-7-800-jobs-phone-sales-flag?source=rss'>site</a></td><td><table><tr><td>But Microsoft's new boss, Satya Nadella, has been pulling back from phone hardware and digital advertising after seeing little success in those ventures.</td></tr><tr><td>Microsoft isn't getting out of the hardware business altogether.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/37/44/40/8276022/9/628x471.jpg'></td><td>2015-07-08 23:00:18</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-cuts-7-800-jobs-as-phone-sales-flag-6372554.php'>site</a></td><td>Microsoft cuts 7,800 jobs as phone sales flag</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/37/44/40/8276022/9/square_gallery_thumb.jpg'></td><td>2015-07-08 23:00:18</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-cuts-7-800-jobs-as-phone-sales-flag-6372554.php'>site</a></td><td>Microsoft isn't getting out of the hardware business altogether, although Nadella said the company will no longer focus on building a "stand-alone phone business."</td></tr>
+</table></body></html>

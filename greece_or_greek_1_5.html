@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150610&i=108652088&w=240&r=108652088-1&t=2'></td><td>2015-06-11 00:25:36</td><td><a href='http://www.reuters.com/article/2015/06/11/us-eurozone-greece-talks-idUSKBN0OQ0TQ20150611?feedType=RSS&feedName=businessNews'>site</a></td><td>Greece will be in default at the end of June without fresh funds to let it to repay 1.6 billion euros to the IMF.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/06/11/876/493/Belgium EU Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-06-11 08:36:42</td><td><a href='http://www.foxnews.com/world/2015/06/11/greece-commits-to-intensify-reform-efforts-as-debt-deadline-approaches-german/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The creditors have made clear that Greece must improve its offer of reforms it would introduce in exchange for 7.2 billion euros ($8.1 billion) in bailout loans it needs to repay debts due at the end of the month.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/37/01/72/8134320/7/square_gallery_thumb.jpg'></td><td>2015-06-11 16:24:16</td><td><a href='http://www.sfgate.com/news/world/article/Greece-commits-to-step-up-reform-efforts-German-6320506.php'>site</a></td><td>The creditors - the IMF and Greece's fellow eurozone states - want the country to commit to new economic reforms before they pay out another 7.2 billion euros ($8.2 billion).</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/ALeBv8Lk.2262iuuobj7NA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8194627-1-1-0.jpg'></td><td>2015-06-15 01:31:43</td><td><a href='http://news.yahoo.com/greece-bailout-talks-end-no-deal-significant-gaps-171655815.html'>site</a></td><td>The Greek proposal "remains incomplete", the EU source said, and was not enough to unlock the 7.2 billion euros still remaining in Greece's international bailout, which expires on June 30.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 04:09:03</td><td><a href='http://news.yahoo.com/campaigns-halt-greeks-face-tough-referendum-choice-040313872--finance.html'>site</a></td><td>In case of a "no" win, Kalyvas said the Greek government could be confronted with the refusal of other eurozone countries to negotiate a better deal because of their distrust of Tsipras.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/07/6a/ab/d0319c8d4dc34a44b71ea36fc83370b8-d431d0e9f1f34aefb72ae0418b8b1ae9-0.jpg'></td><td>2015-07-07 14:43:35</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greek-pm-tsipras-races-to-restart-talks-after-vote/nmsm7/'>site</a></td><td>Prime Minister Alexis Tsipras' situation is urgent: Without a deal, Greece's banks could go bust within days, the first step in the country's potential exit from the euro currency union.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/10/72/f9/4cd0d6169f9f4465bcbb14277df4c5d4-60a8fd8e71c24ca2be414e631b642799-0.jpg'></td><td>2015-07-10 11:14:16</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-to-sell-last-ditch-deal-to-relucta/nmwYc/'>site</a></td><td>Greece's Tsipras to sell austerity deal to reluctant party</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>aurora</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 20:11:55</td><td></td><td><a href='aurora_0.html'>James Holmes, pictured in 2012, is charged with killing 12 moviegoers and wounding 70 more in a shooting spree in a crowded theater in Aurora, Colo., in July 2012. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/07/09/us/09AURORA/09AURORA-thumbStandard-v2.jpg'></td><td>2015-07-16 19:31:26</td><td><a href='http://www.nytimes.com/2015/07/17/us/james-holmes-guilty-in-aurora-movie-theater-shooting.html'>site</a></td><td>Colorado Jury Reaches Verdict in Aurora Movie Theater Shooting</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 19:56:09</td><td></td><td><a href='aurora_1.html'>Dozens of investigators gave evidence about the carnage Holmes inflicted and how he rigged his apartment with an elaborate booby trap he hoped would explode and divert first responders from the Aurora cinema as he set about the attack. (2)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 17:18:15</td><td><a href='http://www.miamiherald.com/news/business/article26567977.html#storylink=rss'>site</a></td><td>CONCACAF is cooperating with investigators from multiple US agencies, a Swiss federal probe of possible money-laundering and financial mismanagement at FIFA, and by FIFA's ethics committee.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/a2c/sports/soccer/article25333229.ece/ALTERNATES/w220/web-so-concacaf-0706.JPG'></td><td>2015-07-06 23:54:19</td><td><a href='http://www.theglobeandmail.com/sports/soccer/in-wake-of-fifa-scandal-concacaf-proposes-rules-to-rebuild-trust/article25333230/?cmpid=rss1'>site</a></td><td>Plunged into crisis by a second FIFA bribery scandal in four years, the CONCACAF soccer body wants to pass sweeping new leadership rules to help rebuild.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 00:35:27</td><td><a href='http://abcnews.go.com/Sports/wireStory/trinidad-extradition-request-warner-fifa-case-32628319'>site</a></td><td>Trinidad Gets Extradition Request for Warner in FIFA Case</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 00:40:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28371202.html#storylink=rss'>site</a></td><td>Trinidad and Tobago's attorney general says he has received a U.S. request for the extradition of former FIFA vice president Jack Warner on corruption charges.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/42401f4fc0b4644da809b6e7b5bb546e4697e6a4/0_327_3295_1979/master/3295.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=71bb7c434a716568eb9cdf4f3d612779'></td><td>2015-07-23 01:25:10</td><td><a href='http://www.theguardian.com/football/2015/jul/23/fifa-corruption-trinidad-receives-extradition-papers-for-jack-warner'>site</a></td><td>US prosecutors allege South Africa funnelled $10m in 2008 to Warner and two other Fifa executives as payment for them supporting its successful bid to host the 2010 World Cup.</td></tr>
 </table></body></html>

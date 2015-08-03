@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 16:46:41</td><td></td><td><a href='state_islamic_17_18.html'>While Islamic State had managed to advance slightly in Hasaka on Friday, seizing one army position, fierce army air strikes had hindered the attack, Abdulrahman said. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-26 16:46:41</td><td></td><td><a href='state_islamic_17_19.html'>Islamic State pressed a separate assault to capture government-held parts of the northeastern city of Hasaka, blowing up a security building and triggering a government appeal for all residents to take up arms. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 10:11:54</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/27/us-turkey-seek-to-establish-islamic-state-free/'>site</a></td><td>A U.S. official said the creation of an "Islamic State-free zone" would ensure greater security and stability in the Turkish-Syrian border region.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 10:26:53</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-turkey-seek-to-establish-islamic-state-free-zon/nm7Bz/'>site</a></td><td>The United States and Turkey are finalizing plans for a military campaign to push the Islamic State out of a strip of land along the Syrian border, deepening efforts to halt the extremists' advances.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-27 10:26:53</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/27/us-turkey-seek-to-establish-islamic-state-free-zone'>site</a></td><td>Despite the U.S. and Turkey's shared interests in fighting the Islamic State, the Turks have also prioritized defeating Syrian President Bashar Assad.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 10:26:53</td><td><a href='http://www.sfgate.com/news/article/US-Turkey-seek-to-establish-Islamic-State-free-6407195.php'>site</a></td><td><table><tr><td>US, Turkey seek to establish Islamic State-free zone</td></tr><tr><td>The discussions come amid a major tactical shift in Turkey's approach to the Islamic State.</td></tr></table></td></tr>
 </table></body></html>

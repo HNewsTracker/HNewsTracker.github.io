@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-06-28 18:02:59</td><td><a href='http://news.yahoo.com/police-arrest-60-bombing-chad-capital-180259906.html'>site</a></td><td>Chad has been a major contributor to the fight against Boko Haram, which had already attacked Chadian villages along the lake dividing the two countries.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-28 18:12:21</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/28/police-arrest-60-for-bombing-in-chad-capital'>site</a></td><td>Chad has been a major military ally with Nigeria in the fight against the insurgent group, and Boko Haram's leader has publicly threatened the Chadian president with retaliation.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-28 18:12:21</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/police-arrest-60-for-bombing-in-chad-capital/nmnPB/'>site</a></td><td><table><tr><td>The attack was the first of its kind on N'Djamena, the Chadian capital, and came following threats from the Nigeria-based Islamic extremist group Boko Haram.</td></tr><tr><td>There was no immediate claim of responsibility for the attack but suspicion quickly fell on Boko Haram, the Islamic militant group based in neighboring Nigeria that had already attacked Chadian villages along the lake dividing the two countries.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 18:37:29</td><td><a href='http://www.cbsnews.com/news/nigeria-isis-affiliated-islamic-extremists-boko-haram-chibok-girls-prisoners/'>site</a></td><td><table><tr><td>Activist: Boko Haram offering swap for captive girls</td></tr><tr><td>The new initiative reopens an offer made last year to the government of former President Goodluck Jonathan to release the 219 students in exchange for 16 Boko Haram detainees, the activist said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 19:36:38</td><td><a href='http://time.com/3949907/nigeria-boko-haram-release-offer/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td>Shekau had threatened in 2013 to kidnap women and girls if Nigeria's military did not release detained Boko Haram wives and children.</td></tr>
 </table></body></html>

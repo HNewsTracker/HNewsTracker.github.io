@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/03/b6/f4/27ab516aa43d4a648906eabf7901a1c8-30c68c007e95440d8f5f4229cffc2fa9-0.jpg'></td><td>2015-07-04 01:00:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fifa-deflects-criticism-about-absence-of-blatter-f/nmrTX/'>site</a></td><td><table><tr><td>While both organizations raved about the successes of the event, the absence of Blatter and Valcke because of the FIFA corruption investigation lingered.</td></tr><tr><td>It provided a bookend to the tournament that opened in the wake of the initial wave from the FIFA corruption investigation, but has mostly become a secondary story during the tournament, just as organizers had hoped when the event opened a month ago.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 13:35:17</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11483339&ref=rss'>site</a></td><td><table><tr><td>GENEVA (AP) " FIFA leaders this weekend return to the scene of a criminal investigation which sent football's governing body into crisis eight weeks ago.</td></tr><tr><td>Still, Blatter wants to hang on and shape overdue reforms of FIFA now being demanded even by long-loyal World Cup sponsor Coca-Cola.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 09:47:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27895708.html#storylink=rss'>site</a></td><td>The prince, who advocates a March election but provided no indication of his own presidential ambitions, wants a leader from outside the sport to oversee the next election and reforms of scandal-scarred FIFA - with Blatter out immediately.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-20 12:03:20</td><td><a href='http://www.cbc.ca/sports/soccer/fifa-presidential-election-to-be-held-on-feb-26-1.3159733?cmp=rss'>site</a></td><td><table><tr><td>FIFA presidential election to be held on Feb. 26</td></tr><tr><td>FIFA will hold a presidential election on Feb. 26, giving Sepp Blatter seven more months in power before leaving the scandal-tainted governing body.</td></tr></table></td></tr>
 </table></body></html>

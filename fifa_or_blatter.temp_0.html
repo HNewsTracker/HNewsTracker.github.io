@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/07/11/sports/Y-FIFA/Y-FIFA-thumbStandard.jpg'></td><td>2015-07-16 18:14:26</td><td><a href='http://www.nytimes.com/2015/07/17/sports/soccer/ex-fifa-executive-jeffrey-webb-extradited-to-us.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Blatter has not been charged.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 19:02:08</td><td></td><td><a href='fifa_or_blatter.temp_0_2.html'>In another sign of how FIFA is grappling with pressure to improve transparency, its ethics committee, responsible for investigating the corruption allegations, on Thursday called for a change in rules to let it release more information about ongoing investigations. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 19:02:08</td><td></td><td><a href='fifa_or_blatter.temp_0_3.html'>Amid an international uproar, Blatter announced days after the arrests that he would lay down his mandate at an extraordinary FIFA Congress which will take place between December and February, and would not stand again. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-18 20:35:56</td><td></td><td><a href='fifa_or_blatter.temp_0_1.html'>NEW YORK - Jeffrey Webb, one of seven high-ranking officials of soccer's world governing body FIFA who were arrested in Switzerland on corruption charges, pleaded not guilty in U.S. federal court on Saturday. (21)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-19 17:47:04</td><td></td><td><a href='fifa_or_blatter.temp_0_4.html'>Like Platini, Hayatou also did not address details of questions about the latest Blatter-chaired meetings, at a time when senior UEFA officials have suggested the FIFA leader should formally resign and leave now. (4)</a></td></tr>
+</table></body></html>
