@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-28 14:03:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-28-EU--Greece%20Bailout-The%20Latest/id-fb5799103c44457a8a545e4ac58c9db9'>site</a></td><td><table><tr><td>The Greek government is advocating a no vote in next Sunday's referendum, saying the proposals were humiliating for Greece and would have pushed the country's already devastated economy further into recession.</td></tr><tr><td>The Greek vote next Sunday on approving creditors' demands for Greece will be the country's first referendum in 41 years - and the logistics of it are daunting.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/04/73/f4/5014e1942475430c960107215623cf79-19e5693a1d7141cdbd7fbe64b2deb41a-0.jpg'></td><td>2015-07-04 18:48:09</td><td><a href='http://www.daytondailynews.com/ap/ap/business/a-family-divided-emotions-run-high-ahead-of-greek-/nmrjF/'>site</a></td><td>His son, Nikolas, is on his side - and he thinks polarized Greece may be on the verge of a civil war - while his wife Dimitra distrusts both the Yes and the No campaigns and doesn't plan to vote in Sunday's momentous Greek referendum.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47945576,width-300,resizemode-4/a-.jpg'></td><td>2015-07-05 07:08:41</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Greece-crisis-What-are-the-consequences-of-a-yes-or-a-no-vote-at-Tspirass-referendum/articleshow/47945073.cms'>site</a></td><td>Greece crisis: What are the consequences of a 'yes' or a 'no' vote at Tspiras's referendum?</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=topNews'>site</a></td><td>Called at eight days' notice, the referendum offers Greece a 'Yes' or 'No' vote on a proposal that is no longer on the table.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-06 17:39:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article26573452.html#storylink=rss'>site</a></td><td>World markets are trending downward following Greece's "no" vote in Sunday's debt referendum.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-07 05:19:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-greece-no-bailout-vote-20150706-story.html'>site</a></td><td>"The 'no' vote in Greece's referendum on Sunday dramatically increases the risk of a slide toward a disorderly Greek exit from the eurozone," ratings agency Fitch said.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/07/6a/ab/d0319c8d4dc34a44b71ea36fc83370b8-d431d0e9f1f34aefb72ae0418b8b1ae9-0.jpg'></td><td>2015-07-07 23:19:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-pm-tsipras-races-to-restart-talks-after-vote/nmsm7/'>site</a></td><td>Greece gets until Sunday for proposals to stave off collapse</td></tr>
+</table></body></html>

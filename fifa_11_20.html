@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-10 18:05:14</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11463268&ref=rss'>site</a></td><td>The Swiss federal agency says FIFA handed over seized "IT data" to its officials.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000aa641-642.jpg'></td><td>2015-06-10 19:28:58</td><td><a href='http://www.rte.ie/news/2015/0610/707267-fifa/'>site</a></td><td>The OAG, which took data and documents from FIFA last month, will speak with Mr Blatter and other officials if they are of interest to its investigation.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-06-10T193519Z_1_LYNXMPEB5910D_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-ELECTION-ANALYSIS.JPG?itok=kXkmCjYC'></td><td>2015-06-11 10:02:38</td><td><a href='http://www.sbs.com.au/news/article/2015/06/11/analysis-fifa-hold-new-election-concerns-it-under-old-rules'>site</a></td><td>On Wednesday, Switzerland's Office of the Attorney General seized further data from FIFA as part of its probe.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-05 00:49:43</td><td><a href='http://www.nytimes.com/aponline/2015/07/04/world/europe/ap-soc-fifa-investigation-blatter.html?partner=rss&emc=rss&_r=0'>site</a></td><td>"Is FIFA responsible from the top down for everything in football, what happens in some village somewhere around the world?" asked Blatter, also a target of the American investigation.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-10 14:33:46</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/10/swiss-say-1-of-7-fifa-officials-agrees-to-extradition-to-us'>site</a></td><td>The widening American investigation alleges bribery and racketeering worth more than $150 million involving high-ranking FIFA officials over a 24-year span.</td></tr>
+</table></body></html>

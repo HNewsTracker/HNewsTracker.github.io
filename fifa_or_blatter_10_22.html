@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297718827525_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-06-30 18:55:51</td><td><a href='http://www.torontosun.com/2015/06/30/fifas-blatter-will-not-attend-womens-world-cup-final'>site</a></td><td>Investigations by U.S. and Swiss authorities also include scrutiny of how FIFA awarded World Cup hosting rights to Russia and Qatar for the 2018 and 2022 men's tournaments.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-05 00:49:43</td><td><a href='http://www.nytimes.com/aponline/2015/07/04/world/europe/ap-soc-fifa-investigation-blatter.html?partner=rss&emc=rss&_r=0'>site</a></td><td>"I act on the leadership principal. If a majority of the executive committee wants a World Cup in Qatar then I have to accept that," Blatter said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-05 01:25:32</td><td><a href='http://www.theguardian.com/football/2015/jul/05/france-and-germany-intervened-over-world-cup-votes-says-sepp-blatter'>site</a></td><td>Blatter said in June that he would stand down as pressure built from the American case and a separate Swiss federal investigation focused on possible money laundering linked to the awarding of the World Cups to Russia and Qatar.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-06 17:18:15</td><td><a href='http://www.miamiherald.com/news/business/article26567977.html#storylink=rss'>site</a></td><td>CONCACAF is cooperating with investigators from multiple US agencies, a Swiss federal probe of possible money-laundering and financial mismanagement at FIFA, and by FIFA's ethics committee.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-06 17:30:00</td><td><a href='http://www.latimes.com/sports/sportsnow/la-sp-sn-fifa-bans-world-cup-inspector-ban-20150706-story.html'>site</a></td><td>FIFA's ethics committee bans World Cup inspector for seven years</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-06 18:03:36</td><td><a href='http://news.yahoo.com/fifa-bans-2018-2022-world-cup-bids-inspector-154559106.html'>site</a></td><td>Mayne-Nicholls was appointed by FIFA in 2010 to lead a six-member team evaluating the 2018-2022 World Cup bidders.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-06 18:05:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article26579593.html#storylink=rss'>site</a></td><td>The official chosen by FIFA to inspect 2018 and 2022 World Cup hosting candidates was banned from soccer for seven years on Monday for breaking ethics rules.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-12 15:54:05</td><td><a href='http://www.charlotteobserver.com/sports/article27077500.html#storylink=rss'>site</a></td><td><table><tr><td>Swiss FIFA case has 28 new 'money laundering' acts to study</td></tr><tr><td>Swiss federal prosecutors have new evidence of 28 acts of possible money laundering linked to FIFA's 2018 and 2022 World Cup bid contests.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-15 20:55:20</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11481880&ref=rss'>site</a></td><td>Meanwhile, the government of Switzerland, the home of FIFA's global headquarters, has launched a separate probe into suspected money laundering connected to the bidding process for the 2018 and 2022 World Cups.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-22 18:14:11</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/22/blatter-heads-to-russia-for-first-foreign-trip-since-crisis'>site</a></td><td>Saturday's qualifying draw in St. Petersburg for the 2018 World Cup will be the 79-year-old Blatter's last official event connected to football's showcase tournament before he prematurely leaves office in February.</td></tr>
+</table></body></html>

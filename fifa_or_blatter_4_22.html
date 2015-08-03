@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/9Mg8QN9jm89HcjgLPZSsfQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201507061115405112328'></td><td>2015-07-06 16:35:07</td><td><a href='http://sports.yahoo.com/news/fifa-bans-2018-2022-world-cup-bids-inspector-154639556--spt.html'>site</a></td><td>Mayne-Nicholls was considering standing in the FIFA presidential election when his ethics case was reported last year.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 16:53:00</td><td><a href='http://www.dw.com/en/fifa-bans-world-cup-bid-inspector-for-seven-years-for-breaking-ethics-rules/a-18565281?maca=en-rss-en-world-4025-rdf'>site</a></td><td>FIFA's ethics committee said Monday Mayne-Nicholls would be barred from "any kind of football-related activity at national and international level" for seven years.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-06 17:30:00</td><td><a href='http://www.latimes.com/sports/sportsnow/la-sp-sn-fifa-bans-world-cup-inspector-ban-20150706-story.html'>site</a></td><td>FIFA's ethics committee bans World Cup inspector for seven years</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-06 18:03:36</td><td><a href='http://news.yahoo.com/fifa-bans-2018-2022-world-cup-bids-inspector-154559106.html'>site</a></td><td>FIFA ethics judge Joachim Eckert chaired the panel which conducted a personal hearing for Mayne-Nicholls.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-06 18:05:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article26579593.html#storylink=rss'>site</a></td><td>FIFA's ethics committee gave no reason for its decision to suspend Harold Mayne-Nicholls, a former president of Chile's football federation who is disputing the sanction.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.abc.net.au/news/image/6599860-3x2-340x227.jpg'></td><td>2015-07-06 20:19:01</td><td><a href='http://www.abc.net.au/news/2015-07-07/fifa-bans-harold-mayne-nicholls-over-confidentiality-breach/6599838'>site</a></td><td>The world governing body did not give details of the charges against Mr Mayne-Nicholls, but said it was for a breach of a confidentiality rule in FIFA's code of ethics.</td></tr>
+</table></body></html>
