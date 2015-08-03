@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/6/18/eurozone-leaders-to-hold-emergency-summit-on-greece/_jcr_content/image.adapt.480.low.Varoufakis_061815.jpg'></td><td>2015-06-20 15:27:00</td><td><a href='http://america.aljazeera.com/articles/2015/6/20/greece-to-offer-more-in-debt-talks.html'>site</a></td><td>"If EU wants Greece to pay its debts it should be interested in growing the Greek economy ... helping it pay its debts," he said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/w1wFS0Z3BRlOpklqj1UG7w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b4126b422151d11d7a0f6a7067007cbb.jpg'></td><td>2015-06-30 07:53:19</td><td><a href='http://news.yahoo.com/latest-markets-edgy-greek-imf-payment-looms-072344112--finance.html'>site</a></td><td>The mood in European financial markets remained edgy amid growing expectations that Greece will not make a repayment to the International Monetary Fund.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-06-30 08:35:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-06-30-EU--Greece-Bailout/id-635b590f42644a2bb99c0a3343af1966'>site</a></td><td>It's crunch time for Greece, with the European part of its international bailout expiring Tuesday and with it any possible access to the remaining rescue loans it contains that it needs to pay its debts.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26032012.html#storylink=rss'>site</a></td><td>In a story July 2 about the Greek referendum, The Associated Press reported erroneously that the International Monetary Fund had said Greece would need debt relief worth 50 billion euros.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-07 03:39:09</td><td><a href='http://news.yahoo.com/eurozone-leaders-hold-emergency-summit-greece-033909834.html'>site</a></td><td>Greece last week defaulted on a 1.5 billion euro repayment to the International Monetary Fund but Lagarde said her organisation was "ready to assist Greece if requested to do so".</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150712&i=109547919&w=240&r=109547919-1&t=2'></td><td>2015-07-13 00:15:54</td><td><a href='http://www.reuters.com/article/2015/07/13/us-eurozone-greece-idUSKBN0P40EO20150713?feedType=RSS&feedName=worldNews'>site</a></td><td>Another diplomat said Merkel had declared the matter a "red line" for Germany and insisted that the International Monetary Fund be fully involved in any third bailout for Greece, despite resistance from Athens.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 12:13:06</td><td><a href='http://www.miamiherald.com/news/business/article27281152.html#storylink=rss'>site</a></td><td>The International Monetary Fund, which was involved Greece's previous two bailouts and will also play a role in the third, has long advocated the country's debt is too high and that any deal must include debt relief - something the Greek side has also insisted on.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/04/03/4d7c45f8e53545e1bd8b1bfdff82fa00-12f627ee4b0340fb874125c50e5b8ae8-0.jpg'></td><td>2015-07-15 15:59:41</td><td><a href='http://www.daytondailynews.com/ap/ap/business/why-germany-refuses-to-write-off-greeces-debts/nmzGf/'>site</a></td><td>The International Monetary Fund says Greece's debts are too big to pay and need to be partly forgiven.</td></tr>
+</table></body></html>

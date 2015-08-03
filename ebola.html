@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pmQa6lTbZKown3vhlxH8_w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b04350ba760a0c1d7b0f6a706700b6a6.jpg'></td><td>2015-07-03 15:56:25</td><td><a href='http://news.yahoo.com/liberia-works-contain-ebola-source-cases-155625276.html'>site</a></td><td>"We will contain it quickly because of where we are in the learning curve as far as Ebola is concerned," said Dr. Philip Ireland at the John F. Kennedy Medical Center in the capital, Monrovia.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 16:05:17</td><td></td><td><a href='ebola_7.html'>A panel commissioned by the World Health Organization to assess its bungled response to the world's biggest Ebola outbreak said the crisis exposed the agency's "organizational failings" and called for WHO to be held accountable. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 20:12:28</td><td><a href='http://www.reuters.com/article/2015/07/07/us-health-ebola-liberia-idUSKCN0PH2B520150707?feedType=RSS&feedName=healthNews'>site</a></td><td>DAKAR A dead dog suspected of being the possible source for the re-emergence of Ebola in Liberia has tested negative for the disease, two health officials said on Tuesday, quoting initial findings.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/7/d/i/t/image.related.articleLeadwide.620x349.gi7dam.png/1436318739568.jpg'></td><td>2015-07-08 01:27:47</td><td><a href='http://www.smh.com.au/world/world-health-organisation-slammed-on-ebola-response-20150708-gi7dam.html'>site</a></td><td><table><tr><td>London: Experts have recommended urgent, root-and-branch changes to the World Health Organisation after an inadequate response to West Africa's vast and deadly Ebola outbreak.</td></tr><tr><td>The house where the 17-year-old lived before he died of Ebola.</td></tr><tr><td>Ebola health workers spray disinfectant on an ambulance that was used to transport two people suspected of having the Ebola virus on the outskirts of Monrovia earlier this month.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/Z8uqHf71yTjPmXrBjftsig--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-07-08T232543Z_1_LYNXNPEB6719W_RTROPTP_2_HEALTH-EBOLA-LEONE.JPG'></td><td>2015-07-08 23:25:43</td><td><a href='http://news.yahoo.com/loss-health-staff-could-increase-maternal-mortality-ebola-232543149.html'>site</a></td><td><table><tr><td>The loss of health workers to Ebola could increase maternal mortality in Guinea by 38 percent, 74 percent in Sierra Leone and more than 100 percent in Liberia, the bank said in a report.</td></tr><tr><td>"The loss of health workers to Ebola could increase maternal deaths up to rates last seen in these countries 15-20 years ago," Markus Goldstein, lead economist at the World Bank, said in a statement.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-10 11:19:29</td><td></td><td><a href='ebola_2.html'>DAKAR/GENEVA Tests on the Ebola virus that claimed Liberia's first victim since it was declared Ebola-free in May showed it was closely related to an earlier Liberian strain, the World Health Organization and a health official said on Friday. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/1b0/feeds/canadian-press/lifestyle/article23575574.ece/ALTERNATES/w220/cpt115258705_high.jpg'></td><td>2015-07-13 12:27:19</td><td><a href='http://www.theglobeandmail.com/news/world/africas-ebola-outbreak-has-not-run-its-course/article25478520/?cmpid=rss1'>site</a></td><td>Africa’s Ebola outbreak has not run its course</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-15 13:07:06</td><td></td><td><a href='ebola_0.html'>Deputy Health Minister and head of the Ebola response, Tolbert Nyenswah, told The Associated Press the woman in her early 20s who died on July 12 was linked to the 17-year-old boy who died last month. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 20:25:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484323&ref=rss'>site</a></td><td>Tekmira suspends work on Ebola drug, will change name</td></tr>
+</table></body></html>

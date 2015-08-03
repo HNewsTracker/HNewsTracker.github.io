@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-02 14:39:56</td><td></td><td><a href='egypt_0_1.html'>The United States and Egypt on Sunday resumed formal security talks that were last held six years ago and kept on hiatus until now amid the political unrest that swept the country in the wake of the Arab Spring. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/02/ca/43/87123a391dfb407f9973be099739438a-447e69e3739342aba2a07280ac9da81e-0.jpg'></td><td>2015-08-02 14:39:56</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-secretary-of-state-john-kerry-meets-egyptian-of/nnBdC/'>site</a></td><td>U.S. Secretary of State John Kerry, left, and Egypt's Foreign Minister Sameh Shoukry speak at a press conference after their meeting at the foreign ministry in Cairo, Egypt, Sunday, Aug. 2, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-02 20:40:45</td><td><a href='http://www.reuters.com/article/2015/08/02/us-egypt-usa-idUSKCN0Q706H20150802?feedType=RSS&feedName=topNews'>site</a></td><td>Washington supports former general Abdel Fattah al-Sisi, who led Mursi's overthrow and was elected to succeed him, but has cautiously criticized Egypt's human rights record.</td></tr>
+</table></body></html>
