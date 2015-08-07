@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 15:20:04</td><td></td><td><a href='ferguson_4.html'>Anderson previously was police commander in the Phoenix suburb of Glendale, Arizona - the same city from which Ferguson recently hired its interim city manager, Ed Beasley. (11)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 16:25:15</td><td></td><td><a href='ferguson_0.html'>Ferguson presses several-hour, unity-minded cleanup effort ahead of Brown anniversary (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 01:33:21</td><td></td><td><a href='ferguson_6.html'>FILE - In this Aug. 9, 2014, file photo, a police tactical team moves in to disperse a group of protesters following the shooting of a young black man by a white policeman in Ferguson, Mo. (11)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 04:30:13</td><td></td><td><a href='ferguson_1.html'>ST. LOUIS (AP) - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/d47/news/world/article25857894.ece/ALTERNATES/w220/web-wo-us-ferguson06nw1'></td><td>2015-08-06 13:49:27</td><td><a href='http://www.theglobeandmail.com/news/world/ferguson-one-year-later-whats-happening-this-weekend/article25857899/?cmpid=rss1'>site</a></td><td>The Ferguson police force of 50 will be fully staffed this weekend and will have the help of the much larger St. Louis County police force, he said.</td></tr>
+</table></body></html>

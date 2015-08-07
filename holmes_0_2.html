@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150620191407-holmes-prosecution-closes-with-victim-testimony-cabrera-pkg-00011610-large-169.jpg'></td><td>2015-07-10 19:33:07</td><td><a href='http://edition.cnn.com/2015/07/09/us/james-holmes-trial-aurora-colorado-movie-theater-shooting/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_us+%28RSS%3A+CNN+-+U.S.%29'>site</a></td><td>Holmes has pleaded not guilty by reason of insanity.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 00:43:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27191842.html#storylink=rss'>site</a></td><td>Holmes, now 27, does not dispute that he was the lone gunman who attacked the theater but pleaded not guilty by reason of insanity.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/120723040516-james-holmes-court-3-horizontal-large-gallery.jpg'></td><td>2015-07-16 19:47:14</td><td><a href='http://edition.cnn.com/2015/07/16/us/james-holmes-trial-colorado-movie-theater-shooting-verdict/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_us+%28RSS%3A+CNN+-+U.S.%29'>site</a></td><td>Holmes is accused of opening fire during a midnight screening of the Batman movie "The Dark Knight Rises."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/02506/James-Holmes_2506390b.jpg'></td><td>2015-07-16 21:24:38</td><td><a href='http://www.telegraph.co.uk/news/worldnews/northamerica/usa/11745514/Batman-shooter-trial-James-Holmes-verdict-live.html'>site</a></td><td>Holmes killed 12 people and wounded a further 70.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.usnews.com/dims4/USNEWS/85c5524/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Ff0%2F3b%2Fc92b7fd34924b762b31cb2d79378%2F150716-editorial.jpg'></td><td>2015-07-16 22:18:19</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/16/the-latest-colorado-theater-shooting-trial-verdict-reached'>site</a></td><td><table><tr><td>James Holmes has been found guilty of murder.</td></tr><tr><td>A jury has found Colorado theater shooter James Holmes guilty of murder in the methodically planned attack that left 12 dead and dozens wounded.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/e/a/y/6/image.related.articleLeadwide.620x349.gieaz9.png/1437092899623.jpg'></td><td>2015-07-16 22:34:23</td><td><a href='http://www.brisbanetimes.com.au/world/colorado-theatre-shooter-james-holmes-guilty-of-murder-20150717-gieaz9.html'>site</a></td><td>Movie massacre gunman James Holmes was found guilty of multiple counts of murder for the 2012 shooting at a Batman film.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-17 00:51:19</td><td><a href='http://www.reuters.com/article/2015/07/17/us-usa-shooting-denver-verdict-idUSKCN0PQ2DU20150717?feedType=RSS&feedName=domesticNews'>site</a></td><td>After a three-month trial in which they were presented with thousands of pieces of evidence and testimony from hundreds of witnesses, jurors deliberated for about a day and a half, then found Holmes guilty on all 165 counts against him.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-17 06:15:38</td><td><a href='http://www.startribune.com/despite-quick-conviction-theater-shooting-trial-isn-t-over/316095901/'>site</a></td><td>- Families of the 12 people James Holmes killed and the scores he injured in a packed movie theater were relieved that jurors only needed 12 hours to reject the idea that he was legally insane when he opened fire.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 06:17:05</td><td><a href='http://www.miamiherald.com/news/nation-world/article27471751.html#storylink=rss'>site</a></td><td>The 27-year-old Holmes could get the death penalty for the massacre that left 12 people dead and dozens of others wounded.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-22 20:33:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-07-22-US--Colorado%20Shooting/id-477fe2ab5c5348b9a976903b25512494'>site</a></td><td>The same jurors who convicted Holmes of murder and attempted murder last week - swiftly dismissing his claim that he was legally insane during the attack - must now decide whether to sentence him to death or life in prison without parole.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-08-03 15:30:44</td><td><a href='http://www.startribune.com/deliberations-resume-in-colorado-theater-shooting-trial/320487452/'>site</a></td><td>If jurors unanimously agree that such factors outweigh the heinousness of the July 2012 attack that killed 12 people and injured 70 others, Holmes would be sentenced to a life term.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://wpmedia.news.nationalpost.com/2015/08/colorado_shooting.jpg?w=620'></td><td>2015-08-03 20:02:35</td><td><a href='http://news.nationalpost.com/news/world/jury-leaves-door-open-to-death-penalty-for-colorado-theatre-killer-james-holmes'>site</a></td><td>The same jury last month convicted Holmes of killing 12 people and injuring 70 in the July 2012 attack at a suburban Denver movie theatre.</td></tr>
+</table></body></html>

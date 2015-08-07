@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/images/Sports/gty_japan_vs_usa_soccer_mm_150702_4x3t_96.jpg'></td><td>2015-07-04 01:01:06</td><td><a href='http://abcnews.go.com/Sports/wireStory/fifa-deflects-criticism-absence-blatter-final-32215657'>site</a></td><td>But FIFA officials said the gap needs to close between the countries that have made serious investments in women's soccer and those that are lagging behind, creating imbalance in a tournament that expanded to 24 teams for the first time.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 09:00:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article26486962.html#storylink=rss'>site</a></td><td><table><tr><td>Africa's soccer strongman a candidate for FIFA president?</td></tr><tr><td>The son of a sultan from northern Cameroon, Issa Hayatou has ruled African soccer for 27 years and counting, a decade longer than Sepp Blatter has been in charge of FIFA.</td></tr><tr><td>As senior VP, Hayatou was delegated to hand over the women's trophy in Vancouver, pushing African soccer's strongman into the spotlight at a time when FIFA is in crisis.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 00:49:43</td><td><a href='http://www.nytimes.com/aponline/2015/07/04/world/europe/ap-soc-fifa-investigation-blatter.html?partner=rss&emc=rss&_r=0'>site</a></td><td><table><tr><td>"I'm there now to fight. Not for myself but for FIFA," said Blatter, who added he was on the right path and had no doubts.</td></tr><tr><td>"Is FIFA responsible from the top down for everything in football, what happens in some village somewhere around the world?" asked Blatter, also a target of the American investigation.</td></tr><tr><td>"Everyone has fears, for example of death, but with regard to my work at FIFA I have no fear. I've nothing to be afraid of," said Blatter.</td></tr><tr><td>"I'm afraid that they want to wreck FIFA, a work that I helped create," the 79-year-old said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-06 01:52:47</td><td></td><td><a href='fifa_11.html'>Carli Lloyd #10 of the United States celebrates scoring the opening goal against Japan in the FIFA Women's World Cup Canada 2015 Final at BC Place Stadium on July 5, 2015 in Vancouver, Canada. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 16:53:00</td><td><a href='http://www.dw.com/en/fifa-bans-world-cup-bid-inspector-for-seven-years-for-breaking-ethics-rules/a-18565281?maca=en-rss-en-world-4025-rdf'>site</a></td><td>FIFA's ethics committee said Monday Mayne-Nicholls would be barred from "any kind of football-related activity at national and international level" for seven years.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-06 18:03:36</td><td></td><td><a href='fifa_9.html'>Mayne-Nicholls was appointed by FIFA in 2010 to lead a six-member team evaluating the 2018-2022 World Cup bidders. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 15:15:18</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11477195&ref=rss'>site</a></td><td><table><tr><td>VANCOUVER, British Columbia (AP) " For a few moments over the past month, the Women's World Cup seemed to push aside the FIFA scandal that is simmering a half planet away.</td></tr><tr><td>For FIFA, it's back to reality.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-09 11:26:11</td><td></td><td><a href='fifa_1.html'>GENEVA (AP) - Chuck Blazer was banned for life by FIFA's ethics committee on Thursday for widespread corruption, finally ending the career of the longtime most senior American in world football. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 11:12:56</td><td><a href='http://abcnews.go.com/Sports/wireStory/lifting-lid-fifas-big-secrets-executive-pay-32351052'>site</a></td><td>Lifting the Lid on One of FIFA's Big Secrets: Executive Pay</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-10 11:14:04</td><td></td><td><a href='fifa_0.html'>Failing to publish the amounts paid to Blatter and other top executives vehicles the impression that FIFA must still have something to hide, when it should be setting an example for the rest of football to follow. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 14:17:37</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/10/swiss-say-1-of-7-fifa-officials-agrees-to/'>site</a></td><td>Swiss say 1 of 7 FIFA officials agrees to extradition to US</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 14:33:46</td><td><a href='http://www.foxnews.com/world/2015/07/10/swiss-authorities-say-1-7-detained-fifa-officials-has-agreed-to-be-extradited/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Swiss authorities say 1 of 7 detained FIFA officials has agreed to be extradited to the US</td></tr>
+</table></body></html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/02/00/8134676/3/628x471.jpg'></td><td>2015-06-12 03:36:15</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-higher-building-on-gains-from-the-6320951.php'>site</a></td><td>The move increases pressure on Athens to compromise but markets were worried that the outstanding differences between Greece and its creditors would lead to the country defaulting on its debt.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/_j00g7BCZHvqcUhI_UE38A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fa5b7058fe2591a790f6a7067007aa3.jpg'></td><td>2015-06-15 03:11:08</td><td><a href='http://news.yahoo.com/asia-stocks-slip-euro-down-greek-debt-talks-031108153--finance.html'>site</a></td><td>GREEK DRAMA: Weekend negotiations on Greece's bailout terms produced no breakthroughs and Greek officials and creditors remained far apart as a deadline for a debt payment nears.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201524/mer_140x93.jpg'></td><td>2015-06-25 21:10:32</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11471420&ref=rss'>site</a></td><td>The bitter standoff between Greece and its international creditors was extended into the weekend, just days before Athens has to meet a crucial debt deadline which could decide whether it goes bankrupt and gets kicked out of the euro currency club.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/y/6/i/p/image.related.articleLeadwide.620x349.ghykvh.png/1435293816058.jpg'></td><td>2015-06-26 04:43:45</td><td><a href='http://www.brisbanetimes.com.au/world/germany-and-france-tell-greece-to-sort-debt-deal-this-weekend-20150626-ghykvh.html'>site</a></td><td>Germany and France tell Greece to sort debt deal this weekend</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-05 08:30:48</td><td><a href='http://www.reuters.com/article/2015/07/05/us-eurozone-greece-idUSKBN0P40EO20150705?feedType=RSS&feedName=businessNews'>site</a></td><td>He is urging a resounding 'No', saying it would give him a strengthened mandate to return to negotiations and demand a better deal, including a writedown on Greece's massive debt.</td></tr>
+</table></body></html>

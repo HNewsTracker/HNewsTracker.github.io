@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/3f6/report-on-business/article25349385.ece/ALTERNATES/w220/-OUKBS-UK-MICROSOFT-REDUNDA.JPG'></td><td>2015-07-08 07:11:49</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/microsoft-plans-major-job-cuts-report/article25349386/?cmpid=rss1'>site</a></td><td><table><tr><td>The layoffs are expected to affect employees at the hardware group and other parts of the company, including the smartphone business that Microsoft acquired from Nokia last year, the newspaper said.</td></tr><tr><td>Reuters could not immediately reach Microsoft for comment outside regular U.S. business hours.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 07:23:08</td><td><a href='http://www.reuters.com/article/2015/07/08/us-microsoft-redundancies-idUSKCN0PI0GL20150708?feedType=RSS&feedName=businessNews'>site</a></td><td>In June, Microsoft said Stephen Elop, the former top boss at phone-maker Nokia, and three other high-level executives were leaving the company.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/21a/report-on-business/international-business/us-business/article25349529.ece/ALTERNATES/w220/-CTECH-US-MICROSOFT-REDUNDA.JPG'></td><td>2015-07-08 10:27:28</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/us-business/microsoft-plans-major-job-cuts-nyt/article25349530/?cmpid=rss1'>site</a></td><td>The new job cuts are expected to affect people in Microsoft's hardware group, among other parts of the company, including the struggling smartphone business that it acquired from Nokia last year in a $7.2 billion deal.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://static01.nyt.com/images/2015/06/30/business/Microsoft/Microsoft-thumbStandard.jpg'></td><td>2015-07-08 18:18:02</td><td><a href='http://www.nytimes.com/2015/07/09/technology/microsoft-layoffs.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Last month, the company said that Stephen Elop, the former chief executive of Nokia who became a senior Microsoft executive after the acquisition, overseeing its devices business, would leave Microsoft.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/37/44/40/8276022/9/628x471.jpg'></td><td>2015-07-08 23:00:18</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-cuts-7-800-jobs-as-phone-sales-flag-6372554.php'>site</a></td><td>Analysts have said the Nokia business was a drag on Microsoft's profits.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/37/44/40/8276022/9/square_gallery_thumb.jpg'></td><td>2015-07-08 23:00:18</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-cuts-7-800-jobs-as-phone-sales-flag-6372554.php'>site</a></td><td><table><tr><td>But Microsoft's new boss, Satya Nadella, has been pulling back from phone hardware and digital advertising after seeing weak returns on those ventures.</td></tr><tr><td>Microsoft isn't getting out of the hardware business altogether, although Nadella said the company will no longer focus on building a "stand-alone phone business."</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-21 20:43:03</td><td><a href='http://www.reuters.com/article/2015/07/21/us-microsoft-results-idUSKCN0PV28Z20150721?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>Microsoft posts $3.2 billion loss as it writes down Nokia phone business</td></tr><tr><td>Microsoft Corp (MSFT.O) reported a $3.2 billion quarterly net loss as it wrote down its Nokia phone business and demand fell for its Windows operating system.</td></tr><tr><td>Microsoft's shares fell 3 percent to $45.80 in extended trading on Tuesday.</td></tr><tr><td>Microsoft reported a net loss of 40 cents per share for the quarter ended June 30.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-21 20:50:08</td><td><a href='http://www.cbc.ca/news/business/microsoft-posts-quarterly-loss-writes-down-nokia-phone-business-1.3162319?cmp=rss'>site</a></td><td><table><tr><td>Microsoft reported net income of $4.61 billion US, or 55 cents per share, a year earlier.</td></tr><tr><td>Microsoft recorded total impairment, integration and restructuring expenses of $8.4 billion US including the charges related to the Nokia phone business.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-21 21:14:36</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-books-8-4-billion-write-down-on-phones-6397814.php'>site</a></td><td>LOS ANGELES (AP) - Microsoft booked an $8.4 billion charge in the fourth quarter, swallowing a bitter pill by writing off the Nokia phone business it bought just over a year ago.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0721/20150721__0722microsoft~1_300.JPG'></td><td>2015-07-21 21:58:42</td><td><a href='http://www.mercurynews.com/business/ci_28517511/microsoft-posts-largest-ever-net-loss-after-nokia?source=rss'>site</a></td><td>The net loss in the fourth quarter, which ended June 30, amounted to $3.2 billion, and sales fell 5.1 percent to $22.2 billion, Microsoft said Tuesday in a statement.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066230947&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L0XA'></td><td>2015-07-22 18:42:20</td><td><a href='http://www.reuters.com/article/2015/07/22/us-microsoft-hardware-idUSKCN0PW25U20150722?feedType=RSS&feedName=businessNews'>site</a></td><td>Microsoft's hardware strategy under scrutiny after record loss</td></tr>
+</table></body></html>

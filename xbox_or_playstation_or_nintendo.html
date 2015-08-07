@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>xbox or playstation or nintendo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 02:25:32</td><td></td><td><a href='xbox_or_playstation_or_nintendo_0.html'>Iwata led Nintendo's development into a global company, with its hit Wii home console and DS handheld, and also through its recent woes caused by the popularity of smartphones. (11)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 10:46:14</td><td></td><td><a href='xbox_or_playstation_or_nintendo_5.html'>The company did not announce a replacement but Genyo Takeda, senior managing director and one of the lead developers of Nintendo's Wii console, will lead the committee for Iwata's funeral - a sign he could be taking on the leadership role. (12)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://assets.rollingstone.com/assets/2015/article/satoru-iwata-president-and-ceo-of-nintendo-dead-at-55-20150713/202653/medium_rect/1436798988/720x405-GettyImages-480544670.jpg'></td><td>2015-07-13 15:58:00</td><td><a href='http://www.rollingstone.com/culture/news/satoru-iwata-president-and-ceo-of-nintendo-dead-at-55-20150713'>site</a></td><td>Two years later, Iwata succeeded Nintendo's longtime president Hiroshi Yamauchi.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 23:45:01</td><td></td><td><a href='xbox_or_playstation_or_nintendo_10.html'>"Iwata-san's passing affects us all deeply. He was a true visionary who expanded our understanding of the amazing art of video games. We offer our condolences to his family, friends and Nintendo colleagues." (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-14 04:11:24</td><td></td><td><a href='xbox_or_playstation_or_nintendo_3.html'>Shoppers move on an escalator under Nintendo's Super Mario characters at an electronics store in Tokyo, Monday, July 13, 2015. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/baa7d5ece890abc8f1f017098398d44043c63dc6/r=84&amp;c=84x84/http/videos.usatoday.net/Brightcove2/29906170001/2015/07/29906170001_4333455382001_thumb-i6IBM2vufWvE.jpg?pubId=29906170001'></td><td>2015-07-23 17:19:53</td><td><a href='http://www.usatoday.com/story/tech/gaming/2015/07/23/rise-tomb-raider-ps4/30569089/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Versions of the game for Xbox One and Xbox 360 launch November 10.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-29 08:51:30</td><td><a href='http://www.seattlepi.com/business/technology/article/Nintendo-reverses-into-quarterly-profit-on-yen-6411664.php'>site</a></td><td><table><tr><td>Earlier this year, Nintendo did an about-face and announced it would go into games for mobile devices, a move it had scoffed for years.</td></tr><tr><td>Iwata, president from 2002, was a highly visible spokesman for Nintendo, and many in the game industry mourned the 55-year-old's death, which followed a long illness.</td></tr><tr><td>Foreign exchange gains added 10.8 billion yen to operating income in the quarter, Nintendo said.</td></tr></table></td></tr>
+</table></body></html>

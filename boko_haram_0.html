@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 18:37:29</td><td></td><td><a href='boko_haram_0_1.html'>He said the recent slew of Boko Haram bloodletting - some 350 people killed in the past nine days - is consistent with past ratcheting up of violence as the militants seek a stronger negotiating position. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 18:37:29</td><td></td><td><a href='boko_haram_0_2.html'>Shekau had threatened in 2013 to kidnap women and girls if Nigeria's military did not release detained Boko Haram wives and children. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 18:37:29</td><td><a href='http://www.cbsnews.com/news/nigeria-isis-affiliated-islamic-extremists-boko-haram-chibok-girls-prisoners/'>site</a></td><td>Thousands of suspects have died in custody, and some detainees wanted by Boko Haram may be among them.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-08 19:08:54</td><td><a href='http://nypost.com/2015/07/08/boko-haram-offers-to-trade-kidnapped-chibok-girls-for-militants/'>site</a></td><td>The new initiative reopens an offer made last year to the government of former President Goodluck Jonathan to release the 219 students in exchange for 16 Boko Haram detainees, the activist said.</td></tr>
+</table></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 12:05:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11484725&ref=rss'>site</a></td><td>Kenya president says talks with Obama to focus on extremism</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 18:00:35</td><td><a href='http://www.startribune.com/obama-s-africa-visit-troubles-human-rights-groups/318313551/'>site</a></td><td>Kenya's deputy president, William Ruto, is also under indictment by the International Criminal Court for alleged links to violence after the 2007 election.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 10:35:40</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28490806.html#storylink=rss'>site</a></td><td>Kenya bids ?welcome home? to President Obama</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 02:28:32</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28681015.html#storylink=rss'>site</a></td><td>Kenya welcomes President Obama</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.abc.net.au/news/image/6648454-3x2-340x227.jpg'></td><td>2015-07-25 20:26:29</td><td><a href='http://www.abc.net.au/news/2015-07-26/obama-calls-for-gay-rights-in-africa-challenges-kenya/6648448'>site</a></td><td>Kenyan deputy president William Ruto, who attended talks with Mr Obama, said in May there was "no room" for gays in Kenya.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/26/74/28/1e66ea3f4d07432c9f3489786cfd643a-49842e46398546e7886e00007dc3dfbd-1_1.jpg'></td><td>2015-07-26 15:42:54</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/obama-to-close-historic-kenya-visit-with-national-/nm6rD/'>site</a></td><td>Obama: Kenya at 'crossroads' between peril and promise</td></tr>
+</table></body></html>

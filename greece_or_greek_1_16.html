@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201525/AP150506205731_140x93.jpg'></td><td>2015-06-30 18:25:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11473789&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Greek official: eurozone finance ministers' teleconference over, will continue Wed morning.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47887523,width-300,resizemode-4/greece.jpg'></td><td>2015-06-30 18:43:52</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Eurogroup-refuses-Greece-bailout-extension-talks-to-continue/articleshow/47887342.cms'>site</a></td><td>"The Eurogroup just finished. We will continue tomorrow morning to allow finance ministers to examine the proposals of the Greek government," the source said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-02 06:19:10</td><td><a href='http://www.miamiherald.com/news/business/article26032012.html#storylink=rss'>site</a></td><td>Eurozone finance ministers were set to weigh Greece's latest proposal for aid Wednesday.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-07 15:57:33</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/the-latest-france-pledges-effort-to-keep-greece-in-euro'>site</a></td><td>"And it is really up to the Greek government to come up with far-reaching proposals. If they don't do that, then I think it will be over quickly."</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/r15bf4Pkg4YBFczrFWLUYw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/94e02a62be7cc71e7b0f6a7067001e05_original.jpg'></td><td>2015-07-10 11:14:42</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-sell-austerity-deal-111433389.html'>site</a></td><td>European Commission spokesman Margaritis Schinas says they will likely send their assessment of the Greek proposal to the eurozone finance ministers later Friday.</td></tr>
+</table></body></html>

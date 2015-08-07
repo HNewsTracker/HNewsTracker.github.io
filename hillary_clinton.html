@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 30,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 30 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/money/dam/assets/150701110444-puerto-rico-economy-debt-00013204-1024x576.jpg'></td><td>2015-07-07 22:35:58</td><td><a href='http://money.cnn.com/2015/07/07/investing/puerto-rico-chapter-9-bankruptcy/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fmoney_latest+%28CNNMoney%3A+Latest+News%29'>site</a></td><td>Jeb Bush and Hillary Clinton support bankruptcy rights for Puerto Rico</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 23:23:00</td><td><a href='http://www.latimes.com/nation/la-na-hillary-clinton-interview-20150707-story.html'>site</a></td><td>Voters have trust issues with Hillary Clinton? She blames the right</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 14:10:15</td><td></td><td><a href='hillary_clinton_34.html'>Hillary Clinton: 'People should and do trust me' (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-08 21:31:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article26752213.html#storylink=rss'>site</a></td><td>A committee statement on March 4 announced that it had issued subpoenas for "all communications of former Secretary of State Hillary Clinton related to Libya and to the State Department for other individuals who have information pertinent to the investigation."</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-11 17:48:06</td><td></td><td><a href='hillary_clinton_5.html'>Hillary Rodham Clinton will make boosting middle class incomes and wages the focus of her economic agenda, pointing to stagnant paychecks as the central challenge facing the U.S. economy. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.huffpost.com/gen/3178320/images/n-HILLARY-CLINTON-large570.jpg'></td><td>2015-07-11 22:49:21</td><td><a href='http://www.huffingtonpost.com/2015/07/11/american-federation-of-teachers-clinton_n_7777410.html'>site</a></td><td>American Federation of Teachers Endorses Hillary Clinton</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdnph.upi.com/ph/st/th/5961436593689/2015/i/14365951519088/v1.2/Ted-Cruz-upset-with-New-York-Times-for-leaving-book-off-bestseller-list.jpg?lg=1'></td><td>2015-07-11 23:17:52</td><td><a href='http://www.upi.com/Top_News/US/2015/07/11/Hillary-Clinton-to-outline-economic-policy-vision-Monday/5151436655036/'>site</a></td><td>Hillary Clinton to outline economic policy vision Monday</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 17:23:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/89ae8247abe8493fae24405546e9a1aa/Article_2015-07-13-US-DEM-2016-Clinton/id-67762475345641768ba796104924cc99'>site</a></td><td>Clinton: Nation needs a 'growth and fairness economy'</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 22:15:49</td><td><a href='http://www.startribune.com/clinton-campaign-vows-to-disclose-its-biggest-fundraisers/314727691/'>site</a></td><td>WASHINGTON - Hillary Rodham Clinton's presidential campaign says it will make public a list of its biggest fundraisers, a promise no other 2016 candidate has yet made.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-14 15:24:51</td><td></td><td><a href='hillary_clinton_11.html'>Hillary Rodham Clinton praised the nuclear deal with Iran on Tuesday as an "important step," saying the agreement would end up "putting the lid on Iran's nuclear program." (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 07:17:03</td><td><a href='http://www.miamiherald.com/news/politics-government/article27283297.html#storylink=rss'>site</a></td><td>Bernie Sanders gets his say on Clinton's day in Capitol</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-16 03:37:40</td><td></td><td><a href='hillary_clinton_28.html'>Hillary Rodham Clinton spent more than $18 million and hired hundreds of employees in the first three months of her presidential campaign, creating a national operation that vastly outpaces her rivals in both parties. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 07:24:40</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27378445.html#storylink=rss'>site</a></td><td>The Associated Press-GfK poll on Hillary Rodham Clinton and the Republican candidates for president was conducted by GfK Public Affairs and Corporate Communications July 9-13.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-07-16 07:50:05</td><td></td><td><a href='hillary_clinton_12.html'>Hillary Rodham Clinton's standing is falling among Democrats, and voters view her as less decisive and inspiring than when she launched her presidential campaign just three months ago, according to a new Associated Press-GfK poll. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 18:20:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/16/clinton-proposes-tax-breaks-for-corporate-profit-sharing'>site</a></td><td><table><tr><td>Clinton proposes tax breaks for corporate profit-sharing</td></tr><tr><td>DOVER, N.H. (AP) - Democratic presidential candidate Hillary Rodham Clinton proposed new incentives Thursday to encourage corporations to share profits with workers.</td></tr><tr><td>Clinton's "Rising Incomes, Sharing Profits" plan is part of an economic platform she unveiled this week that focused on boosting wages for middle class families.</td></tr></table></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-07-17 05:27:04</td><td></td><td><a href='hillary_clinton_0.html'>Presidential hopeful Hillary Rodham Clinton returns for a Democratic Party fundraiser Saturday, July 18, 2015, to a state that looks dramatically different than the one where she served as first lady for a dozen years. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297728874358_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-24 05:21:37</td><td><a href='http://www.torontosun.com/2015/07/24/us-justice-dept-asked-to-probe-hillary-clintons-email-use-report'>site</a></td><td><table><tr><td>NEW YORK - The U.S. Justice Department is weighing a request by two government inspectors general to open a criminal investigation into Hillary Clinton's use of a private email account for her work as secretary of state, the New York Times reported on Thursday.</td></tr><tr><td>Clinton has repeatedly said she broke no laws or rules by eschewing a standard government email account for her State Department work in favor of a private account linked to a computer server in her New York home.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 12:46:00</td><td><a href='http://www.cnbc.com/2015/07/23/criminal-inquiry-sought-in-hillary-clintons-use-of-email.html'>site</a></td><td>Criminal probe sought into Hillary Clinton's email</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 12:50:48</td><td><a href='http://www.sfgate.com/news/article/Sources-Justice-asked-to-consider-probing-6403175.php'>site</a></td><td>WASHINGTON (AP) - Federal officials say two government inspectors general have asked the Justice Department to determine whether sensitive government information was transmitted on Hillary Rodham Clinton's personal email.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 00:02:08</td><td><a href='http://nypost.com/2015/07/24/hillary-clintons-latest-e-mail-mess/'>site</a></td><td>Hillary Clinton’s latest e-mail mess</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-07-25 18:07:46</td><td></td><td><a href='hillary_clinton_2.html'>Hillary Clinton says she will testify this October before a public hearing of the House committee investigating the deaths of four Americans in Benghazi, Libya. (6)</a></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-07-26 22:41:54</td><td></td><td><a href='hillary_clinton_7.html'>Jan Bauer gets a hug from Democratic presidential candidate Hillary Rodham Clinton after introducing her to speak at a campaign event Sunday, July 26, 2015, at Iowa State University in Ames, Iowa. (4)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-07-28 17:29:53</td><td></td><td><a href='hillary_clinton_31.html'>NASHUA, N.H. (AP) - Hillary Clinton says she will not take a position on the Keystone XL pipeline until she becomes president, citing her work on the issue as secretary of state. (2)</a></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-07-31 02:21:34</td><td></td><td><a href='hillary_clinton_9.html'>"We know that donors are giving more because they are seeing the impact of our work across the globe," said the foundation's new president, Donna Shalala, who was accompanying Bill and Hillary Clinton's daughter, Chelsea, on a tour of foundation programs in Haiti. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-01 07:25:37</td><td><a href='http://www.startribune.com/clinton-releases-tax-medical-records-as-emails-made-public/320370511/'>site</a></td><td><table><tr><td>The couple made nearly $23 million from speaking fees alone in 2013 - the year Clinton left the State Department - and collected an additional $20 million from paid events last year.</td></tr><tr><td>The remainder of their income came largely from book royalties and consulting fees paid to Bill Clinton.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03395/GettyImages-141313_3395570b.jpg'></td><td>2015-08-02 23:52:24</td><td><a href='http://www.telegraph.co.uk/news/politics/david-cameron/11779581/Hillary-Clinton-told-David-Cameron-was-unsure-and-inexperienced.html'>site</a></td><td>Hillary Clinton told David Cameron was 'unsure and inexperienced'</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.npr.org/assets/img/2015/07/31/ap_253230310839_sq-188bbb53cbcf6f82a87c25cb188362ec34150faf.jpg?s=100'></td><td>2015-08-03 02:37:00</td><td><a href='http://www.npr.org/sections/itsallpolitics/2015/08/02/428790911/meet-hillary-clinton-again?utm_medium=RSS&utm_campaign=storiesfromnpr'>site</a></td><td>"We're going to make sure everyone knows who Hillary Clinton really is - who she fights for and what has motivated her lifelong commitment to children and families," Mook said.</td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-08-05 02:59:18</td><td></td><td><a href='hillary_clinton_23.html'>DENVER (AP) - Hillary Clinton on Tuesday repeatedly slammed Jeb Bush and the rest of the Republican presidential field over immigration and women's health during a campaign stop in Denver. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 08:07:02</td><td><a href='http://www.cbsnews.com/news/fbi-investigating-security-of-hillary-clintons-emails/'>site</a></td><td>FBI investigating security of Hillary Clinton's emails</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 10:28:57</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article30016806.html#storylink=rss'>site</a></td><td><table><tr><td>FBI looking into the security of Hillary Clinton’s private email setup</td></tr><tr><td>Nick Merrill, a spokesman for Clinton's campaign, declined to comment on the FBI's actions.</td></tr><tr><td>He noted that Clinton has called repeatedly for the State Department to release her emails to the public, a process that is ongoing.</td></tr><tr><td>Instead, a server that had been purchased for use by Hillary Clinton's 2008 campaign was installed at the Chappaqua home.</td></tr></table></td></tr>
+</table></body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 11:55:03</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/24/fifa-secretary-general-valcke-expects-to-leave-with-blatter'>site</a></td><td>FIFA secretary general Valcke expects to leave with Blatter</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 13:16:19</td><td></td><td><a href='fifa_or_blatter.temp_28_29.html'>FIFA and Valcke said the cash was believed to be for soccer projects for the African diaspora in the Caribbean, and was approved by Julio Grondona of Argentina, the chairman of FIFA's finance committee, who died last year. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/T2sWi2x.KIaTKDK.uyUzkA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507232208796918113'></td><td>2015-07-24 13:18:23</td><td><a href='http://sports.yahoo.com/news/fifa-secretary-general-valcke-expects-leave-blatter-111440289--sow.html'>site</a></td><td><table><tr><td>The weight of the corruption probes and sponsors' concerns led to Blatter announcing June 2 he will leave FIFA, a move that came four days after he was re-elected to serve a fifth, four-year term.</td></tr><tr><td>Valcke began his job several months before the money transfers in early 2008 to accounts controlled by former FIFA vice president Jack Warner.</td></tr></table></td></tr>
+</table></body></html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 12:05:18</td><td></td><td><a href='kenya_1_2.html'>Kenya is battling a wave of extremist attacks by al-Qaida-linked al-Shabab militants from Somalia that has killed more than 400 people since October 2011 when the country sent troops into Somalia to fight the militants. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-07-22 21:15:22</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/22/obama-and-kenya-1st-trip-to-fathers-homeland-as-president'>site</a></td><td>Even as a U.S. senator, he was greeted by cheering crowds when he made his last visit to Kenya, in 2006.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 18:00:35</td><td></td><td><a href='kenya_1_3.html'>Kenya's deputy president, William Ruto, is also under indictment by the International Criminal Court for alleged links to violence after the 2007 election. (6)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-24 15:15:31</td><td></td><td><a href='kenya_1_4.html'>Al-Shabab, which is linked to al-Qaeda, has conducted major attacks in Kenya, including the 2013 attack on Nairobi's Westgate mall and an April attack in Garissa that killed nearly 150 people. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-24 20:00:23</td><td></td><td><a href='kenya_1_5.html'>NAIROBI, Kenya (AP) " Fulfilling the hopes of millions of Kenyans, Barack Obama returned to his father's homeland Friday for the first time as U.S. president, a long sought visit by a country that considers him a local son. (51)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-25 15:43:00</td><td><a href='http://www.latimes.com/world/africa/la-fg-obama-kenya-ties-20150725-story.html'>site</a></td><td>"Kenya is leading the way."</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-25 18:31:55</td><td></td><td><a href='kenya_1_6.html'>A number of Kenyan politicians and religious leaders had warned Obama that any overtures on gay rights would not be welcomed in Kenya, where gay sex is punishable by up to 14 years in prison. (3)</a></td></tr>
+</table></body></html>

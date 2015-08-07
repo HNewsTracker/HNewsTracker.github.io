@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 16:46:41</td><td><a href='http://www.reuters.com/article/2015/06/26/us-mideast-crisis-syria-idUSKBN0P60UY20150626?feedType=RSS&feedName=topNews'>site</a></td><td>While Islamic State had managed to advance slightly in Hasaka on Friday, seizing one army position, fierce army air strikes had hindered the attack, Abdulrahman said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150630&t=2&i=1060412297&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB5T0WH'></td><td>2015-06-30 20:07:37</td><td><a href='http://www.reuters.com/article/2015/06/30/us-mideast-crisis-syria-idUSKCN0PA21F20150630?feedType=RSS&feedName=worldNews'>site</a></td><td>"Islamic State had withdrawn from most of the districts but did not leave it completely and their snipers in some areas are preventing the full advance of the army," said Ali Hreith, a Hasaka resident on the Turkish-Syrian border.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-07 13:19:15</td><td><a href='http://www.reuters.com/article/2015/07/07/us-mideast-crisis-syria-idUSKCN0PH0SJ20150707?feedType=RSS&feedName=topNews'>site</a></td><td>The YPG, backed by small Syrian rebel groups, has made significant gains against Islamic State in Raqqa province in recent weeks, seizing Tel Abyad at the Turkish border on June 15 before advancing south to Ain Issa.</td></tr>
+</table></body></html>

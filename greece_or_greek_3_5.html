@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 15,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-03 13:30:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26032012.html#storylink=rss'>site</a></td><td>A strong "No" vote, he argued, would help Greece win a new deal with the eurozone's rescue mechanism that would include terms to make the country's 320 billion euro national debt sustainable.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201527/3ebbed62252147c058e87cd8e8d1c22d320c67f1_140x91.jpg'></td><td>2015-07-04 06:40:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11475883&ref=rss'>site</a></td><td>But that might prove more difficult if Greece was no longer a part of the euro - and did not face external pressure from fellow eurozone states to modernize its economy.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-04 17:25:15</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11476010&ref=rss'>site</a></td><td>Greece did get some easier terms on interest and time to pay.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-05 04:09:03</td><td><a href='http://news.yahoo.com/campaigns-halt-greeks-face-tough-referendum-choice-040313872--finance.html'>site</a></td><td>In case of a "no" win, Kalyvas said the Greek government could be confronted with the refusal of other eurozone countries to negotiate a better deal because of their distrust of Tsipras.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.sfgate.com/news/world/article/Yes-or-no-What-Greece-s-landmark-vote-might-bring-6366902.php'>site</a></td><td>A "yes" vote backing the reform proposals creditors had made would likely see Greece turn immediately to talks on a new rescue package.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/07/6a/ab/d0319c8d4dc34a44b71ea36fc83370b8-d431d0e9f1f34aefb72ae0418b8b1ae9-0.jpg'></td><td>2015-07-07 14:43:35</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greek-pm-tsipras-races-to-restart-talks-after-vote/nmsm7/'>site</a></td><td>Eurozone finance ministers, including Greece's newcomer Euclid Tsakalotos, met in Brussels ahead of a full summit of leaders later Tuesday.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-07 15:57:33</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/the-latest-france-pledges-effort-to-keep-greece-in-euro'>site</a></td><td>"And it is really up to the Greek government to come up with far-reaching proposals. If they don't do that, then I think it will be over quickly."</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/TXSvQSj0ejP1BwtYkdJ1Yw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/528ef41f43fc841e7b0f6a706700ad8d.jpg'></td><td>2015-07-07 15:58:12</td><td><a href='http://news.yahoo.com/latest-lithuanian-finance-minister-sees-compromise-115544872--finance.html'>site</a></td><td><table><tr><td>Arriving at an emergency meeting of eurozone finance ministers to discuss the Greek crisis, Noonan said Ireland was also able to work with its debt load to make it more manageable, He suggested Greece could also come forward with debt proposals, even if they would be different from Ireland's.</td></tr><tr><td>Arriving for talks with his peers in the 19-country eurozone, Dijsselbloem said the Greek government has "a major interest" in bringing forward "serious and credible" proposals that are needed if Greece is to get another bailout.</td></tr><tr><td>The Greek government is expected to make fresh proposals at the meeting in order to secure a bailout deal so it avoids leaving the euro.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-08 10:52:43</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/08/the-latest-tsipras-says-greece-is-preparing-detailed-plan'>site</a></td><td>Michel Reijns, the spokesman for the eurozone's top official Jeroen Dijsselbloem, says Greece submitted the request for a new support program from the European Stability Mechanism Wednesday morning.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/qxubZpJDIzEq_YyY6UVknQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/d723a66c6c56981e7b0f6a7067004e6b.jpg'></td><td>2015-07-08 10:52:56</td><td><a href='http://news.yahoo.com/latest-tsipras-says-greece-preparing-detailed-plan-091137250.html'>site</a></td><td>At a summit of the eurozone's 19 leaders Tuesday, Greece was effectively told it must have a reform plan agreed by Sunday or face an exit from the euro.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ZVpfF_LPEfbzAf10.vijKQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/293bae0d95c6b11e7b0f6a706700eb97.jpg'></td><td>2015-07-09 11:08:19</td><td><a href='http://news.yahoo.com/latest-eu-economics-chief-says-greece-deal-possible-074059545.html'>site</a></td><td>EU Economics Commissioner Pierre Moscovici is hopeful that a new Greek bailout deal is possible, in exchange for "concrete, complete" reform proposals from Greece's government.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/09/876/493/Portugal Greece Other Debtors-3.jpg?ve=1&tl=1'></td><td>2015-07-09 12:10:04</td><td><a href='http://www.foxnews.com/world/2015/07/09/if-greece-gets-easier-rescue-terms-other-bailout-states-could-face-popular/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>LISBON, Portugal - Eurozone governments taking a tough line on Greece's demand for debt relief and easier bailout terms fear opening a can of worms.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/10/72/f9/4cd0d6169f9f4465bcbb14277df4c5d4-60a8fd8e71c24ca2be414e631b642799-0.jpg'></td><td>2015-07-10 11:14:16</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-to-sell-last-ditch-deal-to-relucta/nmwYc/'>site</a></td><td>Greece's Tsipras to sell austerity deal to reluctant party</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/r15bf4Pkg4YBFczrFWLUYw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/94e02a62be7cc71e7b0f6a7067001e05_original.jpg'></td><td>2015-07-10 11:14:42</td><td><a href='http://finance.yahoo.com/news/greeces-tsipras-sell-austerity-deal-111433389.html'>site</a></td><td>European Commission spokesman Margaritis Schinas says they will likely send their assessment of the Greek proposal to the eurozone finance ministers later Friday.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 11:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26934703.html#storylink=rss'>site</a></td><td>French Prime Minister Manuel Valls laid out his hopes for an imminent Greek bailout deal after the country's government sent "solid, serious and complete" reform proposals to creditors.</td></tr>
+</table></body></html>

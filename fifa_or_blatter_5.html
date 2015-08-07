@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 23,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 23 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.huffingtonpost.com//asset/scaleFit_630_noupscale/559e2eb31700000903325e55.jpeg'></td><td>2015-07-09 08:29:15</td><td><a href='http://www.huffingtonpost.com/entry/chuck-blazer-banned_559e2e29e4b05b1d028fb71d?'>site</a></td><td>"(Blazer) was a key player in schemes involving the offer, acceptance, payment and receipt of undisclosed and illegal payments, bribes and kickbacks as well as other money-making schemes," the FIFA ethics committee said in a statement.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-09 11:20:21</td><td></td><td><a href='fifa_or_blatter_5_8.html'>In a wide-ranging interview with the right-wing weekly Weltwoche, published on Thursday, Blatter maintained his view that FIFA had done nothing wrong and could not be held responsible for the actions of individuals from continental federations. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-09T092234Z_1_LYNXNPEB680E6_RTROPTP_2_SOCCER-FIFA-BLATTER.JPG?itok=apMmVeWs'></td><td>2015-07-09 11:20:21</td><td><a href='http://www.sbs.com.au/news/article/2015/07/09/fifa-head-blatter-shifts-blame-confederations-interview'>site</a></td><td>"There is no wangling under the direct influence of FIFA," Blatter said.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-09 12:14:14</td><td></td><td><a href='fifa_or_blatter_5_7.html'>Former FIFA executive committee member Chuck Blazer, a key figure in a US investigation into corruption by football officials, has been banned for life from football activities by the sport's governing body. (59)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-10 14:33:46</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/swiss-say-1-of-7-fifa-officials-agrees-to-extradit/nmwmM/'>site</a></td><td>The widening American investigation alleges bribery and racketeering worth more than $150 million involving high-ranking FIFA officials over a 24-year span.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-12 15:54:05</td><td></td><td><a href='fifa_or_blatter_5_15.html'>Swiss federal prosecutors have new evidence of 28 acts of possible money laundering linked to FIFA's 2018 and 2022 World Cup bid contests. (5)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-12 16:47:08</td><td></td><td><a href='fifa_or_blatter_5_9.html'>Swiss prosecutors are working with a separate United States probe of racketeering and bribery implicating senior FIFA officials. (7)</a></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-16T090520Z_1_LYNXNPEB6F0BA_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-REFORMS.JPG?itok=2wDzvhip'></td><td>2015-07-16 10:01:47</td><td><a href='http://www.sbs.com.au/news/article/2015/07/16/switzerland-says-has-extradited-official-us-fifa-case'>site</a></td><td>"The first of the seven FIFA officials being held in custody in Switzerland was extradited to the U.S. on 15 July," the justice office said.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://static01.nyt.com/images/2015/07/11/sports/Y-FIFA/Y-FIFA-thumbStandard.jpg'></td><td>2015-07-16 18:14:26</td><td><a href='http://www.nytimes.com/2015/07/17/sports/soccer/ex-fifa-executive-jeffrey-webb-extradited-to-us.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Blatter has not been charged.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-16 19:02:08</td><td></td><td><a href='fifa_or_blatter_5_11.html'>Webb and the others were jailed after a dawn raid on a luxury hotel in Zurich just two days before a FIFA Congress in May where Blatter was re-elected for a fifth term. (3)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-17 18:56:59</td><td></td><td><a href='fifa_or_blatter_5_10.html'>Coca-Cola tells FIFA to back independent reform commission (8)</a></td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/U.S./876/493/0719 webb fifa.jpg?ve=1&tl=1'></td><td>2015-07-19 06:22:38</td><td><a href='http://www.foxnews.com/sports/2015/07/19/former-top-fifa-official-pleads-not-guilty-to-racketeering-charges/'>site</a></td><td>Other conditions of his release include having no contact with FIFA or CONCACAF officials, nor any of his alleged co-conspirators, prosecutors said during Saturday's court proceeding in Brooklyn.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-20 06:32:03</td><td></td><td><a href='fifa_or_blatter_5_13.html'>Prince Ali bin al-Hussein wants Sepp Blatter to leave now as FIFA president, and let a leader from outside the sport oversee the next election and reforms of soccer's scandal-scarred governing body. (11)</a></td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 14:26:54</td><td><a href='http://www.miamiherald.com/news/politics-government/article27904912.html#storylink=rss'>site</a></td><td>Blatter insists he is leaving FIFA, will not be candidate</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-07-20 21:05:25</td><td></td><td><a href='fifa_or_blatter_5_16.html'>Sepp Blatter had a good day at the office on Monday, even if a prankster tried to spoil it by showering the FIFA president with fake dollar bills at a news conference. (4)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-07-21 06:27:03</td><td></td><td><a href='fifa_or_blatter_5_19.html'>FILE - In this Wednesday, June 3, 2015, former FIFA Vice President Chung Mong-joon arrives to hold a press conference in Seoul, South Korea. (4)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-07-21 06:27:03</td><td></td><td><a href='fifa_or_blatter_5_21.html'>Chung said he plans to consult leaders of regional confederations and other key figures before he finalizes his decision whether to run for FIFA's top job. (2)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-07-23 00:40:09</td><td></td><td><a href='fifa_or_blatter_5_18.html'>U.S. prosecutors allege South Africa funneled $10 million in 2008 to Warner and two other FIFA executives as payment for them supporting its successful bid to host the 2010 World Cup. (2)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-07-24 11:41:35</td><td></td><td><a href='fifa_or_blatter_5_14.html'>"Definitely the current situation does not help to finalize any new agreement. That is a fact," FIFA secretary general Jerome Valcke said Friday ahead of this weekend's qualifying draw, the first big event for host Russia. (5)</a></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-07-24 13:18:23</td><td></td><td><a href='fifa_or_blatter_5_6.html'>''As the head of the administration I can be proud of what FIFA's administration has done and FIFA's administration, I don't think, has ever been part of any of the stories which are around FIFA, including all the commercial agreements we have signed from (2007-15),'' Valcke said. (3)</a></td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-07-24 16:02:42</td><td></td><td><a href='fifa_or_blatter_5_20.html'>"Clearly, there were a number of sponsors, mainly three, its Coca-Cola, McDonald's and Visa, who have expressed and sent a letter to FIFA, asking for information," he told a new conference in the Russian city of St Petersburg. (4)</a></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-07-27 18:29:23</td><td></td><td><a href='fifa_or_blatter_5_17.html'>"The work of the task force will be overseen by the independent bodies of FIFA, namely the Audit and Compliance, the Disciplinary and the Ethics Committee," added the statement. (4)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-07-28 13:21:14</td><td></td><td><a href='fifa_or_blatter_5_12.html'>Platini has long been the bookmakers' favourite to succeed Blatter and last week his supporters indicated that he has picked up widespread support from leaders of the continental confederations. (2)</a></td></tr>
+</table></body></html>
