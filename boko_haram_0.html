@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 13:45:43</td><td></td><td><a href='boko_haram_0_1.html'>Boko Haram wants to install an Islamic state across the West African nation of about 170 million people divided between a predominantly Muslim north and Christian south. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-07-07 16:02:26</td><td><a href='http://news.yahoo.com/bomb-blamed-boko-haram-kills-20-northern-nigeria-120305360.html'>site</a></td><td>Nigeria's police force announced heightened security around mosques and churches after Boko Haram assaults Sunday killed more than 60 people.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 18:37:29</td><td></td><td><a href='boko_haram_0_1.html'>Shekau had threatened in 2013 to kidnap women and girls if Nigeria's military did not release detained Boko Haram wives and children. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 18:37:29</td><td><a href='http://www.cbsnews.com/news/nigeria-isis-affiliated-islamic-extremists-boko-haram-chibok-girls-prisoners/'>site</a></td><td>Thousands of suspects have died in custody, and some detainees wanted by Boko Haram may be among them.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 19:08:54</td><td><a href='http://nypost.com/2015/07/08/boko-haram-offers-to-trade-kidnapped-chibok-girls-for-militants/'>site</a></td><td><table><tr><td>The new initiative reopens an offer made last year to the government of former President Goodluck Jonathan to release the 219 students in exchange for 16 Boko Haram detainees, the activist said.</td></tr><tr><td>At the last minute, the agency said it was holding only four of the militants sought by Boko Haram, the activist said.</td></tr></table></td></tr>
 </table></body></html>

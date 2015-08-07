@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/10002741+Britain+Migrants.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-03 04:30:24</td><td><a href='http://www.startribune.com/year-later-ap-reporter-recalls-origins-of-ferguson-movement/320452642/'>site</a></td><td><table><tr><td>ST. LOUIS - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson.</td></tr><tr><td>But since joining the St. Louis office of The Associated Press in 1993, I had never been to Ferguson as a reporter.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-02 15:53:14</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td><table><tr><td>Chappelle-Nadal, who was among the those tear gassed by police while protesting Michael Brown's shooting with her constituents in Ferguson, Mo., said as a state, Missouri has not done much.</td></tr><tr><td>ADVANCE FOR MONDAY, AUG. 3, 2015 AND THEREAFTER - FILE - In this Aug. 20, 2014 file photo, protesters march in the street as lightning flashes in the distance in Ferguson, Mo.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 01:33:21</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td>FILE - In this undated photo provided by the Brown family is Michael Brown, a young black man who was fatally shot on Aug. 9, 2014 by a white Ferguson, Mo., policeman.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 01:33:21</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td><table><tr><td>FILE - In this Aug. 9, 2014, file photo, a police tactical team moves in to disperse a group of protesters following the shooting of a young black man by a white policeman in Ferguson, Mo.</td></tr><tr><td>When a white Ferguson policeman fatally shot a young black man nearly a year ago, the St. Louis suburb erupted in violent protests and the nation took notice.</td></tr></table></td></tr>
 </table></body></html>

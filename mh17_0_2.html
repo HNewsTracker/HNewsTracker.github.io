@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://img.rt.com/files/news/42/e1/70/00/mh17-crash-missile-ukraine.jpg'></td><td>2015-07-15 21:34:08</td><td><a href='http://www.rt.com/news/273943-mh17-crash-missile-ukraine/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td>MH17 likely downed by air-to-air missile, not Russian made ? Investigative Committee</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 11:38:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-mh17-anniversary-20150717-story.html'>site</a></td><td><table><tr><td>In the Netherlands, the names of all 298 victims were read out - a process that took 27 minutes - before a minute's silence was held at the time when exactly a year earlier air traffic controllers lost contact with MH17.</td></tr><tr><td>The Netherlands was the hardest-hit nation in the MH17 disaster - 196 of the victims were Dutch nationals.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 12:13:24</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>Some of the mourners held banners accusing the Kiev government of waging a war on them and likening the MH17 victims to those killed in indiscriminate shelling in the past year and a half.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 22:01:50</td><td><a href='http://www.sbs.com.au/news/article/2015/07/18/netherlands-remembers-mh17-victims'>site</a></td><td>"MH17, where 298 victims were killed for no reason, was shot down by a Russian BUK missile, launched by a Russian professional crew under an order and an instruction from the Russian military," President Petro Poroshenko said on the first anniversary of the disaster.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/b/2/i/x/image.related.articleLeadwide.620x349.giadyh.png/1436802388311.jpg'></td><td>2015-07-13 15:46:51</td><td><a href='http://www.smh.com.au/world/mh17-the-sunflowers-family-of-victim-fatima-dyczynski-plant-a-seed-of-undying-love-for-their-daughter-20150713-giadyh.html'>site</a></td><td><table><tr><td>Aerospace engineer Fatima Dyczynski was heading to Perth and died aboard Malaysia Airlines flight MH17.</td></tr><tr><td>Fatima's last communication with her parents was to text a "selfie" before boarding the MH17 flight at Amsterdam.</td></tr></table></td></tr>
 </table></body></html>

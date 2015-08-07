@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>xbox</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 19:36:25</td><td><a href='http://www.bbc.co.uk/news/technology-33103833#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>"But streaming XBox One games... is not going to sell Oculus.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/lo/api/res/1.2/Jy_pwVZOBTSaEZWQz9LQOw--/YXBwaWQ9bWFnYXppbmVzO3c9ODAw/https://s.yimg.com/os/en-US/homerun/cnet.cbs.com/27ae89a091e50812289846e02fd9a195'></td><td>2015-07-07 14:15:31</td><td><a href='https://www.yahoo.com/tech/s/microsofts-xbox-music-renamed-groove-202640022.html?src=rss'>site</a></td><td>Microsoft's Xbox Music Renamed Groove Music in Upcoming Windows 10</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/baa7d5ece890abc8f1f017098398d44043c63dc6/r=84&amp;c=84x84/http/videos.usatoday.net/Brightcove2/29906170001/2015/07/29906170001_4333455382001_thumb-i6IBM2vufWvE.jpg?pubId=29906170001'></td><td>2015-07-23 17:19:53</td><td><a href='http://www.usatoday.com/story/tech/gaming/2015/07/23/rise-tomb-raider-ps4/30569089/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Versions of the game for Xbox One and Xbox 360 launch November 10.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/143/285x190/593978_1.jpg'></td><td>2015-07-26 23:29:00</td><td><a href='http://www.express.co.uk/entertainment/gaming/593978/Xbox-Live-down-Xbox-One-Xbox-360-Microsoft-consoles-server-issues-why-is-Xbox-Live-down?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-gaming+%28Daily+Express+%3A%3A+Gaming+Feed%29'>site</a></td><td>"We're working hard on the current issues signing in to Xbox Live," the message reads.</td></tr>
 </table></body></html>

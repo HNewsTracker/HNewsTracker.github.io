@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 07:23:08</td><td><a href='http://www.reuters.com/article/2015/07/08/us-microsoft-redundancies-idUSKCN0PI0GL20150708?feedType=RSS&feedName=businessNews'>site</a></td><td>Microsoft Corp, the world's largest software company, plans to announce a new round of layoffs as early as Wednesday as it tries to cut costs further, the New York Times reported.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/tC8RpZfLnzyw.6U0zAce.Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/64c8a4912ce9191a8be5246c0868a759'></td><td>2015-07-08 13:17:31</td><td><a href='http://finance.yahoo.com/news/microsoft-cut-7-800-jobs-131731526.html'>site</a></td><td><table><tr><td>Microsoft to cut up to 7,800 jobs</td></tr><tr><td>Microsoft announced plans Wednesday to restructure the company's phone hardware business and to cut up to 7,800 positions.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/07/08/MicrosoftSmartphone650.jpg&size=104x59&quality=85'></td><td>2015-07-08 15:46:33</td><td><a href='http://technology.canoe.com/News/2015/07/08/22494571.html?cid=rsstechnology'>site</a></td><td>Microsoft closed its $7.2 billion deal for Nokia last year.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/SCCZEN_AP150907035637_620x310.jpg'></td><td>2015-07-08 21:41:55</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11478110&ref=rss'>site</a></td><td>Microsoft will cut 7,800 jobs and take a US$7.6 billion impairment charge as it attempts to revive its flagging phone hardware business.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0708/20150708__0709microsoft~1.JPG'></td><td>2015-07-08 21:42:23</td><td><a href='http://www.mercurynews.com/business/ci_28451430/microsoft-cutting-7-800-jobs-phone-sales-flag?source=rss'>site</a></td><td>Three years ago, Microsoft wrote off another big sum, $6.2 billion, on its purchase of digital advertising firm aQuantive.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 20:43:03</td><td><a href='http://www.reuters.com/article/2015/07/21/us-microsoft-results-idUSKCN0PV28Z20150721?feedType=RSS&feedName=technologyNews'>site</a></td><td>Sales of Windows to businesses fell 21 percent from the year-earlier quarter, when demand for the operating system had surged after Microsoft discontinued support for Windows XP.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/62FYNnbym_J8zgP_N_ZoZA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-07-22T184220Z_1_LYNXNPEB6L0XA_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-07-22 18:42:20</td><td><a href='http://finance.yahoo.com/news/microsofts-hardware-strategy-under-scrutiny-184220481.html'>site</a></td><td>(Reuters) - Sales of Microsoft Corp's Surface tablets and Xbox gaming consoles are soaring.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 07:40:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-06-11-AS--Nepal-Landslide/id-224e8e38f1044a6baebc782ce9d9352b'>site</a></td><td>Also, the trails around the Langtang valley in northern Nepal were completely damaged and an entire village buried by a landslide and avalanche set off by the earthquake.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-30 18:02:49</td><td><a href='http://www.torontosun.com/2015/07/30/deadly-landslides-in-nepal'>site</a></td><td>Two powerful earthquakes in Nepal this year that killed almost 9,000 people have raised the risk of landslides across the mountainous country during the rainy season, which lasts from June to September.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150730001161105201-original.jpg?itok=k2rOzhFT'></td><td>2015-07-31 04:33:52</td><td><a href='http://www.sbs.com.au/news/article/2015/07/31/landslide-near-nepals-popular-annapurna-trek-route-kills-30'>site</a></td><td>Landslides triggered by torrential rain in Nepal swept through villages on Thursday, killing at least 30 people close to the nation's most popular trekking circuit, home ministry officials said.</td></tr>
 </table></body></html>

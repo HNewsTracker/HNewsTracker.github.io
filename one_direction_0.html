@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>one direction</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 21:29:43</td><td></td><td><a href='one_direction_0_1.html'>One Direction’s Louis Tomlinson is going to be a dad (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 09:41:00</td><td></td><td><a href='one_direction_0_2.html'>According to reports, the One Direction star is said to be expecting a baby with Briana Jungwirth, a US-based stylist. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/79/590x/secondary/Louis-Tomlinson-and-Briana-Jungwirth-317399.jpg'></td><td>2015-07-14 21:24:00</td><td><a href='http://www.express.co.uk/news/showbiz/591186/Louis-Tomlinson-One-Direction-1D-dad-father-pregnant-expecting-baby-Briana-Jungwirth?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-showbiz-news+%28Daily+Express+%3A%3A+Showbiz+Feed%29'>site</a></td><td>ONE DIRECTION bandmate Louis Tomlinson is reportedly expecting a baby with Briana Jungwirth.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0714/20150714_051508_ecct0615direction04_300.JPG'></td><td>2015-07-14 23:23:27</td><td><a href='http://www.mercurynews.com/celebrities/ci_28483930/one-directions-louis-tomlinson-be-dad?source=rss'>site</a></td><td>One Direction's Louis Tomlinson to be a dad</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03375/Louis-Tomlinson_3375831b.jpg'></td><td>2015-07-15 07:37:32</td><td><a href='http://www.telegraph.co.uk/news/celebritynews/11740495/One-Directions-Louis-Tomlinson-to-become-a-father.html'>site</a></td><td>One Direction's Louis Tomlinson 'to become a father'</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://cdn4.belfasttelegraph.co.uk/entertainment/music/news/article31378396.ece/1fd21/ALTERNATES/h342/PANews%20BT_P-fb4e0ba1-1537-4453-aee8-79f0f6cc1925_I1.jpg'></td><td>2015-07-15 09:41:00</td><td><a href='http://www.belfasttelegraph.co.uk/entertainment/music/news/little-things-one-directions-louis-tomlinson-quiet-on-baby-gossip-31378398.html'>site</a></td><td>According to reports, the One Direction star is said to be expecting a baby with Briana Jungwirth, a US-based stylist.</td></tr>
 </table></body></html>

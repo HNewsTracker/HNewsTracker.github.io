@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 19:18:25</td><td></td><td><a href='microsoft_17.html'>Those with an Office 365 subscription can get the Mac Office starting Thursday at http://office.microsoft.com. (6)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 20:16:32</td><td></td><td><a href='microsoft_1.html'>This screen shot provided by Microsoft shows the Groove Music welcome screen, the service formerly known as Xbox Music. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/70a/report-on-business/international-business/european-business/article25540865.ece/ALTERNATES/w220/web-rob-microsoft-nokia-071.JPG'></td><td>2015-07-16 22:28:20</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/microsoft-deals-big-blow-to-finnish-town-with-nokia-unit-closure/article25540866/?cmpid=rss1'>site</a></td><td><table><tr><td>When U.S. software giant Microsoft bought Nokia's struggling mobile phone business last year, the inhabitants of Salo - a town of 54,000 in southern Finland - thought the move would revive the local economy.</td></tr><tr><td>But their hopes were crushed last week when Microsoft announced it would close Nokia's former product development unit in the town, putting all 1,100 jobs at risk.</td></tr><tr><td>Today Salo's unemployment rate stands at 15 per cent, well above the national rate of 9.7 per cent, following the closure of a Nokia factory in 2012 and previous Microsoft layoffs.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 11:04:49</td><td><a href='http://www.wsj.com/articles/microsoft-plans-to-buy-israeli-cloud-security-firm-adallom-for-320-million-1437390286?mod=rss_Technology'>site</a></td><td><table><tr><td>Microsoft Plans to Buy Israel's Adallom</td></tr><tr><td>Microsoft declined to comment.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/08-825489+0005FESTIVAL072015.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-21 01:25:28</td><td><a href='http://www.startribune.com/miley-cyrus-to-host-mtv-video-music-awards/317663321/'>site</a></td><td>The 2015 MTV Video Music Awards will air live on MTV from the Microsoft Theater in Los Angeles.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-21 20:43:03</td><td></td><td><a href='microsoft_2.html'>Microsoft Corp (MSFT.O) reported a $3.2 billion quarterly net loss as it wrote down its Nokia phone business and demand fell for its Windows operating system. (29)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/TWINS_ANGELS_BASEBALL_35820095.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-22 15:55:42</td><td><a href='http://www.startribune.com/tech-shares-lead-an-early-slump-for-us-stocks/318126131/'>site</a></td><td><table><tr><td>Technology shares are leading the way lower on the stock market after Apple and Microsoft turned in disappointing results.</td></tr><tr><td>Microsoft fell 3 percent after booking a huge loss related to its purchase of Nokia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 21:22:59</td><td><a href='http://www.mercurynews.com/business/ci_28529115/microsoft-takes-stand-against-revenge-porn-announces-it?source=rss'>site</a></td><td><table><tr><td>Microsoft wants to help victims of revenge porn regain control of their images and privacy.</td></tr><tr><td>Microsoft said that when it removes links or content, it will do so globally.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-28 14:41:03</td><td></td><td><a href='microsoft_6.html'>Windows 10 won't make people give up their hand-held gadgets, but it's part of Nadella's strategy to reposition Microsoft for a world where people use multiple devices. (16)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.business.financialpost.com/2015/07/microsoft_windows_10.jpg?w=620'></td><td>2015-07-29 14:56:02</td><td><a href='http://business.financialpost.com/fp-tech-desk/personal-tech/windows-10-review-microsoft-corp-modernizes-its-os-ditching-windows-8s-annoying-features'>site</a></td><td><table><tr><td>NEW YORK - It took me just a weekend to get comfortable with Microsoft's new Windows 10 operating system, something I never did with its predecessor, Windows 8, even after nearly three years.</td></tr><tr><td>Microsoft's Get Windows 10 app will check for known problems.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/lvOwhWfOfAX7ggkRvW4AUA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_OLINTECH_Wrapper_NewFeed_1/2015-07-30T163049Z_1_LYNXNPEB6T0WU_RTROPTP_3_GOOGLE-EU_original.jpg'></td><td>2015-07-30 19:33:56</td><td><a href='http://finance.yahoo.com/news/google-loses-bid-overturn-low-163049174.html'>site</a></td><td><table><tr><td>Both Microsoft and Google declined to comment on the decision.</td></tr><tr><td>The case in the 9th Circuit is Microsoft Corp vs. Motorola Mobility Inc et al, 14-35393.</td></tr></table></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-31 02:32:02</td><td></td><td><a href='microsoft_9.html'>PALO ALTO, California - Microsoft says its' new Windows 10 operating system is now running on more than 14 million computers, two days after the software was released as a free download. (4)</a></td></tr>
+</table></body></html>

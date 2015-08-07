@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>aurora</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/07/09/us/09AURORA/09AURORA-thumbStandard-v2.jpg'></td><td>2015-07-16 19:31:26</td><td><a href='http://www.nytimes.com/2015/07/17/us/james-holmes-guilty-in-aurora-movie-theater-shooting.html'>site</a></td><td>Colorado Jury Reaches Verdict in Aurora Movie Theater Shooting</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 19:56:09</td><td></td><td><a href='aurora_1.html'>Dozens of investigators gave evidence about the carnage Holmes inflicted and how he rigged his apartment with an elaborate booby trap he hoped would explode and divert first responders from the Aurora cinema as he set about the attack. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 05:38:04</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article27191842.html#storylink=rss'>site</a></td><td>On the screen is a photo of Alexander J. Boik, 18, who had just graduated from high school in Aurora.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/07/09/us/09AURORA/09AURORA-thumbStandard-v2.jpg'></td><td>2015-07-16 19:31:26</td><td><a href='http://www.nytimes.com/2015/07/17/us/james-holmes-guilty-in-aurora-movie-theater-shooting.html'>site</a></td><td>Colorado Jury Reaches Verdict in Aurora Movie Theater Shooting</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31383038.ece/ab752/ALTERNATES/h342/PANews%20BT_P-67ca708b-95d8-47d2-afec-06d0b1190ad0_I1.jpg'></td><td>2015-07-16 19:56:09</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/batman-cinema-shootings-colorado-jury-reaches-verdict-31383039.html'>site</a></td><td>Dozens of investigators gave evidence about the carnage Holmes inflicted and how he rigged his apartment with an elaborate booby trap he hoped would explode and divert first responders from the Aurora cinema as he set about the attack.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 22:19:50</td><td><a href='http://www.theguardian.com/us-news/2015/jul/16/aurora-shooting-james-holmes-murder-trial-verdict'>site</a></td><td>Aurora shooting verdict: James Holmes found guilty in theater massacre</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 13:30:00</td><td><a href='http://www.latimes.com/nation/la-na-aurora-shooting-by-the-numbers-20150717-story.html'>site</a></td><td>12 -- The number of people killed during the July 20, 2012, rampage at an Aurora, Colo., movie theater during a midnight showing of "The Dark Knight Rises."</td></tr>
 </table></body></html>

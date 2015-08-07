@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 23:02:43</td><td><a href='http://www.daytondailynews.com/ap/ap/washington/microsoft-sheds-some-of-its-ad-business-mapping-se/nmnzf/'>site</a></td><td>Both companies characterized the deal as a win-win because Microsoft will gain more search advertising while AOL, which has been beefing up its display business, will now add Microsoft's websites to a host of other online properties where AOL can place messages for advertising clients.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 23:02:43</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-sheds-some-of-its-ad-business-mapping-6356522.php'>site</a></td><td><table><tr><td>But Microsoft, which is based in Redmond, Washington, will let AOL take over the selling of other types of advertising on Microsoft websites and apps, including MSN, Skype and Xbox.</td></tr><tr><td>An AOL Inc. spokeswoman said the New York-based online media company will extend job offers to all 1,200 people who worked in Microsoft's advertising business.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-29 23:02:43</td><td><a href='http://www.usnews.com/news/technology/articles/2015/06/29/microsoft-sheds-some-of-its-ad-business-mapping-service'>site</a></td><td>Microsoft sheds some of its ad business, mapping service</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-06-29 23:06:08</td><td><a href='http://www.miamiherald.com/news/business/article25787338.html#storylink=rss'>site</a></td><td>Microsoft is handing off some its digital advertising business to AOL and selling its street-image mapping operation to Uber, as the giant software company tries to focus on activities more relevant to its core business.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-31 02:32:02</td><td><a href='http://www.daytondailynews.com/ap/ap/business/microsoft-says-14-million-computers-now-running-wi/nm9b7/'>site</a></td><td><table><tr><td>In a blog post late Thursday, Microsoft said it has not yet delivered Windows 10 to everyone who requested a free upgrade for computers running older Windows versions.</td></tr><tr><td>Microsoft says the 14 million includes some copies installed on new computers sold in stores.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 02:32:02</td><td><a href='http://www.foxbusiness.com/technology/2015/07/30/windows-10-hits-14-million-computers-in-2-days-after-its-release-as-free/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>PALO ALTO, California - Microsoft says its' new Windows 10 operating system is now running on more than 14 million computers, two days after the software was released as a free download.</td></tr>
 </table></body></html>

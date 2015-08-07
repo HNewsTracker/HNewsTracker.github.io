@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>snowden</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 20:39:19</td><td><a href='http://thehill.com/policy/national-security/246967-ex-ag-holder-possibility-exists-for-deal-with-edward-snowden'>site</a></td><td>Holder sees possible DOJ deal with Snowden</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-06 22:45:09</td><td><a href='http://www.theguardian.com/us-news/2015/jul/06/eric-holder-edward-snowden-justice-department'>site</a></td><td>"This is an ongoing case so I am not going to get into specific details but I can say our position regarding bringing Edward Snowden back to the United States to face charges has not changed," Melanie Newman said in an email.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn.rt.com/files/news/42/6b/20/00/justice-dept.-could-strike-deal-with-edward-snowden-to-return-to-us.si.jpg'></td><td>2015-07-07 03:08:51</td><td><a href='http://rt.com/usa/272050-justice-dept-possible-deal-snowden/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td><table><tr><td>Justice Dept. could strike deal with Edward Snowden upon US return - Eric Holder</td></tr><tr><td>Melanie Newman, chief spokeswoman for Attorney General Loretta Lynch, Holder's successor, immediately shot down the idea that the Justice Department was softening its stance on Snowden.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-07 12:16:43</td><td><a href='http://www.upi.com/Top_News/US/2015/07/07/Ex-attorney-general-Holder-says-DOJ-could-strike-a-deal-with-Snowden/8881436266545/'>site</a></td><td>After the disclosure, Holder led a crackdown on government leakers, including charging Snowden with three felony violations of the Espionage Act for turning over thousands of government documents to journalists.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-07 13:58:11</td><td><a href='http://www.cbsnews.com/news/jeb-bush-no-leniency-for-edward-snowden/'>site</a></td><td>Holder told Yahoo that Snowden's actions "spurred a necessary debate" about the bulk collection of phone records and that the U.S. was "in a different place" as a result.</td></tr>
+</table></body></html>

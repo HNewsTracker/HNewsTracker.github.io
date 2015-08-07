@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>google maps</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/lo/api/res/1.2/Cya11DxUmPXwn2wVArHmUw--/YXBwaWQ9bWFnYXppbmVzO3c9ODAw/https://s.yimg.com/os/en-US/homerun/cnet.cbs.com/aac9b6b3781abac2064ae4c6d5f19cd0'></td><td>2015-07-22 20:41:32</td><td><a href='https://www.yahoo.com/tech/s/google-maps-now-shows-everywhere-175301996.html'>site</a></td><td>Google Maps Now Shows You Everywhere You've Been</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03375/Google_Maps_Scarbo_3375044b.jpg'></td><td>2015-07-14 13:03:55</td><td><a href='http://www.telegraph.co.uk/news/worldnews/asia/china/11738744/Google-drops-Chinese-name-from-Maps-after-South-China-Sea-controversy.html'>site</a></td><td>Google drops Chinese name from Maps after South China Sea controversy</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/n/2/x/image.related.articleLeadwide.620x349.giijlo.png/1437621305782.jpg'></td><td>2015-07-23 03:15:48</td><td><a href='http://www.smh.com.au/digital-life/digital-life-news/googles-your-timeline-maps-feature-tracks-all-your-past-locations-20150723-giijlo.html'>site</a></td><td>Google's 'Your Timeline' maps feature tracks all your past locations</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201530/GettyImages-158329781_620x310.jpg'></td><td>2015-07-23 17:00:06</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11485919&ref=rss'>site</a></td><td>Been there, done that - it's all on Google Maps app</td></tr>
 </table></body></html>

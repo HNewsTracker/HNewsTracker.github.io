@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>formula 1 or f1</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 02:00:47</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/17/jules-bianchi-dies-from-injuries-sustained-in/'>site</a></td><td>The findings of the working group prompted F1 to alter its rules, allowing a 'virtual safety car' in which race stewards can neutralize a race, forcing all cars to proceed slowly into the pit lane.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 02:32:02</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-sport/f1-driver-bianchi-dies-after-2014-crash-20150718-3zi7l.html'>site</a></td><td>Bianchi's accident prompted F1 to alter its safety regulations and more quickly stop racing under caution-flag conditions.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-18 13:37:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27567748.html#storylink=rss'>site</a></td><td>Former F1 driver Jean Alesi, who raced in 202 GP races, also paid his respects.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-21 12:37:04</td><td><a href='http://www.charlotteobserver.com/sports/article27996190.html#storylink=rss'>site</a></td><td>Pallbearers carry the casket of French Formula One driver Jules Bianchi into Sainte Reparate Cathedral during his funeral in Nice, French Riviera, Tuesday, July 21, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.gannett-cdn.com/-mm-/af0caf938535883cdc19d9c5a5fa82ff6a7d2bf3/c=403-0-4735-3257&amp;r=x404&amp;c=534x401/local/-/media/2015/07/21/USATODAY/USATODAY/635730814777658524-AFP-542771669.jpg'></td><td>2015-07-21 17:21:00</td><td><a href='http://www.usatoday.com/story/sports/motor/formula1/2015/07/21/bianchi-mourners-recall-f1-driver--humble-winner/30452999/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomsports-topstories'>site</a></td><td>"He wrote the history of F1," French driver Jean-Eric Vergne said outside the funeral.</td></tr>
 </table></body></html>

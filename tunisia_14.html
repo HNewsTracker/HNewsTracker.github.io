@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 06:27:19</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/12/tunisia-tourism-may-be-crippled-by-european/'>site</a></td><td>Similar stories are told up and down Tunisia's Mediterranean shore, as resort entertainers seek work elsewhere and hotel managers ponder whether and when to close down.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 06:27:19</td><td></td><td><a href='tunisia_14_15.html'>Up to 2 million hotel nights are expected to be lost over the next year, hastened by warnings from Britain and other European governments last week that their citizens are no longer safe on Tunisia's shores. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 06:27:19</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/13/tunisia-tourism-may-be-crippled-by-european-warnings'>site</a></td><td><table><tr><td>The blood on the sand has washed away, but the damage wreaked on Tunisia by a few terrifying minutes of gunfire at a beach resort will be deep and lasting.</td></tr><tr><td>"For work, we never get anything in Tunisia during the winter," he said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31401946.ece/03b63/ALTERNATES/h342/PANews%20BT_P-8ef51aa2-4a55-40eb-b78b-98e5b4a2ca2d_I1.jpg'></td><td>2015-07-24 14:57:28</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/tunisia-police-kill-militant-and-arrest-13-others-31401947.html'>site</a></td><td>Tunisia police kill militant and arrest 13 others</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31401946.ece/03b63/ALTERNATES/h342/PANews%20BT_P-8ef51aa2-4a55-40eb-b78b-98e5b4a2ca2d_I1.jpg'></td><td>2015-07-24 14:57:28</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/tunisia-police-kill-suspected-militant-and-arrest-13-others-31401947.html'>site</a></td><td>One suspected militant has been killed and 13 others arrested in a late-night operation that foiled a planned attack in Tunisia.</td></tr>
 </table></body></html>

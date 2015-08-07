@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/jXHTWPkGCCGvdgYTssTG3A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-07-08T205844Z_1_LYNXNPEB6714W_RTROPTP_2_USA-POLICE-BALTIMORE.JPG'></td><td>2015-07-08 23:23:09</td><td><a href='http://news.yahoo.com/baltimore-police-union-slams-freddie-gray-riot-response-175900531.html'>site</a></td><td>Batts, who came to Baltimore from California in September 2012 with a reputation as a reformer, will be replaced on an interim basis by Deputy Commissioner Kevin Davis.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/45/07/8278496/31/square_gallery_thumb.jpg'></td><td>2015-07-09 03:37:13</td><td><a href='http://www.sfgate.com/news/crime/article/Baltimore-mayor-fires-police-commissioner-6373404.php'>site</a></td><td>Interim Baltimore Police Department Commissioner Kevin Davis, left, listens to Mayor Stephanie Rawlings-Blake at a news conference, Wednesday, July 8, 2015, in Baltimore.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-09 09:10:20</td><td><a href='http://www.startribune.com/police-chief-who-pledged-reforms-fired-amid-crime-spike/312792651/'>site</a></td><td><table><tr><td>BALTIMORE - Less than three years ago, Anthony Batts was hand-picked by Baltimore Mayor Stephanie Rawlings-Blake to combat crime and reform a troubled law enforcement department in one of America's most violent cities.</td></tr><tr><td>Batts took over from Fred Bealefeld, who resigned after five years as commissioner and 31 in the Baltimore Police Department.</td></tr><tr><td>Batts too was a veteran officer, though new to the city of Baltimore: He spent three decades in California, two as commissioner of the embattled Oakland Police Department and seven as commissioner of the Long Beach police department, where he'd served as a law enforcement officer for 20 years.</td></tr><tr><td>"I worked closely with Commissioner Batts and always found him open to my ideas for reforming the department," said Baltimore City Council President Bernard C. "Jack" Young.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/04/102643947-471831462.80x60.jpg?v=1430723021'></td><td>2015-07-11 22:22:00</td><td><a href='http://www.cnbc.com/2015/07/11/new-york-times-digital-baltimore-mayoras-challenge-fighting-crime-while-reining-in-police.html'>site</a></td><td><table><tr><td>BALTIMORE - On the day after Mayor Stephanie Rawlings-Blake fired her police commissioner last week, a man was doing a brisk business selling DVDs from a folding table in front of a Baptist church in West Baltimore.</td></tr><tr><td>Ms. Rawlings-Blake says she is convinced she can do both; she spent part of Thursday visiting Baltimore police commanders with her interim commissioner, Kevin Davis.</td></tr></table></td></tr>
 </table></body></html>

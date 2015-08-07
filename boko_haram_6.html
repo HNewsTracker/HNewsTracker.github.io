@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 21:42:57</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/20/suspected-boko-haram-fighters-kill-23-in-north/'>site</a></td><td>Suspected Boko Haram fighters kill 23 in north Cameroon</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 21:45:22</td><td><a href='http://www.startribune.com/suspected-boko-haram-fighters-kill-23-in-north-cameroon/317626331/'>site</a></td><td>Nigeria-based Boko Haram, which this year became the West African franchise of the Islamic State group, has targeted northern Cameroon repeatedly in retaliation for the country's participation in a regional military effort against the extremists.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 13:45:43</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-07-AF--Boko%20Haram/id-152e363ed3594aeeb1ebf43cf32320cf'>site</a></td><td>Bomb blamed on Boko Haram kills 20 in northern Nigeria</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 13:47:07</td><td></td><td><a href='boko_haram_6_7.html'>Boko Haram wants to install an Islamic state across the West African nation of about 170 million people divided between a predominantly Muslim north and Christian south. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-07 16:02:08</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/07/bomb-blamed-on-boko-haram-kills-20-in-northern-nigeria'>site</a></td><td>Nigeria's police force announced heightened security around mosques and churches after Boko Haram assaults Sunday killed more than 60 people.</td></tr>
 </table></body></html>

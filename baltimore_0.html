@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 09:15:12</td><td></td><td><a href='baltimore_0_1.html'>For better or worse, since she sacked Police Commissioner Anthony Batts, the mayor has been alone at the top of a city government that has yet to show how it will repair the strained relationship between police and the people of inner-city Baltimore. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 09:17:03</td><td></td><td><a href='baltimore_0_2.html'>In this photo taken Tuesday, July 21, 2015, Baltimore Mayor Stephanie Rawlings-Blake stands outside vacant homes before a ceremony to kick off their restoration in Baltimore. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 15:44:06</td><td><a href='http://www.miamiherald.com/news/nation-world/article28817914.html#storylink=rss'>site</a></td><td>Police: Male shot near epicenter of Baltimore unrest</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 17:39:20</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28843966.html#storylink=rss'>site</a></td><td>A man sleeps on a stoop as police guard the perimeter of the scene of a shooting on Monday, July 27, 2015, in Baltimore.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 17:39:20</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28843966.html#storylink=rss'>site</a></td><td>A member of the Baltimore Police Department stands near evidence at the scene of a shooting on Monday, July 27, 2015, in Baltimore.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 19:10:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28817914.html#storylink=rss'>site</a></td><td><table><tr><td>Police: Man shot, gravely hurt near site of Baltimore unrest</td></tr><tr><td>Police say an 18-year-old man has been shot in the chest near the epicenter of April unrest in west Baltimore.</td></tr></table></td></tr>
 </table></body></html>

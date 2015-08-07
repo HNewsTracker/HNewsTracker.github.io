@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 04:30:24</td><td></td><td><a href='ferguson_5_6.html'>ST. LOUIS - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/10002741+Britain+Migrants.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-03 04:30:24</td><td><a href='http://www.startribune.com/year-later-ap-reporter-recalls-origins-of-ferguson-movement/320452642/'>site</a></td><td><table><tr><td>Until August 2014, Ferguson, Missouri, wasn't the kind of place that generated much news.</td></tr><tr><td>The next day, as Ferguson police prepared for a news conference to explain what happened, I was among a crowd of reporters who heard distant chanting.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 13:01:27</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article29842411.html#storylink=rss'>site</a></td><td>On Aug. 9, I returned home from a bike ride to learn that a young black man had been fatally shot by a white Ferguson police officer.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 15:43:38</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-b8fcdb039d93406ebc63851a514f5286'>site</a></td><td>Ferguson became the impetus for a national movement.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-02 15:53:14</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td>Lawmakers filed about 65 bills stemming from the events in Ferguson passing just one, a measure limiting municipal court fines and traffic tickets.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-02 17:53:41</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article29797039.html#storylink=rss'>site</a></td><td>Ferguson spurs 40 new state measures; activists want more</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 01:33:21</td><td></td><td><a href='ferguson_5_6.html'>FILE - In this Aug. 9, 2014, file photo, a police tactical team moves in to disperse a group of protesters following the shooting of a young black man by a white policeman in Ferguson, Mo. (5)</a></td></tr>
 </table></body></html>

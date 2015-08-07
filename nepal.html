@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,14 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 12:24:05</td><td><a href='http://abcnews.go.com/International/wireStory/image-asia-repairing-earthquake-damage-nepal-32352023'>site</a></td><td>Image of Asia: Repairing Earthquake Damage in Nepal</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 21:33:54</td><td><a href='https://www.yahoo.com/news/nepal-hospital-says-cnns-gupta-didnt-operate-8-162425074.html'>site</a></td><td><table><tr><td>Nepal hospital, CNN differ on reported surgery after quake</td></tr><tr><td>KATHMANDU, Nepal (AP) - A Nepal hospital said Friday that CNN medical correspondent Dr. Sanjay Gupta incorrectly reported that he operated on an 8-year-old girl after the country's devastating earthquake in April.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 09:42:06</td><td></td><td><a href='nepal_0.html'>Nepal's government has urged other countries to lift travel advisories that discourage their citizens from visiting the Himalayan nation following a devastating earthquake in April that killed thousands of people. (3)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-20 03:55:16</td><td></td><td><a href='nepal_2.html'>KATHMANDU, Nepal - Protesters demanding that Nepal be turned back into a Hindu nation scuffled with police and threw chairs at the country's deputy prime minister when he was collecting suggestions on a draft constitution. (3)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-23 13:37:23</td><td></td><td><a href='nepal_4.html'>The most popular trekking trail in Nepal escaped damage during April's devastating earthquake and is safe for hikers to return, an assessment team said Thursday. (5)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-26 15:42:05</td><td></td><td><a href='nepal_7.html'>Police have arrested 11 villagers over the murder of a 10-year-old boy in southwestern Nepal, in what authorities are calling a case of human sacrifice. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 12:24:53</td><td><a href='http://www.miamiherald.com/news/nation-world/article26942593.html#storylink=rss'>site</a></td><td><table><tr><td>Image of Asia: Repairing earthquake damage in Nepal</td></tr><tr><td>Nepalese laborers work on reconstructing the earthquake damaged Swayambhunath Stupa in Kathmandu, Nepal, Thursday, July 9, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 21:33:54</td><td><a href='https://www.yahoo.com/news/nepal-hospital-says-cnns-gupta-didnt-operate-8-162425074.html'>site</a></td><td>KATHMANDU, Nepal (AP) - A Nepal hospital said Friday that CNN medical correspondent Dr. Sanjay Gupta incorrectly reported that he operated on an 8-year-old girl after the country's devastating earthquake in April.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 09:45:12</td><td></td><td><a href='nepal_0.html'>Quake-hit Nepal urges other nations to lift travel advisories, hopes to bring back tourists (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000ade8f-642.jpg'></td><td>2015-07-17 14:22:04</td><td><a href='http://www.rte.ie/news/2015/0717/715414-nepal-cricket-court/'>site</a></td><td>Nepal cricket physio fired over alleged NI assault</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-20 03:53:02</td><td></td><td><a href='nepal_4.html'>KATHMANDU, Nepal - Protesters demanding that Nepal be turned back into a Hindu nation scuffled with police and threw chairs at the country's deputy prime minister when he was collecting suggestions on a draft constitution. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 13:37:23</td><td><a href='http://www.cbc.ca/news/world/nepal-s-mt-annapurna-trails-deemed-safe-after-april-earthquake-1.3164577?cmp=rss'>site</a></td><td>The most popular trekking trail in Nepal escaped damage during April's devastating earthquake and is safe for hikers to return, an assessment team said Thursday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.independent.co.uk/incoming/article10416647.ece/alternates/w460/Nawalparasi_district_location.jpg'></td><td>2015-07-26 14:30:42</td><td><a href='http://www.independent.co.uk/news/world/asia/five-arrested-following-death-of-10yearold-boy-in-suspected-case-of-human-sacrifice-in-nepal-10416563.html'>site</a></td><td>Five arrested following death of 10-year-old boy in suspected case of human sacrifice in Nepal</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-26 15:42:05</td><td></td><td><a href='nepal_2.html'>Police have arrested 11 villagers over the murder of a 10-year-old boy in southwestern Nepal, in what authorities are calling a case of human sacrifice. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-29 02:22:38</td><td><a href='http://www.nytimes.com/2015/07/29/world/asia/nepal-temple-halts-animal-sacrifices.html?partner=rss&emc=rss&_r=0'>site</a></td><td><table><tr><td>A temple in southern Nepal known for the mass slaughter of animals at a festival every five years has indefinitely banned animal sacrifice, India's Humane Society International said Tuesday.</td></tr><tr><td>Those numbers dropped in 2014 after India's Supreme Court banned taking animals across the border to Nepal for sacrifice there, campaigners said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-31 04:33:52</td><td></td><td><a href='nepal_11.html'>Landslides triggered by torrential rain in Nepal swept through villages on Thursday, killing at least 30 people close to the nation's most popular trekking circuit, home ministry officials said. (2)</a></td></tr>
 </table></body></html>
