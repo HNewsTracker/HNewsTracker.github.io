@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 15:15:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11479220&ref=rss'>site</a></td><td>MEXICO CITY (AP) " A volcano in western Mexico has erupted, spewing ash more than 4 miles (7 kilometers) into the air and sending lava down its flanks.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 15:15:21</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article26952997.html#storylink=rss'>site</a></td><td><table><tr><td>Colima Volcano blasts ash, lava in western Mexico</td></tr><tr><td>The activity at the Colima Volcano began Thursday and continued Friday morning.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://stmedia.stimg.co/1436477702_10085521+1confed071015.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-10 15:15:30</td><td><a href='http://www.startribune.com/colima-volcano-blasts-ash-lava-in-western-mexico/313266341/'>site</a></td><td>Colima Volcano in western Mexico erupts, spewing towering plume of ash , spilling lava</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31366235.ece/a3b07/ALTERNATES/h342/PANews%20BT_P-e20bfe8d-a710-46f7-aab6-60bb90ab80eb_I1.jpg'></td><td>2015-07-10 05:46:08</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/volcano-sparks-java-travel-chaos-31366236.html'>site</a></td><td><table><tr><td>Volcano sparks Java travel chaos</td></tr><tr><td>Ash spewing from a volcano on Indonesia's main island of Java has sparked chaos for holidaymakers as airports close and international airlines cancel flights to tourist hotspot Bali.</td></tr><tr><td>Mr Suantika said lava and ash falling from the 10,900ft mountain on Indonesia's most densely populated island has also prompted the government to call on people to stay away from a two-mile danger zone around the volcano.</td></tr><tr><td>Evacuation of residents living near the volcano is still considered unnecessary, but authorities are urging people to wear masks.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/U.S./876/493/0710 indo volcano.jpg?ve=1&tl=1'></td><td>2015-07-10 08:59:09</td><td><a href='http://www.foxnews.com/world/2015/07/10/volcano-eruption-in-indonesia-sparks-travel-chaos/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>A 2010 eruption of Iceland's Eyjafjallajokul volcano produced an ash cloud that caused a week of international aviation chaos, with more than 100,000 flights cancelled.</td></tr><tr><td>Another Indonesian volcano, Mount Sinabung in Sumatra, has been erupting for two months, forcing the evacuation of more than 10,000 people.</td></tr></table></td></tr>
 </table></body></html>

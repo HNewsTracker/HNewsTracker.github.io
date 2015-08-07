@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 20:44:42</td><td><a href='http://www.foxnews.com/world/2015/06/30/russia-fails-to-reach-deal-on-future-gas-supplies-to-ukraine-amid-price/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The two countries have fought several gas price wars in past years, and gas disputes exacerbated after Russia's annexation of Ukraine's Crimean Peninsula in 2014 and a pro-Russian insurgency in eastern Ukraine.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-30 20:45:29</td><td></td><td><a href='ukraine_1_3.html'>Russia fails to reach deal on future gas supplies to Ukraine amid price differences (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-06 18:19:16</td><td></td><td><a href='ukraine_1_2.html'>Gazprom CEO Alexei Miller said Russia stopped deliveries at 10 a.m. because Ukraine didn't make an advance payment for July's gas. (4)</a></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/37/34/21/8242285/11/square_gallery_thumb.jpg'></td><td>2015-07-06 18:19:16</td><td><a href='http://www.sfgate.com/business/energy/article/Russia-halts-gas-supply-to-Ukraine-amid-pricing-6359930.php'>site</a></td><td><table><tr><td>FILE - In this Wednesday May 21, 2014 file photo, a gas pressure gauge in Bil 'che-Volicko-Ugerske underground gas storage facilities is seen in Strij, outside Lviv, Ukraine.</td></tr><tr><td>Russian gas company Gazprom halted supplies to neighboring Ukraine on Wednesday, July 1, 2015, after the collapse of pricing talks, company official said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 00:40:16</td><td></td><td><a href='ukraine_1_2.html'>Australia unveils memorial for victims of Malaysian plane shot down over Ukraine 1 year ago (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.cbc.ca/1.3156267.1437114394!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/malaysia-airlines-mh17-ukraine.jpg'></td><td>2015-07-17 06:32:55</td><td><a href='http://www.cbc.ca/news/world/malaysia-airlines-flight-mh17-ukraine-australia-mark-sombre-1-year-anniversary-1.3156260?cmp=rss'>site</a></td><td>In Canberra, Australian Prime Minister Tony Abbott unveiled a plaque inscribed with the names of Australian victims, which is set in soil that a police officer brought back from Ukraine.</td></tr>
 </table></body></html>

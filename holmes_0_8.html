@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 17:31:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-06-11-US--Colorado%20Shooting-The%20Latest/id-7b04c140aa0d42d1a8bd463682a438d3'>site</a></td><td>Colorado theater gunman James Holmes' ex-girlfriend says the two broke up in February 2012 but continued to hang out as "friends with benefits."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media4.s-nbcnews.com/j/newscms/2015_24/1071506/150611-holmes-datta-2049_aa73f006033f4ce298fd59b17b09cf71.nbcnews-fp-1240-520.jpg'></td><td>2015-06-12 00:57:15</td><td><a href='http://www.nbcnews.com/news/us-news/bit-irrational-theater-shooter-james-holmes-ex-girlfriend-asked-him-n374056'>site</a></td><td>- Months before James Holmes opened fire in a Colorado movie theater, his ex-girlfriend said she urged him talk to his therapist after he mentioned having thoughts about killing people, thoughts that to her "seemed very philosophical" and not a concrete threat.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 20:10:25</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article27138301.html#storylink=rss'>site</a></td><td>Jurors in the Colorado theater shooting case soon will retreat into the largest jury room in the courthouse to determine whether Holmes was legally insane at the time of the killing spree.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 23:43:29</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27262330.html#storylink=rss'>site</a></td><td>It is the question of sanity and what Holmes did or did not know that night that will be the key issues for jurors.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td>The jurors were given permission to view a recording of Holmes after the shooting in which he asks police officers if any children were hurt.</td></tr>
 </table></body></html>

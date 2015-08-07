@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/64/40/8341538/3/square_gallery_thumb.jpg'></td><td>2015-07-21 21:00:48</td><td><a href='http://www.chron.com/business/technology/article/Yahoo-suffers-2Q-loss-as-revenue-growth-eludes-6397835.php'>site</a></td><td><table><tr><td>Yahoo's posted a loss of nearly $22 million, while its net revenue remained unchanged from the previous year at $1.04 billion.</td></tr><tr><td>Yahoo's net revenue now has decreased or been unchanged from the previous year in eight of the previous 10 quarters.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/64/40/8341538/3/square_gallery_thumb.jpg'></td><td>2015-07-21 21:00:48</td><td><a href='http://www.chron.com/business/technology/article/Yahoo-suffers-2Q-loss-as-revenue-growth-eludes-6397835.php'>site</a></td><td>Yahoo's stock fell 73 cents, or nearly 2 percent, to $39 in extended trading after the numbers came out.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 21:00:48</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/21/yahoo-suffers-2q-loss-as-revenue-growth-eludes-company'>site</a></td><td>If not for the costs of employee stock compensation and one-time accounting items, Yahoo said it would have earned 16 cents per share - 2 cents per share below the average estimate among analysts polled by Zacks.</td></tr>
 </table></body></html>

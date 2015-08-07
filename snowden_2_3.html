@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 16:45:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/21/german-officials-to-ask-us-for-clarity-on-latest-spy-claims'>site</a></td><td><table><tr><td>BERLIN (AP) - Germany's domestic intelligence chief said Tuesday that the revelations by Edward Snowden have had at least one positive effect, by raising awareness about the importance of counter-espionage.</td></tr><tr><td>"So maybe one can be grateful to Snowden that he has put a spotlight on the issue of counter-espionage in Germany," dpa quoted Maassen as saying.</td></tr><tr><td>Although the reports didn't explicitly cite documents leaked to the media by Snowden, they came amid a flurry of similar claims about alleged U.S. surveillance in Germany that were linked to the former NSA contractor.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 16:45:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/21/german-officials-to-ask-us-for-clarity-on-latest-spy-claims'>site</a></td><td><table><tr><td>BERLIN (AP) - Germany's domestic intelligence chief said Tuesday that the revelations by Edward Snowden have had at least one positive effect, by raising awareness about the importance of counter-espionage.</td></tr><tr><td>Although the reports didn't explicitly cite documents leaked to the media by Snowden, they came amid a flurry of similar claims about alleged U.S. surveillance in Germany that were linked to the former NSA contractor.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 16:45:14</td><td><a href='http://www.daytondailynews.com/ap/ap/international/german-officials-to-ask-us-for-clarity-on-latest-s/nm38p/'>site</a></td><td>"So maybe one can be grateful to Snowden that he has put a spotlight on the issue of counter-espionage in Germany," dpa quoted Maassen as saying.</td></tr>
 </table></body></html>

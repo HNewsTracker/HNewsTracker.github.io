@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/R0B57Jm9NOzHtep.NITV_w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201506131611582963259'></td><td>2015-06-13 21:24:19</td><td><a href='http://sports.yahoo.com/news/blue-jays-win-10th-straight-martin-hr-11th-211902930--mlb.html'>site</a></td><td>Blue Jays win 10th straight, Martin HR in 11th beats Red Sox (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-29 17:47:00</td><td></td><td><a href='yahoo_6_7.html'>Yahoo is trying to make that happen with Livetext, a new app that seeks to make video calling as private as texting. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-29 17:47:00</td><td><a href='http://www.cnbc.com/2015/07/29/yahoo-to-roll-out-private-video-texting-app.html'>site</a></td><td><table><tr><td>It's the latest example of Yahoo trying to catch up in mobile since Marissa Mayer became the company's CEO three years ago.</td></tr><tr><td>Yahoo's twist is silencing audio.</td></tr></table></td></tr>
 </table></body></html>

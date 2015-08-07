@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/AP150624080213_140x93.jpg'></td><td>2015-07-13 08:15:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480272&ref=rss'>site</a></td><td>BRUSSELS (AP) " Greece's Tsipras says deal allows Greece to stand on own feet, averted "extreme measures".</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201528/AP150624080213_140x93.jpg'></td><td>2015-07-17 17:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483051&ref=rss'>site</a></td><td>Greece's Tsipras reshuffles Cabinet after austerity vote prompted dissent in his party</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-18 13:23:29</td><td></td><td><a href='tsipras_0.html'>The Greek government ordered banks to open on Monday, three weeks after they were shut down to prevent the system collapsing under a flood of withdrawals, as Prime Minister Alexis Tsipras looked to the start of new bailout talks next week. (81)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 15:30:38</td><td><a href='http://abcnews.go.com/International/wireStory/greeces-tsipras-stays-popular-bailout-hardship-32588743'>site</a></td><td>Greece's Tsipras Stays Popular Despite Bailout Hardship</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 08:14:47</td><td></td><td><a href='tsipras_0.html'>Greece's Prime Minister Alexis Tsipras arrives for a meeting as his lawmakers of Syriza party applaud him at the Greek Parliament in Athens, Friday, July 10, 2015. (93)</a></td></tr>
 </table></body></html>

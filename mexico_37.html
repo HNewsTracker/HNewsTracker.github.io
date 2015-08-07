@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 20:30:38</td><td><a href='http://www.startribune.com/mexico-s-first-auction-of-oil-sites-draws-few-bids/315500301/'>site</a></td><td><table><tr><td>Only two of 14 exploration and production blocks in the Gulf of Mexico put up for auction Wednesday attracted bids, and the auction did not attract the world's biggest oil companies.</td></tr><tr><td>Until last year's legislative overhaul, Mexico's oil sector had been closed to private companies since nationalization in 1938.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 20:35:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481864&ref=rss'>site</a></td><td>MEXICO CITY (AP) " Mexico is getting off to a rough start in its effort to attract investment for its oil fields by allowing private companies to enter the energy sector after a seven-decade state monopoly.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-28 19:15:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article29120401.html#storylink=rss'>site</a></td><td>Mexico advanced to the final after winning two knockout-round matches with the help of controversial late penalties.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 19:15:25</td><td></td><td><a href='mexico_37_38.html'>MEXICO CITY - Embattled Mexican national soccer team coach Miguel Herrera has been fired following a TV reporter's claim that the coach known as "El Piojo" punched him. (9)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-29 00:58:03</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/28/mexico-coach-herrera-fired-after-claim-he-punched-reporter'>site</a></td><td><table><tr><td>During his tenure Mexico won 18 matches, tied 11 and lost 7.</td></tr><tr><td>Earlier this year he and two players came under investigation by the soccer federation for tweets supporting Mexico's Green Party just before midterm elections, an apparent violation of the federation's code of ethics.</td></tr></table></td></tr>
 </table></body></html>

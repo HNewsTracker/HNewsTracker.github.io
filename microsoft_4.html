@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/06/30/business/Microsoft/Microsoft-thumbStandard.jpg'></td><td>2015-07-08 05:22:48</td><td><a href='http://www.nytimes.com/2015/07/09/technology/microsoft-layoffs.html'>site</a></td><td><table><tr><td>At the end of March, Microsoft had more than 118,000 employees globally.</td></tr><tr><td>Last month, the company said that Stephen Elop, the former chief executive of Nokia who became a senior Microsoft executive after the acquisition, overseeing its devices business, would leave Microsoft.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 07:11:49</td><td></td><td><a href='microsoft_4_7.html'>The latest job cuts are in addition to the 18,000 jobs Microsoft said it planned to cut a year ago, the newspaper said, citing sources familiar with the matter. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 13:17:31</td><td></td><td><a href='microsoft_4_8.html'>Microsoft announced plans Wednesday to restructure the company's phone hardware business and to cut up to 7,800 positions. (4)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-21 21:58:42</td><td></td><td><a href='microsoft_4_5.html'>The net loss in the fourth quarter, which ended June 30, amounted to $3.2 billion, and sales fell 5.1 percent to $22.2 billion, Microsoft said Tuesday in a statement. (16)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-21 22:57:51</td><td></td><td><a href='microsoft_4_6.html'>Microsoft wants to generate revenue by building search and gaming into the Windows 10 interface, Chief Financial Officer Amy Hood said in April. (3)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-22 18:42:20</td><td></td><td><a href='microsoft_4_9.html'>Microsoft doesn't break out operating margins for its hardware business, but Jefferies & Co analyst John DiFucci told Reuters he believed the Xbox business was at best break-even and that Surface was unprofitable on an operating basis. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 14:32:33</td><td><a href='http://nypost.com/2015/07/08/microsoft-to-lay-off-7800-from-nokia-handset-business/'>site</a></td><td>Microsoft, which had more than 118,000 employees worldwide as of March 31, said it would take a restructuring charge of about $750 million-to-$850 million.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 23:00:18</td><td></td><td><a href='microsoft_4_6.html'>Microsoft announced, Wednesday, July 8, 2015, it will cut 7,800 jobs and take a $7.6 billion impairment charge as it attempts to revive its flagging phone hardware business. (8)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 20:43:03</td><td></td><td><a href='microsoft_4_5.html'>Microsoft Corp (MSFT.O) reported a $3.2 billion quarterly net loss as it wrote down its Nokia phone business and demand fell for its Windows operating system. (17)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-21 20:43:03</td><td></td><td><a href='microsoft_4_7.html'>Sales of Windows to businesses fell 21 percent from the year-earlier quarter, when demand for the operating system had surged after Microsoft discontinued support for Windows XP. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066230947&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L0XA'></td><td>2015-07-22 18:42:20</td><td><a href='http://www.reuters.com/article/2015/07/22/us-microsoft-hardware-idUSKCN0PW25U20150722?feedType=RSS&feedName=businessNews'>site</a></td><td>An advertisement for Microsoft is seen over 42nd Street in Manhattan, New York, July 15, 2015.</td></tr>
 </table></body></html>

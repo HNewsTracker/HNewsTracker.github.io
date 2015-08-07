@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-25 17:04:38</td><td><a href='http://abcnews.go.com/International/wireStory/israels-netanyahu-iran-deal-32027279'>site</a></td><td>Benjamin Netanyahu told a graduating class of pilots Thursday that "it is still not too late to insist on a good deal."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 09:14:42</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27072607.html#storylink=rss'>site</a></td><td>Responding to the Iranian supreme leader's call to continue the struggle against the United States regardless of the outcome of nuclear talks, Benjamin Netanyahu says Sunday his country will not accept such a reality.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 11:51:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-14-Iran-Nuclear%20Talks-The%20Latest/id-8af4298d9e8247c38d3a6f06e011936e'>site</a></td><td>Benjamin Netanyahu said Tuesday that an accord with Iran will allow it "to continue to pursue its aggression and terror in the region."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:25:06</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27190630.html#storylink=rss'>site</a></td><td>Benjamin Netanyahu says the world is now a "much more dangerous place" and criticized Tuesday's agreement as a "stunning historic mistake."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 13:29:26</td><td><a href='http://www.daytondailynews.com/ap/ap/international/israeli-opposition-leader-to-visit-washington-over/nmy5x/'>site</a></td><td>"Our national security is not a matter of dispute," Netanyahu's office quoted Herzog as saying.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31379531.ece/fe497/ALTERNATES/h342/PANews%20BT_P-748d2931-0e57-41c7-84b2-de41fdd06dc1_I1.jpg'></td><td>2015-07-15 13:51:04</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/israeli-premier-netanyahu-criticises-iran-nuclear-deal-31379532.html'>site</a></td><td><table><tr><td>Mr Netanyahu's war of words came as his political rival, Isaac Herzog, announced he would go to the US to lobby for a compensation package to insure Israel's military advantage in the region.</td></tr><tr><td>Mr Herzog has criticised Mr Netanyahu over the deal, saying the Israeli leader unnecessarily antagonised the US and other allies during negotiations.</td></tr></table></td></tr>
 </table></body></html>

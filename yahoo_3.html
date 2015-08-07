@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-06-21 21:14:37</td><td><a href='http://sports.yahoo.com/news/jd-martinez-hits-3-hrs-tigers-tag-tanaka-203218863--mlb.html'>site</a></td><td>JD Martinez hits 3 HRs, Tigers tag Tanaka and top Yanks 12-4 (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 22:15:46</td><td></td><td><a href='yahoo_3_4.html'>SAN FRANCISCO (AP) - Yahoo is moving forward with the spinoff of its sizable stake in China's Alibaba Group, and announced a name for it: Aabaco. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 22:15:46</td><td></td><td><a href='yahoo_3_5.html'>The filing says Yahoo won't proceed without assurances the deal is tax-free for investors, but Aabaco could be liable if authorities ultimately determine that taxes are owed. (2)</a></td></tr>
 </table></body></html>

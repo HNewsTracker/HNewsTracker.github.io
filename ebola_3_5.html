@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150630&t=2&i=1060294345&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB5T09D'></td><td>2015-06-30 08:00:03</td><td><a href='http://www.reuters.com/article/2015/06/30/us-health-ebola-liberia-idUSKCN0PA0PB20150630?feedType=RSS&feedName=healthNews'>site</a></td><td>A health worker injects a woman with an Ebola vaccine during a trial in Monrovia, February 2, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/33/17/8238046/7/square_gallery_thumb.jpg'></td><td>2015-06-30 19:53:46</td><td><a href='http://www.sfgate.com/news/medical/article/Liberia-quarantines-community-where-corpse-tested-6357541.php'>site</a></td><td>Health workers leave after they took a blood specimen from a child to test for the Ebola virus in a area were a 17-year old boy died from the virus on the outskirts of Monrovia, Liberia, Tuesday, June 30, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pmQa6lTbZKown3vhlxH8_w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b04350ba760a0c1d7b0f6a706700b6a6.jpg'></td><td>2015-07-03 15:56:25</td><td><a href='http://news.yahoo.com/liberia-works-contain-ebola-source-cases-155625276.html'>site</a></td><td>"We will contain it quickly because of where we are in the learning curve as far as Ebola is concerned," said Dr. Philip Ireland at the John F. Kennedy Medical Center in the capital, Monrovia.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/47/55/8289110/7/920x920.jpg'></td><td>2015-07-10 20:02:25</td><td><a href='http://www.chron.com/news/medical/article/Tests-show-Ebola-in-Liberia-linked-to-virus-found-6377690.php'>site</a></td><td>Five new cases of Ebola have been confirmed in the town of Nedowein, including the teen who died June 28.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 13:54:09</td><td><a href='http://www.miamiherald.com/living/health-fitness/article30019245.html#storylink=rss'>site</a></td><td><table><tr><td>Khan says the patient recently traveled to a country with Ebola cases, but he didn't identify the country or name the patient.</td></tr><tr><td>Khan says the patient didn't have direct contact with anyone known to have Ebola and is considered "low risk" for the disease.</td></tr></table></td></tr>
 </table></body></html>

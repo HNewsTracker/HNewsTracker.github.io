@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 16:46:41</td><td><a href='http://www.reuters.com/article/2015/06/26/us-mideast-crisis-syria-idUSKBN0P60UY20150626?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>Islamic State pressed a separate assault to capture government-held parts of the northeastern city of Hasaka, blowing up a security building and triggering a government appeal for all residents to take up arms.</td></tr><tr><td>Unlike the Kobani raid, the Islamic State attack on Hasaka appears aimed at wresting control of the government-held parts of city, which is divided into areas run separately by President Bashar al-Assad's government and the YPG.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 06:54:44</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27378178.html#storylink=rss'>site</a></td><td><table><tr><td>The UAE's counterterrorism lectures, organized by Abu Dhabi's Islamic Affairs authority during the month of Ramadan, which ends Friday, drew more than 300 speakers, many of them from Cairo's al-Azhar.</td></tr><tr><td>But one of the Arab world's most famous Muslim televangelists, Amr Khaled, who dedicated his TV show through Ramadan to discussing ways of reform, pointed out that it has been at least 70 years since the last great work on Islamic jurisprudence was written.</td></tr><tr><td>The effort was given a boost during the Muslim fasting month of Ramadan, now in its last week, even as a call for violence by the Islamic State group triggered attacks across the Middle East and parts of Africa.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 06:55:15</td><td><a href='http://www.startribune.com/muslim-scholars-use-ramadan-to-push-for-an-islamic-renewal/315688681/'>site</a></td><td>On one level, the religious reform effort - known in Arabic as "tajdeed," or "renewal"- is aimed at drawing the faithful away from extremism at a time when militant violence has escalated in the region with the spread of the Islamic State group.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 06:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11482215&ref=rss'>site</a></td><td>Muslim scholars use Ramadan to push for an Islamic renewal</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/16/13/d5/b222c911cbf64b2da544b521c3879da2-0b242032d5d54d63a298cdd72f2eb659-0_1.jpg'></td><td>2015-07-16 07:38:20</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/muslim-scholars-use-ramadan-to-push-for-an-islamic/nmzgZ/'>site</a></td><td>During the Islamic holy month of Ramadan, Muslims are called on to reflect on their faith as they conduct their daily fast.</td></tr>
 </table></body></html>

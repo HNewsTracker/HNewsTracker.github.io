@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 13:37:07</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27568852.html#storylink=rss'>site</a></td><td>He missed the FIFA congress that re-elected Blatter a day later.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 09:43:20</td><td></td><td><a href='fifa_or_blatter_34_37.html'>Prince Ali broke more than a month of silence on Monday to tell The Associated Press that a December election would not provide enough time for the "meaningful change in the leadership of FIFA that we so desperately need." (8)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-20 09:43:20</td><td></td><td><a href='fifa_or_blatter_34_38.html'>FIFA to decide on election date; Platini gains support (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-20 09:47:04</td><td></td><td><a href='fifa_or_blatter_34_35.html'>The prince, who advocates a March election but provided no indication of his own presidential ambitions, wants a leader from outside the sport to oversee the next election and reforms of scandal-scarred FIFA - with Blatter out immediately. (5)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-21 06:27:03</td><td></td><td><a href='fifa_or_blatter_34_36.html'>FILE - In this Wednesday, June 3, 2015, former FIFA Vice President Chung Mong-joon arrives to hold a press conference in Seoul, South Korea. (9)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 18:35:05</td><td></td><td><a href='fifa_or_blatter_34_35.html'>Mutko says "communication with FIFA ... is not as easy as it was before because if you expect that there will be a change in administration in February then communication is somewhat thwarted." (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 18:35:05</td><td></td><td><a href='fifa_or_blatter_34_36.html'>Blatter was accompanied by Mutko as he arrived at his St. Petersburg hotel for the World Cup qualifying draw on his first foreign trip since the FIFA scandal erupted. (2)</a></td></tr>
 </table></body></html>

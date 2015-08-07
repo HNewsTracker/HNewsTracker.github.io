@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-03 14:28:02</td><td></td><td><a href='ukraine_12_13.html'>BRATISLAVA, Slovakia (AP) - Slovakia's spy agency says Russian agents have significantly increased their activities in Slovakia and all other NATO and European Union countries in connection with the crisis in Ukraine. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-03 14:28:02</td><td><a href='http://news.yahoo.com/slovak-agency-russian-spies-increase-activities-eu-nato-142802669.html'>site</a></td><td>The SIS says Russia has been actively supporting the separatists in Ukraine to keep the country under its sphere of influence.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 21:05:35</td><td></td><td><a href='ukraine_12_13.html'>The United States rejects the claim and says Russian troops are backing separatist fighters in eastern Ukraine, violating that country's sovereignty. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 21:05:35</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/13/general-us-considering-training-for-ukrainian-army'>site</a></td><td>"It's got to be something that Ukraine and the U.S. and other participating nations would all agree on," Hodges said, adding that it would be similar to the kinds of training now provided to national guardsmen near Lviv, close to the Polish border.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 21:11:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27146440.html#storylink=rss'>site</a></td><td>Sen. John McCain has been a vocal critic of the administration's approach, calling it timid and insufficiently supportive of the Ukraine government.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 21:11:05</td><td><a href='http://www.miamiherald.com/news/politics-government/article27146440.html#storylink=rss'>site</a></td><td>General: US considers expanding Ukraine training to army</td></tr>
 </table></body></html>

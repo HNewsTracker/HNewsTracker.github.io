@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,11 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 08:14:47</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/10/greeces-tsipras-to-sell-last-ditch-deal-to-reluctant-party'>site</a></td><td>Tsipras was convening his party's lawmakers for discussions Friday morning before the parliamentary debate.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 09:40:15</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=topNews'>site</a></td><td>After walking into a party meeting to applause, Tsipras rallied his Syriza lawmakers to throw their weight behind the new proposals ahead of a snap vote in parliament on the negotiations, urging them to help keep Greece in the euro.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>But the Tsipras government's political survival could be in danger if large numbers of its own lawmakers resign their seats or openly vote against the bill.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-15 13:01:52</td><td><a href='http://www.sbs.com.au/news/article/2015/07/15/reluctant-tsipras-fights-pass-reforms-greek-parliament'>site</a></td><td>Syriza's junior coalition partner said it would vote only for certain clauses in the bill, rejecting those reforms that went beyond a previous vote in parliament that had given Tsipras a mandate to negotiate in Brussels.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436995239589.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150715-gidayi'>site</a></td><td>But around 30-40 Syriza lawmakers are likely either to abstain or vote against the government, raising a question mark over how long Tsipras can remain in office.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000ad514-117.jpg'></td><td>2015-07-08 22:32:39</td><td><a href='http://www.rte.ie/news/2015/0708/713376-greece-economy/'>site</a></td><td>Speaking before Mr Tsipras, European Council President Donald Tusk repeated that the final deadline for Greece to submit convincing reform plans and start implementing them was this week.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/1/7/x/image.related.articleLeadwide.620x349.gia16t.png/1436579147577.jpg'></td><td>2015-07-11 01:22:15</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-muse-on-future-path-after-alexis-tsipras-abrupt-reversal-20150711-gia16t.html'>site</a></td><td>Those are the questions being asked across Greece in the wake of Mr Tsipras' abrupt decision to give the creditors nearly all of what they have sought throughout the long and contentious negotiations over keeping Greece afloat.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 21:00:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27069493.html#storylink=rss'>site</a></td><td>France is considered Greece's closest ally and even helped Tsipras prepare the reform proposals that were a minimum requirement for getting fresh talks.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297725078816_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-18 13:38:09</td><td><a href='http://www.torontosun.com/2015/07/18/greek-banks-to-re-open-monday-as-tsipras-eyes-new-start'>site</a></td><td>The decree to re-open the banks came hours after new ministers were sworn in following a cabinet reshuffle in which Tsipras replaced dissident members of his ruling Syriza party following a revolt over the tough bailout terms.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-20 06:39:35</td><td><a href='http://www.cbc.ca/news/business/greece-crisis-banks-reopen-as-government-eyes-return-to-normalcy-1.3159623?cmp=rss'>site</a></td><td>But Tsipras is eyeing a fresh start and swift talks on the bailout that will keep Greece afloat.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/greek_banks.jpg?itok=aXsVgT42'></td><td>2015-07-20 08:00:05</td><td><a href='http://www.sbs.com.au/news/article/2015/07/20/greek-banks-reopen-tsipras-eyes-return-normal'>site</a></td><td>Tsipras is eyeing a fresh start and swift talks on the bailout aimed at keeping Greece afloat but he still faces hurdles with parts of the ruling Syriza party in revolt over the tough terms of the bailout agreement.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/8j0LGF_MU9Gfl6kPsdOuKg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-26T144422Z_1_LYNXNPEB6P07N_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-26 18:48:07</td><td><a href='http://finance.yahoo.com/news/greek-pm-tsipras-under-pressure-141355344.html'>site</a></td><td>The reports came at the end of a week of fevered speculation over what Syriza hardliners had in mind as an alternative to the tough bailout terms that Tsipras reluctantly accepted to keep Greece in the euro.</td></tr>
 </table></body></html>

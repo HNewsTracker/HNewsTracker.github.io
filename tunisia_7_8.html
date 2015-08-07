@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/d9bbf8f4857fbac591e1e29a49bb95ff189e511a/c=232-0-3864-2731&amp;r=x404&amp;c=534x401/local/-/media/2015/07/09/USATODAY/USATODAY/635720454830272745-EPA-TUNISIA-ATTACK-AFTERMATH.jpg'></td><td>2015-07-09 19:25:30</td><td><a href='http://www.usatoday.com/story/news/world/2015/07/09/united-kingdom-tunisia-tourists/29916997/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomworld-topstories'>site</a></td><td>"If you're in Tunisia and you don't have an essential need to remain you should leave by commercial means," the statement said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 08:18:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/10/tunisia-defends-efforts-to-protect-british-tourists'>site</a></td><td>Britain on Thursday told all U.K. tourists to leave Tunisia, saying the North African country hasn't done enough to enhance security.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 12:46:41</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/10/tunisia-defends-efforts-to-protect-british-tourists'>site</a></td><td>Ireland urged its citizens to leave if their presence in Tunisia was not essential.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 23:38:21</td><td><a href='http://www.ctvnews.ca/world/top-terrorists-killed-in-tunisia-minister-says-1.2466010'>site</a></td><td><table><tr><td>TUNIS, Tunisia -- Tunisia's interior minister said the government has killed an extremist leader and nearly wiped out his group, as European tourists continue to leave the country amid fears of new attacks.</td></tr><tr><td>Tunisia, the only country to succeed in building a democracy after Arab Spring uprisings, is trying to defuse criticism from Britain and others that it hasn't done enough to protect tourists.</td></tr><tr><td>The interior minister said the brigade was plotting attacks in Tunisia and sending Tunisians to fight jihad abroad.</td></tr></table></td></tr>
 </table></body></html>

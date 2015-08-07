@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31386331.ece/5c081/ALTERNATES/h342/PANews%20BT_P-7fc194eb-9143-462f-82a5-7f0edbeaf9cd_I1.jpg'></td><td>2015-07-18 11:17:28</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/islamic-state-marketplace-attack-in-iraq-kills-115-31386332.html'>site</a></td><td>Islamic State marketplace attack in Iraq kills 115</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 11:27:07</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/18/iraqi-speaker-says-attack-in-diyala-marketplace-sectarian'>site</a></td><td><table><tr><td>But anger is rife in the volatile province, where a number of towns were captured by the Islamic State group last year.</td></tr><tr><td>Diyala, which borders Iran, is the only province in Iraq where Iranian jets are known to have conducted airstrikes against the Islamic State group earlier this year.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.cbc.ca/1.3158689.1437213595!/cpImage/httpImage/image.jpg_gen/derivatives/original_300/mideast-iraq.jpg'></td><td>2015-07-18 11:28:53</td><td><a href='http://www.cbc.ca/news/world/anger-in-iraq-after-suicide-attack-on-marketplace-kills-115-1.3158703?cmp=rss'>site</a></td><td><table><tr><td>An attack by the Islamic State group on a crowded marketplace in Iraq's eastern Diyala province has killed 115 people, including women and children, in one of the deadliest single attacks in the country in the past decade.</td></tr><tr><td>In August last year, at least 64 people were killed in an attack on a Sunni mosque in Diyala in what locals believed was a retaliatory attack against Diyala tribes that refused to proclaim loyalty to the Islamic State group.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-19 12:29:58</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/19/iraq-restructures-diyala-police-after-islamic/'>site</a></td><td>Iraq restructures Diyala police after Islamic State bombing</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297724473166_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-14 23:13:56</td><td><a href='http://www.torontosun.com/2015/07/14/boston-police-captains-son-held-without-bail-in-islamic-state-inspired-bomb-plot'>site</a></td><td><table><tr><td>In the post-arrest video played in court on Tuesday, Ciccolo did not detail an attack plot but defended Islamic State's hostage executions and agreed with an FBI interviewer that all Americans should be considered "enemies".</td></tr><tr><td>His attorney, David Hoose, said Ciccolo had so far only been charged with gun violations and that his views on Islamic State should not be considered.</td></tr></table></td></tr>
 </table></body></html>

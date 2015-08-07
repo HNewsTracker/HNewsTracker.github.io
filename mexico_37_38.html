@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 20:54:05</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article28896580.html#storylink=rss'>site</a></td><td>The coach of Mexico's national soccer team is known for his histrionic displays of emotion during games.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 20:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11487981&ref=rss'>site</a></td><td>Mexico national team coach allegedly hits TV journalist</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-28 19:08:59</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article29120401.html#storylink=rss'>site</a></td><td>Mexico national soccer coach fired after journalist's claim</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-28 19:10:17</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11488489&ref=rss'>site</a></td><td>Embattled Mexico soccer coach 'El Piojo' Herrera fired after claim he punched journalist</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-28 19:15:25</td><td><a href='http://www.startribune.com/mexico-national-soccer-coach-fired-after-journalist-s-claim/318961961/'>site</a></td><td>MEXICO CITY - Embattled Mexican national soccer team coach Miguel Herrera has been fired following a TV reporter's claim that the coach known as "El Piojo" punched him.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-28 21:27:53</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/28/mexico-coach-herrera-fired-after-claim-he-punched-reporter'>site</a></td><td>De Maria did not announce a replacement for Herrera, who led Mexico to the round of 16 at last year's World Cup.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-29 01:05:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article29120401.html#storylink=rss'>site</a></td><td>Mexico has burned through 10 head coaches in the nine years since La Volpe departed after the 2006 World Cup in Germany.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-29 04:05:10</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/run-in-with-reporter-triggered-mexico-coach-herrer/nm8KP/'>site</a></td><td>"El Piojo" is the latest to depart from what has become a revolving-door job since Ricardo La Volpe of Argentina was the last to complete a four-year World Cup cycle as Mexico's head coach.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-29 04:05:10</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/29/run-in-with-reporter-triggered-mexico-coach-herreras-ouster'>site</a></td><td>MEXICO CITY (AP) - In the end it wasn't the middling on-field performance by Mexico's national soccer team that cost Miguel Herrera his job as head coach of "El Tri."</td></tr>
+</table></body></html>

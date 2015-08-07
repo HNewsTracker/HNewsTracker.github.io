@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 16:33:27</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/07/15/22507376.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>U.S. delivers Iraqi antiquities seized in raid on Islamic State</td></tr><tr><td>BAGHDAD - The United States handed back to Iraq on Wednesday antiquities it said it had seized in a raid on Islamic State fighters in Syria, saying the haul was proof the militants were funding their war by smuggling ancient treasures.</td></tr><tr><td>Islamic State, a hardline Sunni Islamist group, has ransacked some of the greatest archaeological sites in northern Iraq, posting video footage of fighters destroying pre-Islamic monuments they consider idolatrous.</td></tr><tr><td>Iraqi officials have been unable to verify the full extent of damage at the sites under Islamic State control, but they have said that footage of the destruction was published in part to distract attention from the fact Islamic State is smuggling antiquities to raise cash.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 16:28:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-19-ML--Islamic%20State/id-449167b2e0e74de79f07f3a57749f181'>site</a></td><td><table><tr><td>BEIRUT (AP) - A U.S.-led coalition dropped new leaflets over the de facto capital of the Islamic State group in Syria, promising those below that "freedom will come" to the region, activists said Sunday.</td></tr><tr><td>An anti-Islamic State group called Raqqa is Being Silently Slaughtered and the Britain-based Syrian Observatory for Human Rights said the leaflets had drawings showing dead extremists and their flag turned upside down.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 16:57:09</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/us-led-airdrops-shower-leaflets-over-islamic-state-territory'>site</a></td><td>US-led airdrops shower leaflets over Islamic State territory</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 20:32:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27815971.html#storylink=rss'>site</a></td><td>No one has claimed responsibility for the attacks, but the Islamic State militant group often is behind such attacks in and around the capital as it seeks to destabilize Iraq's Shiite-led government.</td></tr>
 </table></body></html>

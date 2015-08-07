@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/9/t/4/4/image.related.articleLeadwide.620x349.gi9co0.png/1436513280293.jpg'></td><td>2015-07-10 07:26:35</td><td><a href='http://www.brisbanetimes.com.au/world/greek-debt-crisis-france-to-the-rescue-as-athens-accepts-austerity-for-relief-20150710-gi9co0'>site</a></td><td>"We are confronted with crucial decisions," a government official quoted Mr Tsipras telling his party colleagues.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 06:39:00</td><td><a href='http://www.reuters.com/article/2015/07/22/us-eurozone-greece-idUSKCN0PV0G620150722?feedType=RSS&feedName=topNews'>site</a></td><td>The heads of the centrist To Potami party and the socialist Pasok party both said they would back the Tsipras government over the bailout accord but demanded a clear "road map" from the prime minister about what would happen after that.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48226911,width-300,resizemode-4/Blast.jpg'></td><td>2015-07-26 14:09:39</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/At-least-six-dead-in-bomb-blast-at-Mogadishu-hotel/articleshow/48226835.cms'>site</a></td><td>The center-right New Democracy party and the centrist To Potami and the Socialist Pasok parties, which all backed Tsipras in parliamentary votes on the bailout this month, demanded a response to the reports.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436995239589.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150715-gidayi'>site</a></td><td>Former finance minister Yanis Varoufakis, who was sacked by Tsipras last week, denounced the bailout as "a new Versailles Treaty" - the agreement that demanded unaffordable reparations from Germany after World War One.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/d5b/report-on-business/international-business/european-business/article25582700.ece/ALTERNATES/w220/CHM63_OUKBS_UK_EUROZONE_GREECE.JPG'></td><td>2015-07-18 13:23:29</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greek-banks-to-re-open-monday-as-tsipras-eyes-new-start/article25582701/?cmpid=rss1'>site</a></td><td>Tsipras now intends to seal the bailout accord with European partners over the next few weeks before likely new elections which Interior Minister Nikos Voutsis said this week could happen in September or October.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 18:00:35</td><td></td><td><a href='kenya_3_4.html'>WASHINGTON - President Barack Obama's trip to Kenya and Ethiopia is drawing fresh criticism that the two countries are heavy-handed on human rights and basic democratic freedoms. (10)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 18:22:15</td><td></td><td><a href='kenya_3_5.html'>President Barack Obama waves as he walks with Kenyan President Uhuru Kenyatta to sign a guest book after arriving at Kenyatta International Airport, on Friday, July 24, 2015, in Nairobi, Kenya. (9)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 20:00:23</td><td></td><td><a href='kenya_3_7.html'>NAIROBI, Kenya (AP) " Fulfilling the hopes of millions of Kenyans, Barack Obama returned to his father's homeland Friday for the first time as U.S. president, a long sought visit by a country that considers him a local son. (17)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-25 05:45:40</td><td></td><td><a href='kenya_3_8.html'>Despite the intense focus on the American leader's local roots, the White House has cast the trip as one focused on the relationship between the U.S. and Kenya, not the president and his family. (4)</a></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://img.huffingtonpost.com//asset/scalefit_630_noupscale/55b39f121400002f002e0bab.jpeg'></td><td>2015-07-25 14:52:49</td><td><a href='http://www.huffingtonpost.com/entry/kenya-gay-rights-obama_55b39dede4b0a13f9d18c0cd?ncid=txtlnkusaolp00000592'>site</a></td><td>Kenyatta says after Kenya deals with other, more pressing issues such as terrorism, it can begin to look at new issues.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-25 22:19:10</td><td></td><td><a href='kenya_3_6.html'>A number of Kenyan politicians and religious leaders had warned Obama that any overtures on gay rights would not be welcomed in Kenya, where gay sex is punishable by up to 14 years in prison. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 08:40:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481582&ref=rss'>site</a></td><td>NAIROBI, Kenya (AP) " Press freedom is deteriorating in Kenya as a result of government legislation, threats and attacks, a media rights group said Wednesday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 09:13:30</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/15/kenya-press-freedom-rapidly-deteriorating-rights-group-says'>site</a></td><td><table><tr><td>The deteriorating climate for the media comes at a time when press scrutiny and public discussion are essential for continued development of Kenya's democracy and economy, the report said.</td></tr><tr><td>Also needing press scrutiny, according to the report, is the situation for Kenya's deputy president who is under indictment from the International Criminal Court, although similar charges were dropped against the president.</td></tr></table></td></tr>
 </table></body></html>

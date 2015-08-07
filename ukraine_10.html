@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 06:57:34</td><td></td><td><a href='ukraine_10_11.html'>At the White House, President Barack Obama echoed the need for Ukraine to stick with austerity measures during a meeting Monday with Yatsenyuk and Vice President Joe Biden. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 06:57:34</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/14/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers'>site</a></td><td>Yatsenyuk's U.S. visit came amid growing global concerns over proposed legislation in Ukraine's parliament that would water down economic reforms demanded by the international community.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 16:30:17</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/14/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers'>site</a></td><td><table><tr><td>Ukraine PM says reforms continue despite 'lunatic' lawmakers</td></tr><tr><td>A day earlier, the International Monetary Fund insisted that Ukraine must "stay the course," suggesting that rolling back the changes could jeopardize the IMF's $40 billion support package for Ukraine.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 12:10:00</td><td></td><td><a href='ukraine_10_11.html'>An armistice signed in February by Ukraine, Russia and the Russia-backed rebels called for local elections in eastern rebel-held areas as one of the steps to toward a comprehensive cease-fire, which has not been reached yet. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/17/876/493/Ukraine-1.jpg?ve=1&tl=1'></td><td>2015-07-17 12:10:00</td><td><a href='http://www.foxnews.com/world/2015/07/17/ukraine-parliament-calls-local-elections-in-october-but-not-in-rebel-held-east/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The Kiev government has had no control over parts of eastern Ukraine since separatist rebels began fighting government forces there in April 2014, a conflict that has since claimed more than 6,400 lives.</td></tr>
 </table></body></html>

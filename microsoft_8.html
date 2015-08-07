@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-29 23:02:43</td><td></td><td><a href='microsoft_8_9.html'>Both companies characterized the deal as a win-win because Microsoft will gain more search advertising while AOL, which has been beefing up its display business, will now add Microsoft's websites to a host of other online properties where AOL can place messages for advertising clients. (5)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 23:02:43</td><td></td><td><a href='microsoft_8_10.html'>That means Microsoft will get a share of revenue from advertising that's tied directly to Internet searches performed on AOL. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-29 23:02:43</td><td><a href='http://www.usnews.com/news/technology/articles/2015/06/29/microsoft-sheds-some-of-its-ad-business-mapping-service'>site</a></td><td>AOL, meanwhile, is adopting Microsoft's Bing search engine, replacing Google as the default option for visitors who want to search the Internet on AOL websites.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 19:18:25</td><td></td><td><a href='microsoft_8_9.html'>Those with an Office 365 subscription can get the Mac Office starting Thursday at http://office.microsoft.com. (6)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-09 19:18:25</td><td><a href='http://www.foxbusiness.com/technology/2015/07/09/review-microsoft-navigates-shift-in-how-use-multiple-devices-with-new-office/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>If you keep files on Microsoft's OneDrive storage service, changes made by others will sync with your copy.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-20 17:28:38</td><td><a href='http://www.usnews.com/news/world/articles/2015/06/20/us-senator-mccain-slams-european-stance-on-ukraine'>site</a></td><td><table><tr><td>McCain has been a lively supporter of legislation passed in the U.S. Senate this week that includes provisions to supply Ukraine with hundreds of millions of dollars in defence military equipment.</td></tr><tr><td>The U.S. Senate this week approved a bill that includes provisions to supply Ukraine with $300 million worth of defensive military equipment.</td></tr><tr><td>Russia condemns U.S. military aid to Ukraine and says it will foment instability.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/13/49/12/ef704f5dc31844c18443ca86a5b736f1-7a53a8251aef45678c149682b9e6236b-0.jpg'></td><td>2015-07-13 23:48:17</td><td><a href='http://www.daytondailynews.com/ap/ap/political/ukraine-pm-says-reforms-continue-despite-lunatic-l/nmyJT/'>site</a></td><td><table><tr><td>Yatsenyuk's U.S. visit came amid growing global concerns over proposed legislation in Ukraine's parliament that would water down economic reforms demanded by the international community.</td></tr><tr><td>A day earlier, the International Monetary Fund insisted that Ukraine must "stay the course," suggesting that rolling back the reforms could jeopardize the IMF's $40 billion support package for Ukraine.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 06:57:34</td><td><a href='http://www.daytondailynews.com/ap/ap/political/ukraine-pm-says-reforms-continue-despite-lunatic-l/nmyQP/'>site</a></td><td>Ukraine PM says reforms continue despite 'lunatic' lawmakers</td></tr>
 </table></body></html>

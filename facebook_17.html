@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-11 19:19:22</td><td><a href='http://abcnews.go.com/Sports/wireStory/jets-bowles-urges-players-smart-social-media-31698853'>site</a></td><td>That's the message New York Jets coach Todd Bowles has given his players about using forums such as Twitter, Instagram and Facebook.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 19:40:12</td><td></td><td><a href='facebook_17_18.html'>Facebook wants to give users more control to weed through the clutter of boring, unwanted information, often from long-forgotten acquaintances, on their news feed _ and see more of what they want to see. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/46/04/8282405/5/square_gallery_thumb.jpg'></td><td>2015-07-09 19:40:12</td><td><a href='http://www.chron.com/business/technology/article/Facebook-makes-it-easier-to-tweak-what-you-see-in-6375589.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Facebook wants you to see more of what you want to see.</td></tr><tr><td>Facebook's computer software uses a wide range of information you provide to decide what to show.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/37/46/04/8282405/5/square_gallery_thumb.jpg'></td><td>2015-07-09 19:40:12</td><td><a href='http://www.sfgate.com/business/technology/article/Facebook-makes-it-easier-to-tweak-what-you-see-in-6375589.php'>site</a></td><td>For the rest, though, Facebook will continue to use its software to choose what to show you.</td></tr>
 </table></body></html>

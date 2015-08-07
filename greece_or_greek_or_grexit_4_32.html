@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/b34/report-on-business/international-business/european-business/article25334698.ece/ALTERNATES/w220/ATH105-Greece+Bailout.JPG'></td><td>2015-07-07 11:59:14</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-faces-last-chance-to-stay-in-euro-as-cash-runs-low/article25334699/?cmpid=rss1'>site</a></td><td>But Greek officials said the leftist premier's proposals would not go far beyond a plan he sent to the euro zone last week before Greek voters overwhelmingly rejected the austerity terms of a bailout in a referendum on Sunday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/a/3/c/0/image.related.articleLeadwide.620x349.gibi8r.png/1436825788178.jpg'></td><td>2015-07-13 22:16:33</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greece-debt-crisis-pm-alexis-tsipras-faces-syriza-mutiny-after-capitulating-to-demands-20150713-gibi8r'>site</a></td><td>The terms are significantly tougher than those Tsipras labeled "blackmail" when he persuaded Greek voters to reject them in a referendum a week ago.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 00:28:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-07-14-EU--Greece-Bailout/id-05aea02b5fe74baf96ec1a27531eb5d6'>site</a></td><td>Since his election in January, the youthful Tsipras has faced intense pressure to backpedal on many of his promises to Greece's exhausted electorate.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-26 18:48:07</td><td><a href='http://www.reuters.com/article/2015/07/26/us-eurozone-greece-idUSKCN0Q00JN20150726?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greek PM Tsipras under pressure over covert Syriza drachma plan reports</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/8j0LGF_MU9Gfl6kPsdOuKg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-26T144422Z_1_LYNXNPEB6P07N_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-26 18:48:07</td><td><a href='http://finance.yahoo.com/news/greek-pm-tsipras-under-pressure-141355344.html'>site</a></td><td>The reports came at the end of a week of fevered speculation over what Syriza hardliners had in mind as an alternative to the tough bailout terms that Tsipras reluctantly accepted to keep Greece in the euro.</td></tr>
+</table></body></html>

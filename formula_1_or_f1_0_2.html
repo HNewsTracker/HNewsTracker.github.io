@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>formula 1 or f1</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 02:20:00</td><td><a href='http://www.latimes.com/sports/more/la-sp-jules-bianchi-dead-20150717-story.html'>site</a></td><td>The news was posted on Bianchi's official Twitter feed early Saturday morning French time and later confirmed by the Manor F1 team.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 02:41:40</td><td><a href='http://www.reuters.com/article/2015/07/18/us-motor-racing-bianchi-idUSKCN0PS02A20150718?feedType=RSS&feedName=sportsNews'>site</a></td><td>"We are devastated to lose Jules after such a hard-fought battle," his Manor F1 team Tweeted.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-18 10:57:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27567748.html#storylink=rss'>site</a></td><td>It was on Monaco's tight and sinewy circuit last year that Bianchi, driving for Marussia - now known as Manor Marussia - finished in ninth place and gave the unheralded team its best finish and first points in F1.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297727198509_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-20 15:28:58</td><td><a href='http://www.torontosun.com/2015/07/20/no-17-retired-from-formula-one-in-honour-of-bianchi-funeral-takes-place-tuesday'>site</a></td><td>Executives from the Manor-Marussia F1 team are expected to attend, as well as Todt and his son Nicolas, Bianchi's manager in F1.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 02:32:02</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-sport/f1-driver-bianchi-dies-after-2014-crash-20150718-3zi7l.html'>site</a></td><td>Bianchi's accident prompted F1 to alter its safety regulations and more quickly stop racing under caution-flag conditions.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/1r5RS7eN4myp9nscjb8HRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3MDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201507172046747960917'></td><td>2015-07-18 02:38:55</td><td><a href='http://sports.yahoo.com/news/jules-bianchi-dies-injuries-sustained-2014-crash-020208558--f1.html'>site</a></td><td>The findings of the working group prompted F1 to alter its rules, allowing a 'virtual safety car' in which race stewards can neutralize a race, forcing all cars to proceed slowly into the pit lane.</td></tr>
 </table></body></html>

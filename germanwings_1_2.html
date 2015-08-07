@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000a5ab1-642.jpg'></td><td>2015-07-17 12:09:44</td><td><a href='http://www.rte.ie/news/2015/0717/715434-european-airlines/'>site</a></td><td>All airline pilots should undergo psychological screening and allow details of medical visits to be shared in a proposed European database, according to recommendations delivered to the European Commission in the wake of the Germanwings disaster.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6355202-3x2-340x227.jpg'></td><td>2015-07-17 14:36:30</td><td><a href='http://www.abc.net.au/news/2015-07-18/eu-panel-urges-pilot-screening-after-germanwings-crash/6629876'>site</a></td><td>EU panel urges pilot screening after Germanwings crash</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:20:01</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/families-of-germanwings-victims-honor-unidentified-remains'>site</a></td><td>Families of those killed in the Germanwings crash are in the Alpine village where the plane went down to commemorate the dead and bury unidentified remains.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/5f/77/59496a56ce76411fb244d63dfdbd6cf0-4ecd12d4c36848e78bf091f72b545501-0_2.jpg'></td><td>2015-07-24 18:20:01</td><td><a href='http://www.daytondailynews.com/ap/ap/business/families-of-germanwings-victims-honor-unidentified/nm6Dt/'>site</a></td><td>Families of Germanwings victims honor unidentified remains</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/00/a9/59496a56ce76411fb244d63dfdbd6cf0-4ecd12d4c36848e78bf091f72b545501-1.jpg'></td><td>2015-07-24 19:15:21</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/families-of-germanwings-victims-honor-unidentified/nm6Dt/'>site</a></td><td>"It's a very difficult situation for the families to realize that all the remains could not be handed over but just some parts, that there is a grave here as well," said Christof Wellens, a lawyer for families of 34 Germanwings' victims.</td></tr>
 </table></body></html>

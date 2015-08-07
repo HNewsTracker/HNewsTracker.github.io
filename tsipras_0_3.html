@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-06 17:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/06/greece-still-cash-starved-after-decisive-no-bailout-vote'>site</a></td><td>Ahead of the summit, Tsipras spoke by phone with German Chancellor Angela Merkel.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 06:53:36</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/the-latest-german-official-says-tsipras-criticism-unhelpful'>site</a></td><td>The Latest: German official says Tsipras criticism unhelpful</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 18:15:42</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/16/on-the-brink-eu-leaders-clinched-bailout-deal-_/'>site</a></td><td>For three hours, Merkel, Tsipras, Tusk and French President Francois Hollande had been stuck in dead-end closed-door talks, and the message suddenly made something click.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 14:44:22</td><td><a href='http://www.reuters.com/article/2015/07/26/us-eurozone-greece-idUSKCN0Q00JN20150726?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Under the plan, which the report said went back to before Tsipras was elected in January, transactions through the parallel system would have been nominated in euros but could easily change into drachmas overnight, he was quoted as saying.</td></tr><tr><td>However, according to the report, he said the plan had never been approved by Tsipras.</td></tr></table></td></tr>
 </table></body></html>

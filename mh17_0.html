@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 15:46:51</td><td></td><td><a href='mh17_0_1.html'>Jerzy Dyczynski, left, and Angela Dyczynski, right, with Maria Condipodero and Sarina Giglia, open the packet of sunflower seeds harvested from the MH17 cockpit crash site on the outskirts of Rassypnoe in East Ukraine. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 15:46:51</td><td></td><td><a href='mh17_0_2.html'>Aerospace engineer Fatima Dyczynski was heading to Perth and died aboard Malaysia Airlines flight MH17. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 13:01:53</td><td></td><td><a href='mh17_0_1.html'>But MH17 crash theories are also propelled by humanity's unfortunate addiction to conspiracy theories. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/8/1/w/u/image.related.articleLeadwide.620x349.gicj7o.png/1436756201289.jpg'></td><td>2015-07-15 13:01:53</td><td><a href='http://www.brisbanetimes.com.au/world/mh17-anniversary-in-russia-conspiracy-theories-on-downed-plane-still-find-believers-20150715-gicj7o.html'>site</a></td><td>17th of July is the anniversary of the downing of flight MH17.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/8/1/w/u/image.related.articleLeadwide.620x349.gicj7o.png/1436972150449.jpg'></td><td>2015-07-15 14:43:07</td><td><a href='http://www.brisbanetimes.com.au/world/mh17-anniversary-in-russia-conspiracy-theories-on-downed-plane-still-find-believers-20150715-gicj7o.html'>site</a></td><td>The theory that a Ukrainian SU-25 shot MH17 out of the sky has been debunked time and again on technical, physical and logical grounds.</td></tr>
 </table></body></html>

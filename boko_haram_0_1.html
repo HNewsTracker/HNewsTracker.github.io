@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 18:37:29</td><td><a href='http://www.cbsnews.com/news/nigeria-isis-affiliated-islamic-extremists-boko-haram-chibok-girls-prisoners/'>site</a></td><td><table><tr><td>In May, about 300 women, girls and children being held captive by Boko Haram were rescued by Nigeria's military, but none were from Chibok.</td></tr><tr><td>Shekau had threatened in 2013 to kidnap women and girls if Nigeria's military did not release detained Boko Haram wives and children.</td></tr><tr><td>Boko Haram has kidnapped hundreds more - girls, boys, women and young men.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/44/55/8276825/3/square_gallery_thumb.jpg'></td><td>2015-07-08 21:57:27</td><td><a href='http://www.sfgate.com/world/article/Boko-Haram-offers-to-swap-kidnapped-girls-for-6373625.php'>site</a></td><td>Boko Haram offers to swap kidnapped girls for detainees</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 22:23:11</td><td><a href='http://www.startribune.com/boko-haram-offers-to-swap-detainees-for-kidnapped-girls/312497711/'>site</a></td><td>Presidential adviser Femi Adesina said on Saturday that Nigeria's government "will not be averse" to talks with Boko Haram.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-08 18:37:29</td><td><a href='http://www.cbsnews.com/news/nigeria-isis-affiliated-islamic-extremists-boko-haram-chibok-girls-prisoners/'>site</a></td><td>He said the recent slew of Boko Haram bloodletting - some 350 people killed in the past nine days - is consistent with past ratcheting up of violence as the militants seek a stronger negotiating position.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-08 19:08:54</td><td><a href='http://nypost.com/2015/07/08/boko-haram-offers-to-trade-kidnapped-chibok-girls-for-militants/'>site</a></td><td>At the last minute, the agency said it was holding only four of the militants sought by Boko Haram, the activist said.</td></tr>
 </table></body></html>
