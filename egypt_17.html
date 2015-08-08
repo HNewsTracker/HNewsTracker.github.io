@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 22:34:03</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/22/15-drowned-when-boats-collided-on-the-nile-in/'>site</a></td><td>15 drowned when boats collided on the Nile in Egypt</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 22:40:23</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485610&ref=rss'>site</a></td><td>CAIRO (AP) " Egypt's Interior ministry says at least 15 civilians have drowned when a passenger boat traveling down the Nile near Cairo collided with a scow, causing the boat to capsize.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 12:40:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-11-ML--Egypt/id-50fdd7fe85564ac5bfe9350bf9c4d82c'>site</a></td><td>People stand outside the Italian consulate following a blast in Cairo, Egypt, Saturday, July 11, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 12:50:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27031450.html#storylink=rss'>site</a></td><td><table><tr><td>Egyptian policemen stand at the base of the crumbled facade of the Italian consulate following a blast that killed at least one person in Cairo, Egypt, Saturday, July 11, 2015.</td></tr><tr><td>Italian Premier Matteo Renzi spoke with Egyptian President Abdel Fattah el-Sissi after the attack, saying in a statement: "We will not leave Egypt alone: Italy and Egypt are and will always be together in the fight against terrorism."</td></tr><tr><td>Italian Foreign Minister Paolo Gentiloni said that Italy would increase security at Italian sites in Cairo and greater Egypt.</td></tr><tr><td>A large explosion struck outside the Italian Consulate in Egypt's capital Cairo early Saturday, severely damaging the building and killing one civilian, and injuring four others, officials said.</td></tr><tr><td>Egyptian police officers stand on the 6th October bridge opposite the Italian consulate following a blast in Cairo, Egypt, Saturday, July 11, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-11 13:42:59</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/11/egypt-official-explosion-outside-italian-consulate-in-cairo'>site</a></td><td><table><tr><td>Car bombing at Italian Consulate in Egypt's capital kills 1</td></tr><tr><td>Workers clear rubble at the site of an explosion near the Italian Consulate in downtown, Cairo, Egypt, Saturday, July 11, 2015.</td></tr></table></td></tr>
 </table></body></html>
