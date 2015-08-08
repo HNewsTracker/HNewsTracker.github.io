@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 23:24:03</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-city-sets-rules-allowing-uber-ride-share-32479974'>site</a></td><td>Mexico City Sets Rules Allowing Uber, Other Ride-Share Apps</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 23:25:19</td><td><a href='http://www.startribune.com/mexico-city-sets-rules-allowing-uber-other-ride-share-apps/315576771/'>site</a></td><td>Mexico City publishes regulations allowing Uber and other smartphone-based ride-sharing apps</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 23:30:26</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11481992&ref=rss'>site</a></td><td>In a statement, Uber commended the regulations issued Wednesday and said Mexico City was the largest in the world to take such a step.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-16 20:20:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11482497&ref=rss'>site</a></td><td><table><tr><td>Uber praises new Mexico City regulations; cabbies grouse</td></tr><tr><td>Uber's spokesman for Mexico and Central America says the company doesn't mind paying 1.5 percent of the proceeds from each ride into a transport-improvement fund.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-16 22:00:44</td><td><a href='http://www.startribune.com/uber-praises-new-mexico-city-regulations-cabbies-grouse/315981921/'>site</a></td><td>MEXICO CITY - The Uber ride-sharing app praised Mexico City's decision to become the first city in Latin America - and the largest in the world - to issue official regulations for such smartphone-based services.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-17 19:00:26</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483062&ref=rss'>site</a></td><td>MEXICO CITY (AP) " Representatives of Mexico City's regular cab drivers are criticizing new regulations published this week on ride-sharing apps such as Uber.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/c6/f9/68f95b590da448099dbcc3352635df19-30ca8f6624b34aceb759e5bc43ec5f36-0.jpg'></td><td>2015-07-20 18:17:33</td><td><a href='http://www.daytondailynews.com/ap/ap/entertainment/ap-exclusive-breaking-bad-actor-runs-for-albuquerq/nm3fK/'>site</a></td><td>Citing sprawl development and a need for more Mexican-American elected officials, "Breaking Bad" actor Steven Michael Quezada said he is jumping in a heated race for county commissioner in Albuquerque, New Mexico.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 18:22:06</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article27909802.html#storylink=rss'>site</a></td><td>But Quezada said the state party needed to go more to reach out to Latino voters, especially since New Mexico has the highest percentage of Hispanic residents in the county.</td></tr>
 </table></body></html>

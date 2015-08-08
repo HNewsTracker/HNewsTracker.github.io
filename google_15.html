@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Did you know that Google has been known to rent goats to "mow" its grass at the Googleplex complex in Mountain View, Calif.?</td></tr><tr><td>Of course, Google isn't just all about streaming and websites.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/Features/2015/06/26/1297566239866.jpg&size=104x59&quality=85'></td><td>2015-06-27 10:00:00</td><td><a href='http://technology.canoe.com/News/Features/2015/06/26/22475396.html?cid=rsstechnology'>site</a></td><td>What does Google have in store for the future?</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-06-27 10:00:00</td><td></td><td><a href='google_15_16.html'>Rather than just cry about what went wrong and how they lost out on the deal, Google has been hard at work creating its own "Twitch killer." (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 20:39:44</td><td><a href='http://www.foxbusiness.com/technology/2015/07/16/google-2nd-quarter-results-indicate-new-cfo-may-clamp-down-on-spending-to-boost/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Excluding stock compensation expense and several other items, Google earned $6.99 per share - topping the average estimate of $6.70 per share among analysts surveyed by FactSet.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 20:40:16</td><td></td><td><a href='google_15_16.html'>Expenses now seem more likely to rise at or below the pace of Google's revenue increases, based on Porat's remarks to analysts Thursday. (5)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-16 20:40:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11482516&ref=rss'>site</a></td><td>Google's 2Q signals new era of austerity with new CFO</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 21:01:15</td><td></td><td><a href='google_15_17.html'>Google's operating expenses climbed 13 per cent from last year in the second quarter, slightly eclipsing an 11 per cent increase in the company's revenue to $17.7 billion US. (3)</a></td></tr>
 </table></body></html>

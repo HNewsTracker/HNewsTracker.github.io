@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 12:58:26</td><td><a href='http://finance.yahoo.com/news/futures-little-changed-ahead-apple-113205365.html'>site</a></td><td><table><tr><td>Stock futures little changed ahead of Apple earnings</td></tr><tr><td>Tech giants such as Yahoo, Microsoft and Apple are scheduled to report results after the closing.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 08:41:58</td><td><a href='http://finance.yahoo.com/news/asian-shares-dragged-down-wall-003647188.html'>site</a></td><td>LONDON (Reuters) - Disappointment over U.S. corporate earnings, most notably at Apple Inc (AAPL.O), the world's largest company, pushed stocks lower on Wednesday and investors towards the shelter of bonds.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 09:36:03</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-global-stocks-sour-as-apple-results-leave-bitter-aftertaste/article25624358/?cmpid=rss1'>site</a></td><td>Premarket: Global stocks sour as Apple results leave bitter aftertaste</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 11:47:06</td><td><a href='http://www.miamiherald.com/news/business/article28080421.html#storylink=rss'>site</a></td><td><table><tr><td>Apple outlook weighs on global markets</td></tr><tr><td>A cautious outlook from Apple coupled with indifferent earnings from U.S. technology firms weighed on global stock markets Wednesday ahead of another key vote in the Greek Parliament.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 17:01:23</td><td><a href='http://finance.yahoo.com/news/u-stock-futures-fall-apple-112526132.html'>site</a></td><td>Apple, other tech stocks weigh on Wall St.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww2.hdnux.com/photos/37/65/21/8344701/13/628x471.jpg'></td><td>2015-07-22 18:15:57</td><td><a href='http://www.seattlepi.com/business/energy/article/Tech-shares-lead-an-early-slump-for-US-stocks-6399228.php'>site</a></td><td><table><tr><td>Technology shares lead a slump in US stocks; Apple sinks</td></tr><tr><td>Weak showings from Apple, Microsoft and other companies pulled stocks lower in afternoon trading Wednesday, pointing the market toward its second decline in as many days.</td></tr></table></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-22 20:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/22/tech-shares-lead-an-early-slump-for-us-stocks'>site</a></td><td>The major stock indexes declined from the get-go as traders reacted to weaker showings late Tuesday from Microsoft, Yahoo and Apple.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/mpOAYtDZxKU8kA0BOFEc2g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-06-11T155845Z_1_LYNXMPEB5A0ZI_RTROPTP_3_USA-APPLE_original.jpg'></td><td>2015-07-21 20:47:41</td><td><a href='http://finance.yahoo.com/news/apple-logs-q3-beat--but-q4-sales-outlook-disappoints--204759056.html'>site</a></td><td>Apple's sales in China more than doubled from a year earlier to $13.2 billion.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 20:51:00</td><td><a href='http://www.latimes.com/business/technology/la-fi-tn-apple-earnings-20150721-story.html'>site</a></td><td>Apple said its "other products" category pulled in $2.64 billion in revenue.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 20:53:00</td><td><a href='http://www.ctvnews.ca/business/apple-earnings-rise-on-strong-iphone-sales-but-impact-of-watch-remains-unclear-1.2480438'>site</a></td><td><table><tr><td>In one tantalizing clue, Apple reported $2.6 billion in revenue from the segment that includes the watch and several other products, or about $952 million more than the previous quarter, when the watch had not yet gone on sale.</td></tr><tr><td>Apple got a big boost from new markets like China, which contributed more than a quarter of the company's revenue, or $13.2 billion.</td></tr></table></td></tr>
 </table></body></html>

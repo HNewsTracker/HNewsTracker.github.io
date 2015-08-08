@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 15:08:26</td><td><a href='http://www.miamiherald.com/news/local/crime/article28697008.html#storylink=rss'>site</a></td><td>While staying silent on any ambitions to succeed Sepp Blatter as FIFA president, former French star Michael Platini is happy to discuss his work as UEFA president.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 18:15:42</td><td></td><td><a href='fifa_or_blatter_42_43.html'>Blatter said at the meeting before the preliminary draw for the 2018 World Cup that the new resolution "assures the Russian Federation of [FIFA's] full support in carrying out the World Cup in Russia in 2018." (7)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 18:50:05</td><td></td><td><a href='fifa_or_blatter_42_44.html'>"I don't know what sort of system FIFA use anymore, and I'm not even sure FIFA know what sort of system they use," said O'Neill, who captained Northern Ireland at the 1982 World Cup, long before FIFA created its rankings. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 13:48:07</td><td><a href='http://www.miamiherald.com/sports/article30386277.html#storylink=rss'>site</a></td><td><table><tr><td>The task force has no leader weeks before a FIFA-set deadline of Sept.</td></tr><tr><td>UEFA has already sent FIFA its two nominations to join the task force, said Infantino, who declined to identify the officials.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 13:48:07</td><td><a href='http://www.charlotteobserver.com/sports/article30386277.html#storylink=rss'>site</a></td><td><table><tr><td>UEFA: Former IOC official candidate to lead FIFA task force</td></tr><tr><td>Former Olympic official Francois Carrard is the only current candidate to chair FIFA's reform task force, according to UEFA secretary general Gianni Infantino.</td></tr></table></td></tr>
 </table></body></html>

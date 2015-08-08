@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 17:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486017&ref=rss'>site</a></td><td>CULIACAN, Mexico (AP) " Palatial tombs mark the final resting spots of top narcotics traffickers in the Jardines de Humaya cemetery in the Sinaloa state capital of Culiacan.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 18:25:39</td><td><a href='http://www.startribune.com/at-mexico-s-narco-cemetery-graves-await-the-inevitable/318313531/'>site</a></td><td>At Mexico's narco cemetery, palatial tombs await the inevitable end for gang members</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 07:45:24</td><td><a href='http://www.startribune.com/sludge-from-colorado-mine-spill-heads-down-river-to-nm/321008761/'>site</a></td><td>Gov. Susana Martinez is disturbed by the lack of information provided by the agency to New Mexico's environmental agencies, said Chris Sanchez, a spokesman for the governor.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 17:58:06</td><td><a href='http://www.miamiherald.com/news/business/article30381405.html#storylink=rss'>site</a></td><td>Officials in New Mexico are blasting the U.S. Environmental Protection Agency for not informing them soon enough about a plume of mustard-colored muck floating downstream from a Colorado mine.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 17:58:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article30381405.html#storylink=rss'>site</a></td><td>New Mexico blasts EPA for late notice on Colorado mine spill</td></tr>
 </table></body></html>

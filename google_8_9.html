@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 16:03:26</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26650732.html#storylink=rss'>site</a></td><td><table><tr><td>Google tests driverless cars in Austin _ with safety drivers</td></tr><tr><td>The driverless car will operate a few square miles north and northeast of downtown Austin, Google said in a statement.</td></tr><tr><td>Google did not say exactly where the driverless cars would be tested.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 14:49:36</td><td><a href='http://www.reuters.com/article/2015/07/16/google-privacy-lawsuit-idUSL2N0ZW0UB20150716?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>The case is In re: Google Inc Privacy Policy Litigation, U.S. District Court, Northern District of California, No.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 14:51:20</td><td><a href='http://www.reuters.com/article/2015/07/16/us-google-privacy-lawsuit-idUSKCN0PQ1QK20150716?feedType=RSS&feedName=technologyNews'>site</a></td><td>Google wins dismissal of Android privacy lawsuit</td></tr>
 </table></body></html>

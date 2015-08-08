@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/os/en_us/News/Reuters/2015-08-06T122327Z_1_LYNXNPEB750P4_RTROPTP_2_APPLE-DISRUPTION.JPG'></td><td>2015-08-06 13:11:21</td><td><a href='https://www.yahoo.com/tech/s/apple-music-attracts-more-11-million-trial-members-122327572--finance.html?src=rss'>site</a></td><td>Apple set a high water mark for App Store customers in China in July.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000ab338-642.jpg'></td><td>2015-08-06 13:15:59</td><td><a href='http://www.rte.ie/news/business/2015/0806/719580-apple-music-attracted-11m-trial-subscribers/'>site</a></td><td>Meanwhile Apple said its App Store saw the largest-ever number of customers in July, yielding $1.7 billion in transactions.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/10/102577038-181690623.530x298.jpg?v=1428683315'></td><td>2015-07-22 14:13:00</td><td><a href='http://www.cnbc.com/2015/07/22/apples-62b-hit-is-badbut-its-not-the-worst.html'>site</a></td><td><table><tr><td>Despite beating earnings estimates on Tuesday evening, Apple's stock has sunk in after-hours trading and is on course to write a new page in the history books.</td></tr><tr><td>In January 2013, Apple lost a remarkable $59 billion in market cap, meaning Tuesday's after-hours fall set an unwarranted milestone.</td></tr></table></td></tr>
 </table></body></html>

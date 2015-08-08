@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,10 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 15:20:04</td><td></td><td><a href='ferguson_4.html'>Anderson previously was police commander in the Phoenix suburb of Glendale, Arizona - the same city from which Ferguson recently hired its interim city manager, Ed Beasley. (11)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 16:25:15</td><td></td><td><a href='ferguson_0.html'>Ferguson presses several-hour, unity-minded cleanup effort ahead of Brown anniversary (4)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 01:33:21</td><td></td><td><a href='ferguson_6.html'>FILE - In this Aug. 9, 2014, file photo, a police tactical team moves in to disperse a group of protesters following the shooting of a young black man by a white policeman in Ferguson, Mo. (11)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 04:30:13</td><td></td><td><a href='ferguson_1.html'>ST. LOUIS (AP) - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson. (10)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 14:55:46</td><td></td><td><a href='ferguson_11.html'>Glendale is the same city where Ferguson leaders chose its interim city manager, Ed Beasley. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 15:20:04</td><td></td><td><a href='ferguson_0.html'>Following the report, Ferguson's municipal judge, city manager and Police Chief Tom Jackson resigned. (15)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 16:25:15</td><td></td><td><a href='ferguson_3.html'>Ferguson presses several-hour, unity-minded cleanup effort ahead of Brown anniversary (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 01:33:21</td><td></td><td><a href='ferguson_7.html'>FILE - In this Aug. 9, 2014, file photo, a police tactical team moves in to disperse a group of protesters following the shooting of a young black man by a white policeman in Ferguson, Mo. (11)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 04:30:13</td><td></td><td><a href='ferguson_4.html'>ST. LOUIS (AP) - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson. (10)</a></td></tr>
   <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/d47/news/world/article25857894.ece/ALTERNATES/w220/web-wo-us-ferguson06nw1'></td><td>2015-08-06 13:49:27</td><td><a href='http://www.theglobeandmail.com/news/world/ferguson-one-year-later-whats-happening-this-weekend/article25857899/?cmpid=rss1'>site</a></td><td>The Ferguson police force of 50 will be fully staffed this weekend and will have the help of the much larger St. Louis County police force, he said.</td></tr>
 </table></body></html>
