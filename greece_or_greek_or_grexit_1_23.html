@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-09 12:14:57</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article26850001.html#storylink=rss'>site</a></td><td><table><tr><td>Easier terms for Greece could open a can of worms in Europe</td></tr><tr><td>Eurozone governments taking a tough line on Greece's demand for debt relief and easier bailout terms fear opening a can of worms.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 08:20:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-17-EU--Greece-Bailout/id-326ea64e2d0e449886d34214a50fd39f'>site</a></td><td>Specific terms of the three-year bailout will now be thrashed out between Greece and its partners in the 19-nation eurozone.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>GREEK SAGA: Greece and its European creditors appeared to be narrowing their differences after Athens offered a raft of proposals to reduce the cost of pensions, hike taxes and cut state spending.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 14:15:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479201&ref=rss'>site</a></td><td>Greece and its creditors appeared to be narrowing their differences after Athens offered reform proposals in order to secure a third bailout of around 53 billion euros ($59.5 billion).</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 15:45:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26934703.html#storylink=rss'>site</a></td><td>Greece has sent creditors a list of reform proposals in order to get 53.5 billion euros ($59.5 billion) of financing for three years and is hopeful of getting some sort of debt relief in return.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-12 10:00:39</td><td><a href='http://www.startribune.com/the-latest-greece-bailout-talks-hinge-on-trust-issues/314127791/'>site</a></td><td>Greece has asked Europe's bailout fund for a 53.5 billion-euro ($59.5 billion) 3-year financial package but many EU officials believe that won't be enough.</td></tr>
 </table></body></html>

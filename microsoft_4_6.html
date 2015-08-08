@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/3f6/report-on-business/article25349385.ece/ALTERNATES/w220/-OUKBS-UK-MICROSOFT-REDUNDA.JPG'></td><td>2015-07-08 07:11:49</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/microsoft-plans-major-job-cuts-report/article25349386/?cmpid=rss1'>site</a></td><td><table><tr><td>Microsoft plans major job cuts: report</td></tr><tr><td>Microsoft Corp, the world's largest software company, plans to announce a new round of layoffs as early as Wednesday as it tries to cut costs further, the New York Times reported.</td></tr><tr><td>The latest job cuts are in addition to the 18,000 jobs Microsoft said it planned to cut a year ago, the newspaper said, citing sources familiar with the matter.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/tC8RpZfLnzyw.6U0zAce.Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/64c8a4912ce9191a8be5246c0868a759'></td><td>2015-07-08 13:17:31</td><td><a href='http://finance.yahoo.com/news/microsoft-cut-7-800-jobs-131731526.html'>site</a></td><td><table><tr><td>Microsoft to cut up to 7,800 jobs</td></tr><tr><td>Microsoft announced plans Wednesday to restructure the company's phone hardware business and to cut up to 7,800 positions.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-08 20:30:00</td><td><a href='http://www.npr.org/2015/07/08/421225027/microsoft-cuts-7-800-jobs-in-its-ailing-smartphone-business?utm_medium=RSS&utm_campaign=technology'>site</a></td><td>SHAHANI: Microsoft expects to complete most of the layoffs by the end of this year.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/44/40/8276022/9/square_gallery_thumb.jpg'></td><td>2015-07-08 23:00:18</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-cuts-7-800-jobs-as-phone-sales-flag-6372554.php'>site</a></td><td><table><tr><td>Microsoft cuts 7,800 jobs as phone sales flag</td></tr><tr><td>Microsoft announced, Wednesday, July 8, 2015, it will cut 7,800 jobs and take a $7.6 billion impairment charge as it attempts to revive its flagging phone hardware business.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 20:43:03</td><td><a href='http://www.reuters.com/article/2015/07/21/us-microsoft-results-idUSKCN0PV28Z20150721?feedType=RSS&feedName=technologyNews'>site</a></td><td>Microsoft's shares fell 3 percent to $45.80 in extended trading on Tuesday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0721/20150721__0722microsoft~1_300.JPG'></td><td>2015-07-21 21:58:42</td><td><a href='http://www.mercurynews.com/business/ci_28517511/microsoft-posts-largest-ever-net-loss-after-nokia?source=rss'>site</a></td><td>The net loss in the fourth quarter, which ended June 30, amounted to $3.2 billion, and sales fell 5.1 percent to $22.2 billion, Microsoft said Tuesday in a statement.</td></tr>
 </table></body></html>

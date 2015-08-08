@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 18:37:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/11/the-latest-finance-ministers-arrive-for-crunch-greek-talks'>site</a></td><td>According to the report, the German finance ministry also proposed that the Greek government sells off some 50 billion euros ($56 billion) in unspecified property assets to pay off debts.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>The Greek government is denying a report that the German finance ministry has proposed a temporary, five-year euro exit for Greece.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/49/square_gallery_thumb.jpg'></td><td>2015-07-11 12:39:35</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>Arriving for a meeting in Brussels, Wiebes said he, and others, are "very worried" about the Greek government's commitment to reform.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 18:37:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/11/the-latest-finance-ministers-arrive-for-crunch-greek-talks'>site</a></td><td>Greece is struggling to overcome a trust deficit at the eurogroup meeting in Brussels, which has been called to assess the government's proposals.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/37/50/44/8292644/95/square_gallery_thumb.jpg'></td><td>2015-07-11 18:37:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Finance-ministers-arrive-for-crunch-6379020.php'>site</a></td><td>The official, who spoke on condition of anonymity because he's not authorized to talk publicly, says there's a general feeling in the room that the Greek proposals are "too little, too late" and as such, more proof of the government's commitment to follow through is required.</td></tr>
 </table></body></html>

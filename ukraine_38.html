@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150714143229-trump-clinton-composite-2-large-169.jpg'></td><td>2015-07-26 14:29:42</td><td><a href='http://edition.cnn.com/2015/07/26/politics/trump-hillary-clinton-emails-cnn-poll/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_allpolitics+%28RSS%3A+CNN+-+Politics%29'>site</a></td><td>MOSCOW (AP) - Ukraine's border guards service says it has detained a Russian officer who was driving a truck packed with weapons including rocket-propelled grenades.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-26 14:50:13</td><td><a href='http://www.startribune.com/ukraine-claims-russian-officer-detained/318565071/'>site</a></td><td>Ukraine says Russian officer detained when truckload of weapons intercepted</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 15:30:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483353&ref=rss'>site</a></td><td>Ukraine rebels: Ready to pull back tanks, smaller weapons</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 15:30:21</td><td><a href='http://www.startribune.com/ukraine-rebels-ready-to-pull-back-tanks-smaller-weapons/316829211/'>site</a></td><td>MOSCOW - Ukraine's Russia-backed separatist rebels say they are ready to pull back smaller-caliber weapons from much of the front line in eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 12:51:13</td><td><a href='http://www.foxnews.com/world/2015/07/19/ukrainian-rebels-claim-to-be-pulling-back-smaller-weapons-from-front-line-in/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>MOSCOW - Ukraine's separatist rebels say they have begun pulling back military vehicles with small-caliber weapons from most of the front line in their war with Ukrainian forces.</td></tr><tr><td>The rebels said tanks and armored vehicles with weapons under 100mm would be pulled back three kilometers (two miles) from most of front line in eastern Ukraine.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-19 12:55:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483661&ref=rss'>site</a></td><td>Ukraine rebels say their small weapons pullback is beginning</td></tr>
 </table></body></html>

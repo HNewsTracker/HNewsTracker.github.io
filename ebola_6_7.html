@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/7/d/i/t/image.related.articleLeadwide.620x349.gi7dam.png/1436318739568.jpg'></td><td>2015-07-08 01:27:47</td><td><a href='http://www.smh.com.au/world/world-health-organisation-slammed-on-ebola-response-20150708-gi7dam.html'>site</a></td><td><table><tr><td>Liberia, one of the countries hardest hit by the Ebola epidemic, reports its first new case since being declared free of the lethal virus seven weeks ago.</td></tr><tr><td>The house where the 17-year-old lived before he died of Ebola.</td></tr><tr><td>Ebola health workers spray disinfectant on an ambulance that was used to transport two people suspected of having the Ebola virus on the outskirts of Monrovia earlier this month.</td></tr><tr><td>Health workers take a blood specimen from a child to test for the Ebola virus in the district where the 17-year-old had lived.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 12:05:04</td><td><a href='http://www.chron.com/news/medical/article/Liberia-confirms-2nd-Ebola-death-in-resurgent-6385682.php'>site</a></td><td>Liberia confirms 2nd Ebola death in resurgent outbreak</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 12:05:04</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/15/liberia-confirms-2nd-ebola-death-in-resurgent-outbreak'>site</a></td><td>Liberia lost more than 4,800 lives to Ebola before it contained transmission in May. These are the first known cases since then.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 17:02:00</td><td><a href='http://www.ctvnews.ca/health/liberia-says-4-remaining-ebola-patients-have-recovered-1.2474199'>site</a></td><td><table><tr><td>MONROVIA, Liberia -- The four remaining patients infected during Liberia's recent string of Ebola cases have recovered, meaning there are currently no confirmed cases in the country though more than 100 people are still under surveillance, a health official said Friday.</td></tr><tr><td>Ebola killed more than 4,800 people in Liberia before the country was declared Ebola transmission-free on May 9.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 17:02:40</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/liberia-says-4-remaining-ebola-patients-have-recovered'>site</a></td><td>Liberia cannot be declared Ebola transmission-free again until it goes 42 days - twice the maximum incubation period - without any new cases.</td></tr>
 </table></body></html>

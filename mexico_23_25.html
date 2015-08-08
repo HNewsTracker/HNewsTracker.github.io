@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 02:57:07</td><td><a href='http://www.charlotteobserver.com/sports/article27889891.html#storylink=rss'>site</a></td><td><table><tr><td>The Mexico-Costa Rica matchup looked like a potential final at the start of the tournament, with Costa Rica coming off a World Cup quarterfinal appearance last year.</td></tr><tr><td>Mexico repeatedly broke down Costa Rica's defense to set up good looks only to miss high or wide.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 17:58:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article30381405.html#storylink=rss'>site</a></td><td>New Mexico blasts EPA for late notice on Colorado mine spill</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-08 04:15:02</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/07/wastewater-from-colorado-mine-flows-toward-new/'>site</a></td><td>DENVER (AP) - An eerie yellow sludge that poured out of a shuttered gold mine and into a southwestern Colorado river was inching its way downstream toward New Mexico and Utah.</td></tr>
 </table></body></html>

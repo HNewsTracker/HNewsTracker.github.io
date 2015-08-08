@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/f59/sports/soccer/article25551275.ece/ALTERNATES/w220/91820010.JPG'></td><td>2015-07-17 16:23:23</td><td><a href='http://www.theglobeandmail.com/sports/soccer/fifa-others-defeat-us-lawsuit-over-soccer-concussions/article25551276/?cmpid=rss1'>site</a></td><td><table><tr><td>In a decision on Thursday, Chief Judge Phyllis Hamilton of the federal court in Oakland, California said the plaintiffs could not use the courts to change FIFA's "laws of the game," noting it was their decision to play soccer to begin with.</td></tr><tr><td>The judge also said FIFA was not a proper defendant because there was "no connection" between the lawsuit and any activity that the sport's international governing body, which is based in Switzerland, undertook in California.</td></tr><tr><td>"We will amend the complaint to satisfy the court's order and appeal the FIFA ruling," Steve Berman, a lawyer for the plaintiffs, said in an email.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 18:14:11</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/22/blatter-heads-to-russia-for-first-foreign-trip-since-crisis'>site</a></td><td>Blatter heads to Russia for first foreign trip since crisis</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/m8QeLcqFL24XzrWAyk1PZg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507201003361973954'></td><td>2015-07-22 18:15:49</td><td><a href='http://sports.yahoo.com/news/blatter-heads-russia-first-foreign-trip-since-crisis-160938727--sow.html'>site</a></td><td>''FIFA was not stuck because the president was not moving,'' said Blatter, whose successor is due to be elected in February.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 18:20:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28265995.html#storylink=rss'>site</a></td><td>FIFA President Sepp Blatter is due in Russia on Thursday for his first overseas trip since the arrests of fellow soccer executives in May left him unwilling to leave the safety of Switzerland.</td></tr>
 </table></body></html>

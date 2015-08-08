@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 04:05:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485145&ref=rss'>site</a></td><td><table><tr><td>Only the Jalisco New Generation, the big gun cartel that forced down the helicopter, has used the void to grow into one of Mexico's most powerful international criminal groups.</td></tr><tr><td>"The Jalisco cartel has been growing ... and Sinaloa was debilitated by the arrest of El Chapo," said Raul Benitez, a security expert with the National Autonomous University of Mexico.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-11T235952Z_1_LYNXNPEB6A0M5_RTROPTP_2_USA-SPORT.JPG?itok=L6tuJQxk'></td><td>2015-07-12 01:02:56</td><td><a href='http://www.sbs.com.au/news/article/2015/07/12/mexicos-pacheco-wins-springboard-gold-earns-rio-berth'>site</a></td><td>TORONTO (Reuters) - Mexico's Rommel Pacheco won the gold medal in men's 3m springboard at the Pan American Games on Saturday to earn an automatic qualifying spot for the 2016 Rio Olympics.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 02:50:02</td><td><a href='http://www.reuters.com/article/2015/07/13/us-games-panam-olympics-diving-idUSKCN0PN01120150713?feedType=RSS&feedName=sportsNews'>site</a></td><td>Canada's Abel, Mexico's Garcia win diving gold, earn Rio berth</td></tr>
 </table></body></html>

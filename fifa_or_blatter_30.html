@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/f59/sports/soccer/article25551275.ece/ALTERNATES/w220/91820010.JPG'></td><td>2015-07-17 16:23:23</td><td><a href='http://www.theglobeandmail.com/sports/soccer/fifa-others-defeat-us-lawsuit-over-soccer-concussions/article25551276/?cmpid=rss1'>site</a></td><td>FIFA, others defeat U.S. lawsuit over soccer concussions</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 16:23:23</td><td></td><td><a href='fifa_or_blatter_30_31.html'>In a decision on Thursday, Chief Judge Phyllis Hamilton of the federal court in Oakland, California said the plaintiffs could not use the courts to change FIFA's "laws of the game," noting it was their decision to play soccer to begin with. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 18:14:11</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/22/blatter-heads-to-russia-for-first-foreign-trip-since-crisis'>site</a></td><td>Since May 27 - when police in Zurich arrested some of Blatter's close associates on behalf of the U.S. and seized data from FIFA headquarters - Blatter has been absent from two FIFA events.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 18:15:49</td><td></td><td><a href='fifa_or_blatter_30_32.html'>In jetting to Russia, Blatter is being reunited at the draw ceremony with a close ally in Putin, and a country where he will not fear being detained, given its lack of extradition treaty with the United States. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 18:20:05</td><td></td><td><a href='fifa_or_blatter_30_31.html'>FIFA President Sepp Blatter is due in Russia on Thursday for his first overseas trip since the arrests of fellow soccer executives in May left him unwilling to leave the safety of Switzerland. (3)</a></td></tr>
 </table></body></html>

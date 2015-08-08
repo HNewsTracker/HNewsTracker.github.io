@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 11:50:36</td><td></td><td><a href='greece_or_greek_or_grexit_41_42.html'>Greek firefighters battled large brush and forest fires on the outskirts of Athens and in the country's southern Peloponnese region Friday that forced the evacuation of at least three villages and two summer camps. (8)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 18:36:25</td><td></td><td><a href='greece_or_greek_or_grexit_41_43.html'>In all, firefighters were battling 59 fire fronts, mainly in southern Greece and near the capital. (4)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 18:43:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27473896.html#storylink=rss'>site</a></td><td>Greece's Prime Minister Alexis Tsipras, center, watches developments with officials at the Fire Control Center in Athens on Friday, July 17, 2015.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 20:12:00</td><td><a href='http://www.reuters.com/article/2015/07/17/us-greece-fire-idUSKCN0PR15120150717?feedType=RSS&feedName=environmentNews'>site</a></td><td>"Armed forces have been ordered to start patrols throughout Greece, and particularly in mountainous regions," he said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/35/e5/a082f47d84a94af0a47d4d82904f22e3-4a864986000e45d6aa9c3db3f4996795-0.jpg'></td><td>2015-07-19 07:11:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ious-for-rips-greeces-cash-crisis-hurts-funeral-in/nm3Cq/'>site</a></td><td><table><tr><td>IOUs for RIPs: Greece's cash crisis hurts funeral industry</td></tr><tr><td>Credit cards and especially checks are rarely used for such transactions in Greece, which remains a cash-based economy.</td></tr><tr><td>Cash controls have choked the country's economy as Greece sinks back in recession, according to most major forecasts.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 07:11:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/19/ious-for-rips-greeces-cash-crisis-hurts-funeral-industry'>site</a></td><td><table><tr><td>ATHENS, Greece (AP) - Greece's cash crisis has disrupted all aspects of daily life - death included.</td></tr><tr><td>Greek funeral homes are struggling to cope with banking restrictions that limit customers to taking out only 60 euros ($65) a day in cash.</td></tr><tr><td>Even a modest funeral service in Greece costs more than 15 times that, in a country that traditionally carries out funerals shortly after death and pays for them almost entirely in cash.</td></tr></table></td></tr>
 </table></body></html>

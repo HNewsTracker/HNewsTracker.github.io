@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 04:05:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485145&ref=rss'>site</a></td><td><table><tr><td>Only the Jalisco New Generation, the big gun cartel that forced down the helicopter, has used the void to grow into one of Mexico's most powerful international criminal groups.</td></tr><tr><td>"The Jalisco cartel has been growing ... and Sinaloa was debilitated by the arrest of El Chapo," said Raul Benitez, a security expert with the National Autonomous University of Mexico.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 17:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486017&ref=rss'>site</a></td><td>CULIACAN, Mexico (AP) " Palatial tombs mark the final resting spots of top narcotics traffickers in the Jardines de Humaya cemetery in the Sinaloa state capital of Culiacan.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 18:25:39</td><td><a href='http://www.startribune.com/at-mexico-s-narco-cemetery-graves-await-the-inevitable/318313531/'>site</a></td><td>At Mexico's narco cemetery, palatial tombs await the inevitable end for gang members</td></tr>
 </table></body></html>

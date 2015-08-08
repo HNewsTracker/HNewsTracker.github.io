@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 23:43:29</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27262330.html#storylink=rss'>site</a></td><td>The prosecution had earlier argued that the deliberate nature of the planning and execution of the attack showed that Holmes was not mentally ill.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-29 01:07:08</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/28/colorado-theater-shooters-sister-says-she-still-loves-him'>site</a></td><td>(AP) - The father of Colorado theater gunman James Holmes said he never suspected his son was mentally ill before the 2012 attack, but he and his wife became increasingly concerned about him when he stopped returning their phone calls.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td><table><tr><td>Sandy Phillips, whose daughter Jessica Ghawi was killed by Holmes, shook her head no and then held it in her hands.</td></tr><tr><td>Ashley Moser, whose 6-year-old daughter died in the attack and who was herself paralyzed by Holmes' bullets, also shook her head and then slowly leaned it against the wheelchair of another paralyzed victim, Caleb Medley.</td></tr></table></td></tr>
 </table></body></html>
