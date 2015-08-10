@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 02:21:34</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/30/clinton-charity-donors-surge-amid-hillary-clinton-campaign'>site</a></td><td>In May, Hillary Clinton disclosed that she and her husband made more than $25 million from speeches over the past year and a half.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-31 02:21:34</td><td></td><td><a href='hillary_clinton_5_6.html'>"We know that donors are giving more because they are seeing the impact of our work across the globe," said the foundation's new president, Donna Shalala, who was accompanying Bill and Hillary Clinton's daughter, Chelsea, on a tour of foundation programs in Haiti. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-31 02:21:34</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/30/clinton-charity-donors-surge-amid-hillary-clinton-campaign'>site</a></td><td>In May, Hillary Clinton disclosed that she and her husband made more than $25 million from speeches over the past year and a half.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 02:21:34</td><td></td><td><a href='hillary_clinton_5_6.html'>"We know that donors are giving more because they are seeing the impact of our work across the globe," said the foundation's new president, Donna Shalala, who was accompanying Bill and Hillary Clinton's daughter, Chelsea, on a tour of foundation programs in Haiti. (3)</a></td></tr>
 </table></body></html>

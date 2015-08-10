@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 06:45:21</td><td></td><td><a href='egypt_15_16.html'>CAIRO (AP) " Egypt is to unveil a major expansion of the Suez Canal on Thursday in what the government hopes will be a moment of national pride following years of political unrest. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-05 06:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11492542&ref=rss'>site</a></td><td>Egypt went on to fight two more wars against Israel.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-05 06:45:21</td><td></td><td><a href='egypt_15_16.html'>CAIRO (AP) " Egypt is to unveil a major expansion of the Suez Canal on Thursday in what the government hopes will be a moment of national pride following years of political unrest. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 06:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11492542&ref=rss'>site</a></td><td>Egypt went on to fight two more wars against Israel.</td></tr>
 </table></body></html>

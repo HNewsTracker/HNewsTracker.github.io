@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>xbox or playstation or nintendo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 04:11:24</td><td></td><td><a href='xbox_or_playstation_or_nintendo_3_4.html'>Shoppers move on an escalator under Nintendo's Super Mario characters at an electronics store in Tokyo, Monday, July 13, 2015. (7)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/53/44/8304958/15/square_gallery_thumb.jpg'></td><td>2015-07-14 04:11:24</td><td><a href='http://www.sfgate.com/business/technology/article/The-Internet-flooded-with-tributes-to-Nintendo-6382940.php'>site</a></td><td>The Internet flooded with tributes to Nintendo chief</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 04:11:24</td><td></td><td><a href='xbox_or_playstation_or_nintendo_3_4.html'>Shoppers move on an escalator under Nintendo's Super Mario characters at an electronics store in Tokyo, Monday, July 13, 2015. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/53/44/8304958/15/square_gallery_thumb.jpg'></td><td>2015-07-14 04:11:24</td><td><a href='http://www.sfgate.com/business/technology/article/The-Internet-flooded-with-tributes-to-Nintendo-6382940.php'>site</a></td><td>The Internet flooded with tributes to Nintendo chief</td></tr>
 </table></body></html>

@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 02:10:04</td><td></td><td><a href='baltimore_8_9.html'>A former Baltimore police officer has said he plans to perform an Al Jolson routine in blackface to raise money for the six Baltimore officers who have been indicted in the death of Freddie Gray. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297705590793_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-23 02:26:11</td><td><a href='http://www.torontosun.com/2015/07/22/blackface-performer-plans-routine-to-raise-money-for-officers-indicted-in-death-of-black-man'>site</a></td><td>Tessa Hill-Aston, president of the Baltimore branch of the NAACP, says the idea is "very distasteful."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 02:10:04</td><td></td><td><a href='baltimore_8_9.html'>A former Baltimore police officer has said he plans to perform an Al Jolson routine in blackface to raise money for the six Baltimore officers who have been indicted in the death of Freddie Gray. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297705590793_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-23 02:26:11</td><td><a href='http://www.torontosun.com/2015/07/22/blackface-performer-plans-routine-to-raise-money-for-officers-indicted-in-death-of-black-man'>site</a></td><td>Tessa Hill-Aston, president of the Baltimore branch of the NAACP, says the idea is "very distasteful."</td></tr>
 </table></body></html>

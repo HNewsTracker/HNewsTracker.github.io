@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 17:55:20</td><td></td><td><a href='mexico_12_13.html'>MEXICO CITY (AP) " Mexico's human rights commission says the government's investigation into the fate of 43 missing college students is marked by failures and omissions in its procedures. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 17:55:49</td><td><a href='http://www.startribune.com/mexico-rights-group-errors-omissions-in-case-of-43-missing/318314361/'>site</a></td><td>26 while commandeering transit buses for a protest in Mexico City.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 17:55:20</td><td></td><td><a href='mexico_12_13.html'>MEXICO CITY (AP) " Mexico's human rights commission says the government's investigation into the fate of 43 missing college students is marked by failures and omissions in its procedures. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 17:55:49</td><td><a href='http://www.startribune.com/mexico-rights-group-errors-omissions-in-case-of-43-missing/318314361/'>site</a></td><td>26 while commandeering transit buses for a protest in Mexico City.</td></tr>
 </table></body></html>

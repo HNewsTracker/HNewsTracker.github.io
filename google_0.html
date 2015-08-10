@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 17:21:00</td><td></td><td><a href='google_0_1.html'>Shares of e-commerce website Etsy jumped as much as 30 percent on Friday thanks to a nod from Google during its quarterly conference call. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/16/102840624-c2967d5b1259ab2becba3ac73f8f74a6cae48a01.80x60.jpg?v=1437074264'></td><td>2015-07-17 17:21:00</td><td><a href='http://www.cnbc.com/2015/07/17/etsy-shares-soar-after-google-mention.html'>site</a></td><td>"It started with (the) Google commentary last night," Wedbush analyst Gil Luria said, adding that short sellers closing their bets were driving the stock up further.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 17:21:00</td><td></td><td><a href='google_0_1.html'>Shares of e-commerce website Etsy jumped as much as 30 percent on Friday thanks to a nod from Google during its quarterly conference call. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/16/102840624-c2967d5b1259ab2becba3ac73f8f74a6cae48a01.80x60.jpg?v=1437074264'></td><td>2015-07-17 17:21:00</td><td><a href='http://www.cnbc.com/2015/07/17/etsy-shares-soar-after-google-mention.html'>site</a></td><td>"It started with (the) Google commentary last night," Wedbush analyst Gil Luria said, adding that short sellers closing their bets were driving the stock up further.</td></tr>
 </table></body></html>

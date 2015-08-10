@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 20:36:41</td><td></td><td><a href='netanyahu_4_5.html'>The Philadelphia Daily News reports (http://bit.ly/1K7Cp9M ) classmates from Cheltenham High School's Class of 1973 sent Netanyahu his 1967 yearbook. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/56/02/8315024/3/920x920.jpg'></td><td>2015-07-15 23:08:20</td><td><a href='http://www.sfgate.com/news/article/Netanyahu-gets-yearbook-from-his-Pennsylvania-6386875.php'>site</a></td><td>FILE - In this July 14, 2015 file photo, Israel's Prime Minister Benjamin Netanyahu speaks during a press conference with Dutch Foreign Minister Bert Koenders at the Prime Minister's office in Jerusalem.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 20:36:41</td><td></td><td><a href='netanyahu_4_5.html'>The Philadelphia Daily News reports (http://bit.ly/1K7Cp9M ) classmates from Cheltenham High School's Class of 1973 sent Netanyahu his 1967 yearbook. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/56/02/8315024/3/920x920.jpg'></td><td>2015-07-15 23:08:20</td><td><a href='http://www.sfgate.com/news/article/Netanyahu-gets-yearbook-from-his-Pennsylvania-6386875.php'>site</a></td><td>FILE - In this July 14, 2015 file photo, Israel's Prime Minister Benjamin Netanyahu speaks during a press conference with Dutch Foreign Minister Bert Koenders at the Prime Minister's office in Jerusalem.</td></tr>
 </table></body></html>
