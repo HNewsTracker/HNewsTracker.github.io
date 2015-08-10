@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 20:33:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-07-22-US--Colorado%20Shooting/id-477fe2ab5c5348b9a976903b25512494'>site</a></td><td>The same jurors who convicted Holmes of murder and attempted murder last week - swiftly dismissing his claim that he was legally insane during the attack - must now decide whether to sentence him to death or life in prison without parole.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 15:29:11</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article29845882.html#storylink=rss'>site</a></td><td>The same jury rejected Holmes' insanity defense and convicted him of 165 counts of murder, attempted murder and weapons charges last month.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/37/52/72/8302248/33/920x920.jpg'></td><td>2015-07-15 00:39:46</td><td><a href='http://www.sfgate.com/news/crime/article/News-guide-Movie-theater-shooting-trial-closing-6383120.php'>site</a></td><td>Holmes surrendered to police outside the theater.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td>The jurors were given permission to view a recording of Holmes after the shooting in which he asks police officers if any children were hurt.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td>In the back, Aurora police officers who responded to the bloody scene of Holmes' attacks began crying.</td></tr>
 </table></body></html>

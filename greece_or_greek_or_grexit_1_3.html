@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,13 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-07-12 22:37:45</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/12/greek-talks-with-skeptical-creditors-to-resume-sunday'>site</a></td><td>Tsipras wants the ECB to help the banks as early as Monday, the official said, but creditors don't want the ECB to act until the Greek Parliament passes certain austerity measures.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>Many in Tsipras' party have indicated they will refuse to vote for the deal because it goes back on election pledges to repeal austerity measures that have been imposed on Greece for years.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/e0/af/8dde92b77e134cc5917d37839df1599b-af673b315e3d4d0d95e8da06bd9ed51c-0.jpg'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-does-about-face-pledges-big-privatization-p/nm2yX/'>site</a></td><td>Greece does about-face, pledges big privatization push</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/37/62/44/8333574/57/square_gallery_thumb.jpg'></td><td>2015-07-20 20:28:02</td><td><a href='http://www.sfgate.com/news/world/article/Greeks-will-find-banks-open-but-restrictions-6394083.php'>site</a></td><td>In response to last week's parliamentary vote backing the austerity measures, the ECB raised the amount of liquidity assistance on offer to Greek banks, paving the way for them to reopen Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>9</td><td><img src='http://ww3.hdnux.com/photos/37/52/43/8300758/21/square_gallery_thumb.jpg'></td><td>2015-07-14 03:42:03</td><td><a href='http://www.sfgate.com/business/energy/article/Stocks-rise-as-Greece-gets-a-new-bailout-deal-6381415.php'>site</a></td><td>Asia stocks lifted by Greece deal, China's 4th day of gains</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 12:35:05</td><td><a href='http://www.miamiherald.com/news/business/article27190612.html#storylink=rss'>site</a></td><td>Global stocks uneven as focus on Greece, China drop</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>Many in Tsipras' party have indicated they will refuse to vote for the deal because it goes back on election pledges to repeal austerity measures that have been imposed on Greece for years.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-open-with-small-gains-as-investor-assess/nmzCH/'>site</a></td><td>Asian stocks edged higher Thursday after Greek lawmakers approved an austerity bill needed for another bailout and the dollar rose after the Fed chief indicated that U.S. interest rates could start rising later this year.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/us-stocks-open-with-small-gains-as-investor-assess-earnings'>site</a></td><td>Most Asia stocks rise after Greece approves austerity bill</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-16 09:25:18</td><td><a href='http://www.sfgate.com/business/energy/article/Most-Asia-stocks-rise-after-Greece-approves-6387709.php'>site</a></td><td>HONG KONG (AP) - European stocks jumped, leading gains in global benchmarks Thursday after Greek lawmakers approved an austerity bill needed for another bailout.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 03:30:17</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-rise-as-ebay-citi-others-report-strong-e/nmzq3/'>site</a></td><td>Asia stocks mostly higher after strong earnings, Greece aid</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/e0/af/8dde92b77e134cc5917d37839df1599b-af673b315e3d4d0d95e8da06bd9ed51c-0.jpg'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-does-about-face-pledges-big-privatization-p/nm2yX/'>site</a></td><td>Greece does about-face, pledges big privatization push</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>In a letter to Greece's president and Tsipras, Konstantopoulou asserted the measures were a "violent attack on democracy," arguing that lawmakers had been given very little time to study the voluminous bill.</td></tr>
 </table></body></html>

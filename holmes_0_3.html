@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/37/52/72/8302248/33/920x920.jpg'></td><td>2015-07-15 00:39:46</td><td><a href='http://www.sfgate.com/news/crime/article/News-guide-Movie-theater-shooting-trial-closing-6383120.php'>site</a></td><td>Holmes surrendered to police outside the theater.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td>The jurors were given permission to view a recording of Holmes after the shooting in which he asks police officers if any children were hurt.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td>In the back, Aurora police officers who responded to the bloody scene of Holmes' attacks began crying.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-07-28 22:14:21</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/28/colorado-theater-shooters-sister-says-she-still-loves-him'>site</a></td><td>"I assumed he might be depressed," Robert Holmes said.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-29 01:07:08</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/28/colorado-theater-shooters-sister-says-she-still-loves-him'>site</a></td><td><table><tr><td>"He told us he loved us, but I could see there was something really wrong with him," Robert Holmes said.</td></tr><tr><td>Robert Holmes said he has seen James Holmes in jail only three times because his son typically does not allow visitors.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/37/75/06/8376716/3/square_gallery_thumb.jpg'></td><td>2015-07-29 01:07:08</td><td><a href='http://www.sfgate.com/news/crime/article/Colorado-theater-shooter-s-sister-says-she-still-6409242.php'>site</a></td><td><table><tr><td>A photo showing James Holmes is displayed on a monitor.</td></tr><tr><td>She told them James Holmes was dropping out of his prestigious neuroscience graduate school program.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/m/r/y/o/image.related.articleLeadwide.620x349.gimrde.png/1438136862947.jpg'></td><td>2015-07-29 02:27:55</td><td><a href='http://www.smh.com.au/world/batman-shooter-james-holmes-father-narrates-a-parents-worst-nightmare-20150729-gimrde.html'>site</a></td><td>James Holmes in 2013.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/m/r/y/o/image.related.articleLeadwide.620x349.gimrde.png/1438136862947.jpg'></td><td>2015-07-29 02:27:55</td><td><a href='http://www.brisbanetimes.com.au/world/batman-shooter-james-holmes-father-narrates-a-parents-worst-nightmare-20150729-gimrde.html'>site</a></td><td>Robert Holmes: "Yes he is."</td></tr>
 </table></body></html>

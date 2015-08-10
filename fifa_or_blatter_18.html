@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/25/75/e8/12c62e4217b24af283737f432d8f9250-1b09b906df7c4502be0e2469322d6e07-1.jpg'></td><td>2015-07-25 18:50:05</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fifa-blatter-get-back-to-world-cup-business-at-put/nm6jb/'>site</a></td><td><table><tr><td>"We say yes to Russia, we are providing our support," Blatter said of the host nation, whose winning bid campaign is being examined by Swiss prosecutors in a wider case focusing on World Cup bidders and FIFA spending.</td></tr><tr><td>Blatter was re-elected FIFA president two days later with support from Putin, who hinted the United States was meddling in football's affairs to help strip Russia of the 2018 World Cup.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-25 18:52:26</td><td><a href='http://sports.yahoo.com/news/fifa-blatter-back-world-cup-business-putin-home-153822626--sow.html'>site</a></td><td>''Thank you President Putin, you make us happy and comfortable,'' said Blatter, making his first trip outside his native Switzerland since mid-May. He has avoided FIFA business in countries which have extradition treaties with the United States.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:55:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article28698946.html#storylink=rss'>site</a></td><td>FIFA President Sepp Blatter speaks during the preliminary draw for the 2018 soccer World Cup in Konstantin Palace in St. Petersburg, Russia, Saturday, July 25, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://img.huffingtonpost.com//asset/scalefit_630_noupscale/55b400291d00003000142a17.jpeg'></td><td>2015-07-25 21:53:52</td><td><a href='http://www.huffingtonpost.com/entry/fifas-blatter-butters-up-putin-to-push-2018-world-cup_55b3ff5ee4b0074ba5a4cba4?'>site</a></td><td><table><tr><td>With the focus once more on football, the embattled FIFA leadership and much-criticized host nation Russia could display a confident and united front during a slickly staged show.</td></tr><tr><td>It was Blatter's first major public event since American and Swiss criminal investigations of corruption in world football were unsealed two months ago.</td></tr><tr><td>Putin and Blatter got a standing ovation from Russian and football officials and guests when they walked on together in a temporary venue built in the splendid grounds of Konstantin Palace.</td></tr></table></td></tr>
+</table></body></html>
