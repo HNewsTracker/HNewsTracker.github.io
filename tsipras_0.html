@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tsipras</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 08:14:47</td><td></td><td><a href='tsipras_0_1.html'>Greece's Prime Minister Alexis Tsipras arrives for a meeting as his lawmakers of Syriza party applaud him at the Greek Parliament in Athens, Friday, July 10, 2015. (69)</a></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='ww.smh.com.au/content/dam/images/g/i/a/1/7/x/image.related.articleLeadwide.620x349.gia16t.png/1436579147577.jpg'></td><td>2015-07-11 01:22:15</td><td><a href='http://www.smh.com.au/world/greek-debt-crisis-greeks-muse-on-future-path-after-alexis-tsipras-abrupt-reversal-20150711-gia16t.html'>site</a></td><td>"And this whole time I thought it was Merkel who was bluffing," one user wrote, referring to the expectation that Chancellor Angela Merkel of Germany would blink first in the showdown with Mr Tsipras.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 21:00:04</td><td><a href='http://www.miamiherald.com/news/business/article27069493.html#storylink=rss'>site</a></td><td>The broad outlines of a deal appeared to consist of a long series commitments from Tsipras to push through much of a drastic austerity program within days, while the 18 other eurozone leaders would commit to start talks on a new bailout program.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/a/3/c/0/image.related.articleLeadwide.620x349.gibi8r.png/1436825788178.jpg'></td><td>2015-07-13 22:16:33</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greece-debt-crisis-pm-alexis-tsipras-faces-syriza-mutiny-after-capitulating-to-demands-20150713-gibi8r'>site</a></td><td>That opposition alone would wipe out Tsipras's 12-seat majority in parliament, forcing him to rely on opposition votes to carry the day.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/14/876/493/Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-07-14 04:28:36</td><td><a href='http://www.foxnews.com/world/2015/07/14/greece-strikes-deal-with-eurozone-avoiding-euro-exit-but-tsipras-faces-dissent/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Tsipras had to consent to a raft of austerity measures, including sales tax hikes and pension and labor reforms - measures he had campaigned vociferously against over the last five years of Greece's financial crisis.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-15 20:06:05</td><td></td><td><a href='tsipras_0_6.html'>Former finance minister Yanis Varoufakis, who was sacked by Tsipras last week, denounced the bailout as "a new Versailles Treaty" - the agreement that demanded unaffordable reparations from Germany after World War One. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 18:19:48</td><td><a href='http://www.miamiherald.com/news/business/article27410548.html#storylink=rss'>site</a></td><td>At first Tsipras wanted 25 billion euros of the package to be available for investments, while Merkel insisted on only 10 billion euros for that purpose.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 08:00:05</td><td></td><td><a href='tsipras_0_4.html'>Tsipras is eyeing a fresh start and swift talks on the bailout aimed at keeping Greece afloat but he still faces hurdles with parts of the ruling Syriza party in revolt over the tough terms of the bailout agreement. (7)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 15:35:54</td><td></td><td><a href='tsipras_0_5.html'>Tsipras' Syriza party was elected in January on a promise to end austerity, forming a coalition with the right-wing, anti-bailout Independent Greeks party - a move that broadened his political influence. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-21 15:35:54</td><td></td><td><a href='tsipras_0_2.html'>He added that Tsipras' portrayal of Greece rejecting the meddling of "foreigners" resonates among many Greeks. (2)</a></td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/13/102828831-GReek_timeline.80x60.jpg?v=1436804433'></td><td>2015-07-22 01:06:00</td><td><a href='http://www.cnbc.com/2015/07/21/alexis-tsipras-transforms-himself-as-he-sells-greek-bailout-terms.html'>site</a></td><td>Mr. Tsipras benefits from having never had anything to do with those parties.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-26 14:44:22</td><td></td><td><a href='tsipras_0_3.html'>Under the plan, which the report said went back to before Tsipras was elected in January, transactions through the parallel system would have been nominated in euros but could easily change into drachmas overnight, he was quoted as saying. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-31 04:01:06</td><td></td><td><a href='tsipras_0_7.html'>"We have to agree that we can't go on this way," Tsipras told the committee members during a dramatic 12-hour meeting. (2)</a></td></tr>
+</table></body></html>

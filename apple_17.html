@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 22:05:32</td><td></td><td><a href='apple_17_19.html'>Without Apple, the decline would have been a gain of 0.1 percent, according to S&P Dow Jones Indices, the company behind the S&P 500 index and the Dow Jones industrial average. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-05 22:05:32</td><td></td><td><a href='apple_17_18.html'>Since closing at a record $133 on February 23, Apple has slumped to $115.40, wiping $115 billion off the value of its stock. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-05 22:05:32</td><td><a href='http://www.startribune.com/who-are-the-stock-market-heavyweights/320805731/'>site</a></td><td>Lately, Apple's influence has been a drag.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-05 22:07:12</td><td><a href='http://www.miamiherald.com/news/business/article30098820.html#storylink=rss'>site</a></td><td>At the end of 1985, the company's stock made up 6.4 percent of the S&P 500's total value, much bigger than Apple's current 3.6 percent.</td></tr>
+</table></body></html>

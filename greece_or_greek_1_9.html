@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 09:35:27</td><td><a href='http://www.sfgate.com/news/world/article/Yes-or-no-What-Greece-s-landmark-vote-might-bring-6366902.php'>site</a></td><td>A "yes" vote backing the reform proposals creditors had made would likely see Greece turn immediately to talks on a new rescue package.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-05 09:54:03</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26523319.html#storylink=rss'>site</a></td><td>Instead, they argue voting "yes" will allow Greece to get a new bailout deal quickly to shore up the economy.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-07 15:57:33</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/the-latest-france-pledges-effort-to-keep-greece-in-euro'>site</a></td><td>"And it is really up to the Greek government to come up with far-reaching proposals. If they don't do that, then I think it will be over quickly."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/TXSvQSj0ejP1BwtYkdJ1Yw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/528ef41f43fc841e7b0f6a706700ad8d.jpg'></td><td>2015-07-07 15:58:12</td><td><a href='http://news.yahoo.com/latest-lithuanian-finance-minister-sees-compromise-115544872--finance.html'>site</a></td><td><table><tr><td>Arriving for talks with his peers in the 19-country eurozone, Dijsselbloem said the Greek government has "a major interest" in bringing forward "serious and credible" proposals that are needed if Greece is to get another bailout.</td></tr><tr><td>The Greek government is expected to make fresh proposals at the meeting in order to secure a bailout deal so it avoids leaving the euro.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ZVpfF_LPEfbzAf10.vijKQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/293bae0d95c6b11e7b0f6a706700eb97.jpg'></td><td>2015-07-09 11:08:19</td><td><a href='http://news.yahoo.com/latest-eu-economics-chief-says-greece-deal-possible-074059545.html'>site</a></td><td>EU Economics Commissioner Pierre Moscovici is hopeful that a new Greek bailout deal is possible, in exchange for "concrete, complete" reform proposals from Greece's government.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-09 12:10:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/09/easier-terms-for-greece-could-open-a-can-of-worms-in-europe'>site</a></td><td>With that in mind, the Irish government's message to Greece is the most clear-cut of Europe's fellow bailout recipients: If you want to get out of the hole, admit you dug it yourself, stop blaming others - and do everything possible to reassure creditors you can be trusted to pay your bills.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 11:50:04</td><td><a href='http://www.miamiherald.com/news/business/article26934703.html#storylink=rss'>site</a></td><td>French Prime Minister Manuel Valls laid out his hopes for an imminent Greek bailout deal after the country's government sent "solid, serious and complete" reform proposals to creditors.</td></tr>
+</table></body></html>

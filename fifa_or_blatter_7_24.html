@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 09:00:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article26486962.html#storylink=rss'>site</a></td><td>Once a critical opponent of Blatter in a FIFA presidential election in 2002, Hayatou re-emerged from a resounding defeat to be a loyal lieutenant, whipping up support for the controversial FIFA president.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-04 09:00:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article26486962.html#storylink=rss'>site</a></td><td>Hayatou's one failure, though, was the 2002 FIFA presidential election, when Blatter beat him heavily by 139 votes to 56 in a bitter contest.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-10 09:15:14</td><td><a href='http://www.miamiherald.com/sports/article26934976.html#storylink=rss'>site</a></td><td>Former France captain Platini hasn't yet said whether he will look to succeed Blatter in the FIFA presidential election expected in a few months.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-19 11:27:05</td><td><a href='http://www.miamiherald.com/news/politics-government/article27804001.html#storylink=rss'>site</a></td><td>The closed-door meeting at FIFA headquarters helps prepare for an executive committee session on Monday, called at short notice to set a date for the presidential election to replace Blatter.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.usnews.com/dims4/USNEWS/dd15760/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F84%2Fe93eee2464922ac3a880f18888ef21%2Fmedia%3Ae3f021253d794063a5bd33734d19b871SoccerFIFAElectionPrinceAli.JPEG'></td><td>2015-07-20 09:43:20</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/20/fifa-to-decide-on-election-date-platini-gains-support'>site</a></td><td>FIFA to decide on election date; Platini gains support</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-20 12:03:20</td><td><a href='http://www.cbc.ca/sports/soccer/fifa-presidential-election-to-be-held-on-feb-26-1.3159733?cmp=rss'>site</a></td><td><table><tr><td>FIFA presidential election to be held on Feb. 26</td></tr><tr><td>FIFA will hold a presidential election on Feb. 26, giving Sepp Blatter seven more months in power before leaving the scandal-tainted governing body.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 13:27:07</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27895708.html#storylink=rss'>site</a></td><td>FIFA announced the election date shortly before a scheduled news conference by Blatter.</td></tr>
+</table></body></html>

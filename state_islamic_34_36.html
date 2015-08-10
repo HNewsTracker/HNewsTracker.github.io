@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150622&t=2&i=1058220867&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB5L0M8'></td><td>2015-06-22 15:14:11</td><td><a href='http://www.reuters.com/article/2015/06/22/us-mideast-crisis-syria-kurds-idUSKBN0P21HV20150622?feedType=RSS&feedName=worldNews'>site</a></td><td>The Kurdish front in northern Syria has been one of the few sources of good news for the global campaign against Islamic State since the jihadists made major advances last month in western Iraq and central Syria.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/cYI.VUZ6hVEPM9tvGDZYhQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5MztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-06-25T150628Z_1_LYNXMPEB5O0RZ_RTROPTP_2_MIDEAST-CRISIS-SYRIA.JPG'></td><td>2015-06-25 18:27:03</td><td><a href='http://news.yahoo.com/islamic-state-attacks-syrian-army-kurds-offensive-064241784.html'>site</a></td><td>Islamic State advanced rapidly last month, seizing cities in Syria and Iraq.</td></tr>
+</table></body></html>

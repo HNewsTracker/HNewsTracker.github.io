@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tunisia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/13/876/493/Tunisia Tourism-1.jpg?ve=1&tl=1'></td><td>2015-07-13 06:27:19</td><td><a href='http://www.foxnews.com/world/2015/07/13/tunisia-tourism-lifeline-may-be-crippled-by-european-warnings-arab-spring/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Similar stories are told up and down Tunisia's Mediterranean shore, as resort entertainers seek work elsewhere and hotel managers ponder whether and when to close down.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 06:27:19</td><td></td><td><a href='tunisia_2_3.html'>FILE - In this June 28, 2015 file photo, tourists and a baby camel walk on a beach in front of the Imperial Marhaba Hotel in Sousse, Tunisia. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 06:27:19</td><td></td><td><a href='tunisia_2_4.html'>Up to 2 million hotel nights are expected to be lost over the next year, hastened by warnings from Britain and other European governments last week that their citizens are no longer safe on Tunisia's shores. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/52/14/8299302/5/square_gallery_thumb.jpg'></td><td>2015-07-13 06:27:19</td><td><a href='http://www.sfgate.com/news/world/article/Tunisia-tourism-may-be-crippled-by-European-6380913.php'>site</a></td><td>"For work, we never get anything in Tunisia during the winter," he said.</td></tr>
+</table></body></html>

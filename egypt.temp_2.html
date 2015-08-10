@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 22:34:03</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/22/15-drowned-when-boats-collided-on-the-nile-in/'>site</a></td><td>15 drowned when boats collided on the Nile in Egypt</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 22:40:23</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485610&ref=rss'>site</a></td><td>CAIRO (AP) " Egypt's Interior ministry says at least 15 civilians have drowned when a passenger boat traveling down the Nile near Cairo collided with a scow, causing the boat to capsize.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 15:34:11</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28401973.html#storylink=rss'>site</a></td><td>Egypt death toll rises to 17 in Nile collision; 2 detained</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-23 15:35:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485992&ref=rss'>site</a></td><td>CAIRO (AP) " Egypt's health ministry says the death toll from a collision of two boats on the Nile the night before has risen to 17, after two more bodies were retrieved from the river.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-24 12:15:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28490062.html#storylink=rss'>site</a></td><td>Egypt raises death toll from Nile boat collision to 31</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 09:53:55</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28693648.html#storylink=rss'>site</a></td><td>Egyptians look at the passenger boat that sunk in the river Nile in Giza, south of Cairo, Egypt, Thursday, July 23, 2015.</td></tr>
+</table></body></html>

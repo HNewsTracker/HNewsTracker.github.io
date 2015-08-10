@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mh17</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 15:46:51</td><td></td><td><a href='mh17_9.html'>Jerzy Dyczynski, left, and Angela Dyczynski, right, with Maria Condipodero and Sarina Giglia, open the packet of sunflower seeds harvested from the MH17 cockpit crash site on the outskirts of Rassypnoe in East Ukraine. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/b/a/w/v/image.related.articleLeadwide.620x349.gi8t3p.png/1436802510623.jpg'></td><td>2015-07-13 15:48:42</td><td><a href='http://www.brisbanetimes.com.au/world/mh17-the-sunflowers-profile-of-quinn-schansman-headline-20150713-gi8t3p'>site</a></td><td><table><tr><td>MH17 victim Quinn Schansman.</td></tr><tr><td>They have been grown from seeds collected at the MH17 crash site by Fairfax Media, a quantity of which were relayed to the mayor by Thomas Schansman - who also presented the mayor with a one-centimetre seedling grown from one of the Ukrainian seeds.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-15 06:24:53</td><td></td><td><a href='mh17_12.html'>The criminal investigation is focusing on a BUK surface-to-air missile downing MH17 as the most likely scenario but is also working to rule out other possible causes. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 13:01:53</td><td></td><td><a href='mh17_0.html'>But MH17 crash theories are also propelled by humanity's unfortunate addiction to conspiracy theories. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 12:17:03</td><td></td><td><a href='mh17_2.html'>Ukrainian men hold flowers as they offer them at the Netherlands Embassy for the Malaysia Airlines Flight MH17 crash victims, in Kiev, Ukraine, Friday, July 17, 2015. (48)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-18 01:34:05</td><td></td><td><a href='mh17_14.html'>Looking forward to apology from @dailytelegraph & @australian over their #MH17 video "world exclusive" that was broadcast a year ago on BBC. (3)</a></td></tr>
+</table></body></html>

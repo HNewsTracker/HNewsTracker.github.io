@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 11:23:14</td><td><a href='http://www.daytondailynews.com/ap/ap/international/official-senior-islamic-state-figure-killed-in-a-u/nmxJZ/'>site</a></td><td>The strike in Nangarhar province killed Islamic State affiliate leader Hafeez Sayeed and others on Friday, said Abdul Hassib Sediqi, a spokesman for Afghanistan's National Directorate of Security.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/11/b0/8e/9e5d713208f445ab914d1643943c53ef-62e05bbd42c14c27918572962e340572-0.jpg'></td><td>2015-07-11 17:39:03</td><td><a href='http://www.daytondailynews.com/ap/ap/international/activists-28-killed-in-syrian-army-strikes-on-is-h/nmxJJ/'>site</a></td><td><table><tr><td>Afghanistan said Saturday that recent U.S. airstrikes it assisted destroyed the top leadership of a fledging Islamic State affiliate there, potentially striking a major blow to an insurgent group already targeted by local Taliban fighters.</td></tr><tr><td>Sediqi offered no photographs or other evidence to show the strikes killed the Islamic State affiliate's top leaders, though he said Afghan authorities verified a corpse from Friday's strike was Sayeed.</td></tr><tr><td>Disenchanted extremists from the Taliban and other organizations, impressed by the Islamic State group's territorial gains and slick online propaganda, began raising its black flag in extremist-dominated areas of both countries in recent months.</td></tr><tr><td>Afghan officials have suggested the Islamic State affiliate had a presence in three of its provinces, including Nangarhar, which borders Pakistan and frequently sees militants cross its borders.</td></tr><tr><td>Sediqi, the National Directorate of Security spokesman, said Afghan officials had created a special intelligence unit to target the Islamic State affiliate and its work directly aided the U.S. airstrikes.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 11:30:09</td><td><a href='http://www.startribune.com/islamic-state-claims-afghan-leader-alive-after-us-airstrike/314521941/'>site</a></td><td>KABUL, Afghanistan - The Islamic State group released an online audio clip Monday they claim came from the leader of an Afghan affiliate that authorities there say was killed in a U.S. airstrike.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 11:35:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480342&ref=rss'>site</a></td><td>The Islamic State group's al-Bayan radio identified the man Monday as Sayeed, without elaborating.</td></tr>
+</table></body></html>

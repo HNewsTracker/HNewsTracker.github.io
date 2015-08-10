@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>volcano</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 05:34:00</td><td><a href='http://www.ctvnews.ca/sci-tech/eruption-of-indonesian-volcano-forces-flight-cancellations-1.2462760'>site</a></td><td>The volcano has proven particularly problematic for Australians, who flock to Bali during Australia's school holidays.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-10 05:46:08</td><td></td><td><a href='volcano_0_1.html'>Ash spewing from a volcano on Indonesia's main island of Java has sparked chaos for holidaymakers as airports close and international airlines cancel flights to tourist hotspot Bali. (6)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03370/Mount-Raung_3370672b.jpg'></td><td>2015-07-10 06:55:45</td><td><a href='http://www.telegraph.co.uk/news/worldnews/asia/indonesia/11730452/Thousands-stranded-in-Indonesia-as-volcano-closes-airports.html'>site</a></td><td>Thousands stranded in Indonesian as volcano closes airports</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.independent.co.uk/news/world/asia/article10379544.ece/alternates/w300/Indonesia-volcano.jpg'></td><td>2015-07-10 08:17:34</td><td><a href='http://www.independent.co.uk/news/world/asia/indonesia-volcano-ash-cloud-closes-airports-in-popular-tourist-resorts-of-bali-and-lambok-10379573.html'>site</a></td><td>Airlines have been advised by the transport ministry to avoid routes near the volcano.</td></tr>
+</table></body></html>

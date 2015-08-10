@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-07 11:31:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/07/greek-pm-tsipras-races-to-restart-talks-after-vote-win'>site</a></td><td>The situation is urgent - without a deal, Greece's banks could go bust within days, the first step in the country's potential exit from the euro currency union.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-07 22:41:52</td><td><a href='http://www.sfgate.com/world/article/Greece-gets-until-Sunday-for-proposals-to-stave-6371491.php'>site</a></td><td>With Greece's banks just days away from a potential collapse that could drag the country out of the euro, Tsipras arrived with only vague proposals and a commitment to back it up with real figures and a more detailed plan by Thursday.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/07/6a/ab/d0319c8d4dc34a44b71ea36fc83370b8-d431d0e9f1f34aefb72ae0418b8b1ae9-0.jpg'></td><td>2015-07-07 23:19:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-pm-tsipras-races-to-restart-talks-after-vote/nmsm7/'>site</a></td><td>Greece gets until Sunday for proposals to stave off collapse</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48167539,width-300,resizemode-4/Greece.jpg'></td><td>2015-07-22 00:45:48</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Greece-wants-final-bailout-deal-by-August-20/articleshow/48167536.cms'>site</a></td><td>Asked if the threat of a Greek exit from the euro, or "Grexit", had passed, EU Economic Affairs Commissioner Pierre Moscovici said on Tuesday: "I think we've made a big step in that direction."</td></tr>
+</table></body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 10:59:00</td><td><a href='http://www.ctvnews.ca/business/greek-bailout-talks-with-skeptical-creditors-to-resume-tomorrow-1.2464622'>site</a></td><td>The task facing the new Greek finance minister, Euclid Tsakalotos, is to convince his skeptical counterparts that Greece deserves another bailout, which would be its third in five years.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 21:23:26</td><td><a href='http://www.nbcnews.com/news/world/euro-zone-leaders-greece-must-do-more-earn-rescue-n390801'>site</a></td><td>If Greece meets the conditions, the German parliament would meet on Thursday to mandate Merkel and Finance Minister Wolfgang Schaeuble to open the talks on a new loan.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 08:45:21</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480917&ref=rss'>site</a></td><td>Timing is everything, says Irish Finance Minister Michael Noonan, and Greece got its timing all wrong during the bailout negotiations.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-14 11:36:52</td><td><a href='http://finance.yahoo.com/news/greek-pm-tsipras-faces-party-022322066.html'>site</a></td><td>Fighting its own battle with Brussels to secure reforms of the European Union, British Finance Minister George Osborne has ruled out any financial involvement in a fresh bailout for Greece.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436997970675.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150716-gidayi.html'>site</a></td><td>Tough day at the office ... Euclid Tsakalotos, Greece's finance minister, pauses while attending a parliamentary meeting in Athens.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-16 08:02:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-16-EU--Greece-Bailout-The%20Latest/id-857edba0732f491eabd2301a8a056e11'>site</a></td><td>Wolfgang Schaeuble told Deutschlandfunk radio Thursday negotiations will determine whether a new package is possible given Greece's increased needs.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-16 09:40:47</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/16/the-latest-germany-says-stick-to-rules-no-greek-debt-cut'>site</a></td><td>The minister said Thursday "it would perhaps be a better way for Greece, and many say that - increasingly in Greece too."</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='ww.rte.ie//img.rasset.ie/000ade22-180.jpg'></td><td>2015-07-16 19:27:55</td><td><a href='http://www.rte.ie/news/2015/0716/715094-greece/'>site</a></td><td>German Finance Minister Wolfgang Schaeuble, one of Greece's sternest critics, questioned whether Athens would ever get a third bailout, even after the parliamentary vote.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 09:55:22</td><td><a href='http://www.miamiherald.com/news/business/article28082050.html#storylink=rss'>site</a></td><td>Finance Minister Euclid Tsakalotos said Greece and bailout lenders planned pension spending cuts required "further study" before being submitted to parliament.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.abc.net.au/news/image/6599834-3x2-340x227.jpg'></td><td>2015-07-24 21:28:13</td><td><a href='http://www.abc.net.au/news/2015-07-25/greece-asks-for-fresh-imf-aid-in-step-closer-to-bailout/6647646'>site</a></td><td>But in a letter to IMF managing director Christine Lagarde, finance minister Euclid Tsakalotos wrote Greece was "seeking a new loan" from the IMF.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IAXUcvCPVik6_sn8ItynSg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-07T111925Z_1_LYNXNPEB760IY_RTROPTP_3_EUROZONE-GREECE-TSIPRAS_original.jpg'></td><td>2015-08-07 11:19:25</td><td><a href='http://finance.yahoo.com/news/eu-officials-review-progress-greek-111925503.html'>site</a></td><td>That appeared to reflect Finance Minister Wolfgang Schaeuble's scepticism about whether Greece is fit to remain a member of the 19-nation European monetary union.</td></tr>
+</table></body></html>

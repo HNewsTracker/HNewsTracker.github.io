@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 15,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-07-20 20:14:07</td><td></td><td><a href='state_islamic_24_36.html'>The PKK held Ankara responsible for Monday's attack, saying it had "supported and cultivated" Islamic State against the Kurds. (4)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-21 12:19:25</td><td></td><td><a href='state_islamic_24_28.html'>Thousands of foreign fighters have crossed through Turkey to join Islamic State over the past few years, fuelling accusations from the government's opponents that it is turning a blind eye. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-21 12:19:25</td><td></td><td><a href='state_islamic_24_37.html'>The Kurdistan Workers Party (PKK) militant group, which has waged a three-decade insurgency against the Turkish state, said the AK Party bore responsibility for the bombing, accusing it of backing Islamic State against Syria's Kurds. (2)</a></td></tr>
+  <tr><td style='display:none'>13</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/q/e/e/image.related.thumbnail.90x60.gigq9a.png/1437461326733.jpg'></td><td>2015-07-21 12:19:25</td><td><a href='http://www.smh.com.au/world/turkey-denies-turning-blind-eye-to-islamic-state-as-bombing-stokes-anger-20150721-gihkhw.html'>site</a></td><td>They have also blocked more than half a dozen Islamist news websites, prompting one group claiming allegiance to Islamic State to accuse Turkey of persecuting Muslims and declare: "Muslims might retaliate."</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-21 18:07:00</td><td></td><td><a href='state_islamic_24_26.html'>Some analysts say that because of Turkey's aggressive policies against Syrian President Bashar Assad in that country's civil war, it has allowed militants of many stripes to operate in Turkey, providing cover to the Islamic State group. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 14:27:35</td><td></td><td><a href='state_islamic_24_34.html'>Many of Turkey's Kurds and opposition supporters suspect President Tayyip Erdogan and the ruling AK Party of covertly backing Islamic State against Kurdish fighters in Syria, something the government has repeatedly denied. (4)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-22 14:27:35</td><td></td><td><a href='state_islamic_24_25.html'>Anti-government protests after Monday's bombing in Suruc erupted in several cities for a second night on Tuesday, with some of the demonstrators chanting "Murderer Islamic State, collaborator Erdogan and AKP". (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 14:27:35</td><td></td><td><a href='state_islamic_24_30.html'>Ankara: Kurdish militants have claimed responsibility for the assassination of two Turkish police officers in what they said was retaliation for a suspected Islamic State suicide bombing that killed 32 people. (15)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-22 23:08:45</td><td></td><td><a href='state_islamic_24_31.html'>"The investigation is ongoing, but we have evidence that the suspect was linked to Daesh," the official said, speaking on a condition of anonymity in line with government protocol, using an Arabic acronym for the Islamic State. (2)</a></td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://ww1.hdnux.com/photos/37/70/32/8357544/3/square_gallery_thumb.jpg'></td><td>2015-07-24 21:48:24</td><td><a href='http://www.sfgate.com/world/article/In-shift-Turkish-jets-strike-Islamic-State-6404302.php'>site</a></td><td>Turkish aircraft dropped four precision-guided bombs on three Islamic State targets in the early hours Friday and were reported launching fresh attacks late Friday night.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 06:14:07</td><td></td><td><a href='state_islamic_24_27.html'>Turkish warplanes struck Islamic State group targets across the border in Syria early Friday, in a strong tactical shift for Turkey which had long been reluctant to join the U.S.-led coalition against the extremist group. (23)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-25 06:14:07</td><td></td><td><a href='state_islamic_24_32.html'>Turkish jets struck camps belonging to Kurdish militants in northern Iraq, authorities said Saturday, the first strike since a 2013 peace deal as Ankara also bombed Islamic State positions in Syria. (4)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-27 17:50:59</td><td></td><td><a href='state_islamic_24_29.html'>"The rise of Islamic State in northern Iraq, in northern Syria, has effectively destabilized the southern border of Turkey. But also domestically, the threat of terrorism has become very real," Lete told The Associated Press. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 15:50:14</td><td></td><td><a href='state_islamic_24_33.html'>An Islamic State-free zone along the Syria-Turkish border - through which the group has smuggled foreign fighters, oil and other goods for the past year - would strangle the militants in Syria, weakening the group. (7)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-28 15:50:14</td><td></td><td><a href='state_islamic_24_35.html'>The deal further embroils Turkey, a key NATO ally, in Syria's civil war, and also catapults it into a front-line position in the global war against the Islamic State group. (2)</a></td></tr>
+</table></body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 00:30:23</td><td></td><td><a href='google_14_15.html'>In the collision, a Lexus SUV that the tech giant outfitted with sensors and cameras was rear-ended in Google's home city of Mountain View, where more than 20 prototypes have been self-maneuvering through traffic. (9)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0511/20150511__0512selfdrive~1.JPG'></td><td>2015-07-17 00:30:23</td><td><a href='http://www.mercurynews.com/business/ci_28495535/google-self-driving-car-involved-first-injury-accident?source=rss'>site</a></td><td>The Google car and the other car in front of it also stopped.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0511/20150511__0512selfdrive~1.JPG'></td><td>2015-07-17 13:12:13</td><td><a href='http://www.mercurynews.com/business/ci_28495535/google-self-driving-car-involved-first-injury-accident?source=rss'>site</a></td><td>The three people on board complained of minor whiplash, were checked out at a hospital and cleared to go back to work following the July 1 collision, Google said.</td></tr>
+</table></body></html>

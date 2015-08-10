@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 12:13:06</td><td><a href='http://www.miamiherald.com/news/business/article27281152.html#storylink=rss'>site</a></td><td>It calls for Greece to pass new austerity measures his left-wing government had long battled against in return for the start of negotiations on a third bailout worth about 85 billion euros in loans over three years.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 20:48:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27374224.html#storylink=rss'>site</a></td><td>And eurozone lenders pledged short-term loans so Greece can cover its debts and negotiations for a new three-year bailout worth 85 billion euros ($93 billion).</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 08:20:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-17-EU--Greece-Bailout/id-326ea64e2d0e449886d34214a50fd39f'>site</a></td><td>The process is expected to last around four weeks and to lead to Greece getting around 85 billion euros ($93 billion) to help it pay off upcoming debts.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/32/e2/f2e092ef255347d3933e2886e5b35321-ee454d7079094ee085c092947af431e1-0_1.jpg'></td><td>2015-07-20 10:58:49</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeks-will-find-banks-open-but-restrictions-still/nm3RW/'>site</a></td><td>The new taxes are part of a package of confidence-building measures that the Greek government had to introduce in order for negotiations on a third bailout to begin.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 08:20:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11485231&ref=rss'>site</a></td><td>Lawmakers late Wednesday will vote on judicial and banking reforms set as a requirement by other Eurozone countries for a third Greek rescue package worth 85 billion euros ($93 billion).</td></tr>
+</table></body></html>

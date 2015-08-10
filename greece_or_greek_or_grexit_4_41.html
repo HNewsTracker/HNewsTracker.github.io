@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/b34/report-on-business/international-business/european-business/article25334698.ece/ALTERNATES/w220/ATH105-Greece+Bailout.JPG'></td><td>2015-07-07 11:59:14</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-faces-last-chance-to-stay-in-euro-as-cash-runs-low/article25334699/?cmpid=rss1'>site</a></td><td>The United States, China and Japan all called for a solution in which Greece stays in the euro zone.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 07:23:14</td><td><a href='http://www.brisbanetimes.com.au/world/greek-debt-crisis-what-comes-next-20150712-giact1.html'>site</a></td><td>Their biggest backers are the French, who have been working furiously behind the scenes to convince the more hawkish creditors to agree to debt relief and keep Greece in the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/9/6/u/6/image.related.articleLeadwide.620x349.giaq7x.png/1436736463881.jpg'></td><td>2015-07-12 19:04:52</td><td><a href='http://www.smh.com.au/business/world-business/greece-debt-crisis-eurogroup-says-no-basis-to-start-new-bailout-deal-talks-20150712-giaq7x'>site</a></td><td>"There is no such thing as temporary Grexit, there is only a Grexit or no Grexit. There is Greece in the euro zone or Greece not in the euro zone. But in that case it's Europe that retreats and no longer progresses and I don't want that," he said.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297724874909_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-16 02:15:37</td><td><a href='http://www.torontosun.com/2015/07/15/greek-civil-servants-pharmacists-strike-against-bailout-reforms'>site</a></td><td>A study by the International Monetary Fund issued on Tuesday called for much more debt relief than Greece's euro zone creditors, particularly Germany, have been prepared to accept so far.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Schaeuble, who says a "haircut" is illegal in the euro zone, will be waiting with his Plan B for debt relief with Greece outside the currency area.</td></tr>
+</table></body></html>

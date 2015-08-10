@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-26 21:27:11</td><td><a href='http://www.usnews.com/news/business/articles/2015/06/26/stocks-up-ahead-of-greece-decision-chinese-stocks-plunge'>site</a></td><td>Stocks end mostly lower as Greece debt deadline approaches</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-06-29 13:42:23</td><td><a href='http://news.yahoo.com/asian-stock-markets-sink-greece-closes-banks-032205086--finance.html'>site</a></td><td><table><tr><td>US stocks fall in early trade as Greece debt woes escalate</td></tr><tr><td>NEW YORK (AP) - Stocks are falling in early trading in the U.S., but not as much as in Europe as Greece's debt woes deepen.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-06-30 13:44:10</td><td><a href='http://www.miamiherald.com/news/business/article25813954.html#storylink=rss'>site</a></td><td>U.S. stocks are rising broadly in early trading as investors hope for a last-minute deal on Greece's debt woes.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-07-06 02:47:37</td><td><a href='http://news.yahoo.com/greece-votes-high-stakes-bailout-referendum-050534077--finance.html'>site</a></td><td>"We will now wait for the initiatives of the Greek authorities."</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/07/10/b7856f27bfc0cd1e7b0f6a706700c002_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-07-10 14:10:38</td><td><a href='http://www.sandiegouniontribune.com/news/2015/jul/10/us-stocks-open-higher-as-greece-moves-closer-to-a/'>site</a></td><td>US stocks rise on optimism that Greek-debt deal will be done</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-14 10:25:09</td><td><a href='http://www.startribune.com/german-investor-optimism-undeterred-by-greece/314852531/'>site</a></td><td>FRANKFURT, Germany - Investor optimism about Germany decreased by only a little in July, as the crisis in Greece and falling stocks in China had minimal effect.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-15 21:30:23</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-open-with-small-gains-as-investor-6385910.php'>site</a></td><td>Energy stocks lead US market lower; investor wait on Greece</td></tr>
+</table></body></html>

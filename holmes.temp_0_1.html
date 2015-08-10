@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 16,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 18:28:08</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/13/after-all-is-said-in-theater-shooting-trial-was-he-sane'>site</a></td><td><table><tr><td>The only question they must answer is whether Holmes met Colorado's threshold for an insanity verdict, by suffering from mental illness so severe that it rendered him unable to tell right from wrong at the time of the shootings.</td></tr><tr><td>The hideous details of the attack, the heartbreaking survival stories, the signs of mental illness that Holmes showed well before the events of July 20, 2012 - they shouldn't matter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 18:30:05</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article27138301.html#storylink=rss'>site</a></td><td>A copy of Colorado's insanity statute will guide them in the jury room as they consider Holmes' mental state that night, analyzing his medical records, family history, police reports and journal.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 16:16:08</td><td><a href='http://www.miamiherald.com/news/nation-world/article27191845.html#storylink=rss'>site</a></td><td>Holmes surrendered to police outside the theater.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 00:43:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27191842.html#storylink=rss'>site</a></td><td>King pleaded with jurors to believe that Holmes' mental illness was the sole cause of the attack.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-16 20:04:20</td><td><a href='http://www.nydailynews.com/news/national/verdict-reached-colorado-theater-gunman-james-holmes-article-1.2294783?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>Prosecutors honed in on Holmes' elaborate planning of the massacre.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-16 20:58:35</td><td><a href='http://www.reuters.com/article/2015/07/16/us-usa-shooting-denver-verdict-idUSKCN0PQ2DU20150716?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>The jury in the Colorado movie massacre trial reached a verdict on Thursday, the second day of deliberations in the case of 27-year-old gunman James Holmes, who has pleaded not guilty by reason of insanity, a court spokesman said.</td></tr><tr><td>Holmes did not testify in his own defense, but jurors watched video of some 23 hours of interviews conducted with him by one of the court-appointed psychiatrists.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-16 23:40:16</td><td><a href='http://www.startribune.com/theater-shooting-key-events-in-the-life-of-james-holmes/316051211/'>site</a></td><td><table><tr><td>2011 - Holmes enrolls in the Ph.D. neuroscience program at the University of Colorado's Anschutz Medical Campus in the Denver suburb of Aurora.</td></tr><tr><td>July 20, 2012 - Holmes slips through a back door of the Century 16 theater in Aurora, where about 420 people are watching a midnight showing of a Batman movie, "The Dark Knight Rises," and opens fire.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-17 00:43:36</td><td><a href='http://www.nydailynews.com/news/national/verdict-reached-colorado-theater-gunman-james-holmes-article-1.2294783'>site</a></td><td><table><tr><td>Jurors watched nearly 22 hours of videotaped interviews showing Holmes talking in a flat, mechanical tone about his desire to kill strangers to increase his self-worth.</td></tr><tr><td>Prosecutors showed jurors Holmes' spiral notebook, where he scribbled a self-diagnosis of his "broken mind" and described his "obsession to kill" since childhood.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/16/10/af/c2af2b91a0684cb891c9a93fa4647667-fed9636f13c344ee9fdd559b36a156d9-0.jpg'></td><td>2015-07-17 00:49:59</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/the-latest-colorado-theater-shooting-trial-verdict/nmz4W/'>site</a></td><td>Colorado theater shooter James Holmes is showing no visible reaction as the judge reads the jury's verdict on all 165 counts against him.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 00:52:05</td><td><a href='http://www.miamiherald.com/news/nation-world/article27419878.html#storylink=rss'>site</a></td><td>Colorado theater shooting survivor Jansen Young says she finally has closure with the guilty verdict against shooter James Holmes.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-17 06:15:38</td><td><a href='http://www.startribune.com/despite-quick-conviction-theater-shooting-trial-isn-t-over/316095901/'>site</a></td><td><table><tr><td>- Families of the 12 people James Holmes killed and the scores he injured in a packed movie theater were relieved that jurors only needed 12 hours to reject the idea that he was legally insane when he opened fire.</td></tr><tr><td>Now the trial enters a new phase as the jury decides whether Holmes should die for his crimes.</td></tr><tr><td>Starting next week, jurors will hear testimony about Holmes' mental illness and his childhood.</td></tr><tr><td>Prosecutors may counter with even more heartbreaking accounts from victims, ranging from those Holmes maimed to the father of his youngest victim, a 6-year-old girl who died in the 2012 attack.</td></tr></table></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-17 20:45:37</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/17/despite-quick-conviction-theater-shooting-trial-isnt-over'>site</a></td><td>Despite having convicted Holmes in the killings, jurors must still determine whether to put Holmes on death row for opening fire in the crowded movie theater.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td><table><tr><td>Lawyers for Colorado theater shooter James Holmes did not make any arguments disputing that the crime makes him eligible for the death penalty.</td></tr><tr><td>The penalty phase of the trial starts Wednesday with prosecutors telling jurors why Holmes should be eligible for execution.</td></tr></table></td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://ww2.hdnux.com/photos/37/65/72/8347309/7/square_gallery_thumb.jpg'></td><td>2015-07-23 00:33:00</td><td><a href='http://www.sfgate.com/news/crime/article/Jurors-to-weigh-whether-Colorado-theater-shooter-6398617.php'>site</a></td><td>The monthlong penalty phase of the trial of Holmes, who could be sentenced to death for killing 12 people in a Colorado movie theater, began Wednesday morning with the judge giving instructions to the jury.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-08-03 15:29:11</td><td><a href='http://www.miamiherald.com/news/nation-world/article29845882.html#storylink=rss'>site</a></td><td>If jurors unanimously agree that such factors outweigh the heinousness of the July 2012 attack that killed 12 people and injured 70 others, Holmes would be sentenced to a life term.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-08-03 15:30:44</td><td><a href='http://www.startribune.com/deliberations-resume-in-colorado-theater-shooting-trial/320487452/'>site</a></td><td>Jurors must decide whether there are any reasons, such as Holmes' mental illness and his trouble-free youth, that mean he should be sentenced to life in prison without parole instead of to death.</td></tr>
+</table></body></html>

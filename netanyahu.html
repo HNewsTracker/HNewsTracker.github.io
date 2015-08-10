@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>9</td><td></td><td>2015-07-12 09:10:09</td><td></td><td><a href='netanyahu_6.html'>Responding to the Iranian supreme leader's call to continue the struggle against the United States regardless of the outcome of nuclear talks, Benjamin Netanyahu says Sunday his country will not accept such a reality. (3)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-12 15:30:38</td><td></td><td><a href='netanyahu_0.html'>Yonatan Netanyahu, the commander of the commando unit that led the raid, was shot dead as he was helping the Israeli hostages who had been held inside the airport's old terminal back onto the plane. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 09:07:17</td><td><a href='http://www.theguardian.com/world/2015/jul/14/netanyahu-denounces-iran-nuclear-dealcriticism-israel'>site</a></td><td>"Iran is going to receive a sure path to nuclear weapons," Netanyahu said at a meeting with the Dutch foreign minister, Bert Koenders, in Jerusalem.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-14 15:51:30</td><td></td><td><a href='netanyahu_13.html'>Benjamin Netanyahu says the world is now a "much more dangerous place" and criticized Tuesday's agreement as a "stunning historic mistake." (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 13:51:04</td><td></td><td><a href='netanyahu_2.html'>Mr Netanyahu's war of words came as his political rival, Isaac Herzog, announced he would go to the US to lobby for a compensation package to insure Israel's military advantage in the region. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 20:36:41</td><td></td><td><a href='netanyahu_4.html'>The Philadelphia Daily News reports (http://bit.ly/1K7Cp9M ) classmates from Cheltenham High School's Class of 1973 sent Netanyahu his 1967 yearbook. (7)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-16 15:20:41</td><td></td><td><a href='netanyahu_8.html'>Getting in the last word, Netanyahu also spelled out his opposition to the gradual lifting of sanctions against Iran, which he told Hammond would allow Iran to foment "more terrorism, more aggression," in the Middle East and beyond. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-18 03:25:18</td><td></td><td><a href='netanyahu_11.html'>JERUSALEM - Israeli Prime Minister Benjamin Netanyahu and Palestinian President Mahmoud Abbas have spoken by phone, a rare exchange amid years of paralyzed peace efforts. (6)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-21 07:37:21</td><td></td><td><a href='netanyahu_19.html'>On course to become the longest serving prime minister in Israeli history, Netanyahu's legacy has not been marked so far by bold measures of war and peace that defined his predecessors. (4)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-21 15:25:28</td><td></td><td><a href='netanyahu_14.html'>While the investigation shows no sign of threatening Prime Minister Benjamin Netanyahu's hold on power, it nonetheless gave him a new headache at a time of growing international isolation and domestic turmoil with a narrow and fractured coalition. (6)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-21 18:45:14</td><td></td><td><a href='netanyahu_17.html'>A Carter aide who attended the talks in Jerusalem later told reporters that Netanyahu bluntly expressed his opposition to the Iran deal but did not get angry or upset with Carter. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/c664701/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F31%2F12%2Fefb873234c6f8055960f1f4360f0%2Fresizes%2F500%2Fthumb-3.jpg'></td><td>2015-08-05 00:47:25</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/04/obama-netanyahu-make-dueling-appeals-on-iran-to-us-jews'>site</a></td><td><table><tr><td>Obama, Netanyahu make dueling appeals on Iran to US Jews</td></tr><tr><td>"The nuclear deal with Iran doesn't block Iran's path to the bomb. It actually paves Iran's path to the bomb," Netanyahu said in his remarks.</td></tr><tr><td>Netanyahu, one of the fiercest critics of the nuclear accord, also disputed Obama's assertion that opponents of the diplomatic deal favor war.</td></tr></table></td></tr>
+</table></body></html>

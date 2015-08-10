@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 32,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 32 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>15</td><td></td><td>2015-07-14 13:10:19</td><td></td><td><a href='google_37.html'>The BBC quoted a separate Google statement which said: "We understand that geographic names can raise deep emotions which is why we worked quickly once this was brought to our attention." (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 19:47:48</td><td><a href='http://www.foxnews.com/tech/2015/07/14/if-dont-want-to-give-your-photos-to-google-anymore-itll-steal-them/'>site</a></td><td>The problem with the way Google Photos backs up pictures is that it does so independently of the app on your phone.</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-07-15 06:45:36</td><td></td><td><a href='google_45.html'>Google alters name of disputed South China Sea reef (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-15 17:24:00</td><td></td><td><a href='google_10.html'>Google also said its Google Now service is offering location-based information, including on discounts on items and the working hours of stores a user is close to. (6)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-15 17:59:04</td><td></td><td><a href='google_35.html'>SAN FRANCISCO (AP) - Google is introducing a way for shoppers browsing on their smartphones to buy merchandise by tapping on a button included in the ads appearing in its search results. (4)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-16 14:49:36</td><td></td><td><a href='google_8.html'>The case is In re: Google Inc Privacy Policy Litigation, U.S. District Court, Northern District of California, No. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 17:38:05</td><td><a href='http://www.usatoday.com/story/tech/2015/07/16/google-second-quarter-earnings-preview/30244365/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Analysts expect Google to earn $6.70 a share, excluding certain expenses, according to Thomson Reuters.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 20:40:16</td><td></td><td><a href='google_15.html'>Expenses now seem more likely to rise at or below the pace of Google's revenue increases, based on Porat's remarks to analysts Thursday. (10)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 00:30:23</td><td></td><td><a href='google_13.html'>In the collision, a Lexus SUV that the tech giant outfitted with sensors and cameras was rear-ended in Google's home city of Mountain View, where more than 20 prototypes have been self-maneuvering through traffic. (11)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-07-17 06:53:45</td><td></td><td><a href='google_39.html'>Google's said last night that its expenses rose 10% to $12.9 billion in the second quarter to the end of June from the year-ago quarter, and remained at 73% of revenue. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-17 14:15:47</td><td></td><td><a href='google_18.html'>Google surged after reporting earnings that exceeded the expectations of Wall Street analysts. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/dcc982e8ed28edbe24141c93759ed7448c9e2642/c=58-0-965-682&amp;r=x404&amp;c=534x401/local/-/media/2015/07/17/USATODAY/USATODAY/635727285685134957-Google-HQ.JPG'></td><td>2015-07-17 15:17:30</td><td><a href='http://www.usatoday.com/story/tech/2015/07/17/google-shares-surge/30292915/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Google is back, shares surge to new high</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-07-17 15:27:47</td><td><a href='http://www.reuters.com/article/2015/07/17/us-google-research-idUSKCN0PR1FG20150717?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>Google shares soar as YouTube growth allays fears over Facebook</td></tr><tr><td>The surge in the stock, which sent the Nasdaq composite index to a record intraday high, came a day after Google reported better-than-expected revenue and profit for the first time in six quarters.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-17 17:21:00</td><td></td><td><a href='google_0.html'>Shares of e-commerce website Etsy jumped as much as 30 percent on Friday thanks to a nod from Google during its quarterly conference call. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 18:08:07</td><td></td><td><a href='google_2.html'>Including the gains in Google Inc.'s Class A and nonvoting Class C shares, that puts the company on pace for the biggest single-day market cap gain ever. (15)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 20:30:16</td><td><a href='http://www.startribune.com/hertz-and-google-are-big-market-movers/316271551/'>site</a></td><td>Hertz, Google, Mattel, Honeywell and SolarWinds are big market movers</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 20:31:25</td><td><a href='http://finance.yahoo.com/news/google-boosts-nasdaq-futures-dow-114330512.html'>site</a></td><td><table><tr><td>Google propels Nasdaq to another record high close</td></tr><tr><td>Google (GOOGL.O) surged 16.26 percent to end at an all-time high of $699.62, a day after reporting strong ad revenue growth.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 19:01:53</td><td><a href='http://www.cbsnews.com/videos/googles-new-timeline-feature/'>site</a></td><td>Google's new "timeline" feature</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/lo/api/res/1.2/Cya11DxUmPXwn2wVArHmUw--/YXBwaWQ9bWFnYXppbmVzO3c9ODAw/https://s.yimg.com/os/en-US/homerun/cnet.cbs.com/aac9b6b3781abac2064ae4c6d5f19cd0'></td><td>2015-07-22 20:41:32</td><td><a href='https://www.yahoo.com/tech/s/google-maps-now-shows-everywhere-175301996.html'>site</a></td><td>Google Maps Now Shows You Everywhere You've Been</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-23 10:52:40</td><td></td><td><a href='google_22.html'>Photo services from Google, Yahoo and Apple all store copies of those photos and video online. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6644476-3x2-700x467.jpg'></td><td>2015-07-23 20:30:23</td><td><a href='http://www.abc.net.au/news/2015-07-24/google-street-view-mongolia-via-horseback-and-on-foot/6644454'>site</a></td><td><table><tr><td>"Google hopes that bringing Street View to Mongolia will raise awareness of the country as an emerging destination for visitors around the world, and support the country's economic growth moving forward," said Google's Susan Pointer.</td></tr><tr><td>Photo: A Google Street View member walks with a specialized camera to record the surroundings of the Choijin Lama Museum in the Mongolian capital of Ulan Bator.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/j/t/u/0/image.related.articleLeadwide.620x349.gijtbz.png/1437780295371.jpg'></td><td>2015-07-24 23:25:14</td><td><a href='http://www.smh.com.au/business/google-getting-whipped-into-shape-by-wall-street-veteran-ruth-porat-20150724-gijtbz'>site</a></td><td><table><tr><td>Not only was she a chief financial officer and former head of Morgan Stanley's financial institutions group, but she had worked on many technology deals as a mergers and acquisitions specialist, including Google's initial public stock offering.</td></tr><tr><td>Pitz worked with Porat during the eight years he was a research analyst at Morgan Stanley, including the time when Google went public.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2014/1211/20141211__1212google~3_300.JPG'></td><td>2015-07-27 23:27:12</td><td><a href='http://www.mercurynews.com/business/ci_28545896/youtube-shakes-off-google?source=rss'>site</a></td><td>YouTube shakes off Google+</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/m/c/v/9/image.related.articleLeadwide.620x349.gimcfy.png/1438081611381.png'></td><td>2015-07-28 08:19:24</td><td><a href='http://www.smh.com.au/digital-life/digital-life-news/google-forced-to-apologise-after-contractor-threatens-to-remove-gay-bars-from-search-engine-20150728-gimcfy.html'>site</a></td><td>Still listed: The Shift Bar & Club on Google Maps.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ichef-1.bbci.co.uk/news/624/cpsprodpb/5CF0/production/_84529732_0706102.jpg'></td><td>2015-07-28 11:15:43</td><td><a href='http://www.bbc.co.uk/news/technology-33687110#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>"We want to formally retire the notion that a Google+ membership is required for anything at | other than using Google+ itself," he added.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media4.s-nbcnews.com/j/newscms/2015_10/911711/150302-google-cell-service-arp-1215p_3859944c6eeedd26805205c4e908d454.nbcnews-fp-1240-520.jpg'></td><td>2015-07-28 13:12:49</td><td><a href='http://www.nbcnews.com/tech/internet/google-admits-google-confusing-n399581'>site</a></td><td>But Google confirmed that this would no longer be the case and users would only need a standard Google account to access all of the company's services.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 13:28:23</td><td><a href='http://blogs.wsj.com/digits/2015/07/27/google-gives-up-on-google-as-a-facebook-rival/?mod=rss_Technology'>site</a></td><td>Google Gives Up on Google+ as a Facebook Rival</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/dd8c91de23ae4900e54857b4a3b964b28aa90ba7/c=277-0-4618-3264&amp;r=x404&amp;c=534x401/local/-/media/2015/07/27/USATODAY/USATODAY/635736057257168129-USL-money-ear-30.jpg'></td><td>2015-07-28 14:48:27</td><td><a href='http://www.usatoday.com/story/tech/2015/07/27/google-plus-youtube-facebook/30736009/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td><table><tr><td>Google+ profile no longer needed for YouTube,</td></tr><tr><td>Bradley Horowitz, Google's vice president of streams, photos and sharing, wrote in a blog post Monday that although the company got certain things right with Google+, there were a few choices that, "in hindsight, we've needed to rethink."</td></tr></table></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-07-30 19:33:56</td><td></td><td><a href='google_20.html'>The case has been broadly followed by the technology industry because it could affect how Google and others negotiate royalty rates on their technology. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 20:48:07</td><td><a href='https://www.yahoo.com/tech/google-fibers-next-city-is-its-biggest-yet-san-125953797214.html?src=rss'>site</a></td><td>Google Fiber's Next City Is Its Biggest Yet: San Antonio, Texas</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 21:21:10</td><td><a href='http://www.seattlepi.com/news/texas/article/Google-s-ultra-fast-Internet-service-expands-to-6426920.php'>site</a></td><td><table><tr><td>Google's ultra-fast Internet service expands to San Antonio</td></tr><tr><td>SAN ANTONIO (AP) - Google's ultra-fast Internet service is coming to San Antonio, the largest city yet to be promised the opportunity to accelerate the speed of their online access.</td></tr><tr><td>With the addition of San Antonio announced Wednesday, a total of 24 U.S. cities scattered through seven states have now been selected as markets for an Internet service called "Google Fiber."</td></tr><tr><td>Google Inc. is installing fiber-optic lines in selected cities to deliver Internet service at one gigabit per second, up to 100 times faster than existing services.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-07 11:05:00</td><td></td><td><a href='google_6.html'>Google made its roughly weekly security scans of Russian phones more frequent and was able to reduce the problems to close to the global norm. (5)</a></td></tr>
+</table></body></html>
