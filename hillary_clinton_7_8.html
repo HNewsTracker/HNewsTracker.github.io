@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 15:25:23</td><td><a href='http://www.foxnews.com/politics/2015/07/25/clinton-to-testify-before-house-committee-on-benghazi/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fpolitics+%28Internal+-+Politics+-+Text%29'>site</a></td><td>Clinton to testify before House committee on Benghazi</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03387/CLINTON_3387597b.jpg'></td><td>2015-07-25 17:52:41</td><td><a href='http://www.telegraph.co.uk/news/worldnews/us-politics/11763155/Hillary-Clinton-agrees-to-testify-before-Benghazi-committee.html'>site</a></td><td>Hillary Clinton has agreed to appear before a congressional committee investigating the 2012 attacks that killed the US ambassador to Libya and three other Americans in Benghazi, according to her presidential campaign.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:07:46</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28703929.html#storylink=rss'>site</a></td><td>Hillary Clinton says she will testify this October before a public hearing of the House committee investigating the deaths of four Americans in Benghazi, Libya.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/k/7/t/k/image.related.articleLeadwide.620x349.gikl7p.png/1437849643803.jpg'></td><td>2015-07-25 18:40:05</td><td><a href='http://www.brisbanetimes.com.au/world/hillary-clinton-set-to-testify-before-benghazi-panel-20150725-gikl7p'>site</a></td><td>Hillary Clinton set to testify before Benghazi panel</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/72/42/8366216/5/920x920.jpg'></td><td>2015-07-26 22:41:54</td><td><a href='http://www.sfgate.com/business/energy/article/In-Iowa-Clinton-says-climate-plan-will-promote-6406621.php'>site</a></td><td>Jan Bauer gets a hug from Democratic presidential candidate Hillary Rodham Clinton after introducing her to speak at a campaign event Sunday, July 26, 2015, at Iowa State University in Ames, Iowa.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 01:32:33</td><td><a href='http://www.reuters.com/article/2015/07/27/us-usa-election-clinton-energy-idUSKCN0Q00X920150727?feedType=RSS&feedName=politicsNews'>site</a></td><td>Clinton, the front-runner for her party's 2016 presidential nomination, also pledged to have more than half a billion solar panels installed nationwide within four years of taking office.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 18:50:11</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28862665.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton is detailing new energy proposals in Iowa to address climate change.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 15:45:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26934703.html#storylink=rss'>site</a></td><td>He also says Greece's creditors need to restructure the country's debt, though that would not necessarily mean they would have to write off a part of what Greece owes them.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150710&i=109507389&w=240&r=109507389-1&t=2'></td><td>2015-07-10 23:26:28</td><td><a href='http://www.reuters.com/article/2015/07/10/us-eurozone-greece-idUSKBN0P40EO20150710?feedType=RSS&feedName=businessNews'>site</a></td><td>Five of them signed a letter saying it would be better to return to the drachma, Greece's pre-euro currency, than to swallow more austerity with no debt write-off.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 05:23:15</td><td><a href='http://www.startribune.com/greece-talks-drag-beyond-deadline-amid-warnings-of-euro-exit/314504171/'>site</a></td><td>Although the country's annual budget deficit has come down dramatically, Greece's debt burden has increased as the economy has shrunk by a quarter.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 21:54:05</td><td><a href='http://www.miamiherald.com/news/business/article27378442.html#storylink=rss'>site</a></td><td>He expressed support for the Greek debt deal, saying it restores trust between Greece and its creditors and could help keep Greece in the common euro currency.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/d8/27/d3d7382b009f4a1ca90748d417cb0b52-7fcb1f3056a747ae925c1a038b6d80bd-0_1.jpg'></td><td>2015-07-24 18:56:28</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-talks-to-begin-after-technical-issues-ironed/nm54K/'>site</a></td><td>Since its first bailout in 2010, Greece's economy has shrunk by a quarter, while unemployment has rocketed to record peacetime highs and incomes have shrunk an average of 40 percent.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/bic94Ut6dvY8BI_hackjOw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-27T105619Z_1_LYNXNPEB6Q0F8_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-27 12:16:28</td><td><a href='http://finance.yahoo.com/news/eu-imf-mission-chiefs-start-105619219.html'>site</a></td><td>"In truth, the question is not whether to restructure Greece's debt but rather how to do it so that it would be really useful for the country's economy," he said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480388&ref=rss'>site</a></td><td>Euro currency emerges intact _ for now _ from Greek crisis</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437147797857.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150717-gif5rb'>site</a></td><td>"We are working to ensure that Greece remains a member of the euro because the euro is much more than a currency," Merkel told lawmakers in Berlin in a speech before the vote.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/greek_banks.jpg?itok=aXsVgT42'></td><td>2015-07-20 08:00:05</td><td><a href='http://www.sbs.com.au/news/article/2015/07/20/greek-banks-reopen-tsipras-eyes-return-normal'>site</a></td><td>The bank closures were the most visible sign of the crisis that took Greece to the brink of falling out of the euro earlier this month, potentially undermining the foundations of the single European currency.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/23/ca/1f/82506264bd3140048781407a5353cd42-04b561abd18c401fbfb6cd86716b6037-0.jpg'></td><td>2015-07-23 11:32:12</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-store-closures-spike-as-recession-austerity-/nm5QZ/'>site</a></td><td>Empty storefronts are again a feature of Greece's towns and cities amid a crisis that put Greece's future in the euro in doubt.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>They have openly voiced support for Greece to turn its back on the euro as its national currency.</td></tr>
 </table></body></html>

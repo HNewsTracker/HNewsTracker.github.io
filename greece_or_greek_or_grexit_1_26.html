@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 11:36:52</td><td><a href='http://finance.yahoo.com/news/greek-pm-tsipras-faces-party-022322066.html'>site</a></td><td>He and a parliamentary spokesman for Syriza railed against what he described as a "coup" by creditors to force Greece to accept harsh reforms, while opponents of the new measures are planning strikes and protests in the coming days.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/i4_8OYEnmSSSMDCPZK2d8Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-16T010055Z_1_LYNXNPEB6F012_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-16 01:46:51</td><td><a href='http://finance.yahoo.com/news/greek-parliament-approves-bailout-measures-005217349.html'>site</a></td><td>"I acknowledge the fiscal measures are harsh, that they won't benefit the Greek economy, but I'm forced to accept them," he said as he made a final appeal for support.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 09:00:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27106897.html#storylink=rss'>site</a></td><td>Merkel says Greece's European creditors have agreed to a Greek bailout in which "Greece will ask, after the current IMF program expires in spring 2016, for further participation of the IMF."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 23:05:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/24/greek-talks-to-begin-after-technical-issues-ironed-out'>site</a></td><td>In a statement Friday evening, the IMF confirmed it had received Greece's request for a new IMF loan and said it would work to arrange talks with Greece and its European creditors.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/d8/27/d3d7382b009f4a1ca90748d417cb0b52-7fcb1f3056a747ae925c1a038b6d80bd-0_1.jpg'></td><td>2015-07-24 23:05:24</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-talks-to-begin-after-technical-issues-ironed/nm54K/'>site</a></td><td>That is in accordance with the preliminary third bailout agreement Greece struck with its European partners on July 12, which called for IMF financing and monitoring for Greece from March 2016 - when current IMF financing ends.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-05 15:29:22</td><td><a href='http://www.reuters.com/article/2015/07/05/us-mideast-crisis-iraq-idUSKCN0PF0EA20150705?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Islamic State suicide bombers strike in Iraqi refinery town</td></tr><tr><td>The latest Islamic State offensive comes after authorities said they controlled nearly the whole town and expected to drive insurgents from the refinery within days.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 13:26:35</td><td><a href='http://www.foxnews.com/world/2015/07/18/saudi-arabia-says-it-stopped-islamic-state-attacks-400-held/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Saudi Arabia says it stopped Islamic State attacks; 400 held</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/dea/news/world/article25048376.ece/ALTERNATES/w220/CAITH103_Mideast_WikiLeaks_Saudi_Cables.JPG'></td><td>2015-07-18 14:11:06</td><td><a href='http://www.theglobeandmail.com/news/world/saudi-arabia-arrests-400-suspected-of-links-to-islamic-state/article25582715/?cmpid=rss1'>site</a></td><td>Saudi Arabia said Saturday it broke up planned Islamic State attacks in the kingdom, announcing it has arrested over 400 people in its raids.</td></tr>
 </table></body></html>

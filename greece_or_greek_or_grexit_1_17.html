@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/24/876/493/58de0c8dd1fbe410VgnVCM100000d7c1a8c0____-Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-07-24 11:31:51</td><td><a href='http://www.foxbusiness.com/markets/2015/07/24/greece-to-start-talks-with-creditors-for-new-bailout-after-technical-issues/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Greek government spokeswoman Olga Gerovasili sought to downplay talk that security concerns are a reason why European negotiators won't now arrive in Athens until Saturday at the earliest.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/d8/27/d3d7382b009f4a1ca90748d417cb0b52-7fcb1f3056a747ae925c1a038b6d80bd-0_1.jpg'></td><td>2015-07-24 18:56:28</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-talks-to-begin-after-technical-issues-ironed/nm54K/'>site</a></td><td>Greek government spokeswoman Olga Gerovasili said the final bailout agreement will be brought to Greece's parliament for approval on Aug. 18.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066095823&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L05Z'></td><td>2015-07-22 05:48:45</td><td><a href='http://www.reuters.com/article/2015/07/22/us-eurozone-greece-argentina-analysis-idUSKCN0PW0BT20150722?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Grexit debate down but not out, Argentina lessons remain</td></tr><tr><td>"Years from now, will Europeans look back and say we extended the bailout for Greece for too long?" said Mickey Levy, member of the U.S. Shadow Open Market Committee and co-author of a 2012 paper "Greece's predicament: Lessons from Argentina".</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-09 20:31:00</td><td><a href='http://www.cnbc.com/2015/07/09/british-government-tells-tourists-leave-tunisia.html'>site</a></td><td>In a statement, his office said the travel advice had been changed because "we do not believe the mitigation measures in place provide adequate protection for British tourists in Tunisia."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 08:18:36</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/tunisia-defends-efforts-to-protect-british-tourist/nmwdY/'>site</a></td><td>Tunisia defends efforts to protect British tourists</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 08:25:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article26935111.html#storylink=rss'>site</a></td><td>Tunisia's prime minister says that his country has done "everything in our power" to protect British and other foreign tourists, as British travelers flock to Tunisian airports under orders from their government to flee amid risks of terror attacks.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 11:12:29</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article26940118.html#storylink=rss'>site</a></td><td>The 30 Britons who died in Sousse were Thomson and First Choice customers and the operators - both owned by TUI Group - have no travelers in Tunisia.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 06:27:19</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/13/tunisia-tourism-may-be-crippled-by-european-warnings'>site</a></td><td>Tunisia tourism may be crippled by European warnings</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/52/14/8299302/5/square_gallery_thumb.jpg'></td><td>2015-07-13 06:27:19</td><td><a href='http://www.sfgate.com/news/world/article/Tunisia-tourism-may-be-crippled-by-European-6380913.php'>site</a></td><td>Up to 2 million hotel nights are expected to be lost over the next year, hastened by warnings from Britain and other European governments last week that their citizens are no longer safe on Tunisia's shores.</td></tr>
 </table></body></html>

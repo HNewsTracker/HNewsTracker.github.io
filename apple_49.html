@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/e878100539384fc53e3134739df4f737446d0b07/0_0_4056_2437/500.jpg'></td><td>2015-06-11 03:13:36</td><td><a href='http://www.theguardian.com/technology/2015/jun/11/apple-knew-about-demeaning-bag-checks-on-employees-before-lawsuit'>site</a></td><td><table><tr><td>The employee complaints, which a judge ordered unsealed, are part of a 2013 lawsuit alleging Apple should compensate employees for the time it takes to conduct the searches.</td></tr><tr><td>In the 2012 email to Cook, with a subject line "Fearless feedback from Apple retail specialist", the employee said Apple's policy implied the company did not trust its workers.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/Apple-Pay-UK-Launch-Date-iPhone-5S-Apple-Pay-Apple-Watch-UK-Apple-Pay-Banks-Santander-HSBC-Barclays-iPhone-6-316766.gif'></td><td>2015-07-13 19:07:00</td><td><a href='http://www.express.co.uk/life-style/science-technology/590858/Apple-Pay-UK-Launch-Everything-you-need-to-know?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-life-and-style-news+%28Daily+Express+%3A%3A+Life+%26+Style+Feed%29'>site</a></td><td><table><tr><td>Apple Pay UK launch: Everything you need to know</td></tr><tr><td>Will my bank let me use Apple Pay?</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03033/iPhones1-6Plus_3033420f.jpg'></td><td>2015-07-14 08:27:17</td><td><a href='http://www.telegraph.co.uk/technology/apple/11736823/Apple-Pay-UK-launch-how-and-where-to-use-it.html'>site</a></td><td>Apple Pay launches in UK - how and where to use it</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 21:25:03</td><td></td><td><a href='ukraine_28_29.html'>"And as far as I can tell, the only country that has stood side by side with Ukraine has been Canada, even during the Maidan by closing the embassy in Moscow. These are the right things to do. In finding that friendship, you keep finding the strength to move forward." (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://wpmedia.news.nationalpost.com/2015/07/cda_ukraine_embassy_201507121.jpg?w=620'></td><td>2015-07-12 21:25:03</td><td><a href='http://news.nationalpost.com/news/canada/investigation-uncovers-canadian-embassy-in-ukraine-was-used-as-haven-for-a-week-by-anti-government-protesters'>site</a></td><td>"Generally speaking in Ukrainian public opinion, as well in the Ukraine government of that time, there was a common understanding that Canadian sympathies are on the side of the protesters, pro-European, pro-democratic."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 21:39:05</td><td><a href='http://www.sfgate.com/news/article/US-to-expand-Ukraine-military-training-6403934.php'>site</a></td><td><table><tr><td>US to expand Ukraine military training</td></tr><tr><td>Spokesman Mark Toner said the new program would increase to more than $244 million the amount of U.S. security assistance provided to Ukraine since last year when conflict between Kiev and Russian-backed separatists escalated in the east of the country.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 21:39:05</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/24/us-to-expand-ukraine-military-training'>site</a></td><td>The State Department announced that the training would begin this fall in western Ukraine.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 21:45:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28597066.html#storylink=rss'>site</a></td><td>The White House said Biden and Poroshenko also talked about Ukraine's efforts to combat corruption and the urgency of seeking justice in the crash of Malaysia Airlines Flight MH-17, which was shot down over Ukraine just over a year ago.</td></tr>
 </table></body></html>

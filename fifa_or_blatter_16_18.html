@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297727194640_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-20 15:30:34</td><td><a href='http://www.torontosun.com/2015/07/20/blatters-news-conference-delayed-by-british-comedian-throwing-dollar-bills-at-fifa-president'>site</a></td><td>As Blatter took his seat, performer Simon Brodkin rose from a front-row seat to confront him.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 15:47:12</td><td><a href='http://www.miamiherald.com/sports/article27906970.html#storylink=rss'>site</a></td><td>As Blatter took his seat, performer Simon Brodkin rose from a front-row seat to speak and shower the FIFA president with what appeared to be fake money bills.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/717/sports/soccer/article25631462.ece/ALTERNATES/w220/CSPORTS_US_SOCCER_WORLDCUP2018_DRAW.JPG'></td><td>2015-07-27 18:52:01</td><td><a href='http://www.theglobeandmail.com/news/world/putin-people-like-blatter-deserve-nobel-prize/article25723878/?cmpid=rss1'>site</a></td><td>Blatter announced he was quitting in June over a bribery scandal being investigated by U.S., Swiss and other law enforcement agencies that plunged FIFA into the worst crisis in its 111-year history.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297729959159_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-27 18:57:12</td><td><a href='http://www.torontosun.com/2015/07/27/people-like-blatter-deserve-nobel-prize-putin-tells-swiss-tv'>site</a></td><td>On Saturday, at a meeting with Putin in St. Petersburg, Blatter said that FIFA, facing a major bribery scandal, had passed a resolution offering full support for holding the 2018 World Cup in Russia.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 11:43:28</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/28/sepp-blatter-deserves-the-nobel-prize-vladimir-putin-says'>site</a></td><td><table><tr><td>Blatter had opened the draw ceremony Saturday - held at a palace in St. Petersburg that is an official Putin residence - and warmly congratulated his host.</td></tr><tr><td>Putin said in the Swiss interview, recorded Saturday in St. Petersburg, that he was sure Blatter was not corrupt.</td></tr></table></td></tr>
 </table></body></html>

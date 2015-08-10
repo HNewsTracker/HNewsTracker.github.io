@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/h/t/w/o/p/image.related.articleLeadwide.620x349.ghtwon.png/1434918117842.jpg'></td><td>2015-06-21 18:10:18</td><td><a href='http://www.smh.com.au/world/egypts-arrest-of-aljazeera-journalist-poses-political-problem-for-germany-20150621-ghtwon'>site</a></td><td><table><tr><td>Mansour told Al-Jazeera by telephone: "The German authorities told me that we are dealing with an international criminal case" and a judge would decide whether he should be extradited to Egypt.</td></tr><tr><td>Egypt released Australian Al-Jazeera journalist Peter Greste in February this year after 400 days in prison on charges that included aiding a terrorist group.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6562282-3x2-340x227.jpg'></td><td>2015-06-21 19:43:19</td><td><a href='http://www.abc.net.au/news/2015-06-22/german-authorities-detain-al-jazeera-journalist-egypts-request/6562272'>site</a></td><td>A high-profile Al Jazeera journalist has been arrested in Germany at the request of Egypt.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/images/International/WireAP_f22244f1386a4e14baf854aaef96c676_16x9_992.jpg'></td><td>2015-06-22 17:46:33</td><td><a href='http://abcnews.go.com/International/wireStory/german-court-decide-al-jazeera-journalists-fate-31934475'>site</a></td><td>Egypt considers Al-Jazeera a mouthpiece of the Muslim Brotherhood, the Islamist group that it has labelled a terrorist organization.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 13:51:40</td><td><a href='http://www.daytondailynews.com/ap/ap/international/sister-of-jailed-egypt-activist-urges-is-not-to-ki/nnFXq/'>site</a></td><td><table><tr><td>Sister of jailed Egypt activist urges IS not to kill Croat</td></tr><tr><td>The sister of a woman jailed in Egypt for alleged ties to the outlawed Muslim Brotherhood is urging the Islamic State group not to kill a Croatian hostage.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-14 12:08:21</td><td><a href='http://www.foxnews.com/world/2015/06/14/separate-bus-crashes-in-egypt-kill-23-injure-17-others/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>CAIRO - Officials say two separate road accidents in Egypt Sunday have killed 23 Egyptians and injured 17 others.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-06-14 12:15:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11465212&ref=rss'>site</a></td><td>Bus crashes in Egypt kill 23, injure 17 others</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 06:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11492542&ref=rss'>site</a></td><td><table><tr><td>A look at Egypt's Suez Canal, past and present</td></tr><tr><td>CAIRO (AP) " Egypt is to unveil a major expansion of the Suez Canal on Thursday in what the government hopes will be a moment of national pride following years of political unrest.</td></tr><tr><td>The canal is one of Egypt's top foreign currency earners and is seen as a symbol of its modern state.</td></tr><tr><td>The last, in 1973, saw Egypt launch a surprise attack across the canal that is now remembered as the country's greatest battlefield victory.</td></tr></table></td></tr>
 </table></body></html>

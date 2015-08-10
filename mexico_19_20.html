@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-06-30 20:44:03</td><td><a href='http://abcnews.go.com/International/wireStory/year-mexico-army-slayings-calls-justice-mount-32133154'>site</a></td><td>None has been charged, although about 20 are under investigation, the Mexico State prosecutors' office said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 03:40:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11474776&ref=rss'>site</a></td><td><table><tr><td>Mexico: 7 police charged with torture in army slaying case</td></tr><tr><td>Four of the police officers have been detained and a judge is expected to issue an arrest warrant for the other three, according to a statement from the Attorney General's Office in Mexico State, where the killings took place.</td></tr><tr><td>Three women who survived came forward to say that agents of the Mexico State prosecutor's office had tortured them to support the army's version.</td></tr><tr><td>Before Wednesday, no charges had been filed against any of the detectives or prosecutor's agents accused of trying to cover up the case, although the Mexico State prosecutor had said about 20 were under investigation.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-02 03:40:45</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-police-charged-torture-army-slaying-case-32172699'>site</a></td><td>Authorities in Mexico on Wednesday formally accused seven state police officers of torturing three women who survived a confrontation a year ago in which soldiers allegedly killed at least a dozen suspected gang members after they surrendered.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 15:50:45</td><td><a href='http://www.startribune.com/new-mexico-police-chief-wants-1971-fugitive-in-cuba-returned/318296391/'>site</a></td><td><table><tr><td>New Mexico police chief wants fugitive in Cuba returned for 1971 officer's death</td></tr><tr><td>ALBUQUERQUE, N.M. - The New Mexico State Police chief says he would personally pay for a return ticket for a fugitive living in Cuba wanted in the killing of a New Mexico police officer.</td></tr><tr><td>Hill fled to the communist island after authorities say he killed state police officer Robert Rosenbloom in New Mexico in 1971.</td></tr></table></td></tr>
 </table></body></html>

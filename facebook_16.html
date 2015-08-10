@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/facebook55.jpg?ve=1&tl=1'></td><td>2015-07-10 17:14:58</td><td><a href='http://www.foxbusiness.com/technology/2015/07/10/facebook-looking-to-stream-music-videos/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Facebook Looking to Stream Music Videos</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297499872614_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-10 18:52:48</td><td><a href='http://www.torontosun.com/2015/07/10/facebook-looking-to-add-music-videos'>site</a></td><td><table><tr><td>Labels would be able to choose the videos in question, and Facebook share any resulting advertising revenue with them.</td></tr><tr><td>Music videos could help Facebook to grow its video views, and in turn steal more eyeballs from YouTube.</td></tr><tr><td>Facebook didn't immediately respond to a request for comment on its music video plans.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 20:55:51</td><td></td><td><a href='facebook_16_17.html'>"In many cases, evidence on their Facebook accounts directly contradicted the lies the defendants told to the Social Security Administration" about being too psychologically devastated to work, district attorney's office spokeswoman Joan Vollero said Tuesday. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 20:55:51</td><td><a href='http://www.startribune.com/facebook-loses-in-clash-with-prosecutors-over-users-data/317956131/'>site</a></td><td>Google, Twitter and other online players joined the case on Facebook's side, as did the American and New York civil liberties union.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 23:44:08</td><td><a href='http://www.foxbusiness.com/markets/2015/07/21/facebook-loses-in-clash-with-prosecutors-over-warrants-for-users-data-weighing/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td><table><tr><td>Facebook had lost earlier rulings and already turned the data over.</td></tr><tr><td>Facebook said it was weighing its options for continuing the fight.</td></tr></table></td></tr>
 </table></body></html>

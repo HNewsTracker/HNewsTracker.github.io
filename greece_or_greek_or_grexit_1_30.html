@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 09:41:51</td><td><a href='http://www.reuters.com/article/2015/07/12/eurozone-greece-reaction-idUSL5N0ZS04J20150712?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Lawmakers including in Germany, Greece's biggest creditor, are sceptical over whether Athens will carry out reforms that the Greek people overwhelmingly rejected in the referendum.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 05:10:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484028&ref=rss'>site</a></td><td>Lawmakers also agreed to deep reforms in Greece's pension system including a gradual phasing out of all early retirement options.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/e/a/o/3/image.related.articleLeadwide.620x349.gieb3r.png/1437105022942.jpg'></td><td>2015-07-17 03:52:11</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-banks-due-to-reopen-on-monday-20150717-gieb3r.html'>site</a></td><td>But parliament's endorsement won rare praise from European creditors and gave them a reason to lift - at least for now - the threat of economic oblivion that has hung over Greece for nearly a month.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-23 02:45:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article28082050.html#storylink=rss'>site</a></td><td>Addressing parliament before the vote, Tsipras said the reforms were a necessary price to pay to keep Greece alive after stormy talks with its creditors nearly collapsed earlier this month.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 06:54:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Bailout/id-d3bbd9fbded74b2493658337cbb01aaa'>site</a></td><td>The European Commission welcomed the Greek Parliament's vote in favor of further reforms, saying it had taken "another important step toward implementing its commitments" made during a summit of European leaders last week.</td></tr>
 </table></body></html>

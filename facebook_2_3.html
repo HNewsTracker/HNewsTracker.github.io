@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-02 14:47:09</td><td><a href='http://www.foxbusiness.com/technology/2015/07/02/armchair-activism-or-shifting-tide-facebook-profile-photos-turn-rainbow/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td><table><tr><td>Many of her "equally joyous" Facebook friends were turning rainbow, so she did the same.</td></tr><tr><td>Not long after the rainbows appeared, so did questions about whether Facebook was tracking people who changed their photos and what it was going to do with the information.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-02 15:34:00</td><td><a href='http://www.chicagotribune.com/bluesky/technology/ct-rainbow-facebook-photos-activism-20150702-story.html'>site</a></td><td><table><tr><td>Rainbow Facebook photos: Armchair activism or shifting tide?</td></tr><tr><td>More than 26 million Facebook profile photos have taken on a rainbow hue in the days since the U.S. Supreme Court ruled on Friday that marriage is a right guaranteed under the Constitution regardless of a person's sexual orientation.</td></tr><tr><td>People have been covering their profile photos with the Facebook-supplied overlay that uses the best-known symbol of the lesbian, gay, bisexual and transgender rights movement: the rainbow.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/bu66NMRSstRdYOnw2aV9Yw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_OLINTECH_Wrapper_NewFeed_1/2015-07-27T084555Z_1_LYNXNPEB6Q0AV_RTROPTP_3_FACEBOOK-WHATSAPP_original.jpg'></td><td>2015-07-27 08:45:55</td><td><a href='http://finance.yahoo.com/news/facebook-scale-free-mobile-internet-084555228.html'>site</a></td><td><table><tr><td>Facebook to scale up free mobile Internet service to boost usage</td></tr><tr><td>MUMBAI (Reuters) - Facebook Inc plans to scale up its service to offer free basic Internet on mobile phones, an executive said, after introducing the application in 17 developing countries over the past year.</td></tr><tr><td>In a blog post released to mark the first year of the initiative, Facebook said it will open a portal allowing any mobile operator to offer the service under its Internet.org platform.</td></tr><tr><td>Facebook currently partners with specific operators to launch the service in different countries.</td></tr><tr><td>Facebook was not paying for any of the data being used to access the service, he said.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 12:10:00</td><td></td><td><a href='ukraine_10_11.html'>An armistice signed in February by Ukraine, Russia and the Russia-backed rebels called for local elections in eastern rebel-held areas as one of the steps to toward a comprehensive cease-fire, which has not been reached yet. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/17/876/493/Ukraine-1.jpg?ve=1&tl=1'></td><td>2015-07-17 12:10:00</td><td><a href='http://www.foxnews.com/world/2015/07/17/ukraine-parliament-calls-local-elections-in-october-but-not-in-rebel-held-east/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The Kiev government has had no control over parts of eastern Ukraine since separatist rebels began fighting government forces there in April 2014, a conflict that has since claimed more than 6,400 lives.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 21:05:35</td><td></td><td><a href='ukraine_10_11.html'>The United States rejects the claim and says Russian troops are backing separatist fighters in eastern Ukraine, violating that country's sovereignty. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 21:05:35</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/13/general-us-considering-training-for-ukrainian-army'>site</a></td><td>"It's got to be something that Ukraine and the U.S. and other participating nations would all agree on," Hodges said, adding that it would be similar to the kinds of training now provided to national guardsmen near Lviv, close to the Polish border.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 21:11:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27146440.html#storylink=rss'>site</a></td><td>Sen. John McCain has been a vocal critic of the administration's approach, calling it timid and insufficiently supportive of the Ukraine government.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 21:11:05</td><td><a href='http://www.miamiherald.com/news/politics-government/article27146440.html#storylink=rss'>site</a></td><td>General: US considers expanding Ukraine training to army</td></tr>
 </table></body></html>
