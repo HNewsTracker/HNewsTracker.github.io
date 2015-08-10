@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/8/1/w/u/image.related.articleLeadwide.620x349.gicj7o.png/1436756201289.jpg'></td><td>2015-07-15 13:01:53</td><td><a href='http://www.brisbanetimes.com.au/world/mh17-anniversary-in-russia-conspiracy-theories-on-downed-plane-still-find-believers-20150715-gicj7o.html'>site</a></td><td>But MH17 crash theories are also propelled by humanity's unfortunate addiction to conspiracy theories.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/8/1/w/u/image.related.articleLeadwide.620x349.gicj7o.png/1436972150449.jpg'></td><td>2015-07-15 14:43:07</td><td><a href='http://www.brisbanetimes.com.au/world/mh17-anniversary-in-russia-conspiracy-theories-on-downed-plane-still-find-believers-20150715-gicj7o.html'>site</a></td><td>London: Days after the MH17 crash, independent Russian newspaper Novaya Gazeta seemed to have little doubt as to who was responsible.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/8/1/w/u/image.related.articleLeadwide.620x349.gicj7o.png/1436972150449.jpg'></td><td>2015-07-15 14:43:07</td><td><a href='http://www.smh.com.au/world/mh17-anniversary-in-russia-conspiracy-theories-on-downed-plane-still-find-believers-20150715-gicj7o.html'>site</a></td><td>MH17 anniversary: In Russia, conspiracy theories on downed plane still find believers</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/b/2/i/x/image.related.articleLeadwide.620x349.giadyh.png/1436802388311.jpg'></td><td>2015-07-13 15:46:51</td><td><a href='http://www.smh.com.au/world/mh17-the-sunflowers-family-of-victim-fatima-dyczynski-plant-a-seed-of-undying-love-for-their-daughter-20150713-giadyh.html'>site</a></td><td><table><tr><td>Jerzy and Angela Dyczynski visit the MH17 crash site near the village of Grabovo in Donetsk region on July 26, 2014.</td></tr><tr><td>Jerzy Dyczynski, left, and Angela Dyczynski, right, with Maria Condipodero and Sarina Giglia, open the packet of sunflower seeds harvested from the MH17 cockpit crash site on the outskirts of Rassypnoe in East Ukraine.</td></tr></table></td></tr>
 </table></body></html>

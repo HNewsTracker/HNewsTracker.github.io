@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/46/14/8282898/19/gallery_thumb.jpg'></td><td>2015-07-10 03:35:44</td><td><a href='http://www.seattlepi.com/business/energy/article/US-stocks-gain-in-early-trading-European-China-6375091.php'>site</a></td><td>GREEK SAGA: Greece and its European creditors appeared to be narrowing their differences after Athens offered a raft of proposals to reduce the cost of pensions, hike taxes and cut state spending.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-10 14:15:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479201&ref=rss'>site</a></td><td>Greece and its creditors appeared to be narrowing their differences after Athens offered reform proposals in order to secure a third bailout of around 53 billion euros ($59.5 billion).</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-10 15:45:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article26934703.html#storylink=rss'>site</a></td><td>Greece has sent creditors a list of reform proposals in order to get 53.5 billion euros ($59.5 billion) of financing for three years and is hopeful of getting some sort of debt relief in return.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/18/876/493/Greece Privatization-5.jpg?ve=1&tl=1'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.foxnews.com/world/2015/07/18/greece-leftist-government-pledges-privatization-push-experts-doubt-50b-euro/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>It was formed in 2011 following demands by Greece's creditors to embark on a privatization wave, but has collected only 3.5 billion euros so far.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td>On Monday, a survey showed Greek manufacturing activity plunged to a record low as new orders plummeted and the three-week bank shutdown caused serious supply problems.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 12:54:27</td><td><a href='http://nypost.com/2015/08/03/greek-stock-market-reopens-to-a-bloodbath/'>site</a></td><td>Financial information company Markit said its gauge of manufacturing activity in Greece plummeted during the month to 30.2 points, its lowest ever reading, despite improvements across the rest of the 19-country eurozone.</td></tr>
 </table></body></html>

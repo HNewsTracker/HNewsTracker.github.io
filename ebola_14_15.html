@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 18:25:24</td><td><a href='http://www.chron.com/news/medical/article/Head-of-CDC-in-Sierra-Leone-as-concerns-grow-from-6421234.php'>site</a></td><td>CDC head says Sierra Leone in strong place with Ebola</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 18:25:24</td><td><a href='http://www.daytondailynews.com/ap/ap/international/head-of-cdc-in-sierra-leone-as-concerns-grow-from-/nnByq/'>site</a></td><td>Two new cases of Ebola surfaced in Sierra Leone's Northern Tonkolili District after a man died last week.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/40/04/31/8406638/3/920x920.jpg'></td><td>2015-08-03 19:07:18</td><td><a href='http://www.sfgate.com/world/article/New-Ebola-infections-raise-concerns-in-Sierra-6422022.php'>site</a></td><td>The concerns come as the director of the U.S. Center for Disease Control and Prevention, Dr. Tom Frieden, is in Sierra Leone to observe the impact of the Ebola outbreak and to assess steps needed to get the country to zero cases.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-06 15:53:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/sierra-leone-ebola-head-says-country-has-4-cases/nnDyh/'>site</a></td><td>Sierra Leone has only four recorded cases of Ebola, the West African nation's head of Ebola said Thursday, adding that he is hopeful the countdown to zero can soon begin.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/d/b/g/l/image.related.articleLeadwide.620x349.gidbdx.png/1436995549960.jpg'></td><td>2015-07-15 21:26:04</td><td><a href='http://www.smh.com.au/world/liberia-confirms-new-ebola-case-as-outbreak-spreads-20150715-gidbdx'>site</a></td><td><table><tr><td>Monrovia: A Liberian woman has died of Ebola in a hospital shortly after being admitted, becoming the sixth confirmed case and second death since the virus resurfaced last month, a senior medical official said.</td></tr><tr><td>A health report sent to officials in the anti-Ebola response unit said the woman died a few hours after admission, indicating that surveillance of known contacts from the earlier cases had not been rigorous enough.</td></tr></table></td></tr>
 </table></body></html>

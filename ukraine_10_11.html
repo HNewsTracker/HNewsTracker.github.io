@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 21:05:35</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/13/general-us-considering-training-for-ukrainian-army'>site</a></td><td><table><tr><td>The United States rejects the claim and says Russian troops are backing separatist fighters in eastern Ukraine, violating that country's sovereignty.</td></tr><tr><td>Ukraine has battled Russian-backed separatists in its eastern region since April 2014.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 20:11:33</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/10/us-warns-of-sharp-rise-in-separatist-attacks-in-ukraine'>site</a></td><td><table><tr><td>US warns of sharp rise in separatist attacks in Ukraine</td></tr><tr><td>WASHINGTON (AP) - The United States says Ukrainian rebels launched more attacks over the last three days than any similar time period since February, in what may be an escalating effort by Russian-backed militants to destabilize Ukraine's Western-backed government.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 20:11:33</td><td><a href='http://www.daytondailynews.com/ap/ap/political/us-warns-of-sharp-rise-in-separatist-attacks-in-uk/nnG3D/'>site</a></td><td><table><tr><td>State Department spokesman John Kirby says the attacks include a heavy artillery assault on a southeastern Ukraine town.</td></tr><tr><td>Kirby says since Saturday, three soldiers have been killed and 35 wounded in 127 distinct separatist attacks reported by Ukraine.</td></tr></table></td></tr>
 </table></body></html>

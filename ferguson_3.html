@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 16:25:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28824685.html#storylink=rss'>site</a></td><td><table><tr><td>Ferguson presses cleanup bid ahead of Brown anniversary</td></tr><tr><td>One of the areas hardest hit by last year's unrest in Ferguson, Missouri, that followed the police shooting death of 18-year-old Michael Brown is getting a little sprucing.</td></tr><tr><td>An organizer, Roy Gillespie, says the cleanup was less about beautification than it was about building regional unity by drawing in Ferguson residents and outsiders to pitch in.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 16:25:15</td><td><a href='http://www.startribune.com/ferguson-presses-cleanup-bid-ahead-of-brown-anniversary/318660421/'>site</a></td><td>Ferguson presses several-hour, unity-minded cleanup effort ahead of Brown anniversary</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 04:30:13</td><td></td><td><a href='ferguson_3_4.html'>ST. LOUIS (AP) - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td><table><tr><td>Year later, AP reporter recalls origins of Ferguson movement</td></tr><tr><td>Until August 2014, Ferguson, Missouri, wasn't the kind of place that generated much news.</td></tr><tr><td>My wife's grandmother lived in Ferguson until she died in 1991, so I spent some time there as a young man.</td></tr><tr><td>Never before had the anger been as intense as in Ferguson.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 13:01:27</td><td></td><td><a href='ferguson_3_5.html'>What we didn?t know at the time was the depth of mistrust between black residents and the predominantly white Ferguson Police Department, a level of suspicion that no doubt fueled what happened next. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 15:43:38</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-b8fcdb039d93406ebc63851a514f5286'>site</a></td><td>Ferguson became the impetus for a national movement.</td></tr>
 </table></body></html>

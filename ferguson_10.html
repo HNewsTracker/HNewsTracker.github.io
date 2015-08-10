@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,16 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>state islamic</h3>
+    <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6491698-3x2-340x227.jpg'></td><td>2015-07-18 14:29:08</td><td><a href='http://www.abc.net.au/news/2015-07-19/431-islamic-state-suspects-arrested-saudi-arabia-says/6631042'>site</a></td><td>Saudi Arabia has arrested 431 people suspected of belonging to Islamic State (IS) militant group cells, the interior ministry says.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 14:59:41</td><td><a href='http://www.reuters.com/article/2015/07/18/us-saudi-security-idUSKCN0PS0GQ20150718?feedType=RSS&feedName=worldNews'>site</a></td><td>DUBAI Saudi Arabia has arrested 431 people suspected of belonging to Islamic State cells and thwarted attacks on mosques, security forces and a diplomatic mission, the interior ministry said on Saturday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-02 15:53:14</td><td></td><td><a href='ferguson_10_11.html'>Lawmakers filed about 65 bills stemming from the events in Ferguson passing just one, a measure limiting municipal court fines and traffic tickets. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-02 17:53:41</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article29797039.html#storylink=rss'>site</a></td><td><table><tr><td>Numerous cities from coast-to-coast, including Ferguson, also began using the cameras without waiting for legislative direction.</td></tr><tr><td>Any Ferguson-inspired changes should focus on training police commanders to make better decisions on when and how to use their officers and equipment, said Jim Pasco, executive director of the Fraternal Order of Police.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-02 17:53:41</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article29797039.html#storylink=rss'>site</a></td><td>Ferguson spurs 40 new state measures; activists want more</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 01:33:21</td><td></td><td><a href='ferguson_10_12.html'>FILE - In this Aug. 9, 2014, file photo, a police tactical team moves in to disperse a group of protesters following the shooting of a young black man by a white policeman in Ferguson, Mo. (6)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 24,
+            max: 26,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 24 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 26 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -72,4 +72,6 @@
   <tr><td style='display:none'>21</td><td></td><td>2015-07-27 15:24:00</td><td><a href='http://www.latimes.com/world/middleeast/la-fg-u-s-turkey-islamic-state-syria-20150727-story.html'>site</a></td><td><table><tr><td>The Syrian Kurds are among the most effective ground forces battling the Islamic State group and have been aided by U.S.-led airstrikes, but Turkey fears they could revive an insurgency against Ankara in pursuit of an independent state.</td></tr><tr><td>The PKK is fighting Islamic State "for power, not for peace, not for security."</td></tr></table></td></tr>
   <tr><td style='display:none'>22</td><td></td><td>2015-07-28 15:50:14</td><td><a href='http://www.startribune.com/ap-news-guide-turkish-us-deal-may-have-far-reaching-effects/318879191/'>site</a></td><td>A 110-kilometer (68-mile) stretch along the Turkish border in Syria is under Islamic State control.</td></tr>
   <tr><td style='display:none'>23</td><td></td><td>2015-07-30 21:48:41</td><td><a href='http://www.sfgate.com/world/article/Turkey-onslaught-on-Kurds-after-Islamic-State-6415926.php'>site</a></td><td>The PKK is affiliated with, but separate from, Syrian Kurdish fighters allied with the United States in its fight against the Islamic State group.</td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-08-05 10:39:23</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/05/turkey-says-extensive-fight-against-is-to-start-soon'>site</a></td><td>His comments came following reports that members of the Free Syrian Army who went through a U.S. training program to fight Islamic State militants were captured by the al-Qaida-linked Nusra Front in Syria.</td></tr>
+  <tr><td style='display:none'>25</td><td><img src='ww.smh.com.au/content/dam/images/g/i/p/7/h/6/image.related.articleLeadwide.620x349.giw3g6.png/1439229671565.jpg'></td><td>2015-08-10 18:01:25</td><td><a href='http://www.smh.com.au/world/nusra-front-says-it-will-withdraw-from-frontline-against-islamic-state-in-syria-20150810-giw3g6'>site</a></td><td>The Nusra Front's withdrawal from rural positions north-east of the Syrian city of Aleppo came amid newly announced steps by Turkey and the United States to fight the Islamic State in Syria.</td></tr>
 </table></body></html>

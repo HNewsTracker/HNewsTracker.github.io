@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 11,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -58,4 +58,5 @@
   <tr><td style='display:none'>7</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/b5/1c/6cb0f1c2e1c64dbdba8d1ee70f6a69f4-20123b60fc754d9bba88b3dddc1f31df-0.jpg'></td><td>2015-07-17 12:13:24</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ukrainian-village-marks-anniversary-of-malaysian-p/nm2JG/'>site</a></td><td>The Netherlands was the hardest-hit nation in the MH17 disaster - 196 of the victims were Dutch nationals.</td></tr>
   <tr><td style='display:none'>8</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 12:17:03</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27471565.html#storylink=rss'>site</a></td><td>Ukrainian men hold flowers as they offer them at the Netherlands Embassy for the Malaysia Airlines Flight MH17 crash victims, in Kiev, Ukraine, Friday, July 17, 2015.</td></tr>
   <tr><td style='display:none'>9</td><td></td><td>2015-07-29 04:33:57</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article29264437.html#storylink=rss'>site</a></td><td>The foreign ministers of the Netherlands, Australia and Ukraine will address what is likely to be an emotional meeting over the downing that killed all 298 people on board Flight MH17.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='ww.smh.com.au/content/dam/images/g/i/w/3/d/1/image.related.articleLeadwide.620x349.giw3cm.png/1439223475835.jpg'></td><td>2015-08-10 16:42:46</td><td><a href='http://www.smh.com.au/world/mh17-report-australian-flight-safety-experts-to-test-crash-theory-20150810-giw3cm'>site</a></td><td>London: Australian flight safety experts will examine a reconstruction of part of the MH17 plane to test their theory on why it crashed.</td></tr>
 </table></body></html>
