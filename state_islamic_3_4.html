@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/37/50/42/8292495/41/square_gallery_thumb.jpg'></td><td>2015-07-11 15:46:57</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Blast-at-Italian-Consulate-in-Cairo-6378938.php'>site</a></td><td><table><tr><td>The Latest: Islamic State claims Italian Consulate blast</td></tr><tr><td>Online supporters of an Islamic State affiliate in Egypt are circulating a claim of responsibility for the car bombing that killed one person outside of the Italian Consulate in Cairo.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 07:18:42</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/11/bush-links-clinton-to-rise-of-islamic-state'>site</a></td><td>"The threat of global jihad, and of the Islamic State in particular, requires all the strength, unity and confidence that only American leadership can provide," Bush will say, according to excerpts of his remarks as prepared for delivery.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/40/16/27/8447464/5/square_gallery_thumb.jpg'></td><td>2015-08-11 07:18:42</td><td><a href='http://www.sfgate.com/news/article/Bush-links-Clinton-to-rise-of-Islamic-State-6436760.php'>site</a></td><td>Bush links Clinton to rise of Islamic State</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 07:23:08</td><td><a href='http://www.miamiherald.com/news/politics-government/article30677460.html#storylink=rss'>site</a></td><td>Bush has yet, either on the campaign trail or in the preview of his Tuesday speech released by his campaign, to say exactly what a U.S.-led campaign against the Islamic State would look like if he is elected president.</td></tr>
 </table></body></html>

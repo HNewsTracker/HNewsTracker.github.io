@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 14,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,18 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>11</td><td></td><td>2015-07-20 14:41:45</td><td></td><td><a href='state_islamic_22_33.html'>A second official also said Islamic State appeared to have been responsible and that the attack was a "retaliation for the Turkish government's efforts to fight terrorism". (2)</a></td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-07-20 20:14:07</td><td></td><td><a href='state_islamic_22_34.html'>The PKK held Ankara responsible for Monday's attack, saying it had "supported and cultivated" Islamic State against the Kurds. (2)</a></td></tr>
-  <tr><td style='display:none'>14</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/q/e/e/image.related.thumbnail.90x60.gigq9a.png/1437461326733.jpg'></td><td>2015-07-21 12:19:25</td><td><a href='http://www.smh.com.au/world/turkey-denies-turning-blind-eye-to-islamic-state-as-bombing-stokes-anger-20150721-gihkhw.html'>site</a></td><td><table><tr><td>Authorities have carried out a string of raids in recent weeks to arrest Islamic State suspects.</td></tr><tr><td>They have also blocked more than half a dozen Islamist news websites, prompting one group claiming allegiance to Islamic State to accuse Turkey of persecuting Muslims and declare: "Muslims might retaliate."</td></tr></table></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-21 18:07:00</td><td></td><td><a href='state_islamic_22_24.html'>Some analysts say that because of Turkey's aggressive policies against Syrian President Bashar Assad in that country's civil war, it has allowed militants of many stripes to operate in Turkey, providing cover to the Islamic State group. (2)</a></td></tr>
-  <tr><td style='display:none'>13</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/21/67/19/dbc26e0ed08c4b2381fac37d6302d5af-5a14a0c6af184358ad3499564f5499d2-0.jpg'></td><td>2015-07-21 18:07:00</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/bombing-shows-turkey-a-vulnerable-target-for-islam/nm4KR/'>site</a></td><td>Social media affiliated with the Islamic State group have been conspicuously silent.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 14:27:35</td><td></td><td><a href='state_islamic_22_27.html'>On Tuesday, Prime Minister Ahmet Davutoglu rejected accusations that Turkey had tacitly supported Islamic State and had unwittingly opened the door to the bombing; but he said initial evidence suggested the Islamist radical group was responsible. (5)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-22 23:08:45</td><td></td><td><a href='state_islamic_22_28.html'>"The investigation is ongoing, but we have evidence that the suspect was linked to Daesh," the official said, speaking on a condition of anonymity in line with government protocol, using an Arabic acronym for the Islamic State. (2)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-07-23 14:55:45</td><td></td><td><a href='state_islamic_22_30.html'>Suspected Islamic State militants fired at a Turkish military outpost from inside Syrian territory Thursday, killing a Turkish soldier and wounding two others, an official said. (2)</a></td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-07-24 07:55:33</td><td></td><td><a href='state_islamic_22_31.html'>Turkey launches fight against Islamic State and allows US warplanes to use bases for airstrikes (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 06:14:07</td><td></td><td><a href='state_islamic_22_23.html'>Turkish warplanes struck Islamic State group targets across the border in Syria early Friday, in a strong tactical shift for Turkey which had long been reluctant to join the U.S.-led coalition against the extremist group. (36)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 12:44:21</td><td></td><td><a href='state_islamic_22_29.html'>Tensions flared again after an Islamic State suicide bombing in the southeastern Turkish city of Suruc last week killed 32 people. (5)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-07-27 17:50:59</td><td></td><td><a href='state_islamic_22_26.html'>"The rise of Islamic State in northern Iraq, in northern Syria, has effectively destabilized the southern border of Turkey. But also domestically, the threat of terrorism has become very real," Lete told The Associated Press. (2)</a></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-07-28 15:50:14</td><td></td><td><a href='state_islamic_22_32.html'>The deal further embroils Turkey, a key NATO ally, in Syria's civil war, and also catapults it into a front-line position in the global war against the Islamic State group. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 15:50:14</td><td></td><td><a href='state_islamic_22_25.html'>An Islamic State-free zone along the Syria-Turkish border - through which the group has smuggled foreign fighters, oil and other goods for the past year - would strangle the militants in Syria, weakening the group. (8)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/ows_1432679317346.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-19 17:45:23</td><td><a href='http://www.startribune.com/in-an-is-training-camp-children-told-behead-the-doll/317324521/'>site</a></td><td>When Islamic State extremists overran Yazidi towns in northern Iraq last year, they butchered older men and enslaved many of the women and girls.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 18:07:05</td><td></td><td><a href='state_islamic_22_23.html'>He explained how more than 120 children inside the camp had to line up and they were each given a doll and a sword, waiting for their next lesson by their Islamic State group instructors: Behead the doll. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 03:31:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/article27891829.html#storylink=rss'>site</a></td><td>The caliphate is an historic form of Islamic rule that the group claims to be reviving with its own radical interpretation, though the vast majority of Muslims reject its claims.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 03:31:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27891829.html#storylink=rss'>site</a></td><td>A Syrian preacher, right, gives religious lessons to young Syrians April 19 at an Islamic teaching center designed to counter Islamic State group indoctrination, near the Turkish-Syrian border city of Sanliurfa, southern Turkey.</td></tr>
 </table></body></html>

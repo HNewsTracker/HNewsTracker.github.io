@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/28/de/52/41c185b1794c4021b747d3993dfe58c4-24dc9bbb84f74783b50a8db24a1d4c32-0.jpg'></td><td>2015-07-28 06:50:32</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/summer-camp-for-iraqi-shiite-boys-training-to-figh/nm7hw/'>site</a></td><td><table><tr><td>The Associated Press has found that militia forces battling the Islamic State group are actively training children under 18 years old.</td></tr><tr><td>FILE - In this Sunday, March 15, 2015, file photo, young Shiite volunteer militia fighters pose for a photo before battle against Islamic State fighters in Tikrit, Iraq.</td></tr><tr><td>It's yet another way minors are being dragged into Iraq's brutal war as the military, Shiite militias and Kurdish fighters battle to take back territory from Islamic State militants, who seized much of the country's north and west over the past year.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 06:50:32</td><td><a href='http://www.foxnews.com/world/2015/07/28/at-shiite-militia-summer-camps-iraqi-children-undergo-training-to-fight-islamic/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>BAGHDAD - A quiet middle-class Shiite neighborhood in western Baghdad was transformed recently into a mini-boot camp, training teenagers for battle against the Islamic State group.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 06:55:16</td><td><a href='http://www.startribune.com/summer-camp-for-iraqi-shiite-boys-training-to-fight-is/318749101/'>site</a></td><td>At Shiite militia 'summer camps', Iraqi children undergo training to fight Islamic State</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-28 07:10:18</td><td><a href='http://www.startribune.com/summer-camp-for-iraqi-shiite-boys-training-to-fight-is/318750261/'>site</a></td><td>BAGHDAD - In the steamy Baghdad night, sweat poured down the faces of the Iraqi teens as they marched around a school courtyard, training for battle against the Islamic State group.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-28 17:40:09</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/iraqi-militias-train-young-teens-to-face-the-threa/nm7zy/'>site</a></td><td>For Iraq's Shiite majority, the war against the Islamic State group - which views them as heretics to be killed - is a life-or-death fight for which the entire community has mobilized.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/e/8/d/n/image.related.articleLeadwide.620x349.gie8az.png/1437057710413.jpg'></td><td>2015-07-16 14:42:04</td><td><a href='http://www.smh.com.au/world/islamic-state-affiliate-sinai-province-claims-attack-on-egypt-navy-vessel-20150716-gie8az'>site</a></td><td><table><tr><td>Islamic State affiliate Sinai Province claims attack on Egypt navy vessel</td></tr><tr><td>Sinai Province, the most lethal militant group in Egypt, last year pledged loyalty to Islamic State, which controls large tracts of territory in Syria and Iraq and has a presence in Egypt's neighbour Libya.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/e/8/d/n/image.related.articleLeadwide.620x349.gie8az.png/1437057710413.jpg'></td><td>2015-07-16 14:42:04</td><td><a href='http://www.brisbanetimes.com.au/world/islamic-state-affiliate-sinai-province-claims-attack-on-egypt-navy-vessel-20150716-gie8az'>site</a></td><td>Cairo: Egypt's Islamic State affiliate said on Thursday it fired a rocket at an Egyptian naval vessel in the Mediterranean Sea near the coast of Israel and the Gaza Strip.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,14 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-open-with-small-gains-as-investor-assess/nmzCH/'>site</a></td><td>Asian stocks edged higher Thursday after Greek lawmakers approved an austerity bill needed for another bailout and the dollar rose after the Fed chief indicated that U.S. interest rates could start rising later this year.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 09:25:18</td><td><a href='http://www.sfgate.com/business/energy/article/Most-Asia-stocks-rise-after-Greece-approves-6387709.php'>site</a></td><td>HONG KONG (AP) - European stocks jumped, leading gains in global benchmarks Thursday after Greek lawmakers approved an austerity bill needed for another bailout.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 22:20:09</td><td><a href='http://www.miamiherald.com/news/business/article27033289.html#storylink=rss'>site</a></td><td>There were few signs that the Greek bailout discussions between the country's finance minister and his counterparts in the 19-country eurozone are going to wrap up any time soon.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 10:00:39</td><td><a href='http://www.startribune.com/the-latest-greece-bailout-talks-hinge-on-trust-issues/314127791/'>site</a></td><td>As a result, he said a deal that would secure Greece's future in the euro won't be clinched at Sunday's meetings in Brussels, first of the eurozone's 19 finance ministers and then of its leaders.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 12:55:05</td><td><a href='http://www.miamiherald.com/news/business/article27112612.html#storylink=rss'>site</a></td><td>Greece reached a preliminary deal Monday for a third multi-billion euro bailout from its fellow members in the 19-country eurozone.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-14 08:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480917&ref=rss'>site</a></td><td>After the 19 eurozone leaders reached a tentative deal to keep Greece from financial collapse on Monday, Noonan says Greece could have been in a much better situation had it clinched a deal much earlier " like in February, when it faced a first bailout deadline.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 09:45:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27378442.html#storylink=rss'>site</a></td><td>The head of the eurozone's rescue fund says failure to conclude a bailout deal for Greece would lead to the collapse of the country's major banks, which he says would affect the rest of the eurozone.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-17 08:20:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-17-EU--Greece-Bailout/id-326ea64e2d0e449886d34214a50fd39f'>site</a></td><td>Specific terms of the three-year bailout will now be thrashed out between Greece and its partners in the 19-nation eurozone.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/da/00/ee4d97e90d85412189007bb808a99157-31a1c5a09745464ba93109cb1eebaa92-0_1.jpg'></td><td>2015-07-17 19:56:06</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-pm-tsipras-expected-to-reshuffle-cabinet/nm2Kw/'>site</a></td><td>Though the broad outlines of the Greek bailout were agreed Monday by the eurozone's 19 leaders, the ESM's decision formally kick-starts the process by which Greece begins negotiating the details.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-03 12:54:27</td><td><a href='http://nypost.com/2015/08/03/greek-stock-market-reopens-to-a-bloodbath/'>site</a></td><td>Financial information company Markit said its gauge of manufacturing activity in Greece plummeted during the month to 30.2 points, its lowest ever reading, despite improvements across the rest of the 19-country eurozone.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Greek banks could get an initial capital injection soon after a bailout deal is clinched, as much as 10 billion euros, even before the ECB completes a stress test, a euro zone official said on Monday.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-11 11:54:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>Greece agrees on broad terms of new bailout package</td></tr>
 </table></body></html>

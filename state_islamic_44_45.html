@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-19 16:28:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-19-ML--Islamic%20State/id-449167b2e0e74de79f07f3a57749f181'>site</a></td><td><table><tr><td>BEIRUT (AP) - A U.S.-led coalition dropped new leaflets over the de facto capital of the Islamic State group in Syria, promising those below that "freedom will come" to the region, activists said Sunday.</td></tr><tr><td>An anti-Islamic State group called Raqqa is Being Silently Slaughtered and the Britain-based Syrian Observatory for Human Rights said the leaflets had drawings showing dead extremists and their flag turned upside down.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 16:57:09</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/us-led-airdrops-shower-leaflets-over-islamic-state-territory'>site</a></td><td>US-led airdrops shower leaflets over Islamic State territory</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 20:32:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27815971.html#storylink=rss'>site</a></td><td>No one has claimed responsibility for the attacks, but the Islamic State militant group often is behind such attacks in and around the capital as it seeks to destabilize Iraq's Shiite-led government.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-08 06:59:11</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/08/is-top-command-dominated-by-ex-officers-in-saddams-army'>site</a></td><td>An Islamic hard-liner, he once chided Omran for wearing an Iraqi flag pin into the bathroom because it included the words "God is great."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/08/d8/80/75a48c16404c4418938b5f5170140dd4-6095bb17717742c083b8b8041cc4ca8b-0.jpg'></td><td>2015-08-08 06:59:11</td><td><a href='http://www.daytondailynews.com/ap/ap/international/is-top-command-dominated-by-ex-officers-in-saddams/nnF42/'>site</a></td><td>Now al-Ani is a commander in the Islamic State group, said Omran, who rose to become a major general in the Iraqi army and now commands its 5th Division fighting IS.</td></tr>
 </table></body></html>

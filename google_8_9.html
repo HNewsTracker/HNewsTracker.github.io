@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 14:49:36</td><td><a href='http://www.reuters.com/article/2015/07/16/google-privacy-lawsuit-idUSL2N0ZW0UB20150716?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>The case is In re: Google Inc Privacy Policy Litigation, U.S. District Court, Northern District of California, No.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 14:49:36</td><td><a href='http://www.reuters.com/article/2015/07/16/google-privacy-lawsuit-idUSL2N0ZW0UB20150716?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>The case is In re: Google Inc Privacy Policy Litigation, U.S. District Court, Northern District of California, No.</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-07-16 14:51:20</td><td><a href='http://www.reuters.com/article/2015/07/16/us-google-privacy-lawsuit-idUSKCN0PQ1QK20150716?feedType=RSS&feedName=technologyNews'>site</a></td><td>Google wins dismissal of Android privacy lawsuit</td></tr>
 </table></body></html>

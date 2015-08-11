@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,11 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 20:33:13</td><td><a href='http://finance.yahoo.com/news/futures-surge-greece-reaches-rescue-112241089.html'>site</a></td><td>"Headlines out of Greece are going to dissipate a bit and with that the U.S. earnings picture is going to start to emerge as the important factor," said Mike Binger, a portfolio manager at Gradient Investments in Shoreview, Minnesota, with $850 million under management.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/8/6/y/image.related.articleLeadwide.620x349.gifwkc.png/1437362286595.jpg'></td><td>2015-07-19 21:36:02</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-prices-for-everyday-items-shoot-up-in-greece-20150720-gifwkc.html'>site</a></td><td>The tax increases are forecast to bring in $US867 million ($1.1billion) by year-end, Greek financial media said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/9/6/u/6/image.related.articleLeadwide.620x349.giaq7x.png/1436736463881.jpg'></td><td>2015-07-12 19:04:52</td><td><a href='http://www.smh.com.au/business/world-business/greece-debt-crisis-eurogroup-says-no-basis-to-start-new-bailout-deal-talks-20150712-giaq7x'>site</a></td><td>"There is no such thing as temporary Grexit, there is only a Grexit or no Grexit. There is Greece in the euro zone or Greece not in the euro zone. But in that case it's Europe that retreats and no longer progresses and I don't want that," he said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/04/03/4d7c45f8e53545e1bd8b1bfdff82fa00-12f627ee4b0340fb874125c50e5b8ae8-0.jpg'></td><td>2015-07-15 15:59:41</td><td><a href='http://www.daytondailynews.com/ap/ap/business/why-germany-refuses-to-write-off-greeces-debts/nmzGf/'>site</a></td><td>Why Germany refuses to write off Greece's debts</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/germany_bailout.jpg?itok=6U7qXOHf'></td><td>2015-07-17 21:13:26</td><td><a href='http://www.sbs.com.au/news/article/2015/07/18/german-lawmakers-back-greek-bailout-tsipras-sacks-dissenters'>site</a></td><td><table><tr><td>Popular misgivings run deep in Germany, the euro zone country that has already contributed most to Greece's two bailouts since 2010, about funnelling yet more aid to Athens.</td></tr><tr><td>"If we don't have the courage to end it - Greece won't make it in the euro zone - there will be a fourth and a fifth bailout for Greece," said conservative Eurosceptic Klaus-Peter Willsch, reflecting growing popular resentment of Greece among Germans.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td>In Brussels, there is much talk of how the latest Greek crisis should prompt a leap forward in integration to strengthen the euro zone, but it's not clear what progress is possible.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/23/ca/1f/82506264bd3140048781407a5353cd42-04b561abd18c401fbfb6cd86716b6037-0.jpg'></td><td>2015-07-23 11:32:12</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-store-closures-spike-as-recession-austerity-/nm5QZ/'>site</a></td><td>His wife and 11-year-old daughter have already moved to Germany - the country that's ironically blamed for many of the economic and social problems afflicting Greece.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=businessNews'>site</a></td><td>Greek officials have said they expect the bailout accord to be approved by Greece's parliament on Wednesday or Thursday and then be vetted by the finance ministers of the euro zone on Aug. 14, paving the way for aid disbursements.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Germany set out "strict" conditions for further aid and said it would be sensible to link the size of the first tranche to Greece's progress in carrying out reforms, a reflection of worry around the euro zone that Athens might not do as promised.</td></tr>
 </table></body></html>

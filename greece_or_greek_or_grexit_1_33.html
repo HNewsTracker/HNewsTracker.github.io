@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/e/a/o/3/image.related.articleLeadwide.620x349.gieb3r.png/1437105022942.jpg'></td><td>2015-07-17 03:52:11</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-banks-due-to-reopen-on-monday-20150717-gieb3r.html'>site</a></td><td>But parliament's endorsement won rare praise from European creditors and gave them a reason to lift - at least for now - the threat of economic oblivion that has hung over Greece for nearly a month.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-23 02:45:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article28082050.html#storylink=rss'>site</a></td><td>Addressing parliament before the vote, Tsipras said the reforms were a necessary price to pay to keep Greece alive after stormy talks with its creditors nearly collapsed earlier this month.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.3164186.1437602713!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/greece.jpg'></td><td>2015-07-22 08:40:14</td><td><a href='http://www.cbc.ca/news/business/greece-approves-new-batch-of-reforms-for-multi-billion-dollar-bailout-1.3162819?cmp=rss'>site</a></td><td>Greece has relied on bailout loans totaling 240 billion euros since 2010 after it was locked out of international money markets.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 12:19:18</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/27/greece-creditors-get-down-to-business-on-bailout-deal'>site</a></td><td>Without the money due from the expected three-year bailout totaling around 85 billion euros, Greece would be unable to make that payment - a development that would likely trigger fresh fears over the country's future in the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 05:57:29</td><td><a href='http://www.reuters.com/article/2015/08/11/us-eurozone-greece-bailout-idUSKCN0QF2BV20150811?feedType=RSS&feedName=wtMostRead'>site</a></td><td>The pact is expected to be worth up to 86 billion euros ($94.75 billion) in fresh loans for debt-ridden Greece, but there was no immediate confirmation of its size.</td></tr>
 </table></body></html>

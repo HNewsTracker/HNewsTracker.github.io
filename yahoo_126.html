@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-08-03 18:37:15</td><td><a href='http://sports.yahoo.com/news/blue-jays-royals-escalate-feud-trading-barbs-twitter-183715414--mlb.html'>site</a></td><td>Blue Jays, Royals escalate feud by trading barbs on Twitter (Yahoo Sports)</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/G3dQ9o2TKYti56mmPwxqbA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201508021638599078088'></td><td>2015-08-05 00:55:01</td><td><a href='http://sports.yahoo.com/news/blue-jays-aaron-sanchez-suspended-3-games-john-201729283--mlb.html'>site</a></td><td>Blue Jays' Aaron Sanchez suspended 3 games, John Gibbons 1 (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/gZ3GMIDufhY0oq1WlyHjSw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507121113404345987'></td><td>2015-07-12 17:33:27</td><td><a href='http://sports.yahoo.com/news/bmc-wins-team-time-trial-stage-9-tour-153259393--spt.html'>site</a></td><td>Tour leader Froome confident heading to Pyrenees mountains (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/bt/api/res/1.2/O7T1mZkZapjR7WfwIxpolw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201507141027376734260'></td><td>2015-07-14 17:18:41</td><td><a href='https://sports.yahoo.com/news/froome-wins-1st-high-mountain-stage-tour-france-154145876--spt.html'>site</a></td><td>Froome wins 1st high-mountain stage at Tour de France (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/oq10aWnk2wAfbxSd8GwNgQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507221025375351510'></td><td>2015-07-22 18:12:39</td><td><a href='http://sports.yahoo.com/news/geschke-wins-froome-stays-safe-stage-17-alps-161907396--spt.html'>site</a></td><td>Geschke wins, Froome stays safe on Stage 17 in Alps (Yahoo Sports)</td></tr>
 </table></body></html>

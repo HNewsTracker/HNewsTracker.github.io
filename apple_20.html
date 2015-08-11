@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 15:00:52</td><td><a href='http://www.foxbusiness.com/technology/2015/07/15/apple-refreshes-ipod-touch-with-faster-processor-better-cameras-apple-music/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Apple Music launched June 30 as music fans increasingly embrace subscriptions over pay-per-song services such as Apple's industry-leading iTunes.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 17:09:57</td><td></td><td><a href='apple_20_21.html'>NEW YORK (AP) - Although the iPod's popularity has waned, Apple is updating its music player for the first time in nearly three years by giving the flagship Touch model a faster processor and better cameras. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 22:05:32</td><td></td><td><a href='apple_20_22.html'>Without Apple, the decline would have been a gain of 0.1 percent, according to S&P Dow Jones Indices, the company behind the S&P 500 index and the Dow Jones industrial average. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-05 22:05:32</td><td></td><td><a href='apple_20_21.html'>Since closing at a record $133 on February 23, Apple has slumped to $115.40, wiping $115 billion off the value of its stock. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-05 22:05:32</td><td><a href='http://www.startribune.com/who-are-the-stock-market-heavyweights/320805731/'>site</a></td><td>Lately, Apple's influence has been a drag.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-05 22:07:12</td><td><a href='http://www.miamiherald.com/news/business/article30098820.html#storylink=rss'>site</a></td><td>At the end of 1985, the company's stock made up 6.4 percent of the S&P 500's total value, much bigger than Apple's current 3.6 percent.</td></tr>
 </table></body></html>
