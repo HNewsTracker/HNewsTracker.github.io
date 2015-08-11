@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 06:54:44</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27378178.html#storylink=rss'>site</a></td><td><table><tr><td>The UAE's counterterrorism lectures, organized by Abu Dhabi's Islamic Affairs authority during the month of Ramadan, which ends Friday, drew more than 300 speakers, many of them from Cairo's al-Azhar.</td></tr><tr><td>But one of the Arab world's most famous Muslim televangelists, Amr Khaled, who dedicated his TV show through Ramadan to discussing ways of reform, pointed out that it has been at least 70 years since the last great work on Islamic jurisprudence was written.</td></tr><tr><td>The effort was given a boost during the Muslim fasting month of Ramadan, now in its last week, even as a call for violence by the Islamic State group triggered attacks across the Middle East and parts of Africa.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-16 06:55:15</td><td><a href='http://www.startribune.com/muslim-scholars-use-ramadan-to-push-for-an-islamic-renewal/315688681/'>site</a></td><td>On one level, the religious reform effort - known in Arabic as "tajdeed," or "renewal"- is aimed at drawing the faithful away from extremism at a time when militant violence has escalated in the region with the spread of the Islamic State group.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 06:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11482215&ref=rss'>site</a></td><td>Muslim scholars use Ramadan to push for an Islamic renewal</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/16/13/d5/b222c911cbf64b2da544b521c3879da2-0b242032d5d54d63a298cdd72f2eb659-0_1.jpg'></td><td>2015-07-16 07:38:20</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/muslim-scholars-use-ramadan-to-push-for-an-islamic/nmzgZ/'>site</a></td><td>During the Islamic holy month of Ramadan, Muslims are called on to reflect on their faith as they conduct their daily fast.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/r/3/k/s/image.related.articleLeadwide.620x349.giqwpw.png/1438659622355.jpg'></td><td>2015-08-04 03:40:35</td><td><a href='http://www.brisbanetimes.com.au/world/islamic-state-selling-sex-slaves-the-younger-the-better-claims-un-official-20150804-giqwpw.html'>site</a></td><td><table><tr><td>Yazidi Kurdish women chant slogans against the Islamic State's invasion on Sinjar a year ago.</td></tr><tr><td>Yazidi Kurds at a protest in Dohuk, Iraq, against the Islamic State's invasion on Sinjar city a year ago.</td></tr><tr><td>Thousands of Yazidi Kurdish women and girls have been sold into sexual slavery and forced to marry Islamic State militants, according to Human Rights organisations, Yazidi activists and observers.</td></tr></table></td></tr>
 </table></body></html>

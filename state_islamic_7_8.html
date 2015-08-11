@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297724473166_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-14 23:13:56</td><td><a href='http://www.torontosun.com/2015/07/14/boston-police-captains-son-held-without-bail-in-islamic-state-inspired-bomb-plot'>site</a></td><td><table><tr><td>In the post-arrest video played in court on Tuesday, Ciccolo did not detail an attack plot but defended Islamic State's hostage executions and agreed with an FBI interviewer that all Americans should be considered "enemies".</td></tr><tr><td>His attorney, David Hoose, said Ciccolo had so far only been charged with gun violations and that his views on Islamic State should not be considered.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 07:18:42</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/11/bush-links-clinton-to-rise-of-islamic-state'>site</a></td><td>"The threat of global jihad, and of the Islamic State in particular, requires all the strength, unity and confidence that only American leadership can provide," Bush will say, according to excerpts of his remarks as prepared for delivery.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/40/16/27/8447464/5/square_gallery_thumb.jpg'></td><td>2015-08-11 07:18:42</td><td><a href='http://www.sfgate.com/news/article/Bush-links-Clinton-to-rise-of-Islamic-State-6436760.php'>site</a></td><td>Bush links Clinton to rise of Islamic State</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 07:23:08</td><td><a href='http://www.miamiherald.com/news/politics-government/article30677460.html#storylink=rss'>site</a></td><td>Bush has yet, either on the campaign trail or in the preview of his Tuesday speech released by his campaign, to say exactly what a U.S.-led campaign against the Islamic State would look like if he is elected president.</td></tr>
 </table></body></html>
