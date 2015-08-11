@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 08:22:05</td><td></td><td><a href='baltimore_0_1.html'>As part of his contract with the Baltimore City Police Department, Sachs assessed the mental health and fitness for duty of officers who were removed from active duty due to psychological problems. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-06 08:22:05</td><td><a href='http://www.miamiherald.com/living/health-fitness/article30205152.html#storylink=rss'>site</a></td><td>FILE - This May 1, 2015, file photo provided by the Baltimore Police Department shows Lt. Brian Rice, one of the police officers charged with felonies in the death of Freddie Gray.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-06 08:22:05</td><td></td><td><a href='baltimore_0_1.html'>As part of his contract with the Baltimore City Police Department, Sachs assessed the mental health and fitness for duty of officers who were removed from active duty due to psychological problems. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 08:22:05</td><td><a href='http://www.miamiherald.com/living/health-fitness/article30205152.html#storylink=rss'>site</a></td><td>FILE - This May 1, 2015, file photo provided by the Baltimore Police Department shows Lt. Brian Rice, one of the police officers charged with felonies in the death of Freddie Gray.</td></tr>
 </table></body></html>

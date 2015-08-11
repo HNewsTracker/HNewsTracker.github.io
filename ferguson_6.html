@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 15:20:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article28170364.html#storylink=rss'>site</a></td><td>Anderson previously was police commander in the Phoenix suburb of Glendale, Arizona - the same city from which Ferguson recently hired its interim city manager, Ed Beasley.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 13:25:13</td><td></td><td><a href='ferguson_6_7.html'>But at the same time, the government issued a report so critical of Ferguson's police and municipal court system that it hastened an upheaval in the town of 21,000 people, two-thirds of them black. (10)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-07 13:25:13</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/08/07/22538408.html?cid=rssnewsworld'>site</a></td><td>All Ferguson officers wear body cameras.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 17:21:23</td><td></td><td><a href='ferguson_6_8.html'>Mercedes Harris, left, Theresa Reed, center, and Corliss Wade pray together at a community gathering in Ferguson, Mo., on July 25, 2015. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 16:25:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28824685.html#storylink=rss'>site</a></td><td><table><tr><td>Ferguson presses cleanup bid ahead of Brown anniversary</td></tr><tr><td>One of the areas hardest hit by last year's unrest in Ferguson, Missouri, that followed the police shooting death of 18-year-old Michael Brown is getting a little sprucing.</td></tr><tr><td>An organizer, Roy Gillespie, says the cleanup was less about beautification than it was about building regional unity by drawing in Ferguson residents and outsiders to pitch in.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 16:25:15</td><td><a href='http://www.startribune.com/ferguson-presses-cleanup-bid-ahead-of-brown-anniversary/318660421/'>site</a></td><td>Ferguson presses several-hour, unity-minded cleanup effort ahead of Brown anniversary</td></tr>
 </table></body></html>

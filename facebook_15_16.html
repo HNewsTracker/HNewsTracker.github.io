@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,7 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-21 20:55:51</td><td><a href='http://www.startribune.com/facebook-loses-in-clash-with-prosecutors-over-users-data/317956131/'>site</a></td><td><table><tr><td>"In many cases, evidence on their Facebook accounts directly contradicted the lies the defendants told to the Social Security Administration" about being too psychologically devastated to work, district attorney's office spokeswoman Joan Vollero said Tuesday.</td></tr><tr><td>The court said Facebook wrongly argued it could legally stop prosecutors from gathering the information, as opposed to defendants arguing for keeping it out of court afterward.</td></tr><tr><td>Facebook can contain more intimate personal information than someone's home, the judges noted, and only 62 of the people targeted in the 381 warrants have been charged.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 23:44:08</td><td><a href='http://www.foxbusiness.com/markets/2015/07/21/facebook-loses-in-clash-with-prosecutors-over-warrants-for-users-data-weighing/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>Facebook loses in clash with prosecutors over users' data</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-07-21 23:52:15</td><td><a href='http://www.mercurynews.com/business/ci_28518088/'>site</a></td><td>Facebook said prosecutors cast too wide a net.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 20:55:51</td><td><a href='http://www.startribune.com/facebook-loses-in-clash-with-prosecutors-over-users-data/317956131/'>site</a></td><td><table><tr><td>"In many cases, evidence on their Facebook accounts directly contradicted the lies the defendants told to the Social Security Administration" about being too psychologically devastated to work, district attorney's office spokeswoman Joan Vollero said Tuesday.</td></tr><tr><td>The court said Facebook wrongly argued it could legally stop prosecutors from gathering the information, as opposed to defendants arguing for keeping it out of court afterward.</td></tr><tr><td>Facebook can contain more intimate personal information than someone's home, the judges noted, and only 62 of the people targeted in the 381 warrants have been charged.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 23:44:08</td><td><a href='http://www.foxbusiness.com/markets/2015/07/21/facebook-loses-in-clash-with-prosecutors-over-warrants-for-users-data-weighing/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>Facebook loses in clash with prosecutors over users' data</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-07-21 23:52:15</td><td><a href='http://www.mercurynews.com/business/ci_28518088/'>site</a></td><td>Facebook said prosecutors cast too wide a net.</td></tr>
 </table></body></html>

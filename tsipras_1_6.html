@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436995239589.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150715-gidayi'>site</a></td><td>The ruling Syriza party, elected in January on an anti-austerity platform, has been deeply split by the bailout deal that a reluctant Tsipras was forced to accept after gruelling negotiations in Brussels this week.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://img.huffingtonpost.com//asset/scaleFit_630_noupscale/55aa60f71700004000bafb18.jpeg'></td><td>2015-07-18 13:57:09</td><td><a href='http://www.huffingtonpost.com/entry/greece-banks-re-open_55aa59a6e4b065dfe89e849e?'>site</a></td><td>The reshuffle allowed Tsipras to replace cabinet rebels with allies of his own or from his junior coalition partners, the right-wing Independent Greeks party.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td>Tsipras' Syriza party was elected in January on a promise to end austerity, forming a coalition with the right-wing, anti-bailout Independent Greeks party - a move that broadened his political influence.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/14/876/493/Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-07-14 04:28:36</td><td><a href='http://www.foxnews.com/world/2015/07/14/greece-strikes-deal-with-eurozone-avoiding-euro-exit-but-tsipras-faces-dissent/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Tsipras had to consent to a raft of austerity measures, including sales tax hikes and pension and labor reforms - measures he had campaigned vociferously against over the last five years of Greece's financial crisis.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/N_OQphGwzTSCbACAENlRvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/22/102853163-GettyImages-478813678.1910x1000.jpg'></td><td>2015-07-22 14:24:41</td><td><a href='http://finance.yahoo.com/news/tsipras-rallies-troops-ahead-greek-071442070.html'>site</a></td><td>In the first parliamentary vote last week on measures (called "prior actions) including a sales-tax hike, around a quarter of Syriza lawmakers rebelled, making the latest vote tough on Tsipras.</td></tr>
 </table></body></html>

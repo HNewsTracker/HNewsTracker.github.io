@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,7 +48,7 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/37/52/72/8302248/33/920x920.jpg'></td><td>2015-07-15 00:39:46</td><td><a href='http://www.sfgate.com/news/crime/article/News-guide-Movie-theater-shooting-trial-closing-6383120.php'>site</a></td><td>Holmes surrendered to police outside the theater.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td>The jurors were given permission to view a recording of Holmes after the shooting in which he asks police officers if any children were hurt.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td>In the back, Aurora police officers who responded to the bloody scene of Holmes' attacks began crying.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/52/72/8302248/33/920x920.jpg'></td><td>2015-07-15 00:39:46</td><td><a href='http://www.sfgate.com/news/crime/article/News-guide-Movie-theater-shooting-trial-closing-6383120.php'>site</a></td><td>Holmes surrendered to police outside the theater.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td>The jurors were given permission to view a recording of Holmes after the shooting in which he asks police officers if any children were hurt.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td>In the back, Aurora police officers who responded to the bloody scene of Holmes' attacks began crying.</td></tr>
 </table></body></html>

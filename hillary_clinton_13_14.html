@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,7 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/37/72/42/8366216/5/920x920.jpg'></td><td>2015-07-26 22:41:54</td><td><a href='http://www.sfgate.com/business/energy/article/In-Iowa-Clinton-says-climate-plan-will-promote-6406621.php'>site</a></td><td>Jan Bauer gets a hug from Democratic presidential candidate Hillary Rodham Clinton after introducing her to speak at a campaign event Sunday, July 26, 2015, at Iowa State University in Ames, Iowa.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-27 01:32:33</td><td><a href='http://www.reuters.com/article/2015/07/27/us-usa-election-clinton-energy-idUSKCN0Q00X920150727?feedType=RSS&feedName=politicsNews'>site</a></td><td>Clinton, the front-runner for her party's 2016 presidential nomination, also pledged to have more than half a billion solar panels installed nationwide within four years of taking office.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 18:50:11</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28862665.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton is detailing new energy proposals in Iowa to address climate change.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/72/42/8366216/5/920x920.jpg'></td><td>2015-07-26 22:41:54</td><td><a href='http://www.sfgate.com/business/energy/article/In-Iowa-Clinton-says-climate-plan-will-promote-6406621.php'>site</a></td><td>Jan Bauer gets a hug from Democratic presidential candidate Hillary Rodham Clinton after introducing her to speak at a campaign event Sunday, July 26, 2015, at Iowa State University in Ames, Iowa.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 01:32:33</td><td><a href='http://www.reuters.com/article/2015/07/27/us-usa-election-clinton-energy-idUSKCN0Q00X920150727?feedType=RSS&feedName=politicsNews'>site</a></td><td>Clinton, the front-runner for her party's 2016 presidential nomination, also pledged to have more than half a billion solar panels installed nationwide within four years of taking office.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 18:50:11</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28862665.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton is detailing new energy proposals in Iowa to address climate change.</td></tr>
 </table></body></html>

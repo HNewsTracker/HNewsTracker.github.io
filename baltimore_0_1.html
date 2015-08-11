@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,5 +48,5 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 08:22:05</td><td><a href='http://www.miamiherald.com/living/health-fitness/article30205152.html#storylink=rss'>site</a></td><td><table><tr><td>Psych firm that screens Baltimore cops under review</td></tr><tr><td>The psychological firm paid to evaluate Baltimore police, including Rice, Psychology Consultants Associated, has been reprimanded by the state police for cutting corners in its mental health screenings of officers.</td></tr><tr><td>Baltimore's law department and inspector general are also investigating the firm's assessments of city police officers, said Kevin Harris, a spokesman for the city.</td></tr><tr><td>As part of his contract with the Baltimore City Police Department, Sachs assessed the mental health and fitness for duty of officers who were removed from active duty due to psychological problems.</td></tr><tr><td>Michael A. Wood, a retired Baltimore police sergeant who said he wrote the department's medical policy, said Rice "absolutely would have had a fitness for duty evaluation, and would have been referred to PCA. It would have been required."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-06 08:22:05</td><td><a href='http://www.miamiherald.com/living/health-fitness/article30205152.html#storylink=rss'>site</a></td><td><table><tr><td>Psych firm that screens Baltimore cops under review</td></tr><tr><td>The psychological firm paid to evaluate Baltimore police, including Rice, Psychology Consultants Associated, has been reprimanded by the state police for cutting corners in its mental health screenings of officers.</td></tr><tr><td>Baltimore's law department and inspector general are also investigating the firm's assessments of city police officers, said Kevin Harris, a spokesman for the city.</td></tr><tr><td>As part of his contract with the Baltimore City Police Department, Sachs assessed the mental health and fitness for duty of officers who were removed from active duty due to psychological problems.</td></tr><tr><td>Michael A. Wood, a retired Baltimore police sergeant who said he wrote the department's medical policy, said Rice "absolutely would have had a fitness for duty evaluation, and would have been referred to PCA. It would have been required."</td></tr></table></td></tr>
 </table></body></html>

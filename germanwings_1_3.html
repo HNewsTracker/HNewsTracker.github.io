@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,5 +48,5 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 18:35:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28497337.html#storylink=rss'>site</a></td><td><table><tr><td>Families of Germanwings victims release white balloons after an homage ceremony in front of a stele, in Le Vernet, French Alps, Friday, July 24, 2015.</td></tr><tr><td>A stele, a stone slab erected as a monument, set up in the area near where a Germanwings aircraft crashed in the French Alps, in Le Vernet, French Alps, Friday, July 24, 2015.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 18:35:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28497337.html#storylink=rss'>site</a></td><td><table><tr><td>Families of Germanwings victims release white balloons after an homage ceremony in front of a stele, in Le Vernet, French Alps, Friday, July 24, 2015.</td></tr><tr><td>A stele, a stone slab erected as a monument, set up in the area near where a Germanwings aircraft crashed in the French Alps, in Le Vernet, French Alps, Friday, July 24, 2015.</td></tr></table></td></tr>
 </table></body></html>

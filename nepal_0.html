@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-30 18:02:49</td><td><a href='http://www.torontosun.com/2015/07/30/deadly-landslides-in-nepal'>site</a></td><td>Two powerful earthquakes in Nepal this year that killed almost 9,000 people have raised the risk of landslides across the mountainous country during the rainy season, which lasts from June to September.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-30 18:02:49</td><td><a href='http://www.torontosun.com/2015/07/30/deadly-landslides-in-nepal'>site</a></td><td>Two powerful earthquakes in Nepal this year that killed almost 9,000 people have raised the risk of landslides across the mountainous country during the rainy season, which lasts from June to September.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150730001161105201-original.jpg?itok=k2rOzhFT'></td><td>2015-07-31 04:33:52</td><td><a href='http://www.sbs.com.au/news/article/2015/07/31/landslide-near-nepals-popular-annapurna-trek-route-kills-30'>site</a></td><td><table><tr><td>Landslide near Nepal&#039;s popular Annapurna trek route kills 30</td></tr><tr><td>Landslides triggered by torrential rain in Nepal swept through villages on Thursday, killing at least 30 people close to the nation's most popular trekking circuit, home ministry officials said.</td></tr></table></td></tr>
 </table></body></html>

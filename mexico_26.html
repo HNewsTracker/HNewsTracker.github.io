@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 17:55:20</td><td></td><td><a href='mexico_26_27.html'>CULIACAN, Mexico (AP) " Palatial tombs mark the final resting spots of top narcotics traffickers in the Jardines de Humaya cemetery in the Sinaloa state capital of Culiacan. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 17:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486017&ref=rss'>site</a></td><td>But his escape doesn't seem to have sparked additional violence in this area, apparently with few new burials here in the nearly two weeks since he slipped out of Mexico's highest-security prison.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 17:55:20</td><td></td><td><a href='mexico_26_27.html'>CULIACAN, Mexico (AP) " Palatial tombs mark the final resting spots of top narcotics traffickers in the Jardines de Humaya cemetery in the Sinaloa state capital of Culiacan. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 17:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486017&ref=rss'>site</a></td><td>But his escape doesn't seem to have sparked additional violence in this area, apparently with few new burials here in the nearly two weeks since he slipped out of Mexico's highest-security prison.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,9 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 21:00:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27069493.html#storylink=rss'>site</a></td><td>Despite the stinging conditions on pension, market and privatization reforms, Tsipras insisted his government was ready to clinch a deal.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/a/3/c/0/image.related.articleLeadwide.620x349.gibi8r.png/1436825788178.jpg'></td><td>2015-07-13 22:16:33</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greece-debt-crisis-pm-alexis-tsipras-faces-syriza-mutiny-after-capitulating-to-demands-20150713-gibi8r'>site</a></td><td>Tsipras said that the deal had prevented the banking system from collapsing but will inevitably harm the economy.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/14/876/493/Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-07-14 04:28:36</td><td><a href='http://www.foxnews.com/world/2015/07/14/greece-strikes-deal-with-eurozone-avoiding-euro-exit-but-tsipras-faces-dissent/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>But Panos Kammenos, leader of the junior partner in Tsipras' coalition government, called the bailout plan a German-led "coup."</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-15 04:21:24</td><td><a href='http://www.foxnews.com/world/2015/07/15/dissent-in-greece-over-austerity-deal-grows-ahead-vote-tsipras-vows-to-fight-on/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The Tsipras government holds 162 seats in Greece's 300-member Parliament.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 21:00:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27069493.html#storylink=rss'>site</a></td><td>Despite the stinging conditions on pension, market and privatization reforms, Tsipras insisted his government was ready to clinch a deal.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/a/3/c/0/image.related.articleLeadwide.620x349.gibi8r.png/1436825788178.jpg'></td><td>2015-07-13 22:16:33</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greece-debt-crisis-pm-alexis-tsipras-faces-syriza-mutiny-after-capitulating-to-demands-20150713-gibi8r'>site</a></td><td>Tsipras said that the deal had prevented the banking system from collapsing but will inevitably harm the economy.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 04:21:24</td><td><a href='http://www.foxnews.com/world/2015/07/15/dissent-in-greece-over-austerity-deal-grows-ahead-vote-tsipras-vows-to-fight-on/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The Tsipras government holds 162 seats in Greece's 300-member Parliament.</td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-07-15 04:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481505&ref=rss'>site</a></td><td>But the Tsipras government's political survival could be in danger if large numbers of its own lawmakers resign their seats or openly vote against the bill.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/7c/6f/543c75cc1136487b8016ed9a7a6e9897-99116c2b650b47438d532092b2ce1202-14.jpg'></td><td>2015-07-15 04:31:40</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/dissent-in-greece-over-austerity-deal-grows-ahead-/nmy2J/'>site</a></td><td>Now Tsipras must keep his own government from collapsing as he tries to push a deal that he calls "irrational" through Parliament.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297724771523_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-15 18:12:03</td><td><a href='http://www.torontosun.com/2015/07/15/greek-civil-servants-pharmacists-strike-against-bailout-reforms'>site</a></td><td>Syriza's junior coalition partner said it would vote only for certain clauses in the bill, rejecting those reforms that went beyond a previous vote in parliament that had given Tsipras a mandate to negotiate in Brussels.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/7c/6f/543c75cc1136487b8016ed9a7a6e9897-99116c2b650b47438d532092b2ce1202-14.jpg'></td><td>2015-07-15 04:31:40</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/dissent-in-greece-over-austerity-deal-grows-ahead-/nmy2J/'>site</a></td><td>Now Tsipras must keep his own government from collapsing as he tries to push a deal that he calls "irrational" through Parliament.</td></tr>
 </table></body></html>

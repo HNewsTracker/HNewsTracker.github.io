@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,5 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/52/14/8299302/5/square_gallery_thumb.jpg'></td><td>2015-07-13 06:27:19</td><td><a href='http://www.sfgate.com/news/world/article/Tunisia-tourism-may-be-crippled-by-European-6380913.php'>site</a></td><td><table><tr><td>FILE - In this June 28 2015 file photo, mounted police officers patrol on the beach of Sousse, Tunisia.</td></tr><tr><td>FILE - In this June 28, 2015 file photo, tourists and a baby camel walk on a beach in front of the Imperial Marhaba Hotel in Sousse, Tunisia.</td></tr><tr><td>TUNIS, Tunisia (AP) - The blood on the sand has washed away, but the damage inflicted on Tunisia by a few terrifying minutes of gunfire at a beach resort will be deep and lasting.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/52/14/8299302/5/square_gallery_thumb.jpg'></td><td>2015-07-13 06:27:19</td><td><a href='http://www.sfgate.com/news/world/article/Tunisia-tourism-may-be-crippled-by-European-6380913.php'>site</a></td><td><table><tr><td>FILE - In this June 28 2015 file photo, mounted police officers patrol on the beach of Sousse, Tunisia.</td></tr><tr><td>FILE - In this June 28, 2015 file photo, tourists and a baby camel walk on a beach in front of the Imperial Marhaba Hotel in Sousse, Tunisia.</td></tr><tr><td>TUNIS, Tunisia (AP) - The blood on the sand has washed away, but the damage inflicted on Tunisia by a few terrifying minutes of gunfire at a beach resort will be deep and lasting.</td></tr></table></td></tr>
 </table></body></html>

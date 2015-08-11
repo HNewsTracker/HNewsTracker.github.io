@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,10 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/ab/a3/0a41acc38ac944e8a1dbf4cd7520eecf-ce9206ade7ca43bca7d4b0a0a1e8b926-0.jpg'></td><td>2015-07-12 14:46:20</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greek-tourist-hotspots-face-big-bailout-tax-hikes/nmxcT/'>site</a></td><td>The consumer paranoia keeping customers away, however, is overshadowed by a Greek government crisis solution that Cromba said could eventually kill her business and many others that depend on domestic Greek tourism.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-23 12:59:45</td><td><a href='http://www.ctvnews.ca/business/retail-nightmare-greek-store-closures-spike-1.2483357'>site</a></td><td>"The vast majority of Greek companies are half a step from going out of business."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-23 13:01:53</td><td><a href='http://www.cbsnews.com/news/greek-store-closures-spike-as-recession-austerity-return/'>site</a></td><td>ATHENS, Greece - Running a business in Koukaki is becoming a struggle.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-27 09:00:15</td><td><a href='http://www.startribune.com/survey-shows-unexpected-upturn-in-german-business-confidence/318610961/'>site</a></td><td>BERLIN - Business confidence in Germany, Europe's biggest economy, has risen unexpectedly this month as worries over Greece have subsided, a closely watched survey showed Monday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>Political instability, a hallmark of Greece's crisis, is highly toxic for investors, who need to know that the rules for business won't change unexpectedly.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 05:23:15</td><td><a href='http://www.startribune.com/greece-talks-drag-beyond-deadline-amid-warnings-of-euro-exit/314504171/'>site</a></td><td>Although the country's annual budget deficit has come down dramatically, Greece's debt burden has increased as the economy has shrunk by a quarter.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/14/d6/60/ae143f5d47164fce86a77de4a72b6f4a-6e04fd279b1540979adf82af0e16ca5f-1.jpg'></td><td>2015-07-14 23:50:29</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-tsipras-faces-dissent-on-bailout-deal/nmyPH/'>site</a></td><td>The IMF said Greece's debts would peak over the next two years at 200 percent of the country's economic output; earlier it had said the debt burden would peak last year at 177 percent.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/d8/27/d3d7382b009f4a1ca90748d417cb0b52-7fcb1f3056a747ae925c1a038b6d80bd-0_1.jpg'></td><td>2015-07-24 18:56:28</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-talks-to-begin-after-technical-issues-ironed/nm54K/'>site</a></td><td>Since its first bailout in 2010, Greece's economy has shrunk by a quarter, while unemployment has rocketed to record peacetime highs and incomes have shrunk an average of 40 percent.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/bic94Ut6dvY8BI_hackjOw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-27T105619Z_1_LYNXNPEB6Q0F8_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-27 12:16:28</td><td><a href='http://finance.yahoo.com/news/eu-imf-mission-chiefs-start-105619219.html'>site</a></td><td>"In truth, the question is not whether to restructure Greece's debt but rather how to do it so that it would be really useful for the country's economy," he said.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-03 18:48:31</td><td><a href='http://www.theguardian.com/business/2015/aug/03/greek-shares-nosedive-as-manufacturing-data-reveals-economic-crisis'>site</a></td><td>Although manufacturing represents only a small proportion of Greece?s total productive output, the sheer magnitude of the downturn sends a worrying signal for the health of the economy as a whole.?</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td><table><tr><td>Rebooting Greece: how to get its economy going again</td></tr><tr><td>After so much pain, Greece must now figure out how to get its economy back on its feet.</td></tr></table></td></tr>
 </table></body></html>

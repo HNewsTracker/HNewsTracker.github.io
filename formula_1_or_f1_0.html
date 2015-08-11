@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,7 +48,7 @@
     <h3>formula 1 or f1</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-18 02:38:55</td><td></td><td><a href='formula_1_or_f1_0_2.html'>The findings of the working group prompted F1 to alter its rules, allowing a 'virtual safety car' in which race stewards can neutralize a race, forcing all cars to proceed slowly into the pit lane. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-18 10:57:04</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article27567748.html#storylink=rss'>site</a></td><td>Tributes came in from outside of F1, and outside of sport itself.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 13:01:39</td><td></td><td><a href='formula_1_or_f1_0_1.html'>Formula One is to pay its respects to driver Jules Bianchi with a minute of silence before Sunday's Hungarian Grand Prix, the F1 official website said. (22)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 02:38:55</td><td></td><td><a href='formula_1_or_f1_0_2.html'>The findings of the working group prompted F1 to alter its rules, allowing a 'virtual safety car' in which race stewards can neutralize a race, forcing all cars to proceed slowly into the pit lane. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-18 10:57:04</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article27567748.html#storylink=rss'>site</a></td><td>Tributes came in from outside of F1, and outside of sport itself.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 13:01:39</td><td></td><td><a href='formula_1_or_f1_0_1.html'>Formula One is to pay its respects to driver Jules Bianchi with a minute of silence before Sunday's Hungarian Grand Prix, the F1 official website said. (22)</a></td></tr>
 </table></body></html>

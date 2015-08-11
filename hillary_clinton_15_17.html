@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,5 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/1436144223_10021321+1hillary070615.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-16 21:50:42</td><td><a href='http://www.startribune.com/democratic-activists-still-not-quite-ready-for-clinton/316024501/'>site</a></td><td><table><tr><td>"I think a lot of people will talk themselves into thinking what a great president Hillary Clinton will be," said Jose Martinez Diaz, a 36-year-old Democratic digital organizer from Washington.</td></tr><tr><td>"I think a lot of people are tired of Hillary Clinton and want something new," said Kristen Millnick, who was among hundreds of activists started arriving at Netroots Nation on Thursday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/1436144223_10021321+1hillary070615.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-16 21:50:42</td><td><a href='http://www.startribune.com/democratic-activists-still-not-quite-ready-for-clinton/316024501/'>site</a></td><td><table><tr><td>"I think a lot of people will talk themselves into thinking what a great president Hillary Clinton will be," said Jose Martinez Diaz, a 36-year-old Democratic digital organizer from Washington.</td></tr><tr><td>"I think a lot of people are tired of Hillary Clinton and want something new," said Kristen Millnick, who was among hundreds of activists started arriving at Netroots Nation on Thursday.</td></tr></table></td></tr>
 </table></body></html>

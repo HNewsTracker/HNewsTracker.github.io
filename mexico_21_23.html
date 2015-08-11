@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 02:57:07</td><td><a href='http://www.charlotteobserver.com/sports/article27889891.html#storylink=rss'>site</a></td><td>The Mexico-Costa Rica matchup looked like a potential final at the start of the tournament, with Costa Rica coming off a World Cup quarterfinal appearance last year.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 02:57:07</td><td><a href='http://www.charlotteobserver.com/sports/article27889891.html#storylink=rss'>site</a></td><td>The Mexico-Costa Rica matchup looked like a potential final at the start of the tournament, with Costa Rica coming off a World Cup quarterfinal appearance last year.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 02:57:07</td><td><a href='http://www.miamiherald.com/sports/article27889891.html#storylink=rss'>site</a></td><td>Angry Costa Rica fans - heavily outnumbered by Mexico's supporters in the crowd of 74,187 at MetLife Stadium - threw bottles toward the field in protest.</td></tr>
 </table></body></html>

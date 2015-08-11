@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-07-16 20:39:44</td><td><a href='http://www.foxbusiness.com/technology/2015/07/16/google-2nd-quarter-results-indicate-new-cfo-may-clamp-down-on-spending-to-boost/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Thursday's release of Google's report covering that period indicated that Porat already may be shaking things up.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-16 20:39:44</td><td><a href='http://www.foxbusiness.com/technology/2015/07/16/google-2nd-quarter-results-indicate-new-cfo-may-clamp-down-on-spending-to-boost/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Investor hopes for a more austere Google are largely tied to the arrival of a new chief financial officer, Ruth Porat.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 20:40:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11482516&ref=rss'>site</a></td><td><table><tr><td>Investors were delighted with the breakthrough and Porat's encouraging remarks about reining in Google's expenses.</td></tr><tr><td>Expenses now seem more likely to rise at or below the pace of Google's revenue increases, based on Porat's remarks to analysts Thursday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 21:51:21</td><td><a href='http://www.miamiherald.com/news/business/article27429241.html#storylink=rss'>site</a></td><td>Google could have been making more money all along if the growth in its expenses hadn't consistently been rising faster than its revenue, Gillis said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 00:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11495393&ref=rss'>site</a></td><td>Google, which Monday announced it's reorganizing under a new parent company called "Alphabet," is one of the biggest and best-known companies in Silicon Valley.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 04:10:18</td><td><a href='http://www.startribune.com/milestones-over-20-years-of-google-s-history/321347811/'>site</a></td><td>2015: Page announces creation of new holding company, Alphabet, to include Google's core business and other entities.</td></tr>
 </table></body></html>

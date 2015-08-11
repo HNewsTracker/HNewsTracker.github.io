@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,5 +48,5 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/04/102643947-471831462.80x60.jpg?v=1430723021'></td><td>2015-07-11 22:22:00</td><td><a href='http://www.cnbc.com/2015/07/11/new-york-times-digital-baltimore-mayoras-challenge-fighting-crime-while-reining-in-police.html'>site</a></td><td><table><tr><td>BALTIMORE - On the day after Mayor Stephanie Rawlings-Blake fired her police commissioner last week, a man was doing a brisk business selling DVDs from a folding table in front of a Baptist church in West Baltimore.</td></tr><tr><td>Ms. Rawlings-Blake says she is convinced she can do both; she spent part of Thursday visiting Baltimore police commanders with her interim commissioner, Kevin Davis.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/04/102643947-471831462.80x60.jpg?v=1430723021'></td><td>2015-07-11 22:22:00</td><td><a href='http://www.cnbc.com/2015/07/11/new-york-times-digital-baltimore-mayoras-challenge-fighting-crime-while-reining-in-police.html'>site</a></td><td><table><tr><td>BALTIMORE - On the day after Mayor Stephanie Rawlings-Blake fired her police commissioner last week, a man was doing a brisk business selling DVDs from a folding table in front of a Baptist church in West Baltimore.</td></tr><tr><td>Ms. Rawlings-Blake says she is convinced she can do both; she spent part of Thursday visiting Baltimore police commanders with her interim commissioner, Kevin Davis.</td></tr></table></td></tr>
 </table></body></html>

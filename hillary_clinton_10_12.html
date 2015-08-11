@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:07:46</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28703929.html#storylink=rss'>site</a></td><td>Democratic presidential hopeful Hillary Rodham Clinton speaks Friday, July 24, 2015, at the New York University Leonard N. Stern School of Business in New York.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:07:46</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28703929.html#storylink=rss'>site</a></td><td>Democratic presidential hopeful Hillary Rodham Clinton speaks Friday, July 24, 2015, at the New York University Leonard N. Stern School of Business in New York.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/k/7/t/k/image.related.articleLeadwide.620x349.gikl7p.png/1437849643803.jpg'></td><td>2015-07-25 18:40:05</td><td><a href='http://www.brisbanetimes.com.au/world/hillary-clinton-set-to-testify-before-benghazi-panel-20150725-gikl7p'>site</a></td><td>Democratic presidential candidate Hillary Clinton speaks at a campaign event in West Columbia, South Carolina last week.</td></tr>
 </table></body></html>

@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 14:57:14</td><td></td><td><a href='boko_haram_7_8.html'>On Monday, Boko Haram killed at least 29 people in two Christian villages in northeast Nigeria, while in Cameroon, suicide bombings claimed 60 lives over the past week. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 14:57:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/28/nigerian-leader-visits-cameroon-as-boko-haram-attacks'>site</a></td><td>"The two countries are intertwined and have no choice but to have a relationship to deal with Boko Haram," said Chris Fomunyoh, an analyst with the Washington-based National Democratic Institute.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 14:57:14</td><td></td><td><a href='boko_haram_7_8.html'>On Monday, Boko Haram killed at least 29 people in two Christian villages in northeast Nigeria, while in Cameroon, suicide bombings claimed 60 lives over the past week. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 14:57:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/28/nigerian-leader-visits-cameroon-as-boko-haram-attacks'>site</a></td><td>"The two countries are intertwined and have no choice but to have a relationship to deal with Boko Haram," said Chris Fomunyoh, an analyst with the Washington-based National Democratic Institute.</td></tr>
 </table></body></html>

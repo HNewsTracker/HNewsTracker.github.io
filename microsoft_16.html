@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 02:32:02</td><td></td><td><a href='microsoft_16_17.html'>PALO ALTO, California - Microsoft says its' new Windows 10 operating system is now running on more than 14 million computers, two days after the software was released as a free download. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-31 02:38:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article29614348.html#storylink=rss'>site</a></td><td>Microsoft says it's releasing the software in waves to make sure downloads go smoothly.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-31 02:32:02</td><td></td><td><a href='microsoft_16_17.html'>PALO ALTO, California - Microsoft says its' new Windows 10 operating system is now running on more than 14 million computers, two days after the software was released as a free download. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 02:38:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article29614348.html#storylink=rss'>site</a></td><td>Microsoft says it's releasing the software in waves to make sure downloads go smoothly.</td></tr>
 </table></body></html>

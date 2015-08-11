@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,5 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/h/v/8/w/image.related.articleLeadwide.620x349.gim5x3.png/1438091491573.jpg'></td><td>2015-07-28 13:51:42</td><td><a href='http://www.smh.com.au/world/confronting-islamic-states-propaganda-machine-20150728-gim5x3.html'>site</a></td><td><table><tr><td>Confronting Islamic State's propaganda machine</td></tr><tr><td>You only have to look at Islamic State's intelligent use of propaganda to see what happens when your adversary is crippled by silence, dithering and inaction.</td></tr><tr><td>The first priority must be to counter Islamic State's highly effective propaganda machine.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/h/v/8/w/image.related.articleLeadwide.620x349.gim5x3.png/1438091491573.jpg'></td><td>2015-07-28 13:51:42</td><td><a href='http://www.smh.com.au/world/confronting-islamic-states-propaganda-machine-20150728-gim5x3.html'>site</a></td><td><table><tr><td>Confronting Islamic State's propaganda machine</td></tr><tr><td>You only have to look at Islamic State's intelligent use of propaganda to see what happens when your adversary is crippled by silence, dithering and inaction.</td></tr><tr><td>The first priority must be to counter Islamic State's highly effective propaganda machine.</td></tr></table></td></tr>
 </table></body></html>

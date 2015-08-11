@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://i.cbc.ca/1.3152396.1436953983!/cpImage/httpImage/image.jpg_gen/derivatives/original_300/greece-bailout.jpg'></td><td>2015-07-15 06:27:55</td><td><a href='http://www.cbc.ca/news/business/greece-protests-turn-violent-ahead-of-austerity-vote-1.3152371?cmp=rss'>site</a></td><td>The raft of consumer tax increases and pension reforms demanded by Greece's creditors has led to growing anger among the country's governing left-wing Syriza party.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 06:34:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/what-relief-greek-economy-on-its-knees-despite-bailout-deal'>site</a></td><td>Greece fell back into recession in the spring amid growing uncertainty over the country's future in the euro in the wake of the election triumph of the radical left Syriza party in January.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066095823&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L05Z'></td><td>2015-07-22 05:48:45</td><td><a href='http://www.reuters.com/article/2015/07/22/us-eurozone-greece-argentina-analysis-idUSKCN0PW0BT20150722?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Grexit debate down but not out, Argentina lessons remain</td></tr><tr><td>"Years from now, will Europeans look back and say we extended the bailout for Greece for too long?" said Mickey Levy, member of the U.S. Shadow Open Market Committee and co-author of a 2012 paper "Greece's predicament: Lessons from Argentina".</td></tr></table></td></tr>
 </table></body></html>

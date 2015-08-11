@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,7 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 05:24:42</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/17/hillary-clinton-returns-to-arkansas-now-behind-gop-lines'>site</a></td><td><table><tr><td>Hillary Clinton returns to Arkansas, now behind GOP lines</td></tr><tr><td>(AP) - As she ramps up her presidential campaign, Hillary Rodham Clinton is returning this weekend to a state that's part of her home territory - a place she's so well known her name adorns landmarks including the national airport and a children's library.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/59/30/955720207a5a4e879dee8bd0c9475433-e545c9ee218e4c1b87c1a8ad3388d1d2-0.jpg'></td><td>2015-07-17 05:24:42</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/hillary-clinton-returns-to-arkansas-now-behind-gop/nm2H8/'>site</a></td><td>Headlining this year's event, presidential hopeful Clinton returns to a state that looks dramatically different than the one where she served as first lady for a dozen years.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 05:27:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27471142.html#storylink=rss'>site</a></td><td>Presidential hopeful Hillary Rodham Clinton returns for a Democratic Party fundraiser Saturday, July 18, 2015, to a state that looks dramatically different than the one where she served as first lady for a dozen years.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 05:24:42</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/17/hillary-clinton-returns-to-arkansas-now-behind-gop-lines'>site</a></td><td><table><tr><td>Hillary Clinton returns to Arkansas, now behind GOP lines</td></tr><tr><td>(AP) - As she ramps up her presidential campaign, Hillary Rodham Clinton is returning this weekend to a state that's part of her home territory - a place she's so well known her name adorns landmarks including the national airport and a children's library.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/59/30/955720207a5a4e879dee8bd0c9475433-e545c9ee218e4c1b87c1a8ad3388d1d2-0.jpg'></td><td>2015-07-17 05:24:42</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/hillary-clinton-returns-to-arkansas-now-behind-gop/nm2H8/'>site</a></td><td>Headlining this year's event, presidential hopeful Clinton returns to a state that looks dramatically different than the one where she served as first lady for a dozen years.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 05:27:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27471142.html#storylink=rss'>site</a></td><td>Presidential hopeful Hillary Rodham Clinton returns for a Democratic Party fundraiser Saturday, July 18, 2015, to a state that looks dramatically different than the one where she served as first lady for a dozen years.</td></tr>
 </table></body></html>

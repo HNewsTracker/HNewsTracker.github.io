@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-27 00:15:05</td><td><a href='http://www.startribune.com/mexico-police-bust-greenhouses-with-genetically-modified-pot/318591011/'>site</a></td><td>MEXICO CITY - Federal authorities in Mexico say they arrested 22 Colombians and three Mexicans using greenhouses to grow genetically modified and cloned marijuana.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 00:15:05</td><td><a href='http://www.startribune.com/mexico-police-bust-greenhouses-with-genetically-modified-pot/318591011/'>site</a></td><td>MEXICO CITY - Federal authorities in Mexico say they arrested 22 Colombians and three Mexicans using greenhouses to grow genetically modified and cloned marijuana.</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-07-27 00:15:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11487540&ref=rss'>site</a></td><td>Mexico police bust greenhouses with genetically modified pot</td></tr>
 </table></body></html>

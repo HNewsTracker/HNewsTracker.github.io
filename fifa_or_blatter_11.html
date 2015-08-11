@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 21:48:17</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/15/us-soccer-chief-felt-discomfort-during-fifa-proceedings'>site</a></td><td>WASHINGTON (AP) - U.S. Soccer Federation chief executive Dan Flynn said Wednesday he had no direct knowledge of bribery or kickbacks exchanged by FIFA officials but experienced moments of "discomfort" during meetings.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 21:48:17</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/15/us-soccer-chief-felt-discomfort-during-fifa-proceedings'>site</a></td><td>WASHINGTON (AP) - U.S. Soccer Federation chief executive Dan Flynn said Wednesday he had no direct knowledge of bribery or kickbacks exchanged by FIFA officials but experienced moments of "discomfort" during meetings.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 23:29:22</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27356605.html#storylink=rss'>site</a></td><td><table><tr><td>The U.S. Soccer Federation got kicked around Wednesday at a Senate subcommittee hearing that looked into the corruption of FIFA, soccer's international governing organization.</td></tr><tr><td>Flynn told the Senators that he didn't know anything about corruption in either FIFA or CONCACAF, the division of FIFA that the U.S. is a part of.</td></tr><tr><td>Opting to stay in, they worked to get Sunil Gulati, the president of U.S. Soccer elected to a position in FIFA.</td></tr><tr><td>"If America's soccer leaders had taken action when they should have done," Jennings said, "Blazer and Warner would have been in jail, with Blatter seeking asylum in Zimbabwe and the 2022 World Cup being hosted by the USA."</td></tr></table></td></tr>
 </table></body></html>

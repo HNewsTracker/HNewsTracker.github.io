@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 18:07:46</td><td></td><td><a href='hillary_clinton_10_12.html'>Democratic presidential hopeful Hillary Rodham Clinton speaks Friday, July 24, 2015, at the New York University Leonard N. Stern School of Business in New York. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 18:07:46</td><td></td><td><a href='hillary_clinton_10_11.html'>Hillary Clinton says she will testify this October before a public hearing of the House committee investigating the deaths of four Americans in Benghazi, Libya. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 18:07:46</td><td></td><td><a href='hillary_clinton_10_11.html'>Hillary Clinton says she will testify this October before a public hearing of the House committee investigating the deaths of four Americans in Benghazi, Libya. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 18:07:46</td><td></td><td><a href='hillary_clinton_10_12.html'>Democratic presidential hopeful Hillary Rodham Clinton speaks Friday, July 24, 2015, at the New York University Leonard N. Stern School of Business in New York. (2)</a></td></tr>
 </table></body></html>

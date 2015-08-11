@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 03:32:17</td><td></td><td><a href='fifa_or_blatter_24_26.html'>Blatter, an IOC member since 1999, would have had to retire from his IOC term next year anyway because he turns 80 in March. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 10:16:43</td><td></td><td><a href='fifa_or_blatter_24_25.html'>Mr. Blatter wrote me a letter on July 23 informing me that it would be inappropriate to seek another eight-year term as he was retiring from his position at FIFA in seven months when a new president will be selected on Feb. 26,? (7)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 03:32:17</td><td></td><td><a href='fifa_or_blatter_24_26.html'>Blatter, an IOC member since 1999, would have had to retire from his IOC term next year anyway because he turns 80 in March. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 10:16:43</td><td></td><td><a href='fifa_or_blatter_24_25.html'>Mr. Blatter wrote me a letter on July 23 informing me that it would be inappropriate to seek another eight-year term as he was retiring from his position at FIFA in seven months when a new president will be selected on Feb. 26,? (7)</a></td></tr>
 </table></body></html>

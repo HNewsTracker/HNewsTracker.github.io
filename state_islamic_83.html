@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 18:30:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article27145789.html#storylink=rss'>site</a></td><td>Prosecutors have arrested the son of a Boston police captain in a plot to commit terrorist acts on behalf of the Islamic State group.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297723925669_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-13 22:26:06</td><td><a href='http://www.torontosun.com/2015/07/13/boston-police-captains-son-charged-in-islamic-state-terror-plot'>site</a></td><td>11 last year, when a close acquaintance -- identified by the two law enforcement officials as Ciccolo's father -- told the FBI that Ciccolo had expressed a desire to go overseas and fight for the Islamic State, according to court papers.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/g/x/r/m/t/image.related.articleLeadwide.620x349.gimjuw.png/1438113218021.jpg'></td><td>2015-07-28 19:53:42</td><td><a href='http://www.smh.com.au/world/florida-man-harlem-suarez-charged-in-alleged-backpack-bomb-plot-after-fbi-sting-20150728-gimjuw'>site</a></td><td>According to the criminal complaint, the FBI was alerted to Facebook posts made by Suarez in April of this year in which he expressed his support for Islamic State.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/g/x/r/m/t/image.related.articleLeadwide.620x349.gimjuw.png/1438113218021.jpg'></td><td>2015-07-28 19:53:42</td><td><a href='http://www.brisbanetimes.com.au/world/florida-man-harlem-suarez-charged-in-alleged-backpack-bomb-plot-after-fbi-sting-20150728-gimjuw'>site</a></td><td><table><tr><td>Washington: A Florida man has been charged in an alleged backpack bomb plot he planned to carry out on a public beach in Key West to show his support for the Islamic State militant group, the Department of Justice said on Tuesday.</td></tr><tr><td>Numerous young men have been arrested in the United States in recent months, with many plotting 'lone wolf attacks' in support of Islamic State.</td></tr></table></td></tr>
 </table></body></html>

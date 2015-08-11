@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-07-11 04:10:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11479406&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Greece's negotiators head to Brussels on Saturday armed with their reform proposals and parliamentary backing to seek a third bailout, but with the shadow of severe dissent from governing lawmakers hanging over them.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 12:55:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27033289.html#storylink=rss'>site</a></td><td>The ministers will assess Greece's bailout request and its accompanying economic reform proposals, which won the overwhelming backing of the Greek parliament early Saturday.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 15:55:04</td><td><a href='http://www.miamiherald.com/news/business/article27033289.html#storylink=rss'>site</a></td><td>Luxembourg Finance Minister Pierre Gramegna spelled it out as clearly as any other as he arrived Saturday for discussions over Greece's request for a third bailout and its reform proposals.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-20 16:28:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-07-20-EU--Greece-Bailout/id-73b403d6b933469facb5930d1f930083'>site</a></td><td>The IMF is not directly involved in Greece's request for a third bailout as its previous rescue runs until early next year.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 20:28:02</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/20/greeks-will-find-banks-open-but-restrictions-still-in-place'>site</a></td><td>Non-payment of either would have derailed Greece's latest bailout request.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/L82sy_PNFDrGjXVJPzDJmA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-19T170211Z_1_LYNXNPEB6I0AD_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-19 19:16:40</td><td><a href='http://finance.yahoo.com/news/greek-banks-ready-open-monday-141458826.html'>site</a></td><td>"Capital controls and restrictions on withdrawals will remain in place but we are entering a new stage which we all hope will be one of normality," the head of Greece's banking association Louka Katseli told Skai television.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 12:32:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Out%20of%20Business/id-88af5b485d1f4c2b91d1b81651be43c1'>site</a></td><td>Uncertainty over Greece's bailout and recent capital controls have led to a new spate of store closures in Greek capital.</td></tr>
 </table></body></html>

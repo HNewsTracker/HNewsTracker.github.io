@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-07-14 15:01:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/14/greece-pledges-to-get-rid-of-tax-evasion-as-a-way-of-life'>site</a></td><td>Greece pledges to get rid of tax evasion as a way of life</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/14/876/493/Greece Tax Evasion-5.jpg?ve=1&tl=1'></td><td>2015-07-14 15:01:12</td><td><a href='http://www.foxnews.com/world/2015/07/14/greece-pledges-to-crack-down-on-tax-evasion-as-way-life-as-part-bailout-tax/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>Greece promised last week to get tough on tax evasion in return for a third European bailout expected to be negotiated over the next month.</td></tr><tr><td>But experts say Greece has largely failed in previous crackdowns on tax evasion, which has been rampant for generations.</td></tr><tr><td>More enforcement will be needed, but Artavanis said many parts of Greece rarely see a tax inspector.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:04:56</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27206317.html#storylink=rss'>site</a></td><td>His research focuses on tax payments by Greek restaurants, and owners in some parts of the country have told him they have not had tax inspector visits since last August.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:04:56</td><td><a href='http://www.miamiherald.com/news/business/article27206317.html#storylink=rss'>site</a></td><td>This kind of tax dodging is a Greek national pastime, costing the state billions of euros in revenue.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 15:05:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11481047&ref=rss'>site</a></td><td>It continues today amid mistrust over government spending and disdain over how the country's various administrations have handled Greece's financial mess after the economy imploded in 2009.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 07:34:24</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/12/117-rescued-from-migrant-boat-off-greek-island-of-zakinthos'>site</a></td><td><table><tr><td>117 rescued from migrant boat off Greek island of Zakinthos</td></tr><tr><td>A lifeboat transferred the passengers to a passing cruise ship, the Island Princess, which was expected to arrive in a port on the western Greek mainland later Sunday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 07:34:24</td><td><a href='http://www.daytondailynews.com/ap/ap/international/117-rescued-from-migrant-boat-off-greek-island-of-/nmxZP/'>site</a></td><td>Greece's coast guard says 117 migrants have been rescued off the western Greek island of Zakinthos after issuing a mayday call.</td></tr>
 </table></body></html>

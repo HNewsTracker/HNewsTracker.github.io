@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-28 19:15:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article29120401.html#storylink=rss'>site</a></td><td>Mexico advanced to the final after winning two knockout-round matches with the help of controversial late penalties.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 19:15:25</td><td></td><td><a href='mexico_37_38.html'>MEXICO CITY - Embattled Mexican national soccer team coach Miguel Herrera has been fired following a TV reporter's claim that the coach known as "El Piojo" punched him. (9)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-29 00:58:03</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/28/mexico-coach-herrera-fired-after-claim-he-punched-reporter'>site</a></td><td><table><tr><td>During his tenure Mexico won 18 matches, tied 11 and lost 7.</td></tr><tr><td>Earlier this year he and two players came under investigation by the soccer federation for tweets supporting Mexico's Green Party just before midterm elections, an apparent violation of the federation's code of ethics.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 17:46:57</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/28/new-machines-aim-to-revive-troubled-new-mexico-green-chile'>site</a></td><td><table><tr><td>New machines aim to revive troubled New Mexico green chile</td></tr><tr><td>New Mexico land dedicated to growing chile has long been declining, and experts say mechanization might stop or even reverse the trend.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 17:46:57</td><td><a href='http://www.seattlepi.com/business/technology/article/Machines-eyed-in-boosting-New-Mexico-green-chile-6409291.php'>site</a></td><td>Federal numbers show overall chile acreage harvested across New Mexico fell last year to a 43-year low.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 17:50:07</td><td><a href='http://www.miamiherald.com/news/business/article29087764.html#storylink=rss'>site</a></td><td>Efforts are underway to save the green chile that's important to traditional New Mexican fare as labor shortages, a previous severe drought and competition from China, India and Mexico endanger its growth in the state.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-28 21:55:06</td><td><a href='http://www.miamiherald.com/news/business/article29087764.html#storylink=rss'>site</a></td><td><table><tr><td>Future unsure for troubled New Mexico green chile production</td></tr><tr><td>Green chiles, the signature crop of New Mexico, are in danger.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-28 23:38:38</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/28/new-machines-aim-to-revive-troubled-new-mexico-green-chile'>site</a></td><td><table><tr><td>ALBUQUERQUE, N.M. (AP) - Green chiles have defined New Mexico for generations, gaining fans and fame around the globe.</td></tr><tr><td>"The labor force is getting older and not a lot of young people are getting into the business," said Ed Ogaz, owner of the Anthony, New Mexico-based chile wholesaler Seco Spice Co. "Something needs to happen."</td></tr><tr><td>Chile has been a staple of New Mexico cuisine for centuries, and the Hatch region has become world famous for its flavorful hot peppers.</td></tr><tr><td>Experts say the state is losing chile acreage to West Texas and Mexico, partly because of the cost and availability of labor.</td></tr><tr><td>They point to New Mexico Chile Association numbers that say the full economic impact of chiles, both fresh and processed, was more than $460 million a year.</td></tr></table></td></tr>
 </table></body></html>

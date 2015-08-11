@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,5 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 23:38:21</td><td><a href='http://www.ctvnews.ca/world/top-terrorists-killed-in-tunisia-minister-says-1.2466010'>site</a></td><td><table><tr><td>TUNIS, Tunisia -- Tunisia's interior minister said the government has killed an extremist leader and nearly wiped out his group, as European tourists continue to leave the country amid fears of new attacks.</td></tr><tr><td>Tunisia, the only country to succeed in building a democracy after Arab Spring uprisings, is trying to defuse criticism from Britain and others that it hasn't done enough to protect tourists.</td></tr><tr><td>The interior minister said the brigade was plotting attacks in Tunisia and sending Tunisians to fight jihad abroad.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 23:38:21</td><td><a href='http://www.ctvnews.ca/world/top-terrorists-killed-in-tunisia-minister-says-1.2466010'>site</a></td><td><table><tr><td>TUNIS, Tunisia -- Tunisia's interior minister said the government has killed an extremist leader and nearly wiped out his group, as European tourists continue to leave the country amid fears of new attacks.</td></tr><tr><td>Tunisia, the only country to succeed in building a democracy after Arab Spring uprisings, is trying to defuse criticism from Britain and others that it hasn't done enough to protect tourists.</td></tr><tr><td>The interior minister said the brigade was plotting attacks in Tunisia and sending Tunisians to fight jihad abroad.</td></tr></table></td></tr>
 </table></body></html>

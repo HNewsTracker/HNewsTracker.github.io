@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 20:43:03</td><td><a href='http://www.reuters.com/article/2015/07/21/us-microsoft-results-idUSKCN0PV28Z20150721?feedType=RSS&feedName=technologyNews'>site</a></td><td>Microsoft reported a net loss of 40 cents per share for the quarter ended June 30.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 20:43:03</td><td><a href='http://www.reuters.com/article/2015/07/21/us-microsoft-results-idUSKCN0PV28Z20150721?feedType=RSS&feedName=technologyNews'>site</a></td><td>Microsoft reported a net loss of 40 cents per share for the quarter ended June 30.</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-07-21 20:50:08</td><td><a href='http://www.cbc.ca/news/business/microsoft-posts-quarterly-loss-writes-down-nokia-phone-business-1.3162319?cmp=rss'>site</a></td><td>Microsoft reported net income of $4.61 billion US, or 55 cents per share, a year earlier.</td></tr>
 </table></body></html>

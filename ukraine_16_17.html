@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,7 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/13/49/12/ef704f5dc31844c18443ca86a5b736f1-7a53a8251aef45678c149682b9e6236b-0.jpg'></td><td>2015-07-13 23:48:17</td><td><a href='http://www.daytondailynews.com/ap/ap/political/ukraine-pm-says-reforms-continue-despite-lunatic-l/nmyJT/'>site</a></td><td><table><tr><td>At the White House, President Barack Obama echoed the need for Ukraine to stick with austerity measures during a meeting Monday with Yatsenyuk and Vice President Joe Biden.</td></tr><tr><td>The White House said Obama and Biden welcomed Ukraine's "strong stand against populist measures that could undermine Ukraine's financial stability."</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 23:50:35</td><td><a href='http://www.startribune.com/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers/314737831/'>site</a></td><td>Obama has repeatedly conceded that tough economic sanctions imposed by the West have done little to change Russian President Vladimir Putin's decisions about Ukraine.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-14 06:57:34</td><td><a href='http://www.daytondailynews.com/ap/ap/political/ukraine-pm-says-reforms-continue-despite-lunatic-l/nmyQP/'>site</a></td><td>Ukraine's prime minister pushed back Monday against a pair of forces threatening to undermine his fragile government, likening members of Ukraine's parliament to "lunatics" while defending a nationalist militia that is locked in a standoff with police.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/13/49/12/ef704f5dc31844c18443ca86a5b736f1-7a53a8251aef45678c149682b9e6236b-0.jpg'></td><td>2015-07-13 23:48:17</td><td><a href='http://www.daytondailynews.com/ap/ap/political/ukraine-pm-says-reforms-continue-despite-lunatic-l/nmyJT/'>site</a></td><td><table><tr><td>At the White House, President Barack Obama echoed the need for Ukraine to stick with austerity measures during a meeting Monday with Yatsenyuk and Vice President Joe Biden.</td></tr><tr><td>The White House said Obama and Biden welcomed Ukraine's "strong stand against populist measures that could undermine Ukraine's financial stability."</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 23:50:35</td><td><a href='http://www.startribune.com/ukraine-pm-says-reforms-continue-despite-lunatic-lawmakers/314737831/'>site</a></td><td>Obama has repeatedly conceded that tough economic sanctions imposed by the West have done little to change Russian President Vladimir Putin's decisions about Ukraine.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 06:57:34</td><td><a href='http://www.daytondailynews.com/ap/ap/political/ukraine-pm-says-reforms-continue-despite-lunatic-l/nmyQP/'>site</a></td><td>Ukraine's prime minister pushed back Monday against a pair of forces threatening to undermine his fragile government, likening members of Ukraine's parliament to "lunatics" while defending a nationalist militia that is locked in a standoff with police.</td></tr>
 </table></body></html>

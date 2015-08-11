@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 09:42:06</td><td></td><td><a href='nepal_1_2.html'>Nepal's government has urged other countries to lift travel advisories that discourage their citizens from visiting the Himalayan nation following a devastating earthquake in April that killed thousands of people. (4)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 09:42:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27284101.html#storylink=rss'>site</a></td><td>Tourism is a key source of foreign currency for Nepal, which has many of the world's tallest mountains, including Mount Everest.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 09:42:06</td><td></td><td><a href='nepal_1_2.html'>Nepal's government has urged other countries to lift travel advisories that discourage their citizens from visiting the Himalayan nation following a devastating earthquake in April that killed thousands of people. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 09:42:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27284101.html#storylink=rss'>site</a></td><td>Tourism is a key source of foreign currency for Nepal, which has many of the world's tallest mountains, including Mount Everest.</td></tr>
 </table></body></html>

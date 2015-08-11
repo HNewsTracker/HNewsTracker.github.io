@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,7 +48,7 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-11 18:55:09</td><td><a href='http://www.startribune.com/19-evacuated-as-colima-volcano-spews-ash-in-western-mexico/313852701/'>site</a></td><td><table><tr><td>MEXICO CITY - Ash and cinders spewing from the Colima Volcano in western Mexico have prompted authorities to evacuate 19 people from a nearby village.</td></tr><tr><td>The Colima Volcano, which sits near the border of the western states of Colima and Jalisco, is also known as the Volcano of Fire.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 22:55:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27043195.html#storylink=rss'>site</a></td><td><table><tr><td>70 evacuated as Colima volcano spews ash in western Mexico</td></tr><tr><td>Clouds of ash fill the sky after an eruption by the Colima volcano, known as the Volcano of Fire, near the town of Comala, Mexico, Friday, July 10, 2015.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media1.s-nbcnews.com/j/newscms/2015_28/1117846/04842631_ccd7ce7077c887ae0b863a9ee5a60d05.nbcnews-fp-360-360.jpg'></td><td>2015-07-12 04:26:55</td><td><a href='http://www.nbcnews.com/news/mexico/70-evacuated-colima-volcano-spews-ash-mexico-n390681'>site</a></td><td>Ash and cinders spewed Saturday from the Colima Volcano in western Mexico, prompting authorities to close the airport in the state capital of Colima and order the evacuation of a half dozen hamlets on the flanks of the peak.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 18:55:09</td><td><a href='http://www.startribune.com/19-evacuated-as-colima-volcano-spews-ash-in-western-mexico/313852701/'>site</a></td><td><table><tr><td>MEXICO CITY - Ash and cinders spewing from the Colima Volcano in western Mexico have prompted authorities to evacuate 19 people from a nearby village.</td></tr><tr><td>The Colima Volcano, which sits near the border of the western states of Colima and Jalisco, is also known as the Volcano of Fire.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 22:55:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27043195.html#storylink=rss'>site</a></td><td><table><tr><td>70 evacuated as Colima volcano spews ash in western Mexico</td></tr><tr><td>Clouds of ash fill the sky after an eruption by the Colima volcano, known as the Volcano of Fire, near the town of Comala, Mexico, Friday, July 10, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media1.s-nbcnews.com/j/newscms/2015_28/1117846/04842631_ccd7ce7077c887ae0b863a9ee5a60d05.nbcnews-fp-360-360.jpg'></td><td>2015-07-12 04:26:55</td><td><a href='http://www.nbcnews.com/news/mexico/70-evacuated-colima-volcano-spews-ash-mexico-n390681'>site</a></td><td>Ash and cinders spewed Saturday from the Colima Volcano in western Mexico, prompting authorities to close the airport in the state capital of Colima and order the evacuation of a half dozen hamlets on the flanks of the peak.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,13 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>7</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297735175923_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-08-09 19:15:36</td><td><a href='http://www.torontosun.com/2015/08/09/march-and-a-moment-of-silence-mark-the-1-year-anniversary-of-michael-browns-death-in-ferguson'>site</a></td><td><table><tr><td>Michael Brown Sr., center, takes part in a parade in honor of his son, Michael Brown, Saturday, Aug. 8, 2015, in Ferguson, Mo.</td></tr><tr><td>Sunday marks one year since Michael Brown was shot and killed by Ferguson police officer Darren Wilson.</td></tr></table></td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.gannett-cdn.com/media/2015/08/09/USATODAY/USATODAY/635747533660196380-GTY-483516130.jpg'></td><td>2015-08-10 01:18:22</td><td><a href='http://www.usatoday.com/story/news/nation/2015/08/10/ferguson-protest-shooting/31397841/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-newstopstories'>site</a></td><td>Michael Brown Sr. drops off stuffed animals at a memorial to his son, Michael Brown, before taking part in a parade in his son's honor in Ferguson, Mo.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-10 09:57:00</td><td><a href='http://www.ctvnews.ca/world/man-shot-critically-injured-in-ferguson-1.2509430'>site</a></td><td>Man shot, critically injured in Ferguson</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-10 10:13:42</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article30585111.html#storylink=rss'>site</a></td><td>Police form a line across West Florissant Ave. during a protest, Sunday, Aug. 9, 2015, in Ferguson, Mo.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-10 10:13:42</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article30585111.html#storylink=rss'>site</a></td><td>Police stand near a suspect in a parking lot after gunfire during a protest on the anniversary of the death of Michael Brown, Sunday, Aug. 9, 2015, in Ferguson, Mo.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297735175923_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-08-10 13:56:18</td><td><a href='http://www.torontosun.com/2015/08/10/shots-fired-during-standoff-between-police-protesters-in-ferguson'>site</a></td><td>-- A man who authorities say opened fire on officers in Ferguson, Missouri, on the anniversary of Michael Brown's death was critically wounded when the officers shot back, St. Louis County's police chief said early Monday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 19:31:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-ferguson-protest-shooting-20150810-story.html'>site</a></td><td>It was not immediately clear if the latest police shooting of a black suspect would spur renewed unrest in Ferguson, the site of many protests - some violent - in the aftermath of Brown's death Aug. 9, 2014.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 15:20:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article28170364.html#storylink=rss'>site</a></td><td>Following the report, Ferguson's municipal judge, city manager and Police Chief Tom Jackson resigned.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.gannett-cdn.com/-mm-/cc8485838f96429ef8dd00f1f7fcbc0e91c170b7/c=294-0-4890-3456&amp;r=x383&amp;c=540x380/local/-/media/2015/07/22/USATODAY/USATODAY/635731515101070420-AP-Police-Military-Equipment.jpg'></td><td>2015-07-22 15:36:11</td><td><a href='http://www.usatoday.com/story/news/nation/2015/07/22/ferguson-set-name-new-interim-police-chief/30505031/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomnation-topstories'>site</a></td><td>Ferguson names black interim police chief</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.gannett-cdn.com/-mm-/ba3dc27cd316dc0cedec920d66fbc6bf9ae97774/r=x60&amp;c=60x60/http/videos.usatoday.net/Brightcove2/29906170001/2015/07/29906170001_4367678637001_thumb-8f0e410baecaf0207c0f6a706700e620.jpg'></td><td>2015-07-22 16:12:57</td><td><a href='http://www.usatoday.com/videos/news/nation/2015/07/22/30514469/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomnation-topstories'>site</a></td><td>Ferguson Hires Interim Police Chief The Ferguson police force has changed leadership again, with a third chief in four months.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ichef-1.bbci.co.uk/news/549/cpsprodpb/170A4/production/_84427349_ferguson.jpg'></td><td>2015-07-22 16:14:49</td><td><a href='http://www.bbc.co.uk/news/world-us-canada-33628606#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>He said he is interested in becoming Ferguson's permanent police chief.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-23 00:54:15</td><td><a href='http://www.nytimes.com/2015/07/23/us/missouri-arizona-commander-will-lead-ferguson-police.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Thomas Jackson, Ferguson's police chief for five years, resigned days after that report.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td>My wife's grandmother lived in Ferguson until she died in 1991, so I spent some time there as a young man.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-03 13:01:27</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article29842411.html#storylink=rss'>site</a></td><td>What we didn?t know at the time was the depth of mistrust between black residents and the predominantly white Ferguson Police Department, a level of suspicion that no doubt fueled what happened next.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297734066751_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-08-07 13:18:11</td><td><a href='http://www.torontosun.com/2015/08/07/a-year-after-michael-browns-death-a-changed-ferguson-tries-to-move-beyond-shooting-protests'>site</a></td><td>At the time of the shooting, just three of Ferguson's 53 officers were black.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-07 13:25:13</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/08/07/22538408.html?cid=rssnewsworld'>site</a></td><td>But at the same time, the government issued a report so critical of Ferguson's police and municipal court system that it hastened an upheaval in the town of 21,000 people, two-thirds of them black.</td></tr>
 </table></body></html>

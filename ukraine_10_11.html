@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 20:11:33</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/10/us-warns-of-sharp-rise-in-separatist-attacks-in-ukraine'>site</a></td><td><table><tr><td>US warns of sharp rise in separatist attacks in Ukraine</td></tr><tr><td>WASHINGTON (AP) - The United States says Ukrainian rebels launched more attacks over the last three days than any similar time period since February, in what may be an escalating effort by Russian-backed militants to destabilize Ukraine's Western-backed government.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 20:11:33</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/10/us-warns-of-sharp-rise-in-separatist-attacks-in-ukraine'>site</a></td><td><table><tr><td>US warns of sharp rise in separatist attacks in Ukraine</td></tr><tr><td>WASHINGTON (AP) - The United States says Ukrainian rebels launched more attacks over the last three days than any similar time period since February, in what may be an escalating effort by Russian-backed militants to destabilize Ukraine's Western-backed government.</td></tr></table></td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-08-10 20:11:33</td><td><a href='http://www.daytondailynews.com/ap/ap/political/us-warns-of-sharp-rise-in-separatist-attacks-in-uk/nnG3D/'>site</a></td><td><table><tr><td>State Department spokesman John Kirby says the attacks include a heavy artillery assault on a southeastern Ukraine town.</td></tr><tr><td>Kirby says since Saturday, three soldiers have been killed and 35 wounded in 127 distinct separatist attacks reported by Ukraine.</td></tr></table></td></tr>
 </table></body></html>

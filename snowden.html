@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,8 +48,8 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://cdn.rt.com/files/news/42/d2/10/00/poitras-harassed-by-us-govt.si.jpg'></td><td>2015-07-15 01:13:50</td><td><a href='http://rt.com/usa/273697-poitras-lawsuit-us-govt-harassment/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td>Snowden documentary filmmaker sues US over years of harassment</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-21 16:45:14</td><td></td><td><a href='snowden_2.html'>BERLIN (AP) - Germany's domestic intelligence chief said Tuesday that the revelations by Edward Snowden have had at least one positive effect, by raising awareness about the importance of counter-espionage. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 12:45:10</td><td></td><td><a href='snowden_4.html'>Sergei Markov, an ardent nationalist and Kremlin advisor on diplomacy and international affairs, said Mr Snowden was in need of Russia's protection because "he can compromise thousands of intelligence and military officials". (8)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.rt.com/files/news/42/d2/10/00/poitras-harassed-by-us-govt.si.jpg'></td><td>2015-07-15 01:13:50</td><td><a href='http://rt.com/usa/273697-poitras-lawsuit-us-govt-harassment/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td>Snowden documentary filmmaker sues US over years of harassment</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 16:45:14</td><td></td><td><a href='snowden_2.html'>BERLIN (AP) - Germany's domestic intelligence chief said Tuesday that the revelations by Edward Snowden have had at least one positive effect, by raising awareness about the importance of counter-espionage. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 12:45:10</td><td></td><td><a href='snowden_4.html'>Sergei Markov, an ardent nationalist and Kremlin advisor on diplomacy and international affairs, said Mr Snowden was in need of Russia's protection because "he can compromise thousands of intelligence and military officials". (8)</a></td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-07-29 01:18:41</td><td></td><td><a href='snowden_0.html'>In response to an online petition asking for a pardon for Edward Snowden, the former National Security Agency contractor, a White House spokesman said on Tuesday that Mr Snowden should return to the United States and face justice. (6)</a></td></tr>
 </table></body></html>

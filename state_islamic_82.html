@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 13:01:02</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/algerian-army-confirms-9-soldiers-killed-in-militant-ambush'>site</a></td><td>The Friday forest ambush blamed on Islamic extremists in the rugged Ain Defla province southwest of the capital of Algiers comes after a string of successes by the army against the country's long-running insurgency.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 13:06:41</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27819553.html#storylink=rss'>site</a></td><td>Algeria has been fighting Islamic radicals, largely in remote areas, since the 1990s.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 12:23:54</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28694185.html#storylink=rss'>site</a></td><td>Lebanese security officials say Islamic extremists in the camp were likely behind the assassination Saturday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/vikes+gal07241510.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-25 12:25:07</td><td><a href='http://www.startribune.com/palestinian-official-assassinated-in-refugee-camp-in-lebanon/318527261/'>site</a></td><td>Palestinian official assassinated in refugee camp in Lebanon, likely by Islamic extremists</td></tr>
 </table></body></html>

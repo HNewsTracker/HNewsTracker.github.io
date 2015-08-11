@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,7 +48,7 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-12 21:00:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27069493.html#storylink=rss'>site</a></td><td>Tsipras facing pressure to back deal or consider euro exit</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/a/3/c/0/image.related.articleLeadwide.620x349.gibi8r.png/1436825788178.jpg'></td><td>2015-07-13 22:16:33</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greece-debt-crisis-pm-alexis-tsipras-faces-syriza-mutiny-after-capitulating-to-demands-20150713-gibi8r'>site</a></td><td>That opposition alone would wipe out Tsipras's 12-seat majority in parliament, forcing him to rely on opposition votes to carry the day.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>Also on Friday, Tsipras is due to appear in parliament to answer qustions from the opposition about contingency plans to adopt a parallel payment system that could have facilitated a euro exit.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436995239589.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150715-gidayi'>site</a></td><td>The ruling Syriza party, elected in January on an anti-austerity platform, has been deeply split by the bailout deal that a reluctant Tsipras was forced to accept after gruelling negotiations in Brussels this week.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://img.huffingtonpost.com//asset/scaleFit_630_noupscale/55aa60f71700004000bafb18.jpeg'></td><td>2015-07-18 13:57:09</td><td><a href='http://www.huffingtonpost.com/entry/greece-banks-re-open_55aa59a6e4b065dfe89e849e?'>site</a></td><td>The reshuffle allowed Tsipras to replace cabinet rebels with allies of his own or from his junior coalition partners, the right-wing Independent Greeks party.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td>Tsipras' Syriza party was elected in January on a promise to end austerity, forming a coalition with the right-wing, anti-bailout Independent Greeks party - a move that broadened his political influence.</td></tr>
 </table></body></html>

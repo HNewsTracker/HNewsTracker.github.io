@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,7 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201524/SCCZEN_AP150906071403_140x93.jpg'></td><td>2015-08-06 13:30:38</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11493288&ref=rss'>site</a></td><td>Apple says music service has more than 11m members</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-06 14:47:52</td><td><a href='http://www.foxbusiness.com/technology/2015/08/06/apple-says-more-than-11-million-people-have-signed-up-for-music-service-trial/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Apple says 2 million people have signed up for the family plan trial.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 14:51:32</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article30228861.html#storylink=rss'>site</a></td><td><table><tr><td>After that, individuals can pay $10 a month, while families of up to six people can pay $15 a month for unlimited access to Apple Music on their devices.</td></tr><tr><td>In addition to the streaming subscription plan, Apple Music also includes a free Internet radio station and a media platform for artists to upload songs and videos for fans.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201524/SCCZEN_AP150906071403_140x93.jpg'></td><td>2015-08-06 13:30:38</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11493288&ref=rss'>site</a></td><td>Apple says music service has more than 11m members</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 14:47:52</td><td><a href='http://www.foxbusiness.com/technology/2015/08/06/apple-says-more-than-11-million-people-have-signed-up-for-music-service-trial/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Apple says 2 million people have signed up for the family plan trial.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-06 14:51:32</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article30228861.html#storylink=rss'>site</a></td><td><table><tr><td>After that, individuals can pay $10 a month, while families of up to six people can pay $15 a month for unlimited access to Apple Music on their devices.</td></tr><tr><td>In addition to the streaming subscription plan, Apple Music also includes a free Internet radio station and a media platform for artists to upload songs and videos for fans.</td></tr></table></td></tr>
 </table></body></html>

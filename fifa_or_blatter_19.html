@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 18:35:05</td><td></td><td><a href='fifa_or_blatter_19_20.html'>Mutko says "communication with FIFA ... is not as easy as it was before because if you expect that there will be a change in administration in February then communication is somewhat thwarted." (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 18:35:05</td><td></td><td><a href='fifa_or_blatter_19_21.html'>Blatter was accompanied by Mutko as he arrived at his St. Petersburg hotel for the World Cup qualifying draw on his first foreign trip since the FIFA scandal erupted. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 18:35:05</td><td></td><td><a href='fifa_or_blatter_19_21.html'>Blatter was accompanied by Mutko as he arrived at his St. Petersburg hotel for the World Cup qualifying draw on his first foreign trip since the FIFA scandal erupted. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 18:35:05</td><td></td><td><a href='fifa_or_blatter_19_20.html'>Mutko says "communication with FIFA ... is not as easy as it was before because if you expect that there will be a change in administration in February then communication is somewhat thwarted." (2)</a></td></tr>
 </table></body></html>

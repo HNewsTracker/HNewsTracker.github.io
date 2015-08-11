@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>aurora</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://static01.nyt.com/images/2015/07/09/us/09AURORA/09AURORA-thumbStandard-v2.jpg'></td><td>2015-07-16 19:31:26</td><td><a href='http://www.nytimes.com/2015/07/17/us/james-holmes-guilty-in-aurora-movie-theater-shooting.html'>site</a></td><td>Colorado Jury Reaches Verdict in Aurora Movie Theater Shooting</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/07/09/us/09AURORA/09AURORA-thumbStandard-v2.jpg'></td><td>2015-07-16 19:31:26</td><td><a href='http://www.nytimes.com/2015/07/17/us/james-holmes-guilty-in-aurora-movie-theater-shooting.html'>site</a></td><td>Colorado Jury Reaches Verdict in Aurora Movie Theater Shooting</td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://static01.nyt.com/images/2015/07/09/us/09AURORA/09AURORA-thumbStandard-v2.jpg'></td><td>2015-07-17 00:52:18</td><td><a href='http://www.nytimes.com/2015/07/17/us/james-holmes-guilty-in-aurora-movie-theater-shooting.html?partner=rss&emc=rss&_r=0'>site</a></td><td>James Holmes Guilty in Aurora Movie Theater Shooting</td></tr>
 </table></body></html>

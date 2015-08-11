@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 07:45:24</td><td><a href='http://www.startribune.com/sludge-from-colorado-mine-spill-heads-down-river-to-nm/321008761/'>site</a></td><td>As the plume headed toward New Mexico, that state's governor said the EPA waited too long to tell her about the problem.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 21:33:08</td><td></td><td><a href='mexico_24_25.html'>Farms along the Animas and San Juan river valleys in New Mexico have no water to irrigate their crops after a massive spill from a closed Colorado mine. (16)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 07:45:24</td><td><a href='http://www.startribune.com/sludge-from-colorado-mine-spill-heads-down-river-to-nm/321008761/'>site</a></td><td>As the plume headed toward New Mexico, that state's governor said the EPA waited too long to tell her about the problem.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 21:33:08</td><td></td><td><a href='mexico_24_25.html'>Farms along the Animas and San Juan river valleys in New Mexico have no water to irrigate their crops after a massive spill from a closed Colorado mine. (16)</a></td></tr>
 </table></body></html>

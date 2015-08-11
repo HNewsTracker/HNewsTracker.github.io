@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,5 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-05 06:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11492542&ref=rss'>site</a></td><td><table><tr><td>A look at Egypt's Suez Canal, past and present</td></tr><tr><td>CAIRO (AP) " Egypt is to unveil a major expansion of the Suez Canal on Thursday in what the government hopes will be a moment of national pride following years of political unrest.</td></tr><tr><td>The canal is one of Egypt's top foreign currency earners and is seen as a symbol of its modern state.</td></tr><tr><td>The last, in 1973, saw Egypt launch a surprise attack across the canal that is now remembered as the country's greatest battlefield victory.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 06:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11492542&ref=rss'>site</a></td><td><table><tr><td>A look at Egypt's Suez Canal, past and present</td></tr><tr><td>CAIRO (AP) " Egypt is to unveil a major expansion of the Suez Canal on Thursday in what the government hopes will be a moment of national pride following years of political unrest.</td></tr><tr><td>The canal is one of Egypt's top foreign currency earners and is seen as a symbol of its modern state.</td></tr><tr><td>The last, in 1973, saw Egypt launch a surprise attack across the canal that is now remembered as the country's greatest battlefield victory.</td></tr></table></td></tr>
 </table></body></html>

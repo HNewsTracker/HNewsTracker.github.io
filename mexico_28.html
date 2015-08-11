@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 01:02:56</td><td></td><td><a href='mexico_28_29.html'>TORONTO (Reuters) - Mexico's Rommel Pacheco won the gold medal in men's 3m springboard at the Pan American Games on Saturday to earn an automatic qualifying spot for the 2016 Rio Olympics. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 02:50:02</td><td><a href='http://www.reuters.com/article/2015/07/13/us-games-panam-olympics-diving-idUSKCN0PN01120150713?feedType=RSS&feedName=sportsNews'>site</a></td><td>Colombia's Victor Ortega (455.15) took the silver and Mexico's Jonathan Ruvalcabra (437.35) won bronze.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 01:02:56</td><td></td><td><a href='mexico_28_29.html'>TORONTO (Reuters) - Mexico's Rommel Pacheco won the gold medal in men's 3m springboard at the Pan American Games on Saturday to earn an automatic qualifying spot for the 2016 Rio Olympics. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 02:50:02</td><td><a href='http://www.reuters.com/article/2015/07/13/us-games-panam-olympics-diving-idUSKCN0PN01120150713?feedType=RSS&feedName=sportsNews'>site</a></td><td>Colombia's Victor Ortega (455.15) took the silver and Mexico's Jonathan Ruvalcabra (437.35) won bronze.</td></tr>
 </table></body></html>

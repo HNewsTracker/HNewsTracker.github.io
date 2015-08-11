@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-29 04:23:41</td><td><a href='http://www.sbs.com.au/news/article/2015/07/29/greste-awaits-egypts-retrial-verdict'>site</a></td><td>Mr Greste says he's anxious about Thursday's verdict because he couldn't return to Egypt to mount a defence without violating al-Sisi's order.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-29 04:23:41</td><td><a href='http://www.sbs.com.au/news/article/2015/07/29/greste-awaits-egypts-retrial-verdict'>site</a></td><td>Mr Greste says he's anxious about Thursday's verdict because he couldn't return to Egypt to mount a defence without violating al-Sisi's order.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/m/y/y/w/image.related.articleLeadwide.620x349.gimxwu.png/1438144961018.jpg'></td><td>2015-07-29 04:42:58</td><td><a href='http://www.brisbanetimes.com.au/national/australian-journalist-peter-greste-awaits-egyptian-terrorretrial-verdict-20150729-gimxwu.html'>site</a></td><td>Mr Greste's colleagues, Mohamed Fahmy and Baher Mohamed are free on bail in Egypt awaiting the verdict, but reporting to police daily.</td></tr>
 </table></body></html>

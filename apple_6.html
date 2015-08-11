@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,8 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 11:25:26</td><td></td><td><a href='apple_6_7.html'>U.S. stock index futures fell on Wednesday as corporate earnings disappointed, especially from Apple (AAPL.O), the world's largest company. (9)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-22 11:47:06</td><td></td><td><a href='apple_6_9.html'>ANALYST TAKE: "China is at the core of Apple's problem, and the iPhone maker is becoming too dependent on a single country which is having big problems of its own," said David Madden, market analyst at IG. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 18:15:57</td><td></td><td><a href='apple_6_8.html'>Weak showings from Apple, Microsoft and other companies pulled stocks lower in afternoon trading Wednesday, pointing the market toward its second decline in as many days. (6)</a></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 20:50:08</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article28221517.html#storylink=rss'>site</a></td><td>"Do iPhone sales tell us a lot about the broader economy and the markets or does it tell us more about Apple? It probably tells us more about Apple," Davidson said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 11:25:26</td><td></td><td><a href='apple_6_7.html'>U.S. stock index futures fell on Wednesday as corporate earnings disappointed, especially from Apple (AAPL.O), the world's largest company. (9)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 11:47:06</td><td></td><td><a href='apple_6_9.html'>ANALYST TAKE: "China is at the core of Apple's problem, and the iPhone maker is becoming too dependent on a single country which is having big problems of its own," said David Madden, market analyst at IG. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 18:15:57</td><td></td><td><a href='apple_6_8.html'>Weak showings from Apple, Microsoft and other companies pulled stocks lower in afternoon trading Wednesday, pointing the market toward its second decline in as many days. (6)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 20:50:08</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article28221517.html#storylink=rss'>site</a></td><td>"Do iPhone sales tell us a lot about the broader economy and the markets or does it tell us more about Apple? It probably tells us more about Apple," Davidson said.</td></tr>
 </table></body></html>
