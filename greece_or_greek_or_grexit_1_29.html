@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 11:36:52</td><td><a href='http://finance.yahoo.com/news/greek-pm-tsipras-faces-party-022322066.html'>site</a></td><td>He and a parliamentary spokesman for Syriza railed against what he described as a "coup" by creditors to force Greece to accept harsh reforms, while opponents of the new measures are planning strikes and protests in the coming days.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/i4_8OYEnmSSSMDCPZK2d8Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-16T010055Z_1_LYNXNPEB6F012_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-16 01:46:51</td><td><a href='http://finance.yahoo.com/news/greek-parliament-approves-bailout-measures-005217349.html'>site</a></td><td>"I acknowledge the fiscal measures are harsh, that they won't benefit the Greek economy, but I'm forced to accept them," he said as he made a final appeal for support.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 14:44:22</td><td><a href='http://www.reuters.com/article/2015/07/26/us-eurozone-greece-idUSKCN0Q00JN20150726?feedType=RSS&feedName=worldNews'>site</a></td><td>Lafazanis, leader of a hardline faction in the ruling Syriza party that has argued for a return to the drachma, said the move would have allowed pensions and public sector wages to be paid if Greece were forced out of the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/30/c3/d2/c9177f4c8d05408085912743c779f31a-da451bd6382f40dfa324274e47b7d816-0.jpg'></td><td>2015-07-31 01:03:59</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/drachma-revolt-adds-unease-to-greeces-awkward-alli/nm8zw/'>site</a></td><td>The decision followed a dramatic 12-hour meeting by the 200-member central committee, during which party rebels appealed for Greece to return to its national currency, the drachma.</td></tr>
 </table></body></html>

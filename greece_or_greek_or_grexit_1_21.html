@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 21:00:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27033289.html#storylink=rss'>site</a></td><td>In Finland, another hard-hit eurozone country, there were reports that the coalition government was balking at further assistance for Greece.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td>Banking shares, which make up about 20 percent of the Greece index, were particularly hard hit.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-11 22:20:09</td><td><a href='http://www.miamiherald.com/news/business/article27033289.html#storylink=rss'>site</a></td><td>There were few signs that the Greek bailout discussions between the country's finance minister and his counterparts in the 19-country eurozone are going to wrap up any time soon.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 08:20:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-17-EU--Greece-Bailout/id-326ea64e2d0e449886d34214a50fd39f'>site</a></td><td>Specific terms of the three-year bailout will now be thrashed out between Greece and its partners in the 19-nation eurozone.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 12:54:27</td><td><a href='http://nypost.com/2015/08/03/greek-stock-market-reopens-to-a-bloodbath/'>site</a></td><td>Financial information company Markit said its gauge of manufacturing activity in Greece plummeted during the month to 30.2 points, its lowest ever reading, despite improvements across the rest of the 19-country eurozone.</td></tr>
 </table></body></html>
