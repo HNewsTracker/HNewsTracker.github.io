@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 17:39:03</td><td></td><td><a href='state_islamic_13_14.html'>While U.S. officials declined to confirm it, Afghan authorities said an American airstrike Friday killed Islamic State affiliate leader Hafeez Sayeed and more than 30 other militants. (15)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 17:39:03</td><td></td><td><a href='state_islamic_13_15.html'>Disenchanted extremists from the Taliban and other organizations, impressed by the Islamic State group's territorial gains and slick online propaganda, began raising its black flag in extremist-dominated areas of both countries in recent months. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 11:35:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480342&ref=rss'>site</a></td><td>In the audio, which was posted on known militant websites, a man speaking Pashtun calls on listeners to join the Islamic State group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 17:39:03</td><td></td><td><a href='state_islamic_13_14.html'>While U.S. officials declined to confirm it, Afghan authorities said an American airstrike Friday killed Islamic State affiliate leader Hafeez Sayeed and more than 30 other militants. (6)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-11 17:39:03</td><td></td><td><a href='state_islamic_13_15.html'>Afghanistan said Saturday that recent U.S. airstrikes it assisted destroyed the top leadership of a fledging Islamic State affiliate there, potentially striking a major blow to an insurgent group already targeted by local Taliban fighters. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/11/b0/8e/9e5d713208f445ab914d1643943c53ef-62e05bbd42c14c27918572962e340572-0.jpg'></td><td>2015-07-11 17:39:03</td><td><a href='http://www.daytondailynews.com/ap/ap/international/activists-28-killed-in-syrian-army-strikes-on-is-h/nmxJJ/'>site</a></td><td>Afghanistan says US strikes destroy its Islamic State branch</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 11:35:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480342&ref=rss'>site</a></td><td>In the audio, which was posted on known militant websites, a man speaking Pashtun calls on listeners to join the Islamic State group.</td></tr>
 </table></body></html>

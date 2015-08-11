@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.3152396.1436953983!/cpImage/httpImage/image.jpg_gen/derivatives/original_300/greece-bailout.jpg'></td><td>2015-07-15 06:27:55</td><td><a href='http://www.cbc.ca/news/business/greece-protests-turn-violent-ahead-of-austerity-vote-1.3152371?cmp=rss'>site</a></td><td>The raft of consumer tax increases and pension reforms demanded by Greece's creditors has led to growing anger among the country's governing left-wing Syriza party.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 06:34:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/what-relief-greek-economy-on-its-knees-despite-bailout-deal'>site</a></td><td>Greece fell back into recession in the spring amid growing uncertainty over the country's future in the euro in the wake of the election triumph of the radical left Syriza party in January.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-08-03 10:00:43</td><td><a href='http://finance.yahoo.com/news/greek-stock-market-reopens-22-100034490.html'>site</a></td><td>Greek bank stocks suffered the most, hitting or nearing the daily trading limit of a 30 percent loss.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-08-03 14:34:32</td><td><a href='http://finance.yahoo.com/news/greek-stocks-unofficially-close-16-143432559.html'>site</a></td><td>Greek stocks unofficially close 16 percent lower, banks plunge 30 percent</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>A plunge of more than 16 percent for the main Greek index and a 30 percent sell-off for bank stocks were the latest signs of Greece?s shattered economy.</td></tr>
 </table></body></html>

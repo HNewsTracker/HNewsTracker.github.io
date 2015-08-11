@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 20:45:04</td><td><a href='http://www.charlotteobserver.com/news/business/article27115777.html#storylink=rss'>site</a></td><td>A new agreement between Greece and its lenders helped lift the stock market on Monday, extending the market's winning streak to a third day.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td>Greece's dismal economic prospects may also weigh on the market.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 12:54:27</td><td><a href='http://nypost.com/2015/08/03/greek-stock-market-reopens-to-a-bloodbath/'>site</a></td><td>Greek stock market reopens to a bloodbath</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 19:35:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484861&ref=rss'>site</a></td><td>S&P had previously rated Greece as "CCC-," a category signaling that loan payments are likely to be missed within six months.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/j/g/j/a/image.related.articleLeadwide.620x349.gikl05.png/1437838185560.jpg'></td><td>2015-07-25 15:29:52</td><td><a href='http://www.smh.com.au/world/greek-bailout-talks-to-begin-after-delay-20150725-gikl05'>site</a></td><td>Apart from the terms of a new loan, Greece and its lenders are also expected to discuss the sustainability of its debt, which is around 170 percent of GDP.</td></tr>
 </table></body></html>
