@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150720&t=2&i=1065633766&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6J0KD'></td><td>2015-07-20 14:41:45</td><td><a href='http://www.reuters.com/article/2015/07/20/us-turkey-blast-idUSKCN0PU0T520150720?feedType=RSS&feedName=wtMostRead'>site</a></td><td>A second official also said Islamic State appeared to have been responsible and that the attack was a "retaliation for the Turkish government's efforts to fight terrorism".</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 08:05:12</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28689118.html#storylink=rss'>site</a></td><td>Kurdish groups held the Turkish government responsible for the blast, saying it had not been aggressive in battling the Islamic State group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 15:50:14</td><td><a href='http://www.startribune.com/ap-news-guide-turkish-us-deal-may-have-far-reaching-effects/318879191/'>site</a></td><td><table><tr><td>AP News Guide: Turkish-US deal may have far-reaching effect on Islamic State group, Syrian war</td></tr><tr><td>The deal further embroils Turkey, a key NATO ally, in Syria's civil war, and also catapults it into a front-line position in the global war against the Islamic State group.</td></tr></table></td></tr>
 </table></body></html>

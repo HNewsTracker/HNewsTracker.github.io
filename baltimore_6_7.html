@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/04/102643947-471831462.80x60.jpg?v=1430723021'></td><td>2015-07-11 22:22:00</td><td><a href='http://www.cnbc.com/2015/07/11/new-york-times-digital-baltimore-mayoras-challenge-fighting-crime-while-reining-in-police.html'>site</a></td><td><table><tr><td>BALTIMORE - On the day after Mayor Stephanie Rawlings-Blake fired her police commissioner last week, a man was doing a brisk business selling DVDs from a folding table in front of a Baptist church in West Baltimore.</td></tr><tr><td>Ms. Rawlings-Blake says she is convinced she can do both; she spent part of Thursday visiting Baltimore police commanders with her interim commissioner, Kevin Davis.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/0d6e5556fd4ce8e923158a64edd01ea1df7c4fb8/0_122_1440_864/master/1440.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=fe570f059077a36d163ee879d82a8674'></td><td>2015-07-23 02:10:04</td><td><a href='http://www.theguardian.com/us-news/2015/jul/23/freddie-gray-death-blackface-fundraiser-police-officers'>site</a></td><td><table><tr><td>A former Baltimore police officer has said he plans to perform an Al Jolson routine in blackface to raise money for the six Baltimore officers who have been indicted in the death of Freddie Gray.</td></tr><tr><td>Michael Davey, an attorney for the Baltimore City Fraternal Order of Police, said officers did not support the fundraiser.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297705590793_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-23 02:26:11</td><td><a href='http://www.torontosun.com/2015/07/22/blackface-performer-plans-routine-to-raise-money-for-officers-indicted-in-death-of-black-man'>site</a></td><td>Gray's death prompted a wave of arson, looting and open confrontations with riot police in Baltimore in April.</td></tr>
 </table></body></html>

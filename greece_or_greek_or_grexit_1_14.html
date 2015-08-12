@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/52/43/8300758/21/square_gallery_thumb.jpg'></td><td>2015-07-14 03:42:03</td><td><a href='http://www.sfgate.com/business/energy/article/Stocks-rise-as-Greece-gets-a-new-bailout-deal-6381415.php'>site</a></td><td>Asia stocks lifted by Greece deal, China's 4th day of gains</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 12:35:05</td><td><a href='http://www.miamiherald.com/news/business/article27190612.html#storylink=rss'>site</a></td><td><table><tr><td>Global stocks uneven as focus on Greece, China drop</td></tr><tr><td>Global stock markets were uneven Tuesday as investors digested the details and possible risks in Greece's preliminary rescue deal and China's main index fell after three days of gains.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/us-stocks-open-with-small-gains-as-investor-assess-earnings'>site</a></td><td>Most Asia stocks rise after Greece approves austerity bill</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 03:30:17</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-rise-as-ebay-citi-others-report-strong-e/nmzq3/'>site</a></td><td>Asia stocks mostly higher after strong earnings, Greece aid</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 17:30:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483049&ref=rss'>site</a></td><td><table><tr><td>Mixed German messages on Greece serve a purpose</td></tr><tr><td>BERLIN (AP) " German government officials have appeared to send mixed messages about their desire for Greece to keep using the euro " and that's just the way they want it.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-19 12:36:50</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27816652.html#storylink=rss'>site</a></td><td>Criticism for German idea that Greece take a euro 'timeout'</td></tr>
 </table></body></html>

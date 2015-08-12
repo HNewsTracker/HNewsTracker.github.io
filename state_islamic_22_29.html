@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>5</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150720&t=2&i=1065633766&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6J0KD'></td><td>2015-07-20 14:41:45</td><td><a href='http://www.reuters.com/article/2015/07/20/us-turkey-blast-idUSKCN0PU0T520150720?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Suspected Islamic State suicide bombing kills 28 in Turkish border town</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/q/e/e/image.related.articleLeadwide.620x349.gigq9a.png/1437423230046.jpg'></td><td>2015-07-20 20:14:07</td><td><a href='http://www.smh.com.au/world/suspected-islamic-state-suicide-bomber-kills-30-in-suruc-turkey-20150720-gigq9a'>site</a></td><td>Suspected Islamic State suicide bomber kills 30 in Suruc, Turkey</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/world-news/article31392636.ece/f0cee/ALTERNATES/h342/PANews%20BT_P-454446be-d232-42a3-9ff9-a11526784501_I1.jpg'></td><td>2015-07-21 11:36:19</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/turkey-suicide-bombing-suspect-identified-31392637.html'>site</a></td><td>Ahmet Davutoglu said authorities are probing the international and domestic connections of a specific person they believe was a suicide bomber tied to the Islamic State group.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/i/h/3/l/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.brisbanetimes.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td>Ankara: Kurdish militants have claimed responsibility for the assassination of two Turkish police officers in what they said was retaliation for a suspected Islamic State suicide bombing that killed 32 people.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 12:44:21</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/qa-kurds-fight-islamic-state-and-endure-turkish-at/nm7FH/'>site</a></td><td>Tensions flared again after an Islamic State suicide bombing in the southeastern Turkish city of Suruc last week killed 32 people.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/k/9/w/s/image.related.articleLeadwide.620x349.gikm73.png/1437873942921.jpg'></td><td>2015-07-26 01:25:54</td><td><a href='http://www.smh.com.au/world/turkey-threatens-more-air-strikes-in-syria-iraq-against-islamic-state-pkk-20150726-gikm73.html'>site</a></td><td>Backed by the US-led coalition air strikes against Islamic State, the YPG controls as much as half of Syria's 800-kilometre border with Turkey, and Ankara is determined to prevent the Kurds creating an independent state in the north of Syria.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 15:24:00</td><td><a href='http://www.latimes.com/world/middleeast/la-fg-u-s-turkey-islamic-state-syria-20150727-story.html'>site</a></td><td>The Syrian Kurds are among the most effective ground forces battling the Islamic State group and have been aided by U.S.-led airstrikes, but Turkey fears they could revive an insurgency against Ankara in pursuit of an independent state.</td></tr>
 </table></body></html>

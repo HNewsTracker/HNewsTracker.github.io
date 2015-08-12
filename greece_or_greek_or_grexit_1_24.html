@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/Lh795d_ob9XBhMWkkIjjGg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/6a819f698c853f1f7c0f6a70670011e2_original.jpg'></td><td>2015-07-15 08:49:09</td><td><a href='http://finance.yahoo.com/news/latest-greek-banks-remain-closed-084909764.html'>site</a></td><td>Greece's finance ministry says the banks will remain closed through Thursday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 19:10:02</td><td><a href='http://www.foxnews.com/world/2015/07/16/latest-german-finance-minister-says-eu-rules-dont-permit-outright-cut-in-greek/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>ATHENS, Greece - Greece's government says the country's banks will reopen Monday after being closed for three weeks but cautioned that restrictions on withdrawals would only be lifted gradually.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/ec/ce/8a2f09d6dc6f4662b457297278f0875d-fd0e4bcd8cc34cc7802c13192f2bd242-0_1.jpg'></td><td>2015-07-18 15:51:07</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greek-banks-to-reopen-monday-but-cash-restrictions/nm22p/'>site</a></td><td>Greek banks are reopening Monday after a forced 3-week closure but restrictions on cash withdrawals will remain.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/L82sy_PNFDrGjXVJPzDJmA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-19T170211Z_1_LYNXNPEB6I0AD_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-19 19:16:40</td><td><a href='http://finance.yahoo.com/news/greek-banks-ready-open-monday-141458826.html'>site</a></td><td>"Capital controls and restrictions on withdrawals will remain in place but we are entering a new stage which we all hope will be one of normality," the head of Greece's banking association Louka Katseli told Skai television.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-20 05:10:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11484028&ref=rss'>site</a></td><td>ATHENS, Greece (AP) " Greeks will finally see their banks reopen at 8 a.m. local (0500 GMT) Monday morning, but many restrictions on transactions, including cash withdrawals, will remain.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 11:02:04</td><td><a href='http://www.miamiherald.com/news/business/article27893911.html#storylink=rss'>site</a></td><td>Greek banks reopen but cash limits remain; taxes soar</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 10:00:39</td><td><a href='http://www.startribune.com/the-latest-greece-bailout-talks-hinge-on-trust-issues/314127791/'>site</a></td><td>Greece has asked Europe's bailout fund for a 53.5 billion-euro ($59.5 billion) 3-year financial package but many EU officials believe that won't be enough.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/18/876/493/Greece Privatization-5.jpg?ve=1&tl=1'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.foxnews.com/world/2015/07/18/greece-leftist-government-pledges-privatization-push-experts-doubt-50b-euro/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>It was formed in 2011 following demands by Greece's creditors to embark on a privatization wave, but has collected only 3.5 billion euros so far.</td></tr>
 </table></body></html>

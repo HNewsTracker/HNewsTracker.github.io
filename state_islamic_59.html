@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-08-07 09:33:34</td><td><a href='http://www.rferl.org/content/islamic-state-abducts-dozens-syrian-christians/27175649.html'>site</a></td><td>Islamic State Abducts Dozens Of Syrian Christians</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 11:50:32</td><td><a href='http://www.theglobeandmail.com/news/world/islamic-state-abducts-dozens-of-christians-from-syrian-town-monitor/article25871907/?cmpid=rss1'>site</a></td><td>Islamic State militants have abducted dozens of Christian families after seizing a strategically located town in the central Syrian province of Homs, a monitor said on Friday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 13:55:45</td><td><a href='http://www.startribune.com/after-capturing-syrian-town-is-abducts-dozens-of-christians/321034081/'>site</a></td><td>BEIRUT - Activists say Islamic State group has abducted 230 residents, including dozens of Christians, from a central Syrian town captured by the extremists earlier this week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 10:35:35</td><td><a href='http://www.foxnews.com/world/2015/07/17/3-young-frenchmen-charged-in-islamic-state-inspired-plan-to-attack-french/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>3 young Frenchmen charged in Islamic State-inspired plan to attack French military base</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 10:35:35</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/3-french-charged-in-is-inspired-plan-to-attack-military-base'>site</a></td><td>PARIS (AP) - The Paris prosecutor's office says three young men arrested this week in a plot to attack a military base were in contact with an Islamic State group jihadi who told them to "strike in France."</td></tr>
 </table></body></html>

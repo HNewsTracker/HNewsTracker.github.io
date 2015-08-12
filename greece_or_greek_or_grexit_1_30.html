@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480388&ref=rss'>site</a></td><td>Euro currency emerges intact _ for now _ from Greek crisis</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437147797857.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150717-gif5rb'>site</a></td><td>"We are working to ensure that Greece remains a member of the euro because the euro is much more than a currency," Merkel told lawmakers in Berlin in a speech before the vote.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/23/ca/1f/82506264bd3140048781407a5353cd42-04b561abd18c401fbfb6cd86716b6037-0.jpg'></td><td>2015-07-23 11:32:12</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-store-closures-spike-as-recession-austerity-/nm5QZ/'>site</a></td><td>Empty storefronts are again a feature of Greece's towns and cities amid a crisis that put Greece's future in the euro in doubt.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>They have openly voiced support for Greece to turn its back on the euro as its national currency.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 20:28:02</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/20/greeks-will-find-banks-open-but-restrictions-still-in-place'>site</a></td><td>Non-payment of either would have derailed Greece's latest bailout request.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.cbc.ca/1.3164186.1437602713!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/greece.jpg'></td><td>2015-07-22 08:40:14</td><td><a href='http://www.cbc.ca/news/business/greece-approves-new-batch-of-reforms-for-multi-billion-dollar-bailout-1.3162819?cmp=rss'>site</a></td><td>Greece has relied on bailout loans totaling 240 billion euros since 2010 after it was locked out of international money markets.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 10:54:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/23/greece-clears-final-reform-hurdle-before-new-bailout-talks'>site</a></td><td>Without the money Greece would be unable to pay the debts due over the coming three years and would likely be forced to leave the euro, Europe's shared currency.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 10:30:26</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11487754&ref=rss'>site</a></td><td>Stock markets in Europe have fallen amid fears that the delay means Greece's third bailout is already encountering difficulties.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-27 12:19:18</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/27/greece-creditors-get-down-to-business-on-bailout-deal'>site</a></td><td>Without the money due from the expected three-year bailout totaling around 85 billion euros, Greece would be unable to make that payment - a development that would likely trigger fresh fears over the country's future in the euro.</td></tr>
 </table></body></html>

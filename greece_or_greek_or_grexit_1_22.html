@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/ab/a3/0a41acc38ac944e8a1dbf4cd7520eecf-ce9206ade7ca43bca7d4b0a0a1e8b926-0.jpg'></td><td>2015-07-12 14:46:20</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greek-tourist-hotspots-face-big-bailout-tax-hikes/nmxcT/'>site</a></td><td>Cromba noted that many small Greek businesses already evade sales taxes where some owners "don't give a receipt so they save the tax for the business and the customer."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-12 14:46:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/12/greek-tourist-hotspots-face-big-bailout-tax-hikes'>site</a></td><td><table><tr><td>The Greek meal sales tax in the bailout proposal being considered Sunday by European leaders would boost it from the current 13 percent to 23 percent, while hotels would see room sales taxes rise from 6.5 percent to 13 percent.</td></tr><tr><td>Economists say the increased sales taxes will almost certainly lead to a rise in tax evasion, which Greek officials have vowed for years to rectify, with negligible results.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-20 20:28:02</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/20/greeks-will-find-banks-open-but-restrictions-still-in-place'>site</a></td><td>There are few parts of the Greek economy left untouched by the steep increase in the sales tax from 13 to 23 percent.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/97/00/81358d96ca9f4e93a4fdc14c134a146b-c89b671177104905a33ad7222a6f6fbc-0_1.jpg'></td><td>2015-07-19 15:53:05</td><td><a href='http://www.daytondailynews.com/ap/ap/international/criticism-for-german-idea-that-greece-take-a-euro-/nm3FH/'>site</a></td><td>Merkel rules out 'haircut' for Greece, open to other relief</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/f7760e9f1106d7bafb80c9c86217448b66d27b79/0_0_3500_2100/master/3500.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=0daab610c7956254335f5f6bd734b6a9'></td><td>2015-07-19 20:16:54</td><td><a href='http://www.theguardian.com/world/2015/jul/19/greek-banks-reopen-first-time-three-weeks-queues-expected'>site</a></td><td>"Greece has already been given relief. We had a voluntary haircut among the private creditors and we then extended maturities once and reduced interest rates," said Merkel in the interview.</td></tr>
 </table></body></html>
