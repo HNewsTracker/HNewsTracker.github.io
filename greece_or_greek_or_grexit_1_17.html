@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,14 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066095823&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L05Z'></td><td>2015-07-22 05:48:45</td><td><a href='http://www.reuters.com/article/2015/07/22/us-eurozone-greece-argentina-analysis-idUSKCN0PW0BT20150722?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Grexit debate down but not out, Argentina lessons remain</td></tr><tr><td>"Years from now, will Europeans look back and say we extended the bailout for Greece for too long?" said Mickey Levy, member of the U.S. Shadow Open Market Committee and co-author of a 2012 paper "Greece's predicament: Lessons from Argentina".</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 07:23:14</td><td><a href='http://www.brisbanetimes.com.au/world/greek-debt-crisis-what-comes-next-20150712-giact1.html'>site</a></td><td>Their biggest backers are the French, who have been working furiously behind the scenes to convince the more hawkish creditors to agree to debt relief and keep Greece in the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/Og.9FdtboZ_BrQRaQ4ThHw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_OLGBBUS_Wrapper_NewFeed_1/2015-07-14T122227Z_2_LYNXNPEB6D0J5_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-14 12:22:27</td><td><a href='http://finance.yahoo.com/news/exclusive-greece-needs-debt-relief-115211623.html'>site</a></td><td>Greece needs debt relief far beyond EU plans: secret IMF report</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 23:58:05</td><td><a href='http://www.miamiherald.com/news/business/article27192415.html#storylink=rss'>site</a></td><td>But the IMF said Tuesday that "Greece's debt can now only be made sustainable through debt relief measures that go far beyond what Europe has been willing to consider so far."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.cbc.ca/1.3152396.1436953983!/cpImage/httpImage/image.jpg_gen/derivatives/original_300/greece-bailout.jpg'></td><td>2015-07-15 06:27:55</td><td><a href='http://www.cbc.ca/news/business/greece-protests-turn-violent-ahead-of-austerity-vote-1.3152371?cmp=rss'>site</a></td><td>The International Monetary Fund, which was involved Greece's previous two bailouts and will also play a role in the third, has long advocated the country's debt is too high and that any deal must include debt relief - something the Greek side has also insisted on.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/04/03/4d7c45f8e53545e1bd8b1bfdff82fa00-12f627ee4b0340fb874125c50e5b8ae8-0.jpg'></td><td>2015-07-15 15:59:41</td><td><a href='http://www.daytondailynews.com/ap/ap/business/why-germany-refuses-to-write-off-greeces-debts/nmzGf/'>site</a></td><td><table><tr><td>The International Monetary Fund says Greece's debts are too big to pay and need to be partly forgiven.</td></tr><tr><td>If pressed, Germany officials concede the IMF may be right in saying that Greece's debt pile is too big to pay, no matter how many years it gets to pay it.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297724874909_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-16 02:15:37</td><td><a href='http://www.torontosun.com/2015/07/15/greek-civil-servants-pharmacists-strike-against-bailout-reforms'>site</a></td><td>A study by the International Monetary Fund issued on Tuesday called for much more debt relief than Greece's euro zone creditors, particularly Germany, have been prepared to accept so far.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Schaeuble, who says a "haircut" is illegal in the euro zone, will be waiting with his Plan B for debt relief with Greece outside the currency area.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102847608-958a32733acb031e252ed5852af4ea5620f05abb.80x60.jpg?v=1437406843'></td><td>2015-07-20 14:43:00</td><td><a href='http://www.cnbc.com/2015/07/20/greece-starts-paying-back-the-ecb-imf.html'>site</a></td><td>"The IMF has adopted the position that Greece needs debt relief, but somebody else should pay for that."</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/d8/27/d3d7382b009f4a1ca90748d417cb0b52-7fcb1f3056a747ae925c1a038b6d80bd-0_1.jpg'></td><td>2015-07-24 18:56:28</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-talks-to-begin-after-technical-issues-ironed/nm54K/'>site</a></td><td>Gerovasili said the IMF position on Greece's crippling debt load - the highest in the 19-country eurozone - "is clearly something we agree with."</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='ww.smh.com.au/content/dam/images/g/i/j/g/j/a/image.related.articleLeadwide.620x349.gikl05.png/1437838185560.jpg'></td><td>2015-07-25 15:29:52</td><td><a href='http://www.smh.com.au/world/greek-bailout-talks-to-begin-after-delay-20150725-gikl05'>site</a></td><td>Greece has repeatedly asked for a debt relief and the IMF has said this is needed for the Greek accord to be viable.</td></tr>
 </table></body></html>

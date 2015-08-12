@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,14 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 15:20:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article28170364.html#storylink=rss'>site</a></td><td>Anderson previously was police commander in the Phoenix suburb of Glendale, Arizona - the same city from which Ferguson recently hired its interim city manager, Ed Beasley.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td><table><tr><td>Year later, AP reporter recalls origins of Ferguson movement</td></tr><tr><td>Never before had the anger been as intense as in Ferguson.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 15:43:38</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-b8fcdb039d93406ebc63851a514f5286'>site</a></td><td>Ferguson became the impetus for a national movement.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-08-10 01:18:22</td><td></td><td><a href='ferguson_0_2.html'>Michael Brown Sr. drops off stuffed animals at a memorial to his son, Michael Brown, before taking part in a parade in his son's honor in Ferguson, Mo. (2)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-08-10 13:56:18</td><td></td><td><a href='ferguson_0_1.html'>-- A man who authorities say opened fire on officers in Ferguson, Missouri, on the anniversary of Michael Brown's death was critically wounded when the officers shot back, St. Louis County's police chief said early Monday. (43)</a></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.abc.net.au/news/image/6687148-3x2-340x227.jpg'></td><td>2015-08-10 19:25:00</td><td><a href='http://www.abc.net.au/news/2015-08-11/ferguson-police-charge-man-wounded-on-shooting-anniversary/6687144'>site</a></td><td>"In light of last night's violence and unrest in the city of Ferguson, and the potential for harm to persons and property, I am exercising my authority as county executive to issue a state of emergency, effective immediately," he said.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-11 01:34:00</td><td></td><td><a href='ferguson_0_3.html'>A reporter for The Washington Post, arrested while covering the protests in Ferguson, Mo., last August, has been charged with trespassing, the newspaper said Monday. (4)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-11 07:45:03</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/11/the-latest-on-ferguson-nearly-2-dozen-arrests-at/'>site</a></td><td>The Latest on Ferguson: Nearly 2 dozen arrests at protest</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>8</td><td></td><td>2015-07-22 17:24:28</td><td></td><td><a href='ferguson_0_3.html'>Andre Anderson speaks with Ferguson City Council member Wesley Bell, right, after being introduced as the the interim chief of the Ferguson Police Department during a news conference on Wednesday, July 22, 2015, in Ferguson, Mo. (11)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-27 16:25:04</td><td></td><td><a href='ferguson_0_4.html'>An organizer, Roy Gillespie, says the cleanup was less about beautification than it was about building regional unity by drawing in Ferguson residents and outsiders to pitch in. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td><table><tr><td>Year later, AP reporter recalls origins of Ferguson movement</td></tr><tr><td>Never before had the anger been as intense as in Ferguson.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 15:43:38</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-b8fcdb039d93406ebc63851a514f5286'>site</a></td><td>Ferguson became the impetus for a national movement.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-07 13:25:13</td><td></td><td><a href='ferguson_0_2.html'>But at the same time, the government issued a report so critical of Ferguson's police and municipal court system that it hastened an upheaval in the town of 21,000 people, two-thirds of them black. (5)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-10 19:25:00</td><td></td><td><a href='ferguson_0_6.html'>"In light of last night's violence and unrest in the city of Ferguson, and the potential for harm to persons and property, I am exercising my authority as county executive to issue a state of emergency, effective immediately," he said. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-11 01:34:00</td><td></td><td><a href='ferguson_0_5.html'>A reporter for The Washington Post, arrested while covering the protests in Ferguson, Mo., last August, has been charged with trespassing, the newspaper said Monday. (4)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-11 08:03:40</td><td></td><td><a href='ferguson_0_1.html'>Hundreds of people gathered along West Florissant, the thoroughfare that was the site of massive protests and rioting after 18-year-old Michael Brown was fatally shot last year in a confrontation with a Ferguson police officer. (31)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 21:31:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-ferguson-oath-keepers-armed-militia-20150811-story.html'>site</a></td><td>He said members plan to remain in Ferguson "at least through the end of the week."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-11 21:34:49</td><td></td><td><a href='ferguson_0_7.html'>Heavily armed civilians with a group known as the Oath Keepers arrive in Ferguson, Mo., early Tuesday, Aug. 11, 2015. (3)</a></td></tr>
 </table></body></html>

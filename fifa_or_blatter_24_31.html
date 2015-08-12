@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-16T171501Z_1_LYNXNPEB6F10A_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-TRANSPARENCY.JPG?itok=iGDzoBjj'></td><td>2015-07-16 19:02:08</td><td><a href='http://www.sbs.com.au/news/article/2015/07/17/fifa-hires-crisis-consultants-first-official-extradited-us'>site</a></td><td><table><tr><td>Webb and the others were jailed after a dawn raid on a luxury hotel in Zurich just two days before a FIFA Congress in May where Blatter was re-elected for a fifth term.</td></tr><tr><td>Amid an international uproar, Blatter announced days after the arrests that he would lay down his mandate at an extraordinary FIFA Congress which will take place between December and February, and would not stand again.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 13:35:17</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11483339&ref=rss'>site</a></td><td>He missed the FIFA congress that re-elected Blatter a day later.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 03:19:07</td><td><a href='http://www.miamiherald.com/news/politics-government/article29829346.html#storylink=rss'>site</a></td><td>Blatter was among a group of IOC members up for re-election for another eight-year term.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/1e5/sports/soccer/article25816559.ece/ALTERNATES/w220/CSPORTS-US-SOCCER-FIFA-BLAT.JPG'></td><td>2015-08-03 10:16:43</td><td><a href='http://www.theglobeandmail.com/sports/soccer/sepp-blatter-gives-up-ioc-membership-as-fifa-exit-nears/article25816560/?cmpid=rss1'>site</a></td><td>Blatter would ordinarily have been re-elected for another eight-year term as a procedural matter at the ongoing IOC Session in Malaysia, along with more than a dozen other members, but would be required to stand down when he left FIFA at the end of February.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 03:32:17</td><td><a href='http://www.cbc.ca/sports/sepp-blatter-leaving-international-olympic-committee-1.3177574?cmp=rss'>site</a></td><td>Blatter, an IOC member since 1999, would have had to retire from his IOC term next year anyway because he turns 80 in March.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-08-03T042350Z_1_LYNXNPEB7205L_RTROPTP_2_SOCCER-FIFA-ELECTION.JPG?itok=J0zQD6wB'></td><td>2015-08-03 04:23:50</td><td><a href='http://www.sbs.com.au/news/article/2015/08/03/blatter-gives-ioc-membership-fifa-exit-nears'>site</a></td><td>Blatter gives up IOC membership as FIFA exit nears</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.huffingtonpost.com//asset/scalefit_630_noupscale/55b2d4ad1d000030001429d7.jpeg'></td><td>2015-07-25 00:30:13</td><td><a href='http://www.huffingtonpost.com/entry/us-to-train-ukraine-military-following-russian-agression_55b2d3f3e4b0224d8832704c?'>site</a></td><td>Toner said he had nothing to announce on any new weapons for Ukraine and that the focus was on providing non-lethal aid.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 00:47:18</td><td><a href='http://www.rferl.org/content/us-starts-training-ukrainian-army-troops-this-fall/27151714.html'>site</a></td><td>"This training is part of our long-running defense cooperation with Ukraine."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/24/876/493/Ukraine New Police-1.jpg?ve=1&tl=1'></td><td>2015-07-24 15:22:00</td><td><a href='http://www.foxnews.com/world/2015/07/24/ukraine-new-police-on-charm-offensive-in-kiev-in-government-first-visible/'>site</a></td><td><table><tr><td>Ukraine's new police on charm offensive in Kiev</td></tr><tr><td>KIEV, Ukraine - Only a few months ago, Kiev residents would normally avoid the police if they could help it.</td></tr><tr><td>One of the pledges of the new Kiev government, which took over last year after pro-Russian President Viktor Yanukovych fled the country, was to combat rampant corruption in Ukraine's police.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cbsnews2.cbsistatic.com/hub/i/r/2015/07/24/3271d32a-d3bf-4690-b1ae-e8626434bc20/thumbnail/620x350/091219bcfedb0341c59c80a978c93551/ukrainenewpolicedaughter.jpg'></td><td>2015-07-24 16:02:45</td><td><a href='http://www.cbsnews.com/news/ukraine-replace-kiev-traffic-police-force-america-trained-officers-bribery/'>site</a></td><td>Just as in neighboring Russia, Ukraine's police corps was perceived as chronically extorting bribes and harassing citizens.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 19:54:45</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/ukraines-new-police-on-charm-offensive-in-kiev'>site</a></td><td>In this photo taken, Wednesday, July 15, 2015, a couple takes a photograph with a Ukrainian police officer in downtown Kiev, Ukraine.</td></tr>
 </table></body></html>

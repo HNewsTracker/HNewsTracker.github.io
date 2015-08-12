@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 13:00:32</td><td><a href='http://www.startribune.com/ferguson-to-hire-another-interim-police-chief/318112241/'>site</a></td><td>FERGUSON, Mo.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 01:34:00</td><td><a href='http://www.nytimes.com/2015/08/11/us/arrested-in-ferguson-2014-washington-post-reporter-wesley-lowery-is-charged.html?partner=rss&emc=rss&_r=0'>site</a></td><td>A reporter for The Washington Post, arrested while covering the protests in Ferguson, Mo., last August, has been charged with trespassing, the newspaper said Monday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 08:12:33</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/11/4th-night-of-ferguson-protests-brings-confrontation-arrests'>site</a></td><td>Protests also spilled outside of Ferguson earlier Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 16:25:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28824685.html#storylink=rss'>site</a></td><td><table><tr><td>Ferguson presses cleanup bid ahead of Brown anniversary</td></tr><tr><td>An organizer, Roy Gillespie, says the cleanup was less about beautification than it was about building regional unity by drawing in Ferguson residents and outsiders to pitch in.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 16:25:15</td><td><a href='http://www.startribune.com/ferguson-presses-cleanup-bid-ahead-of-brown-anniversary/318660421/'>site</a></td><td>Ferguson presses several-hour, unity-minded cleanup effort ahead of Brown anniversary</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-08-03 10:00:43</td><td><a href='http://finance.yahoo.com/news/greek-stock-market-reopens-22-100034490.html'>site</a></td><td>Greek bank stocks suffered the most, hitting or nearing the daily trading limit of a 30 percent loss.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td>Banking shares, which make up about 20 percent of the Greece index, were particularly hard hit.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-08-03 14:34:32</td><td><a href='http://finance.yahoo.com/news/greek-stocks-unofficially-close-16-143432559.html'>site</a></td><td>Greek stocks unofficially close 16 percent lower, banks plunge 30 percent</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>A plunge of more than 16 percent for the main Greek index and a 30 percent sell-off for bank stocks were the latest signs of Greece?s shattered economy.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/97/00/81358d96ca9f4e93a4fdc14c134a146b-c89b671177104905a33ad7222a6f6fbc-0_1.jpg'></td><td>2015-07-19 15:53:05</td><td><a href='http://www.daytondailynews.com/ap/ap/international/criticism-for-german-idea-that-greece-take-a-euro-/nm3FH/'>site</a></td><td>Merkel rules out 'haircut' for Greece, open to other relief</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/f7760e9f1106d7bafb80c9c86217448b66d27b79/0_0_3500_2100/master/3500.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=0daab610c7956254335f5f6bd734b6a9'></td><td>2015-07-19 20:16:54</td><td><a href='http://www.theguardian.com/world/2015/jul/19/greek-banks-reopen-first-time-three-weeks-queues-expected'>site</a></td><td>"Greece has already been given relief. We had a voluntary haircut among the private creditors and we then extended maturities once and reduced interest rates," said Merkel in the interview.</td></tr>
 </table></body></html>
