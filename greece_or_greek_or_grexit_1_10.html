@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/ows_143675576438576.jpg?w=600&amp;h=600'></td><td>2015-07-14 03:45:12</td><td><a href='http://www.startribune.com/stocks-rise-as-greece-gets-a-new-bailout-deal/314543531/'>site</a></td><td>ANALYST'S TAKE: "Whether Greece has walked the plank to an economic and political collapse is still unknown," said Bernard Aw of IG Markets in a report.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 08:20:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-17-EU--Greece-Bailout/id-326ea64e2d0e449886d34214a50fd39f'>site</a></td><td>That has raised expectations that Greece will secure a financial lifeline to allow the country to reopen its banks and get back toward some sort of economic normality.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>Greek banks passed a similar review last year, but that was before they became collateral damage in Greece's political and economic turmoil.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-23 11:15:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485929&ref=rss'>site</a></td><td>Prasinoudis is one of the countless victims of Greece's economic crisis.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-03 09:43:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-greek-stock-market-20150803-story.html'>site</a></td><td>Greece's main stock index plunged over 22% as it reopened Monday after a five-week closure, giving investors their first opportunity since June to react to the country's latest economic crisis.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td>Greece's dismal economic prospects may also weigh on the market.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Markets in the rest of the world, however, were largely unaffected, a sign that investors outside Greece have now largely cut off ties with the country after years of crisis there.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 18:24:10</td><td><a href='http://finance.yahoo.com/news/euro-zone-summit-aims-save-095554778.html'>site</a></td><td>European Council President Donald Tusk canceled a planned summit of all 28 EU leaders that would have been needed in case of a Greek exit from the single currency, and said euro zone leaders would keep talking "until we conclude talks on Greece".</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/iBxMB9pdmLaDZOm2QFNoLw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/544dd0c81343021f7c0f6a706700be43_original.jpg'></td><td>2015-07-12 22:39:12</td><td><a href='http://finance.yahoo.com/news/greece-faces-pressure-back-deal-223800302.html'>site</a></td><td><table><tr><td>If the talks don't succeed, some of Greece's eurozone partners warned, the country could be temporarily forced out of the euro, the European single currency that Greece has been a part of since 2002.</td></tr><tr><td>It highlighted the increasing frustration of European leaders during five months of fruitless talks with Greece.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 11:35:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/28/greece-rescue-creditors-in-2nd-day-of-talks-on-new-lifeline'>site</a></td><td>Greece advances in loan talks, under fire for euro exit plan</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-11 17:39:03</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/11/activists-28-killed-in-syrian-army-strikes-on-is-held-town'>site</a></td><td>Analysts and officials say the number of Islamic State supporters in the Afghan-Pakistan region remains small and that the group faces resistance from militants with strong tribal links.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/11/b0/8e/9e5d713208f445ab914d1643943c53ef-62e05bbd42c14c27918572962e340572-0.jpg'></td><td>2015-07-11 17:39:03</td><td><a href='http://www.daytondailynews.com/ap/ap/international/activists-28-killed-in-syrian-army-strikes-on-is-h/nmxJJ/'>site</a></td><td><table><tr><td>While U.S. officials declined to confirm it, Afghan authorities said an American airstrike Friday killed Islamic State affiliate leader Hafeez Sayeed and more than 30 other militants.</td></tr><tr><td>Sediqi offered no photographs or other evidence to show the strikes killed the Islamic State affiliate's top leaders, though he said Afghan authorities verified a corpse from Friday's strike was Sayeed.</td></tr><tr><td>Afghan officials have suggested the Islamic State affiliate had a presence in three of its provinces, including Nangarhar, which borders Pakistan and frequently sees militants cross its borders.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 11:35:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480342&ref=rss'>site</a></td><td>The Islamic State group's al-Bayan radio identified the man Monday as Sayeed, without elaborating.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 11:56:55</td><td><a href='http://www.ctvnews.ca/world/is-group-releases-audio-claiming-afghan-leader-still-alive-after-u-s-airstrike-1.2466388'>site</a></td><td>KABUL -- The Islamic State group released an online audio clip Monday they claim came from the leader of an Afghan affiliate that authorities there say was killed in a U.S. airstrike.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 02:13:09</td><td><a href='http://www.miamiherald.com/news/nation-world/article30652977.html#storylink=rss'>site</a></td><td><table><tr><td>A California college student who lied on a passport application so he could travel to Syria and join the Islamic State pleaded guilty Monday to a terrorism-related charge.</td></tr><tr><td>Adam Dandach, 21, of Orange pleaded guilty to attempting to provide material support to the Islamic State and to lying on a passport application.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 02:13:09</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article30652977.html#storylink=rss'>site</a></td><td>California man guilty of trying to support Islamic State</td></tr>
 </table></body></html>

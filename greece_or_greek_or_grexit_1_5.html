@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td>As Greece's economy tanked under his leadership, Tsipras' own popularity only grew.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 18:48:31</td><td><a href='http://www.theguardian.com/business/2015/aug/03/greek-shares-nosedive-as-manufacturing-data-reveals-economic-crisis'>site</a></td><td>Although manufacturing represents only a small proportion of Greece?s total productive output, the sheer magnitude of the downturn sends a worrying signal for the health of the economy as a whole.?</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td><table><tr><td>Rebooting Greece: how to get its economy going again</td></tr><tr><td>After so much pain, Greece must now figure out how to get its economy back on its feet.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 20:33:13</td><td><a href='http://finance.yahoo.com/news/futures-surge-greece-reaches-rescue-112241089.html'>site</a></td><td>"Headlines out of Greece are going to dissipate a bit and with that the U.S. earnings picture is going to start to emerge as the important factor," said Mike Binger, a portfolio manager at Gradient Investments in Shoreview, Minnesota, with $850 million under management.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/8/6/y/image.related.articleLeadwide.620x349.gifwkc.png/1437362286595.jpg'></td><td>2015-07-19 21:36:02</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-prices-for-everyday-items-shoot-up-in-greece-20150720-gifwkc.html'>site</a></td><td>The tax increases are forecast to bring in $US867 million ($1.1billion) by year-end, Greek financial media said.</td></tr>
 </table></body></html>

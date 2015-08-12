@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 17:58:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article30381405.html#storylink=rss'>site</a></td><td>New Mexico blasts EPA for late notice on Colorado mine spill</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-08 04:15:02</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/07/wastewater-from-colorado-mine-flows-toward-new/'>site</a></td><td>DENVER (AP) - An eerie yellow sludge that poured out of a shuttered gold mine and into a southwestern Colorado river was inching its way downstream toward New Mexico and Utah.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-02 19:00:28</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11491041&ref=rss'>site</a></td><td>Journalist slain in Mexico City had signs of torture</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-04 02:08:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article29835190.html#storylink=rss'>site</a></td><td>The United Nations High Commission on Human Rights condemned the killings, saying that the bodies had signs of torture and sexual violence and that the climate of impunity "is one of the obstacles to practicing freedom of expression in Mexico."</td></tr>
 </table></body></html>

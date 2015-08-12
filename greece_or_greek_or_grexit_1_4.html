@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102847608-958a32733acb031e252ed5852af4ea5620f05abb.80x60.jpg?v=1437406843'></td><td>2015-07-20 14:43:00</td><td><a href='http://www.cnbc.com/2015/07/20/greece-starts-paying-back-the-ecb-imf.html'>site</a></td><td><table><tr><td>Greece repaid the roughly 2 billion euros ($2.2 billion) it owed to the International Monetary (IMF) on Monday, the international body reported.</td></tr><tr><td>"I can confirm that Greece today repaid the totality of its arrears to the IMF, equivalent to SDR 1.6 billion (about EUR 2.0 billion). Greece is therefore no longer in arrears to the IMF," said Gerry Rice, director of communications at the IMF in a statement on Monday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>The limits are costing Greece an estimated 1.75 billion euros to 2.8 billion euros ($1.9 billion to $3.1 billion) weekly.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/12/ab/a3/0a41acc38ac944e8a1dbf4cd7520eecf-ce9206ade7ca43bca7d4b0a0a1e8b926-0.jpg'></td><td>2015-07-12 14:46:20</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greek-tourist-hotspots-face-big-bailout-tax-hikes/nmxcT/'>site</a></td><td>The consumer paranoia keeping customers away, however, is overshadowed by a Greek government crisis solution that Cromba said could eventually kill her business and many others that depend on domestic Greek tourism.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 12:59:45</td><td><a href='http://www.ctvnews.ca/business/retail-nightmare-greek-store-closures-spike-1.2483357'>site</a></td><td>"The vast majority of Greek companies are half a step from going out of business."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 13:01:53</td><td><a href='http://www.cbsnews.com/news/greek-store-closures-spike-as-recession-austerity-return/'>site</a></td><td>ATHENS, Greece - Running a business in Koukaki is becoming a struggle.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>Political instability, a hallmark of Greece's crisis, is highly toxic for investors, who need to know that the rules for business won't change unexpectedly.</td></tr>
 </table></body></html>

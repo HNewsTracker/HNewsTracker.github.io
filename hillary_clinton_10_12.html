@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:07:46</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28703929.html#storylink=rss'>site</a></td><td>Democratic presidential hopeful Hillary Rodham Clinton speaks Friday, July 24, 2015, at the New York University Leonard N. Stern School of Business in New York.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/k/7/t/k/image.related.articleLeadwide.620x349.gikl7p.png/1437849643803.jpg'></td><td>2015-07-25 18:40:05</td><td><a href='http://www.brisbanetimes.com.au/world/hillary-clinton-set-to-testify-before-benghazi-panel-20150725-gikl7p'>site</a></td><td>Democratic presidential candidate Hillary Clinton speaks at a campaign event in West Columbia, South Carolina last week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 08:07:02</td><td><a href='http://www.cbsnews.com/news/fbi-investigating-security-of-hillary-clintons-emails/'>site</a></td><td>FBI investigating security of Hillary Clinton's emails</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-05 10:28:57</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article30016806.html#storylink=rss'>site</a></td><td><table><tr><td>Nick Merrill, a spokesman for Clinton's campaign, declined to comment on the FBI's actions.</td></tr><tr><td>Instead, a server that had been purchased for use by Hillary Clinton's 2008 campaign was installed at the Chappaqua home.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/08/11/40118d33e716d1237e0f6a706700b7e5_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-08-11 22:22:03</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/11/us-official-fbi-has-hillary-clinton-emails-from/'>site</a></td><td><table><tr><td>US official: FBI has Hillary Clinton emails from home server</td></tr><tr><td>WASHINGTON (AP) - The FBI has taken possession of thumb drives containing Hillary Clinton's emails, some of which have been deemed to contain highly sensitive classified information, according to a U.S. official briefed on the matter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/40/16/71/8449614/59/square_gallery_thumb.jpg'></td><td>2015-08-12 01:41:19</td><td><a href='http://www.sfgate.com/news/article/US-official-FBI-has-Hillary-Clinton-emails-from-6438500.php'>site</a></td><td>"All this means is that Hillary Clinton, in the face of FBI scrutiny, has decided she has run out of options," Republican National Committee Chairman Reince Priebus said in a statement.</td></tr>
 </table></body></html>

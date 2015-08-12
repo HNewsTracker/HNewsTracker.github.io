@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-11T235952Z_1_LYNXNPEB6A0M5_RTROPTP_2_USA-SPORT.JPG?itok=L6tuJQxk'></td><td>2015-07-12 01:02:56</td><td><a href='http://www.sbs.com.au/news/article/2015/07/12/mexicos-pacheco-wins-springboard-gold-earns-rio-berth'>site</a></td><td>TORONTO (Reuters) - Mexico's Rommel Pacheco won the gold medal in men's 3m springboard at the Pan American Games on Saturday to earn an automatic qualifying spot for the 2016 Rio Olympics.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 02:50:02</td><td><a href='http://www.reuters.com/article/2015/07/13/us-games-panam-olympics-diving-idUSKCN0PN01120150713?feedType=RSS&feedName=sportsNews'>site</a></td><td>Canada's Abel, Mexico's Garcia win diving gold, earn Rio berth</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 18:38:40</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/10/activist-in-search-for-missing-students-killed-in/'>site</a></td><td>Activist in search for missing students killed in Mexico</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 18:46:28</td><td><a href='http://www.daytondailynews.com/ap/ap/international/activist-in-search-for-missing-students-killed-in-/nnGxT/'>site</a></td><td>Miguel Angel Jimenez, a political activist who played a prominent early role in the search for 43 students and other missing people in southern Mexico, was slain over the weekend, an associate said Monday.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 09:00:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27106897.html#storylink=rss'>site</a></td><td>Merkel says Greece's European creditors have agreed to a Greek bailout in which "Greece will ask, after the current IMF program expires in spring 2016, for further participation of the IMF."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 16:28:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-07-20-EU--Greece-Bailout/id-73b403d6b933469facb5930d1f930083'>site</a></td><td>The IMF is not directly involved in Greece's request for a third bailout as its previous rescue runs until early next year.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 23:05:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/24/greek-talks-to-begin-after-technical-issues-ironed-out'>site</a></td><td>In a statement Friday evening, the IMF confirmed it had received Greece's request for a new IMF loan and said it would work to arrange talks with Greece and its European creditors.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/d8/27/d3d7382b009f4a1ca90748d417cb0b52-7fcb1f3056a747ae925c1a038b6d80bd-0_1.jpg'></td><td>2015-07-24 23:05:24</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-talks-to-begin-after-technical-issues-ironed/nm54K/'>site</a></td><td>That is in accordance with the preliminary third bailout agreement Greece struck with its European partners on July 12, which called for IMF financing and monitoring for Greece from March 2016 - when current IMF financing ends.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 20:28:02</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/20/greeks-will-find-banks-open-but-restrictions-still-in-place'>site</a></td><td>Non-payment of either would have derailed Greece's latest bailout request.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.cbc.ca/1.3164186.1437602713!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/greece.jpg'></td><td>2015-07-22 08:40:14</td><td><a href='http://www.cbc.ca/news/business/greece-approves-new-batch-of-reforms-for-multi-billion-dollar-bailout-1.3162819?cmp=rss'>site</a></td><td>Greece has relied on bailout loans totaling 240 billion euros since 2010 after it was locked out of international money markets.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-27 12:19:18</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/27/greece-creditors-get-down-to-business-on-bailout-deal'>site</a></td><td>Without the money due from the expected three-year bailout totaling around 85 billion euros, Greece would be unable to make that payment - a development that would likely trigger fresh fears over the country's future in the euro.</td></tr>
 </table></body></html>

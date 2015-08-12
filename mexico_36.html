@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-28 19:15:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article29120401.html#storylink=rss'>site</a></td><td>Mexico advanced to the final after winning two knockout-round matches with the help of controversial late penalties.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 19:15:25</td><td></td><td><a href='mexico_36_37.html'>MEXICO CITY - Embattled Mexican national soccer team coach Miguel Herrera has been fired following a TV reporter's claim that the coach known as "El Piojo" punched him. (10)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-29 00:58:03</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/28/mexico-coach-herrera-fired-after-claim-he-punched-reporter'>site</a></td><td><table><tr><td>During his tenure Mexico won 18 matches, tied 11 and lost 7.</td></tr><tr><td>Earlier this year he and two players came under investigation by the soccer federation for tweets supporting Mexico's Green Party just before midterm elections, an apparent violation of the federation's code of ethics.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/c6/f9/68f95b590da448099dbcc3352635df19-30ca8f6624b34aceb759e5bc43ec5f36-0.jpg'></td><td>2015-07-20 18:17:33</td><td><a href='http://www.daytondailynews.com/ap/ap/entertainment/ap-exclusive-breaking-bad-actor-runs-for-albuquerq/nm3fK/'>site</a></td><td>Citing sprawl development and a need for more Mexican-American elected officials, "Breaking Bad" actor Steven Michael Quezada said he is jumping in a heated race for county commissioner in Albuquerque, New Mexico.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 18:22:06</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article27909802.html#storylink=rss'>site</a></td><td>But Quezada said the state party needed to go more to reach out to Latino voters, especially since New Mexico has the highest percentage of Hispanic residents in the county.</td></tr>
 </table></body></html>

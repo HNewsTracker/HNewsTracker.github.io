@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 13:29:26</td><td><a href='http://www.daytondailynews.com/ap/ap/international/israeli-opposition-leader-to-visit-washington-over/nmy5x/'>site</a></td><td>"Our national security is not a matter of dispute," Netanyahu's office quoted Herzog as saying.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31379531.ece/fe497/ALTERNATES/h342/PANews%20BT_P-748d2931-0e57-41c7-84b2-de41fdd06dc1_I1.jpg'></td><td>2015-07-15 13:51:04</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/israeli-premier-netanyahu-criticises-iran-nuclear-deal-31379532.html'>site</a></td><td><table><tr><td>Mr Netanyahu's war of words came as his political rival, Isaac Herzog, announced he would go to the US to lobby for a compensation package to insure Israel's military advantage in the region.</td></tr><tr><td>Mr Herzog has criticised Mr Netanyahu over the deal, saying the Israeli leader unnecessarily antagonised the US and other allies during negotiations.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 15:20:41</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/16/netanyahu-british-fm-spar-over-iran-deal-disagreements'>site</a></td><td><table><tr><td>Netanyahu, British FM spar over Iran deal disagreements</td></tr><tr><td>"We would have wanted to see a deal that says the following: 'Iran, you will get the easing on the restrictions on your nuclear program, and you will get sanctions relief if you change your behavior first,'" Netanyahu said, calling it "perplexing" that the deal does not address Iran's calls to annihilate Israel.</td></tr><tr><td>Hammond said he understood Netanyahu's concerns, but added "We have always been clear that this deal was about the nuclear file."</td></tr></table></td></tr>
 </table></body></html>
