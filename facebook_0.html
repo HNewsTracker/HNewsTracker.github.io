@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-05 16:47:48</td><td></td><td><a href='facebook_0_1.html'>Businesses can now include a "send message" button in ads that appear in Newsfeed that allow Facebook users to click a button and send messages, which are private. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-05 16:47:48</td><td><a href='http://www.cbc.ca/news/technology/facebook-lets-businesses-message-users-privately-1.3180286?cmp=rss'>site</a></td><td>About twice as many Thai and Singaporean users use Facebook messages to communicate with businesses each month and most Southeast Asia users follow some company pages.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-29 22:17:19</td><td></td><td><a href='facebook_0_1.html'>"Once again Facebook has proven its ability to attract and retain users. It's particularly impressive that users are more engaged than ever before - that the percentage of monthly users who visit every day continues to grow," said Forrester Research analyst Nate Elliott. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-29 22:17:19</td><td><a href='http://www.latimes.com/business/la-fi-facebook-earns-20150729-story.html'>site</a></td><td>Facebook's mobile advertising represented 76% of the total advertising revenue during the second quarter, proof that the company continues to attract advertisers to where its users are - on smartphones and other hand-held gadgets.</td></tr>
 </table></body></html>

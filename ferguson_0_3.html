@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/446ef46badfd986ae5f769cc742944789e601dba/c=247-0-3870-2724&amp;r=x404&amp;c=534x401/local/-/media/2015/08/11/USATODAY/USATODAY/635749146930841985-AP-Ferguson-Oath-Keepers.jpg'></td><td>2015-08-11 02:46:30</td><td><a href='http://www.usatoday.com/story/news/nation/2015/08/11/armed-oath-keepers-arrive-ferguson/31453655/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-newstopstories'>site</a></td><td>Armed 'Oath Keepers' arrive in Ferguson</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 21:34:49</td><td><a href='http://www.miamiherald.com/news/nation-world/article30738612.html#storylink=rss'>site</a></td><td>Oath Keepers’ return criticized in Ferguson</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 21:34:49</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article30738612.html#storylink=rss'>site</a></td><td>Heavily armed civilians with a group known as the Oath Keepers arrive in Ferguson, Mo., early Tuesday, Aug. 11, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 16:25:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article28824685.html#storylink=rss'>site</a></td><td><table><tr><td>Ferguson presses cleanup bid ahead of Brown anniversary</td></tr><tr><td>An organizer, Roy Gillespie, says the cleanup was less about beautification than it was about building regional unity by drawing in Ferguson residents and outsiders to pitch in.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 16:25:15</td><td><a href='http://www.startribune.com/ferguson-presses-cleanup-bid-ahead-of-brown-anniversary/318660421/'>site</a></td><td>Ferguson presses several-hour, unity-minded cleanup effort ahead of Brown anniversary</td></tr>
 </table></body></html>

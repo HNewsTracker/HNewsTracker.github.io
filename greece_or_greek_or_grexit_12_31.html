@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 02:06:11</td><td><a href='http://finance.yahoo.com/news/asian-shares-rise-greek-deal-020611206.html'>site</a></td><td>TOKYO (Reuters) - Asian shares rose on Tuesday on hopes that Greece's conditional bailout agreement would bring to an end that country's debt crisis, though caution kept broad gains in check.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/52/43/8300758/21/square_gallery_thumb.jpg'></td><td>2015-07-14 03:42:03</td><td><a href='http://www.sfgate.com/business/energy/article/Stocks-rise-as-Greece-gets-a-new-bailout-deal-6381415.php'>site</a></td><td>BEIJING (AP) - Asian stock markets were mostly higher Tuesday after Greece and its European creditors agreed on a bailout and Chinese shares rose for a fourth day following a massive government intervention.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 19:27:35</td><td><a href='http://www.seattlepi.com/news/article/S-P-upgrades-Greece-s-credit-rating-after-6397601.php'>site</a></td><td><table><tr><td>S&P upgrades Greece's credit rating after European bailout</td></tr><tr><td>Standard & Poor's has raised Greece's credit rating after a European bailout reduced the chances of the country's government defaulting on its massive debts during the next year.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-21 19:35:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484861&ref=rss'>site</a></td><td>That classification means Greece is still on shaky financial ground, but less likely to face an immediate credit crisis.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/14/d6/60/ae143f5d47164fce86a77de4a72b6f4a-6e04fd279b1540979adf82af0e16ca5f-1.jpg'></td><td>2015-07-14 21:04:02</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-tsipras-faces-dissent-on-bailout-deal/nmyPH/'>site</a></td><td><table><tr><td>Souvenirs presenting ancient Greek temples are placed on sale at a shop in central Athens, Tuesday, July 14, 2015.</td></tr><tr><td>Demonstrators gather near the Greek Parliament during a rally against the government's agreement with its creditors in Athens, in central Athens, Tuesday, July 14, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 10:50:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27374224.html#storylink=rss'>site</a></td><td>A man stands next to a shop selling flags of Greece and European Union in central Athens, Thursday, July 16, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/40/16/33/8447722/11/square_gallery_thumb.jpg'></td><td>2015-08-11 16:50:54</td><td><a href='http://www.sfgate.com/news/world/article/Greece-closes-in-on-bailout-deal-possibly-within-6436731.php'>site</a></td><td>A man reads a newspaper outside a shop in in the northern Greek port city of Thessaloniki, Tuesday, Aug. 11, 2015.</td></tr>
 </table></body></html>

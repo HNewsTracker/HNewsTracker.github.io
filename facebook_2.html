@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 08:45:55</td><td></td><td><a href='facebook_2_3.html'>MUMBAI (Reuters) - Facebook Inc plans to scale up its service to offer free basic Internet on mobile phones, an executive said, after introducing the application in 17 developing countries over the past year. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/bu66NMRSstRdYOnw2aV9Yw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_OLINTECH_Wrapper_NewFeed_1/2015-07-27T084555Z_1_LYNXNPEB6Q0AV_RTROPTP_3_FACEBOOK-WHATSAPP_original.jpg'></td><td>2015-07-27 08:45:55</td><td><a href='http://finance.yahoo.com/news/facebook-scale-free-mobile-internet-084555228.html'>site</a></td><td>It offers pared-down web services for free to users, along with access to Facebook's own social network and messaging services.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 17:41:00</td><td></td><td><a href='facebook_2_5.html'>Writing for the appeals court, however, Circuit Judge Dennis Jacobs said that because Facebook made its disclosures before going public, shareholders could not have contemporaneously owned its stock, and thus could not sue its directors and underwriters. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:24:41</td><td></td><td><a href='facebook_2_3.html'>Sweet also oversees shareholder class-action litigation against Facebook itself over the IPO. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 18:24:41</td><td></td><td><a href='facebook_2_4.html'>Shareholders said Facebook should have publicly revealed its internal projections on how increased mobile usage might reduce future revenue, rather than quietly warn its underwriters, which then cut their earnings forecasts. (2)</a></td></tr>
 </table></body></html>
