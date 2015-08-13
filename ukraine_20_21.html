@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.news.nationalpost.com/2015/07/cda_ukraine_embassy_201507121.jpg?w=620'></td><td>2015-07-12 21:25:03</td><td><a href='http://news.nationalpost.com/news/canada/investigation-uncovers-canadian-embassy-in-ukraine-was-used-as-haven-for-a-week-by-anti-government-protesters'>site</a></td><td><table><tr><td>Dominque Arel, a noted expert on Ukraine at the University of Ottawa, agreed and said the perception that Canada was more than a disinterested bystander was formed long before the Maidan protests, which erupted in the fall of 2013, turned violent.</td></tr><tr><td>Waschek says the safety and security for diplomats is a paramount concern, and Canada's backing of democracy in Ukraine should surprise no one.</td></tr><tr><td>"And as far as I can tell, the only country that has stood side by side with Ukraine has been Canada, even during the Maidan by closing the embassy in Moscow. These are the right things to do. In finding that friendship, you keep finding the strength to move forward."</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/bbc/video/article24796806.ece/ALTERNATES/w140/2015-06-04T133140Z_1_OV2LSYQTD_RTRMADC_0_UKRAINE-CRISIS-POROSHENKO-ROUGH-CUT.XML'></td><td>2015-07-12 23:30:05</td><td><a href='http://www.theglobeandmail.com/news/politics/canadas-embassy-used-as-haven-for-protesters-during-ukraine-uprising/article25476118/?cmpid=rss1'>site</a></td><td>Canada’s embassy used as haven for protesters during Ukraine uprising</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/17/876/493/Ukraine-1.jpg?ve=1&tl=1'></td><td>2015-07-17 12:10:00</td><td><a href='http://www.foxnews.com/world/2015/07/17/ukraine-parliament-calls-local-elections-in-october-but-not-in-rebel-held-east/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>KIEV, Ukraine - The Ukrainian parliament has voted to call a local election across the country in October, but not in the rebel-occupied east.</td></tr><tr><td>An armistice signed in February by Ukraine, Russia and the Russia-backed rebels called for local elections in eastern rebel-held areas as one of the steps to toward a comprehensive cease-fire, which has not been reached yet.</td></tr></table></td></tr>
 </table></body></html>

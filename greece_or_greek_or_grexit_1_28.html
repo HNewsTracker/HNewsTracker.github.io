@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5020&amp;contextPath=3179-5019-5020-&amp;pubId=7&amp;cat=&amp;meta=read-wirestory&amp;objId=27302083&amp;type=article&amp;title=Energy+stocks+lead+US+market+lower%3b+investor+wait+on+Greece&amp;url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fbusiness%2farticle27302083.html'></td><td>2015-07-15 21:35:11</td><td><a href='http://www.miamiherald.com/news/business/article27302083.html#storylink=rss'>site</a></td><td>The U.S. stock market edged lower Wednesday, ending a four-day rally, as a drop in energy shares and jitters over Greece outweighed encouraging earnings reports from banks.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.seattlepi.com/news/article/Yellen-Draghi-upbeat-despite-tumult-in-Greece-6389141.php'>site</a></td><td>And he did his part for Greece, too: The ECB on Thursday agreed to increase financial support for Greece's banks, which have been closed since June 29 and were in danger of collapsing entirely.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-20 05:56:00</td><td><a href='http://www.ctvnews.ca/business/greek-banks-open-after-three-weeks-but-restrictions-still-in-place-1.2477310'>site</a></td><td>Greece closed its banks beginning June 29 to prevent a bank run as its second international bailout expired.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Greece's stock market and banks were closed on June 29, when the government put limits on money withdrawals and transfers to keep a run on the banks from bringing down the financial system.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-03 12:54:27</td><td><a href='http://nypost.com/2015/08/03/greek-stock-market-reopens-to-a-bloodbath/'>site</a></td><td>Greek stock market reopens to a bloodbath</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>But the resumption of trading was a necessary step as Greece tries to emerge from controls on financial activity that the government, confronted with a bank run, imposed at the end of June.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-08-06 16:57:06</td><td><a href='http://www.miamiherald.com/news/business/article30211326.html#storylink=rss'>site</a></td><td>It was the latest in a string of gloomy figures this week, which reflected the damage wrought by the government's forced decision to close Greek banks at the end of June, to stop depositors emptying their accounts.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 17:30:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483049&ref=rss'>site</a></td><td>The approach has helped keep up the pressure on a Greek government viewed in Berlin with deep suspicion, while also keeping increasingly disgruntled conservative German lawmakers in line.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 05:10:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484028&ref=rss'>site</a></td><td>Lawmakers also agreed to deep reforms in Greece's pension system including a gradual phasing out of all early retirement options.</td></tr>
 </table></body></html>

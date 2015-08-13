@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 06:40:12</td><td><a href='http://www.startribune.com/the-latest-eurozone-summit-on-greece-drags-past-deadline/314506211/'>site</a></td><td>Talks aimed at securing Greece's future in the euro have dragged into Monday with few signs that a meeting of the 19 leaders of the eurozone is coming to an end.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-13 12:55:05</td><td><a href='http://www.miamiherald.com/news/business/article27112612.html#storylink=rss'>site</a></td><td>Greece reached a preliminary deal Monday for a third multi-billion euro bailout from its fellow members in the 19-country eurozone.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 08:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480917&ref=rss'>site</a></td><td>After the 19 eurozone leaders reached a tentative deal to keep Greece from financial collapse on Monday, Noonan says Greece could have been in a much better situation had it clinched a deal much earlier " like in February, when it faced a first bailout deadline.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 08:20:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-17-EU--Greece-Bailout/id-326ea64e2d0e449886d34214a50fd39f'>site</a></td><td>Specific terms of the three-year bailout will now be thrashed out between Greece and its partners in the 19-nation eurozone.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/da/00/ee4d97e90d85412189007bb808a99157-31a1c5a09745464ba93109cb1eebaa92-0_1.jpg'></td><td>2015-07-17 19:56:06</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-pm-tsipras-expected-to-reshuffle-cabinet/nm2Kw/'>site</a></td><td>Though the broad outlines of the Greek bailout were agreed Monday by the eurozone's 19 leaders, the ESM's decision formally kick-starts the process by which Greece begins negotiating the details.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-11 11:54:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>Greece agrees on broad terms of new bailout package</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>In the meantime, Greek banks are dependent on the central bank for the cash they need to operate.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/ab7/report-on-business/article23894749.ece/ALTERNATES/w140/174390330-Gold+Prices+R%282%29.JPG'></td><td>2015-07-21 09:24:23</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-gold-claws-back-ground-european-assets-lose-greek-tarnish/article25599980/?cmpid=rss1'>site</a></td><td>In Europe, bond yields fell as attention returned to central bank buying after weeks of Greek-related distractions, while stocks dipped on weak earnings results from drug makers.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-08-03 10:00:43</td><td><a href='http://finance.yahoo.com/news/greek-stock-market-reopens-22-100034490.html'>site</a></td><td>Greek bank stocks suffered the most, hitting or nearing the daily trading limit of a 30 percent loss.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-08-03 14:34:32</td><td><a href='http://finance.yahoo.com/news/greek-stocks-unofficially-close-16-143432559.html'>site</a></td><td>Greek stocks unofficially close 16 percent lower, banks plunge 30 percent</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>A plunge of more than 16 percent for the main Greek index and a 30 percent sell-off for bank stocks were the latest signs of Greece?s shattered economy.</td></tr>
 </table></body></html>

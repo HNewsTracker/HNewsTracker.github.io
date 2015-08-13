@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 03:25:18</td><td></td><td><a href='netanyahu_7_8.html'>JERUSALEM - Israeli Prime Minister Benjamin Netanyahu and Palestinian President Mahmoud Abbas have spoken by phone, a rare exchange amid years of paralyzed peace efforts. (5)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 03:25:18</td><td><a href='http://www.startribune.com/in-phone-call-netanyahu-and-abbas-express-peace-wishes/316532571/'>site</a></td><td>The two leaders remain apart on the framework for a deal, with Netanyahu rejecting the internationally backed idea that border talks should use the pre-1967 frontier as a base.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.independent.co.uk/incoming/article10386744.ece/alternates/w460/IRan-talks.jpg'></td><td>2015-07-14 08:32:06</td><td><a href='http://www.independent.co.uk/news/world/middle-east/iran-nuclear-deal-benjamin-netanyahu-condemns-bad-mistake-of-historic-proportions-10386944.html'>site</a></td><td>Iran nuclear deal: Benjamin Netanyahu condemns 'bad mistake of historic proportions'</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150714104848-netanyahu-iran-nuclear-deal-reaction-00003719-large-169.jpg'></td><td>2015-07-14 15:20:47</td><td><a href='http://edition.cnn.com/videos/world/2015/07/14/netanyahu-iran-nuclear-deal-reaction.reuters'>site</a></td><td>Netanyahu: 'Stunning, historic mistake'</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 15:25:06</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27190630.html#storylink=rss'>site</a></td><td>Netanyahu has been at the forefront of efforts to block an agreement that would lift sanctions on Iran.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-14 15:50:06</td><td><a href='http://www.wsj.com/articles/netanyahu-calls-iran-deal-historic-mistake-1436866617?mod=fox_australian'>site</a></td><td>"Wide-ranging concessions were made in all of the areas which should have prevented Iran from getting the ability to arm itself with a nuclear weapon,'' Mr. Netanyahu said. "</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/14/ad/b8/3ef5ca929f2e427a8e8a5e8915bf90d5-fd9def1c3792400e956a64e3725cfbbb-0.jpg'></td><td>2015-07-14 15:51:30</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/the-latest-diplomat-iran-deal-likely-by-tuesday-af/nmyPw/'>site</a></td><td>Benjamin Netanyahu says the world is now a "much more dangerous place" and criticized Tuesday's agreement as a "stunning historic mistake."</td></tr>
 </table></body></html>

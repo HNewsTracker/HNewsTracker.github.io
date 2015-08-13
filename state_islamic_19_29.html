@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/67/74/8355626/13/square_gallery_thumb.jpg'></td><td>2015-07-24 12:45:32</td><td><a href='http://www.sfgate.com/news/world/article/Turkey-says-jets-strike-IS-targets-in-Syria-6402899.php'>site</a></td><td>For their part, Turkish police launched a major operation Friday against terror groups including Islamic State, carrying out simultaneous raids in Istanbul and 12 provinces and detaining more than 290 people.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/70/32/8357544/3/square_gallery_thumb.jpg'></td><td>2015-07-24 21:48:24</td><td><a href='http://www.sfgate.com/world/article/In-shift-Turkish-jets-strike-Islamic-State-6404302.php'>site</a></td><td>Turkish aircraft dropped four precision-guided bombs on three Islamic State targets in the early hours Friday and were reported launching fresh attacks late Friday night.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/bea8882/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fe6%2F54793c97282fb105c93ba03c53d4aa%2Fmedia%3A2581106c34c146639cbd9627b41a7904TurkeySyriaAirstrikes.JPEG'></td><td>2015-07-25 07:59:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/25/turkish-jets-hit-is-targets-in-syria-kurds-in-iraq'>site</a></td><td>Turkish police meanwhile proceeded with a major operation against the Islamic State, the PKK and the far-left DHKP-C for a second day running.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 14:55:45</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/23/official-suspected-is-militants-kill-turkish-soldier'>site</a></td><td>The attack has been blamed on militants linked to the Islamic State group and came amid a clamp down by Turkey on the extremist group.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 10:26:53</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/27/us-turkey-seek-to-establish-islamic-state-free-zone'>site</a></td><td>The discussions come amid a major tactical shift in Turkey's approach to the Islamic State.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11480388&ref=rss'>site</a></td><td>Euro currency emerges intact _ for now _ from Greek crisis</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437147797857.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150717-gif5rb'>site</a></td><td>"A lot more is at stake" than Greece, she said, citing conflicts in Ukraine and the Middle East and Europe's refugee crisis.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>In Greek crisis, one big unhappy EU family</td></tr><tr><td>In Brussels, there is much talk of how the latest Greek crisis should prompt a leap forward in integration to strengthen the euro zone, but it's not clear what progress is possible.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/greek_banks.jpg?itok=aXsVgT42'></td><td>2015-07-20 08:00:05</td><td><a href='http://www.sbs.com.au/news/article/2015/07/20/greek-banks-reopen-tsipras-eyes-return-normal'>site</a></td><td>The bank closures were the most visible sign of the crisis that took Greece to the brink of falling out of the euro earlier this month, potentially undermining the foundations of the single European currency.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-23 11:15:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485929&ref=rss'>site</a></td><td>Prasinoudis is one of the countless victims of Greece's economic crisis.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/23/ca/1f/82506264bd3140048781407a5353cd42-04b561abd18c401fbfb6cd86716b6037-0.jpg'></td><td>2015-07-23 11:32:12</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-store-closures-spike-as-recession-austerity-/nm5QZ/'>site</a></td><td>Empty storefronts are again a feature of Greece's towns and cities amid a crisis that put Greece's future in the euro in doubt.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>They have openly voiced support for Greece to turn its back on the euro as its national currency.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 14:57:04</td><td><a href='http://www.miamiherald.com/news/business/article27378442.html#storylink=rss'>site</a></td><td>Greece doesn't have the money to make a 4.2 billion-euro ($4.6 billion) payment to make to the European Central Bank on Monday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/e0/af/8dde92b77e134cc5917d37839df1599b-af673b315e3d4d0d95e8da06bd9ed51c-0.jpg'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-does-about-face-pledges-big-privatization-p/nm2yX/'>site</a></td><td>Work was supposed to begin next year on a 7 billion euros ($7.6 billion) waterfront urban renewal project almost twice the size of New York's Central Park that could have poured nearly a billion euros into Greece's depleted coffers.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102847608-958a32733acb031e252ed5852af4ea5620f05abb.80x60.jpg?v=1437406843'></td><td>2015-07-20 14:43:00</td><td><a href='http://www.cnbc.com/2015/07/20/greece-starts-paying-back-the-ecb-imf.html'>site</a></td><td><table><tr><td>Greece repaid the roughly 2 billion euros ($2.2 billion) it owed to the International Monetary (IMF) on Monday, the international body reported.</td></tr><tr><td>"I can confirm that Greece today repaid the totality of its arrears to the IMF, equivalent to SDR 1.6 billion (about EUR 2.0 billion). Greece is therefore no longer in arrears to the IMF," said Gerry Rice, director of communications at the IMF in a statement on Monday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>The limits are costing Greece an estimated 1.75 billion euros to 2.8 billion euros ($1.9 billion to $3.1 billion) weekly.</td></tr>
 </table></body></html>

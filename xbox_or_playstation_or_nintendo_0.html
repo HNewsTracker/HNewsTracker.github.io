@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>xbox or playstation or nintendo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 02:25:32</td><td></td><td><a href='xbox_or_playstation_or_nintendo_0_1.html'>Iwata led Nintendo's development into a global company, with its hit Wii home console and DS handheld, and also through its recent woes caused by the popularity of smartphones. (7)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 02:55:18</td><td><a href='http://www.startribune.com/nintendo-president-satoru-iwata-dies-of-tumor/314490081/'>site</a></td><td>Iwata had been poised to lead Nintendo through another stage after it recently did an about-face and said it will start making games for smartphones - meaning that Super Mario the plumber will start arriving on cellphones and tablets.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 03:45:48</td><td><a href='http://www.sfgate.com/world/article/Satoru-Iwata-president-who-led-Nintendo-through-6380867.php'>site</a></td><td>In March, Nintendo announced an alliance with Japanese mobile game company DeNA Co. to develop games for mobile devices.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 16:05:47</td><td></td><td><a href='xbox_or_playstation_or_nintendo_0_2.html'>Its main rivals in the business are Sony Corp. with the PlayStation machines and Microsoft Corp. with the Xbox One machine. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/2Ht0MWPGegeePvz8jnvC3w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-07-13T053441Z_2_LYNXNPEB6C006_RTROPTP_3_NINTENDO-EMERGINGMARKETS_original.jpg'></td><td>2015-07-13 10:46:14</td><td><a href='http://finance.yahoo.com/news/nintendo-says-ceo-satoru-iwata-000850498.html'>site</a></td><td>Nintendo CEO who broadened video game appeal dies of cancer</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 10:46:14</td><td></td><td><a href='xbox_or_playstation_or_nintendo_0_1.html'>The company did not announce a replacement but Genyo Takeda, senior managing director and one of the lead developers of Nintendo's Wii console, will lead the committee for Iwata's funeral - a sign he could be taking on the leadership role. (2)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-12 23:38:21</td><td></td><td><a href='tunisia_7.html'>TUNIS, Tunisia -- Tunisia's interior minister said the government has killed an extremist leader and nearly wiped out his group, as European tourists continue to leave the country amid fears of new attacks. (4)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-13 06:27:19</td><td></td><td><a href='tunisia_4.html'>FILE - In this June 28, 2015 file photo, tourists and a baby camel walk on a beach in front of the Imperial Marhaba Hotel in Sousse, Tunisia. (7)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 17:25:19</td><td></td><td><a href='tunisia_0.html'>BRUSSELS (AP) " The European Union has agreed to help Tunisia combat violent Islamic extremism and boost its economy, including by raising quotas on how much olive oil it can sell in EU markets. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 14:57:28</td><td></td><td><a href='tunisia_9.html'>One suspected militant has been killed and 13 others arrested in a late-night operation that foiled a planned attack in Tunisia. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-25 11:34:26</td><td></td><td><a href='tunisia_2.html'>Outrage over the attacks, which crippled Tunisia's vital tourism industry, swept aside reservations over the anti-terror legislation. (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 17:25:19</td><td></td><td><a href='tunisia_0.html'>BRUSSELS (AP) " The European Union has agreed to help Tunisia combat violent Islamic extremism and boost its economy, including by raising quotas on how much olive oil it can sell in EU markets. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 14:57:28</td><td></td><td><a href='tunisia_4.html'>One suspected militant has been killed and 13 others arrested in a late-night operation that foiled a planned attack in Tunisia. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 11:34:26</td><td></td><td><a href='tunisia_2.html'>Outrage over the attacks, which crippled Tunisia's vital tourism industry, swept aside reservations over the anti-terror legislation. (5)</a></td></tr>
 </table></body></html>

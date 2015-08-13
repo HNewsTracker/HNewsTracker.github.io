@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/97/00/81358d96ca9f4e93a4fdc14c134a146b-c89b671177104905a33ad7222a6f6fbc-0_1.jpg'></td><td>2015-07-19 15:53:05</td><td><a href='http://www.daytondailynews.com/ap/ap/international/criticism-for-german-idea-that-greece-take-a-euro-/nm3FH/'>site</a></td><td>Merkel rules out 'haircut' for Greece, open to other relief</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/f7760e9f1106d7bafb80c9c86217448b66d27b79/0_0_3500_2100/master/3500.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=0daab610c7956254335f5f6bd734b6a9'></td><td>2015-07-19 20:16:54</td><td><a href='http://www.theguardian.com/world/2015/jul/19/greek-banks-reopen-first-time-three-weeks-queues-expected'>site</a></td><td>"Greece has already been given relief. We had a voluntary haircut among the private creditors and we then extended maturities once and reduced interest rates," said Merkel in the interview.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/4d2/report-on-business/international-business/european-business/article25659249.ece/ALTERNATES/w220/-542820152.JPG'></td><td>2015-07-24 12:54:42</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/security-worries-delay-start-of-greeces-new-bailout-talks/article25659250/?cmpid=rss1'>site</a></td><td>However, another source close to the talks said Greece had been asked to do more on reforms before top international officials could come to Athens.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-28 09:14:29</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article29087860.html#storylink=rss'>site</a></td><td>Emissaries from Greece's international creditors are holding a second day of preparatory talks with Greek officials, ahead of higher-level negotiations later this week on the country's new multi-billion euro lifeline.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 16:00:48</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>Greek officials were at pains to play down what they see as the humiliating and intrusive aspects of the talks - access to ministries, the right to examine accounts and question civil servants, and the visible presence of the negotiators in Athens.</td></tr><tr><td>When negotiations on further aid eventually began, they were moved to Brussels, with no access to Greek ministries.</td></tr></table></td></tr>
 </table></body></html>

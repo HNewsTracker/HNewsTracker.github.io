@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 15:20:41</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/16/netanyahu-british-fm-spar-over-iran-deal-disagreements'>site</a></td><td><table><tr><td>Netanyahu, British FM spar over Iran deal disagreements</td></tr><tr><td>"We would have wanted to see a deal that says the following: 'Iran, you will get the easing on the restrictions on your nuclear program, and you will get sanctions relief if you change your behavior first,'" Netanyahu said, calling it "perplexing" that the deal does not address Iran's calls to annihilate Israel.</td></tr><tr><td>Hammond said he understood Netanyahu's concerns, but added "We have always been clear that this deal was about the nuclear file."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 06:45:45</td><td><a href='http://www.daytondailynews.com/ap/ap/international/israeli-leaders-household-spending-facing-criminal/nm33m/'>site</a></td><td>Israel's attorney general has ordered a criminal investigation into excessive spending at Prime Minister Benjamin Netanyahu's residences.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 15:25:28</td><td><a href='http://www.ctvnews.ca/world/israeli-pm-benjamin-netanyahu-faces-criminal-probe-over-spending-1.2479715'>site</a></td><td><table><tr><td>While the investigation shows no sign of threatening Prime Minister Benjamin Netanyahu's hold on power, it nonetheless gave him a new headache at a time of growing international isolation and domestic turmoil with a narrow and fractured coalition.</td></tr><tr><td>Perhaps the biggest blow to Netanyahu was the signing last week of the international deal meant to curb Iran's nuclear program, which he had battled relentlessly and unsuccessfully to thwart.</td></tr><tr><td>Under Netanyahu, Israel also has faced broadening international isolation.</td></tr></table></td></tr>
 </table></body></html>

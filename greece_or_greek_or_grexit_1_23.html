@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 11:36:52</td><td><a href='http://finance.yahoo.com/news/greek-pm-tsipras-faces-party-022322066.html'>site</a></td><td>He and a parliamentary spokesman for Syriza railed against what he described as a "coup" by creditors to force Greece to accept harsh reforms, while opponents of the new measures are planning strikes and protests in the coming days.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/i4_8OYEnmSSSMDCPZK2d8Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-16T010055Z_1_LYNXNPEB6F012_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-16 01:46:51</td><td><a href='http://finance.yahoo.com/news/greek-parliament-approves-bailout-measures-005217349.html'>site</a></td><td>"I acknowledge the fiscal measures are harsh, that they won't benefit the Greek economy, but I'm forced to accept them," he said as he made a final appeal for support.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/14/d6/60/ae143f5d47164fce86a77de4a72b6f4a-6e04fd279b1540979adf82af0e16ca5f-1.jpg'></td><td>2015-07-14 21:04:02</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-tsipras-faces-dissent-on-bailout-deal/nmyPH/'>site</a></td><td><table><tr><td>Souvenirs presenting ancient Greek temples are placed on sale at a shop in central Athens, Tuesday, July 14, 2015.</td></tr><tr><td>Demonstrators gather near the Greek Parliament during a rally against the government's agreement with its creditors in Athens, in central Athens, Tuesday, July 14, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 10:50:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27374224.html#storylink=rss'>site</a></td><td>A man stands next to a shop selling flags of Greece and European Union in central Athens, Thursday, July 16, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/40/16/33/8447722/11/square_gallery_thumb.jpg'></td><td>2015-08-11 16:50:54</td><td><a href='http://www.sfgate.com/news/world/article/Greece-closes-in-on-bailout-deal-possibly-within-6436731.php'>site</a></td><td>A man reads a newspaper outside a shop in in the northern Greek port city of Thessaloniki, Tuesday, Aug. 11, 2015.</td></tr>
 </table></body></html>
