@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -55,5 +55,6 @@
   <tr><td style='display:none'>4</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td>Colorado's complicated death penalty rules require jurors to decide on aggravating factors before they decide whether Holmes should be executed or sentenced to life in prison.</td></tr>
   <tr><td style='display:none'>5</td><td></td><td>2015-08-03 15:30:44</td><td><a href='http://www.startribune.com/deliberations-resume-in-colorado-theater-shooting-trial/320487452/'>site</a></td><td>Jurors must decide whether there are any reasons, such as Holmes' mental illness and his trouble-free youth, that mean he should be sentenced to life in prison without parole instead of to death.</td></tr>
   <tr><td style='display:none'>6</td><td></td><td>2015-08-07 03:05:24</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article30372438.html#storylink=rss'>site</a></td><td>Holmes jurors begin final deliberations: ‘Evil’ vs. ‘mercy’</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td>Holmes' mother, Arlene, who had begged jurors to spare his life, leaned her head against her husband's shoulder and began sobbing.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-08 01:18:06</td><td><a href='http://www.miamiherald.com/news/business/article30425760.html#storylink=rss'>site</a></td><td>Jury verdict means James Holmes will spend life behind bars</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td><table><tr><td>- James Holmes will spend the rest of his life in prison after at least one juror balked at the possibility of sentencing him to death for the massacre that claimed 12 lives and spawned a gut-wrenching four-month trial.</td></tr><tr><td>Holmes' mother, Arlene, who had begged jurors to spare his life, leaned her head against her husband's shoulder and began sobbing.</td></tr><tr><td>There was never any question during the trial as to whether Holmes was the killer.</td></tr></table></td></tr>
 </table></body></html>

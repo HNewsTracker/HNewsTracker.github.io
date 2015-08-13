@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 18:46:28</td><td></td><td><a href='mexico_27_28.html'>Miguel Angel Jimenez, a political activist who played a prominent early role in the search for 43 students and other missing people in southern Mexico, was slain over the weekend, an associate said Monday. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 18:46:28</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/10/activist-in-search-for-missing-students-killed-in-mexico'>site</a></td><td>In July, Mexico's attorney general's office confirmed that at least 60 clandestine graves with 129 bodies have been found so far on the outskirts of Iguala.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-13 17:55:09</td><td></td><td><a href='mexico_27_28.html'>White House spokesman Josh Earnest says the U.S. government is offering its full support to Mexico. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-13 22:14:08</td><td></td><td><a href='mexico_27_30.html'>Federal Police stand guard near a half-built house near the Altiplano maximum security prison in Almoloya, west of Mexico City, Monday, July 13, 2015. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 22:14:08</td><td></td><td><a href='mexico_27_31.html'>"He escaped through a mile-long tunnel, wide enough to hold a motorcycle, and ending in one of the few blind spots in Mexico's most-secure prison. How do you do that without some high-level corruption?" (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-14 05:22:11</td><td></td><td><a href='mexico_27_29.html'>As authorities hunted Monday for any sign of Mexico's most powerful drug lord, it was clear that Joaquin "El Chapo" Guzman's escape must have involved inside help on a grand scale. (13)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-15 08:31:43</td><td></td><td><a href='mexico_27_32.html'>Seven more strides and the man who Mexico's government said could not possibly repeat his 2001 prison escape stepped through a sliding steel door into the chilly night on a high plain west of the capital. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/cd/c1/00553b0d0ff64e39964702baa3c80551-622ae684b25c4853a32d9838c82f144e-0_1.jpg'></td><td>2015-07-15 13:58:22</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/mexico-drug-lord-escape-tunnel-is-audacious-engine/nmy5F/'>site</a></td><td>Mexico's most prized prisoner paced his cell, first to the latrine, then the shower, then the bed.</td></tr>
 </table></body></html>

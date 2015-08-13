@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/13/ca/1c/dd7516bc70674f2994939903d387cd57-2ddd91f559074b0b880bb76940c8543f-2.jpg'></td><td>2015-07-13 22:14:08</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/mexico-drug-lord-escape-tunnel-was-too-elaborate-t/nmyHn/'>site</a></td><td>The escape was made from the one place beyond the view of security cameras at Mexico's toughest prison.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 06:53:56</td><td><a href='http://www.cbc.ca/news/world/el-chapo-escape-mexico-wide-search-launched-for-drug-lord-1.3152375?cmp=rss'>site</a></td><td>Mexico's government on Tuesday broadcast security camera footage of Guzman in the final moments before he escaped from the maximum security prison.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/cd/c1/00553b0d0ff64e39964702baa3c80551-622ae684b25c4853a32d9838c82f144e-0_1.jpg'></td><td>2015-07-15 08:31:43</td><td><a href='http://www.daytondailynews.com/ap/ap/international/mexico-drug-lord-escape-tunnel-is-audacious-engine/nmy5F/'>site</a></td><td>Seven more strides and the man who Mexico's government said could not possibly repeat his 2001 prison escape stepped through a sliding steel door into the chilly night on a high plain west of the capital.</td></tr>
+</table></body></html>

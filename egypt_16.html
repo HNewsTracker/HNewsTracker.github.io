@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-29 04:42:58</td><td></td><td><a href='egypt_16_17.html'>Mr Greste's colleagues, Mohamed Fahmy and Baher Mohamed are free on bail in Egypt awaiting the verdict, but reporting to police daily. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/m/y/y/w/image.related.articleLeadwide.620x349.gimxwu.png/1438144961018.jpg'></td><td>2015-07-29 04:42:58</td><td><a href='http://www.brisbanetimes.com.au/national/australian-journalist-peter-greste-awaits-egyptian-terrorretrial-verdict-20150729-gimxwu.html'>site</a></td><td>The reporter was deported by Egypt in February, after 400 days behind bars.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/m/y/y/w/image.related.articleLeadwide.620x349.gimxwu.png/1438144961018.jpg'></td><td>2015-07-29 04:42:58</td><td><a href='http://www.smh.com.au/national/australian-journalist-peter-greste-awaits-egyptian-terrorretrial-verdict-20150729-gimxwu.html'>site</a></td><td><table><tr><td>In January, Egypt's highest court threw out the verdicts and ordered the men face a retrial, citing procedural flaws in the initial case.</td></tr><tr><td>He says a conviction on terrorism charges would have a devastating effect on his career as a foreign correspondent, restricting his ability to travel to countries possessing extradition arrangements with Egypt.</td></tr></table></td></tr>
+</table></body></html>

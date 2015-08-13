@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td>With the vote, lawmakers backed talks on aid from the European Stability Mechanism, the euro area's permanent firewall fund, and a loan to keep Greece afloat during talks on the proposed three-year bailout.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 11:35:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/28/greece-rescue-creditors-in-2nd-day-of-talks-on-new-lifeline'>site</a></td><td>Greece advances in loan talks, under fire for euro exit plan</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IAXUcvCPVik6_sn8ItynSg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-07T111925Z_1_LYNXNPEB760IY_RTROPTP_3_EUROZONE-GREECE-TSIPRAS_original.jpg'></td><td>2015-08-07 11:19:25</td><td><a href='http://finance.yahoo.com/news/eu-officials-review-progress-greek-111925503.html'>site</a></td><td>Greece has said it doesn't want more bridge finance, and non-euro EU countries such as Britain and the Czech Republic are not keen to add to last month's loan from the European Financial Stability Mechanism.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 17:49:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-16-EU--Greece-Bailout-The%20Latest/id-891ba046383c4ba2b380280ba29b3777'>site</a></td><td>Greece has been in arrears to the IMF since June 30, when it failed to make a loan repayment.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 23:05:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/24/greek-talks-to-begin-after-technical-issues-ironed-out'>site</a></td><td>In a statement Friday evening, the IMF confirmed it had received Greece's request for a new IMF loan and said it would work to arrange talks with Greece and its European creditors.</td></tr>
 </table></body></html>

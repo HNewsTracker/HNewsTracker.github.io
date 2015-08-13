@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/germany_bailout.jpg?itok=6U7qXOHf'></td><td>2015-07-17 21:13:26</td><td><a href='http://www.sbs.com.au/news/article/2015/07/18/german-lawmakers-back-greek-bailout-tsipras-sacks-dissenters'>site</a></td><td><table><tr><td>Popular misgivings run deep in Germany, the euro zone country that has already contributed most to Greece's two bailouts since 2010, about funnelling yet more aid to Athens.</td></tr><tr><td>"If we don't have the courage to end it - Greece won't make it in the euro zone - there will be a fourth and a fifth bailout for Greece," said conservative Eurosceptic Klaus-Peter Willsch, reflecting growing popular resentment of Greece among Germans.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td>In Brussels, there is much talk of how the latest Greek crisis should prompt a leap forward in integration to strengthen the euro zone, but it's not clear what progress is possible.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Germany set out "strict" conditions for further aid and said it would be sensible to link the size of the first tranche to Greece's progress in carrying out reforms, a reflection of worry around the euro zone that Athens might not do as promised.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.seattlepi.com/news/article/Yellen-Draghi-upbeat-despite-tumult-in-Greece-6389141.php'>site</a></td><td>And he did his part for Greece, too: The ECB on Thursday agreed to increase financial support for Greece's banks, which have been closed since June 29 and were in danger of collapsing entirely.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 05:56:00</td><td><a href='http://www.ctvnews.ca/business/greek-banks-open-after-three-weeks-but-restrictions-still-in-place-1.2477310'>site</a></td><td>Greece closed its banks beginning June 29 to prevent a bank run as its second international bailout expired.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Greece's stock market and banks were closed on June 29, when the government put limits on money withdrawals and transfers to keep a run on the banks from bringing down the financial system.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>But the resumption of trading was a necessary step as Greece tries to emerge from controls on financial activity that the government, confronted with a bank run, imposed at the end of June.</td></tr>
 </table></body></html>
