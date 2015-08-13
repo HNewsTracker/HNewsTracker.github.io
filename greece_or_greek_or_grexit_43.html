@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 11:40:09</td><td><a href='http://www.startribune.com/eu-appeals-for-assets-for-greece-hungary-migrant-operations/321019761/'>site</a></td><td>EU appeals to nations to live up to asset pledges for migrant operations in Greece, Hungary</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 11:40:09</td><td><a href='http://www.startribune.com/eu-appeals-for-assets-for-greece-hungary-migrant-operations/321019761/'>site</a></td><td>EU appeals to nations to live up to asset pledges for migrant operations in Greece, Hungary</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-08-07 13:33:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article30385125.html#storylink=rss'>site</a></td><td><table><tr><td>The European Union appealed Friday to its member countries to live up to pledges to provide planes and other assets so that its border agency can cope with a migrant influx into Greece and Hungary.</td></tr><tr><td>Many countries had pledged assets for short-term use, but Bertaud said more planes and "technical assistance" like personnel and patrol cars are needed for Greece and Hungary.</td></tr></table></td></tr>
 </table></body></html>

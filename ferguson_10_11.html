@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,6 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-08-02 15:53:14</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td>Lawmakers filed about 65 bills stemming from the events in Ferguson passing just one, a measure limiting municipal court fines and traffic tickets.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-02 15:53:14</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td>Lawmakers filed about 65 bills stemming from the events in Ferguson passing just one, a measure limiting municipal court fines and traffic tickets.</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-08-02 17:53:41</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article29797039.html#storylink=rss'>site</a></td><td>Police unions still hold considerable sway in some states, including in Missouri, where lawmakers filed about 65 bills stemming from the events in Ferguson.</td></tr>
 </table></body></html>

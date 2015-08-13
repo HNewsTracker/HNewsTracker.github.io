@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/10/cb/57/59d09696f3b74b258430f278182f14a9-45037df8d95344248a24ac25f804dde1-0.jpg'></td><td>2015-08-10 20:29:33</td><td><a href='http://www.daytondailynews.com/ap/ap/political/group-backing-hillary-clinton-gets-1m-from-anonymo/nnGzt/'>site</a></td><td>Democratic presidential candidate Hillary Rodham Clinton arrives at the high school in Exeter, N.H., Monday, Aug. 10, 2015, where she announced her college affordability plan.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 20:29:33</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/10/group-backing-hillary-clinton-gets-1m-from-anonymous-donors'>site</a></td><td>Group backing Hillary Clinton gets $1M from anonymous donors</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 20:33:09</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article30623862.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton told a cheering crowd at her largest rally so far that "the endless flow of secret, unaccountable money" must be stopped.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/1437000362_10087461+1bush071615.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-16 00:40:08</td><td><a href='http://www.startribune.com/hillary-clinton-spends-19-million-hires-hundreds/315595441/'>site</a></td><td><table><tr><td>Hillary Clinton spends $19 million, hires hundreds for early campaign</td></tr><tr><td>WASHINGTON - Hillary Rodham Clinton has spent nearly $19 million and has hired hundreds of staff during the first three months of her presidential campaign.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/41/59/753f6bc37a334c7f9e0167172a854b1d-498ec8aec8a6473bb308d8fbc4e5b9e1-0_1.jpg'></td><td>2015-07-16 03:37:40</td><td><a href='http://www.daytondailynews.com/ap/ap/political/hillary-clinton-spends-19-million-hires-hundreds/nmzbh/'>site</a></td><td>Hillary Rodham Clinton spent more than $18 million and hired hundreds of employees in the first three months of her presidential campaign, creating a national operation that vastly outpaces her rivals in both parties.</td></tr>
 </table></body></html>

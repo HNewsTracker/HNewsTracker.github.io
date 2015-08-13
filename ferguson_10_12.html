@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -48,8 +48,8 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-08-02 15:53:14</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td><table><tr><td>Chappelle-Nadal, who was among the those tear gassed by police while protesting Michael Brown's shooting with her constituents in Ferguson, Mo., said as a state, Missouri has not done much.</td></tr><tr><td>ADVANCE FOR MONDAY, AUG. 3, 2015 AND THEREAFTER - FILE - In this Aug. 20, 2014 file photo, protesters march in the street as lightning flashes in the distance in Ferguson, Mo.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-02 17:53:41</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article29797039.html#storylink=rss'>site</a></td><td>"As a state, we have not done much," said Missouri state Sen. Maria Chappelle-Nadal, who represents Ferguson and was among the protesters who were tear-gassed by police.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-02 15:53:14</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td><table><tr><td>Chappelle-Nadal, who was among the those tear gassed by police while protesting Michael Brown's shooting with her constituents in Ferguson, Mo., said as a state, Missouri has not done much.</td></tr><tr><td>ADVANCE FOR MONDAY, AUG. 3, 2015 AND THEREAFTER - FILE - In this Aug. 20, 2014 file photo, protesters march in the street as lightning flashes in the distance in Ferguson, Mo.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-02 17:53:41</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article29797039.html#storylink=rss'>site</a></td><td>"As a state, we have not done much," said Missouri state Sen. Maria Chappelle-Nadal, who represents Ferguson and was among the protesters who were tear-gassed by police.</td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-08-03 01:33:21</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td>FILE - In this undated photo provided by the Brown family is Michael Brown, a young black man who was fatally shot on Aug. 9, 2014 by a white Ferguson, Mo., policeman.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 01:33:21</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td><table><tr><td>FILE - In this Aug. 9, 2014, file photo, a police tactical team moves in to disperse a group of protesters following the shooting of a young black man by a white policeman in Ferguson, Mo.</td></tr><tr><td>When a white Ferguson policeman fatally shot a young black man nearly a year ago, the St. Louis suburb erupted in violent protests and the nation took notice.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 01:33:21</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td><table><tr><td>FILE - In this Aug. 9, 2014, file photo, a police tactical team moves in to disperse a group of protesters following the shooting of a young black man by a white policeman in Ferguson, Mo.</td></tr><tr><td>When a white Ferguson policeman fatally shot a young black man nearly a year ago, the St. Louis suburb erupted in violent protests and the nation took notice.</td></tr></table></td></tr>
 </table></body></html>
