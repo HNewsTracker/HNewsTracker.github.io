@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-13 11:54:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-13-EU--Greece-Bailout-The%20Latest/id-a9f8ea18f8d8411692ee76ca47120fb1'>site</a></td><td>In a tweet Monday, Tusk said the European bailout program for Greece includes "serious reforms" and "financial support."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-13 14:45:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11480388&ref=rss'>site</a></td><td>In Britain " a European Union member that decided against joining the euro " treasury chief George Osborne responded to the deal brokered on Greece with "a cautious welcome that the Eurozone has stepped back from the brink."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-14 08:45:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-14-EU--Greece-Bailout-The%20Latest/id-00e9b7dfae884e28b2a6b1b3a43dfe7d'>site</a></td><td>British Treasury chief George Osborne arrived to a EU meeting of finance minister with a clear message, don't expect Britain, which is not part of the euro, to pay for any of Greece's rescue money.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-14 11:36:52</td><td><a href='http://finance.yahoo.com/news/greek-pm-tsipras-faces-party-022322066.html'>site</a></td><td>Fighting its own battle with Brussels to secure reforms of the European Union, British Finance Minister George Osborne has ruled out any financial involvement in a fresh bailout for Greece.</td></tr>
+</table></body></html>

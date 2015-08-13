@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 17:49:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-16-EU--Greece-Bailout-The%20Latest/id-891ba046383c4ba2b380280ba29b3777'>site</a></td><td>Greece has been in arrears to the IMF since June 30, when it failed to make a loan repayment.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 19:35:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484861&ref=rss'>site</a></td><td>S&P had previously rated Greece as "CCC-," a category signaling that loan payments are likely to be missed within six months.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 23:05:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/24/greek-talks-to-begin-after-technical-issues-ironed-out'>site</a></td><td>In a statement Friday evening, the IMF confirmed it had received Greece's request for a new IMF loan and said it would work to arrange talks with Greece and its European creditors.</td></tr>
+</table></body></html>
