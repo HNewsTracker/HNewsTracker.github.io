@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-30 19:33:56</td><td></td><td><a href='microsoft_14_15.html'>Microsoft sued Motorola in 2010, alleging Motorola had breached its obligation to offer licenses to wireless and video patents used in Xbox game consoles and Windows products at a reasonable cost. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/lvOwhWfOfAX7ggkRvW4AUA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_OLINTECH_Wrapper_NewFeed_1/2015-07-30T163049Z_1_LYNXNPEB6T0WU_RTROPTP_3_GOOGLE-EU_original.jpg'></td><td>2015-07-30 19:33:56</td><td><a href='http://finance.yahoo.com/news/google-loses-bid-overturn-low-163049174.html'>site</a></td><td>Both Microsoft and Google declined to comment on the decision.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 07:05:28</td><td></td><td><a href='microsoft_14_15.html'>Microsoft makes money from selling advertising for its Bing search engine, and Windows 10 comes with many apps that steer people to Bing. (13)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 13:24:27</td><td></td><td><a href='microsoft_14_16.html'>It has new features, a streamlined Web browser called Edge and a desktop version of Cortana, the online assistant that is Microsoft's answer to Google Now and Apple's Siri. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 16:17:27</td><td><a href='http://www.cbsnews.com/news/fresh-start-windows-10-arrives-for-free/'>site</a></td><td>A: Microsoft plans promotional events in several cities Wednesday, tied to a global ad campaign and a series of charitable donations.</td></tr>
 </table></body></html>

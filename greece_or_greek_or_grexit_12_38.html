@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.seattlepi.com/news/article/Yellen-Draghi-upbeat-despite-tumult-in-Greece-6389141.php'>site</a></td><td>And he did his part for Greece, too: The ECB on Thursday agreed to increase financial support for Greece's banks, which have been closed since June 29 and were in danger of collapsing entirely.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 05:56:00</td><td><a href='http://www.ctvnews.ca/business/greek-banks-open-after-three-weeks-but-restrictions-still-in-place-1.2477310'>site</a></td><td>Greece closed its banks beginning June 29 to prevent a bank run as its second international bailout expired.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Greece's stock market and banks were closed on June 29, when the government put limits on money withdrawals and transfers to keep a run on the banks from bringing down the financial system.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>But the resumption of trading was a necessary step as Greece tries to emerge from controls on financial activity that the government, confronted with a bank run, imposed at the end of June.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/37/52/43/8300759/21/gallery_thumb.jpg'></td><td>2015-07-14 03:42:03</td><td><a href='http://www.seattlepi.com/business/energy/article/Stocks-rise-as-Greece-gets-a-new-bailout-deal-6381415.php'>site</a></td><td>The agreement removes the immediate threat Greece would default on its debts and leave the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 10:54:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/23/greece-clears-final-reform-hurdle-before-new-bailout-talks'>site</a></td><td>Without the money Greece would be unable to pay the debts due over the coming three years and would likely be forced to leave the euro, Europe's shared currency.</td></tr>
 </table></body></html>

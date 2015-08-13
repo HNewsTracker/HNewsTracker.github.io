@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -52,4 +52,5 @@
   <tr><td style='display:none'>1</td><td></td><td>2015-08-12 11:20:31</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11496296&ref=rss'>site</a></td><td>Online image purports to show Croatian hostage beheaded by Islamic State affiliate in Egypt</td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-08-12 11:56:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article30828633.html#storylink=rss'>site</a></td><td>Egypt has seen an increase in violence since the ouster of Islamist President Mohammed Morsi, with attacks by suspected Islamic extremists in both the Sinai Peninsula and the mainland focusing primarily on security forces.</td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-08-12 13:00:04</td><td><a href='http://www.startribune.com/online-image-islamic-state-beheads-croat-held-in-egypt/321534311/'>site</a></td><td>CAIRO - An online image circulated Wednesday purported to show the beheading of a Croatian hostage held by the Islamic State group's Egyptian affiliate, the first such killing of a foreign captive in Egypt since the extremists set up a branch here.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-13 12:45:12</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/13/islamic-state-radio-says-croatian-hostage-killed/'>site</a></td><td>Salopek's killing is the first of a foreign captive in Egypt, where the government has been struggling to project an image of stability and revive the economy following years of unrest.</td></tr>
 </table></body></html>

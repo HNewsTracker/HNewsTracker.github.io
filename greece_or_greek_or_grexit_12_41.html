@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/e/a/o/3/image.related.articleLeadwide.620x349.gieb3r.png/1437105022942.jpg'></td><td>2015-07-17 03:52:11</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-banks-due-to-reopen-on-monday-20150717-gieb3r.html'>site</a></td><td>But parliament's endorsement won rare praise from European creditors and gave them a reason to lift - at least for now - the threat of economic oblivion that has hung over Greece for nearly a month.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-23 02:45:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article28082050.html#storylink=rss'>site</a></td><td>Addressing parliament before the vote, Tsipras said the reforms were a necessary price to pay to keep Greece alive after stormy talks with its creditors nearly collapsed earlier this month.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td>With the vote, lawmakers backed talks on aid from the European Stability Mechanism, the euro area's permanent firewall fund, and a loan to keep Greece afloat during talks on the proposed three-year bailout.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 11:35:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/28/greece-rescue-creditors-in-2nd-day-of-talks-on-new-lifeline'>site</a></td><td>Greece advances in loan talks, under fire for euro exit plan</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IAXUcvCPVik6_sn8ItynSg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-07T111925Z_1_LYNXNPEB760IY_RTROPTP_3_EUROZONE-GREECE-TSIPRAS_original.jpg'></td><td>2015-08-07 11:19:25</td><td><a href='http://finance.yahoo.com/news/eu-officials-review-progress-greek-111925503.html'>site</a></td><td>Greece has said it doesn't want more bridge finance, and non-euro EU countries such as Britain and the Czech Republic are not keen to add to last month's loan from the European Financial Stability Mechanism.</td></tr>
 </table></body></html>
