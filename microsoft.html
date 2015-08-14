@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 17,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 17 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>12</td><td></td><td>2015-07-16 20:16:32</td><td></td><td><a href='microsoft_1.html'>This screen shot provided by Microsoft shows the Groove Music welcome screen, the service formerly known as Xbox Music. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/70a/report-on-business/international-business/european-business/article25540865.ece/ALTERNATES/w220/web-rob-microsoft-nokia-071.JPG'></td><td>2015-07-16 22:28:20</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/microsoft-deals-big-blow-to-finnish-town-with-nokia-unit-closure/article25540866/?cmpid=rss1'>site</a></td><td><table><tr><td>When U.S. software giant Microsoft bought Nokia's struggling mobile phone business last year, the inhabitants of Salo - a town of 54,000 in southern Finland - thought the move would revive the local economy.</td></tr><tr><td>But their hopes were crushed last week when Microsoft announced it would close Nokia's former product development unit in the town, putting all 1,100 jobs at risk.</td></tr><tr><td>Today Salo's unemployment rate stands at 15 per cent, well above the national rate of 9.7 per cent, following the closure of a Nokia factory in 2012 and previous Microsoft layoffs.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 11:04:49</td><td><a href='http://www.wsj.com/articles/microsoft-plans-to-buy-israeli-cloud-security-firm-adallom-for-320-million-1437390286?mod=rss_Technology'>site</a></td><td><table><tr><td>Microsoft Plans to Buy Israel's Adallom</td></tr><tr><td>Microsoft declined to comment.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/08-825489+0005FESTIVAL072015.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-21 01:25:28</td><td><a href='http://www.startribune.com/miley-cyrus-to-host-mtv-video-music-awards/317663321/'>site</a></td><td>The 2015 MTV Video Music Awards will air live on MTV from the Microsoft Theater in Los Angeles.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/lo/api/res/1.2/SBKucVPPkWqhfzSpREhMFg--/YXBwaWQ9bWFnYXppbmVzO3c9ODAw/https://s.yimg.com/os/en-US/homerun/cnet.cbs.com/e3b38a9a46a80bc1a6a977a915bf4cd6'></td><td>2015-07-21 18:05:06</td><td><a href='https://www.yahoo.com/tech/s/microsoft-rushes-emergency-security-fix-221506921.html?src=rss'>site</a></td><td>Microsoft Rushes Emergency Security Fix For Windows</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-07-21 21:58:42</td><td></td><td><a href='microsoft_7.html'>The net loss in the fourth quarter, which ended June 30, amounted to $3.2 billion, and sales fell 5.1 percent to $22.2 billion, Microsoft said Tuesday in a statement. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/TWINS_ANGELS_BASEBALL_35820095.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-22 15:55:42</td><td><a href='http://www.startribune.com/tech-shares-lead-an-early-slump-for-us-stocks/318126131/'>site</a></td><td><table><tr><td>Technology shares are leading the way lower on the stock market after Apple and Microsoft turned in disappointing results.</td></tr><tr><td>Microsoft fell 3 percent after booking a huge loss related to its purchase of Nokia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-22 18:42:20</td><td></td><td><a href='microsoft_21.html'>An advertisement for Microsoft is seen over 42nd Street in Manhattan, New York, July 15, 2015. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 15:11:47</td><td><a href='https://www.yahoo.com/tech/s/microsoft-joins-effort-curb-revenge-porn-161425551.html?src=rss'>site</a></td><td>Microsoft Joins Effort to Curb 'Revenge Porn'</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-07-28 07:20:52</td><td></td><td><a href='microsoft_14.html'>A: Microsoft says Windows 10 is designed for the way people use computers today - with a faster Web browser and features that make it easier to start tasks on a PC and then switch to a hand-held device. (17)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.business.financialpost.com/2015/07/microsoft_windows_10.jpg?w=620'></td><td>2015-07-29 14:56:02</td><td><a href='http://business.financialpost.com/fp-tech-desk/personal-tech/windows-10-review-microsoft-corp-modernizes-its-os-ditching-windows-8s-annoying-features'>site</a></td><td><table><tr><td>NEW YORK - It took me just a weekend to get comfortable with Microsoft's new Windows 10 operating system, something I never did with its predecessor, Windows 8, even after nearly three years.</td></tr><tr><td>Microsoft's Get Windows 10 app will check for known problems.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/jYtChd6ujQ_Jvl8HYD0KIw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_REUTERS-EN_WRAPPER_NEW_1/2015-07-29T102950Z_1_LYNXNPEB6S0HL_RTROPTP_3_MICROSOFT-WINDOWS_original.jpg'></td><td>2015-07-29 15:42:58</td><td><a href='http://finance.yahoo.com/news/microsoft-launches-much-awaited-windows-102950496.html'>site</a></td><td>Microsoft, which unveiled Windows 10 in September, skipped Windows 9 altogether, to put some distance between the new system and Windows 8.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-30 19:33:56</td><td></td><td><a href='microsoft_12.html'>Microsoft sued Motorola in 2010, alleging Motorola had breached its obligation to offer licenses to wireless and video patents used in Xbox game consoles and Windows products at a reasonable cost. (4)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-31 02:32:02</td><td></td><td><a href='microsoft_17.html'>PALO ALTO, California - Microsoft says its' new Windows 10 operating system is now running on more than 14 million computers, two days after the software was released as a free download. (4)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-08-05 18:31:15</td><td></td><td><a href='microsoft_10.html'>Under its new policy, Microsoft Corp. will increase total paid leave for new mothers to 20 weeks, from a current 12 weeks paid and eight weeks of unpaid leave. (6)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-05 22:07:12</td><td></td><td><a href='microsoft_5.html'>Even after its recent slump, Apple's market value is still two thirds bigger than Microsoft, the next biggest publicly-traded company in the U.S. That means that when Apple moves, so does the market. (3)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-08-05 23:36:35</td><td></td><td><a href='microsoft_2.html'>That leaves a big moneymaking opportunity for game makers - an opportunity that is particularly acute for Microsoft, which not only makes "Halo" but the video game console that the game is played on. (5)</a></td></tr>
+</table></body></html>

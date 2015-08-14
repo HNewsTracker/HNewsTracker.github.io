@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 18:45:27</td><td><a href='http://www.theguardian.com/world/2015/aug/05/islamic-state-affiliate-sinai-province-threat-kill-croatian-tomislav-salopek-kidnapped-egypt'>site</a></td><td>Reading from a sheet of paper, he says he will be killed within 48 hours if Egypt's government fails to release Muslim women held in prisons.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-07 13:51:40</td><td></td><td><a href='egypt_3_4.html'>The sister of a woman jailed in Egypt for alleged ties to the outlawed Muslim Brotherhood is urging the Islamic State group not to kill a Croatian hostage. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48399313,width-300,resizemode-4/islamic-state-flag.jpg'></td><td>2015-08-08 02:58:02</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Deadline-passes-for-Croat-held-by-IS-militants-in-Egypt/articleshow/48399306.cms'>site</a></td><td>Deadline passes for Croat held by IS militants in Egypt</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-12 13:56:00</td><td><a href='http://www.ctvnews.ca/world/online-image-purports-to-show-croatian-beheaded-by-extremists-in-egypt-1.2513324'>site</a></td><td>The picture also contained an inset of two Egyptian newspaper reports, one declaring Croatia's support for Egypt's war against terrorism and another noting Croatia's support for the Kurds, who have been battling the IS group in Syria and Iraq.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-12 21:39:55</td><td><a href='http://www.torontosun.com/2015/08/12/islamic-state-egypt-affiliate-claims-to-have-beheaded-croatian-hostage-report'>site</a></td><td>Ardiseis Egypt, a unit of French oil and gas geology company CGG, confirmed the video showed one of its employees who was kidnapped on July 22 while travelling to Cairo.</td></tr>
+</table></body></html>

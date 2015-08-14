@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 23:43:29</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27262330.html#storylink=rss'>site</a></td><td>The prosecution had earlier argued that the deliberate nature of the planning and execution of the attack showed that Holmes was not mentally ill.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/52/72/8302248/33/920x920.jpg'></td><td>2015-07-15 00:39:46</td><td><a href='http://www.sfgate.com/news/crime/article/News-guide-Movie-theater-shooting-trial-closing-6383120.php'>site</a></td><td>Holmes didn't testify.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-16 19:56:09</td><td></td><td><a href='holmes_0_5.html'>If the jury convicts Holmes, the trial will enter a sentencing phase in which the jurors will hear evidence and decide whether he should be sent to prison for life without the possibility of parole or sentenced to death. (10)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 00:51:19</td><td><a href='http://www.reuters.com/article/2015/07/17/us-usa-shooting-denver-verdict-idUSKCN0PQ2DU20150717?feedType=RSS&feedName=domesticNews'>site</a></td><td><table><tr><td>Holmes showed no reaction.</td></tr><tr><td>"That guy, sitting right there," he said, pointing at Holmes.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 06:10:34</td><td><a href='http://www.foxnews.com/us/2015/07/17/despite-quick-conviction-trial-colorado-theater-shooter-james-holmes-is-far/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>Dressed in a blue shirt and khakis, and flanked by his public defenders, Holmes stood impassively with his hands in his pockets the whole time.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-29 01:07:08</td><td></td><td><a href='holmes_0_3.html'>Robert Holmes said he has seen James Holmes in jail only three times because his son typically does not allow visitors. (7)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-08-03 15:29:11</td><td></td><td><a href='holmes_0_1.html'>The jury in the Colorado theater shooting trial resumed deliberating Monday whether to keep the death penalty on the table for gunman James Holmes. (36)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-03 15:30:44</td><td></td><td><a href='holmes_0_2.html'>If jurors unanimously agree that such factors outweigh the heinousness of the July 2012 attack that killed 12 people and injured 70 others, Holmes would be sentenced to a life term. (5)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-03 22:42:43</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/03/theater-shooting-jury-decides-whether-execution-still-option'>site</a></td><td>Ian Sullivan, the father of Holmes' youngest victim, 6-year-old Veronica Moser-Sullivan, closed his eyes when her name was read.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-07 03:05:24</td><td></td><td><a href='holmes_0_6.html'>In this image taken from video, defense attorney Tamara Brady, right, gestures during closing arguments in the sentencing phase of the James Holmes trial, in Centennial, Colo., Thursday. (4)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-08 05:55:08</td><td></td><td><a href='holmes_0_4.html'>In the back, Aurora police officers who responded to the bloody scene of Holmes' attacks began crying. (3)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-08 05:55:08</td><td></td><td><a href='holmes_0_7.html'>Ashley Moser, whose 6-year-old daughter died in the attack and who was herself paralyzed by Holmes' bullets, also shook her head and then slowly leaned it against the wheelchair of another paralyzed victim, Caleb Medley. (2)</a></td></tr>
+</table></body></html>

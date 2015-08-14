@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td><table><tr><td>ST. LOUIS (AP) - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson.</td></tr><tr><td>Until August 2014, Ferguson, Missouri, wasn't the kind of place that generated much news.</td></tr><tr><td>But since joining the St. Louis office of The Associated Press in 1993, I had never been to Ferguson as a reporter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/d47/news/world/article25857894.ece/ALTERNATES/w220/web-wo-us-ferguson06nw1'></td><td>2015-08-06 13:49:27</td><td><a href='http://www.theglobeandmail.com/news/world/ferguson-one-year-later-whats-happening-this-weekend/article25857899/?cmpid=rss1'>site</a></td><td>The Ferguson police force of 50 will be fully staffed this weekend and will have the help of the much larger St. Louis County police force, he said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 09:57:00</td><td><a href='http://www.ctvnews.ca/world/man-shot-critically-injured-in-ferguson-1.2509430'>site</a></td><td>Man shot, critically injured in Ferguson</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297735175923_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-08-10 13:56:18</td><td><a href='http://www.torontosun.com/2015/08/10/shots-fired-during-standoff-between-police-protesters-in-ferguson'>site</a></td><td>-- A man who authorities say opened fire on officers in Ferguson, Missouri, on the anniversary of Michael Brown's death was critically wounded when the officers shot back, St. Louis County's police chief said early Monday.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://resources1.news.com.au/images/2015/08/11/1227478/162493-89545b3c-3f96-11e5-a505-e59b7ac8a811.jpg'></td><td>2015-08-10 19:18:00</td><td><a href='http://www.news.com.au/world/state-of-emergency-declared-after-new-shootings-in-ferguson/story-fndir2ev-1227478162627?from=public_rss'>site</a></td><td>St. Louis County Executive Steve Stenger issued the order in a move that authorises county Police Chief Jon Belmar to take control of police emergency management in and around Ferguson.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ichef.bbci.co.uk/news/976/cpsprodpb/2A62/production/_84805801_028511470-1.jpg'></td><td>2015-08-10 23:41:12</td><td><a href='http://www.bbc.co.uk/news/world-us-canada-33856887#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Man shot at Ferguson rally charged</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.gannett-cdn.com/media/2015/08/09/USATODAY/USATODAY/635747533660196380-GTY-483516130.jpg'></td><td>2015-08-11 04:07:02</td><td><a href='http://www.usatoday.com/story/news/nation/2015/08/10/ferguson-protest-shooting/31397841/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomnation-topstories'>site</a></td><td>I strongly condemn the violence against the community, including police officers, in Ferguson, Missouri.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/World/2015/08/11/Fergusonshootingyt650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-08-12 00:23:39</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/08/11/22539748.html?cid=rssnewsworld'>site</a></td><td>-- St. Louis County police have released surveillance video footage they say shows the 18-year-old black suspect who was critically wounded after being shot by police in Ferguson minutes before he fired a gun at plainclothes officers.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150812&i=110452839&w=240&r=110452839-1&t=2'></td><td>2015-08-12 03:06:19</td><td><a href='http://www.reuters.com/article/2015/08/12/us-ferguson-anniversary-idUSKCN0QE0HI20150812?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>St. Louis County Police released a video on Tuesday that they said shows a suspect, who has been accused of firing on police, drawing a pistol from his pants during protests in strife-torn Ferguson, Missouri.</td></tr><tr><td>Police take a mug shot of a protester who was detained in Ferguson, Missouri, August 10, 2015.</td></tr></table></td></tr>
+</table></body></html>

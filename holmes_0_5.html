@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 23:43:29</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27262330.html#storylink=rss'>site</a></td><td>It is the question of sanity and what Holmes did or did not know that night that will be the key issues for jurors.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31383038.ece/ab752/ALTERNATES/h342/PANews%20BT_P-67ca708b-95d8-47d2-afec-06d0b1190ad0_I1.jpg'></td><td>2015-07-16 19:56:09</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/batman-cinema-shootings-colorado-jury-reaches-verdict-31383039.html'>site</a></td><td>If the jury convicts Holmes, the trial will enter a sentencing phase in which the jurors will hear evidence and decide whether he should be sent to prison for life without the possibility of parole or sentenced to death.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 06:15:38</td><td><a href='http://www.startribune.com/despite-quick-conviction-theater-shooting-trial-isn-t-over/316095901/'>site</a></td><td>Now the trial enters a new phase as the jury decides whether Holmes should die for his crimes.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-22 20:27:38</td><td><a href='http://www.foxnews.com/us/2015/07/22/prosecutors-say-holmes-deserves-to-die-for-theater-shootings/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td><table><tr><td>Already, a fifth-grade teacher who gave videotaped testimony early because he was unavailable during sentencing repeatedly referred to Holmes as "Jimmy" and described him as a bright student with a big smile.</td></tr><tr><td>Jurors would then deliberate for a second time, to decide whether, beyond a reasonable doubt, the mitigating factors so outweigh the aggravating factors that Holmes deserves life without parole rather than execution.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td>Colorado's complicated death penalty rules require jurors to decide on aggravating factors before they decide whether Holmes should be executed or sentenced to life in prison.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-03 15:30:44</td><td><a href='http://www.startribune.com/deliberations-resume-in-colorado-theater-shooting-trial/320487452/'>site</a></td><td>Jurors must decide whether there are any reasons, such as Holmes' mental illness and his trouble-free youth, that mean he should be sentenced to life in prison without parole instead of to death.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-07 03:05:24</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article30372438.html#storylink=rss'>site</a></td><td>Holmes jurors begin final deliberations: ?Evil? vs. ?mercy?</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td><table><tr><td>Holmes' mother, Arlene, who had begged jurors to spare his life, leaned her head against her husband's shoulder and began sobbing.</td></tr><tr><td>There was never any question during the trial as to whether Holmes was the killer.</td></tr></table></td></tr>
+</table></body></html>

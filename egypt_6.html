@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 06:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11492542&ref=rss'>site</a></td><td>Egypt went on to fight two more wars against Israel.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-05 21:02:06</td><td></td><td><a href='egypt_6_9.html'>The key global trade route is already one of Egypt's top foreign currency earners, and is run by a semi-independent authority with 25,000 employees that is considered one of the country's most competent bodies. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/40/07/26/8418695/3/square_gallery_thumb.jpg'></td><td>2015-08-05 21:02:06</td><td><a href='http://www.sfgate.com/world/article/Egypt-to-introduce-Suez-Canal-extension-in-hope-6427121.php'>site</a></td><td>The media and government supporters across the board have breathlessly repeated the same message - after four years of strife and the overthrow of two presidents, Egypt is back.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-06 15:47:01</td><td></td><td><a href='egypt_6_8.html'>But Thursday's ceremony was partially overshadowed by an Islamic State affiliate's threat to kill a Croatian hostage kidnapped in Cairo last month - a grim reminder of the threat posed by Islamic militants to Egypt's stability. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-06 15:52:26</td><td></td><td><a href='egypt_6_7.html'>Egyptian air force planes parade with the national flag colors during the inauguration ceremony of the new section of the Suez Canal in Ismailia, Egypt, Thursday, Aug. 6, 2015. (13)</a></td></tr>
+</table></body></html>

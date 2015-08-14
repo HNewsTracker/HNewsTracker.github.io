@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/flsa_etxwb8PQqGRbOCp1A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/f9fb83f063de291f7c0f6a7067003ad2_original.jpg'></td><td>2015-07-14 13:53:02</td><td><a href='http://finance.yahoo.com/news/greek-leader-faces-outrage-home-135119771.html'>site</a></td><td>But after dragging out the rescue talks for months, Tsipras was out of alternatives this week: without a deal, Greece's banks would likely have collapsed, pulling the country out of the euro, Europe's joint currency.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 06:34:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/what-relief-greek-economy-on-its-knees-despite-bailout-deal'>site</a></td><td>ATHENS, Greece (AP) - Greece has a tentative rescue deal, but relief that it is not falling out of the euro is unlikely to last long: its economy has taken a huge hit.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 09:50:12</td><td><a href='http://www.startribune.com/world-stocks-uneven-as-europe-rally-on-greece-fades/316111921/'>site</a></td><td>GLOBAL OUTLOOK: With bailout lenders pledging support for Greece as it moves to re-open banks, investors' fears about a Greek exit from the euro quickly faded and they were now examining other parts of the global economy.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/14/102832768-RTX1JY8Y_0.530x298.jpg?v=1436886410'></td><td>2015-07-18 09:58:00</td><td><a href='http://www.cnbc.com/2015/07/18/new-greek-ministers-sworn-in-after-reshuffle.html'>site</a></td><td>In addition, 70 percent said they would prefer to accept the bailout deal if it kept Greece in the euro.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://static.theglobeandmail.ca/d5b/report-on-business/international-business/european-business/article25582700.ece/ALTERNATES/w220/CHM63_OUKBS_UK_EUROZONE_GREECE.JPG'></td><td>2015-07-18 13:23:29</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greek-banks-to-re-open-monday-as-tsipras-eyes-new-start/article25582701/?cmpid=rss1'>site</a></td><td>Greek banks to re-open Monday as Tsipras eyes new start</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/V9g3M9Yz6YDRJqtLq6WUnA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102845120-GettyImages-480891308.1910x1000.jpg'></td><td>2015-07-20 09:35:52</td><td><a href='http://finance.yahoo.com/news/imf-offer-greece-debt-relief-074303788.html'>site</a></td><td>#Talks over the details of a third, 86-billion-euro ($93 billion) bailout for Greece are due to start in earnest on Monday after euro zone parliaments gave them the green light last week.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/32/e2/f2e092ef255347d3933e2886e5b35321-ee454d7079094ee085c092947af431e1-0_1.jpg'></td><td>2015-07-20 10:58:49</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeks-will-find-banks-open-but-restrictions-still/nm3RW/'>site</a></td><td>Greek banks opened their doors Monday for the first time in over three weeks, a move that the government hopes will help the economy get back to normal following a period dominated by fears over the country's future in the euro.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-21 09:02:20</td><td><a href='http://finance.yahoo.com/news/greece-submits-bill-needed-start-061823782.html'>site</a></td><td>Greece submits bill needed to start rescue talks</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://static.theglobeandmail.ca/ab7/report-on-business/article23894749.ece/ALTERNATES/w140/174390330-Gold+Prices+R%282%29.JPG'></td><td>2015-07-21 09:24:23</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-gold-claws-back-ground-european-assets-lose-greek-tarnish/article25599980/?cmpid=rss1'>site</a></td><td>Demand for safe havens such as gold have waned as Greece this week paid off its creditors, reopened its banks and submitted legislation needed to start talks on a multibillion-euro rescue package.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td>And that appeal has not faded despite caving into demands for more austerity last week in exchange for a bailout that kept Greece within the eurozone.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-28 09:14:29</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article29087860.html#storylink=rss'>site</a></td><td>Emissaries from Greece's international creditors are holding a second day of preparatory talks with Greek officials, ahead of higher-level negotiations later this week on the country's new multi-billion euro lifeline.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-28 20:26:30</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=businessNews'>site</a></td><td>On the negotiations front, the Greek official said suggestions that Greece needed to pass further reform legislation before a bailout deal were not justified by the euro summit statement or subsequent exchanges.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150807&t=2&i=1070300437&w=644&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEB760IY'></td><td>2015-08-07 23:44:33</td><td><a href='http://www.reuters.com/article/2015/08/07/us-eurozone-greece-idUSKCN0QC19820150807?feedType=RSS&feedName=wtMostRead'>site</a></td><td>A senior Greek official said the two sides' assessments of the macroeconomic outlook and primary budget balance targets were very close and unlikely to be an obstacle to a deal.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Greek banks could get an initial capital injection soon after a bailout deal is clinched, as much as 10 billion euros, even before the ECB completes a stress test, a euro zone official said on Monday.</td></tr>
+</table></body></html>
