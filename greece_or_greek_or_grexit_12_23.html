@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,14 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5020&amp;contextPath=3179-5019-5020-&amp;pubId=7&amp;cat=&amp;meta=read-wirestory&amp;objId=27302083&amp;type=article&amp;title=Energy+stocks+lead+US+market+lower%3b+investor+wait+on+Greece&amp;url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fbusiness%2farticle27302083.html'></td><td>2015-07-15 21:35:11</td><td><a href='http://www.miamiherald.com/news/business/article27302083.html#storylink=rss'>site</a></td><td>The U.S. stock market edged lower Wednesday, ending a four-day rally, as a drop in energy shares and jitters over Greece outweighed encouraging earnings reports from banks.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>Greek banks passed a similar review last year, but that was before they became collateral damage in Greece's political and economic turmoil.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td>Greece's dismal economic prospects may also weigh on the market.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 12:54:27</td><td><a href='http://nypost.com/2015/08/03/greek-stock-market-reopens-to-a-bloodbath/'>site</a></td><td>Greek stock market reopens to a bloodbath</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 04:05:22</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11482147&ref=rss'>site</a></td><td>Greece seeks relief from lenders after first bailout test</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/97/00/81358d96ca9f4e93a4fdc14c134a146b-c89b671177104905a33ad7222a6f6fbc-0_1.jpg'></td><td>2015-07-19 15:53:05</td><td><a href='http://www.daytondailynews.com/ap/ap/international/criticism-for-german-idea-that-greece-take-a-euro-/nm3FH/'>site</a></td><td>"We can talk about such things again," she said, but added such talks could only begin after details of Greece's bailout program are finalized.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 12:30:08</td><td><a href='http://www.startribune.com/greece-new-bailout-talks-to-start-after-bank-laws-passed/317785231/'>site</a></td><td>Greece says new bailout talks to begin after lawmakers pass bank resolution laws Wednesday</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media2.s-nbcnews.com/j/newscms/2015_30/1136121/150722-greece-hg-2143_dd6473f589f594923946a080724e1f00.nbcnews-fp-360-360.jpg'></td><td>2015-07-23 01:46:38</td><td><a href='http://www.nbcnews.com/news/world/greece-clears-final-reform-hurdle-new-bailout-talks-n396896'>site</a></td><td>Greece Clears Final Reform Hurdle Before New Bailout Talks</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-23 06:54:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Bailout/id-d3bbd9fbded74b2493658337cbb01aaa'>site</a></td><td>Discussions over the details of the bailout program, which will involve economic targets as well as potential debt relief for Greece, should begin "as swiftly as possible," according to the European Union's executive commission.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-24 11:03:25</td><td><a href='http://www.reuters.com/article/2015/07/24/us-eurozone-greece-idUSKCN0PW0GI20150724?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Laws passed, Greece to open bailout talks as recession pushes goals further</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-24 11:35:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486590&ref=rss'>site</a></td><td>Greek talks to begin after 'technical' issues ironed out</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-28 12:42:34</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=topNews'>site</a></td><td>EU/IMF mission chiefs to arrive in Greece for bailout talks on Wednesday</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww1.hdnux.com/photos/37/76/67/8383984/15/square_gallery_thumb.jpg'></td><td>2015-07-31 04:01:06</td><td><a href='http://www.sfgate.com/news/world/article/Greek-bailout-talks-to-shift-gear-6416573.php'>site</a></td><td>Greek bailout talks to shift gear</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/bePSXbPrs4j_zCOZ5_MDPg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-10T005810Z_2_LYNXNPEB780C4_RTROPTP_3_CBUSINESS-US-EUROZONE-GREECE-TALKS_original.jpg'></td><td>2015-08-10 18:10:30</td><td><a href='http://finance.yahoo.com/news/greece-hopes-conclude-bailout-talks-005012453.html'>site</a></td><td>Greece and lenders in final push to seal new bailout</td></tr>
 </table></body></html>

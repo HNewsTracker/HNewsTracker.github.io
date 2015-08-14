@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 11,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,15 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/ec/ce/8a2f09d6dc6f4662b457297278f0875d-fd0e4bcd8cc34cc7802c13192f2bd242-0_1.jpg'></td><td>2015-07-18 17:03:57</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-banks-to-reopen-monday-but-cash-restrictions/nm22p/'>site</a></td><td>The degree came on the same day as Greece's coalition government swore in its new, reshuffled cabinet.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 05:10:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484028&ref=rss'>site</a></td><td>Over the weekend, Greece's coalition government swore in its new, reshuffled cabinet, replacing five prominent dissidents from the radical left Syriza party, the senior coalition party.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 12:13:06</td><td><a href='http://www.miamiherald.com/news/business/article27281152.html#storylink=rss'>site</a></td><td>It calls for Greece to pass new austerity measures his left-wing government had long battled against in return for the start of negotiations on a third bailout worth about 85 billion euros in loans over three years.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/qoTAW6xnH9mLCIaoBj2YoQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-15T152237Z_1_LYNXNPEB6E0V4_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-15 16:36:34</td><td><a href='http://finance.yahoo.com/news/reluctant-tsipras-fights-pass-reforms-095200521.html'>site</a></td><td>While also ruling out any write-offs, the Commission said debt reprofiling was possible, as long as Greece implemented the reforms it has committed to.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 04:05:22</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11482147&ref=rss'>site</a></td><td>The European Commission has proposed giving Greece 7 billion euros in loans from a special fund overseen by all 28 EU nations so it can meet its upcoming debts.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 20:48:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27374224.html#storylink=rss'>site</a></td><td>And eurozone lenders pledged short-term loans so Greece can cover its debts and negotiations for a new three-year bailout worth 85 billion euros ($93 billion).</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='ww.smh.com.au/content/dam/images/g/i/e/a/o/3/image.related.articleLeadwide.620x349.gieb3r.png/1437111744468.jpg'></td><td>2015-07-17 05:45:56</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-banks-due-to-reopen-on-monday-20150717-gieb3r.html'>site</a></td><td>In the meantime, they signalled that they have found a way to provide Greece with the short-term loans needed to cover its most pressing debts, including a Monday payment due to the ECB.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-17 08:20:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-17-EU--Greece-Bailout/id-326ea64e2d0e449886d34214a50fd39f'>site</a></td><td>The process is expected to last around four weeks and to lead to Greece getting around 85 billion euros ($93 billion) to help it pay off upcoming debts.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/32/e2/f2e092ef255347d3933e2886e5b35321-ee454d7079094ee085c092947af431e1-0_1.jpg'></td><td>2015-07-20 10:58:49</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeks-will-find-banks-open-but-restrictions-still/nm3RW/'>site</a></td><td>The new taxes are part of a package of confidence-building measures that the Greek government had to introduce in order for negotiations on a third bailout to begin.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-22 08:20:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11485231&ref=rss'>site</a></td><td>Lawmakers late Wednesday will vote on judicial and banking reforms set as a requirement by other Eurozone countries for a third Greek rescue package worth 85 billion euros ($93 billion).</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>The radical left-led government hopes the new bailout talks can conclude before Aug. 20, when Greece must repay a debt worth more than 3 billion euros ($3.3 billion) to the European Central Bank.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-28 09:10:05</td><td><a href='http://www.foxnews.com/world/2015/07/28/greece-in-second-day-preparatory-talks-with-bailout-creditors-over-new-rescue/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The aim is to thrash out the terms of the deal - worth about 85 billion euros ($94 billion) over three years - before Aug. 20, when Greece must make a debt payment that it cannot afford without new loans.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-08-11 05:57:29</td><td><a href='http://www.reuters.com/article/2015/08/11/us-eurozone-greece-bailout-idUSKCN0QF2BV20150811?feedType=RSS&feedName=wtMostRead'>site</a></td><td>The pact is expected to be worth up to 86 billion euros ($94.75 billion) in fresh loans for debt-ridden Greece, but there was no immediate confirmation of its size.</td></tr>
 </table></body></html>

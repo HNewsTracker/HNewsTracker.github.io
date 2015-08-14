@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,15 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>greece or greek or grexit</h3>
+    <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 11:03:25</td><td><a href='http://www.reuters.com/article/2015/07/24/us-eurozone-greece-idUSKCN0PW0GI20150724?feedType=RSS&feedName=wtMostRead'>site</a></td><td>The new IMF representative for Greece, Delia Velculescu, and officials from the Commission and the ECB are expected in Athens on Friday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150814&i=110517402&w=240&r=110517402-1&t=2'></td><td>2015-08-14 01:55:03</td><td><a href='http://www.reuters.com/article/2015/08/14/us-eurozone-greece-bailout-idUSKCN0QI0W620150814?feedType=RSS&feedName=businessNews'>site</a></td><td>"The IMF ... will make an assessment of its participation in providing any additional financing to Greece once the steps on the authorities' program and debt relief have been taken," IMF Greece mission chief Delia Velculescu said in a statement.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-26 11:35:18</td><td></td><td><a href='fifa_or_blatter_37_38.html'>"I'd like to emphasize again that all the plans to prepare for the World Cup will be fulfilled," Putin said, standing alongside the embattled Blatter at Saturday's preliminary draw for the 2018 tournament. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 11:35:18</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11487259&ref=rss'>site</a></td><td>It's a "relaxing situation," FIFA general secretary Jerome Valcke, who expects to leave office in February along with his longtime boss Blatter, told journalists Friday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-26 11:47:16</td><td><a href='http://www.foxnews.com/sports/2015/07/26/russia-getting-on-with-world-cup-job-as-fifa-fights-scandal/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>ST. PETERSBURG, Russia (AP) As he shared the stage with FIFA's departing president Sepp Blatter, Russian President Vladimir Putin's message was simple.</td></tr>
 </table></body></html>
