@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 00:40:06</td><td><a href='http://www.sfgate.com/news/us/article/The-Mirage-volcano-in-Las-Vegas-to-erupt-less-6382290.php'>site</a></td><td><table><tr><td>FILE - In this Dec. 8, 2008 file photo, the Mirage Volcano erupts at the Mirage hotel and casino in Las Vegas.</td></tr><tr><td>LAS VEGAS (AP) - The Mirage volcano on the Las Vegas Strip is erupting less frequently, but not for any geological reason.</td></tr><tr><td>The man-made volcano that has been spewing fire and water since the hotel's 1989 opening, a first-of-its-kind attraction, will now offer two to three nightly shows as the Strip's topography continues to evolve.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 00:45:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article27160012.html#storylink=rss'>site</a></td><td>After becoming the owner of The Mirage, MGM spent $25 million in 2008 upgrading the volcano with more fire choreographed to a pounding drum-beat soundtrack.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/world-news/article31452190.ece/69f4b/ALTERNATES/h342/PANews%20BT_P-2d2f834d-e969-47c1-9eec-8bcb17458355_I1.jpg'></td><td>2015-08-14 16:53:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/ecuadors-cotopaxi-volcano-spews-ash-south-of-quito-31452191.html'>site</a></td><td><table><tr><td>Ecuador's Cotopaxi volcano spews ash south of Quito</td></tr><tr><td>A volcano has spewed ash over a wide area in two pre-dawn blasts near Ecuador's capital.</td></tr></table></td></tr>
 </table></body></html>

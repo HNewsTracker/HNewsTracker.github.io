@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,16 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>mexico</h3>
+    <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 23:25:19</td><td><a href='http://www.startribune.com/mexico-city-sets-rules-allowing-uber-other-ride-share-apps/315576771/'>site</a></td><td><table><tr><td>Mexico City publishes regulations allowing Uber and other smartphone-based ride-sharing apps</td></tr><tr><td>MEXICO CITY - Mexico City has published new regulations that will allow Uber and other smartphone-based ride-sharing apps to operate over the objections of taxi drivers.</td></tr><tr><td>In a statement, Uber commended the regulations issued Wednesday and said Mexico City was the largest in the world to take such a step.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 20:20:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11482497&ref=rss'>site</a></td><td>Uber's spokesman for Mexico and Central America says the company doesn't mind paying 1.5 percent of the proceeds from each ride into a transport-improvement fund.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 22:00:44</td><td><a href='http://www.startribune.com/uber-praises-new-mexico-city-regulations-cabbies-grouse/315981921/'>site</a></td><td>MEXICO CITY - The Uber ride-sharing app praised Mexico City's decision to become the first city in Latin America - and the largest in the world - to issue official regulations for such smartphone-based services.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 18:56:54</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27507619.html#storylink=rss'>site</a></td><td>Representatives of Mexico City's regular cab drivers are criticizing new regulations published this week on ride-sharing apps such as Uber.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdnph.upi.com/ph/st/th/1011437576768/2015/upi_com/6f1ec33c3e26085fbc307d4726676c39/v1.2/Cincinnati-prosecutor-reviewing-police-shooting-of-unarmed-black-driver.jpg?lg=1'></td><td>2015-07-22 14:55:46</td><td><a href='http://www.upi.com/Top_News/US/2015/07/22/Ferguson-hires-Andre-Anderson-as-new-interim-police-chief/1071437574276/'>site</a></td><td>Ferguson hires Andre Anderson as new interim police chief</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 14:55:46</td><td><a href='http://www.upi.com/Top_News/US/2015/07/22/Ferguson-to-hire-new-interim-police-chief/1071437574276/'>site</a></td><td>Glendale is the same city where Ferguson leaders chose its interim city manager, Ed Beasley.</td></tr>
 </table></body></html>
