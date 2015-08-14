@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 13:26:35</td><td><a href='http://www.foxnews.com/world/2015/07/18/saudi-arabia-says-it-stopped-islamic-state-attacks-400-held/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Saudi Arabia says it stopped Islamic State attacks; 400 held</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/dea/news/world/article25048376.ece/ALTERNATES/w220/CAITH103_Mideast_WikiLeaks_Saudi_Cables.JPG'></td><td>2015-07-18 14:11:06</td><td><a href='http://www.theglobeandmail.com/news/world/saudi-arabia-arrests-400-suspected-of-links-to-islamic-state/article25582715/?cmpid=rss1'>site</a></td><td>Saudi Arabia said Saturday it broke up planned Islamic State attacks in the kingdom, announcing it has arrested over 400 people in its raids.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 19:48:21</td><td><a href='http://www.foxnews.com/world/2015/08/14/islamic-state-leader-reportedly-raped-american-hostage/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The parents of the late American hostage Kayla Mueller say they were told by American officials that their daughter was repeatedly forced to have sex with Abu Bakr Baghdadi, the leader of the Islamic State group.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 20:51:03</td><td><a href='http://www.startribune.com/family-islamic-state-leader-raped-american-hostage/321898081/'>site</a></td><td>The Islamic State group claimed Mueller was killed in a Jordanian air strike near Raqqah, the group's self-declared capital in Syria.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 22:49:09</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/14/family-islamic-state-leader-raped-american-hostage'>site</a></td><td>The news is but the latest in a litany of horrors perpetrated by the Islamic State group, which has beheaded, burned and crucified male captives while passing around women as sex slaves.</td></tr>
 </table></body></html>
