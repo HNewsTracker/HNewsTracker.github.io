@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/Health/876/493/ebola_liberia_unicef_tent_reuters.jpg?ve=1&tl=1'></td><td>2015-07-14 13:41:40</td><td><a href='http://www.foxnews.com/health/2015/07/14/liberia-confirms-new-ebola-case-as-outbreak-spreads/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fhealth+%28Internal+-+Health+-+Text%29'>site</a></td><td>Liberia confirms new Ebola case as outbreak spreads</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 21:26:04</td><td></td><td><a href='ebola_15_16.html'>A health report sent to officials in the anti-Ebola response unit said the woman died a few hours after admission, indicating that surveillance of known contacts from the earlier cases had not been rigorous enough. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/d/b/g/l/image.related.articleLeadwide.620x349.gidbdx.png/1436995549960.jpg'></td><td>2015-07-15 21:26:04</td><td><a href='http://www.smh.com.au/world/liberia-confirms-new-ebola-case-as-outbreak-spreads-20150715-gidbdx'>site</a></td><td>More than 11,200 people have died from Ebola since an epidemic broke out in December 2013 in neighbouring Guinea.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 21:26:04</td><td></td><td><a href='ebola_15_16.html'>A health report sent to officials in the anti-Ebola response unit said the woman died a few hours after admission, indicating that surveillance of known contacts from the earlier cases had not been rigorous enough. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/d/b/g/l/image.related.articleLeadwide.620x349.gidbdx.png/1436995549960.jpg'></td><td>2015-07-15 21:26:04</td><td><a href='http://www.smh.com.au/world/liberia-confirms-new-ebola-case-as-outbreak-spreads-20150715-gidbdx'>site</a></td><td>More than 11,200 people have died from Ebola since an epidemic broke out in December 2013 in neighbouring Guinea.</td></tr>
 </table></body></html>

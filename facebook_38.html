@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-02 18:57:02</td><td><a href='http://www.theguardian.com/us-news/2015/aug/02/donald-trump-staffer-fired-sam-nunberg-facebook-posts'>site</a></td><td>Donald Trump staffer fired over past racially charged Facebook posts</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-02 19:40:33</td><td><a href='http://www.reuters.com/article/2015/08/02/us-usa-election-trump-idUSKCN0Q70SY20150802?feedType=RSS&feedName=politicsNews'>site</a></td><td>Trump campaign fires staffer over controversial Facebook posts</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297729614424_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-08-02 19:48:03</td><td><a href='http://www.torontosun.com/2015/08/02/trump-campaign-fires-staffer-over-controversial-facebook-posts'>site</a></td><td>Donald Trump's presidential campaign has fired a staffer after racially charged and insulting Facebook posts under his name came to light, a person close to the campaign said on Sunday.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-02 20:00:27</td><td><a href='http://www.startribune.com/trump-fires-adviser-after-racially-charged-facebook-posts/320428212/'>site</a></td><td>WASHINGTON - Republican presidential candidate Donald Trump has fired a campaign aide after racially charged Facebook posts surfaced on the aide's account.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 14:59:56</td><td><a href='http://www.foxbusiness.com/industries/2015/07/17/google-soars-on-2q-results-youtube-growth/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>Google and Facebook are trying to woo big companies to market their products via online videos.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/e02/report-on-business/international-business/us-business/article25548352.ece/ALTERNATES/w220/-OUKBS-UK-GOOGLE-RESULTS.JPG'></td><td>2015-07-17 15:06:57</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/us-business/google-shares-surge-as-youtube-growth-eases-facebook-video-fears/article25548353/?cmpid=rss1'>site</a></td><td>YouTube has an edge over Facebook as it has a more mature monetization platform that seems to attract the best content, Piper Jaffray analyst Gene Munster said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-07-17 15:27:47</td><td><a href='http://www.reuters.com/article/2015/07/17/us-google-research-idUSKCN0PR1FG20150717?feedType=RSS&feedName=technologyNews'>site</a></td><td>Google shares soar as YouTube growth allays fears over Facebook</td></tr>
 </table></body></html>

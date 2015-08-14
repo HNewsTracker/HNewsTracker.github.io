@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 20:36:41</td><td><a href='http://www.sfgate.com/news/article/Netanyahu-gets-yearbook-from-his-Pennsylvania-6386875.php'>site</a></td><td>The yearbook says Netanyahu was on the debate and soccer teams and the chess club while at Cheltenham.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 20:36:41</td><td><a href='http://www.usnews.com/news/offbeat/articles/2015/07/15/netanyahu-gets-yearbook-from-his-pennsylvania-high-school'>site</a></td><td><table><tr><td>Netanyahu gets yearbook from his Pennsylvania high school</td></tr><tr><td>(AP) - Some suburban Philadelphia high school alumni say they've sent a 1960s yearbook to one of their most famous classmates, Israeli Prime Minister Benjamin Netanyahu (neh-ten-YAH'-hoo).</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 20:36:41</td><td><a href='http://www.daytondailynews.com/ap/ap/strange/netanyahu-gets-yearbook-from-his-suburban-philly-h/nmzRb/'>site</a></td><td><table><tr><td>The Philadelphia Daily News reports (http://bit.ly/1K7Cp9M ) classmates from Cheltenham High School's Class of 1973 sent Netanyahu his 1967 yearbook.</td></tr><tr><td>Netanyahu left school around the time of the Six-Day War in June 1967 and joined the Israel Defense Forces, causing him to miss out on graduation and his yearbook.</td></tr><tr><td>None of the four classmates knew Netanyahu.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/64/16/8340382/3/square_gallery_thumb.jpg'></td><td>2015-07-21 18:36:10</td><td><a href='http://www.sfgate.com/news/article/Carter-Netanyahu-call-it-a-day-after-discussing-6397458.php'>site</a></td><td>Carter and Netanyahu met Tuesday in the prime minister's office in Jerusalem.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 18:45:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/21/carter-netanyahu-call-it-a-day-after-discussing-iran-deal'>site</a></td><td><table><tr><td>Carter, Netanyahu call it a day after discussing Iran deal</td></tr><tr><td>Carter on Tuesday did avoid a public tongue-lashing by Prime Minister Benjamin Netanyahu.</td></tr><tr><td>A Carter aide who attended the talks in Jerusalem later told reporters that Netanyahu bluntly expressed his opposition to the Iran deal but did not get angry or upset with Carter.</td></tr><tr><td>The U.S. official said neither Carter nor Netanyahu raised the issue of potential U.S. compensation to Israel in the form of increased defense assistance to counter Iran-related threats.</td></tr><tr><td>He was the first Cabinet-level U.S. official to meet with Netanyahu since the signing of the Iran deal.</td></tr></table></td></tr>
 </table></body></html>

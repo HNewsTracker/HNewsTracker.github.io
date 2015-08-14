@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td>Year later, AP reporter recalls origins of Ferguson movement</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 15:43:38</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-b8fcdb039d93406ebc63851a514f5286'>site</a></td><td>Ferguson became the impetus for a national movement.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 18:14:03</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-07-US--Ferguson-Year%20Later/id-699f00e72f9e4d26b927517a4cf4181e'>site</a></td><td>A year ago, Ferguson was thrust into the national spotlight after the death of Brown giving way to the "Black Lives Matter" movement.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-02 15:53:14</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td>Lawmakers filed about 65 bills stemming from the events in Ferguson passing just one, a measure limiting municipal court fines and traffic tickets.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-02 17:53:41</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article29797039.html#storylink=rss'>site</a></td><td>Police unions still hold considerable sway in some states, including in Missouri, where lawmakers filed about 65 bills stemming from the events in Ferguson.</td></tr>
 </table></body></html>

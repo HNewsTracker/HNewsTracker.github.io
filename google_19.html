@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-08-10 21:19:59</td><td></td><td><a href='google_19_20.html'>Larry Page, Google's co-founder and chief executive, will become the CEO of Alphabet. (13)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-08-10 21:37:50</td><td></td><td><a href='google_19_21.html'>Sundar Pichai will be the CEO of Google Inc, while current Google Chief Financial Officer Ruth Porat will become CFO of Alphabet. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-10 21:42:00</td><td></td><td><a href='google_19_20.html'>Google, which has been expanding far beyond its original business of Internet search advertising, is changing its operating structure by creating a new holding company called Alphabet. (12)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-08-11 00:42:20</td><td><a href='http://www.miamiherald.com/news/business/technology/article30661551.html#storylink=rss'>site</a></td><td><table><tr><td>Milestones over 20 years of Google's history</td></tr><tr><td>1998: Google incorporates and moves into Susan Wojcicki's garage in Menlo Park, California.</td></tr></table></td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-08-11 04:18:07</td><td><a href='http://www.charlotteobserver.com/news/business/article30674268.html#storylink=rss'>site</a></td><td>FILE - This Thursday, Jan. 3, 2013, photo shows Google's headquarters in Mountain View, Calif.</td></tr>
   <tr><td style='display:none'>2</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03404/larrypage_3404531g.jpg'></td><td>2015-08-11 11:42:13</td><td><a href='http://www.telegraph.co.uk/technology/google/11795673/Sundar-Pichai-Meet-Googles-new-CEO.html'>site</a></td><td>Google+ is launched.</td></tr>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 14:55:45</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/23/official-suspected-is-militants-kill-turkish-soldier'>site</a></td><td>The attack has been blamed on militants linked to the Islamic State group and came amid a clamp down by Turkey on the extremist group.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 10:26:53</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/27/us-turkey-seek-to-establish-islamic-state-free-zone'>site</a></td><td>The discussions come amid a major tactical shift in Turkey's approach to the Islamic State.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/turkey_0.jpg?itok=5q90kxJb'></td><td>2015-07-20 12:11:17</td><td><a href='http://www.sbs.com.au/news/article/2015/07/20/suspected-suicide-bombing-kills-27-turkish-border-town'>site</a></td><td>Turkey's Kurds were enraged at the time by Ankara's refusal to intervene to stop the Islamic State siege.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150720&t=2&i=1065633766&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6J0KD'></td><td>2015-07-20 14:41:45</td><td><a href='http://www.reuters.com/article/2015/07/20/us-turkey-blast-idUSKCN0PU0T520150720?feedType=RSS&feedName=wtMostRead'>site</a></td><td>A second official also said Islamic State appeared to have been responsible and that the attack was a "retaliation for the Turkish government's efforts to fight terrorism".</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/q/e/e/image.related.articleLeadwide.620x349.gigq9a.png/1437423230046.jpg'></td><td>2015-07-20 20:14:07</td><td><a href='http://www.smh.com.au/world/suspected-islamic-state-suicide-bomber-kills-30-in-suruc-turkey-20150720-gigq9a'>site</a></td><td>Turkey's Kurds have been enraged by what they see as the AKP party government's failure to do more to stop Islamic State.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/g/q/e/e/image.related.articleLeadwide.620x349.gigq9a.png/1437423230046.jpg'></td><td>2015-07-20 20:14:07</td><td><a href='http://www.brisbanetimes.com.au/world/suspected-islamic-state-suicide-bomber-kills-30-in-suruc-turkey-20150720-gigq9a'>site</a></td><td>The PKK held Ankara responsible for Monday's attack, saying it had "supported and cultivated" Islamic State against the Kurds.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/h/3/l/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.smh.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td>Many of Turkey's Kurds and opposition supporters suspect President Tayyip Erdogan and the ruling AK Party of covertly backing Islamic State against Kurdish fighters in Syria, something the government has repeatedly denied.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 08:05:12</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28689118.html#storylink=rss'>site</a></td><td>Kurdish groups held the Turkish government responsible for the blast, saying it had not been aggressive in battling the Islamic State group.</td></tr>
 </table></body></html>

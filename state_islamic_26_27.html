@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,8 +49,5 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/q/e/e/image.related.articleLeadwide.620x349.gigq9a.png/1437423230046.jpg'></td><td>2015-07-20 20:14:07</td><td><a href='http://www.smh.com.au/world/suspected-islamic-state-suicide-bomber-kills-30-in-suruc-turkey-20150720-gigq9a'>site</a></td><td>The protesters blamed the Suruc blast on lax government action on Islamic State.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/q/e/e/image.related.thumbnail.90x60.gigq9a.png/1437461326733.jpg'></td><td>2015-07-21 12:19:25</td><td><a href='http://www.smh.com.au/world/turkey-denies-turning-blind-eye-to-islamic-state-as-bombing-stokes-anger-20150721-gihkhw.html'>site</a></td><td><table><tr><td>Turkey denies turning blind eye to Islamic State as bombing stokes anger</td></tr><tr><td>Thousands of foreign fighters have crossed through Turkey to join Islamic State over the past few years, fuelling accusations from the government's opponents that it is turning a blind eye.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/21/67/19/dbc26e0ed08c4b2381fac37d6302d5af-5a14a0c6af184358ad3499564f5499d2-0.jpg'></td><td>2015-07-21 18:07:00</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/bombing-shows-turkey-a-vulnerable-target-for-islam/nm4KR/'>site</a></td><td><table><tr><td>Bombing shows Turkey a vulnerable target for Islamic State</td></tr><tr><td>Officials have raised concerns that a deadly bombing in southeastern Turkey is part of a campaign of retaliation by the Islamic State group for a recent crackdown on its operations in the country.</td></tr><tr><td>He vowed to go after those behind the bombing and made clear he believes it was the Islamic State.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/h/3/l/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.smh.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td><table><tr><td>Anti-government protests after Monday's bombing in Suruc erupted in several cities for a second night on Tuesday, with some of the demonstrators chanting "Murderer Islamic State, collaborator Erdogan and AKP".</td></tr><tr><td>On Tuesday, Prime Minister Ahmet Davutoglu rejected accusations that Turkey had tacitly supported Islamic State and had unwittingly opened the door to the bombing; but he said initial evidence suggested the Islamist radical group was responsible.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 04:05:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28435420.html#storylink=rss'>site</a></td><td>The U.S. and Western countries have long been pressing Erdogan's government to do more to stop foreign fighters from crossing through Turkey into Syria and Iraq to join IS, with some analysts suggesting Turkey was looking the other way because the Islamic State is also fighting Assad.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/h/3/l/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.smh.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td>Anti-government protests after Monday's bombing in Suruc erupted in several cities for a second night on Tuesday, with some of the demonstrators chanting "Murderer Islamic State, collaborator Erdogan and AKP".</td></tr>
 </table></body></html>
