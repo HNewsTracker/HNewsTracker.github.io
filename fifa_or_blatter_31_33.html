@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,16 +40,15 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>volcano</h3>
+    <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 00:25:57</td><td></td><td><a href='volcano_4.html'>Volcano-like underground fire is put out after a month (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 01:11:43</td><td><a href='http://www.cbsnews.com/news/ancient-volcano-tattooed-the-earth-with-giant-rings/'>site</a></td><td><table><tr><td>Tectonic activity, or the movement of continental plates, eventually drifted the volcano away from its hot spot, so Pilanesberg is now dormant, according to NASA Earth Observatory.</td></tr><tr><td>The Ossipee ring dike formed around 90 million years ago, during the second of three major eruptions throughout the active period of the volcano that created the structure.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/40/02/07/8397302/9/square_gallery_thumb.jpg'></td><td>2015-08-01 14:14:16</td><td><a href='http://www.chron.com/news/science/article/Highly-active-volcano-erupts-on-Reunion-amid-6419132.php'>site</a></td><td><table><tr><td>Highly active volcano erupts on Reunion amid media frenzy</td></tr><tr><td>Lava erupts from the Piton de la Fournaise "Peak of the Furnace" volcano, on the southeastern corner of the Indian Ocean island of Reunion Saturday, Aug. 1, 2015.</td></tr><tr><td>The volcano is in the Reunion National Park - a world heritage site.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-14 17:00:13</td><td></td><td><a href='volcano_0.html'>Government scientists said the 5,987-meter (19,600-foot) snow-capped volcano doesn't seem to be on the verge of a major eruption. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/717/sports/soccer/article25631462.ece/ALTERNATES/w220/CSPORTS_US_SOCCER_WORLDCUP2018_DRAW.JPG'></td><td>2015-07-27 18:52:01</td><td><a href='http://www.theglobeandmail.com/news/world/putin-people-like-blatter-deserve-nobel-prize/article25723878/?cmpid=rss1'>site</a></td><td>Blatter announced he was quitting in June over a bribery scandal being investigated by U.S., Swiss and other law enforcement agencies that plunged FIFA into the worst crisis in its 111-year history.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297729959159_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-27 18:57:12</td><td><a href='http://www.torontosun.com/2015/07/27/people-like-blatter-deserve-nobel-prize-putin-tells-swiss-tv'>site</a></td><td>On Saturday, at a meeting with Putin in St. Petersburg, Blatter said that FIFA, facing a major bribery scandal, had passed a resolution offering full support for holding the 2018 World Cup in Russia.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 11:43:28</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/28/sepp-blatter-deserves-the-nobel-prize-vladimir-putin-says'>site</a></td><td><table><tr><td>Blatter had opened the draw ceremony Saturday - held at a palace in St. Petersburg that is an official Putin residence - and warmly congratulated his host.</td></tr><tr><td>Putin said in the Swiss interview, recorded Saturday in St. Petersburg, that he was sure Blatter was not corrupt.</td></tr></table></td></tr>
 </table></body></html>
