@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 17:41:40</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/in-an-is-training-camp-children-told-behead-the-doll'>site</a></td><td>SANLIURFA, Turkey (AP) - The children had all been shown videos of beheadings and told by their trainers with the Islamic State group that they would perform one someday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/ows_1432679317346.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-19 18:00:19</td><td><a href='http://www.startribune.com/in-an-is-training-camp-children-told-behead-the-doll/317324681/'>site</a></td><td>At training camp, children told to behead dolls as Islamic State militants mold new generation</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-19 18:07:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27537532.html#storylink=rss'>site</a></td><td><table><tr><td>Then they were lined up, more than 120 of them, and given their next lesson by their Islamic State group instructors: Behead the doll.</td></tr><tr><td>In refugee camps, on streets and in mosques, children have become prime targets for the Islamic State group's outreach and propaganda.</td></tr><tr><td>He explained how more than 120 children inside the camp had to line up and they were each given a doll and a sword, waiting for their next lesson by their Islamic State group instructors: Behead the doll.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/q/e/e/image.related.articleLeadwide.620x349.gigq9a.png/1437423230046.jpg'></td><td>2015-07-20 20:14:07</td><td><a href='http://www.smh.com.au/world/suspected-islamic-state-suicide-bomber-kills-30-in-suruc-turkey-20150720-gigq9a'>site</a></td><td>The protesters blamed the Suruc blast on lax government action on Islamic State.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/h/3/l/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.smh.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td>Anti-government protests after Monday's bombing in Suruc erupted in several cities for a second night on Tuesday, with some of the demonstrators chanting "Murderer Islamic State, collaborator Erdogan and AKP".</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-12 11:20:31</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11496296&ref=rss'>site</a></td><td>Online image purports to show Croatian hostage beheaded by Islamic State affiliate in Egypt</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-12 11:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11496297&ref=rss'>site</a></td><td><table><tr><td>The still image, shared by Islamic State sympathizers on social media, showed the apparent body of Tomislav Salopek, a married, 30-year-old father of two, wearing a beige jumpsuit looking like the one he had worn in a previous video.</td></tr><tr><td>The photo carried a caption in Arabic that said Salopek was killed "for his country's participation in the war against the Islamic State," and after a deadline had passed for the Egyptian government to meet their demands.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-12 12:28:42</td><td><a href='http://www.daytondailynews.com/ap/ap/international/the-latest-on-croatian-hostage-killed-by-islamic-s/nnHzM/'>site</a></td><td>The latest in the events surrounding the purported slaying by Egypt's Islamic State affiliate of Croatian hostage Tomislav Salopek, after an online image was circulated Wednesday showing his beheaded body.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/12/96/4a/a23801c670ba47c7957df9d4f269b900-7dc0960c17bb44c19a2f9cd7f44bcce4-0.jpg'></td><td>2015-08-12 12:49:43</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/online-image-islamic-state-beheads-croat-held-in-e/nnHyM/'>site</a></td><td><table><tr><td>An online image circulated Wednesday purported to show the beheading of a Croatian hostage held by the Islamic State group's Egyptian affiliate, the first such killing of a foreign captive in Egypt since the extremists set up a branch here.</td></tr><tr><td>In Libya, an Islamic State affiliate also has beheaded its captives.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/70/15/8356721/25/square_gallery_thumb.jpg'></td><td>2015-07-24 18:30:57</td><td><a href='http://www.sfgate.com/news/world/article/Turkish-bombing-of-Islamic-State-marks-end-of-6403803.php'>site</a></td><td>On Thursday, as Turkey's government tried to counter criticism over the suicide bombing, Islamic State struck again, this time in an ambush along the border that left a Turkish soldier dead.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 18:30:57</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/turkish-bombing-of-islamic-state-marks-end-of-tacit-truce'>site</a></td><td>ISTANBUL (AP) - Last month, the first edition of the Islamic State group's Turkish-language magazine contained not a word of criticism of the Turkish government.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 18:30:57</td><td><a href='http://www.daytondailynews.com/ap/ap/international/turkish-bombing-of-islamic-state-marks-end-of-taci/nm6GQ/'>site</a></td><td>The abrupt shift in Islamic State's Turkish propaganda magazine shows just how quickly a tacit truce has come apart.</td></tr>
 </table></body></html>

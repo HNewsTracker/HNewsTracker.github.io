@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/ec/ce/8a2f09d6dc6f4662b457297278f0875d-fd0e4bcd8cc34cc7802c13192f2bd242-0_1.jpg'></td><td>2015-07-18 17:03:57</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-banks-to-reopen-monday-but-cash-restrictions/nm22p/'>site</a></td><td>The degree came on the same day as Greece's coalition government swore in its new, reshuffled cabinet.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 05:10:19</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484028&ref=rss'>site</a></td><td>Over the weekend, Greece's coalition government swore in its new, reshuffled cabinet, replacing five prominent dissidents from the radical left Syriza party, the senior coalition party.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-15 06:37:03</td><td><a href='http://www.miamiherald.com/news/business/article27283087.html#storylink=rss'>site</a></td><td>While a rescue deal could allow Greece to ease its money controls somewhat, the country is unlikely to be able to undo them completely - the last eurozone nation to impose such controls, Cyprus, took two years to lift them fully.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 09:45:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27378442.html#storylink=rss'>site</a></td><td>The head of the eurozone's rescue fund says failure to conclude a bailout deal for Greece would lead to the collapse of the country's major banks, which he says would affect the rest of the eurozone.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>Restoring trust in the banks, so that customers will be willing to deposit their money again, is one of the most important tasks that Greek and eurozone officials will face as they try to get the economy moving again.</td></tr>
 </table></body></html>

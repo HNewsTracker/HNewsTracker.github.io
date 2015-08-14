@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 00:44:05</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/australian-islamic-state-group-medic-arrested-in-s/nm6TN/'>site</a></td><td>An Australian nurse who says he was forced by the Islamic State movement to work as a medic in Syria is to appear in a Sydney court on terrorism-related charges.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 02:19:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28672570.html#storylink=rss'>site</a></td><td>Australian Islamic State group medic arrested on return home</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 05:35:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28672570.html#storylink=rss'>site</a></td><td><table><tr><td>He is the first Australian involved with the Islamic State known to have returned home since the Sunni fighters swept into western Iraq in June last year and declared the establishment of a caliphate, Monash University terrorism expert Greg Barton said.</td></tr><tr><td>Court documents show both charges allege that Brookman knowingly provided support to the Islamic State movement by undertaking guard duty and reconnaissance for the militants.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/08/d8/80/75a48c16404c4418938b5f5170140dd4-6095bb17717742c083b8b8041cc4ca8b-0.jpg'></td><td>2015-08-08 06:59:11</td><td><a href='http://www.daytondailynews.com/ap/ap/international/is-top-command-dominated-by-ex-officers-in-saddams/nnF42/'>site</a></td><td>Under its leader, Iraqi jihadi Abu Bakr al-Baghdadi, the Islamic State group's top command is dominated by former officers from Saddam's military and intelligence agencies, according to senior Iraqi officers and top intelligence officials.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-08 07:05:25</td><td><a href='http://www.startribune.com/is-top-command-dominated-by-ex-officers-in-saddam-s-army/321122981/'>site</a></td><td>Saddam-era veterans also serve as "governors" for seven of the 12 "provinces" set up by the Islamic State group in the territory it holds in Iraq, the intelligence chief said.</td></tr>
 </table></body></html>
