@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-15 04:01:48</td><td></td><td><a href='mexico_28_30.html'>CHARLOTTE, North Carolina (Reuters) - Mexico will recall the barely used Giovani Dos Santos for their key Gold Cup match against Trinidad and Tobago, coach Miguel Herrera said on Tuesday. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-20 02:57:07</td><td></td><td><a href='mexico_28_31.html'>Angry Costa Rica fans - heavily outnumbered by Mexico's supporters in the crowd of 74,187 at MetLife Stadium - threw bottles toward the field in protest. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-20 02:57:07</td><td></td><td><a href='mexico_28_29.html'>Mexico won 1-0 on Sunday night in the CONCACAF Gold Cup quarterfinals on Andres Guardado's penalty kick in the final minute of extra time. (22)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 04:07:06</td><td><a href='http://www.charlotteobserver.com/sports/article27889891.html#storylink=rss'>site</a></td><td>"We shouldn't take away from Mexico," he said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.gannett-cdn.com/-mm-/1df4b8c3280f4f46014a34af2178445b5fd56d55/c=0-0-3704-2785&amp;r=x404&amp;c=534x401/local/-/media/2015/07/26/USATODAY/USATODAY/635735459289380350-USP-SOCCER-GOLD-CUP-FINAL-JAMAICA-AT-MEXICO-74767016.JPG'></td><td>2015-07-27 03:00:35</td><td><a href='http://www.usatoday.com/story/sports/soccer/2015/07/26/mexico-wins-7th-gold-cup-title--3-1-victory-over-jamaica/30717113/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomsports-topstories'>site</a></td><td>Another mistake by Hector in the 61st minute put Mexico up 3-0.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 18:46:28</td><td></td><td><a href='mexico_28_29.html'>Miguel Angel Jimenez, a political activist who played a prominent early role in the search for 43 students and other missing people in southern Mexico, was slain over the weekend, an associate said Monday. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 18:46:28</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/10/activist-in-search-for-missing-students-killed-in-mexico'>site</a></td><td>In July, Mexico's attorney general's office confirmed that at least 60 clandestine graves with 129 bodies have been found so far on the outskirts of Iguala.</td></tr>
 </table></body></html>

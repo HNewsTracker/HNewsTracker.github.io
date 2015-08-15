@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 06:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11482805&ref=rss'>site</a></td><td>Still, bailing out Greece isn't popular in Merkel's conservative bloc and 48 of its 311 lawmakers said Thursday that they would vote against.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437147797857.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150717-gif5rb'>site</a></td><td>"We are working to ensure that Greece remains a member of the euro because the euro is much more than a currency," Merkel told lawmakers in Berlin in a speech before the vote.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 17:30:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483049&ref=rss'>site</a></td><td><table><tr><td>The approach has helped keep up the pressure on a Greek government viewed in Berlin with deep suspicion, while also keeping increasingly disgruntled conservative German lawmakers in line.</td></tr><tr><td>The tough talk appeared aimed in part at reassuring wavering lawmakers in Merkel's and Schaeuble's own conservative bloc that their leaders weren't about to go soft on Greece's radical left-led government.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/97/00/81358d96ca9f4e93a4fdc14c134a146b-c89b671177104905a33ad7222a6f6fbc-0_1.jpg'></td><td>2015-07-19 15:53:05</td><td><a href='http://www.daytondailynews.com/ap/ap/international/criticism-for-german-idea-that-greece-take-a-euro-/nm3FH/'>site</a></td><td>Merkel rules out 'haircut' for Greece, open to other relief</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/f7760e9f1106d7bafb80c9c86217448b66d27b79/0_0_3500_2100/master/3500.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=0daab610c7956254335f5f6bd734b6a9'></td><td>2015-07-19 20:16:54</td><td><a href='http://www.theguardian.com/world/2015/jul/19/greek-banks-reopen-first-time-three-weeks-queues-expected'>site</a></td><td>"Greece has already been given relief. We had a voluntary haircut among the private creditors and we then extended maturities once and reduced interest rates," said Merkel in the interview.</td></tr>
 </table></body></html>

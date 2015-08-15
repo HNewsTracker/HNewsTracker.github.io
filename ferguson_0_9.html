@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://resources1.news.com.au/images/2015/08/11/1227478/162493-89545b3c-3f96-11e5-a505-e59b7ac8a811.jpg'></td><td>2015-08-10 19:18:00</td><td><a href='http://www.news.com.au/world/state-of-emergency-declared-after-new-shootings-in-ferguson/story-fndir2ev-1227478162627?from=public_rss'>site</a></td><td>St. Louis County Executive Steve Stenger issued the order in a move that authorises county Police Chief Jon Belmar to take control of police emergency management in and around Ferguson.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6687148-3x2-340x227.jpg'></td><td>2015-08-10 19:25:00</td><td><a href='http://www.abc.net.au/news/2015-08-11/ferguson-police-charge-man-wounded-on-shooting-anniversary/6687144'>site</a></td><td>"In light of last night's violence and unrest in the city of Ferguson, and the potential for harm to persons and property, I am exercising my authority as county executive to issue a state of emergency, effective immediately," he said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-13 03:23:23</td><td><a href='http://www.nytimes.com/2015/08/13/us/missouri-state-of-emergency-stays-in-place-in-ferguson.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Ferguson will remain under a state of emergency for at least another night, county officials said on Wednesday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td><table><tr><td>ST. LOUIS (AP) - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson.</td></tr><tr><td>But since joining the St. Louis office of The Associated Press in 1993, I had never been to Ferguson as a reporter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 11:33:07</td><td><a href='http://www.miamiherald.com/news/nation-world/article30677811.html#storylink=rss'>site</a></td><td>The St. Louis suburb thoroughfare was the focus of months of massive protests and sometimes violent unrest last summer after the killing of Brown by a Ferguson police officer.</td></tr>
 </table></body></html>

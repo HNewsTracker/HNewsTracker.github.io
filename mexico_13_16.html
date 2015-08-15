@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,15 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>greece or greek or grexit</h3>
+    <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102847608-958a32733acb031e252ed5852af4ea5620f05abb.80x60.jpg?v=1437406843'></td><td>2015-07-20 14:43:00</td><td><a href='http://www.cnbc.com/2015/07/20/greece-starts-paying-back-the-ecb-imf.html'>site</a></td><td><table><tr><td>Greece repaid the roughly 2 billion euros ($2.2 billion) it owed to the International Monetary (IMF) on Monday, the international body reported.</td></tr><tr><td>"I can confirm that Greece today repaid the totality of its arrears to the IMF, equivalent to SDR 1.6 billion (about EUR 2.0 billion). Greece is therefore no longer in arrears to the IMF," said Gerry Rice, director of communications at the IMF in a statement on Monday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>The limits are costing Greece an estimated 1.75 billion euros to 2.8 billion euros ($1.9 billion to $3.1 billion) weekly.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 07:45:24</td><td><a href='http://www.startribune.com/sludge-from-colorado-mine-spill-heads-down-river-to-nm/321008761/'>site</a></td><td>The creek runs into the Animas, which then flows into the San Juan River in New Mexico and joins the Colorado River in Utah.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-08 04:15:02</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/07/wastewater-from-colorado-mine-flows-toward-new/'>site</a></td><td>DENVER (AP) - An eerie yellow sludge that poured out of a shuttered gold mine and into a southwestern Colorado river was inching its way downstream toward New Mexico and Utah.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 21:33:08</td><td><a href='http://www.miamiherald.com/news/nation-world/article30616890.html#storylink=rss'>site</a></td><td>Farms along the Animas and San Juan river valleys in New Mexico have no water to irrigate their crops after a massive spill from a closed Colorado mine.</td></tr>
 </table></body></html>

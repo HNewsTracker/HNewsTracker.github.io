@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 04:05:22</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11482147&ref=rss'>site</a></td><td>In a post-midnight vote, Greece's parliament voted 229-64 to implement more austerity measures that include pension cuts and sweeping sales tax hikes.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 17:30:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483049&ref=rss'>site</a></td><td>Lawmakers voted 439-119, with 40 abstentions, to give the government a mandate for talks with Greece.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/21/876/493/Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-07-21 12:24:56</td><td><a href='http://www.foxnews.com/world/2015/07/21/greece-says-new-bailout-talks-to-begin-after-lawmakers-pass-bank-resolution/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Gerovasili said Greece already met other conditions outlined by creditors for bailout talks to begin when lawmakers voted through package of measures including wide-ranging sales tax hikes.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.seattlepi.com/news/article/Yellen-Draghi-upbeat-despite-tumult-in-Greece-6389141.php'>site</a></td><td>And he did his part for Greece, too: The ECB on Thursday agreed to increase financial support for Greece's banks, which have been closed since June 29 and were in danger of collapsing entirely.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 05:56:00</td><td><a href='http://www.ctvnews.ca/business/greek-banks-open-after-three-weeks-but-restrictions-still-in-place-1.2477310'>site</a></td><td>Greece closed its banks beginning June 29 to prevent a bank run as its second international bailout expired.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Greece's stock market and banks were closed on June 29, when the government put limits on money withdrawals and transfers to keep a run on the banks from bringing down the financial system.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>But the resumption of trading was a necessary step as Greece tries to emerge from controls on financial activity that the government, confronted with a bank run, imposed at the end of June.</td></tr>
 </table></body></html>
