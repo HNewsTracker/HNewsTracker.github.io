@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-02 19:00:28</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11491041&ref=rss'>site</a></td><td>Journalist slain in Mexico City had signs of torture</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-04 02:08:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article29835190.html#storylink=rss'>site</a></td><td>The United Nations High Commission on Human Rights condemned the killings, saying that the bodies had signs of torture and sexual violence and that the climate of impunity "is one of the obstacles to practicing freedom of expression in Mexico."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 23:11:25</td><td><a href='http://www.telegraph.co.uk/news/worldnews/centralamericaandthecaribbean/mexico/11795439/Mexico-governor-to-be-questioned-over-killing-of-photojournalist.html'>site</a></td><td><table><tr><td>The governor of the Mexican state of Veracruz, Javier Duarte, will be questioned over the recent murder of five people in the country's capital, including a photojournalist, the mayor of Mexico City said on Monday.</td></tr><tr><td>"I have commented to him (Governor Duarte) that we are required to take a statement directly from the governor," Mexico City mayor Miguel Angel Mancera told reporters on Monday.</td></tr></table></td></tr>
 </table></body></html>

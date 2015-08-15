@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 15:50:45</td><td><a href='http://www.startribune.com/new-mexico-police-chief-wants-1971-fugitive-in-cuba-returned/318296391/'>site</a></td><td><table><tr><td>New Mexico police chief wants fugitive in Cuba returned for 1971 officer's death</td></tr><tr><td>ALBUQUERQUE, N.M. - The New Mexico State Police chief says he would personally pay for a return ticket for a fugitive living in Cuba wanted in the killing of a New Mexico police officer.</td></tr><tr><td>Hill fled to the communist island after authorities say he killed state police officer Robert Rosenbloom in New Mexico in 1971.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/cd/c1/00553b0d0ff64e39964702baa3c80551-622ae684b25c4853a32d9838c82f144e-0_1.jpg'></td><td>2015-07-15 08:31:43</td><td><a href='http://www.daytondailynews.com/ap/ap/international/mexico-drug-lord-escape-tunnel-is-audacious-engine/nmy5F/'>site</a></td><td>Mexico drug lord escape tunnel is audacious engineering feat</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 02:35:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27366724.html#storylink=rss'>site</a></td><td>Mexico searches nationwide for escaped drug lord</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 02:35:14</td><td><a href='http://www.startribune.com/mexico-searches-nationwide-for-escaped-drug-lord/315604171/'>site</a></td><td>Mexico distributes photos, erects checkpoints in search for escaped drug lord</td></tr>
 </table></body></html>

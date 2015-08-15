@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 09:33:34</td><td><a href='http://www.rferl.org/content/islamic-state-abducts-dozens-syrian-christians/27175649.html'>site</a></td><td>Islamic State Abducts Dozens Of Syrian Christians</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 11:50:32</td><td><a href='http://www.theglobeandmail.com/news/world/islamic-state-abducts-dozens-of-christians-from-syrian-town-monitor/article25871907/?cmpid=rss1'>site</a></td><td>Islamic State militants have abducted dozens of Christian families after seizing a strategically located town in the central Syrian province of Homs, a monitor said on Friday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 13:55:45</td><td><a href='http://www.startribune.com/after-capturing-syrian-town-is-abducts-dozens-of-christians/321034081/'>site</a></td><td>BEIRUT - Activists say Islamic State group has abducted 230 residents, including dozens of Christians, from a central Syrian town captured by the extremists earlier this week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:30:57</td><td><a href='http://www.foxnews.com/world/2015/07/24/turkish-jets-bomb-islamic-state-militants-marking-pivotal-shift-and-end-tacit/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>That gave Islamic State cover to continue building its network in the country.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 18:30:57</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/turkish-bombing-of-islamic-state-marks-end-of-tacit-truce'>site</a></td><td><table><tr><td>Turkey has started to crack down on the group under Western pressure and Islamic State now sees Turkey as the enemy, raising the stakes in the struggle against the extremist network.</td></tr><tr><td>Islamic State - also known by acronyms ISIS and ISIL - has spent years building its network inside Turkey, even as Turkish security services monitored the group to glean valuable intelligence.</td></tr></table></td></tr>
 </table></body></html>

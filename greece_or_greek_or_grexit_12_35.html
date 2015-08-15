@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 21:17:00</td><td><a href='http://www.seattlepi.com/news/article/Yellen-Draghi-upbeat-despite-tumult-in-Greece-6389141.php'>site</a></td><td>And he did his part for Greece, too: The ECB on Thursday agreed to increase financial support for Greece's banks, which have been closed since June 29 and were in danger of collapsing entirely.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 05:56:00</td><td><a href='http://www.ctvnews.ca/business/greek-banks-open-after-three-weeks-but-restrictions-still-in-place-1.2477310'>site</a></td><td>Greece closed its banks beginning June 29 to prevent a bank run as its second international bailout expired.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Greece's stock market and banks were closed on June 29, when the government put limits on money withdrawals and transfers to keep a run on the banks from bringing down the financial system.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>But the resumption of trading was a necessary step as Greece tries to emerge from controls on financial activity that the government, confronted with a bank run, imposed at the end of June.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 11:55:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27374527.html#storylink=rss'>site</a></td><td>The other big Greek issue at the meeting will likely be Draghi re-stating that the bank is willing to use all the stimulus measures at its disposal to prevent turmoil from Greece spreading to government bond markets or the economies of other countries.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/ab7/report-on-business/article23894749.ece/ALTERNATES/w140/174390330-Gold+Prices+R%282%29.JPG'></td><td>2015-07-21 09:24:23</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-gold-claws-back-ground-european-assets-lose-greek-tarnish/article25599980/?cmpid=rss1'>site</a></td><td>In Europe, bond yields fell as attention returned to central bank buying after weeks of Greek-related distractions, while stocks dipped on weak earnings results from drug makers.</td></tr>
 </table></body></html>
