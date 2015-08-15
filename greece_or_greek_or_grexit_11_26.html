@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/14/d6/60/ae143f5d47164fce86a77de4a72b6f4a-6e04fd279b1540979adf82af0e16ca5f-1.jpg'></td><td>2015-07-14 23:50:29</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-tsipras-faces-dissent-on-bailout-deal/nmyPH/'>site</a></td><td>The IMF said Greece's debts would peak over the next two years at 200 percent of the country's economic output; earlier it had said the debt burden would peak last year at 177 percent.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 23:58:05</td><td><a href='http://www.miamiherald.com/news/business/article27192415.html#storylink=rss'>site</a></td><td>But the IMF said Tuesday that "Greece's debt can now only be made sustainable through debt relief measures that go far beyond what Europe has been willing to consider so far."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/15/04/03/4d7c45f8e53545e1bd8b1bfdff82fa00-12f627ee4b0340fb874125c50e5b8ae8-0.jpg'></td><td>2015-07-15 15:59:41</td><td><a href='http://www.daytondailynews.com/ap/ap/business/why-germany-refuses-to-write-off-greeces-debts/nmzGf/'>site</a></td><td>If pressed, Germany officials concede the IMF may be right in saying that Greece's debt pile is too big to pay, no matter how many years it gets to pay it.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102847608-958a32733acb031e252ed5852af4ea5620f05abb.80x60.jpg?v=1437406843'></td><td>2015-07-20 14:43:00</td><td><a href='http://www.cnbc.com/2015/07/20/greece-starts-paying-back-the-ecb-imf.html'>site</a></td><td>"The IMF has adopted the position that Greece needs debt relief, but somebody else should pay for that."</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-23 04:10:04</td><td><a href='http://www.miamiherald.com/news/business/article28383463.html#storylink=rss'>site</a></td><td>Greece's debt still remains the highest in the 19-country eurozone by a wide margin.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/d8/27/d3d7382b009f4a1ca90748d417cb0b52-7fcb1f3056a747ae925c1a038b6d80bd-0_1.jpg'></td><td>2015-07-24 18:56:28</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-talks-to-begin-after-technical-issues-ironed/nm54K/'>site</a></td><td>Gerovasili said the IMF position on Greece's crippling debt load - the highest in the 19-country eurozone - "is clearly something we agree with."</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='ww.smh.com.au/content/dam/images/g/i/j/g/j/a/image.related.articleLeadwide.620x349.gikl05.png/1437838185560.jpg'></td><td>2015-07-25 15:29:52</td><td><a href='http://www.smh.com.au/world/greek-bailout-talks-to-begin-after-delay-20150725-gikl05'>site</a></td><td>Greece has repeatedly asked for a debt relief and the IMF has said this is needed for the Greek accord to be viable.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150814&i=110517402&w=240&r=110517402-1&t=2'></td><td>2015-08-14 01:55:03</td><td><a href='http://www.reuters.com/article/2015/08/14/us-eurozone-greece-bailout-idUSKCN0QI0W620150814?feedType=RSS&feedName=businessNews'>site</a></td><td>"The IMF ... will make an assessment of its participation in providing any additional financing to Greece once the steps on the authorities' program and debt relief have been taken," IMF Greece mission chief Delia Velculescu said in a statement.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://img.rasset.ie/000afa95-117.jpg'></td><td>2015-08-14 11:52:02</td><td><a href='http://www.rte.ie/news/2015/0814/721143-greece-economy/'>site</a></td><td>The IMF made clear it would participate in the programme only if Europe agreed to ease Greece's huge debt burden.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-open-with-small-gains-as-investor-assess/nmzCH/'>site</a></td><td>Asian stocks edged higher Thursday after Greek lawmakers approved an austerity bill needed for another bailout and the dollar rose after the Fed chief indicated that U.S. interest rates could start rising later this year.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/us-stocks-open-with-small-gains-as-investor-assess-earnings'>site</a></td><td>Most Asia stocks rise after Greece approves austerity bill</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 09:25:18</td><td><a href='http://www.sfgate.com/business/energy/article/Most-Asia-stocks-rise-after-Greece-approves-6387709.php'>site</a></td><td>HONG KONG (AP) - European stocks jumped, leading gains in global benchmarks Thursday after Greek lawmakers approved an austerity bill needed for another bailout.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 03:30:17</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-rise-as-ebay-citi-others-report-strong-e/nmzq3/'>site</a></td><td>Asia stocks mostly higher after strong earnings, Greece aid</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>In a letter to Greece's president and Tsipras, Konstantopoulou asserted the measures were a "violent attack on democracy," arguing that lawmakers had been given very little time to study the voluminous bill.</td></tr>
 </table></body></html>

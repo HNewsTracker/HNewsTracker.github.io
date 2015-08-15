@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-14 07:06:21</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/14/investors-hope-us-earnings-lift-markets-as-fears-fade'>site</a></td><td>NEW YORK (AP) - After fretting over a Greek bailout, a collapse in Chinese stocks and the timing of an interest rate increase, investors are hoping U.S. corporate earnings will bring more reassuring news this month.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/14/0f/c6/73cc17796ec848809810d426292c897d-a71bc92f86144145a57b33465b2e2ffc-0.jpg'></td><td>2015-07-14 07:06:21</td><td><a href='http://www.daytondailynews.com/ap/ap/business/investors-hope-us-earnings-lift-markets-as-fears-f/nmyQd/'>site</a></td><td>Sure, Greece has been in a drag on stocks in recent weeks.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/37/53/53/8305361/3/628x471.jpg'></td><td>2015-07-14 07:06:21</td><td><a href='http://www.seattlepi.com/business/energy/article/Investors-hope-US-earnings-lift-markets-as-fears-6383015.php'>site</a></td><td>But the European economy was actually showing signs of strength before anxiety soared over Greece possibly leaving the eurozone - the group of 19 countries that share the single euro currency.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 07:10:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27191638.html#storylink=rss'>site</a></td><td>Fears about Greece and China have shaken up the market this summer.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/35/e5/a082f47d84a94af0a47d4d82904f22e3-4a864986000e45d6aa9c3db3f4996795-0.jpg'></td><td>2015-07-19 07:11:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ious-for-rips-greeces-cash-crisis-hurts-funeral-in/nm3Cq/'>site</a></td><td><table><tr><td>IOUs for RIPs: Greece's cash crisis hurts funeral industry</td></tr><tr><td>Credit cards and especially checks are rarely used for such transactions in Greece, which remains a cash-based economy.</td></tr><tr><td>Cash controls have choked the country's economy as Greece sinks back in recession, according to most major forecasts.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 07:11:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/19/ious-for-rips-greeces-cash-crisis-hurts-funeral-industry'>site</a></td><td><table><tr><td>ATHENS, Greece (AP) - Greece's cash crisis has disrupted all aspects of daily life - death included.</td></tr><tr><td>Greek funeral homes are struggling to cope with banking restrictions that limit customers to taking out only 60 euros ($65) a day in cash.</td></tr><tr><td>Even a modest funeral service in Greece costs more than 15 times that, in a country that traditionally carries out funerals shortly after death and pays for them almost entirely in cash.</td></tr></table></td></tr>
 </table></body></html>

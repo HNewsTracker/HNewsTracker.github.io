@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 23:54:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28771279.html#storylink=rss'>site</a></td><td>Mexico search for missing students turns up 129 bodies</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/shot+gal07251520.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-26 23:55:08</td><td><a href='http://www.startribune.com/mexico-search-for-missing-students-turns-up-129-bodies/318585061/'>site</a></td><td>Mexico's search for 43 missing students has turned up 60 clandestine graves with 129 bodies</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 01:15:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28771279.html#storylink=rss'>site</a></td><td><table><tr><td>The search for 43 missing college students in the southern state of Guerrero has turned up at least 60 clandestine graves and 129 bodies over the last 10 months, Mexico's attorney general's office says.</td></tr><tr><td>More than 20,000 people are listed as missing across Mexico, and there are many "disappeared" in Guerrero, a state that is a major opium producer and the battleground among several cartels warring over territory and drug smuggling routes.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 01:31:29</td><td><a href='http://www.ctvnews.ca/world/mexico-s-search-for-43-missing-students-turns-up-60-clandestine-graves-1.2488926'>site</a></td><td>On Sunday, a few hundred people led by parents of the missing youths marched in Mexico City to call for justice in the case.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 19:34:38</td><td></td><td><a href='mexico_24_25.html'>The Obama administration approved limited crude oil trading with Mexico on Friday, further easing the longstanding U.S. ban on crude exports that has drawn consternation from Republicans and energy producers. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 19:34:38</td><td><a href='http://www.sfgate.com/business/energy/article/US-eases-crude-oil-export-ban-allows-trading-6444857.php'>site</a></td><td>That proposed project would carry crude oil from Canada's tar sands to refineries on the Texas Gulf Coast, so the influx of heavy crude from Mexico could play into a decision about whether the controversial pipeline is necessary.</td></tr>
 </table></body></html>

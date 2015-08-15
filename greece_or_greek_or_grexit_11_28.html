@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 06:25:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11482805&ref=rss'>site</a></td><td>Still, bailing out Greece isn't popular in Merkel's conservative bloc and 48 of its 311 lawmakers said Thursday that they would vote against.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 08:45:22</td><td><a href='http://www.startribune.com/merkel-urges-german-parliament-to-back-greek-talks/316109271/'>site</a></td><td>Bailing out Greece isn't popular among Merkel's conservatives and the chancellor acknowledged concerns over the chances of a successful bailout.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td>In a sign of growing exasperation with Greece, the number of dissenters in Mrs Merkel's bloc more than doubled from the 29 who voted against extending the second Greek bailout in February.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 17:30:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483049&ref=rss'>site</a></td><td>The tough talk appeared aimed in part at reassuring wavering lawmakers in Merkel's and Schaeuble's own conservative bloc that their leaders weren't about to go soft on Greece's radical left-led government.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-19 16:54:49</td><td><a href='http://www.reuters.com/article/2015/07/19/eurozone-greece-idUSL5N0ZZ0DO20150719?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>Merkel said it would be possible to talk about changing the maturities of Greece's debt or reducing the interest Athens has to pay after the first successful review of the new bailout package to be negotiated.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 11:45:49</td><td><a href='http://www.reuters.com/article/2015/07/15/us-markets-stocks-idUSKCN0PP1CB20150715?feedType=RSS&feedName=businessNews'>site</a></td><td>Futures steady ahead of Yellen speech, Greek vote</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td>Merkel wins Greek aid vote in parliament after chaos warning</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437147797857.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150717-gif5rb'>site</a></td><td>"We are working to ensure that Greece remains a member of the euro because the euro is much more than a currency," Merkel told lawmakers in Berlin in a speech before the vote.</td></tr>
 </table></body></html>

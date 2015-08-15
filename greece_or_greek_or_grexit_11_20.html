@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/v/c/j/image.related.articleLeadwide.620x349.gifvb6.png/1437305921195.jpg'></td><td>2015-07-19 11:38:57</td><td><a href='http://www.brisbanetimes.com.au/world/french-president-francois-hollande-calls-for-creation-of-eurozone-government-after-greece-crisis-20150719-gifvb6.html'>site</a></td><td>Paris: French President Francois Hollande on Sunday called for the creation of a eurozone government and for citizens to renew their faith in the European project, which has been weakened by the Greek crisis.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 19:27:35</td><td><a href='http://www.seattlepi.com/news/article/S-P-upgrades-Greece-s-credit-rating-after-6397601.php'>site</a></td><td><table><tr><td>S&P upgrades Greece's credit rating after European bailout</td></tr><tr><td>Standard & Poor's has raised Greece's credit rating after a European bailout reduced the chances of the country's government defaulting on its massive debts during the next year.</td></tr><tr><td>Greece's rating now stands at "CCC+" in an upgrade announced Tuesday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 19:27:35</td><td><a href='http://www.seattlepi.com/news/article/S-P-upgrades-Greece-s-credit-rating-after-6397601.php'>site</a></td><td><table><tr><td>S&P upgrades Greece's credit rating after European bailout</td></tr><tr><td>Standard & Poor's has raised Greece's credit rating after a European bailout reduced the chances of the country's government defaulting on its massive debts during the next year.</td></tr><tr><td>Greece's rating now stands at "CCC+" in an upgrade announced Tuesday.</td></tr></table></td></tr>
 </table></body></html>

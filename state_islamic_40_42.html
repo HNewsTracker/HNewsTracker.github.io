@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:30:57</td><td><a href='http://www.foxnews.com/world/2015/07/24/turkish-jets-bomb-islamic-state-militants-marking-pivotal-shift-and-end-tacit/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>That gave Islamic State cover to continue building its network in the country.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 18:30:57</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/turkish-bombing-of-islamic-state-marks-end-of-tacit-truce'>site</a></td><td><table><tr><td>Turkey has started to crack down on the group under Western pressure and Islamic State now sees Turkey as the enemy, raising the stakes in the struggle against the extremist network.</td></tr><tr><td>Islamic State - also known by acronyms ISIS and ISIL - has spent years building its network inside Turkey, even as Turkish security services monitored the group to glean valuable intelligence.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:30:57</td><td><a href='http://www.foxnews.com/world/2015/07/24/turkish-jets-bomb-islamic-state-militants-marking-pivotal-shift-and-end-tacit/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>That gave Islamic State cover to continue building its network in the country.</td></tr><tr><td>Officials say the mass arrests reflect careful monitoring of IS's followers over a long time, but the scale of detentions also underscores how broad Turkey has allowed the Islamic State network to become.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/37/70/15/8356721/25/square_gallery_thumb.jpg'></td><td>2015-07-24 18:30:57</td><td><a href='http://www.sfgate.com/news/world/article/Turkish-bombing-of-Islamic-State-marks-end-of-6403803.php'>site</a></td><td>On Thursday, as Turkey's government tried to counter criticism over the suicide bombing, Islamic State struck again, this time in an ambush along the border that left a Turkish soldier dead.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 18:30:57</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/turkish-bombing-of-islamic-state-marks-end-of-tacit-truce'>site</a></td><td><table><tr><td>Turkey has started to crack down on the group under Western pressure and Islamic State now sees Turkey as the enemy, raising the stakes in the struggle against the extremist network.</td></tr><tr><td>Islamic State - also known by acronyms ISIS and ISIL - has spent years building its network inside Turkey, even as Turkish security services monitored the group to glean valuable intelligence.</td></tr></table></td></tr>
 </table></body></html>
