@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-15 11:45:49</td><td><a href='http://www.reuters.com/article/2015/07/15/us-markets-stocks-idUSKCN0PP1CB20150715?feedType=RSS&feedName=businessNews'>site</a></td><td>Futures steady ahead of Yellen speech, Greek vote</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437182623956.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150718-gif5rb.html'>site</a></td><td>Merkel wins Greek aid vote in parliament after chaos warning</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437147797857.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150717-gif5rb'>site</a></td><td>"We are working to ensure that Greece remains a member of the euro because the euro is much more than a currency," Merkel told lawmakers in Berlin in a speech before the vote.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-stocks-open-with-small-gains-as-investor-assess/nmzCH/'>site</a></td><td>Asian stocks edged higher Thursday after Greek lawmakers approved an austerity bill needed for another bailout and the dollar rose after the Fed chief indicated that U.S. interest rates could start rising later this year.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 03:22:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/15/us-stocks-open-with-small-gains-as-investor-assess-earnings'>site</a></td><td>Most Asia stocks rise after Greece approves austerity bill</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-16 09:25:18</td><td><a href='http://www.sfgate.com/business/energy/article/Most-Asia-stocks-rise-after-Greece-approves-6387709.php'>site</a></td><td>HONG KONG (AP) - European stocks jumped, leading gains in global benchmarks Thursday after Greek lawmakers approved an austerity bill needed for another bailout.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 03:30:17</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-rise-as-ebay-citi-others-report-strong-e/nmzq3/'>site</a></td><td>Asia stocks mostly higher after strong earnings, Greece aid</td></tr>
 </table></body></html>
