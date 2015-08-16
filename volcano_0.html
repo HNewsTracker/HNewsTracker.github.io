@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 16:53:11</td><td></td><td><a href='volcano_0_1.html'>A volcano has spewed ash over a wide area in two pre-dawn blasts near Ecuador's capital. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 16:58:30</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/14/ecuadors-cotopaxi-volcano-spews-ash-south-of-quito/'>site</a></td><td>The volcano is 30 miles (50 kilometers) from Quito.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 17:00:13</td><td><a href='http://www.startribune.com/ecuador-s-cotopaxi-volcano-spews-ash-south-of-quito/321885661/'>site</a></td><td>Government scientists said the 5,987-meter (19,600-foot) snow-capped volcano doesn't seem to be on the verge of a major eruption.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 17:00:13</td><td><a href='http://www.startribune.com/ecuador-s-cotopaxi-volcano-spews-ash-south-of-quito/321885661/'>site</a></td><td>Government scientists said the 5,987-meter (19,600-foot) snow-capped volcano doesn't seem to be on the verge of a major eruption.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-16 02:26:06</td><td></td><td><a href='volcano_0_1.html'>Four blasts inside the volcano sent ash shooting more than two miles in the sky Friday, coating highways, homes and cars just south of Ecuador's capital with a fine gray powder. (6)</a></td></tr>
 </table></body></html>

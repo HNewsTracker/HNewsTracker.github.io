@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 09:45:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27378442.html#storylink=rss'>site</a></td><td>The head of the eurozone's rescue fund says failure to conclude a bailout deal for Greece would lead to the collapse of the country's major banks, which he says would affect the rest of the eurozone.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150721-gigtsu.html'>site</a></td><td>But as the bailout negotiations resume, assuming they do, there are likely to be disagreements among eurozone members about how much help to give Greek banks.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>Restoring trust in the banks, so that customers will be willing to deposit their money again, is one of the most important tasks that Greek and eurozone officials will face as they try to get the economy moving again.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-13 10:06:08</td><td><a href='http://www.miamiherald.com/news/business/article30978222.html#storylink=rss'>site</a></td><td>After the Greek vote, the bailout deal will also need approval from several other eurozone parliaments, including Germany's, before any funds can be disbursed.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 08:20:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-17-EU--Greece-Bailout/id-326ea64e2d0e449886d34214a50fd39f'>site</a></td><td>Specific terms of the three-year bailout will now be thrashed out between Greece and its partners in the 19-nation eurozone.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/da/00/ee4d97e90d85412189007bb808a99157-31a1c5a09745464ba93109cb1eebaa92-0_1.jpg'></td><td>2015-07-17 19:56:06</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-pm-tsipras-expected-to-reshuffle-cabinet/nm2Kw/'>site</a></td><td>Though the broad outlines of the Greek bailout were agreed Monday by the eurozone's 19 leaders, the ESM's decision formally kick-starts the process by which Greece begins negotiating the details.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 11:54:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>Greece agrees on broad terms of new bailout package</td></tr>
 </table></body></html>

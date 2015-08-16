@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 18:56:59</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27507625.html#storylink=rss'>site</a></td><td>FIFA is still reeling from the indictment of 14 people in a U.S. investigation into soccer corruption, including two of world soccer's now-ousted vice presidents.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 13:35:17</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11483339&ref=rss'>site</a></td><td>GENEVA (AP) " FIFA leaders this weekend return to the scene of a criminal investigation which sent football's governing body into crisis eight weeks ago.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/0e5/sports/soccer/article25529426.ece/ALTERNATES/w220/CSPORTS_US_SOCCER_FIFA_SWISS.JPG'></td><td>2015-08-07 18:12:40</td><td><a href='http://www.theglobeandmail.com/sports/soccer/fifa-launches-internal-probe-of-alleged-corruption-sources/article25878543/?cmpid=rss1'>site</a></td><td>Soccer's world governing body FIFA has launched an internal investigation of alleged corruption, two people familiar with the matter said, in a development that may signal greater cooperation with criminal probes by U.S. and Swiss authorities.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-19 11:27:05</td><td><a href='http://www.miamiherald.com/news/politics-government/article27804001.html#storylink=rss'>site</a></td><td>When the presidents' group met on May 28, one day after senior FIFA officials were arrested in Zurich, Platini urged his mentor turned adversary to resign.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 17:40:39</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/19/blatter-platini-to-meet-at-sunday-session-of-fifa-leaders'>site</a></td><td>Like Platini, Hayatou also did not address details of questions about the latest Blatter-chaired meetings, at a time when senior UEFA officials have suggested the FIFA leader should formally resign and leave now.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 21:58:52</td><td><a href='http://www.seattlepi.com/business/technology/article/Apple-said-to-show-interest-in-automotive-testing-6445212.php'>site</a></td><td>Apple, which is best known for making iPhones and Mac computers, hasn't said what kind of testing it hoped to conduct at the GoMentum Station automotive testing facility, which used to be a naval station in the San Francisco Bay Area city of Concord.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/40/21/74/8462096/5/landscape_32.jpg'></td><td>2015-08-14 21:58:52</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-said-to-show-interest-in-automotive-testing-6445212.php'>site</a></td><td>Apple said to show interest in automotive testing facility</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 21:58:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/14/apple-said-to-show-interest-in-automotive-testing-facility'>site</a></td><td>Apple has "shown interest" in the facility but has not reached any agreement for testing there, Hall said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 22:05:32</td><td><a href='http://www.startribune.com/who-are-the-stock-market-heavyweights/320805731/'>site</a></td><td><table><tr><td>NEW YORK - At $654 billion, Apple is the stock market's heavyweight.</td></tr><tr><td>Since closing at a record $133 on February 23, Apple has slumped to $115.40, wiping $115 billion off the value of its stock.</td></tr></table></td></tr>
 </table></body></html>

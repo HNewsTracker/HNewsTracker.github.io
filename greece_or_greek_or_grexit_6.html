@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 13:58:22</td><td></td><td><a href='greece_or_greek_or_grexit_6_7.html'>The vast majority then head to mainland Greece and from there, try to reach more prosperous European Union countries by either walking across the Balkans from northern Greece, or sneaking onto Italy-bound ferries from the west. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-11 08:28:47</td><td></td><td><a href='greece_or_greek_or_grexit_6_8.html'>Fights broke out among migrants on the Greek island of Kos Tuesday, where overwhelmed authorities are struggling to contain increasing numbers of people arriving clandestinely on rubber dinghies from the nearby Turkish shore. (14)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-15 08:01:08</td><td></td><td><a href='greece_or_greek_or_grexit_6_10.html'>Migrants and refugees gather at a makeshift migrant detention center at Kos' abandoned football stadium after crossing from Turkey, at the southeastern island of Kos, Greece, Friday, Aug. 14, 2015. (8)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-15 19:14:13</td><td></td><td><a href='greece_or_greek_or_grexit_6_9.html'>The International Organization for Migration said the number of migrants and asylum-seekers who have crossed the Mediterranean to Europe this year will pass the quarter-million mark by the end of the month, more than half of them arriving in Greece. (3)</a></td></tr>
+</table></body></html>

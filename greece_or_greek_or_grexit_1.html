@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 15:20:23</td><td><a href='http://www.startribune.com/us-stocks-rise-as-ebay-citi-others-report-strong-earnings/315820521/'>site</a></td><td>Separately, the European Union agreed to provide a short-term loan to Greece and the European Central Bank decided to raise the amount of emergency liquidity available to the country's banks.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 03:30:17</td><td><a href='http://www.daytondailynews.com/ap/ap/business/us-stocks-rise-as-ebay-citi-others-report-strong-e/nmzq3/'>site</a></td><td>Asia stocks mostly higher after strong earnings, Greece aid</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 09:50:12</td><td></td><td><a href='greece_or_greek_or_grexit_1_2.html'>GLOBAL OUTLOOK: With bailout lenders pledging support for Greece as it moves to re-open banks, investors' fears about a Greek exit from the euro quickly faded and they were now examining other parts of the global economy. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 05:48:45</td><td></td><td><a href='greece_or_greek_or_grexit_1_2.html'>"Years from now, will Europeans look back and say we extended the bailout for Greece for too long?" said Mickey Levy, member of the U.S. Shadow Open Market Committee and co-author of a 2012 paper "Greece's predicament: Lessons from Argentina". (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066095823&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L05Z'></td><td>2015-07-22 05:48:45</td><td><a href='http://www.reuters.com/article/2015/07/22/us-eurozone-greece-argentina-analysis-idUSKCN0PW0BT20150722?feedType=RSS&feedName=worldNews'>site</a></td><td>This begs the question, if an "internal" devaluation so large hasn't made Greece more competitive or boosted activity, why would an equally large "external" devaluation make any difference?</td></tr>
 </table></body></html>

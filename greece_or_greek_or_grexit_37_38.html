@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/40/15/26/8443265/3/square_gallery_thumb.jpg'></td><td>2015-08-10 20:38:31</td><td><a href='http://www.sfgate.com/world/article/Greece-struggles-to-cope-with-surge-of-migrants-6435897.php'>site</a></td><td><table><tr><td>A police officer tries to hold migrants behind a fence as they wait to register on the Greek island of Kos.</td></tr><tr><td>KOS, Greece - Greece's coast guard rescued more than 1,400 migrants near several Greek islands in the eastern Aegean Sea over the past three days as the pace of new arrivals increases, authorities said Monday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/11/b3/99/0f6f500631dc468aaaf4b3ad7c88aa6a-b0acb25bd35843648b6b34f707525031-0_1.jpg'></td><td>2015-08-11 08:28:47</td><td><a href='http://www.daytondailynews.com/ap/ap/international/fights-among-migrants-break-out-on-greek-island-of/nnHG2/'>site</a></td><td><table><tr><td>Fights among migrants break out on Greek island of Kos</td></tr><tr><td>Fights broke out among migrants on the Greek island of Kos Tuesday, where overwhelmed authorities are struggling to contain increasing numbers of people arriving clandestinely on rubber dinghies from the nearby Turkish shore.</td></tr><tr><td>Greece has been overwhelmed by the number of migrants arriving, with at least 124,000 people reaching the eastern islands in the first seven months of this year alone.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 09:51:00</td><td><a href='http://www.ctvnews.ca/world/tension-fights-as-migrants-processed-on-greek-island-1.2511258'>site</a></td><td>Greece's coast guard said it had rescued 329 migrants in seven separate search and rescue incidents off the coast of Lesbos and Kos in the 24 hours from Monday morning.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='ww.smh.com.au/content/dam/images/g/i/w/y/n/j/image.related.articleLeadwide.620x349.giwylc.png/1439304754629.jpg'></td><td>2015-08-11 14:52:44</td><td><a href='http://www.smh.com.au/world/fights-among-migrants-on-greek-island-as-turkey-rescues-330-syrians-20150811-giwylc.html'>site</a></td><td><table><tr><td>Syrian refugees push to get registered on the Greek island of Kos.</td></tr><tr><td>"This situation on the island is out of control," he told Greek TV.</td></tr><tr><td>The United Nations refugee agency called conditions for migrants on the Greek islands "shameful".</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/e0/af/8dde92b77e134cc5917d37839df1599b-af673b315e3d4d0d95e8da06bd9ed51c-0.jpg'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-does-about-face-pledges-big-privatization-p/nm2yX/'>site</a></td><td>Work was supposed to begin next year on a 7 billion euros ($7.6 billion) waterfront urban renewal project almost twice the size of New York's Central Park that could have poured nearly a billion euros into Greece's depleted coffers.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/18/876/493/Greece Privatization-5.jpg?ve=1&tl=1'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.foxnews.com/world/2015/07/18/greece-leftist-government-pledges-privatization-push-experts-doubt-50b-euro/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>It was formed in 2011 following demands by Greece's creditors to embark on a privatization wave, but has collected only 3.5 billion euros so far.</td></tr>
 </table></body></html>
