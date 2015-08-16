@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.rt.com/files/news/42/e2/00/00/greece-vote-euro-bailout.si.jpg'></td><td>2015-07-15 22:57:36</td><td><a href='http://rt.com/news/273952-greece-vote-euro-bailout/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td>Among those MPs who voted against the plan are the Greek Energy Minister Panagiotis Lafazanis, former Finance Minister Yanis Varoufakis, Deputy Labor Minister Dimitris Stratoulis, and speaker of parliament Zoe Constantopoulou.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-16 08:25:04</td><td><a href='http://www.miamiherald.com/news/business/article27374224.html#storylink=rss'>site</a></td><td>They included Tsipras' powerful energy minister, the speaker of parliament, and Yanis Varoufakis, the former finance minister who headed Greece's bailout strategy until his replacement 10 days ago.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 12:35:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11483659&ref=rss'>site</a></td><td>BERLIN (AP) " Germany's vice chancellor is criticizing the country's finance minister for suggesting that Greece could take a five-year "timeout" from the shared euro currency to address its financial problems.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-26 18:39:59</td><td><a href='http://www.theguardian.com/world/2015/jul/26/greece-yanis-varoufakis-secret-plan-raid-banks-drachma-return'>site</a></td><td>The deputy finance minister Dimitris Mardas denied the government had ever discussed plans to take Greece out of the euro.</td></tr>
+</table></body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 28,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 28 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>20</td><td></td><td>2015-07-16 14:35:17</td><td></td><td><a href='apple_2.html'>But Apple Music feels like an attempt to take on every competitive app from Pandora to Spotify to YouTube and advance the idea of online radio at the same time. (7)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-07-16 16:51:31</td><td></td><td><a href='apple_7.html'>Apple had argued in court filings that the case was not suitable for class action status because not all store managers conducted bag searches, and any searches that did occur took a tiny amount of time which don't deserve compensation. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 17:21:35</td><td><a href='http://blogs.wsj.com/digits/2015/07/21/apple-music-itunes-and-app-store-suffer-outages/?mod=rss_Technology'>site</a></td><td>Apple's Beats 1 station went down during the announcement of nominees for MTV's Video Music Awards.</td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-07-21 18:04:03</td><td></td><td><a href='apple_28.html'>The last time that Apple services were affected this long was in March, when iTunes and the App Store came back online after a mammoth 12-hour outage. (8)</a></td></tr>
+  <tr><td style='display:none'>26</td><td></td><td>2015-07-21 20:53:00</td><td></td><td><a href='apple_14.html'>For the latest quarter, Apple said revenue from all sources grew 33 per cent from last year to $49.6 billion in the April-June quarter, with the iPhone contributing $31.4 billion in sales. (18)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 06:50:00</td><td><a href='http://www.cnbc.com/2015/07/21/apple-reaction-shares-fall-7-after-weak-forecast.html'>site</a></td><td>Apple reaction: Shares fall 7% after weak forecast</td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-07-22 11:47:06</td><td></td><td><a href='apple_10.html'>A cautious outlook from Apple coupled with indifferent earnings from U.S. technology firms weighed on global stock markets Wednesday ahead of another key vote in the Greek Parliament. (21)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066156988&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L0IW'></td><td>2015-07-22 12:39:10</td><td><a href='http://www.reuters.com/article/2015/07/22/us-apple-results-research-idUSKCN0PW1AD20150722?feedType=RSS&feedName=technologyNews'>site</a></td><td>Analysts as upbeat as ever on Apple; Investors not so much</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-07-22 14:13:00</td><td></td><td><a href='apple_31.html'>It also briefly fell below its 200-day moving average Tuesday and Apple hasn't closed below this metric since Sept. (4)</a></td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-07-22 23:20:05</td><td></td><td><a href='apple_4.html'>Apps will get better when Apple updates the watch's software this fall to permit more "native" apps -- those that aren't just extensions of phone apps. (11)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/r/r/5/image.related.articleLeadwide.620x349.giip2q.png/1437619462367.jpg'></td><td>2015-07-23 02:45:16</td><td><a href='http://www.smh.com.au/digital-life/wearables/despite-negativity-apple-watch-shows-signs-of-familiar-path-to-success-20150723-giip2q'>site</a></td><td>After studying Apple's opaque earnings report, several analysts revised their estimates down to about 1.5 million to 3 million watches.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article28389055.html#storylink=rss'>site</a></td><td><table><tr><td>Apple Music streaming service: Clunky, cool, catchy</td></tr><tr><td>Apple does a better job than either of them.</td></tr><tr><td>Apple Music is far from perfect, though.</td></tr><tr><td>And how easy is it to use Apple Music?</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/24/102862178-560c32e6dea83e7ac58a11ef420c6f1ef133d280.160x105.jpg?v=1437746333'></td><td>2015-07-24 13:00:00</td><td><a href='http://video.cnbc.com/gallery/?video=3000400272'>site</a></td><td>Apple pulls Nest from shelves</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 20:10:02</td><td><a href='http://www.reuters.com/article/2015/07/24/us-apple-inc-nest-idUSKCN0PY2AP20150724?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>Apple removes Nest Labs thermostats from U.S. stores</td></tr><tr><td>"Our new products will be available through Apple in the coming weeks," she said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-07-27 21:04:05</td><td></td><td><a href='apple_0.html'>U.S. retailer Best Buy Co. says it will sell the Apple Watch at 100 of its stores and on its website beginning Aug. 7, 2015. (11)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 22:45:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11488046&ref=rss'>site</a></td><td>Apple Inc. and Nike did not immediately respond to a request for comment.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 01:27:34</td><td><a href='http://nypost.com/2015/07/27/are-apple-bmw-making-an-electric-car-together/'>site</a></td><td>Are Apple & BMW making an electric car together?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03396/watchlovely_3396861b.jpg'></td><td>2015-08-04 09:51:24</td><td><a href='http://www.telegraph.co.uk/technology/apple/watch/11781979/Cant-choose-between-an-Apple-Watch-and-a-luxury-timepiece-Have-both.html'>site</a></td><td>Can't choose between an Apple Watch and a luxury timepiece?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31430325.ece/69ebc/ALTERNATES/w620/PANews%20BT_P-51e6b1a1-697e-4258-882c-3e8ab5305163_I1.jpg'></td><td>2015-08-05 19:17:10</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/steve-jobs-the-opera-tech-pioneers-life-story-to-be-told-in-song-31430326.html'>site</a></td><td>Apple co-founder Steve Jobs is to be the subject of an opera.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/f869634/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F1c%2Fa7%2Fcb4d40b841c29bff108d613c782b%2F150805-apple-editorial.jpg'></td><td>2015-08-05 21:45:00</td><td><a href='http://www.usnews.com/news/articles/2015/08/05/whats-eating-apple'>site</a></td><td>What's Eating Apple?</td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-08-05 22:05:32</td><td></td><td><a href='apple_23.html'>Without Apple, the decline would have been a gain of 0.1 percent, according to S&P Dow Jones Indices, the company behind the S&P 500 index and the Dow Jones industrial average. (8)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-08-06 14:51:32</td><td></td><td><a href='apple_9.html'>After that, individuals can pay $10 a month, while families of up to six people can pay $15 a month for unlimited access to Apple Music on their devices. (4)</a></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-08-06 22:49:26</td><td></td><td><a href='apple_18.html'>Apple's iTunes Store helped revitalize the music industry a decade ago, but digital downloads have slumped in recent years amid a shift toward streaming. (5)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-08-13 21:38:45</td><td></td><td><a href='apple_26.html'>The company still plans to introduce a more powerful version of its Apple TV set-top box at the event, which will be held in San Francisco. (4)</a></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-08-14 00:05:04</td><td></td><td><a href='apple_34.html'>But Jackson said he wants Apple and other tech companies to go beyond the federal report and provide more "comprehensive" data on hiring as well as purchasing and contracting with companies owned by women and minorities. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/21/102850772-GettyImages-455720112.530x298.jpg?v=1437485653'></td><td>2015-08-14 11:08:00</td><td><a href='http://www.cnbc.com/2015/08/14/apple-says-hired-65-percent-more-women-in-the-past-year.html'>site</a></td><td>Apple said it had hired over 11,000 women globally in the past year-65 percent more than the previous year-to boost employee diversity.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-08-14 20:04:13</td><td></td><td><a href='apple_48.html'>At the end of the first quarter Apple was one of the most popular stocks owned by hedge funds, according to Goldman Sachs research. (2)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-08-14 21:58:52</td><td></td><td><a href='apple_21.html'>Apple, which is best known for making iPhones and Mac computers, hasn't said what kind of testing it hoped to conduct at the GoMentum Station automotive testing facility, which used to be a naval station in the San Francisco Bay Area city of Concord. (5)</a></td></tr>
+</table></body></html>

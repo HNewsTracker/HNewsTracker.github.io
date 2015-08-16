@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tsipras</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-07-15 18:12:03</td><td></td><td><a href='tsipras_3_5.html'>Syriza's junior coalition partner said it would vote only for certain clauses in the bill, rejecting those reforms that went beyond a previous vote in parliament that had given Tsipras a mandate to negotiate in Brussels. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/17/102843378-022671dc9544702746db5db4e00271aba99f844f.80x60.jpg?v=1437149136'></td><td>2015-07-17 18:38:00</td><td><a href='http://www.cnbc.com/2015/07/17/greek-pm-tsipras-replaces-rebels-in-government-reshuffle.html'>site</a></td><td>Greek Prime Minister Alexis Tsipras on Friday kicked out of his government rebel ministers who voted against reforms demanded by international creditors in return for a rescue deal.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-20 06:41:10</td><td></td><td><a href='tsipras_3_7.html'>Greek banks reopen as Tsipras eyes return to normal (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/13/102828831-GReek_timeline.80x60.jpg?v=1436804433'></td><td>2015-07-22 01:06:00</td><td><a href='http://www.cnbc.com/2015/07/21/alexis-tsipras-transforms-himself-as-he-sells-greek-bailout-terms.html'>site</a></td><td>Mr. Tsipras benefits from having never had anything to do with those parties.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-31 01:08:07</td><td></td><td><a href='tsipras_3_4.html'>Greek Prime Minister Alexis Tsipras addresses a meeting of his ruling radical left Syriza party's central committee in Athens, on Thursday, July 30, 2015. (20)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-14 09:55:15</td><td></td><td><a href='tsipras_3_6.html'>A majority of 222 MPs approved the 400-page draft deal with 64 voting against, including 40 from Tsipras' own leftist party ranks. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 09:55:15</td><td><a href='http://www.smh.com.au//breaking-news-world/greek-parliament-approves-bailout-deal-20150814-410xq.html'>site</a></td><td>Tsipras appealed to other EU countries to reject the alternative solution that Germany was suggesting, which he claimed would only prolong the agony.</td></tr>
+</table></body></html>

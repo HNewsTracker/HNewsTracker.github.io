@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 36,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 36 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-16 18:36:08</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27402325.html#storylink=rss'>site</a></td><td>Ranchers in New Mexico, California and Washington state are challenging a new Obama administration rule giving federal agencies authority to protect some streams and wetlands.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-07-16 20:20:17</td><td></td><td><a href='mexico_56.html'>Uber's spokesman for Mexico and Central America says the company doesn't mind paying 1.5 percent of the proceeds from each ride into a transport-improvement fund. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 15:00:24</td><td><a href='http://www.startribune.com/mexico-us-requested-drug-lord-s-extradition-before-escape/316137821/'>site</a></td><td>MEXICO CITY - Mexico's government is confirming that the United States filed an extradition request for drug lord Joaquin Guzman about 2 weeks before he escaped from Mexico's highest-security prison.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 18:56:54</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27507619.html#storylink=rss'>site</a></td><td>Representatives of Mexico City's regular cab drivers are criticizing new regulations published this week on ride-sharing apps such as Uber.</td></tr>
+  <tr><td style='display:none'>30</td><td></td><td>2015-07-20 02:57:07</td><td></td><td><a href='mexico_11.html'>The Mexico-Costa Rica matchup looked like a potential final at the start of the tournament, with Costa Rica coming off a World Cup quarterfinal appearance last year. (6)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-07-20 18:17:33</td><td></td><td><a href='mexico_41.html'>Citing sprawl development and a need for more Mexican-American elected officials, "Breaking Bad" actor Steven Michael Quezada said he is jumping in a heated race for county commissioner in Albuquerque, New Mexico. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 04:05:31</td><td><a href='http://www.startribune.com/after-escape-mexico-cartel-boss-faces-altered-drug-business/318079391/'>site</a></td><td><table><tr><td>After escape, Mexico's strongest cartel boss faces radically altered drug-trafficking business</td></tr><tr><td>MEXICO CITY - Mexico's most powerful drug lord, Joaquin "El Chapo" Guzman, has a lot to catch up on as he returns to a drug-trafficking landscape that has shifted considerably during his 17 months behind bars.</td></tr><tr><td>Only the Jalisco New Generation, the big gun cartel that forced down the helicopter, has used the void to grow into one of Mexico's most powerful international criminal groups.</td></tr><tr><td>"The Jalisco cartel has been growing ... and Sinaloa was debilitated by the arrest of El Chapo," said Raul Benitez, a security expert with the National Autonomous University of Mexico.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 14:55:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485352&ref=rss'>site</a></td><td>Donald Trump will visit Mexico-Texas border Thursday</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 18:38:43</td><td><a href='http://nypost.com/2015/07/22/donald-trump-to-visit-us-mexico-border/'>site</a></td><td>NEWARK, NJ - Donald Trump, provocateur of the Republican presidential race, now plans to go the Mexican border, a flashpoint in the primary contest ever since he declared that immigrants from Mexico are rapists and drug dealers.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/23/99/d6/4fb93dc5abbb40cd9b42201c3ba31ebe-09ef1685f12d47a08d49f85f157795c7-0.jpg'></td><td>2015-07-23 05:20:10</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/guardados-goals-lift-mexico-past-panama-2-1-in-gol/nm5Jr/'>site</a></td><td><table><tr><td>Guardado lifts Mexico past angry Panama, 2-1, in Gold Cup</td></tr><tr><td>Panama played at a disadvantage after forward Luis Tejada drew a red card and was ejected for his contact with Mexico's Francisco Rodriguez about 25 minutes into the match.</td></tr><tr><td>Similar controversy surrounded Mexico's 1-0 win over Costa Rica in the quarterfinals Sunday night.</td></tr></table></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-07-23 07:05:27</td><td></td><td><a href='mexico_7.html'>Mexico won it after Geiger awarded another kick for Harold Cummings' takedown of Javier Orozco in the penalty area, setting up Guardado's winning goal in the 105th. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 13:14:04</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article28386598.html#storylink=rss'>site</a></td><td>A New Mexico Democratic lawmaker says she will not resign from the board of the nation's oldest Latino civil rights group despite calls to step down.</td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-07-23 15:50:45</td><td></td><td><a href='mexico_13.html'>New Mexico police chief wants fugitive in Cuba returned for 1971 officer's death (4)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-23 17:55:20</td><td></td><td><a href='mexico_5.html'>MEXICO CITY (AP) " Mexico's human rights commission says the government's investigation into the fate of 43 missing college students is marked by failures and omissions in its procedures. (3)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-07-23 17:55:20</td><td></td><td><a href='mexico_24.html'>CULIACAN, Mexico (AP) " Palatial tombs mark the final resting spots of top narcotics traffickers in the Jardines de Humaya cemetery in the Sinaloa state capital of Culiacan. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 02:05:08</td><td><a href='http://www.startribune.com/lightning-strike-kills-7-including-4-children-in-mexico/318509161/'>site</a></td><td><table><tr><td>Lightning strike kills 7, including 4 children, in central Mexico</td></tr><tr><td>MEXICO CITY - Authorities say a lightning strike has killed seven people, including four children, in a rural part of central Mexico.</td></tr></table></td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-07-25 21:20:16</td><td></td><td><a href='mexico_16.html'>Indeed, Mexico did outplay Costa Rica in the quarterfinals, though that game was moments from going to penalty kicks until El Tri benefited from another questionable call in the last minute of extra time. (4)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-07-27 00:15:05</td><td></td><td><a href='mexico_9.html'>MEXICO CITY - Federal authorities in Mexico say they arrested 22 Colombians and three Mexicans using greenhouses to grow genetically modified and cloned marijuana. (3)</a></td></tr>
+  <tr><td style='display:none'>28</td><td></td><td>2015-07-27 01:15:05</td><td></td><td><a href='mexico_30.html'>The search for 43 missing college students in the southern state of Guerrero has turned up at least 60 clandestine graves and 129 bodies over the last 10 months, Mexico's attorney general's office says. (5)</a></td></tr>
+  <tr><td style='display:none'>29</td><td></td><td>2015-07-27 03:48:51</td><td></td><td><a href='mexico_15.html'>Mexico ensured the final wouldn't come down to any calls in the final minutes with a 3-1 victory over upstart Jamaica for the CONCACAF Gold Cup title Sunday. (5)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-28 00:06:17</td><td></td><td><a href='mexico_0.html'>Customs and law enforcement personnel in Mexico say they found an undetermined amount of cocaine dissolved in fruit pulp imported from Colombia. (3)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-07-28 03:44:05</td><td></td><td><a href='mexico_51.html'>Officials in the Caribbean island of Barbados have also struggled with seaweed washing ashore, and large piles of sargassum washed up on the shore in Galveston, Texas, in 2014 after drifting into the Gulf of Mexico. (4)</a></td></tr>
+  <tr><td style='display:none'>32</td><td></td><td>2015-07-28 17:50:07</td><td></td><td><a href='mexico_38.html'>Efforts are underway to save the green chile that's important to traditional New Mexican fare as labor shortages, a previous severe drought and competition from China, India and Mexico endanger its growth in the state. (11)</a></td></tr>
+  <tr><td style='display:none'>33</td><td></td><td>2015-07-28 19:15:25</td><td></td><td><a href='mexico_39.html'>MEXICO CITY - Embattled Mexican national soccer team coach Miguel Herrera has been fired following a TV reporter's claim that the coach known as "El Piojo" punched him. (13)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-07-29 03:43:27</td><td></td><td><a href='mexico_46.html'>MEXICO CITY - Mexican prosecutors announced Tuesday that they had won "historic" convictions and sentences of 697 years in prison against five men for killing 11 women near the border city of Ciudad Juarez. (2)</a></td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-08-02 20:58:59</td><td></td><td><a href='mexico_2.html'>LAS CRUCES, N.M. (AP) - A pair of small explosions just 20 minutes and a few miles apart shocked congregants Sunday morning at two churches in southern New Mexico. (4)</a></td></tr>
+  <tr><td style='display:none'>35</td><td></td><td>2015-08-06 16:52:08</td><td></td><td><a href='mexico_26.html'>In this April 28, 2015 photo, Mexican photojournalist Ruben Espinosa places a plaque to rename a plaza after slain journalist Regina Martinez in the city of Xalapa, in Mexico's Gulf state of Veracruz. (28)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-08-10 18:46:28</td><td></td><td><a href='mexico_33.html'>Miguel Angel Jimenez, a political activist who played a prominent early role in the search for 43 students and other missing people in southern Mexico, was slain over the weekend, an associate said Monday. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdnph.upi.com/ph/st/th/6261439486361/2015/i/14394872173485/v1.2/Lockheed-Martin-expands-cruise-missile-production-plant.jpg?lg=1'></td><td>2015-08-12 18:08:04</td><td><a href='http://www.upi.com/Business_News/2015/08/12/Ford-shifts-truck-production-from-Mexico-to-Ohio/1261439401894/'>site</a></td><td>Ford shifts truck production from Mexico to Ohio</td></tr>
+  <tr><td style='display:none'>34</td><td></td><td>2015-08-13 02:51:19</td><td></td><td><a href='mexico_19.html'>The head of the Environmental Protection Agency says she will visit Farmington, New Mexico, downstream from where millions of gallons of mine waste spilled into a southwest Colorado river. (26)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-13 13:50:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11496952&ref=rss'>site</a></td><td><table><tr><td>Reputed gang leader, reporter, 4 others killed in Mexico</td></tr><tr><td>MEXICO CITY (AP) " Five gunmen burst into a bar early Thursday and killed a reputed drug gang boss, a reporter and four other people in Mexico's Gulf coast state of Veracruz, authorities said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-08-13 19:15:46</td><td></td><td><a href='mexico_35.html'>It was the first drug seizure involving a drone along California's border with Mexico, said Lauren Mack, spokeswoman for U.S. Immigration and Customs Enforcement in San Diego. (4)</a></td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-08-13 23:41:36</td><td></td><td><a href='mexico_31.html'>Experts have discovered that the main pyramid at Mexico's Mayan ruins of Chichen Itza was at least partially built atop a subterranean river. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/brightcove/2015/08/13/15364600001_4419855543001_video-still-for-video-4420040663001_r200x90.jpg?de340bef6cf2f5bff72aaf211f66da3b51d471bd'></td><td>2015-08-14 15:05:17</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/14/police-find-7-bodies-dumped-on-roadside-in/'>site</a></td><td>Police find 7 bodies dumped on roadside in southern Mexico</td></tr>
+  <tr><td style='display:none'>31</td><td></td><td>2015-08-14 19:34:38</td><td></td><td><a href='mexico_36.html'>The Obama administration approved limited crude oil trading with Mexico on Friday, further easing the longstanding U.S. ban on crude exports that has drawn consternation from Republicans and energy producers. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 21:57:07</td><td><a href='http://abcnews.go.com/US/wireStory/police-suspicious-device-found-mexico-church-grounds-33093761'>site</a></td><td>Police: Suspicious Device Found on New Mexico Church Grounds</td></tr>
+</table></body></html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 20:59:08</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/10/google-changing-operating-structure-it-will-be/'>site</a></td><td>Google changing operating structure, it will be part of holding company Alphabet</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.gannett-cdn.com/-mm-/dcc982e8ed28edbe24141c93759ed7448c9e2642/c=58-0-965-682&amp;r=x404&amp;c=534x401/local/-/media/2015/08/10/USATODAY/USATODAY/635748228329993281-Google.JPG'></td><td>2015-08-10 21:03:29</td><td><a href='http://www.usatoday.com/story/tech/2015/08/10/google-alphabet-sundar-pichai-larry-page-sergey-brin/31429423/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td><table><tr><td>"Our company is operating well today, but we think we can make it cleaner and more accountable," Google co-founder Larry Page said.</td></tr><tr><td>"This new structure will allow us to keep tremendous focus on the extraordinary opportunities we have inside of Google," Page said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 21:14:43</td><td><a href='http://www.nydailynews.com/news/world/google-restructures-institutes-sundar-pichai-new-ceo-article-1.2320941?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>"For Sergey and me this is a very exciting new chapter in the life of Google -- the birth of Alphabet," Page said.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.bizj.us/view/img/6672822/google-ceo-sundar-pichai*750xx4000-2250-0-210.jpg'></td><td>2015-08-10 21:18:39</td><td><a href='http://www.bizjournals.com/sanjose/news/2015/08/10/google-names-new-ceo-under-new-company-led-by-page.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+industry_7+%28Industry+Technology%29'>site</a></td><td>Alphabet Inc. will replace Google Inc. as the publicly traded entity for the company.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-10 21:19:59</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article30638334.html#storylink=rss'>site</a></td><td>Larry Page, Google's co-founder and chief executive, will become the CEO of Alphabet.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/bt/api/res/1.2/OU3MQWl3sKjwV.brkASkJg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-08-10T211421Z_1_LYNXNPEB790X6_RTROPTP_3_TELECOMS-MWC_original.jpg'></td><td>2015-08-10 21:23:00</td><td><a href='http://finance.yahoo.com/news/google-inc-become-alphabet-inc-210510259.html'>site</a></td><td>Google to become Alphabet Inc in shakeup</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-10 21:42:00</td><td><a href='http://www.chicagotribune.com/business/ct-google-alphabet-20150810-story.html'>site</a></td><td>Google, which has been expanding far beyond its original business of Internet search advertising, is changing its operating structure by creating a new holding company called Alphabet.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/08/10/google650c.jpg&size=104x59&quality=85'></td><td>2015-08-10 22:02:26</td><td><a href='http://technology.canoe.com/News/2015/08/10/22539326.html?cid=rsstechnologynews'>site</a></td><td>Google creating new parent company Alphabet</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-11 00:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11495393&ref=rss'>site</a></td><td>Google, which Monday announced it's reorganizing under a new parent company called "Alphabet," is one of the biggest and best-known companies in Silicon Valley.</td></tr>
+</table></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297728874358_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-24 05:21:37</td><td><a href='http://www.torontosun.com/2015/07/24/us-justice-dept-asked-to-probe-hillary-clintons-email-use-report'>site</a></td><td><table><tr><td>NEW YORK - The U.S. Justice Department is weighing a request by two government inspectors general to open a criminal investigation into Hillary Clinton's use of a private email account for her work as secretary of state, the New York Times reported on Thursday.</td></tr><tr><td>Clinton has repeatedly said she broke no laws or rules by eschewing a standard government email account for her State Department work in favor of a private account linked to a computer server in her New York home.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 12:46:00</td><td><a href='http://www.cnbc.com/2015/07/23/criminal-inquiry-sought-in-hillary-clintons-use-of-email.html'>site</a></td><td>Criminal probe sought into Hillary Clinton's email</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 12:50:48</td><td><a href='http://www.sfgate.com/news/article/Sources-Justice-asked-to-consider-probing-6403175.php'>site</a></td><td>WASHINGTON (AP) - Federal officials say two government inspectors general have asked the Justice Department to determine whether sensitive government information was transmitted on Hillary Rodham Clinton's personal email.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-05 10:28:57</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article30016806.html#storylink=rss'>site</a></td><td><table><tr><td>FBI looking into the security of Hillary Clinton?s private email setup</td></tr><tr><td>He noted that Clinton has called repeatedly for the State Department to release her emails to the public, a process that is ongoing.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297735717764_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-08-12 01:22:44</td><td><a href='http://www.torontosun.com/2015/08/11/hillary-clinton-relents-gives-up-possession-of-private-email-server-to-justice-department'>site</a></td><td>WASHINGTON -- Hillary Rodham Clinton relented Tuesday to months of demands she relinquish the personal email server she used while secretary of state, directing the device be given to the Justice Department.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-12 03:34:11</td><td><a href='http://www.bbc.co.uk/news/world-us-canada-33872602#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Clinton to hand over email server</td></tr>
+</table></body></html>

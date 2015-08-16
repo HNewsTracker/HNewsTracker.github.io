@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/35/13/8245997/7/920x920.jpg'></td><td>2015-07-16 19:47:32</td><td><a href='http://www.sfgate.com/movies/article/Mr-Holmes-a-portrait-of-the-detective-as-6386411.php'>site</a></td><td>And if they think of Holmes, they will think of Holmes thinking of her.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 08:00:00</td><td><a href='http://www.miamiherald.com/entertainment/movies-news-reviews/article27490408.html#storylink=rss'>site</a></td><td>Ian McKellen delivers in 'Mr. Holmes'</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 08:00:00</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article27473875.html#storylink=rss'>site</a></td><td><table><tr><td>Movie review: 'Mr Holmes' makes Sherlock seem real</td></tr><tr><td>In "Mr. Holmes," Ian McKellen and director Bill Condon reunite for another story about an aging man confronting his mortality.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 08:00:00</td><td><a href='http://www.miamiherald.com/entertainment/movies-news-reviews/article27933079.html#storylink=rss'>site</a></td><td><table><tr><td>Ian McKellen's not slowing down, taking 'Mr. Holmes' on a thoughtful journey</td></tr><tr><td>And in "Mr. Holmes," which opens this weekend, McKellen inhabits both a reflective 93-year-old Sherlock Holmes and his younger self.</td></tr><tr><td>"Kept going" is also evident in "Holmes," in which McKellen finds himself in nearly every scene, in a part as physically nuanced and demanding as any senior-citizen role around.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-22 20:33:00</td><td></td><td><a href='holmes_0.html'>(AP) - James Holmes should be put to death for the Colorado theater shooting because he deliberately and cruelly killed 12 people, including a 6-year-old girl, prosecutors told jurors Wednesday. (73)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.nbcbayarea.com/designimages/nbcny_logo_tv.png'></td><td>2015-07-24 12:48:41</td><td><a href='http://www.nbcnewyork.com/video/#!/entertainment/entertainment-news/Tonight_-Say-Anything-with-Katie-Holmes/318392031'>site</a></td><td>'Tonight': Say Anything with Katie Holmes</td></tr>
+</table></body></html>
