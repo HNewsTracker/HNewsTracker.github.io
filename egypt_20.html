@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/08/17/ad2f0547dc1e57247f0f6a706700dded2_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-08-17 07:32:33</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/ap-photos-egypts-banned-ultras-soccer-fans-take/'>site</a></td><td>They were considered one of the most organized movements in Egypt after the Muslim Brotherhood, which the government outlawed as a terrorist organization following the 2013 military overthrow of Islamist President Mohammed Morsi.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 07:35:58</td><td></td><td><a href='egypt_20_21.html'>In this July 26, 2015 photo, members of Zamalek's football club's Ultras White Knights (UWK) group, the club's hardcore fan base, attend a friend's bachelor party in Cairo, Egypt. (8)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-29 04:42:58</td><td></td><td><a href='egypt_20_21.html'>Mr Greste's colleagues, Mohamed Fahmy and Baher Mohamed are free on bail in Egypt awaiting the verdict, but reporting to police daily. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/m/y/y/w/image.related.articleLeadwide.620x349.gimxwu.png/1438144961018.jpg'></td><td>2015-07-29 04:42:58</td><td><a href='http://www.brisbanetimes.com.au/national/australian-journalist-peter-greste-awaits-egyptian-terrorretrial-verdict-20150729-gimxwu.html'>site</a></td><td>The reporter was deported by Egypt in February, after 400 days behind bars.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/m/y/y/w/image.related.articleLeadwide.620x349.gimxwu.png/1438144961018.jpg'></td><td>2015-07-29 04:42:58</td><td><a href='http://www.smh.com.au/national/australian-journalist-peter-greste-awaits-egyptian-terrorretrial-verdict-20150729-gimxwu.html'>site</a></td><td><table><tr><td>In January, Egypt's highest court threw out the verdicts and ordered the men face a retrial, citing procedural flaws in the initial case.</td></tr><tr><td>He says a conviction on terrorism charges would have a devastating effect on his career as a foreign correspondent, restricting his ability to travel to countries possessing extradition arrangements with Egypt.</td></tr></table></td></tr>
 </table></body></html>

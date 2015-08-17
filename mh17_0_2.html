@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03377/Russian_President__3377848b.jpg'></td><td>2015-07-16 14:02:58</td><td><a href='http://www.telegraph.co.uk/news/worldnews/vladimir-putin/11744032/MH17-anniversary-Vladimir-Putin-calls-tribunal-into-the-disaster-counterproductive.html'>site</a></td><td>MH17 anniversary: Vladimir Putin calls tribunal into the disaster 'counterproductive'</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-16 14:20:10</td><td><a href='http://www.bbc.co.uk/news/world-europe-33555298#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Putin says MH17 tribunal 'premature'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 11:55:05</td><td><a href='http://www.euronews.com/2015/08/11/debris-from-mh17-comes-from-russian-made-missile-system/'>site</a></td><td>"The parts are of particular interest to the criminal investigation as they can possibly provide more information about who was involved in the crash of MH17."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/40/16/34/8447773/5/gallery_thumb.jpg'></td><td>2015-08-11 12:46:32</td><td><a href='http://www.seattlepi.com/news/crime/article/Prosecutors-Possible-BUK-missile-parts-found-at-6437135.php'>site</a></td><td>The prosecutors, who are leading an international criminal probe into the deadly crash on July 17, 2014, said in a written statement that the parts "are of particular interest to the criminal investigation as they can possibly provide more information about who was involved in the crash of MH17."</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/w/y/n/f/image.related.articleLeadwide.620x349.giwyn9.png/1439299484255.jpg'></td><td>2015-08-11 13:24:54</td><td><a href='http://www.smh.com.au/world/mh17-fragments-may-be-smoking-gun-that-proves-buk-missile-shot-down-plane-20150811-giwyn9.html'>site</a></td><td>"The parts are of particular interest to the criminal investigation as they can possibly provide more information about who was involved in the crash of MH17," said a joint statement by the Dutch Safety Board, which is co-ordinating the air safety investigation, and the Joint Investigation Team which runs the criminal investigation into the tragedy.</td></tr>
 </table></body></html>

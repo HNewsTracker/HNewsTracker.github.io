@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/18/e0/af/8dde92b77e134cc5917d37839df1599b-af673b315e3d4d0d95e8da06bd9ed51c-0.jpg'></td><td>2015-07-18 12:05:26</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-does-about-face-pledges-big-privatization-p/nm2yX/'>site</a></td><td>Greece does about-face, pledges big privatization push</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-18 12:05:26</td><td></td><td><a href='greece_or_greek_or_grexit_38_39.html'>Work was supposed to begin next year on a 7 billion euros ($7.6 billion) waterfront urban renewal project almost twice the size of New York's Central Park that could have poured nearly a billion euros into Greece's depleted coffers. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-18 12:05:26</td><td></td><td><a href='greece_or_greek_or_grexit_38_40.html'>Giakoumis believes Greece's need for European financing is now so dire that it will be forced to step up privatizations and deals to allow the private sector use government land and assets. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 06:30:20</td><td></td><td><a href='greece_or_greek_or_grexit_38_39.html'>HONG KONG (AP) " World stock markets were mostly higher Monday as the yuan steadied and Greece inched closer to receiving its latest bailout. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-17 06:30:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11498646&ref=rss'>site</a></td><td>GREEK CRISIS: European finance ministers on Friday approved the first 26 billion euros ($29 billion) that Greece needs to rebuild its economy.</td></tr>
 </table></body></html>

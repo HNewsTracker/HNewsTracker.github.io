@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/world-news/article31452190.ece/69f4b/ALTERNATES/h342/PANews%20BT_P-2d2f834d-e969-47c1-9eec-8bcb17458355_I1.jpg'></td><td>2015-08-14 16:53:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/ecuadors-cotopaxi-volcano-spews-ash-south-of-quito-31452191.html'>site</a></td><td><table><tr><td>Ecuador's Cotopaxi volcano spews ash south of Quito</td></tr><tr><td>A volcano has spewed ash over a wide area in two pre-dawn blasts near Ecuador's capital.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 16:58:30</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/14/ecuadors-cotopaxi-volcano-spews-ash-south-of-quito/'>site</a></td><td>The volcano is 30 miles (50 kilometers) from Quito.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-16 02:26:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31233128.html#storylink=rss'>site</a></td><td><table><tr><td>President Rafael Correa declared a state of emergency Saturday over increasing activity in the Cotopaxi volcano near the capital of Quito, and officials evacuated a few hundred people as a precaution.</td></tr><tr><td>Presidential legal secretary Alexis Mera said further ash explosions and some pyroclastic flows on the volcano's western slopes Saturday led officials to evacuate some nearby villages.</td></tr><tr><td>Four blasts inside the volcano sent ash shooting more than two miles in the sky Friday, coating highways, homes and cars just south of Ecuador's capital with a fine gray powder.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 17:00:13</td><td><a href='http://www.startribune.com/ecuador-s-cotopaxi-volcano-spews-ash-south-of-quito/321885661/'>site</a></td><td>Government scientists said the 5,987-meter (19,600-foot) snow-capped volcano doesn't seem to be on the verge of a major eruption.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 22:35:21</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11498998&ref=rss'>site</a></td><td><table><tr><td>About 425,000 live in shadow of Ecuador's Cotopaxi volcano</td></tr><tr><td>QUITO, Ecuador (AP) " Ecuadorean authorities said Monday that up to 325,000 people live in areas that could be threatened by fast-moving mud and rock flows if there is a major eruption of the Cotopaxi volcano.</td></tr></table></td></tr>
 </table></body></html>
