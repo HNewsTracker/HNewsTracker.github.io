@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/8/6/y/image.related.articleLeadwide.620x349.gifwkc.png/1437362286595.jpg'></td><td>2015-07-19 21:36:02</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-prices-for-everyday-items-shoot-up-in-greece-20150720-gifwkc.html'>site</a></td><td>The tax increases are forecast to bring in $US867 million ($1.1billion) by year-end, Greek financial media said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/g/8/6/y/image.related.articleLeadwide.620x349.gifwkc.png/1437362286595.jpg'></td><td>2015-07-19 21:36:02</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greek-debt-crisis-prices-for-everyday-items-shoot-up-in-greece-20150720-gifwkc.html'>site</a></td><td>Prices have been pushed up by increases in value-added tax, one of the conditions imposed on the country by its creditors before talks began on Greece's third bailout in five years.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/i/f/x/9/y/image.related.articleLeadwide.620x349.gifwkc.png/1437341923052.jpg'></td><td>2015-07-19 21:36:02</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-prices-for-everyday-items-shoot-up-in-greece-20150719-gifwkc'>site</a></td><td>Value-added tax increases will push up the cost of living in Greece from Monday.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/24/876/493/58de0c8dd1fbe410VgnVCM100000d7c1a8c0____-Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-07-24 11:31:51</td><td><a href='http://www.foxbusiness.com/markets/2015/07/24/greece-to-start-talks-with-creditors-for-new-bailout-after-technical-issues/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>ATHENS, Greece - High-level talks between Greece and its European creditors on a third bailout for the cash-strapped country have been delayed until logistical matters are sorted out.</td></tr>
+</table></body></html>

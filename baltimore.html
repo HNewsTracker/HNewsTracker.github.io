@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 18:46:55</td><td><a href='http://www.miamiherald.com/news/business/technology/article27506683.html#storylink=rss'>site</a></td><td>The Baltimore District of the Army Corps of Engineers is welcoming a new commander.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-18 18:55:11</td><td></td><td><a href='baltimore_8.html'>BALTIMORE - Lawyers for three of the Baltimore police officers charged in the death of Freddie Gray have argued in court filings that their clients gave initial statements under duress because they were afraid of being fired. (4)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-19 00:40:25</td><td></td><td><a href='baltimore_13.html'>BALTIMORE - A 20-year-old man has been charged with attempted murder after Baltimore police say he stabbed an officer after a domestic dispute inside a student apartment building. (2)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-22 09:17:03</td><td></td><td><a href='baltimore_1.html'>But for many in Baltimore, the memory of how Rawlings-Blake responded to the riots is too raw, and the city's unmet expectations are overwhelming. (6)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-23 02:10:04</td><td></td><td><a href='baltimore_6.html'>A former Baltimore police officer has said he plans to perform an Al Jolson routine in blackface to raise money for the six Baltimore officers who have been indicted in the death of Freddie Gray. (4)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-07-27 19:10:05</td><td></td><td><a href='baltimore_0.html'>Police say an 18-year-old man has been shot in the chest near the epicenter of April unrest in west Baltimore. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 21:54:08</td><td><a href='http://www.miamiherald.com/sports/article28919284.html#storylink=rss'>site</a></td><td><table><tr><td>He thought he would spend his entire career in Baltimore, but the Orioles opted not to match Atlanta's contract offer of $44 million over four years.</td></tr><tr><td>His association with Baltimore extended well beyond Camden Yards.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 01:35:29</td><td><a href='http://www.startribune.com/documents-related-to-unrest-after-gray-death-released/318731621/'>site</a></td><td>BALTIMORE - Baltimore officials have released thousands of pages of documents related to unrest following Freddie Gray's death.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 12:39:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article29086993.html#storylink=rss'>site</a></td><td><table><tr><td>Police: Officer shoots, wounds man in Baltimore</td></tr><tr><td>Police say an officer shot a man in the face in southwest Baltimore after the man ran his car into a cruiser.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 22:04:16</td><td><a href='http://www.nydailynews.com/news/national/baltimore-boy-bilateral-hand-transplant-child-article-1.2307091?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>Baltimore boy has first bilateral hand transplant on child</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-07-31 00:43:15</td><td></td><td><a href='baltimore_16.html'>The ACLU and the Baltimore-based Public Justice Center last month called on a federal judge to reopen a lawsuit against the state of Maryland over what the agencies described as substandard conditions. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-04 02:02:10</td><td><a href='http://www.miamiherald.com/news/nation-world/article29901169.html#storylink=rss'>site</a></td><td><table><tr><td>U.S. Rep. Elijah Cummings, front center, and other elected officials announce the start of the Baltimore Federal Homicide Task Force, Monday, Aug. 3, 2015, in Baltimore.</td></tr><tr><td>The homicide rate in Baltimore began to skyrocket in May, when the city saw 42 homicides in a single month.</td></tr></table></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-08-06 08:22:05</td><td></td><td><a href='baltimore_4.html'>As part of his contract with the Baltimore City Police Department, Sachs assessed the mental health and fitness for duty of officers who were removed from active duty due to psychological problems. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 12:32:42</td><td><a href='http://abcnews.go.com/US/wireStory/police-killed-baltimore-shooting-motive-released-33081193'>site</a></td><td>Police: 3 Killed in Baltimore Shooting; No Motive Released</td></tr>
+</table></body></html>

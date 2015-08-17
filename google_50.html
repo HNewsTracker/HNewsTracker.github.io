@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297735260811_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-08-11 21:35:53</td><td><a href='http://www.torontosun.com/2015/08/10/google-forming-new-parent-company-alphabet'>site</a></td><td><table><tr><td>They added that Google's self-driving cars and health ventures, such as storing data on human DNA in the cloud, are potentially profitable, but not for at least several years.</td></tr><tr><td>"Heck, Google itself lost money for years before it went public," he said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/08/10/google650c.jpg&size=104x59&quality=85'></td><td>2015-08-11 22:02:26</td><td><a href='http://technology.canoe.com/News/2015/08/10/22539326.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Investors cheered the corporate restructuring announced Monday for giving greater visibility into Google's central business and seemed less anxious about zany ventures that may pose as distractions.</td></tr><tr><td>Nest, anti-aging company Calico, smart cities company Sidewalk, secretive lab Google X, as well as Google Capital and Google Ventures - two investing units - will all be run separately with their own leaders, Google said.</td></tr></table></td></tr>
+</table></body></html>

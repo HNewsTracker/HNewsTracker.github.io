@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mh17</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-07-17 22:01:50</td><td></td><td><a href='mh17_0.html'>"MH17, where 298 victims were killed for no reason, was shot down by a Russian BUK missile, launched by a Russian professional crew under an order and an instruction from the Russian military," President Petro Poroshenko said on the first anniversary of the disaster. (9)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-18 01:34:05</td><td></td><td><a href='mh17_6.html'>Looking forward to apology from @dailytelegraph & @australian over their #MH17 video "world exclusive" that was broadcast a year ago on BBC. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 17:33:14</td><td></td><td><a href='mh17_8.html'>Foreign Affairs Minister Julie Bishop will push for the United Nations Security Council to establish an international criminal tribunal on the downing of flight MH17 12 months ago. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-29 04:33:57</td><td></td><td><a href='mh17_7.html'>The foreign ministers of the Netherlands, Australia and Ukraine will address what is likely to be an emotional meeting over the downing that killed all 298 people on board Flight MH17. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/07/30/world/mh17-ukraine-un-tribunal/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-07-30 11:33:30</td><td><a href='http://edition.cnn.com/2015/07/30/world/mh17-ukraine-un-tribunal/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_world+%28RSS%3A+CNN+-+World%29'>site</a></td><td>Russia vetoes U.N. MH17 tribunal</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-11 13:24:54</td><td></td><td><a href='mh17_2.html'>"The parts are of particular interest to the criminal investigation as they can possibly provide more information about who was involved in the crash of MH17," said a joint statement by the Dutch Safety Board, which is co-ordinating the air safety investigation, and the Joint Investigation Team which runs the criminal investigation into the tragedy. (8)</a></td></tr>
+</table></body></html>

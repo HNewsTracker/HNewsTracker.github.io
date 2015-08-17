@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tsipras</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/200215m_GreeceGermany_800x600.jpg?itok=r7JSV6Y9'></td><td>2015-07-15 11:57:55</td><td><a href='http://www.sbs.com.au/news/article/2015/07/15/reluctant-tsipras-fights-pass-reforms-greek-parliament'>site</a></td><td>Reluctant Tsipras fights to pass reforms in Greek parliament</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297724771523_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-15 18:12:03</td><td><a href='http://www.torontosun.com/2015/07/15/greek-civil-servants-pharmacists-strike-against-bailout-reforms'>site</a></td><td>Syriza's junior coalition partner said it would vote only for certain clauses in the bill, rejecting those reforms that went beyond a previous vote in parliament that had given Tsipras a mandate to negotiate in Brussels.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/d/b/8/j/image.related.articleLeadwide.620x349.gidayi.png/1436995239589.jpg'></td><td>2015-07-15 20:06:05</td><td><a href='http://www.brisbanetimes.com.au/world/reluctant-greek-prime-minister-alexis-tsipras-fights-to-pass-reforms-in-greek-parliament-20150715-gidayi'>site</a></td><td>But around 30-40 Syriza lawmakers are likely either to abstain or vote against the government, raising a question mark over how long Tsipras can remain in office.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/N_OQphGwzTSCbACAENlRvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/22/102853163-GettyImages-478813678.1910x1000.jpg'></td><td>2015-07-22 14:24:41</td><td><a href='http://finance.yahoo.com/news/tsipras-rallies-troops-ahead-greek-071442070.html'>site</a></td><td>In the first parliamentary vote last week on measures (called "prior actions) including a sales-tax hike, around a quarter of Syriza lawmakers rebelled, making the latest vote tough on Tsipras.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td><table><tr><td>Tsipras effectively lost his majority in parliament in a vote three weeks ago, when nearly one-fourth of Syriza's lawmakers refused to back new austerity measures.</td></tr><tr><td>Also on Friday, Tsipras is due to appear in parliament to answer qustions from the opposition about contingency plans to adopt a parallel payment system that could have facilitated a euro exit.</td></tr></table></td></tr>
+</table></body></html>

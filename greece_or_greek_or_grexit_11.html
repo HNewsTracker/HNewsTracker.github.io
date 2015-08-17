@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 40,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 40 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>17</td><td></td><td>2015-07-17 15:45:14</td><td></td><td><a href='greece_or_greek_or_grexit_11_36.html'>In a sign of growing exasperation with Greece, the number of dissenters in Mrs Merkel's bloc more than doubled from the 29 who voted against extending the second Greek bailout in February. (2)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-07-17 17:30:24</td><td></td><td><a href='greece_or_greek_or_grexit_11_20.html'>BERLIN (AP) " German government officials have appeared to send mixed messages about their desire for Greece to keep using the euro " and that's just the way they want it. (3)</a></td></tr>
+  <tr><td style='display:none'>39</td><td></td><td>2015-07-17 17:30:24</td><td></td><td><a href='greece_or_greek_or_grexit_11_17.html'>Even after that deal, Schaeuble continued talking about a potential "Grexit" ahead of a Greek Parliament vote Wednesday on new austerity measures and Friday's German Parliament vote to approve detailed bailout talks. (56)</a></td></tr>
+  <tr><td style='display:none'>38</td><td></td><td>2015-07-18 13:38:09</td><td></td><td><a href='greece_or_greek_or_grexit_11_22.html'>The Greek government ordered banks to open on Monday, three weeks after they were shut down to prevent the system collapsing under a flood of withdrawals, as Prime Minister Alexis Tsipras looked to the start of new bailout talks next week. (35)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 15:55:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11483359&ref=rss'>site</a></td><td>In a decree Saturday, the Greek government kept the daily cash withdrawal limit at 60 euros ($65) but added a weekly limit.</td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-07-19 08:12:35</td><td></td><td><a href='greece_or_greek_or_grexit_11_29.html'>Schaeuble, who says a "haircut" is illegal in the euro zone, will be waiting with his Plan B for debt relief with Greece outside the currency area. (6)</a></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-07-19 21:36:02</td><td></td><td><a href='greece_or_greek_or_grexit_11_23.html'>Prices have been pushed up by increases in value-added tax, one of the conditions imposed on the country by its creditors before talks began on Greece's third bailout in five years. (4)</a></td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-07-20 05:10:19</td><td></td><td><a href='greece_or_greek_or_grexit_11_19.html'>Over the weekend, Greece's coalition government swore in its new, reshuffled cabinet, replacing five prominent dissidents from the radical left Syriza party, the senior coalition party. (4)</a></td></tr>
+  <tr><td style='display:none'>35</td><td></td><td>2015-07-20 09:35:52</td><td></td><td><a href='greece_or_greek_or_grexit_11_21.html'>Mody's comments come at a time when the IMF has raised concerns over debt relief for Greece, with Managing Director Christine Lagarde advocating extending the maturities on Greek loans. (13)</a></td></tr>
+  <tr><td style='display:none'>33</td><td></td><td>2015-07-20 09:57:04</td><td></td><td><a href='greece_or_greek_or_grexit_11_28.html'>A cleaning woman pushes her trolley outside the Bank of Greece headquarters in Athens, Monday, July 20, 2015. (8)</a></td></tr>
+  <tr><td style='display:none'>29</td><td></td><td>2015-07-21 15:35:54</td><td></td><td><a href='greece_or_greek_or_grexit_11_15.html'>Elias Nikolakopoulos, a leading Greek pollster, said that although it is still early to accurately gauge the depth of Tsipras' popularity, his resilience may be partly due to Greeks seeing him fighting in their corner, doing what he can whether good or bad. (8)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-07-22 08:20:20</td><td></td><td><a href='greece_or_greek_or_grexit_11_18.html'>Lawmakers late Wednesday will vote on judicial and banking reforms set as a requirement by other Eurozone countries for a third Greek rescue package worth 85 billion euros ($93 billion). (2)</a></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-07-22 12:15:38</td><td></td><td><a href='greece_or_greek_or_grexit_11_25.html'>In Brussels, Pierre Moscovici, the European Union's top economy official, said he's shooting for a mid-August timescale for the signing of a bailout deal, while accepting that Greece has to meet a "punishing" schedule. (2)</a></td></tr>
+  <tr><td style='display:none'>37</td><td></td><td>2015-07-22 18:09:17</td><td></td><td><a href='greece_or_greek_or_grexit_11_16.html'>A European banking official told The Associated Press the ECB decided to increase emergency liquidity to Greek banks by 900 million euros ($980 million) - the second such cash injection in just under a week. (21)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 06:54:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Bailout/id-d3bbd9fbded74b2493658337cbb01aaa'>site</a></td><td>The European Commission welcomed the Greek Parliament's vote in favor of further reforms, saying it had taken "another important step toward implementing its commitments" made during a summit of European leaders last week.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-07-23 12:32:00</td><td></td><td><a href='greece_or_greek_or_grexit_11_24.html'>Uncertainty over Greece's bailout and recent capital controls have led to a new spate of store closures in Greek capital. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 12:59:45</td><td><a href='http://www.ctvnews.ca/business/retail-nightmare-greek-store-closures-spike-1.2483357'>site</a></td><td>"The vast majority of Greek companies are half a step from going out of business."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-23 13:01:53</td><td><a href='http://www.cbsnews.com/news/greek-store-closures-spike-as-recession-austerity-return/'>site</a></td><td>ATHENS, Greece - Running a business in Koukaki is becoming a struggle.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/23/ca/1f/82506264bd3140048781407a5353cd42-04b561abd18c401fbfb6cd86716b6037-0.jpg'></td><td>2015-07-23 16:32:38</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-store-closures-spike-as-recession-austerity-/nm5QZ/'>site</a></td><td>"It's over for Greece," said Pradinoudis.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-24 11:03:25</td><td><a href='http://www.reuters.com/article/2015/07/24/us-eurozone-greece-idUSKCN0PW0GI20150724?feedType=RSS&feedName=wtMostRead'>site</a></td><td>The new IMF representative for Greece, Delia Velculescu, and officials from the Commission and the ECB are expected in Athens on Friday.</td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-07-24 23:05:24</td><td></td><td><a href='greece_or_greek_or_grexit_11_32.html'>That is in accordance with the preliminary third bailout agreement Greece struck with its European partners on July 12, which called for IMF financing and monitoring for Greece from March 2016 - when current IMF financing ends. (4)</a></td></tr>
+  <tr><td style='display:none'>32</td><td></td><td>2015-07-25 12:38:51</td><td></td><td><a href='greece_or_greek_or_grexit_11_14.html'>Tsipras, who is by far the most popular politician in Greece according to opinion polls, has said his priority is to secure the bailout package before dealing with the political fallout from the Syriza party rebellion. (7)</a></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='ww.smh.com.au/content/dam/images/g/i/j/g/j/a/image.related.articleLeadwide.620x349.gikl05.png/1437838185560.jpg'></td><td>2015-07-25 15:29:52</td><td><a href='http://www.smh.com.au/world/greek-bailout-talks-to-begin-after-delay-20150725-gikl05'>site</a></td><td><table><tr><td>Apart from the terms of a new loan, Greece and its lenders are also expected to discuss the sustainability of its debt, which is around 170 percent of GDP.</td></tr><tr><td>An overwhelming majority - 78 percent - still wanted Greece to stay in the euro zone against 19 percent in favour of going back to the drachma.</td></tr></table></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-07-26 14:44:22</td><td></td><td><a href='greece_or_greek_or_grexit_11_33.html'>Lafazanis, leader of a hardline faction in the ruling Syriza party that has argued for a return to the drachma, said the move would have allowed pensions and public sector wages to be paid if Greece were forced out of the euro. (2)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-07-28 16:00:48</td><td></td><td><a href='greece_or_greek_or_grexit_11_26.html'>Greek officials were at pains to play down what they see as the humiliating and intrusive aspects of the talks - access to ministries, the right to examine accounts and question civil servants, and the visible presence of the negotiators in Athens. (2)</a></td></tr>
+  <tr><td style='display:none'>31</td><td></td><td>2015-08-03 09:43:00</td><td></td><td><a href='greece_or_greek_or_grexit_11_12.html'>Greece's main stock index plunged over 22% as it reopened Monday after a five-week closure, giving investors their first opportunity since June to react to the country's latest economic crisis. (8)</a></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td><table><tr><td>After five-week shut down, Greek stocks plummet</td></tr><tr><td>Banking shares, which make up about 20 percent of the Greece index, were particularly hard hit.</td></tr></table></td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-08-03 12:54:27</td><td></td><td><a href='greece_or_greek_or_grexit_11_34.html'>Financial information company Markit said its gauge of manufacturing activity in Greece plummeted during the month to 30.2 points, its lowest ever reading, despite improvements across the rest of the 19-country eurozone. (2)</a></td></tr>
+  <tr><td style='display:none'>26</td><td></td><td>2015-08-03 15:43:32</td><td></td><td><a href='greece_or_greek_or_grexit_11_27.html'>Employees of the Athens Stock Exchange look at stock prices which are on display on a ticker screen in Athens, Greece, Monday, Aug. 3, 2015. (4)</a></td></tr>
+  <tr><td style='display:none'>28</td><td></td><td>2015-08-03 23:35:34</td><td></td><td><a href='greece_or_greek_or_grexit_11_37.html'>A plunge of more than 16 percent for the main Greek index and a 30 percent sell-off for bank stocks were the latest signs of Greece?s shattered economy. (5)</a></td></tr>
+  <tr><td style='display:none'>36</td><td></td><td>2015-08-04 04:11:19</td><td></td><td><a href='greece_or_greek_or_grexit_11_13.html'>The limits are costing Greece an estimated 1.75 billion euros to 2.8 billion euros ($1.9 billion to $3.1 billion) weekly. (11)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>The advice to Greece from economists is simple: focus on the basics.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-06 16:51:08</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/06/greek-creditors-report-progress-in-talks-for-new-bailout'>site</a></td><td>A European Commission spokeswoman, Mina Andreeva, said the lenders are hoping to finalize the 85-billion euro ($92.5 billion) agreement in time for a major Greek debt repayment in two weeks.</td></tr>
+  <tr><td style='display:none'>34</td><td></td><td>2015-08-07 11:19:25</td><td></td><td><a href='greece_or_greek_or_grexit_11_31.html'>Greece has said it doesn't want more bridge finance, and non-euro EU countries such as Britain and the Czech Republic are not keen to add to last month's loan from the European Financial Stability Mechanism. (7)</a></td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150807&t=2&i=1070300437&w=644&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEB760IY'></td><td>2015-08-07 23:44:33</td><td><a href='http://www.reuters.com/article/2015/08/07/us-eurozone-greece-idUSKCN0QC19820150807?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greece would be expected to enact another package of reform legislation before Aug. 20, in parallel with national ratification procedures to receive a first aid payment in time to meet the ECB payment.</td></tr>
+  <tr><td style='display:none'>30</td><td></td><td>2015-08-11 07:21:26</td><td></td><td><a href='greece_or_greek_or_grexit_11_30.html'>Greece has relied on international bailouts worth a total 240 billion euros ($263 billion) since it lost market confidence and was unable to borrow from anyone else in 2010. (5)</a></td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/11/66/70/8cbac6fa5ddc4b258ed8cf66b43395e9-b4ff02fa63f449a2b36d0681a7bf1a5f-0.jpg'></td><td>2015-08-11 11:54:46</td><td><a href='http://www.daytondailynews.com/ap/ap/business/greece-closes-in-on-bailout-deal-possibly-within-t/nnHD7/'>site</a></td><td>Greece has agreed to achieving so-called primary surpluses of 1.75 percent in 2017 and 3.5 percent in 2018, the government said in an emailed note.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-08-11 11:54:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>A draft of the agreement cited by the Greek daily Kathimerini said the deal included a package of more than 30 measures that would have to be voted on in Greece's Parliament immediately, followed by a second package of measures to be adopted from October onwards.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-08-13 08:16:58</td><td></td><td><a href='greece_or_greek_or_grexit_11_35.html'>Once passed by Greek parliament, the deal will need to be signed off by the 19 eurozone finance ministers, known as the Eurogroup, who are set to meet on Friday afternoon. (2)</a></td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/14/7e/a9/a1bb0929859a4862b0fc37be4a0eaa64-26e37218dc1e46cfb49e1b62716e9e85-0.jpg'></td><td>2015-08-14 20:44:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-all-night-debate-on-new-bailout/nnKCZ/'>site</a></td><td>The approval came after Greece's parliament passed a slew of painful reforms and spending cuts after a marathon overnight session that divided the governing party, raising the specter of early elections.</td></tr>
+</table></body></html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 22,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 22 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 20:27:38</td><td><a href='http://www.foxnews.com/us/2015/07/22/prosecutors-say-holmes-deserves-to-die-for-theater-shootings/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td><table><tr><td>Already, a fifth-grade teacher who gave videotaped testimony early because he was unavailable during sentencing repeatedly referred to Holmes as "Jimmy" and described him as a bright student with a big smile.</td></tr><tr><td>Jurors would then deliberate for a second time, to decide whether, beyond a reasonable doubt, the mitigating factors so outweigh the aggravating factors that Holmes deserves life without parole rather than execution.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 20:33:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-07-22-US--Colorado%20Shooting/id-477fe2ab5c5348b9a976903b25512494'>site</a></td><td><table><tr><td>(AP) - James Holmes should be put to death for the Colorado theater shooting because he deliberately and cruelly killed 12 people, including a 6-year-old girl, prosecutors told jurors Wednesday.</td></tr><tr><td>The same jurors who convicted Holmes of murder and attempted murder last week - swiftly dismissing his claim that he was legally insane during the attack - must now decide whether to sentence him to death or life in prison without parole.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td><table><tr><td>Colorado's complicated death penalty rules require jurors to decide on aggravating factors before they decide whether Holmes should be executed or sentenced to life in prison.</td></tr><tr><td>Lawyers for Colorado theater shooter James Holmes did not make any arguments disputing that the crime makes him eligible for the death penalty.</td></tr><tr><td>The penalty phase of the trial starts Wednesday with prosecutors telling jurors why Holmes should be eligible for execution.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/37/65/72/8347309/7/square_gallery_thumb.jpg'></td><td>2015-07-23 00:33:00</td><td><a href='http://www.sfgate.com/news/crime/article/Jurors-to-weigh-whether-Colorado-theater-shooter-6398617.php'>site</a></td><td>The monthlong penalty phase of the trial of Holmes, who could be sentenced to death for killing 12 people in a Colorado movie theater, began Wednesday morning with the judge giving instructions to the jury.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-28 22:14:21</td><td><a href='http://www.daytondailynews.com/ap/ap/us/colorado-theater-shooters-sister-says-she-still-lo/nm7j7/'>site</a></td><td><table><tr><td>The father of Colorado theater shooter James Holmes said he didn't know his son suffered from mental illness until he killed 12 people at a Batman movie.</td></tr><tr><td>On the first point, the defense brought back the same court-appointed psychiatrist who found Holmes was legally sane during the attack, this time to say that it was severe mental illness that drove Holmes to kill.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-28 22:14:21</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/28/colorado-theater-shooters-sister-says-she-still-loves-him'>site</a></td><td><table><tr><td>Robert Holmes said he wasn't aware of mental illness in the family until investigators researched it in preparation for this trial.</td></tr><tr><td>"I assumed he might be depressed," Robert Holmes said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-29 01:07:08</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/28/colorado-theater-shooters-sister-says-she-still-loves-him'>site</a></td><td><table><tr><td>(AP) - The father of Colorado theater gunman James Holmes said he never suspected his son was mentally ill before the 2012 attack, but he and his wife became increasingly concerned about him when he stopped returning their phone calls.</td></tr><tr><td>"He told us he loved us, but I could see there was something really wrong with him," Robert Holmes said.</td></tr><tr><td>Robert Holmes said he has seen James Holmes in jail only three times because his son typically does not allow visitors.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/m/r/y/o/image.related.articleLeadwide.620x349.gimrde.png/1438136862947.jpg'></td><td>2015-07-29 02:27:55</td><td><a href='http://www.brisbanetimes.com.au/world/batman-shooter-james-holmes-father-narrates-a-parents-worst-nightmare-20150729-gimrde.html'>site</a></td><td>Robert Holmes: "Yes he is."</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-03 15:29:11</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article29845882.html#storylink=rss'>site</a></td><td>The jury in the Colorado theater shooting trial resumed deliberating Monday whether to keep the death penalty on the table for gunman James Holmes.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-03 15:30:44</td><td><a href='http://www.startribune.com/deliberations-resume-in-colorado-theater-shooting-trial/320487452/'>site</a></td><td>Jurors must decide whether there are any reasons, such as Holmes' mental illness and his trouble-free youth, that mean he should be sentenced to life in prison without parole instead of to death.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://wpmedia.news.nationalpost.com/2015/08/colorado_shooting.jpg?w=620'></td><td>2015-08-03 20:02:35</td><td><a href='http://news.nationalpost.com/news/world/jury-leaves-door-open-to-death-penalty-for-colorado-theatre-killer-james-holmes'>site</a></td><td>? Jurors in the Colorado theatre shooting trial declined to rule out the death penalty Monday as they move toward sentencing James Holmes, finding his defence failed to persuade them to show him mercy.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-08-03 22:42:43</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/03/theater-shooting-jury-decides-whether-execution-still-option'>site</a></td><td>But Robert Holmes acknowledged that they rarely communicated in the months before the theater attack, and that in his family, emotions just weren't talked about, even though his own father and sister had been hospitalized with mental illness.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-08-07 03:05:24</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article30372438.html#storylink=rss'>site</a></td><td>Holmes jurors begin final deliberations: ?Evil? vs. ?mercy?</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-08-08 01:18:06</td><td><a href='http://www.miamiherald.com/news/business/article30425760.html#storylink=rss'>site</a></td><td>Jury verdict means James Holmes will spend life behind bars</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-08-08 02:18:08</td><td><a href='http://www.miamiherald.com/news/business/article30425760.html#storylink=rss'>site</a></td><td><table><tr><td>Jurors in the Colorado theater shooting case reached a decision Friday, Aug. 7, 2015, on whether Holmes should be sentenced to life in prison or the death penalty.</td></tr><tr><td>That automatically eliminates the death penalty for Holmes, who blamed his killings of 12 people on mental illness.</td></tr><tr><td>Jurors also previously moved closer to the death penalty when they quickly determined the heinousness of Holmes' crimes outweighed his mental illness.</td></tr></table></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-08-08 02:28:12</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article30395031.html#storylink=rss'>site</a></td><td>Jurors in the Colorado theater shooting have been dismissed after failing to agree on a sentence for gunman James Holmes.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-08-08 02:28:12</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article30395031.html#storylink=rss'>site</a></td><td>The lead prosecutor in the Colorado theater shooting case says he's frustrated that gunman James Holmes didn't get the death penalty, but he praised jurors for doing a "hell of a job."</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-08-08 02:39:47</td><td><a href='http://www.nydailynews.com/news/national/james-holmes-sentenced-life-prison-theater-attack-article-1.2318522'>site</a></td><td>The case could have ended the same way two years ago when Holmes offered to plead guilty if he could avoid the death penalty.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-08-08 03:51:00</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/07/jury-verdict-means-james-holmes-will-spend-life/'>site</a></td><td>The key issue was Holmes' mental illness.</td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td><table><tr><td>- James Holmes will spend the rest of his life in prison after at least one juror balked at the possibility of sentencing him to death for the massacre that claimed 12 lives and spawned a gut-wrenching four-month trial.</td></tr><tr><td>Holmes' mother, Arlene, who had begged jurors to spare his life, leaned her head against her husband's shoulder and began sobbing.</td></tr><tr><td>There was never any question during the trial as to whether Holmes was the killer.</td></tr></table></td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://i.cbc.ca/1.3192085.1439591848!/cpImage/httpImage/image.jpg_gen/derivatives/original_620/colorado-shooting.jpg'></td><td>2015-08-14 22:41:24</td><td><a href='http://www.cbc.ca/news/world/colorado-theatre-shooter-james-holmes-s-life-spared-by-single-juror-1.3192076?cmp=rss'>site</a></td><td>The holdout hasn't come forward to speak with prosecutors, but other jurors have said testimony about Holmes' mental illness persuaded her to show mercy.</td></tr>
+  <tr><td style='display:none'>21</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/14/18/a0/31e9e3b86fb44f3298cdf9a61aa74e27-5cc671812957448e99801c049e659083-0.jpg'></td><td>2015-08-14 22:50:22</td><td><a href='http://www.daytondailynews.com/ap/ap/us/da-theater-shooters-life-sentence-came-down-to-1-j/nnKcw/'>site</a></td><td><table><tr><td>George Brauchler, lead prosecutor in the case against convicted Colorado theater shooter James Holmes, responds to questions during an interview Friday, Aug. 14, 2015, in Centennial, Colo.</td></tr><tr><td>Brauchler said that the jury's refusal to sentence Holmes to die for one of the worst massacres in the country's history does not mean the public is growing wary of capital punishment because only a single juror blocked the execution.</td></tr><tr><td>The lone holdout felt just as strongly that Holmes should get a life sentence as the 11 other jurors believed he should die for the 2012 shooting, District Attorney George Brauchler said, based on prosecution interviews with some of the panel.</td></tr><tr><td>When it was clear she wouldn't budge, the jurors took a vote, and the holdout told them that if mental illness hadn't been a part of Holmes' defense, she too would have favored a death sentence, Brauchler said.</td></tr></table></td></tr>
+</table></body></html>

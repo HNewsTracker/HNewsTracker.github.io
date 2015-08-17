@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/9ac/sports/soccer/article25659394.ece/ALTERNATES/w220/562982423_481752498.JPG'></td><td>2015-07-24 13:48:49</td><td><a href='http://www.theglobeandmail.com/sports/soccer/fifa-to-meet-sponsors-to-discuss-corruption-reforms/article25659395/?cmpid=rss1'>site</a></td><td>Those confederations are also responsible for electing the members of FIFA's executive committee.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 19:41:35</td><td><a href='http://da.feedsportal.com/c/34692/f/637526/s/48c5a811/sc/3/l/0L0Ssbs0N0Bau0Cnews0Carticle0C20A150C0A80C0A70Cfifa0Eapproaches0Eformer0Eioc0Eofficial0Ecarrard0Ereform0Erole/ia1.htm'>site</a></td><td>FIFA approaches former IOC official Carrard for reform role</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 13:48:07</td><td><a href='http://www.charlotteobserver.com/sports/article30386277.html#storylink=rss'>site</a></td><td><table><tr><td>UEFA: Former IOC official candidate to lead FIFA task force</td></tr><tr><td>Former Olympic official Francois Carrard is the only current candidate to chair FIFA's reform task force, according to UEFA secretary general Gianni Infantino.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-08-11T141154Z_1_LYNXNPEB7A0PE_RTROPTP_2_SOCCER-FIFA.JPG?itok=QEYS9CRh'></td><td>2015-08-11 15:12:46</td><td><a href='http://www.sbs.com.au/news/article/2015/08/12/fifa-name-ex-ioc-official-carrard-head-reform-task-force'>site</a></td><td>Asia's representatives were Sheikh Ahmad Al-Fahad Al-Ahmed Al-Sabah from Kuwait, a member of FIFA's executive committee, and Australia's Kevan Gospar, former vice-president of the IOC.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://static.theglobeandmail.ca/74f/news/national/article24814695.ece/ALTERNATES/w220/VCRD101-SOC+WCup+Kickoff+20.JPG'></td><td>2015-08-11 20:41:10</td><td><a href='http://www.theglobeandmail.com/sports/soccer/soccer-canadas-montagliani-joins-fifa-reform-task-force/article25929850/?cmpid=rss1'>site</a></td><td>Reform proposals being discussed for Blatter's successor as FIFA president and executive committee members include term limits, publishing their salary and stricter vetting of candidates.</td></tr>
+</table></body></html>

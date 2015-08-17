@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-12 15:54:05</td><td><a href='http://www.charlotteobserver.com/sports/article27077500.html#storylink=rss'>site</a></td><td><table><tr><td>Swiss FIFA case has 28 new 'money laundering' acts to study</td></tr><tr><td>Swiss federal prosecutors have new evidence of 28 acts of possible money laundering linked to FIFA's 2018 and 2022 World Cup bid contests.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/9GVJC1dwFGDE0xq_a9t4qQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201507121146423646187'></td><td>2015-07-12 16:47:08</td><td><a href='http://sports.yahoo.com/news/swiss-fifa-case-28-money-laundering-acts-study-155307770--sow.html'>site</a></td><td>Though Lauber's case focuses on the 2018-2022 contests won by Russia and Qatar, respectively, he said it could include other FIFA business.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297724766498_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-07-16 16:09:22</td><td><a href='http://www.torontosun.com/2015/07/16/swiss-authorities-say-one-detained-fifa-official-has-been-extradited-to-us'>site</a></td><td>Blazer admitted sharing in a $10 million bribe scheme with Warner and a third FIFA voter to support South Africa's successful bid for the 2010 World Cup.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 19:00:26</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11483061&ref=rss'>site</a></td><td>Coca-Cola has sponsored FIFA since 1974 with its branding prominent at World Cups.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-18 13:35:17</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11483339&ref=rss'>site</a></td><td>Still, Blatter wants to hang on and shape overdue reforms of FIFA now being demanded even by long-loyal World Cup sponsor Coca-Cola.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-24 10:55:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11486553&ref=rss'>site</a></td><td>Targeting almost $6 billion in revenue from the 2018 tournament, FIFA has not signed any new sponsors since last year's World Cup in Brazil.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-28 14:47:03</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ap-sources-michel-platini-will-run-for-fifa-presid/nm7q4/'>site</a></td><td>Only FIFA's World Cup eluded him.</td></tr>
+</table></body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-29 01:07:08</td><td></td><td><a href='holmes_0_4.html'>Immediately after the testimony, the defense showed the now-familiar mug shot of James Holmes smirking at the camera. (5)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-03 20:02:35</td><td></td><td><a href='holmes_0_3.html'>The same jury last month convicted Holmes of killing 12 people and injuring 70 in the July 2012 attack at a suburban Denver movie theatre. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 22:42:43</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/03/theater-shooting-jury-decides-whether-execution-still-option'>site</a></td><td>Ian Sullivan, the father of Holmes' youngest victim, 6-year-old Veronica Moser-Sullivan, closed his eyes when her name was read.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-07 03:05:24</td><td></td><td><a href='holmes_0_2.html'>In this image taken from video, defense attorney Tamara Brady, right, gestures during closing arguments in the sentencing phase of the James Holmes trial, in Centennial, Colo., Thursday. (3)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-08 02:18:08</td><td></td><td><a href='holmes_0_1.html'>Jurors in the Colorado theater shooting case reached a decision Friday, Aug. 7, 2015, on whether Holmes should be sentenced to life in prison or the death penalty. (37)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-08 05:55:08</td><td></td><td><a href='holmes_0_6.html'>In the back, Aurora police officers who responded to the bloody scene of Holmes' attacks began crying. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-08 05:55:08</td><td></td><td><a href='holmes_0_5.html'>Nine jurors wanted to execute Holmes, but one was steadfastly opposed and two others wavering, a juror told reporters after the verdict was announced. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-08 05:55:08</td><td></td><td><a href='holmes_0_7.html'>Ashley Moser, whose 6-year-old daughter died in the attack and who was herself paralyzed by Holmes' bullets, also shook her head and then slowly leaned it against the wheelchair of another paralyzed victim, Caleb Medley. (2)</a></td></tr>
+</table></body></html>
