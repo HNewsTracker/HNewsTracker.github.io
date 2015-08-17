@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/64/65/8342898/3/square_gallery_thumb.jpg'></td><td>2015-08-13 14:53:35</td><td><a href='http://www.sfgate.com/news/article/Harvard-student-s-app-leads-to-loss-of-Facebook-6442170.php'>site</a></td><td>BOSTON (AP) - A Harvard University student says he lost his internship at Facebook after he launched a browser application that exploited privacy flaws on its mobile messenger.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-13 14:53:35</td><td><a href='http://www.daytondailynews.com/ap/ap/strange/harvard-students-app-leads-to-loss-of-facebook-int/nnJjH/'>site</a></td><td><table><tr><td>Harvard student loses Facebook gig for app that shows flaws</td></tr><tr><td>Aran Khanna's app showed that users of Facebook Messenger could pinpoint the exact locations of people they were talking to.</td></tr><tr><td>A week later, Facebook released a Messenger app update addressing the flaw that a company spokesman said had been in the works for months.</td></tr><tr><td>Facebook was launched from a Harvard dorm room in 2004.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-29 22:17:19</td><td><a href='http://www.latimes.com/business/la-fi-facebook-earns-20150729-story.html'>site</a></td><td><table><tr><td>Facebook had 1.49 billion monthly users overall, up 13%.</td></tr><tr><td>"Once again Facebook has proven its ability to attract and retain users. It's particularly impressive that users are more engaged than ever before - that the percentage of monthly users who visit every day continues to grow," said Forrester Research analyst Nate Elliott.</td></tr></table></td></tr>
 </table></body></html>

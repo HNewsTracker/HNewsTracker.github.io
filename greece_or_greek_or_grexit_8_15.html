@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 16,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/f/5/s/f/image.related.articleLeadwide.620x349.gif5rb.png/1437147797857.jpg'></td><td>2015-07-17 15:45:14</td><td><a href='http://www.brisbanetimes.com.au/world/merkel-wins-greek-aid-vote-in-parliament-after-chaos-warning-20150717-gif5rb'>site</a></td><td>"We are working to ensure that Greece remains a member of the euro because the euro is much more than a currency," Merkel told lawmakers in Berlin in a speech before the vote.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 17:30:24</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11483049&ref=rss'>site</a></td><td>Schaeuble didn't directly refer to a Greek euro exit in Friday's debate, but concluded his speech with a coded warning to Athens: if Greece does its part, he said, "we will put all our strength into making this last chance a success."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Schaeuble, who says a "haircut" is illegal in the euro zone, will be waiting with his Plan B for debt relief with Greece outside the currency area.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/97/00/81358d96ca9f4e93a4fdc14c134a146b-c89b671177104905a33ad7222a6f6fbc-0_1.jpg'></td><td>2015-07-19 15:53:05</td><td><a href='http://www.daytondailynews.com/ap/ap/international/criticism-for-german-idea-that-greece-take-a-euro-/nm3FH/'>site</a></td><td>Merkel rules out 'haircut' for Greece, open to other relief</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-19 16:54:49</td><td><a href='http://www.reuters.com/article/2015/07/19/eurozone-greece-idUSL5N0ZZ0DO20150719?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>Merkel said it would be possible to talk about changing the maturities of Greece's debt or reducing the interest Athens has to pay after the first successful review of the new bailout package to be negotiated.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/f7760e9f1106d7bafb80c9c86217448b66d27b79/0_0_3500_2100/master/3500.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=0daab610c7956254335f5f6bd734b6a9'></td><td>2015-07-19 20:16:54</td><td><a href='http://www.theguardian.com/world/2015/jul/19/greek-banks-reopen-first-time-three-weeks-queues-expected'>site</a></td><td>"Greece has already been given relief. We had a voluntary haircut among the private creditors and we then extended maturities once and reduced interest rates," said Merkel in the interview.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/V9g3M9Yz6YDRJqtLq6WUnA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102845120-GettyImages-480891308.1910x1000.jpg'></td><td>2015-07-20 09:35:52</td><td><a href='http://finance.yahoo.com/news/imf-offer-greece-debt-relief-074303788.html'>site</a></td><td>Mody's comments come at a time when the IMF has raised concerns over debt relief for Greece, with Managing Director Christine Lagarde advocating extending the maturities on Greek loans.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/20/102847608-958a32733acb031e252ed5852af4ea5620f05abb.80x60.jpg?v=1437406843'></td><td>2015-07-20 14:43:00</td><td><a href='http://www.cnbc.com/2015/07/20/greece-starts-paying-back-the-ecb-imf.html'>site</a></td><td>"The IMF has adopted the position that Greece needs debt relief, but somebody else should pay for that."</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-07-23 06:54:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Bailout/id-d3bbd9fbded74b2493658337cbb01aaa'>site</a></td><td>Discussions over the details of the bailout program, which will involve economic targets as well as potential debt relief for Greece, should begin "as swiftly as possible," according to the European Union's executive commission.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.abc.net.au/news/image/6599834-3x2-340x227.jpg'></td><td>2015-07-24 21:28:13</td><td><a href='http://www.abc.net.au/news/2015-07-25/greece-asks-for-fresh-imf-aid-in-step-closer-to-bailout/6647646'>site</a></td><td>But in a letter to IMF managing director Christine Lagarde, finance minister Euclid Tsakalotos wrote Greece was "seeking a new loan" from the IMF.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-24 23:05:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/24/greek-talks-to-begin-after-technical-issues-ironed-out'>site</a></td><td>In a statement Friday evening, the IMF confirmed it had received Greece's request for a new IMF loan and said it would work to arrange talks with Greece and its European creditors.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='ww.smh.com.au/content/dam/images/g/i/j/g/j/a/image.related.articleLeadwide.620x349.gikl05.png/1437838185560.jpg'></td><td>2015-07-25 15:29:52</td><td><a href='http://www.smh.com.au/world/greek-bailout-talks-to-begin-after-delay-20150725-gikl05'>site</a></td><td>Greece has repeatedly asked for a debt relief and the IMF has said this is needed for the Greek accord to be viable.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-28 11:35:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/28/greece-rescue-creditors-in-2nd-day-of-talks-on-new-lifeline'>site</a></td><td>Greece advances in loan talks, under fire for euro exit plan</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150814&i=110517402&w=240&r=110517402-1&t=2'></td><td>2015-08-14 01:55:03</td><td><a href='http://www.reuters.com/article/2015/08/14/us-eurozone-greece-bailout-idUSKCN0QI0W620150814?feedType=RSS&feedName=businessNews'>site</a></td><td>"The IMF ... will make an assessment of its participation in providing any additional financing to Greece once the steps on the authorities' program and debt relief have been taken," IMF Greece mission chief Delia Velculescu said in a statement.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://img.rasset.ie/000afa95-117.jpg'></td><td>2015-08-14 11:52:02</td><td><a href='http://www.rte.ie/news/2015/0814/721143-greece-economy/'>site</a></td><td>The IMF made clear it would participate in the programme only if Europe agreed to ease Greece's huge debt burden.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-08-15 00:10:39</td><td><a href='http://www.reuters.com/article/2015/08/15/us-eurozone-greece-idUSKCN0QJ1PR20150815?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Euro ministers give blessing to Greek bailout, wooing IMF on debt</td></tr><tr><td>Lagarde said in a statement that Europe would need to provide "significant" debt relief as a complement to reforms Athens is trying to put Greece's finances on a sustainable path.</td></tr></table></td></tr>
+</table></body></html>

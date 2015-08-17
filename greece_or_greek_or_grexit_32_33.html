@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 13:58:22</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/10/greek-coast-guard-rescues-1-417-migrants-over-3-days'>site</a></td><td>Tens of thousands of people, many of them fleeing conflict in Syria and Afghanistan, have been making their way from the Turkish coast to nearby Greek islands in inflatable dinghies, overwhelming cash-strapped and understaffed authorities on the islands.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/40/15/26/8443265/3/square_gallery_thumb.jpg'></td><td>2015-08-10 20:38:31</td><td><a href='http://www.sfgate.com/world/article/Greece-struggles-to-cope-with-surge-of-migrants-6435897.php'>site</a></td><td><table><tr><td>A police officer tries to hold migrants behind a fence as they wait to register on the Greek island of Kos.</td></tr><tr><td>KOS, Greece - Greece's coast guard rescued more than 1,400 migrants near several Greek islands in the eastern Aegean Sea over the past three days as the pace of new arrivals increases, authorities said Monday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/11/b3/99/0f6f500631dc468aaaf4b3ad7c88aa6a-b0acb25bd35843648b6b34f707525031-0_1.jpg'></td><td>2015-08-11 08:28:47</td><td><a href='http://www.daytondailynews.com/ap/ap/international/fights-among-migrants-break-out-on-greek-island-of/nnHG2/'>site</a></td><td><table><tr><td>Fights among migrants break out on Greek island of Kos</td></tr><tr><td>Fights broke out among migrants on the Greek island of Kos Tuesday, where overwhelmed authorities are struggling to contain increasing numbers of people arriving clandestinely on rubber dinghies from the nearby Turkish shore.</td></tr><tr><td>Hundreds of people arrive on Greece's eastern Aegean islands daily, many after fleeing conflict in Syria and Afghanistan.</td></tr><tr><td>Greece has been overwhelmed by the number of migrants arriving, with at least 124,000 people reaching the eastern islands in the first seven months of this year alone.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 19:27:35</td><td><a href='http://www.seattlepi.com/news/article/S-P-upgrades-Greece-s-credit-rating-after-6397601.php'>site</a></td><td><table><tr><td>S&P upgrades Greece's credit rating after European bailout</td></tr><tr><td>Standard & Poor's has raised Greece's credit rating after a European bailout reduced the chances of the country's government defaulting on its massive debts during the next year.</td></tr><tr><td>Greece's rating now stands at "CCC+" in an upgrade announced Tuesday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 19:35:20</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11484861&ref=rss'>site</a></td><td>That classification means Greece is still on shaky financial ground, but less likely to face an immediate credit crisis.</td></tr>
 </table></body></html>

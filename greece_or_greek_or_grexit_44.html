@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-15 07:55:22</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/15/migrants-heading-from-turkey-to-greece-scuffle-on-boat'>site</a></td><td><table><tr><td>Migrants from Turkey flood into Greece; scuffles on boat</td></tr><tr><td>It was not immediately clear if Greek authorities were once again intercepting migrants at sea.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-15 08:00:18</td><td><a href='http://www.startribune.com/migrants-heading-from-turkey-to-greece-scuffle-on-boat/321947281/'>site</a></td><td>Financially struggling Greece has reported 134,988 arrivals from Turkey this year, it said, while Italy recorded 93,540 newcomers through July.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-15 08:01:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31181897.html#storylink=rss'>site</a></td><td><table><tr><td>Migrants and refugees gather at a makeshift migrant detention center at Kos' abandoned football stadium after crossing from Turkey, at the southeastern island of Kos, Greece, Friday, Aug. 14, 2015.</td></tr><tr><td>Migrants from the coastal town of Bodrum, Turkey, disembark their boat after it started to sink as they attempted to make their way to the Greek island of Kos, on Saturday, Aug. 15, 2015.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 11:40:09</td><td><a href='http://www.startribune.com/eu-appeals-for-assets-for-greece-hungary-migrant-operations/321019761/'>site</a></td><td>EU appeals to nations to live up to asset pledges for migrant operations in Greece, Hungary</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 13:33:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article30385125.html#storylink=rss'>site</a></td><td><table><tr><td>The European Union appealed Friday to its member countries to live up to pledges to provide planes and other assets so that its border agency can cope with a migrant influx into Greece and Hungary.</td></tr><tr><td>Many countries had pledged assets for short-term use, but Bertaud said more planes and "technical assistance" like personnel and patrol cars are needed for Greece and Hungary.</td></tr></table></td></tr>
 </table></body></html>

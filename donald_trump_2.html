@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>donald trump</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 12:27:58</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article30681675.html#storylink=rss'>site</a></td><td><table><tr><td>Donald Trump returns to Fox News after flap</td></tr><tr><td>Republican presidential candidate Donald Trump, after the first Republican presidential debate at the Quicken Loans Arena in Cleveland.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 13:00:04</td><td><a href='http://www.daytondailynews.com/ap/ap/political/donald-trump-returns-to-fox-news-after-flap/nnHKB/'>site</a></td><td>Donald Trump returned to Fox News Tuesday morning for the first time since attacking the network's Megyn Kelly in the wake of her tough questioning of the GOP candidate for president during the party's first debate.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/brodkorbm_1439560955_gopgal080715037.jpeg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-15 02:10:12</td><td><a href='http://www.startribune.com/trump-to-take-break-from-campaign-trail-for-jury-duty-in-nyc/321933851/'>site</a></td><td>HAMPTON, N.H. - Donald Trump's status as the Republican presidential front-runner can't keep him from jury duty.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 10:47:00</td><td><a href='http://www.cnbc.com/2015/08/17/donald-trump-set-to-report-for-jury-duty-in-manhattan.html'>site</a></td><td><table><tr><td>From campaign to court: Trump to report to jury duty</td></tr><tr><td>Trump is due to report for jury duty Monday in lower Manhattan.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/17/04/e3/6bfe03cd4d3747efa86d48948198c466-6812a24282b842b1b8ca3c8f8bcd7e2a-0.jpg'></td><td>2015-08-17 10:58:45</td><td><a href='http://www.daytondailynews.com/ap/ap/entertainment/from-campaign-to-court-trump-reports-for-jury-duty/nnLPy/'>site</a></td><td>Republican presidential candidate Donald Trump is taking a break from the court of public opinion to go to ... court.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-17 14:47:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-donald-trump-jury-duty-20150817-story.html'>site</a></td><td>Republican presidential candidate Donald Trump took a break Monday from courting voters to go to court as a potential juror.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/17/0d/ba/a333e072a63d4997b339bf9ecf20df7c-68518845a0eb43638b4a339c144138dd-0.jpg'></td><td>2015-08-17 14:57:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/from-campaign-to-court-trump-summoned-for-jury-dut/nnLTS/'>site</a></td><td><table><tr><td>FILE - In this Thursday, Aug. 6, 2015 file photo, Republican presidential candidate Donald Trump participates in the first Republican presidential debate at the Quicken Loans Arena, in Cleveland.</td></tr><tr><td>Republican presidential candidate Donald Trump is surrounded by media as he arrives for jury duty in New York, Monday, Aug. 17, 2015.</td></tr></table></td></tr>
 </table></body></html>
