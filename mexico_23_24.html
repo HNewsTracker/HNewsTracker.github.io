@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 18:31:35</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/14/us-eases-crude-oil-export-ban-allows-trading-with/'>site</a></td><td><table><tr><td>(AP) - The U.S. is easing its longstanding ban on crude oil exports by allowing limited trade with Mexico.</td></tr><tr><td>Mexico's state-run oil company Petroleos Mexicanos, or Pemex, has sought to import about 100,000 barrels of light U.S. crude a day.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 18:31:35</td><td><a href='http://www.foxbusiness.com/markets/2015/08/14/us-to-allows-some-crude-oil-trading-with-mexico-further-easing-longstanding/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>US to allows some crude oil trading with Mexico, further easing longstanding export ban</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 19:34:38</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-eases-crude-oil-export-ban-allows-trading-with-/nnKWw/'>site</a></td><td><table><tr><td>The Obama administration approved limited crude oil trading with Mexico on Friday, further easing the longstanding U.S. ban on crude exports that has drawn consternation from Republicans and energy producers.</td></tr><tr><td>A major crude exporter for decades, Mexico has seen its oil production fall in recent years.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-14 19:34:38</td><td><a href='http://www.sfgate.com/business/energy/article/US-eases-crude-oil-export-ban-allows-trading-6444857.php'>site</a></td><td>Last month a Senate panel approved a bill championed by Murkowski that would lift the 40-year-old-ban - plus open more areas of the Arctic, Gulf of Mexico and the Atlantic Ocean to oil and gas exploration.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 17:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486017&ref=rss'>site</a></td><td>CULIACAN, Mexico (AP) " Palatial tombs mark the final resting spots of top narcotics traffickers in the Jardines de Humaya cemetery in the Sinaloa state capital of Culiacan.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 18:25:39</td><td><a href='http://www.startribune.com/at-mexico-s-narco-cemetery-graves-await-the-inevitable/318313531/'>site</a></td><td>At Mexico's narco cemetery, palatial tombs await the inevitable end for gang members</td></tr>
 </table></body></html>

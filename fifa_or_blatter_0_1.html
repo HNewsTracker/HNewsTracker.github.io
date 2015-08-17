@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/f59/sports/soccer/article25551275.ece/ALTERNATES/w220/91820010.JPG'></td><td>2015-07-17 16:23:23</td><td><a href='http://www.theglobeandmail.com/sports/soccer/fifa-others-defeat-us-lawsuit-over-soccer-concussions/article25551276/?cmpid=rss1'>site</a></td><td><table><tr><td>In a decision on Thursday, Chief Judge Phyllis Hamilton of the federal court in Oakland, California said the plaintiffs could not use the courts to change FIFA's "laws of the game," noting it was their decision to play soccer to begin with.</td></tr><tr><td>The judge also said FIFA was not a proper defendant because there was "no connection" between the lawsuit and any activity that the sport's international governing body, which is based in Switzerland, undertook in California.</td></tr><tr><td>"We will amend the complaint to satisfy the court's order and appeal the FIFA ruling," Steve Berman, a lawyer for the plaintiffs, said in an email.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 14:15:17</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11486993&ref=rss'>site</a></td><td><table><tr><td>The Latest: Depardieu, star of FIFA film, at draw</td></tr><tr><td>Gerard Depardieu, the French actor who portrayed former FIFA president Jules Rimet in the much-panned movie "United Passions," was listed as a guest by FIFA at the qualifying draw.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 14:59:07</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28696741.html#storylink=rss'>site</a></td><td>During a meeting Saturday with Russian President Vladimir Putin ahead of the qualifying draw, the FIFA president told Putin that "we say yes to Russia, we are providing our support" and that the Russian people "can be proud" of Putin.</td></tr>
 </table></body></html>

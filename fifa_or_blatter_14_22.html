@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 06:57:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article27894574.html#storylink=rss'>site</a></td><td><table><tr><td>"The future of FIFA is at stake," Prince Ali, a vice president for four years until May, said in a statement to The Associated Press.</td></tr><tr><td>Prince Ali gave no indication in his statement of whether he intends to run again for the FIFA presidency.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-18 13:35:17</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11483339&ref=rss'>site</a></td><td>The FIFA president wants to stay for a few more months but could a UEFA-driven move to oust him succeed on Monday?</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-19 11:27:05</td><td><a href='http://www.miamiherald.com/news/politics-government/article27804001.html#storylink=rss'>site</a></td><td>When the presidents' group met on May 28, one day after senior FIFA officials were arrested in Zurich, Platini urged his mentor turned adversary to resign.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 17:40:39</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/19/blatter-platini-to-meet-at-sunday-session-of-fifa-leaders'>site</a></td><td><table><tr><td>Like Platini, Hayatou also did not address details of questions about the latest Blatter-chaired meetings, at a time when senior UEFA officials have suggested the FIFA leader should formally resign and leave now.</td></tr><tr><td>Webb, then a FIFA vice president, was one of the seven men arrested in Zurich and among 14 indicted by the U.S. Department of Justice for an alleged bribery racketeering conspiracy.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/20/876/493/Soccer FIFA Election Prince Ali-1.jpg?ve=1&tl=1'></td><td>2015-07-20 12:10:39</td><td><a href='http://www.foxnews.com/world/2015/07/20/fifa-selects-feb-26-for-presidential-election-following-blatter-decision-to/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>FIFA's 209 members will return to Zurich next year to select a new president almost than nine months after Blatter's resignation statement.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31389801.ece/47002/ALTERNATES/h342/PANews%20BT_P-08abbeeb-a15e-47f8-8f69-c0595d1c6f94_I1.jpg'></td><td>2015-07-20 12:12:21</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/fifa-presidential-election-planned-for-february-31389802.html'>site</a></td><td>Fifa is reeling under the weight of American and Swiss criminal investigations into corruption, which led to 14 officials being indicted in May when Mr Blatter won a fifth term.</td></tr>
 </table></body></html>

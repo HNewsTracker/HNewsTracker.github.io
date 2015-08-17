@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,10 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-15 17:24:00</td><td></td><td><a href='google_10_12.html'>Both Google and Facebook have been stepping up efforts to advance location-based technology as consumers spend more time on smartphones. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/13/102676070-145812002.530x298.jpg?v=1431538605'></td><td>2015-07-15 17:24:00</td><td><a href='http://www.cnbc.com/2015/07/15/google-unveils-buy-button-host-of-new-shopping-features.html'>site</a></td><td>The additional information will be available on Google Chrome for Android this month, with iOS support to follow in the coming months, the company said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-15 17:55:18</td><td></td><td><a href='google_10_11.html'>The eagerly awaited "buy" feature, which Google said it was testing with a few retailers, uses saved payment credentials from the user s Google Account for transactions. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-08-10 21:14:43</td><td></td><td><a href='google_10_12.html'>Google creates Alphabet, institutes Sundar Pichai as CEO (7)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-10 21:42:00</td><td></td><td><a href='google_10_11.html'>Google, which has been expanding far beyond its original business of Internet search advertising, is changing its operating structure by creating a new holding company called Alphabet. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 00:42:20</td><td><a href='http://www.miamiherald.com/news/business/technology/article30661551.html#storylink=rss'>site</a></td><td><table><tr><td>Milestones over 20 years of Google's history</td></tr><tr><td>1998: Google incorporates and moves into Susan Wojcicki's garage in Menlo Park, California.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 04:18:07</td><td><a href='http://www.charlotteobserver.com/news/business/article30674268.html#storylink=rss'>site</a></td><td>FILE - This Thursday, Jan. 3, 2013, photo shows Google's headquarters in Mountain View, Calif.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03404/larrypage_3404531g.jpg'></td><td>2015-08-11 11:42:13</td><td><a href='http://www.telegraph.co.uk/technology/google/11795673/Sundar-Pichai-Meet-Googles-new-CEO.html'>site</a></td><td>Google+ is launched.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03404/larrypage_3404531b.jpg'></td><td>2015-08-11 12:17:17</td><td><a href='http://www.telegraph.co.uk/technology/google/11796103/Google-and-Alphabet-What-does-this-all-mean.html'>site</a></td><td>Web browser Google Chrome is launched.</td></tr>
 </table></body></html>

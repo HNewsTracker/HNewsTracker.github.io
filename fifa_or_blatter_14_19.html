@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,12 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-19 11:27:05</td><td><a href='http://www.miamiherald.com/news/politics-government/article27804001.html#storylink=rss'>site</a></td><td>Blatter, Platini to meet at Sunday session of FIFA leaders</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/dd15760/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F84%2Fe93eee2464922ac3a880f18888ef21%2Fmedia%3Ae3f021253d794063a5bd33734d19b871SoccerFIFAElectionPrinceAli.JPEG'></td><td>2015-07-20 09:43:20</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/20/fifa-to-decide-on-election-date-platini-gains-support'>site</a></td><td>FIFA to decide on election date; Platini gains support</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-28T115602Z_1_LYNXNPEB6R0J7_RTROPTP_2_SOCCER-WORLD-DRAW.JPG?itok=krKmsk9Y'></td><td>2015-07-28 13:21:14</td><td><a href='http://www.sbs.com.au/news/article/2015/07/28/uefa-head-platini-announce-fifa-presidency-bid'>site</a></td><td>Platini has long been the bookmakers' favourite to succeed Blatter and last week his supporters indicated that he has picked up widespread support from leaders of the continental confederations.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 19:59:07</td><td><a href='http://www.reuters.com/article/2015/07/17/soccer-fifa-cola-idUSL2N0ZX1MG20150717?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>A number of anti-corruption groups, including Transparency International, also issued calls this week for FIFA's reform process to be handled by an independent body.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-17T233340Z_2_LYNXNPEB6G11M_RTROPTP_2_COCA-COLA-RUSSIA-ADVERTISING.JPG?itok=zlRGCoI4'></td><td>2015-07-17 23:34:16</td><td><a href='http://www.sbs.com.au/news/article/2015/07/18/major-sponsors-coca-cola-mcdonalds-demand-reforms-fifa'>site</a></td><td><table><tr><td>Coca-Cola urged Zurich-based FIFA to support the creation of an independent body to reform the way it is run.</td></tr><tr><td>"We have written to FIFA and asked them to support an independent third-party commission for reforms," a spokeswoman for Coca-Cola said on Friday.</td></tr><tr><td>McDonald's, while not specifying particular support for an independent commission, said in a statement that "recent allegations and indictments have severely tarnished FIFA in a way that strikes at the very heart of our sponsorship."</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 14:26:54</td><td><a href='http://www.miamiherald.com/news/politics-government/article27904912.html#storylink=rss'>site</a></td><td>Blatter insists he is leaving FIFA, will not be candidate</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-22T151710Z_1_LYNXNPEB6L0QC_RTROPTP_2_SOCCER-FIFA.JPG?itok=V8CIP8Aj'></td><td>2015-07-22 16:02:04</td><td><a href='http://www.sbs.com.au/news/article/2015/07/23/scala-winning-support-head-fifas-reform-task-force-sources'>site</a></td><td>FIFA has said that the chairman of the task force would be decided in consultation with the confederations' presidents.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150727&t=2&i=1067421311&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6Q0UQ'></td><td>2015-07-27 18:29:23</td><td><a href='http://www.reuters.com/article/2015/07/27/us-soccer-fifa-reform-idUSKCN0Q11YY20150727?feedType=RSS&feedName=sportsNews'>site</a></td><td><table><tr><td>ZURICH Scandal-plagued FIFA responded to criticism of its new reforms task force on Monday by saying an "independent person from outside of the game" should head the group.</td></tr><tr><td>The move will placate Scala, who had already been working on reform plans for FIFA before the creation of the task force last week.</td></tr><tr><td>"The work of the task force will be overseen by the independent bodies of FIFA, namely the Audit and Compliance, the Disciplinary and the Ethics Committee," added the statement.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-06 19:41:35</td><td><a href='http://da.feedsportal.com/c/34692/f/637526/s/48c5a811/sc/3/l/0L0Ssbs0N0Bau0Cnews0Carticle0C20A150C0A80C0A70Cfifa0Eapproaches0Eformer0Eioc0Eofficial0Ecarrard0Ereform0Erole/ia1.htm'>site</a></td><td>FIFA approaches former IOC official Carrard for reform role</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-07 13:48:07</td><td><a href='http://www.miamiherald.com/sports/article30386277.html#storylink=rss'>site</a></td><td><table><tr><td>The task force has no leader weeks before a FIFA-set deadline of Sept.</td></tr><tr><td>UEFA has already sent FIFA its two nominations to join the task force, said Infantino, who declined to identify the officials.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-07 13:48:07</td><td><a href='http://www.charlotteobserver.com/sports/article30386277.html#storylink=rss'>site</a></td><td><table><tr><td>UEFA: Former IOC official candidate to lead FIFA task force</td></tr><tr><td>Former Olympic official Francois Carrard is the only current candidate to chair FIFA's reform task force, according to UEFA secretary general Gianni Infantino.</td></tr></table></td></tr>
 </table></body></html>

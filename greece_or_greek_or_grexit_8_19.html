@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 15:43:32</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-08-03-EU--Greece-Bailout/id-aa6c6a7ec3fd4bc5b064dd11b472fe09'>site</a></td><td><table><tr><td>Employees of the Athens Stock Exchange look at stock prices which are on display on a ticker screen in Athens, Greece, Monday, Aug. 3, 2015.</td></tr><tr><td>Declan Costello, front, European Commission representative, arrives at the Labour ministry in Athens, Greece, on Monday, Aug. 3, 2015.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 12:32:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Out%20of%20Business/id-88af5b485d1f4c2b91d1b81651be43c1'>site</a></td><td>Uncertainty over Greece's bailout and recent capital controls have led to a new spate of store closures in Greek capital.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03365/greeceno1_3365948g.jpg'></td><td>2015-08-05 13:44:18</td><td><a href='http://www.telegraph.co.uk/finance/economics/11784364/Greece-in-final-stage-of-bail-out-talks-as-bank-shares-collapse-for-a-third-day.html'>site</a></td><td>"Despite the difficulties we are facing we hope this agreement can end uncertainty on the future of Greece."</td></tr>
 </table></body></html>

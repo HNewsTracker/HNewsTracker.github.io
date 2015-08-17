@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/16/102840624-c2967d5b1259ab2becba3ac73f8f74a6cae48a01.80x60.jpg?v=1437074264'></td><td>2015-07-17 17:21:00</td><td><a href='http://www.cnbc.com/2015/07/17/etsy-shares-soar-after-google-mention.html'>site</a></td><td><table><tr><td>Etsy shares spike after Google mention</td></tr><tr><td>Shares of e-commerce website Etsy jumped as much as 30 percent on Friday thanks to a nod from Google during its quarterly conference call.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 10:13:00</td><td><a href='http://www.fin24.com/Tech/News/Google-Samsung-to-issue-monthly-Android-security-fixes-20150807'>site</a></td><td>Ludwig also said Google has made other security changes.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/01/12/102330052-168808561.530x298.jpg?v=1421079643'></td><td>2015-08-07 11:05:00</td><td><a href='http://www.cnbc.com/2015/08/07/google-samsung-to-issue-monthly-android-security-fixes.html'>site</a></td><td><table><tr><td>Previously, Google would develop a patch and distribute it to its own Nexus phones after the discovery of security flaws.</td></tr><tr><td>Google made its roughly weekly security scans of Russian phones more frequent and was able to reduce the problems to close to the global norm.</td></tr><tr><td>He added that only about one in 200 Android phones Google can peer into have any potentially harmful applications installed at any point.</td></tr></table></td></tr>
 </table></body></html>

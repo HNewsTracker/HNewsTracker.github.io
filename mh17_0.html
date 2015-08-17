@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 15:41:16</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27471565.html#storylink=rss'>site</a></td><td>Dutch, Ukrainians, Australians mark year since MH17 downing</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 15:41:28</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/17/ukrainian-village-marks-anniversary-of-malaysian-plane-crash'>site</a></td><td>Rebel leader Alexander Zakharchenko, who arrived at the commemoration ceremony on crutches and surrounded by a posse of gunmen, accused the Ukrainian government of taking down MH17.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-17 22:01:50</td><td></td><td><a href='mh17_0_1.html'>"MH17, where 298 victims were killed for no reason, was shot down by a Russian BUK missile, launched by a Russian professional crew under an order and an instruction from the Russian military," President Petro Poroshenko said on the first anniversary of the disaster. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-17 22:01:50</td><td><a href='http://www.sbs.com.au/news/article/2015/07/18/netherlands-remembers-mh17-victims'>site</a></td><td>At Amsterdam's Schiphol Airport, from where flight MH17 departed, and at towns across the country, sunflowers were laid like those that grow at the crash site.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-17 22:01:50</td><td></td><td><a href='mh17_0_1.html'>"MH17, where 298 victims were killed for no reason, was shot down by a Russian BUK missile, launched by a Russian professional crew under an order and an instruction from the Russian military," President Petro Poroshenko said on the first anniversary of the disaster. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 22:01:50</td><td><a href='http://www.sbs.com.au/news/article/2015/07/18/netherlands-remembers-mh17-victims'>site</a></td><td>At Amsterdam's Schiphol Airport, from where flight MH17 departed, and at towns across the country, sunflowers were laid like those that grow at the crash site.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,5 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-17 08:40:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11498678&ref=rss'>site</a></td><td>Egypt president signs new anti-terrorism law into effect</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 09:56:02</td><td></td><td><a href='egypt_9_10.html'>Egypt has not had a parliament for over two years, and legislative authority rests with el-Sissi, who has passed dozens of laws in his 14 months in office. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-17 13:37:08</td><td></td><td><a href='egypt_9_10.html'>Egypt has not had a parliament for over two years, and legislative authority rests with el-Sissi, who as military chief in 2013 ousted the Islamist Mohammed Morsi, the country's first freely elected president. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48516823,width-300,resizemode-4/a-.jpg'></td><td>2015-08-17 15:29:23</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Egypt-president-approves-sweeping-anti-terrorism-law/articleshow/48516804.cms'>site</a></td><td>Mohammed Zaree, Egypt program manager at the Cairo Institute for Human Rights Studies, said the government has already been acting without restraint in its crackdown on dissent.</td></tr>
 </table></body></html>
