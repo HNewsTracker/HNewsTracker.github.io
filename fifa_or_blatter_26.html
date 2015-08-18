@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 14,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,18 +48,8 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-07-19 17:40:39</td><td></td><td><a href='fifa_or_blatter_26_36.html'>Like Platini, Hayatou also did not address details of questions about the latest Blatter-chaired meetings, at a time when senior UEFA officials have suggested the FIFA leader should formally resign and leave now. (2)</a></td></tr>
-  <tr><td style='display:none'>13</td><td></td><td>2015-07-20 06:32:03</td><td></td><td><a href='fifa_or_blatter_26_27.html'>Prince Ali bin al-Hussein wants Sepp Blatter to leave now as FIFA president, and let a leader from outside the sport oversee the next election and reforms of soccer's scandal-scarred governing body. (46)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 15:47:12</td><td><a href='http://www.miamiherald.com/sports/article27906970.html#storylink=rss'>site</a></td><td>As Blatter took his seat, performer Simon Brodkin rose from a front-row seat to speak and shower the FIFA president with what appeared to be fake money bills.</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-07-20 21:05:25</td><td></td><td><a href='fifa_or_blatter_26_37.html'>Sepp Blatter had a good day at the office on Monday, even if a prankster tried to spoil it by showering the FIFA president with fake dollar bills at a news conference. (5)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-21 06:27:03</td><td></td><td><a href='fifa_or_blatter_26_33.html'>Chung said he plans to consult leaders of regional confederations and other key figures before he finalizes his decision whether to run for FIFA's top job. (2)</a></td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-07-24 11:41:35</td><td></td><td><a href='fifa_or_blatter_26_30.html'>"Definitely the current situation does not help to finalize any new agreement. That is a fact," FIFA secretary general Jerome Valcke said Friday ahead of this weekend's qualifying draw, the first big event for host Russia. (6)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-07-24 16:02:42</td><td></td><td><a href='fifa_or_blatter_26_34.html'>"Clearly, there were a number of sponsors, mainly three, its Coca-Cola, McDonald's and Visa, who have expressed and sent a letter to FIFA, asking for information," he told a new conference in the Russian city of St Petersburg. (5)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-07-27 18:29:23</td><td></td><td><a href='fifa_or_blatter_26_32.html'>"The work of the task force will be overseen by the independent bodies of FIFA, namely the Audit and Compliance, the Disciplinary and the Ethics Committee," added the statement. (4)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 03:32:17</td><td></td><td><a href='fifa_or_blatter_26_31.html'>Blatter, an IOC member since 1999, would have had to retire from his IOC term next year anyway because he turns 80 in March. (2)</a></td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-08-07 13:48:07</td><td></td><td><a href='fifa_or_blatter_26_29.html'>Former Olympic official Francois Carrard is the only current candidate to chair FIFA's reform task force, according to UEFA secretary general Gianni Infantino. (10)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 10:41:06</td><td><a href='http://www.miamiherald.com/news/politics-government/article31283699.html#storylink=rss'>site</a></td><td>Chung's cousin, Korean FA president Chung Mong-gyu, was defeated in April standing for one of Asia's four FIFA executive seats.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-08-17 13:34:34</td><td></td><td><a href='fifa_or_blatter_26_28.html'>German newspaper Welt am Sonntag said on Sunday that the document, entitled "Platini - skeleton in the closet", was distributed out of Fifa's headquarters. (3)</a></td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-08-17 19:25:08</td><td></td><td><a href='fifa_or_blatter_26_35.html'>"It is disturbing, to say the least, to hear Dr Chung Mong-joon describe Fifa as a corrupt organisation while announcing his candidacy," said Blatter. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/4a6/sports/soccer/article25991643.ece/ALTERNATES/w220/CSPORTS_US_SOCCER_FIFA_REFORMS.JPG'></td><td>2015-08-17 20:11:15</td><td><a href='http://www.theglobeandmail.com/sports/soccer/fifa-official-proposes-abolishing-executive-committee-as-part-of-reform-plan/article25991644/?cmpid=rss1'>site</a></td><td>Although FIFA does not have the power to force its member associations to introduce their own term limits, the plan envisages changing FIFA's rules to ensure that only associations with term-limits are able to have individuals elected to FIFA's bodies.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 18:57:12</td><td></td><td><a href='fifa_or_blatter_26_28.html'>On Saturday, at a meeting with Putin in St. Petersburg, Blatter said that FIFA, facing a major bribery scandal, had passed a resolution offering full support for holding the 2018 World Cup in Russia. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-27T181152Z_1_LYNXNPEB6Q0U4_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-PUTIN.JPG?itok=FsP7dYkJ'></td><td>2015-07-27 19:18:23</td><td><a href='http://www.sbs.com.au/news/article/2015/07/28/people-blatter-deserve-nobel-prize-putin-tells-swiss-tv'>site</a></td><td>An economic crisis has forced cut-backs in Russia's World Cup preparations, but Putin and FIFA officials have said this will not affect Russia's ability to host the championship.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-27 20:29:53</td><td></td><td><a href='fifa_or_blatter_26_27.html'>"I think people like Mr Blatter or the heads of big international sporting federations, or the Olympic Games, deserve special recognition. If there is anyone who deserves the Nobel prize, it's those people." (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-28 11:50:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article29088274.html#storylink=rss'>site</a></td><td>Blatter made a similar comment in his first interview after being re-elected president of FIFA on May 29.</td></tr>
 </table></body></html>

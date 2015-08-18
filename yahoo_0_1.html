@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-29 17:47:00</td><td><a href='http://www.cnbc.com/2015/07/29/yahoo-to-roll-out-private-video-texting-app.html'>site</a></td><td><table><tr><td>Yahoo to roll out private video texting app</td></tr><tr><td>Yahoo is trying to make that happen with Livetext, a new app that seeks to make video calling as private as texting.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://wpmedia.business.financialpost.com/2015/07/livetext-yahoo.jpg?w=620'></td><td>2015-07-29 20:12:23</td><td><a href='http://business.financialpost.com/fp-tech-desk/personal-tech/yahoo-inc-unveils-livetext-messaging-app-that-enables-video-calls-but-mutes-sound'>site</a></td><td>Yahoo says video calls can be better than texts for expressing emotions, but their audio component makes private conversations public.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-30 06:13:29</td><td><a href='http://www.bbc.co.uk/newsbeat/article/33714117/yahoo-launches-livetext-messaging-app-to-rival-snapchat-and-whatsapp'>site</a></td><td>Arjun Sethi came to Yahoo from the mobile messaging app MessageMe, bought by Yahoo last year.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/n/g/m/s/image.related.articleLeadwide.620x349.ginfvx.png/1438253211210.jpg'></td><td>2015-07-29 23:19:12</td><td><a href='http://www.smh.com.au/digital-life/digital-life-news/yahoos-strange-new-chat-app-combines-text-and-silent-video-20150730-ginfvx.html'>site</a></td><td><table><tr><td>Yahoo's Livetext app combines traditional text messages with a silent video feed.</td></tr><tr><td>"It's a new way to communicate: casual text on top of video," Arjun Sethi, a senior director of product management at Yahoo and head of the Livetext project, said in an interview.</td></tr><tr><td>"The key thing for us was to make this as simple as possible," said Adam Cahan, Yahoo's senior vice president of video, design and emerging products, in an interview.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 14:12:14</td><td></td><td><a href='obamacare_1.html'>Senate Republican leaders announced plans Friday to use a must-pass highway bill to try to overturn President Barack Obama's health care law, in the latest GOP assault on "Obamacare." (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 14:12:14</td><td></td><td><a href='obamacare_2.html'>Senate Republican leaders announced plans Friday to use a must-pass highway bill to try to overturn President Barack Obama's health care law, in the latest GOP assault on "Obamacare." (3)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-07-27 20:10:49</td><td><a href='http://www.mercurynews.com/health/ci_28544553/obamacare-new-covered-california-rates-increase-4-percent?source=rss'>site</a></td><td>Obamacare: New Covered California rates increase 4 percent statewide for 2016</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 12:22:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/politics/ct-scott-walker-health-care-plan-20150818-story.html'>site</a></td><td>Scott Walker proposes tax credits to replace Obamacare</td></tr>
 </table></body></html>
