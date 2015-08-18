@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297728874358_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-24 05:21:37</td><td><a href='http://www.torontosun.com/2015/07/24/us-justice-dept-asked-to-probe-hillary-clintons-email-use-report'>site</a></td><td><table><tr><td>NEW YORK - The U.S. Justice Department is weighing a request by two government inspectors general to open a criminal investigation into Hillary Clinton's use of a private email account for her work as secretary of state, the New York Times reported on Thursday.</td></tr><tr><td>Clinton has repeatedly said she broke no laws or rules by eschewing a standard government email account for her State Department work in favor of a private account linked to a computer server in her New York home.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 12:46:00</td><td><a href='http://www.cnbc.com/2015/07/23/criminal-inquiry-sought-in-hillary-clintons-use-of-email.html'>site</a></td><td>Criminal probe sought into Hillary Clinton's email</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 12:50:48</td><td><a href='http://www.sfgate.com/news/article/Sources-Justice-asked-to-consider-probing-6403175.php'>site</a></td><td>WASHINGTON (AP) - Federal officials say two government inspectors general have asked the Justice Department to determine whether sensitive government information was transmitted on Hillary Rodham Clinton's personal email.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-05 10:28:57</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article30016806.html#storylink=rss'>site</a></td><td><table><tr><td>FBI looking into the security of Hillary Clinton?s private email setup</td></tr><tr><td>He noted that Clinton has called repeatedly for the State Department to release her emails to the public, a process that is ongoing.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297735717764_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-08-12 01:22:44</td><td><a href='http://www.torontosun.com/2015/08/11/hillary-clinton-relents-gives-up-possession-of-private-email-server-to-justice-department'>site</a></td><td>WASHINGTON -- Hillary Rodham Clinton relented Tuesday to months of demands she relinquish the personal email server she used while secretary of state, directing the device be given to the Justice Department.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-12 03:34:11</td><td><a href='http://www.bbc.co.uk/news/world-us-canada-33872602#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Clinton to hand over email server</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:07:46</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28703929.html#storylink=rss'>site</a></td><td>Democratic presidential hopeful Hillary Rodham Clinton speaks Friday, July 24, 2015, at the New York University Leonard N. Stern School of Business in New York.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/k/7/t/k/image.related.articleLeadwide.620x349.gikl7p.png/1437849643803.jpg'></td><td>2015-07-25 18:40:05</td><td><a href='http://www.brisbanetimes.com.au/world/hillary-clinton-set-to-testify-before-benghazi-panel-20150725-gikl7p'>site</a></td><td>Democratic presidential candidate Hillary Clinton speaks at a campaign event in West Columbia, South Carolina last week.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/7e4/news/world/article25937311.ece/ALTERNATES/w220/BKS20_USA_ELECTION_CLINTON.JPG'></td><td>2015-08-12 11:46:36</td><td><a href='http://www.theglobeandmail.com/news/world/hillary-clinton-to-give-private-email-server-to-us-justice-department/article25937312/?cmpid=rss1'>site</a></td><td>U.S. Democratic presidential candidate Hillary Clinton listens to a question from the audience during a community forum about substance abuse in Keene, New Hampshire August 11, 2015.</td></tr>
 </table></body></html>

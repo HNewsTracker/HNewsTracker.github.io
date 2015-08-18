@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 15:25:23</td><td><a href='http://www.foxnews.com/politics/2015/07/25/clinton-to-testify-before-house-committee-on-benghazi/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fpolitics+%28Internal+-+Politics+-+Text%29'>site</a></td><td>Clinton to testify before House committee on Benghazi</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03387/CLINTON_3387597b.jpg'></td><td>2015-07-25 17:52:41</td><td><a href='http://www.telegraph.co.uk/news/worldnews/us-politics/11763155/Hillary-Clinton-agrees-to-testify-before-Benghazi-committee.html'>site</a></td><td>Hillary Clinton has agreed to appear before a congressional committee investigating the 2012 attacks that killed the US ambassador to Libya and three other Americans in Benghazi, according to her presidential campaign.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:07:46</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28703929.html#storylink=rss'>site</a></td><td>Hillary Clinton says she will testify this October before a public hearing of the House committee investigating the deaths of four Americans in Benghazi, Libya.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/k/7/t/k/image.related.articleLeadwide.620x349.gikl7p.png/1437849643803.jpg'></td><td>2015-07-25 18:40:05</td><td><a href='http://www.brisbanetimes.com.au/world/hillary-clinton-set-to-testify-before-benghazi-panel-20150725-gikl7p'>site</a></td><td>Hillary Clinton set to testify before Benghazi panel</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297728874358_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-07-24 05:21:37</td><td><a href='http://www.torontosun.com/2015/07/24/us-justice-dept-asked-to-probe-hillary-clintons-email-use-report'>site</a></td><td>NEW YORK - The U.S. Justice Department is weighing a request by two government inspectors general to open a criminal investigation into Hillary Clinton's use of a private email account for her work as secretary of state, the New York Times reported on Thursday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 12:46:00</td><td><a href='http://www.cnbc.com/2015/07/23/criminal-inquiry-sought-in-hillary-clintons-use-of-email.html'>site</a></td><td>Criminal probe sought into Hillary Clinton's email</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-05 10:28:57</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article30016806.html#storylink=rss'>site</a></td><td>FBI looking into the security of Hillary Clinton?s private email setup</td></tr>
 </table></body></html>
