@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,11 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/apple500.jpg?ve=1&tl=1'></td><td>2015-07-16 16:51:31</td><td><a href='http://www.foxbusiness.com/technology/2015/07/16/apple-faces-class-action-suit-over-bag-searches/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td><table><tr><td>Apple Faces Class Action Suit Over Bag Searches</td></tr><tr><td>One worker, whose name was blacked out of a court filing, told Cook in a 2012 message that Apple managers "are required to treat 'valued' employees as criminals."</td></tr><tr><td>Apple had argued in court filings that the case was not suitable for class action status because not all store managers conducted bag searches, and any searches that did occur took a tiny amount of time which don't deserve compensation.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 12:58:26</td><td><a href='http://finance.yahoo.com/news/futures-little-changed-ahead-apple-113205365.html'>site</a></td><td>Stock futures little changed ahead of Apple earnings</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 08:41:58</td><td><a href='http://finance.yahoo.com/news/asian-shares-dragged-down-wall-003647188.html'>site</a></td><td>LONDON (Reuters) - Disappointment over U.S. corporate earnings, most notably at Apple Inc (AAPL.O), the world's largest company, pushed stocks lower on Wednesday and investors towards the shelter of bonds.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 09:36:03</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-global-stocks-sour-as-apple-results-leave-bitter-aftertaste/article25624358/?cmpid=rss1'>site</a></td><td>Premarket: Global stocks sour as Apple results leave bitter aftertaste</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-22 11:25:26</td><td><a href='http://www.reuters.com/article/2015/07/22/us-markets-stocks-idUSKCN0PW15G20150722?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>U.S. stock futures fall as Apple results disappoint</td></tr><tr><td>U.S. stock index futures fell on Wednesday as corporate earnings disappointed, especially from Apple (AAPL.O), the world's largest company.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 11:47:06</td><td><a href='http://www.miamiherald.com/news/business/article28080421.html#storylink=rss'>site</a></td><td><table><tr><td>Apple outlook weighs on global markets</td></tr><tr><td>A cautious outlook from Apple coupled with indifferent earnings from U.S. technology firms weighed on global stock markets Wednesday ahead of another key vote in the Greek Parliament.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-22 18:15:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/22/tech-shares-lead-an-early-slump-for-us-stocks'>site</a></td><td>THE QUOTE: As the biggest publicly traded company in the world, Apple has a big impact on the market.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 20:50:08</td><td><a href='http://www.miamiherald.com/news/business/article28221517.html#storylink=rss'>site</a></td><td>"Apple is the biggest publicly traded company in the world, so it's going to have a big impact on the indices," noted Erik Davidson, chief investment officer at Wells Fargo Private Bank.</td></tr>
 </table></body></html>

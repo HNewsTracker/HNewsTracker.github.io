@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 04:47:05</td><td></td><td><a href='apple_2_4.html'>And of the more than a dozen early Apple Watch owners interviewed by the AP by phone, email or in person, most of them love their watch. (9)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 23:20:05</td><td></td><td><a href='apple_2_3.html'>Apps will get better when Apple updates the watch's software this fall to permit more "native" apps -- those that aren't just extensions of phone apps. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 06:20:39</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/pharrell-one-direction-among-headliners-at-apple/'>site</a></td><td><table><tr><td>LOS ANGELES (AP) - Pharrell Williams, One Direction and Florence + The Machine are going to appear at the Apple Music Festival next month.</td></tr><tr><td>Niall Horan of One Direction said the group is excited to return to London "to perform for our fans in the Roundhouse and around the world on Apple Music!"</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-18 06:23:57</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article31369988.html#storylink=rss'>site</a></td><td>Previously known as the iTunes Festival, the eight-year-old concert event was renamed the Apple Music Festival to support the launch earlier this summer of the new Apple Music app.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-18 06:23:57</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article31369988.html#storylink=rss'>site</a></td><td><table><tr><td>Pharrell, One Direction among headliners at Apple Music fest</td></tr><tr><td>19. Festival performances will be broadcast live and on-demand on Apple Music, and additional material will be available on the app's Beats 1 radio.</td></tr></table></td></tr>
 </table></body></html>

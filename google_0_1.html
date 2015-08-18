@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 13,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -57,4 +57,8 @@
   <tr><td style='display:none'>6</td><td></td><td>2015-08-10 21:42:00</td><td><a href='http://www.chicagotribune.com/business/ct-google-alphabet-20150810-story.html'>site</a></td><td>Google, which has been expanding far beyond its original business of Internet search advertising, is changing its operating structure by creating a new holding company called Alphabet.</td></tr>
   <tr><td style='display:none'>7</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/08/10/google650c.jpg&size=104x59&quality=85'></td><td>2015-08-10 22:02:26</td><td><a href='http://technology.canoe.com/News/2015/08/10/22539326.html?cid=rsstechnologynews'>site</a></td><td>Google creating new parent company Alphabet</td></tr>
   <tr><td style='display:none'>8</td><td></td><td>2015-08-11 00:45:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11495393&ref=rss'>site</a></td><td>Google, which Monday announced it's reorganizing under a new parent company called "Alphabet," is one of the biggest and best-known companies in Silicon Valley.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-11 04:10:18</td><td><a href='http://www.startribune.com/milestones-over-20-years-of-google-s-history/321347811/'>site</a></td><td>2015: Page announces creation of new holding company, Alphabet, to include Google's core business and other entities.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-08-11 04:18:07</td><td><a href='http://www.charlotteobserver.com/news/business/article30674268.html#storylink=rss'>site</a></td><td>Google's other co-founder, Sergey Brin, will be president of the new holding company.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03404/larrypage_3404531g.jpg'></td><td>2015-08-11 11:42:13</td><td><a href='http://www.telegraph.co.uk/technology/google/11795673/Sundar-Pichai-Meet-Googles-new-CEO.html'>site</a></td><td>Google founders Larry Page and Sergey Brin meet at Stanford University.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-08-11 14:32:55</td><td><a href='http://bits.blogs.nytimes.com/2015/08/11/daily-report-google-remakes-itself-as-alphabet/?partner=rss&emc=rss&_r=0'>site</a></td><td>In a blog post, Mr. Page said they picked the name Alphabet because it "means a collection of letters that represent language, one of humanity's most important innovations, and is the core of how we index with Google search!"</td></tr>
 </table></body></html>

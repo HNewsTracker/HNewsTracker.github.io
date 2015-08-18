@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/1/1/r/p/f/f/image.related.articleLeadwide.620x349.gif7mv.png/1437201177232.jpg'></td><td>2015-07-18 06:34:17</td><td><a href='http://www.brisbanetimes.com.au/world/bbc-claims-news-corp-mh17-exclusive-video-broadcast-a-year-ago-20150718-gif7mv.html'>site</a></td><td>News Corporation's so-called "exclusive" MH17 crash footage smuggled out of a Ukrainian rebel base was broadcast a year ago by the BBC, the broadcaster's Australian correspondent says.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 17:33:14</td><td></td><td><a href='mh17_6.html'>Foreign Affairs Minister Julie Bishop will push for the United Nations Security Council to establish an international criminal tribunal on the downing of flight MH17 12 months ago. (4)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-29 04:33:57</td><td></td><td><a href='mh17_5.html'>The foreign ministers of the Netherlands, Australia and Ukraine will address what is likely to be an emotional meeting over the downing that killed all 298 people on board Flight MH17. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-27 17:33:14</td><td></td><td><a href='mh17_5.html'>Foreign Affairs Minister Julie Bishop will push for the United Nations Security Council to establish an international criminal tribunal on the downing of flight MH17 12 months ago. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-29 04:33:57</td><td></td><td><a href='mh17_4.html'>The foreign ministers of the Netherlands, Australia and Ukraine will address what is likely to be an emotional meeting over the downing that killed all 298 people on board Flight MH17. (4)</a></td></tr>
   <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/07/30/world/mh17-ukraine-un-tribunal/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-07-30 11:33:30</td><td><a href='http://edition.cnn.com/2015/07/30/world/mh17-ukraine-un-tribunal/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_world+%28RSS%3A+CNN+-+World%29'>site</a></td><td>Russia vetoes U.N. MH17 tribunal</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-11 13:24:54</td><td></td><td><a href='mh17_0.html'>"The parts are of particular interest to the criminal investigation as they can possibly provide more information about who was involved in the crash of MH17," said a joint statement by the Dutch Safety Board, which is co-ordinating the air safety investigation, and the Joint Investigation Team which runs the criminal investigation into the tragedy. (8)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-11 13:24:54</td><td></td><td><a href='mh17_0.html'>"The parts are of particular interest to the criminal investigation as they can possibly provide more information about who was involved in the crash of MH17," said a joint statement by the Dutch Safety Board, which is co-ordinating the air safety investigation, and the Joint Investigation Team which runs the criminal investigation into the tragedy. (8)</a></td></tr>
 </table></body></html>
