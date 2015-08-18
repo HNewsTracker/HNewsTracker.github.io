@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -29,7 +29,7 @@
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= threshold ) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 18:57:12</td><td></td><td><a href='fifa_or_blatter_16_18.html'>On Saturday, at a meeting with Putin in St. Petersburg, Blatter said that FIFA, facing a major bribery scandal, had passed a resolution offering full support for holding the 2018 World Cup in Russia. (4)</a></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-27T181152Z_1_LYNXNPEB6Q0U4_RTROPTP_2_CSPORTS-US-SOCCER-FIFA-PUTIN.JPG?itok=FsP7dYkJ'></td><td>2015-07-27 19:18:23</td><td><a href='http://www.sbs.com.au/news/article/2015/07/28/people-blatter-deserve-nobel-prize-putin-tells-swiss-tv'>site</a></td><td>An economic crisis has forced cut-backs in Russia's World Cup preparations, but Putin and FIFA officials have said this will not affect Russia's ability to host the championship.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-27 20:29:53</td><td></td><td><a href='fifa_or_blatter_16_17.html'>"I think people like Mr Blatter or the heads of big international sporting federations, or the Olympic Games, deserve special recognition. If there is anyone who deserves the Nobel prize, it's those people." (5)</a></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-28 11:50:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article29088274.html#storylink=rss'>site</a></td><td>Blatter made a similar comment in his first interview after being re-elected president of FIFA on May 29.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-21T182414Z_1_LYNXNPEB6K0WL_RTROPTP_2_SOCCER-FIFA-ELECTION.JPG?itok=AlbjJ6BS'></td><td>2015-07-21 19:02:03</td><td><a href='http://www.sbs.com.au/news/article/2015/07/22/blatter-prankster-charged-police-after-fifa-complaint'>site</a></td><td>FIFA were not immediately available for comment.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 19:55:22</td><td></td><td><a href='fifa_or_blatter_16_17.html'>ZURICH - The British comedian who showered FIFA president Sepp Blatter with fake dollar bills has been charged by Swiss police after being arrested and interrogated, a police spokesman said on Tuesday. (4)</a></td></tr>
 </table></body></html>

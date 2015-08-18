@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/30/8b/84/01626805ed0e474bbf9ce5c0a049dd09-14604b9d59404d2596feb315d385f76b-0_1.jpg'></td><td>2015-07-31 02:21:34</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/clinton-charity-donors-surge-amid-hillary-clinton-/nm9Qs/'>site</a></td><td><table><tr><td>Clinton charity donors surge amid Hillary Clinton's campaign</td></tr><tr><td>A new list of donors to the Bill, Hillary and Chelsea Clinton Foundation shows a marked surge in donations and the numbers of contributors to the family charity in the first half of this year - at the same time that Hillary Rodham Clinton ramped up her campaign for the presidency.</td></tr><tr><td>"We know that donors are giving more because they are seeing the impact of our work across the globe," said the foundation's new president, Donna Shalala, who was accompanying Bill and Hillary Clinton's daughter, Chelsea, on a tour of foundation programs in Haiti.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 07:12:36</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article30584079.html#storylink=rss'>site</a></td><td>Hillary Clinton to propose $350 billion college affordability plan</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/40/15/36/8443794/3/landscape_32.jpg'></td><td>2015-08-10 17:34:20</td><td><a href='http://www.sfgate.com/news/politics/article/Clinton-to-propose-350-billion-college-6434607.php'>site</a></td><td>Calling for a "new college compact," Hillary Rodham Clinton on Monday, Aug. 10, will unveil a $350 billion plan aimed at making college more affordable and reducing the crushing burden of student debt.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 17:38:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article30581061.html#storylink=rss'>site</a></td><td>FILE - In this Thursday, Aug. 6, 2015, file photo, Democratic presidential candidate Hillary Rodham Clinton listens to a home care worker during a roundtable discussion in Los Angeles.</td></tr>
 </table></body></html>

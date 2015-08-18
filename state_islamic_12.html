@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 02:13:09</td><td></td><td><a href='state_islamic_12_13.html'>Adam Dandach, 21, of Orange pleaded guilty to attempting to provide material support to the Islamic State and to lying on a passport application. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 02:13:09</td><td><a href='http://www.miamiherald.com/news/nation-world/article30652977.html#storylink=rss'>site</a></td><td>He told FBI agents who questioned him at John Wayne Airport that he was heading to Syria and planned to pledge allegiance and offer assistance to the Islamic State.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/ows_1432679317346.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-19 17:45:23</td><td><a href='http://www.startribune.com/in-an-is-training-camp-children-told-behead-the-doll/317324521/'>site</a></td><td>When Islamic State extremists overran Yazidi towns in northern Iraq last year, they butchered older men and enslaved many of the women and girls.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-19 18:07:05</td><td></td><td><a href='state_islamic_12_13.html'>He explained how more than 120 children inside the camp had to line up and they were each given a doll and a sword, waiting for their next lesson by their Islamic State group instructors: Behead the doll. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 03:31:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/article27891829.html#storylink=rss'>site</a></td><td>The caliphate is an historic form of Islamic rule that the group claims to be reviving with its own radical interpretation, though the vast majority of Muslims reject its claims.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 03:31:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27891829.html#storylink=rss'>site</a></td><td>A Syrian preacher, right, gives religious lessons to young Syrians April 19 at an Islamic teaching center designed to counter Islamic State group indoctrination, near the Turkish-Syrian border city of Sanliurfa, southern Turkey.</td></tr>
 </table></body></html>

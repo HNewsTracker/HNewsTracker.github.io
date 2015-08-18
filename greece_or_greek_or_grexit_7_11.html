@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -53,5 +53,4 @@
   <tr><td style='display:none'>2</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Greece's stock market and banks were closed on June 29, when the government put limits on money withdrawals and transfers to keep a run on the banks from bringing down the financial system.</td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-08-03 12:54:27</td><td><a href='http://nypost.com/2015/08/03/greek-stock-market-reopens-to-a-bloodbath/'>site</a></td><td>Greek stock market reopens to a bloodbath</td></tr>
   <tr><td style='display:none'>4</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>But the resumption of trading was a necessary step as Greece tries to emerge from controls on financial activity that the government, confronted with a bank run, imposed at the end of June.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-18 13:50:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31370957.html#storylink=rss'>site</a></td><td><table><tr><td>Greece sells to German firm rights to run 14 airports</td></tr><tr><td>Greece has agreed to sell to a German company the rights to operate 14 regional airports.</td></tr></table></td></tr>
 </table></body></html>

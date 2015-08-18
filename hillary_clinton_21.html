@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/10/cb/57/59d09696f3b74b258430f278182f14a9-45037df8d95344248a24ac25f804dde1-0.jpg'></td><td>2015-08-10 20:29:33</td><td><a href='http://www.daytondailynews.com/ap/ap/political/group-backing-hillary-clinton-gets-1m-from-anonymo/nnGzt/'>site</a></td><td>Democratic presidential candidate Hillary Rodham Clinton arrives at the high school in Exeter, N.H., Monday, Aug. 10, 2015, where she announced her college affordability plan.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 20:29:33</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/10/group-backing-hillary-clinton-gets-1m-from-anonymous-donors'>site</a></td><td>Group backing Hillary Clinton gets $1M from anonymous donors</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 20:33:09</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article30623862.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton told a cheering crowd at her largest rally so far that "the endless flow of secret, unaccountable money" must be stopped.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/40/12/73/8433395/7/628x471.jpg'></td><td>2015-08-07 05:00:00</td><td><a href='http://www.seattlepi.com/news/article/Kim-and-Kanye-Took-a-Selfie-with-Hillary-Clinton-6431892.php'>site</a></td><td>Kim and Kanye Took a Selfie with Hillary Clinton</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 11:45:00</td><td><a href='http://www.foxnews.com/entertainment/2015/08/07/kim-kardashian-snaps-selfie-with-hillary-clinton/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fentertainment+%28Internal+-+Entertainment+-+Mixed%29'>site</a></td><td>Kim Kardashian scores a selfie with Hillary Clinton</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-08-11 04:10:16</td><td></td><td><a href='state_islamic_42_43.html'>JACKSON, Mississippi (AP) " Two Mississippi residents were arrested over the weekend on charges that they were trying to travel abroad to join the Islamic State militant group. (9)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/40/16/22/8447152/3/square_gallery_thumb.jpg'></td><td>2015-08-11 04:29:31</td><td><a href='http://www.sfgate.com/news/us/article/Charge-2-Mississippi-residents-aimed-to-join-6436586.php'>site</a></td><td>In June, the first FBI agent passed Young off to a second FBI agent posing as an Islamic State facilitator.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 04:33:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article30670035.html#storylink=rss'>site</a></td><td>Later, the charge says, she told the second FBI agent that Dakhlalla could help with the Islamic State's Internet media, saying he "really wants to correct the falsehoods heard here" and the "U.S. media is all lies when regarding" the group, which she called by its preferred internal name, Dawlah.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 14:22:22</td><td><a href='http://www.miamiherald.com/news/nation-world/article30686430.html#storylink=rss'>site</a></td><td>The Latest on Islamic State arrests in US: Case stuns family</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 05:35:04</td><td></td><td><a href='state_islamic_42_43.html'>He said he was innocent of any crime and was forced to join Islamic State militants after being injured in an airstrike and taken to a hospital controlled by the group at al-Bab in Aleppo province. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 05:35:04</td><td></td><td><a href='state_islamic_42_44.html'>He is the first Australian involved with the Islamic State known to have returned home since the Sunni fighters swept into western Iraq in June last year and declared the establishment of a caliphate, Monash University terrorism expert Greg Barton said. (4)</a></td></tr>
 </table></body></html>

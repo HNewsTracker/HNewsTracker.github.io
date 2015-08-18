@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 18:35:05</td><td><a href='http://www.charlotteobserver.com/sports/article28419046.html#storylink=rss'>site</a></td><td><table><tr><td>Russian Sports Minister Vitaly Mutko says the corruption crisis engulfing FIFA has thwarted communication with the embattled governing body.</td></tr><tr><td>Mutko says "communication with FIFA ... is not as easy as it was before because if you expect that there will be a change in administration in February then communication is somewhat thwarted."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 11:21:13</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/blatter-platini-to-meet-at-sunday-session-of-fifa-/nm3Dd/'>site</a></td><td>Sepp Blatter will host Michel Platini and football's other continental presidents later Sunday, in their first formal meeting since the FIFA president announced he would leave office amid a corruption crisis.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-19 11:27:05</td><td><a href='http://www.miamiherald.com/news/politics-government/article27804001.html#storylink=rss'>site</a></td><td><table><tr><td>Blatter, Platini to meet at Sunday session of FIFA leaders</td></tr><tr><td>Platini, the UEFA president and former France great, is currently favored to win a ballot that requires a four-month campaign by FIFA election rules.</td></tr><tr><td>When the presidents' group met on May 28, one day after senior FIFA officials were arrested in Zurich, Platini urged his mentor turned adversary to resign.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 17:40:39</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/19/blatter-platini-to-meet-at-sunday-session-of-fifa-leaders'>site</a></td><td><table><tr><td>The former France great, smiling and appearing relaxed, declined to discuss the content of Sunday's meeting on returning to FIFA's favorite Baur au Lac hotel.</td></tr><tr><td>Like Platini, Hayatou also did not address details of questions about the latest Blatter-chaired meetings, at a time when senior UEFA officials have suggested the FIFA leader should formally resign and leave now.</td></tr><tr><td>Webb, then a FIFA vice president, was one of the seven men arrested in Zurich and among 14 indicted by the U.S. Department of Justice for an alleged bribery racketeering conspiracy.</td></tr></table></td></tr>
 </table></body></html>
