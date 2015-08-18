@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>formula 1 or f1</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-18 10:57:04</td><td></td><td><a href='formula_1_or_f1_0_2.html'>It was on Monaco's tight and sinewy circuit last year that Bianchi, driving for Marussia - now known as Manor Marussia - finished in ninth place and gave the unheralded team its best finish and first points in F1. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-18 10:57:04</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article27567748.html#storylink=rss'>site</a></td><td>Tributes came in from outside of F1, and outside of sport itself.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 11:24:11</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-sport/f1-pays-last-respects-to-bianchi-20150721-3zog9.html'>site</a></td><td>F1 "was his life, his vocation. He was a champion blessed with a rare talent, as well as being a young man whose stature was as high as the depth of his humility".</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-22 13:01:39</td><td></td><td><a href='formula_1_or_f1_0_1.html'>Formula One is to pay its respects to driver Jules Bianchi with a minute of silence before Sunday's Hungarian Grand Prix, the F1 official website said. (12)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 11:24:11</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-sport/f1-pays-last-respects-to-bianchi-20150721-3zog9.html'>site</a></td><td>F1 "was his life, his vocation. He was a champion blessed with a rare talent, as well as being a young man whose stature was as high as the depth of his humility".</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 13:01:39</td><td></td><td><a href='formula_1_or_f1_0_1.html'>Formula One is to pay its respects to driver Jules Bianchi with a minute of silence before Sunday's Hungarian Grand Prix, the F1 official website said. (10)</a></td></tr>
 </table></body></html>

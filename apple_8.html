@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-22 11:25:26</td><td></td><td><a href='apple_8_9.html'>U.S. stock index futures fell on Wednesday as corporate earnings disappointed, especially from Apple (AAPL.O), the world's largest company. (9)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 11:47:06</td><td></td><td><a href='apple_8_11.html'>ANALYST TAKE: "China is at the core of Apple's problem, and the iPhone maker is becoming too dependent on a single country which is having big problems of its own," said David Madden, market analyst at IG. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 18:15:57</td><td></td><td><a href='apple_8_10.html'>Weak showings from Apple, Microsoft and other companies pulled stocks lower in afternoon trading Wednesday, pointing the market toward its second decline in as many days. (6)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 20:50:08</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article28221517.html#storylink=rss'>site</a></td><td>"Do iPhone sales tell us a lot about the broader economy and the markets or does it tell us more about Apple? It probably tells us more about Apple," Davidson said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201524/SCCZEN_AP150906071403_140x93.jpg'></td><td>2015-08-06 13:30:38</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11493288&ref=rss'>site</a></td><td>Apple says music service has more than 11m members</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 14:47:52</td><td><a href='http://www.foxbusiness.com/technology/2015/08/06/apple-says-more-than-11-million-people-have-signed-up-for-music-service-trial/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Apple says 2 million people have signed up for the family plan trial.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-06 14:51:32</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article30228861.html#storylink=rss'>site</a></td><td><table><tr><td>After that, individuals can pay $10 a month, while families of up to six people can pay $15 a month for unlimited access to Apple Music on their devices.</td></tr><tr><td>In addition to the streaming subscription plan, Apple Music also includes a free Internet radio station and a media platform for artists to upload songs and videos for fans.</td></tr></table></td></tr>
 </table></body></html>

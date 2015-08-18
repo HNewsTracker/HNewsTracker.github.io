@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td>In Greek crisis, one big unhappy EU family</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 15:53:05</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/criticism-for-german-idea-that-greece-take-a-euro-timeout'>site</a></td><td>BERLIN (AP) - Chancellor Angela Merkel on Sunday suggested that Germany would show flexibility in negotiating how Greece deals with its massive debt, but again ruled out writing off part of the money.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/97/00/81358d96ca9f4e93a4fdc14c134a146b-c89b671177104905a33ad7222a6f6fbc-0_1.jpg'></td><td>2015-07-19 15:53:05</td><td><a href='http://www.daytondailynews.com/ap/ap/international/criticism-for-german-idea-that-greece-take-a-euro-/nm3FH/'>site</a></td><td>Merkel rules out 'haircut' for Greece, open to other relief</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-19 16:54:49</td><td><a href='http://www.reuters.com/article/2015/07/19/eurozone-greece-idUSL5N0ZZ0DO20150719?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>Merkel said it would be possible to talk about changing the maturities of Greece's debt or reducing the interest Athens has to pay after the first successful review of the new bailout package to be negotiated.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/f7760e9f1106d7bafb80c9c86217448b66d27b79/0_0_3500_2100/master/3500.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=0daab610c7956254335f5f6bd734b6a9'></td><td>2015-07-19 20:16:54</td><td><a href='http://www.theguardian.com/world/2015/jul/19/greek-banks-reopen-first-time-three-weeks-queues-expected'>site</a></td><td>"Greece has already been given relief. We had a voluntary haircut among the private creditors and we then extended maturities once and reduced interest rates," said Merkel in the interview.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='ww.smh.com.au/content/dam/images/g/i/f/x/9/y/image.related.articleLeadwide.620x349.gifwkc.png/1437341923052.jpg'></td><td>2015-07-19 21:36:02</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-prices-for-everyday-items-shoot-up-in-greece-20150719-gifwkc'>site</a></td><td>Greek debt crisis: Prices for everyday items shoot up in Greece</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>Greek banks passed a similar review last year, but that was before they became collateral damage in Greece's political and economic turmoil.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-23 11:15:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11485929&ref=rss'>site</a></td><td>Prasinoudis is one of the countless victims of Greece's economic crisis.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/23/ca/1f/82506264bd3140048781407a5353cd42-04b561abd18c401fbfb6cd86716b6037-0.jpg'></td><td>2015-07-23 11:32:12</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-store-closures-spike-as-recession-austerity-/nm5QZ/'>site</a></td><td>His wife and 11-year-old daughter have already moved to Germany - the country that's ironically blamed for many of the economic and social problems afflicting Greece.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-03 09:43:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-greek-stock-market-20150803-story.html'>site</a></td><td>Greece's main stock index plunged over 22% as it reopened Monday after a five-week closure, giving investors their first opportunity since June to react to the country's latest economic crisis.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Markets in the rest of the world, however, were largely unaffected, a sign that investors outside Greece have now largely cut off ties with the country after years of crisis there.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>Political instability, a hallmark of Greece's crisis, is highly toxic for investors, who need to know that the rules for business won't change unexpectedly.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-08-17 15:33:30</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/merkel-looks-to-shore-up-german-support-for-greek/'>site</a></td><td><table><tr><td>To counter that, Merkel's government has been talking tough on the new rescue package, insisting Greece will be supervised closely and that there will be no write-off - or "haircut" - on the loans the country owes Germany.</td></tr><tr><td>Merkel's spokesman, Steffen Seibert, said Monday that while there is room to negotiate with Greece on how it deals with its massive debt, "from the German perspective, it's a success that there's no more talk of a (debt) haircut."</td></tr><tr><td>On Sunday, Merkel said that although there is no certainty the latest bailout for Greece will succeed, she is hopeful the country can overcome its economic crisis if it sticks to the agreements forged with its creditors.</td></tr></table></td></tr>
+</table></body></html>
