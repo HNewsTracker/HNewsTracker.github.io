@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,10 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-20 05:10:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11484028&ref=rss'>site</a></td><td>Also, many goods and services will become more expensive as a result of a rise in Value Added Tax approved by Parliament last Thursday, among the first batch of austerity measures demanded by Greece's creditors.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-20 20:55:28</td><td><a href='http://www.miamiherald.com/news/business/international-business/article27945031.html#storylink=rss'>site</a></td><td>Cabinet-level dissenters were replaced Friday, but even their replacements have denounced the austerity measures demanded by Greece's creditors.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>That sentiment was reflected by about 10,000 people who demonstrated outside parliament before the debate, protesting the latest measures, which will overhaul Greece's judicial and banking sectors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 08:12:35</td><td><a href='http://www.reuters.com/article/2015/07/19/us-eurozone-greece-family-analysis-idUSKCN0PT05W20150719?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greek Prime Minister Alexis Tsipras said it was a bad deal that would make life worse for Greece but he had swallowed it because the alternative was worse.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03381/athens-bank_3381074b.jpg'></td><td>2015-07-20 06:50:10</td><td><a href='http://www.telegraph.co.uk/news/worldnews/europe/greece/11750321/Greece-crisis-banks-reopen-after-three-weeks.html'>site</a></td><td>The decision to reopen banks was the first action by Greece's new cabinet after the 40-year-old leftist prime minister Alexis Tsipras sacked rebels who had opposed the deal he struck with EU leaders last week.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/greek_banks.jpg?itok=aXsVgT42'></td><td>2015-07-20 08:00:05</td><td><a href='http://www.sbs.com.au/news/article/2015/07/20/greek-banks-reopen-tsipras-eyes-return-normal'>site</a></td><td>Greek banks reopen as Tsipras eyes return to normal</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-31 01:08:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article29514796.html#storylink=rss'>site</a></td><td>Greece's Prime Minister Alexis Tsipras gives an interview to the radio station ''Sto Kokkino 1055'' in Athens, Wednesday, July 29, 2015.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-06 16:51:08</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/06/greek-creditors-report-progress-in-talks-for-new-bailout'>site</a></td><td>Greece's Prime minister Alexis Tsipras takes his seat to attend a gathering at the Agriculture ministry in Athens, Greece, on Wednesday, Aug. 5, 2015.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-17 15:33:30</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/17/merkel-looks-to-shore-up-german-support-for-greek-bailout'>site</a></td><td>So far, Merkel's popularity rating has kept up, thanks in part to her hard stance during the bailout talks that forced Greek Prime Minister Alexis Tsipras to back down in his demands for easier terms.</td></tr>
 </table></body></html>

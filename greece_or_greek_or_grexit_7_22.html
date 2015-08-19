@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 15:53:05</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/criticism-for-german-idea-that-greece-take-a-euro-timeout'>site</a></td><td>BERLIN (AP) - Chancellor Angela Merkel on Sunday suggested that Germany would show flexibility in negotiating how Greece deals with its massive debt, but again ruled out writing off part of the money.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 15:33:30</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/merkel-looks-to-shore-up-german-support-for-greek/'>site</a></td><td>Merkel's spokesman, Steffen Seibert, said Monday that while there is room to negotiate with Greece on how it deals with its massive debt, "from the German perspective, it's a success that there's no more talk of a (debt) haircut."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.3164186.1437602713!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/greece.jpg'></td><td>2015-07-22 08:40:14</td><td><a href='http://www.cbc.ca/news/business/greece-approves-new-batch-of-reforms-for-multi-billion-dollar-bailout-1.3162819?cmp=rss'>site</a></td><td>Greece has relied on bailout loans totaling 240 billion euros since 2010 after it was locked out of international money markets.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 12:19:18</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/27/greece-creditors-get-down-to-business-on-bailout-deal'>site</a></td><td>Without the money due from the expected three-year bailout totaling around 85 billion euros, Greece would be unable to make that payment - a development that would likely trigger fresh fears over the country's future in the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Germany's Handelsblatt newspaper reported that the IMF believes Greece needs a bigger bailout worth 90 billion euros.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-11 07:21:26</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>Greece has relied on international bailouts worth a total 240 billion euros ($263 billion) since it lost market confidence and was unable to borrow from anyone else in 2010.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-13 07:30:21</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11496821&ref=rss'>site</a></td><td>Germany, who was the largest single contributor to Greece's two previous bailouts, has been the country's harshest critic and has so far maintained a cautious stance regarding the new bailout agreement.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-14 21:27:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31073082.html#storylink=rss'>site</a></td><td>Greece's most influential creditor and perhaps its harshest critic welcomed the agreement as "a good result."</td></tr>
 </table></body></html>
