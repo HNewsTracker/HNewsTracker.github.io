@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>fifa or blatter</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 14:26:54</td><td><a href='http://www.miamiherald.com/news/politics-government/article27904912.html#storylink=rss'>site</a></td><td>Blatter insists he is leaving FIFA, will not be candidate</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-22T151710Z_1_LYNXNPEB6L0QC_RTROPTP_2_SOCCER-FIFA.JPG?itok=V8CIP8Aj'></td><td>2015-07-22 16:02:04</td><td><a href='http://www.sbs.com.au/news/article/2015/07/23/scala-winning-support-head-fifas-reform-task-force-sources'>site</a></td><td>FIFA has said that the chairman of the task force would be decided in consultation with the confederations' presidents.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150727&t=2&i=1067421311&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6Q0UQ'></td><td>2015-07-27 18:29:23</td><td><a href='http://www.reuters.com/article/2015/07/27/us-soccer-fifa-reform-idUSKCN0Q11YY20150727?feedType=RSS&feedName=sportsNews'>site</a></td><td><table><tr><td>ZURICH Scandal-plagued FIFA responded to criticism of its new reforms task force on Monday by saying an "independent person from outside of the game" should head the group.</td></tr><tr><td>The move will placate Scala, who had already been working on reform plans for FIFA before the creation of the task force last week.</td></tr><tr><td>"The work of the task force will be overseen by the independent bodies of FIFA, namely the Audit and Compliance, the Disciplinary and the Ethics Committee," added the statement.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-06 19:41:35</td><td><a href='http://da.feedsportal.com/c/34692/f/637526/s/48c5a811/sc/3/l/0L0Ssbs0N0Bau0Cnews0Carticle0C20A150C0A80C0A70Cfifa0Eapproaches0Eformer0Eioc0Eofficial0Ecarrard0Ereform0Erole/ia1.htm'>site</a></td><td>FIFA approaches former IOC official Carrard for reform role</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-07 13:48:07</td><td><a href='http://www.miamiherald.com/sports/article30386277.html#storylink=rss'>site</a></td><td><table><tr><td>The task force has no leader weeks before a FIFA-set deadline of Sept.</td></tr><tr><td>UEFA has already sent FIFA its two nominations to join the task force, said Infantino, who declined to identify the officials.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-07 13:48:07</td><td><a href='http://www.charlotteobserver.com/sports/article30386277.html#storylink=rss'>site</a></td><td><table><tr><td>UEFA: Former IOC official candidate to lead FIFA task force</td></tr><tr><td>Former Olympic official Francois Carrard is the only current candidate to chair FIFA's reform task force, according to UEFA secretary general Gianni Infantino.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-08-11T141154Z_1_LYNXNPEB7A0PE_RTROPTP_2_SOCCER-FIFA.JPG?itok=QEYS9CRh'></td><td>2015-08-11 15:12:46</td><td><a href='http://www.sbs.com.au/news/article/2015/08/12/fifa-name-ex-ioc-official-carrard-head-reform-task-force'>site</a></td><td>Asia's representatives were Sheikh Ahmad Al-Fahad Al-Ahmed Al-Sabah from Kuwait, a member of FIFA's executive committee, and Australia's Kevan Gospar, former vice-president of the IOC.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://static.theglobeandmail.ca/74f/news/national/article24814695.ece/ALTERNATES/w220/VCRD101-SOC+WCup+Kickoff+20.JPG'></td><td>2015-08-11 20:41:10</td><td><a href='http://www.theglobeandmail.com/sports/soccer/soccer-canadas-montagliani-joins-fifa-reform-task-force/article25929850/?cmpid=rss1'>site</a></td><td>Reform proposals being discussed for Blatter's successor as FIFA president and executive committee members include term limits, publishing their salary and stricter vetting of candidates.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://static.theglobeandmail.ca/4a6/sports/soccer/article25991643.ece/ALTERNATES/w220/CSPORTS_US_SOCCER_FIFA_REFORMS.JPG'></td><td>2015-08-17 20:11:15</td><td><a href='http://www.theglobeandmail.com/sports/soccer/fifa-official-proposes-abolishing-executive-committee-as-part-of-reform-plan/article25991644/?cmpid=rss1'>site</a></td><td><table><tr><td>FIFA official proposes abolishing executive committee as part of reform plan Add to...</td></tr><tr><td>Although FIFA does not have the power to force its member associations to introduce their own term limits, the plan envisages changing FIFA's rules to ensure that only associations with term-limits are able to have individuals elected to FIFA's bodies.</td></tr></table></td></tr>
+</table></body></html>

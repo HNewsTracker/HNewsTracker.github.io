@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-12 11:56:09</td><td></td><td><a href='state_islamic_40_41.html'>Oct. 3 - The Islamic State group releases a video showing a jihadi behead British hostage Alan Henning. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-12 12:14:25</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article30830583.html#storylink=rss'>site</a></td><td>The militants rename themselves the Islamic State group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-08 06:59:11</td><td></td><td><a href='state_islamic_40_41.html'>An Islamic hard-liner, he once chided Omran for wearing an Iraqi flag pin into the bathroom because it included the words "God is great." (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-08 06:59:11</td><td></td><td><a href='state_islamic_40_42.html'>Under its leader, Iraqi jihadi Abu Bakr al-Baghdadi, the Islamic State group's top command is dominated by former officers from Saddam's military and intelligence agencies, according to senior Iraqi officers and top intelligence officials. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/08/d8/80/75a48c16404c4418938b5f5170140dd4-6095bb17717742c083b8b8041cc4ca8b-0.jpg'></td><td>2015-08-08 06:59:11</td><td><a href='http://www.daytondailynews.com/ap/ap/international/is-top-command-dominated-by-ex-officers-in-saddams/nnF42/'>site</a></td><td>But Islamic militants grew in prominence, particularly with the creation and increasing strength of al-Qaida in Iraq.</td></tr>
 </table></body></html>
