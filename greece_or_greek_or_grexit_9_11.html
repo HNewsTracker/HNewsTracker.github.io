@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/17/1d/2f/04c0fd8dd4b841808b6cd3471bd3ad99-ca919ea1e25c4202aee541a736e6c772-0_1.jpg'></td><td>2015-07-17 11:39:55</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/firefighters-battle-large-forest-fire-in-southern-/nm2Mb/'>site</a></td><td><table><tr><td>Greek firefighters battled large brush and forest fires on the outskirts of Athens and in the country's southern Peloponnese region Friday that forced the evacuation of at least three villages and two summer camps.</td></tr><tr><td>Forest and brush fires are common during Greece's hot, dry summers.</td></tr><tr><td>In 2007, massive forest fires ravaged southern Greece, devastating dozens of villages and killing more than 60 people.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-17 18:43:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27473896.html#storylink=rss'>site</a></td><td>Greek firefighters battled large fires in the south, on the outskirts of Athens and on an island near the capital Friday as flames fed by strong winds forced the evacuation of villages and summer camps.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td><table><tr><td>As Greece's economy tanked under his leadership, Tsipras' own popularity only grew.</td></tr><tr><td>Elias Nikolakopoulos, a leading Greek pollster, said that although it is still early to accurately gauge the depth of Tsipras' popularity, his resilience may be partly due to Greeks seeing him fighting in their corner, doing what he can whether good or bad.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 18:48:31</td><td><a href='http://www.theguardian.com/business/2015/aug/03/greek-shares-nosedive-as-manufacturing-data-reveals-economic-crisis'>site</a></td><td>Although manufacturing represents only a small proportion of Greece?s total productive output, the sheer magnitude of the downturn sends a worrying signal for the health of the economy as a whole.?</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td><table><tr><td>Rebooting Greece: how to get its economy going again</td></tr><tr><td>After so much pain, Greece must now figure out how to get its economy back on its feet.</td></tr></table></td></tr>
 </table></body></html>
