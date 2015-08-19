@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,16 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>greece or greek or grexit</h3>
+    <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 16:00:48</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=topNews'>site</a></td><td>When negotiations on further aid eventually began, they were moved to Brussels, with no access to Greek ministries.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IAXUcvCPVik6_sn8ItynSg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-07T111925Z_1_LYNXNPEB760IY_RTROPTP_3_EUROZONE-GREECE-TSIPRAS_original.jpg'></td><td>2015-08-07 11:19:25</td><td><a href='http://finance.yahoo.com/news/eu-officials-review-progress-greek-111925503.html'>site</a></td><td>Greece would not get a free ticket to new aid, the coalition politician added.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 03:19:07</td><td><a href='http://www.miamiherald.com/news/politics-government/article29829346.html#storylink=rss'>site</a></td><td>Blatter was among a group of IOC members up for re-election for another eight-year term.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 03:32:17</td><td><a href='http://www.cbc.ca/sports/sepp-blatter-leaving-international-olympic-committee-1.3177574?cmp=rss'>site</a></td><td>Blatter, an IOC member since 1999, would have had to retire from his IOC term next year anyway because he turns 80 in March.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-08-03T042350Z_1_LYNXNPEB7205L_RTROPTP_2_SOCCER-FIFA-ELECTION.JPG?itok=J0zQD6wB'></td><td>2015-08-03 04:23:50</td><td><a href='http://www.sbs.com.au/news/article/2015/08/03/blatter-gives-ioc-membership-fifa-exit-nears'>site</a></td><td>Blatter gives up IOC membership as FIFA exit nears</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/1e5/sports/soccer/article25816559.ece/ALTERNATES/w220/CSPORTS-US-SOCCER-FIFA-BLAT.JPG'></td><td>2015-08-03 10:16:43</td><td><a href='http://www.theglobeandmail.com/sports/soccer/sepp-blatter-gives-up-ioc-membership-as-fifa-exit-nears/article25816560/?cmpid=rss1'>site</a></td><td>Blatter would ordinarily have been re-elected for another eight-year term as a procedural matter at the ongoing IOC Session in Malaysia, along with more than a dozen other members, but would be required to stand down when he left FIFA at the end of February.</td></tr>
 </table></body></html>

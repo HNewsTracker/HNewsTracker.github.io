@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/19/97/00/81358d96ca9f4e93a4fdc14c134a146b-c89b671177104905a33ad7222a6f6fbc-0_1.jpg'></td><td>2015-07-19 15:53:05</td><td><a href='http://www.daytondailynews.com/ap/ap/international/criticism-for-german-idea-that-greece-take-a-euro-/nm3FH/'>site</a></td><td>Merkel rules out 'haircut' for Greece, open to other relief</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 16:54:49</td><td><a href='http://www.reuters.com/article/2015/07/19/eurozone-greece-idUSL5N0ZZ0DO20150719?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>Merkel said it would be possible to talk about changing the maturities of Greece's debt or reducing the interest Athens has to pay after the first successful review of the new bailout package to be negotiated.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/f7760e9f1106d7bafb80c9c86217448b66d27b79/0_0_3500_2100/master/3500.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=0daab610c7956254335f5f6bd734b6a9'></td><td>2015-07-19 20:16:54</td><td><a href='http://www.theguardian.com/world/2015/jul/19/greek-banks-reopen-first-time-three-weeks-queues-expected'>site</a></td><td>"Greece has already been given relief. We had a voluntary haircut among the private creditors and we then extended maturities once and reduced interest rates," said Merkel in the interview.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-17 15:33:30</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/merkel-looks-to-shore-up-german-support-for-greek/'>site</a></td><td>To counter that, Merkel's government has been talking tough on the new rescue package, insisting Greece will be supervised closely and that there will be no write-off - or "haircut" - on the loans the country owes Germany.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.rte.ie//img.rasset.ie/000ae224-180.jpg'></td><td>2015-07-21 06:56:20</td><td><a href='http://www.rte.ie/news/business/2015/0721/716134-greece-legislation/'>site</a></td><td>It puts into Greek law new European Union rules on propping up failed banks, decreed after the 2008 financial crisis and aimed at shielding taxpayers from the risk of having to bail out troubled lenders.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IAXUcvCPVik6_sn8ItynSg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-07T111925Z_1_LYNXNPEB760IY_RTROPTP_3_EUROZONE-GREECE-TSIPRAS_original.jpg'></td><td>2015-08-07 11:19:25</td><td><a href='http://finance.yahoo.com/news/eu-officials-review-progress-greek-111925503.html'>site</a></td><td>That appeared to reflect Finance Minister Wolfgang Schaeuble's scepticism about whether Greece is fit to remain a member of the 19-nation European monetary union.</td></tr>
 </table></body></html>

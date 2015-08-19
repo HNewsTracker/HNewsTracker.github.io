@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 15:53:05</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/criticism-for-german-idea-that-greece-take-a-euro-timeout'>site</a></td><td>BERLIN (AP) - Chancellor Angela Merkel on Sunday suggested that Germany would show flexibility in negotiating how Greece deals with its massive debt, but again ruled out writing off part of the money.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 15:33:30</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/merkel-looks-to-shore-up-german-support-for-greek/'>site</a></td><td>Merkel's spokesman, Steffen Seibert, said Monday that while there is room to negotiate with Greece on how it deals with its massive debt, "from the German perspective, it's a success that there's no more talk of a (debt) haircut."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/L82sy_PNFDrGjXVJPzDJmA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-19T170211Z_1_LYNXNPEB6I0AD_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-19 19:16:40</td><td><a href='http://finance.yahoo.com/news/greek-banks-ready-open-monday-141458826.html'>site</a></td><td>"Capital controls and restrictions on withdrawals will remain in place but we are entering a new stage which we all hope will be one of normality," the head of Greece's banking association Louka Katseli told Skai television.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 12:32:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Out%20of%20Business/id-88af5b485d1f4c2b91d1b81651be43c1'>site</a></td><td>Uncertainty over Greece's bailout and recent capital controls have led to a new spate of store closures in Greek capital.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-13 09:48:18</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/greek-government-defends-bailout-deal-as-it-faces-syriza-rebellion-31448787.html'>site</a></td><td>Spahn told Deutschlandfunk radio that the Greek government clearly recognises its country must change if it wants to remain in the eurozone - "a lot has been achieved".</td></tr>
 </table></body></html>
