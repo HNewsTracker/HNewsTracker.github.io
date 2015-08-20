@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,7 +50,4 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 13:58:22</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/10/greek-coast-guard-rescues-1-417-migrants-over-3-days'>site</a></td><td>The vast majority then head to mainland Greece and from there, try to reach more prosperous European Union countries by either walking across the Balkans from northern Greece, or sneaking onto Italy-bound ferries from the west.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/11/b3/99/0f6f500631dc468aaaf4b3ad7c88aa6a-b0acb25bd35843648b6b34f707525031-0_1.jpg'></td><td>2015-08-11 08:28:47</td><td><a href='http://www.daytondailynews.com/ap/ap/international/fights-among-migrants-break-out-on-greek-island-of/nnHG2/'>site</a></td><td>The European Union is granting 2.4 billion euros/$2.6 billion to EU nations to upgrade their migration programs with the biggest sums going to Greece and Italy where thousands of refugees have arrived this year.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cdn3.belfasttelegraph.co.uk/incoming/article31447444.ece/17be6/ALTERNATES/w65square/GREECE%20Migr_15.jpg'></td><td>2015-08-13 11:48:47</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/refugee-situation-on-kos-eased-as-police-work-around-the-clock-31449060.html'>site</a></td><td>Greece is Europe's main gateway for refugees and economic migrants, after the alternative route from Libya to Italy became too dangerous.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-15 08:00:18</td><td><a href='http://www.startribune.com/migrants-heading-from-turkey-to-greece-scuffle-on-boat/321947281/'>site</a></td><td>Financially struggling Greece has reported 134,988 arrivals from Turkey this year, it said, while Italy recorded 93,540 newcomers through July.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/40/23/65/8469832/21/square_gallery_thumb.jpg'></td><td>2015-08-15 19:14:13</td><td><a href='http://www.sfgate.com/news/world/article/Migrants-heading-from-Turkey-to-Greece-scuffle-on-6446024.php'>site</a></td><td>The International Organization for Migration said the number of migrants and asylum-seekers who have crossed the Mediterranean to Europe this year will pass the quarter-million mark by the end of the month, more than half of them arriving in Greece.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,7 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/130609164540-edward-snowden-guardian-topics.jpg'></td><td>2015-07-28 15:25:31</td><td><a href='http://edition.cnn.com/2015/07/28/politics/snowden-face-consequences/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_allpolitics+%28RSS%3A+CNN+-+Politics%29'>site</a></td><td>White House responds to Snowden petition</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/bc282b4/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F3d%2F45%2F8736dbaf417fa9d0bfd91a552638%2F150728-editorial.jpg'></td><td>2015-07-28 15:28:10</td><td><a href='http://www.usnews.com/news/articles/2015/07/28/pardon-snowden-nah-white-house-says-in-petition-response'>site</a></td><td>Pardon Snowden?</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-29 01:18:41</td><td><a href='http://www.smh.com.au/world/edward-snowden-pardon-petition-rejected-by-us-20150729-gimpm4.html'>site</a></td><td><table><tr><td>Edward Snowden pardon petition rejected by US</td></tr><tr><td>In response to an online petition asking for a pardon for Edward Snowden, the former National Security Agency contractor, a White House spokesman said on Tuesday that Mr Snowden should return to the United States and face justice.</td></tr><tr><td>The petition said Mr Snowden was "a national hero and should be immediately issued a full, free and absolute pardon".</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/294/d3cc69b5d71c48cfa3032f6cda12ec4e.jpg'></td><td>2015-07-29 04:19:28</td><td><a href='http://www.news24.com/World/News/White-House-rejects-petition-to-pardon-Snowden-20150729'>site</a></td><td>"Edward Snowden is a national hero and should be immediately issued a full, free and absolute pardon for any crimes he has committed or may have committed related to blowing the whistle on secret NSA surveillance programmes," it said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-29 01:18:41</td><td><a href='http://www.smh.com.au/world/edward-snowden-pardon-petition-rejected-by-us-20150729-gimpm4.html'>site</a></td><td><table><tr><td>Edward Snowden pardon petition rejected by US</td></tr><tr><td>In response to an online petition asking for a pardon for Edward Snowden, the former National Security Agency contractor, a White House spokesman said on Tuesday that Mr Snowden should return to the United States and face justice.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/294/d3cc69b5d71c48cfa3032f6cda12ec4e.jpg'></td><td>2015-07-29 04:19:28</td><td><a href='http://www.news24.com/World/News/White-House-rejects-petition-to-pardon-Snowden-20150729'>site</a></td><td>The US administration has branded Snowden a hacker and a traitor who endangered lives by revealing the extent of the National Security Agency spying programme.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,13 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/32/e2/f2e092ef255347d3933e2886e5b35321-ee454d7079094ee085c092947af431e1-0_1.jpg'></td><td>2015-07-20 10:58:49</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeks-will-find-banks-open-but-restrictions-still/nm3RW/'>site</a></td><td>Greek banks opened their doors Monday for the first time in over three weeks, a move that the government hopes will help the economy get back to normal following a period dominated by fears over the country's future in the euro.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 09:43:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-greek-stock-market-20150803-story.html'>site</a></td><td>Greece's main stock index plunged over 22% as it reopened Monday after a five-week closure, giving investors their first opportunity since June to react to the country's latest economic crisis.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td>After five-week shut down, Greek stocks plummet</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Markets in the rest of the world, however, were largely unaffected, a sign that investors outside Greece have now largely cut off ties with the country after years of crisis there.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://img.rasset.ie/000af049-642.jpg'></td><td>2015-08-03 21:39:17</td><td><a href='http://www.rte.ie/news/2015/0803/718902-greece-banks/'>site</a></td><td>Greek stock exchange re-opens after five weeks</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>ATHENS - Investors issued a vote of no confidence in Greece?s economy on Monday, dumping Greek stocks as trading on the Athens stock exchange resumed for the first time in five weeks.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/62/44/8333574/57/square_gallery_thumb.jpg'></td><td>2015-07-20 20:28:02</td><td><a href='http://www.sfgate.com/news/world/article/Greeks-will-find-banks-open-but-restrictions-6394083.php'>site</a></td><td>In response to last week's parliamentary vote backing the austerity measures, the ECB raised the amount of liquidity assistance on offer to Greek banks, paving the way for them to reopen Monday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>In the meantime, Greek banks are dependent on the central bank for the cash they need to operate.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>On Wednesday, the ECB provided a new vital cash injection to Greece's battered banks.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>Extra ECB liquidity means that Greek banks will still be able to hand out cash.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/22/57/e0/7f7bc31ddf694a13a62044ea79dab9e1-c61248d335184048ac89a81dd34b2af8-0.jpg'></td><td>2015-07-22 18:09:17</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-parliament-to-vote-on-more-bailout-conditio/nm4fn/'>site</a></td><td>A European banking official told The Associated Press the ECB decided to increase emergency liquidity to Greek banks by 900 million euros ($980 million) - the second such cash injection in just under a week.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-23 12:32:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Out%20of%20Business/id-88af5b485d1f4c2b91d1b81651be43c1'>site</a></td><td>Uncertainty over Greece's bailout and recent capital controls have led to a new spate of store closures in Greek capital.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/1D1yls6HGT8XfAae82zZdw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/c33742ae9be40a227e0f6a706700ef28_original.jpg'></td><td>2015-08-03 19:37:34</td><td><a href='http://finance.yahoo.com/news/greek-stock-market-bloodbath-exchange-112237193.html'>site</a></td><td>He noted some traders are selling stock merely to raise cash because there is so little liquidity in the Greek economy.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Greek banks could get an initial capital injection soon after a bailout deal is clinched, as much as 10 billion euros, even before the ECB completes a stress test, a euro zone official said on Monday.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://img.rasset.ie/000afa95-117.jpg'></td><td>2015-08-14 12:29:58</td><td><a href='http://www.rte.ie/news/2015/0814/721143-greece-economy/'>site</a></td><td>If Greece defaults on this debt, the ECB is likely to halt emergency funding for Greece's crippled banks.</td></tr>
 </table></body></html>

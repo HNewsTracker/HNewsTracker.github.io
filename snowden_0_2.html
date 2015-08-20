@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>snowden</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/bc282b4/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F3d%2F45%2F8736dbaf417fa9d0bfd91a552638%2F150728-editorial.jpg'></td><td>2015-07-28 15:28:10</td><td><a href='http://www.usnews.com/news/articles/2015/07/28/pardon-snowden-nah-white-house-says-in-petition-response'>site</a></td><td>Pardon Snowden?</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-29 01:18:41</td><td><a href='http://www.smh.com.au/world/edward-snowden-pardon-petition-rejected-by-us-20150729-gimpm4.html'>site</a></td><td>The petition said Mr Snowden was "a national hero and should be immediately issued a full, free and absolute pardon".</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/294/d3cc69b5d71c48cfa3032f6cda12ec4e.jpg'></td><td>2015-07-29 04:19:28</td><td><a href='http://www.news24.com/World/News/White-House-rejects-petition-to-pardon-Snowden-20150729'>site</a></td><td>"Edward Snowden is a national hero and should be immediately issued a full, free and absolute pardon for any crimes he has committed or may have committed related to blowing the whistle on secret NSA surveillance programmes," it said.</td></tr>
+</table></body></html>
