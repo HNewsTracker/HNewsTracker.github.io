@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 11:35:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/28/greece-rescue-creditors-in-2nd-day-of-talks-on-new-lifeline'>site</a></td><td>Greece advances in loan talks, under fire for euro exit plan</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Germany set out "strict" conditions for further aid and said it would be sensible to link the size of the first tranche to Greece's progress in carrying out reforms, a reflection of worry around the euro zone that Athens might not do as promised.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/35e/report-on-business/article25922127.ece/ALTERNATES/w220/ROZ03-OUKBS-UK-EUROZONE-GRE.JPG'></td><td>2015-08-11 05:38:37</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-and-lenders-agree-on-bailout-terms-officials-say/article25922128/?cmpid=rss1'>site</a></td><td>An agreement would close a painful chapter of aid talks for Greece, which fought against austerity terms demanded by creditors for much of the year before relenting under the threat of being bounced out of the euro zone.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150814&i=110530839&w=240&r=110530839-1&t=2'></td><td>2015-08-14 15:40:46</td><td><a href='http://www.reuters.com/article/2015/08/14/us-eurozone-greece-tsipras-idUSKCN0QJ0FI20150814?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras remains hugely popular in Greece for standing up to Germany's insistence on austerity before capitulating under the threat of a euro zone exit.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150814&t=2&i=1071961431&w=644&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEB7D0Z1'></td><td>2015-08-14 20:32:47</td><td><a href='http://www.reuters.com/article/2015/08/14/us-eurozone-greece-vote-idUSKCN0QJ27620150814?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Tsipras has long argued Greece cannot repay all its debts and demanded a partial write-off.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PiEea8e.zpoyu6JROCo3mg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T161430Z_2_LYNXNPEB7D0SK_RTROPTP_3_EUROZONE-GREECE-EUROGROUP_original.jpg'></td><td>2015-08-14 22:55:16</td><td><a href='http://finance.yahoo.com/news/euro-ministers-set-launch-greek-154645912.html'>site</a></td><td><table><tr><td>In all, euro zone governments will lend 26 billion euros in a first tranche of the bailout before reviewing Greece's compliance with their conditions in October.</td></tr><tr><td>Led by Germany, euro zone governments have ruled out taking a "haircut" to reduce the nominal principle of Greece's debts to them.</td></tr><tr><td>That could mean further uncertainty in Greece and in a wider euro zone economy which data on Friday showed still struggling to meet even modest growth expectations.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/24/876/493/58de0c8dd1fbe410VgnVCM100000d7c1a8c0____-Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-07-24 11:31:51</td><td><a href='http://www.foxbusiness.com/markets/2015/07/24/greece-to-start-talks-with-creditors-for-new-bailout-after-technical-issues/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Greek government spokeswoman Olga Gerovasili sought to downplay talk that security concerns are a reason why European negotiators won't now arrive in Athens until Saturday at the earliest.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/24/d8/27/d3d7382b009f4a1ca90748d417cb0b52-7fcb1f3056a747ae925c1a038b6d80bd-0_1.jpg'></td><td>2015-07-24 18:56:28</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-talks-to-begin-after-technical-issues-ironed/nm54K/'>site</a></td><td>Greek government spokeswoman Olga Gerovasili said the final bailout agreement will be brought to Greece's parliament for approval on Aug. 18.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://img.rasset.ie/000afa19-642.jpg'></td><td>2015-08-13 14:46:29</td><td><a href='http://www.rte.ie/news/world/2015/0813/721042-greece/'>site</a></td><td>Parliament, however, is expected to approve the bailout agreement by a comfortable margin since opposition parties have promised their backing for the government to ensure Greece does not return to financial chaos.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-14 12:33:48</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/14/greece-all-night-debate-on-new-bailout'>site</a></td><td>"However, it appears to be unavoidable if Greece is to have a government capable of implementing the agreement."</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-19 14:48:45</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/19/greece-resists-efforts-to-renegotiate-regional/'>site</a></td><td>Greek government spokeswoman Olga Gerovassili said Wednesday that Athens wants the deal implemented as is and that Greece "cannot accept" efforts by the German firm to secure better terms.</td></tr>
 </table></body></html>

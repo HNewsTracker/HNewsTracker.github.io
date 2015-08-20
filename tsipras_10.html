@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 15:29:41</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/21/greeces-tsipras-stays-popular-despite-bailout-hardship'>site</a></td><td>ATHENS, Greece (AP) - Under Alexis Tsipras, Greece slid back into recession, sank deeper into debt and found itself pushed to the brink of bankruptcy.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 15:35:54</td><td></td><td><a href='tsipras_10_11.html'>Tsipras' Syriza party was elected in January on a promise to end austerity, forming a coalition with the right-wing, anti-bailout Independent Greeks party - a move that broadened his political influence. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td>As Greece's economy tanked under his leadership, Tsipras' own popularity only grew.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PKfI7WJhWFZVVMkxgtr7KQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_OLGBBUS_Wrapper_NewFeed_1/2015-08-17T070913Z_2_LYNXNPEB7G07D_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-17 10:01:42</td><td><a href='http://finance.yahoo.com/news/greek-minister-signals-tsipras-call-070913103.html'>site</a></td><td>Tsipras likely to call confidence vote after party revolt</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/3rK2o_VlH0Vv8ocWp.5j6Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-19T190705Z_3_LYNXNPEB7I0FJ_RTROPTP_3_EUROZONE-GREECE-BAILOUT_original.jpg'></td><td>2015-08-19 19:07:05</td><td><a href='http://finance.yahoo.com/news/german-parliament-backs-third-greek-102844067.html'>site</a></td><td>Germany backs Greek bailout as Tsipras mulls early polls</td></tr>
 </table></body></html>

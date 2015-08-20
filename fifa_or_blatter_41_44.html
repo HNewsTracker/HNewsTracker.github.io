@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-21 06:27:03</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article27988342.html#storylink=rss'>site</a></td><td><table><tr><td>Former FIFA VP Chung leaning toward running for top job</td></tr><tr><td>Chung said he plans to consult leaders of regional confederations and other key figures before he finalizes his decision whether to run for FIFA's top job.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 06:57:04</td><td><a href='http://www.miamiherald.com/news/politics-government/article27894574.html#storylink=rss'>site</a></td><td><table><tr><td>"The future of FIFA is at stake," Prince Ali, a vice president for four years until May, said in a statement to The Associated Press.</td></tr><tr><td>Prince Ali gave no indication in his statement of whether he intends to run again for the FIFA presidency.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/20/876/493/Soccer FIFA Election Prince Ali-1.jpg?ve=1&tl=1'></td><td>2015-07-20 12:10:39</td><td><a href='http://www.foxnews.com/world/2015/07/20/fifa-selects-feb-26-for-presidential-election-following-blatter-decision-to/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>FIFA's 209 members will return to Zurich next year to select a new president almost than nine months after Blatter's resignation statement.</td></tr>
 </table></body></html>

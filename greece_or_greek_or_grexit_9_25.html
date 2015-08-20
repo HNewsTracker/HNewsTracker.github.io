@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/f7760e9f1106d7bafb80c9c86217448b66d27b79/0_0_3500_2100/master/3500.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=0daab610c7956254335f5f6bd734b6a9'></td><td>2015-07-19 20:16:54</td><td><a href='http://www.theguardian.com/world/2015/jul/19/greek-banks-reopen-first-time-three-weeks-queues-expected'>site</a></td><td>"Greece has already been given relief. We had a voluntary haircut among the private creditors and we then extended maturities once and reduced interest rates," said Merkel in the interview.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 15:33:30</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/merkel-looks-to-shore-up-german-support-for-greek/'>site</a></td><td>Merkel's spokesman, Steffen Seibert, said Monday that while there is room to negotiate with Greece on how it deals with its massive debt, "from the German perspective, it's a success that there's no more talk of a (debt) haircut."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.smh.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>And even if Greece and its creditors can reach a new bailout deal, it might not be until next year that Greek banks are stable enough that the government can lift restrictions on movements of money abroad, analysts said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 06:15:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11495549&ref=rss'>site</a></td><td>Greece closes in on bailout deal possibly within the day</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-18 09:40:18</td><td><a href='http://www.startribune.com/greece-eases-some-limits-on-money-transfers/322137261/'>site</a></td><td>ATHENS, Greece - The Greek government has relaxed slightly its restrictions on banking transactions, allowing small amounts to be sent abroad for the first time in about two months.</td></tr>
 </table></body></html>
