@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -54,4 +54,6 @@
   <tr><td style='display:none'>3</td><td></td><td>2015-08-06 16:51:08</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/06/greek-creditors-report-progress-in-talks-for-new-bailout'>site</a></td><td>Greece's Prime minister Alexis Tsipras takes his seat to attend a gathering at the Agriculture ministry in Athens, Greece, on Wednesday, Aug. 5, 2015.</td></tr>
   <tr><td style='display:none'>4</td><td></td><td>2015-08-17 15:33:30</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/17/merkel-looks-to-shore-up-german-support-for-greek-bailout'>site</a></td><td>So far, Merkel's popularity rating has kept up, thanks in part to her hard stance during the bailout talks that forced Greek Prime Minister Alexis Tsipras to back down in his demands for easier terms.</td></tr>
   <tr><td style='display:none'>5</td><td></td><td>2015-08-20 17:43:45</td><td><a href='http://abcnews.go.com/International/wireStory/greek-prime-minister-tsipras-resigning-calling-early-elections-33208544'>site</a></td><td>Greek Prime Minister Tsipras Says He Is Resigning, Calling Early Elections</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-20 17:44:00</td><td><a href='http://www.npr.org/sections/thetwo-way/2015/08/20/433206660/greek-pm-steps-down-calls-new-elections-in-wake-of-bailout-deal?utm_medium=RSS&utm_campaign=storiesfromnpr'>site</a></td><td>"The political mandate of the January 25 elections has exhausted its limits and now the Greek people have to have their say," Tsipras said.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-20 18:50:47</td><td><a href='http://www.nydailynews.com/news/world/greece-pm-alexis-tsipras-resigns-calls-early-elections-article-1.2332165'>site</a></td><td>Greece PM Alexis Tsipras resigns, calls for early elections</td></tr>
 </table></body></html>

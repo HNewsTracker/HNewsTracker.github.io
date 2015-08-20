@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 04:05:38</td><td><a href='http://www.foxbusiness.com/technology/2015/07/22/many-apple-fans-wait-on-buying-apple-watch-as-early-buyers-seek-improvements/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Apple is already addressing some of this with a software update this fall.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 23:20:05</td><td><a href='http://www.cbsnews.com/news/for-many-consumers-apple-watch-isnt-a-gotta-have/'>site</a></td><td>Apps will get better when Apple updates the watch's software this fall to permit more "native" apps -- those that aren't just extensions of phone apps.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 20:53:00</td><td><a href='http://www.ctvnews.ca/business/apple-earnings-rise-on-strong-iphone-sales-but-impact-of-watch-remains-unclear-1.2480438'>site</a></td><td>Apple said Tuesday that it sold more than 47.5 million iPhones during the three months ending in June, or 35 per cent more than a year ago.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/37/62/73/8335071/3/square_gallery_thumb.jpg'></td><td>2015-07-21 23:41:08</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-Strong-iPhone-sales-few-details-on-Watch-6397756.php'>site</a></td><td>Apple has previously said it sold 1 million iPhones in the first 74 days, or more than 10 weeks, after sales began in 2007.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/21/af/df/2b3d1656067c4fe69cab181411fdc959-2f276d7e54324cfcbdfd9614ea1a732b-0.jpg'></td><td>2015-07-21 23:41:08</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/apple-strong-iphone-sales-few-details-on-watch/nm4Qh/'>site</a></td><td>Apple sold more iPhones than the 47 million expected, on average, by analysts surveyed by FactSet.</td></tr>
 </table></body></html>

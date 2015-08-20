@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 18:30:57</td><td></td><td><a href='state_islamic_31_33.html'>Officials say the mass arrests reflect careful monitoring of IS's followers over a long time, but the scale of detentions also underscores how broad Turkey has allowed the Islamic State network to become. (5)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 18:30:57</td><td></td><td><a href='state_islamic_31_32.html'>The abrupt shift in Islamic State's Turkish propaganda magazine shows just how quickly a tacit truce has come apart. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/04/c2/81/19b4f6e69e2b4bb3a21a86a921332b1b-2641d039833444b78079030e87f8aac6-0.jpg'></td><td>2015-08-04 07:16:27</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/facing-islamic-state-threat-iraq-digitizes-nationa/nnCSz/'>site</a></td><td>As the Islamic State militants now set out to destroy Iraq's history and culture, a major preservation and digitization project is underway in the capital to safeguard a millennia worth of history.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-04 07:20:34</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11491909&ref=rss'>site</a></td><td>In recent months, the library donated some 2,500 books to libraries in Iraq's Diyala province after Iraqi forces recaptured towns there from Islamic State militants.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-04 07:23:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article29924077.html#storylink=rss'>site</a></td><td>Facing Islamic State threat, Iraq digitizes national library</td></tr>
 </table></body></html>

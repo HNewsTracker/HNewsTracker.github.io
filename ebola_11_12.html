@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 18:17:08</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/05/new-ebola-cases-in-single-digits-for-2nd-week-says-who'>site</a></td><td><table><tr><td>New Ebola cases in single digits another week, says WHO</td></tr><tr><td>DAKAR, Senegal (AP) - New Ebola cases were in the single digits another week, the World Health Organization said Wednesday, showing that contact tracing efforts are yielding results.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 09:35:00</td><td><a href='http://www.ctvnews.ca/health/sierra-leone-awaits-countdown-to-ebola-free-declaration-1.2523353'>site</a></td><td><table><tr><td>Sierra Leone awaits countdown to Ebola-free declaration</td></tr><tr><td>Officials desperately hope they can soon announce the start of the countdown to an Ebola-free declaration from WHO nearly 15 months after the first patient tested positive in Sierra Leone.</td></tr><tr><td>When Kamara returned to his home village, the family did not suspect Ebola.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-19 09:57:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/19/sierra-leone-awaits-countdown-to-ebola-free-declaration'>site</a></td><td>In this photo taken Friday, Aug. 14, 2015, people celebrate as they are released from Ebola quarantine by Sierra Leone President Ernest Bai Koroma, in the village of Massessehbeh on the outskirts of Freetown, Sierra Leone.</td></tr>
 </table></body></html>
