@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/greek_banks.jpg?itok=aXsVgT42'></td><td>2015-07-20 08:00:05</td><td><a href='http://www.sbs.com.au/news/article/2015/07/20/greek-banks-reopen-tsipras-eyes-return-normal'>site</a></td><td>Greek banks reopen as Tsipras eyes return to normal</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/32/e2/f2e092ef255347d3933e2886e5b35321-ee454d7079094ee085c092947af431e1-0_1.jpg'></td><td>2015-07-20 10:58:49</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeks-will-find-banks-open-but-restrictions-still/nm3RW/'>site</a></td><td>"If that had not been removed, the Greek banks would not have had a liquidity problem," she said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 11:02:04</td><td><a href='http://www.miamiherald.com/news/business/article27893911.html#storylink=rss'>site</a></td><td>Greek banks reopen but cash limits remain; taxes soar</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/62/44/8333574/57/square_gallery_thumb.jpg'></td><td>2015-07-20 20:28:02</td><td><a href='http://www.sfgate.com/news/world/article/Greeks-will-find-banks-open-but-restrictions-6394083.php'>site</a></td><td>In response to last week's parliamentary vote backing the austerity measures, the ECB raised the amount of liquidity assistance on offer to Greek banks, paving the way for them to reopen Monday.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/g/i/b/1/image.related.articleLeadwide.620x349.gigtsu.png/1437436126222.jpg'></td><td>2015-07-20 23:48:16</td><td><a href='http://www.brisbanetimes.com.au/business/world-business/greek-debt-crisis-greeces-banks-in-a-battle-to-win-back-trust-20150720-gigtsu'>site</a></td><td>In the meantime, Greek banks are dependent on the central bank for the cash they need to operate.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>On Wednesday, the ECB provided a new vital cash injection to Greece's battered banks.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>Extra ECB liquidity means that Greek banks will still be able to hand out cash.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/22/57/e0/7f7bc31ddf694a13a62044ea79dab9e1-c61248d335184048ac89a81dd34b2af8-0.jpg'></td><td>2015-07-22 18:09:17</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-parliament-to-vote-on-more-bailout-conditio/nm4fn/'>site</a></td><td>A European banking official told The Associated Press the ECB decided to increase emergency liquidity to Greek banks by 900 million euros ($980 million) - the second such cash injection in just under a week.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://l.yimg.com/bt/api/res/1.2/1D1yls6HGT8XfAae82zZdw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/c33742ae9be40a227e0f6a706700ef28_original.jpg'></td><td>2015-08-03 19:37:34</td><td><a href='http://finance.yahoo.com/news/greek-stock-market-bloodbath-exchange-112237193.html'>site</a></td><td>He noted some traders are selling stock merely to raise cash because there is so little liquidity in the Greek economy.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Greek banks could get an initial capital injection soon after a bailout deal is clinched, as much as 10 billion euros, even before the ECB completes a stress test, a euro zone official said on Monday.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://img.rasset.ie/000afa95-117.jpg'></td><td>2015-08-14 12:29:58</td><td><a href='http://www.rte.ie/news/2015/0814/721143-greece-economy/'>site</a></td><td>If Greece defaults on this debt, the ECB is likely to halt emergency funding for Greece's crippled banks.</td></tr>
+</table></body></html>

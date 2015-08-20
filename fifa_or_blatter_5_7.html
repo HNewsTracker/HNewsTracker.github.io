@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 14:59:07</td><td><a href='http://www.miamiherald.com/news/politics-government/article28696741.html#storylink=rss'>site</a></td><td>Despite FIFA's scandals, Sepp Blatter says the organization remains committed to 2018 World Cup host nation Russia.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 15:51:21</td><td><a href='http://www.foxnews.com/sports/2015/07/25/latest-blatter-to-putin-make-us-happy/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>In brief comments, Putin welcomed Blatter, saying that Russia would ''do everything that depends on us'' to make players and fans feel at home in 2018.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:50:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28700482.html#storylink=rss'>site</a></td><td>"I don't know what sort of system FIFA use anymore, and I'm not even sure FIFA know what sort of system they use," said O'Neill, who captained Northern Ireland at the 1982 World Cup, long before FIFA created its rankings.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 13:25:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article31500647.html#storylink=rss'>site</a></td><td><table><tr><td>Chung also gave $500,000 for football projects after an earthquake in Haiti, with the money controlled by now-disgraced FIFA vice president Jack Warner of Trinidad and Tobago.</td></tr><tr><td>FIFA previously said in 2012 it would ask Warner to explain how Chung's money and its own $250,000 donation to Haiti was spent.</td></tr></table></td></tr>
 </table></body></html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 18,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 18 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/40/15/26/8443265/3/square_gallery_thumb.jpg'></td><td>2015-08-10 20:38:31</td><td><a href='http://www.sfgate.com/world/article/Greece-struggles-to-cope-with-surge-of-migrants-6435897.php'>site</a></td><td>A police officer tries to hold migrants behind a fence as they wait to register on the Greek island of Kos.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/11/b3/99/0f6f500631dc468aaaf4b3ad7c88aa6a-b0acb25bd35843648b6b34f707525031-0_1.jpg'></td><td>2015-08-11 08:28:47</td><td><a href='http://www.daytondailynews.com/ap/ap/international/fights-among-migrants-break-out-on-greek-island-of/nnHG2/'>site</a></td><td><table><tr><td>Fights among migrants break out on Greek island of Kos</td></tr><tr><td>Fights broke out among migrants on the Greek island of Kos Tuesday, where overwhelmed authorities are struggling to contain increasing numbers of people arriving clandestinely on rubber dinghies from the nearby Turkish shore.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 09:55:12</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/11/fights-among-migrants-break-out-on-greek-island-of-kos'>site</a></td><td>In all, Greek police said Monday that 156,726 migrants had been arrested for entering or remaining in the country illegally from January through July 2015, compared to 32,070 for the same months in 2014.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='ww.smh.com.au/content/dam/images/g/i/w/y/n/j/image.related.articleLeadwide.620x349.giwylc.png/1439304754629.jpg'></td><td>2015-08-11 14:52:44</td><td><a href='http://www.smh.com.au/world/fights-among-migrants-on-greek-island-as-turkey-rescues-330-syrians-20150811-giwylc.html'>site</a></td><td><table><tr><td>Syrian refugees push to get registered on the Greek island of Kos.</td></tr><tr><td>"This situation on the island is out of control," he told Greek TV.</td></tr><tr><td>The United Nations refugee agency called conditions for migrants on the Greek islands "shameful".</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/40/16/63/8449279/3/square_gallery_thumb.jpg'></td><td>2015-08-11 18:47:59</td><td><a href='http://www.sfgate.com/news/world/article/Fights-among-migrants-break-out-on-Greek-island-6436933.php'>site</a></td><td>Hundreds of migrants gather for a registration procedure at the stadium of Kos town, on the southeastern island of Kos, Greece, Tuesday, Aug. 11, 2015.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/12/e7/0c/538dd038c943494787be75841bf10315-da9996fa715442bdb963506b3c3b8595-0.jpg'></td><td>2015-08-12 09:44:48</td><td><a href='http://www.daytondailynews.com/ap/ap/international/refugees-stream-into-greek-island-meet-wretched-co/nnHsw/'>site</a></td><td>Dozens of people from the Middle East are arriving on the Greek holiday island of Kos from nearby Turkey, joining thousands of refugees camped under wretched conditions.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/40/17/70/8453651/13/square_gallery_thumb.jpg'></td><td>2015-08-12 17:32:22</td><td><a href='http://www.sfgate.com/news/world/article/Refugees-stream-into-Greek-island-meet-wretched-6439091.php'>site</a></td><td><table><tr><td>Migrants walk along a beach on the Greek southeastern island of Kos, Wednesday, Aug. 12, 2015.</td></tr><tr><td>A migrant is helped out of a dinghy after crossing from Turkey to the southeastern Greek island of Kos, Wednesday, Aug. 12, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='merica.aljazeera.com/content/ajam/articles/2013/8/18/bridge-to-nowheresyrianrefugeesingreece/_jcr_content/image.adapt.480.low.Syrian_refugees_in_greece_a.jpg'></td><td>2015-08-12 17:49:00</td><td><a href='http://america.aljazeera.com/articles/2015/8/12/as-conditions-worsen-greece-promises-ship-to-house-refugees.html'>site</a></td><td>As conditions worsen, Greece promises ship to house refugees</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-13 07:00:31</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/13/greek-police-on-kos-race-to-ease-number-of-stuck-refugees'>site</a></td><td>Greek police on Kos race to ease number of stuck refugees</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-15 07:55:22</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/15/migrants-heading-from-turkey-to-greece-scuffle-on-boat'>site</a></td><td>Migrants from Turkey flood into Greece; scuffles on boat</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-08-15 08:01:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31181897.html#storylink=rss'>site</a></td><td><table><tr><td>Migrants and refugees gather at a makeshift migrant detention center at Kos' abandoned football stadium after crossing from Turkey, at the southeastern island of Kos, Greece, Friday, Aug. 14, 2015.</td></tr><tr><td>Migrants from the coastal town of Bodrum, Turkey, disembark their boat after it started to sink as they attempted to make their way to the Greek island of Kos, on Saturday, Aug. 15, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/15/08/86/d4654f0771c0453c97dc796ec693d5f0-e05899ae1cbd49f6a0697f9bfc8adf51-0.jpg'></td><td>2015-08-15 19:14:13</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/migrants-from-turkey-flooding-into-greece-scuffle-/nnKsH/'>site</a></td><td>Migrants on a small dinghy force off another, right, that tried to clamber into, as they start their journey from the coastal town of Bodrum, Turkey, in order to cross to the nearby Greek island of Kos, early Saturday, Aug. 15, 2015.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://wpmedia.news.nationalpost.com/2015/08/aptopix_greece_migrants.jpg?w=620'></td><td>2015-08-17 19:21:01</td><td><a href='http://news.nationalpost.com/news/world/conditions-on-a-greek-island-are-so-chaotic-the-government-is-housing-syrian-migrants-on-a-docked-ship'>site</a></td><td>Thousands of Syrian migrants on the Greek island of Kos on Sunday began boarding a ship that is to house and process them, in a bid to ease chaotic conditions onshore.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-08-18 10:04:12</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31370363.html#storylink=rss'>site</a></td><td><table><tr><td>It is unclear how many people may have died between Bodrum and the Greek island of Kos, which is only four kilometers (2.5 miles) from Turkey at its closest point, making it one of the shortest routes across the Aegean.</td></tr><tr><td>Medicine Without Borders' members try to help a migrant boy rescued with others from their dinghy in their attempt to cross the sea from Turkey, at the southeastern island of Kos, Greece, Tuesday, Aug. 18, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-08-18 13:45:02</td><td><a href='http://www.reuters.com/article/2015/08/18/us-europe-migrants-greece-unhcr-idUSKCN0QN14920150818?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>GENEVA Greece must show "much more leadership" to tackle an escalating crisis in which 160,000 refugees and migrants have reached its shores so far this year, the United Nations said on Tuesday.</td></tr><tr><td>Clashes erupted last week on the overwhelmed Greek island of Kos between desperate people, mainly fleeing conflicts in Syria, Afghanistan and Iraq, who come on small boats from nearby Turkey only to find dire conditions.</td></tr></table></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-08-18 20:32:06</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/18/greece-uses-ferry-to-ease-migrant-buildup-on-aegean-islands'>site</a></td><td>The Greek Merchant Marine Ministry said Tuesday the Eleftherios Venizelos is expected to leave Kos by Wednesday morning to travel to Thessaloniki.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-08-18 20:32:06</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-uses-ferry-to-ease-migrant-buildup-on-aegea/nnMNT/'>site</a></td><td>Greek authorities say they are planning to use a ferry currently docked at the island of Kos to transport up to 2,500 migrants to a northern port.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-08-19 10:20:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31497509.html#storylink=rss'>site</a></td><td>The ferry Eleftherios Venizelos with Syrian migrants on board leaves the southeastern island of Kos, Greece, Wednesday, Aug. 19, 2015, to travel to Thessaloniki.</td></tr>
+</table></body></html>

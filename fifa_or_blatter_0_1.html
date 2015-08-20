@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 13:25:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article31500647.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA presidential contender Chung Mong-joon has accused football's governing body of trying to "misrepresent" charitable donations he made to relief donations to Pakistan and Haiti.</td></tr><tr><td>"If these reports are true, we condemn this as a cynical and unethical effort by FIFA to misrepresent even charitable donations for political manipulation," Chung said in a statement issued by his charitable foundation.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 00:40:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article28371202.html#storylink=rss'>site</a></td><td>He is resisting extradition on U.S. charges of racketeering, wire fraud and money laundering in the FIFA corruption case.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 00:40:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28371202.html#storylink=rss'>site</a></td><td>Trinidad and Tobago's attorney general says he has received a U.S. request for the extradition of former FIFA vice president Jack Warner on corruption charges.</td></tr>
 </table></body></html>
