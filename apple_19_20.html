@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 22:05:32</td><td><a href='http://www.startribune.com/who-are-the-stock-market-heavyweights/320805731/'>site</a></td><td><table><tr><td>NEW YORK - At $654 billion, Apple is the stock market's heavyweight.</td></tr><tr><td>Since closing at a record $133 on February 23, Apple has slumped to $115.40, wiping $115 billion off the value of its stock.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2_WPX1Y4Li0jDlBW92HZNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T164512Z_1_LYNXNPEB7D0UC_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-08-14 17:54:12</td><td><a href='http://finance.yahoo.com/news/hedge-funds-added-apple-shares-164512648.html'>site</a></td><td><table><tr><td>BOSTON (Reuters) - Top U.S. hedge funds added to their positions in Apple Inc (AAPL.O) during the second quarter, even as shares of the iPhone maker were flat during the period.</td></tr><tr><td>Tiger Eye Capital LLC added 25,000 shares of Apple to bring its total stake to 356,502 shares, filings showed.</td></tr><tr><td>Bridgewater Associates LP was a seller, however, cutting its Apple stake by 201,500 shares to 531,497 shares, filings show.</td></tr><tr><td>The decline could have exposed the second-quarter hedge fund buyers to losses, though some might have exited Apple before it fell from a high of $132.07 on July 20.</td></tr><tr><td>Their analysis of 685 hedge funds with nearly $1 trillion in equity assets found 69 of the funds had Apple among their top 10 holdings.</td></tr><tr><td>Still, during the first quarter of this year a number of hedge funds cut their stakes in Apple as its shares rallied, previous filings showed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2_WPX1Y4Li0jDlBW92HZNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T164512Z_1_LYNXNPEB7D0UC_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-08-14 20:04:13</td><td><a href='http://finance.yahoo.com/news/hedge-funds-added-apple-shares-164512648.html'>site</a></td><td>At the end of the first quarter Apple was one of the most popular stocks owned by hedge funds, according to Goldman Sachs research.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/GVwMMA5Jl6ZnX0mf5ya.LQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T214454Z_2_LYNXNPEB7D0UC_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-08-14 21:44:54</td><td><a href='http://finance.yahoo.com/news/hedge-funds-added-apple-shares-164512648.html'>site</a></td><td>Apple shares gained less than 1.0 percent during the second quarter to close at $125.43 on June 30.</td></tr>
 </table></body></html>

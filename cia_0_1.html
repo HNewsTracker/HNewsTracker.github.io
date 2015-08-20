@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,4 +49,5 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-20 12:53:51</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/20/german-spy-charged-with-treason-for-aiding-cia/'>site</a></td><td><table><tr><td>German spy charged with treason for aiding CIA and Russia</td></tr><tr><td>BERLIN (AP) - Prosecutors have charged a German spy with treason, breach of official secrecy and taking bribes for allegedly providing secret documents to both the CIA and Russia's intelligence agency.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 16:00:15</td><td><a href='http://www.theguardian.com/world/2015/aug/20/german-spy-treason-cia-russia-us'>site</a></td><td><table><tr><td>The discovery that the CIA had allegedly been spying on its German counterpart caused anger in Berlin, adding to diplomatic tensions between Germany and the US over reports about US surveillance of Angela Merkel's mobile phone.</td></tr><tr><td>Following the arrest, the German government demanded the removal of the CIA station chief in Berlin.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,13 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>netanyahu</h3>
+    <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/ows_144003579628076.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-20 18:55:53</td><td><a href='http://www.startribune.com/on-nuclear-deal-not-all-israelis-are-with-netanyahu/322428141/'>site</a></td><td><table><tr><td>If Netanyahu loses, he will have gained nothing and potentially lost much by damaging the already strained relationship with the U.S., endangering a vital security alliance and American diplomatic cover at the United Nations.</td></tr><tr><td>"When it comes to the relationship between Israel and the United States, Netanyahu's problem is ... extreme courage, to the point of dangerousness," commentator Ari Shavit wrote in the Haaretz daily Thursday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 11:41:35</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/24/fifa-says-corruption-crisis-hinders-search-for-new-sponsors'>site</a></td><td><table><tr><td>"Definitely the current situation does not help to finalize any new agreement. That is a fact," FIFA secretary general Jerome Valcke said Friday ahead of this weekend's qualifying draw, the first big event for host Russia.</td></tr><tr><td>Valcke said no major deals would be completed until FIFA's future is clearer - after Sepp Blatter is replaced as president next year.</td></tr><tr><td>Current sponsors will be invited to a briefing next month with FIFA lawyers and marketing officials, Valcke said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/9ac/sports/soccer/article25659394.ece/ALTERNATES/w220/562982423_481752498.JPG'></td><td>2015-07-24 13:48:49</td><td><a href='http://www.theglobeandmail.com/sports/soccer/fifa-to-meet-sponsors-to-discuss-corruption-reforms/article25659395/?cmpid=rss1'>site</a></td><td>Valcke added that FIFA has been keeping its partners informed of developments.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 12:58:26</td><td><a href='http://finance.yahoo.com/news/futures-little-changed-ahead-apple-113205365.html'>site</a></td><td>Tech giants such as Yahoo, Microsoft and Apple are scheduled to report results after the closing.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 11:47:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article28080421.html#storylink=rss'>site</a></td><td>NOT JUST APPLE: There was also disappointment that Microsoft booked an $8.4 billion charge related to the write-off of the Nokia phone business it bought just over a year ago.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 14:25:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11485341&ref=rss'>site</a></td><td>Poor showings from several big technology companies including Apple and Microsoft weighed on the stock market in early trading Wednesday.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/37/65/21/8344701/13/628x471.jpg'></td><td>2015-07-22 18:15:57</td><td><a href='http://www.seattlepi.com/business/energy/article/Tech-shares-lead-an-early-slump-for-US-stocks-6399228.php'>site</a></td><td><table><tr><td>Technology shares lead a slump in US stocks; Apple sinks</td></tr><tr><td>Weak showings from Apple, Microsoft and other companies pulled stocks lower in afternoon trading Wednesday, pointing the market toward its second decline in as many days.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-22 20:47:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/22/tech-shares-lead-an-early-slump-for-us-stocks'>site</a></td><td>The major stock indexes declined from the get-go as traders reacted to weaker showings late Tuesday from Microsoft, Yahoo and Apple.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 20:53:00</td><td><a href='http://www.ctvnews.ca/business/apple-earnings-rise-on-strong-iphone-sales-but-impact-of-watch-remains-unclear-1.2480438'>site</a></td><td>Apple said Tuesday that it sold more than 47.5 million iPhones during the three months ending in June, or 35 per cent more than a year ago.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/37/62/73/8335071/3/square_gallery_thumb.jpg'></td><td>2015-07-21 23:41:08</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-Strong-iPhone-sales-few-details-on-Watch-6397756.php'>site</a></td><td>Apple has previously said it sold 1 million iPhones in the first 74 days, or more than 10 weeks, after sales began in 2007.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/21/af/df/2b3d1656067c4fe69cab181411fdc959-2f276d7e54324cfcbdfd9614ea1a732b-0.jpg'></td><td>2015-07-21 23:41:08</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/apple-strong-iphone-sales-few-details-on-watch/nm4Qh/'>site</a></td><td>Apple sold more iPhones than the 47 million expected, on average, by analysts surveyed by FactSet.</td></tr>
 </table></body></html>

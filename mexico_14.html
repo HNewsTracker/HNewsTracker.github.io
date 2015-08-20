@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 15:50:45</td><td></td><td><a href='mexico_14_15.html'>New Mexico police chief wants fugitive in Cuba returned for 1971 officer's death (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 15:50:45</td><td><a href='http://www.startribune.com/new-mexico-police-chief-wants-1971-fugitive-in-cuba-returned/318296391/'>site</a></td><td>Responding to President Barack Obama's move to thaw relations with Cuba, New Mexico Gov. Susana Martinez in December renewed a request that the Obama administration try to extradite Hill, who is now 65 years old.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-02 21:58:23</td><td></td><td><a href='mexico_14_17.html'>Journalists protest the murder of photojournalist Ruben Espinosa Becerril as they hold printouts of his photo, in Mexico City, Sunday, Aug. 2, 2015. (8)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 04:13:24</td><td></td><td><a href='mexico_14_15.html'>Espinosa, 31, who worked for the investigative magazine Proceso and other media was found murdered along with 4 women, in an apartment in a middle-class neighborhood of Mexico City, where he had fled because of harassment in the state he covered. (21)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 23:11:25</td><td></td><td><a href='mexico_14_16.html'>"I have commented to him (Governor Duarte) that we are required to take a statement directly from the governor," Mexico City mayor Miguel Angel Mancera told reporters on Monday. (2)</a></td></tr>
 </table></body></html>

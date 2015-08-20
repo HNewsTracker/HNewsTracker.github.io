@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -57,4 +57,5 @@
   <tr><td style='display:none'>6</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>Political parties, including Tsipras' Syriza, are in turmoil and there is speculation Greece will head into another general election in November.</td></tr>
   <tr><td style='display:none'>7</td><td></td><td>2015-08-14 23:02:28</td><td><a href='http://www.cbsnews.com/news/greece-gets-nod-for-billions-in-new-loans/'>site</a></td><td>Tsipras has maintained his public popularity in Greece despite his U-turn on austerity policies, and consistently leads opposition parties in opinion polls.</td></tr>
   <tr><td style='display:none'>8</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/17/b3/36/d39e958f677641629294997f4c883b28-335624b529de41198c06221fe84cf849-0_2.jpg'></td><td>2015-08-17 12:42:34</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-government-seen-calling-confidence-vote/nnLSY/'>site</a></td><td>Although no opinion polls have been published since the end of last week when Greece's third bailout was finalized, previous polls showed his party enjoying a wide lead over opposition parties.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-20 17:44:00</td><td><a href='http://www.npr.org/sections/thetwo-way/2015/08/20/433206660/greek-pm-steps-down-calls-new-elections-in-wake-of-bailout-deal?utm_medium=RSS&utm_campaign=storiesfromnpr'>site</a></td><td>"The political mandate of the January 25 elections has exhausted its limits and now the Greek people have to have their say," Tsipras said.</td></tr>
 </table></body></html>

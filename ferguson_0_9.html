@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 18:12:20</td><td><a href='http://www.nydailynews.com/news/crime/attorney-general-lynch-condemns-new-violence-ferguson-article-1.2320643?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+NydnRss+%28Top+Stories+-+NY+Daily+News%29'>site</a></td><td>Attorney General Lynch 'condemns' new violence in Ferguson</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 12:00:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-ferguson-protests-20150811-story.html'>site</a></td><td>The violence set Ferguson on edge and had protest leaders worried that tensions could escalate.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td><table><tr><td>ST. LOUIS (AP) - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson.</td></tr><tr><td>But since joining the St. Louis office of The Associated Press in 1993, I had never been to Ferguson as a reporter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 11:33:07</td><td><a href='http://www.miamiherald.com/news/nation-world/article30677811.html#storylink=rss'>site</a></td><td>The St. Louis suburb thoroughfare was the focus of months of massive protests and sometimes violent unrest last summer after the killing of Brown by a Ferguson police officer.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.daytondailynews.com/ap/ap/us/ferguson-defends-interim-chief-after-concerns-rais/nnKTt/'>site</a></td><td>Anderson, who is on leave from the Arizona department while he works in Ferguson in suburban St. Louis, has been promoted several times in Glendale and his records show generally favorable, sometimes glowing, reviews.</td></tr>
 </table></body></html>
