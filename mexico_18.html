@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 19:34:38</td><td></td><td><a href='mexico_18_19.html'>The Obama administration approved limited crude oil trading with Mexico on Friday, further easing the longstanding U.S. ban on crude exports that has drawn consternation from Republicans and energy producers. (6)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 19:34:38</td><td><a href='http://www.sfgate.com/business/energy/article/US-eases-crude-oil-export-ban-allows-trading-6444857.php'>site</a></td><td>That proposed project would carry crude oil from Canada's tar sands to refineries on the Texas Gulf Coast, so the influx of heavy crude from Mexico could play into a decision about whether the controversial pipeline is necessary.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 07:45:24</td><td><a href='http://www.startribune.com/sludge-from-colorado-mine-spill-heads-down-river-to-nm/321008761/'>site</a></td><td>As the plume headed toward New Mexico, that state's governor said the EPA waited too long to tell her about the problem.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 21:26:54</td><td></td><td><a href='mexico_18_20.html'>The head of the New Mexico Environment Department is calling out federal officials for not quickly notifying the state of a toxic wastewater spill from an abandoned Colorado mine. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-13 02:51:19</td><td></td><td><a href='mexico_18_21.html'>Governors in New Mexico and Colorado, as well as the Navajo Nation, have made similar declarations. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-13 02:51:19</td><td></td><td><a href='mexico_18_19.html'>The head of the Environmental Protection Agency says she will visit Farmington, New Mexico, downstream from where millions of gallons of mine waste spilled into a southwest Colorado river. (17)</a></td></tr>
 </table></body></html>
