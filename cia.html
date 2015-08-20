@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,4 +49,5 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 12:26:07</td><td><a href='http://www.miamiherald.com/news/business/technology/article31075266.html#storylink=rss'>site</a></td><td><table><tr><td>The two emails were marked classified after consultations with the CIA, which is where the material originated, officials said.</td></tr><tr><td>The drone exchange, the officials said, begins with a copy of a news article that discusses the CIA drone program that targets terrorists in Pakistan and elsewhere.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 12:53:51</td><td></td><td><a href='cia_0.html'>BERLIN (AP) - Prosecutors have charged a German spy with treason, breach of official secrecy and taking bribes for allegedly providing secret documents to both the CIA and Russia's intelligence agency. (4)</a></td></tr>
 </table></body></html>

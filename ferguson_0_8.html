@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 15,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -57,8 +57,10 @@
   <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 17:24:28</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28303189.html#storylink=rss'>site</a></td><td>Andre Anderson speaks with Ferguson City Council member Wesley Bell, right, after being introduced as the the interim chief of the Ferguson Police Department during a news conference on Wednesday, July 22, 2015, in Ferguson, Mo.</td></tr>
   <tr><td style='display:none'>7</td><td></td><td>2015-07-23 00:54:15</td><td><a href='http://www.nytimes.com/2015/07/23/us/missouri-arizona-commander-will-lead-ferguson-police.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Thomas Jackson, Ferguson's police chief for five years, resigned days after that report.</td></tr>
   <tr><td style='display:none'>8</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td>The next day, as Ferguson police prepared for a news conference to explain what happened, I was among a crowd of reporters who heard distant chanting.</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://static.theglobeandmail.ca/d47/news/world/article25857894.ece/ALTERNATES/w220/web-wo-us-ferguson06nw1'></td><td>2015-08-06 13:49:27</td><td><a href='http://www.theglobeandmail.com/news/world/ferguson-one-year-later-whats-happening-this-weekend/article25857899/?cmpid=rss1'>site</a></td><td>Ferguson Mayor James Knowles said the city has made many reforms in the last year, though it still has more to do.</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-08-10 09:57:00</td><td><a href='http://www.ctvnews.ca/world/police-shooting-protests-put-ferguson-back-on-edge-1.2509430'>site</a></td><td>Ferguson Interim Police Chief Andre Anderson, right, tries to calm the crowd after a shooting near a protest in Ferguson, Mo., on Aug. 10, 2015.</td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.daytondailynews.com/ap/ap/us/ferguson-defends-interim-chief-after-concerns-rais/nnKTt/'>site</a></td><td>Ferguson city officials on Friday defended interim Police Chief Andre Anderson after an online report raised concerns about his record as an officer in Glendale, Arizona.</td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/14/ferguson-defends-interim-chief-after-concerns-raised'>site</a></td><td>The statement from the city of Ferguson said Anderson was hired following a process that included a background investigation "independent of the City Manager."</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-03 13:01:27</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article29842411.html#storylink=rss'>site</a></td><td>What we didn?t know at the time was the depth of mistrust between black residents and the predominantly white Ferguson Police Department, a level of suspicion that no doubt fueled what happened next.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://static.theglobeandmail.ca/d47/news/world/article25857894.ece/ALTERNATES/w220/web-wo-us-ferguson06nw1'></td><td>2015-08-06 13:49:27</td><td><a href='http://www.theglobeandmail.com/news/world/ferguson-one-year-later-whats-happening-this-weekend/article25857899/?cmpid=rss1'>site</a></td><td>Ferguson Mayor James Knowles said the city has made many reforms in the last year, though it still has more to do.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-08-07 13:25:13</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/08/07/22538408.html?cid=rssnewsworld'>site</a></td><td>But at the same time, the government issued a report so critical of Ferguson's police and municipal court system that it hastened an upheaval in the town of 21,000 people, two-thirds of them black.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-08-10 09:57:00</td><td><a href='http://www.ctvnews.ca/world/police-shooting-protests-put-ferguson-back-on-edge-1.2509430'>site</a></td><td>Ferguson Interim Police Chief Andre Anderson, right, tries to calm the crowd after a shooting near a protest in Ferguson, Mo., on Aug. 10, 2015.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.daytondailynews.com/ap/ap/us/ferguson-defends-interim-chief-after-concerns-rais/nnKTt/'>site</a></td><td>Ferguson city officials on Friday defended interim Police Chief Andre Anderson after an online report raised concerns about his record as an officer in Glendale, Arizona.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/14/ferguson-defends-interim-chief-after-concerns-raised'>site</a></td><td>The statement from the city of Ferguson said Anderson was hired following a process that included a background investigation "independent of the City Manager."</td></tr>
 </table></body></html>

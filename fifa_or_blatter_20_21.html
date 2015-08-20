@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/20/876/493/Soccer FIFA Election Prince Ali-1.jpg?ve=1&tl=1'></td><td>2015-07-20 12:10:39</td><td><a href='http://www.foxnews.com/world/2015/07/20/fifa-selects-feb-26-for-presidential-election-following-blatter-decision-to/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>FIFA's 209 members will return to Zurich next year to select a new president almost than nine months after Blatter's resignation statement.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/04/8f/0e746a8eadbf4c489979579946fae32b-e05829c02aa14e55b7a38a9da498384d-0_1.jpg'></td><td>2015-07-20 12:34:57</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/fifa-to-decide-on-election-date-platini-gains-supp/nm3TZ/'>site</a></td><td>FIFA announced the election date shortly before a scheduled news conference by Blatter.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-20 13:21:22</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/20/fifa-to-decide-on-election-date-platini-gains-support'>site</a></td><td>"On the 26th of February FIFA will have a new president," Blatter said.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-20 14:30:18</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11484179&ref=rss'>site</a></td><td>Blatter said at a news conference Monday: "I will not be a candidate for the election in 2016."</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-20 15:16:58</td><td><a href='http://www.usnews.com/news/sports/articles/2015/07/20/blatter-news-conference-at-fifa-delayed-by-british-comedian'>site</a></td><td>ZURICH (AP) - A British comedian disrupted a news conference by Sepp Blatter on Monday, showering the FIFA president with fake money.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-20 15:22:10</td><td><a href='http://www.charlotteobserver.com/sports/article27902491.html#storylink=rss'>site</a></td><td>Sepp Blatter's news conference at FIFA has been disrupted and delayed by a British comedian's stunt protest.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/83/29/0e746a8eadbf4c489979579946fae32b-c1c864e63e574fd8a52873a64eed9de8-1.jpg'></td><td>2015-07-20 15:57:02</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/fifa-to-decide-on-election-date-platini-gains-supp/nm3TZ/'>site</a></td><td>FIFA president Sepp Blatter, left, looks on as British comedian Simon Brodkin protests during a news conference at FIFA headquarters in Zurich, Switzerland, Monday, July 20, 2015.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/83/29/0e746a8eadbf4c489979579946fae32b-c1c864e63e574fd8a52873a64eed9de8-1.jpg'></td><td>2015-07-20 21:05:25</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/fifa-to-decide-on-election-date-platini-gains-supp/nm3TZ/'>site</a></td><td>Sepp Blatter had a good day at the office on Monday, even if a prankster tried to spoil it by showering the FIFA president with fake dollar bills at a news conference.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/83/29/0e746a8eadbf4c489979579946fae32b-c1c864e63e574fd8a52873a64eed9de8-1.jpg'></td><td>2015-07-20 15:57:02</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/fifa-to-decide-on-election-date-platini-gains-supp/nm3TZ/'>site</a></td><td>FIFA president Sepp Blatter, left, looks on as British comedian Simon Brodkin protests during a news conference at FIFA headquarters in Zurich, Switzerland, Monday, July 20, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/20/83/29/0e746a8eadbf4c489979579946fae32b-c1c864e63e574fd8a52873a64eed9de8-1.jpg'></td><td>2015-07-20 21:05:25</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/fifa-to-decide-on-election-date-platini-gains-supp/nm3TZ/'>site</a></td><td>Sepp Blatter had a good day at the office on Monday, even if a prankster tried to spoil it by showering the FIFA president with fake dollar bills at a news conference.</td></tr>
 </table></body></html>

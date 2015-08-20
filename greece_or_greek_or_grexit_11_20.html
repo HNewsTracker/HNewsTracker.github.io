@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-17 17:30:24</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11483049&ref=rss'>site</a></td><td><table><tr><td>Mixed German messages on Greece serve a purpose</td></tr><tr><td>BERLIN (AP) " German government officials have appeared to send mixed messages about their desire for Greece to keep using the euro " and that's just the way they want it.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-19 12:36:50</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27816652.html#storylink=rss'>site</a></td><td>Criticism for German idea that Greece take a euro 'timeout'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 10:54:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/23/greece-clears-final-reform-hurdle-before-new-bailout-talks'>site</a></td><td>Without the money Greece would be unable to pay the debts due over the coming three years and would likely be forced to leave the euro, Europe's shared currency.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>They have openly voiced support for Greece to turn its back on the euro as its national currency.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/8/11/greece-accepts-harsh-new-bailout-terms/_jcr_content/image.adapt.480.low.tsipras2_072316.jpg'></td><td>2015-08-14 20:10:00</td><td><a href='http://america.aljazeera.com/articles/2015/8/14/greeces-euro-partners-approve-billions-in-new-loans.html'>site</a></td><td>The move saves Greece from a disorderly default on its debts which could have come as soon as next week and helps to cement its membership of Europe's single currency, but means more hardship for ordinary Greeks.</td></tr>
 </table></body></html>
