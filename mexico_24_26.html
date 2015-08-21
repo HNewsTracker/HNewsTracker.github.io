@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 17:58:06</td><td><a href='http://www.miamiherald.com/news/business/article30381405.html#storylink=rss'>site</a></td><td>New Mexico's environment secretary, Ryan Flynn, said Friday that the EPA downplayed the danger the contamination posed to wildlife, saying that potential harm can't be known until the contents of the wastewater and their concentrations are known.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 17:58:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article30381405.html#storylink=rss'>site</a></td><td>New Mexico blasts EPA for late notice on Colorado mine spill</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-08 04:20:09</td><td><a href='http://www.startribune.com/wastewater-from-colorado-mine-flows-toward-new-mexico-utah/321118111/'>site</a></td><td>New Mexico officials were angry they were not told of the spill until Thursday, nearly a day after it occurred.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.usnews.com/dims4/USNEWS/c10c82c/2147483647/resize/300x/quality/85/?url=%2Fcmsmedia%2F3a%2F66%2F1c36c2c44fa381b26939c23469e8%2Fdata-mine.jpg'></td><td>2015-08-10 21:26:54</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/10/the-latest-tribe-declares-emergency-due-to-mine-spill'>site</a></td><td>The head of the New Mexico Environment Department is calling out federal officials for not quickly notifying the state of a toxic wastewater spill from an abandoned Colorado mine.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://a.abcnews.com/images/US/WireAP_44665f53b50449eabf9c4bed2c3cd489_16x9_992.jpg'></td><td>2015-08-10 21:27:31</td><td><a href='http://abcnews.go.com/US/wireStory/latest-tribe-declares-emergency-due-mine-spill-32994401'>site</a></td><td>The Latest: New Mexico Calls out Feds Over Mine Spill</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/12/89/fc/a6c2299272864b048574afe40babd612-c51b887558064fc7aca5253534729521-5.jpg'></td><td>2015-08-13 02:51:19</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-epa-chief-to-visit-new-mexico-colorado/nnH2p/'>site</a></td><td>The Latest: EPA head to visit New Mexico to address spill</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-08-13 14:24:47</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/13/the-latest-epa-chief-visits-new-mexico-to-see-spill-fallout'>site</a></td><td>The Latest: EPA chief visits New Mexico to see spill fallout</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-20 20:25:57</td><td><a href='http://www.chron.com/news/science/article/Mexico-finds-main-skull-rack-at-Aztec-temple-6456079.php'>site</a></td><td>But archaeologists at Mexico's National Institute of Anthropology and History said Thursday that this one was different.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 23:39:23</td><td><a href='http://www.ctvnews.ca/sci-tech/archeologists-find-human-skull-trophy-rack-in-aztec-temple-1.2526696'>site</a></td><td>Eduardo Matos, an archaeologist at the National Institute of Anthropology and History, suggested the skull rack in Mexico City "was a show of might" by the Aztecs.</td></tr>
 </table></body></html>

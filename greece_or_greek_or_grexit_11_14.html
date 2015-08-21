@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 12,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,16 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td><table><tr><td>As Greece's economy tanked under his leadership, Tsipras' own popularity only grew.</td></tr><tr><td>Elias Nikolakopoulos, a leading Greek pollster, said that although it is still early to accurately gauge the depth of Tsipras' popularity, his resilience may be partly due to Greeks seeing him fighting in their corner, doing what he can whether good or bad.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 18:48:31</td><td><a href='http://www.theguardian.com/business/2015/aug/03/greek-shares-nosedive-as-manufacturing-data-reveals-economic-crisis'>site</a></td><td>Although manufacturing represents only a small proportion of Greece?s total productive output, the sheer magnitude of the downturn sends a worrying signal for the health of the economy as a whole.?</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td><table><tr><td>Rebooting Greece: how to get its economy going again</td></tr><tr><td>After so much pain, Greece must now figure out how to get its economy back on its feet.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/07/21/876/493/Greece Bailout-1.jpg?ve=1&tl=1'></td><td>2015-07-21 12:24:56</td><td><a href='http://www.foxnews.com/world/2015/07/21/greece-says-new-bailout-talks-to-begin-after-lawmakers-pass-bank-resolution/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Gerovasili said Greece already met other conditions outlined by creditors for bailout talks to begin when lawmakers voted through package of measures including wide-ranging sales tax hikes.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 12:30:08</td><td><a href='http://www.startribune.com/greece-new-bailout-talks-to-start-after-bank-laws-passed/317785231/'>site</a></td><td>Greece says new bailout talks to begin after lawmakers pass bank resolution laws Wednesday</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media2.s-nbcnews.com/j/newscms/2015_30/1136121/150722-greece-hg-2143_dd6473f589f594923946a080724e1f00.nbcnews-fp-360-360.jpg'></td><td>2015-07-23 01:46:38</td><td><a href='http://www.nbcnews.com/news/world/greece-clears-final-reform-hurdle-new-bailout-talks-n396896'>site</a></td><td>Greece Clears Final Reform Hurdle Before New Bailout Talks</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-24 11:03:25</td><td><a href='http://www.reuters.com/article/2015/07/24/us-eurozone-greece-idUSKCN0PW0GI20150724?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Laws passed, Greece to open bailout talks as recession pushes goals further</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-07-24 11:35:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486590&ref=rss'>site</a></td><td>Greek talks to begin after 'technical' issues ironed out</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/nYAfYJ05nl.be9Bkeaa_Zw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-25T131503Z_2_LYNXNPEB6O053_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-26 03:59:51</td><td><a href='http://finance.yahoo.com/news/greek-bailout-talks-pushed-back-035951385.html'>site</a></td><td>ATHENS (Reuters) - Talks between Greece and its international creditors over a new bailout package will be delayed by a couple of days because of organizational issues, a finance ministry official said on Saturday.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-28 12:42:34</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=topNews'>site</a></td><td>EU/IMF mission chiefs to arrive in Greece for bailout talks on Wednesday</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/LPWXGYXZhD03hbQPdWXCkQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-28T124234Z_2_LYNXNPEB6R0L4_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-28 20:26:30</td><td><a href='http://finance.yahoo.com/news/eu-imf-mission-chiefs-arrive-123755787.html'>site</a></td><td>When required, creditors' representatives had met with Greek officials at the Bank of Greece and the State General Accounting Office.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww1.hdnux.com/photos/37/76/67/8383984/15/square_gallery_thumb.jpg'></td><td>2015-07-31 04:01:06</td><td><a href='http://www.sfgate.com/news/world/article/Greek-bailout-talks-to-shift-gear-6416573.php'>site</a></td><td>Greek bailout talks to shift gear</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/bePSXbPrs4j_zCOZ5_MDPg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-10T005810Z_2_LYNXNPEB780C4_RTROPTP_3_CBUSINESS-US-EUROZONE-GREECE-TALKS_original.jpg'></td><td>2015-08-10 18:10:30</td><td><a href='http://finance.yahoo.com/news/greece-hopes-conclude-bailout-talks-005012453.html'>site</a></td><td>Greece and lenders in final push to seal new bailout</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-08-11 11:54:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>Greece agrees on broad terms of new bailout package</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-08-15 09:56:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/15/german-lawmakers-to-vote-on-greece-bailout-wednesday'>site</a></td><td>BERLIN (AP) - German lawmakers will hold a special session Wednesday morning to decide on a new bailout package for Greece.</td></tr>
 </table></body></html>

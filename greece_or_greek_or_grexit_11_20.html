@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 10:54:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/23/greece-clears-final-reform-hurdle-before-new-bailout-talks'>site</a></td><td>Without the money Greece would be unable to pay the debts due over the coming three years and would likely be forced to leave the euro, Europe's shared currency.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>They have openly voiced support for Greece to turn its back on the euro as its national currency.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/8/11/greece-accepts-harsh-new-bailout-terms/_jcr_content/image.adapt.480.low.tsipras2_072316.jpg'></td><td>2015-08-14 20:10:00</td><td><a href='http://america.aljazeera.com/articles/2015/8/14/greeces-euro-partners-approve-billions-in-new-loans.html'>site</a></td><td>The move saves Greece from a disorderly default on its debts which could have come as soon as next week and helps to cement its membership of Europe's single currency, but means more hardship for ordinary Greeks.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 09:43:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-greek-stock-market-20150803-story.html'>site</a></td><td>Greece's main stock index plunged over 22% as it reopened Monday after a five-week closure, giving investors their first opportunity since June to react to the country's latest economic crisis.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td><table><tr><td>After five-week shut down, Greek stocks plummet</td></tr><tr><td>On Monday, a survey showed Greek manufacturing activity plunged to a record low as new orders plummeted and the three-week bank shutdown caused serious supply problems.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 15:43:32</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-08-03-EU--Greece-Bailout/id-aa6c6a7ec3fd4bc5b064dd11b472fe09'>site</a></td><td>Employees of the Athens Stock Exchange look at stock prices which are on display on a ticker screen in Athens, Greece, Monday, Aug. 3, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://img.rasset.ie/000af049-642.jpg'></td><td>2015-08-03 21:39:17</td><td><a href='http://www.rte.ie/news/2015/0803/718902-greece-banks/'>site</a></td><td>Greek stock exchange re-opens after five weeks</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>ATHENS - Investors issued a vote of no confidence in Greece?s economy on Monday, dumping Greek stocks as trading on the Athens stock exchange resumed for the first time in five weeks.</td></tr>
 </table></body></html>

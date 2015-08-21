@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 11:35:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/28/greece-rescue-creditors-in-2nd-day-of-talks-on-new-lifeline'>site</a></td><td>Greece advances in loan talks, under fire for euro exit plan</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/35e/report-on-business/article25922127.ece/ALTERNATES/w220/ROZ03-OUKBS-UK-EUROZONE-GRE.JPG'></td><td>2015-08-11 05:38:37</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/greece-and-lenders-agree-on-bailout-terms-officials-say/article25922128/?cmpid=rss1'>site</a></td><td>An agreement would close a painful chapter of aid talks for Greece, which fought against austerity terms demanded by creditors for much of the year before relenting under the threat of being bounced out of the euro zone.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150814&i=110530839&w=240&r=110530839-1&t=2'></td><td>2015-08-14 15:40:46</td><td><a href='http://www.reuters.com/article/2015/08/14/us-eurozone-greece-tsipras-idUSKCN0QJ0FI20150814?feedType=RSS&feedName=businessNews'>site</a></td><td>Tsipras remains hugely popular in Greece for standing up to Germany's insistence on austerity before capitulating under the threat of a euro zone exit.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150814&t=2&i=1071961431&w=644&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEB7D0Z1'></td><td>2015-08-14 20:32:47</td><td><a href='http://www.reuters.com/article/2015/08/14/us-eurozone-greece-vote-idUSKCN0QJ27620150814?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Tsipras has long argued Greece cannot repay all its debts and demanded a partial write-off.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-08-03 10:00:43</td><td><a href='http://finance.yahoo.com/news/greek-stock-market-reopens-22-100034490.html'>site</a></td><td>Greek bank stocks suffered the most, hitting or nearing the daily trading limit of a 30 percent loss.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>A plunge of more than 16 percent for the main Greek index and a 30 percent sell-off for bank stocks were the latest signs of Greece?s shattered economy.</td></tr>
 </table></body></html>

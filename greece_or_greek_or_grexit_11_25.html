@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 12:32:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Out%20of%20Business/id-88af5b485d1f4c2b91d1b81651be43c1'>site</a></td><td>Uncertainty over Greece's bailout and recent capital controls have led to a new spate of store closures in Greek capital.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Germany set out "strict" conditions for further aid and said it would be sensible to link the size of the first tranche to Greece's progress in carrying out reforms, a reflection of worry around the euro zone that Athens might not do as promised.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PiEea8e.zpoyu6JROCo3mg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T161430Z_2_LYNXNPEB7D0SK_RTROPTP_3_EUROZONE-GREECE-EUROGROUP_original.jpg'></td><td>2015-08-14 22:55:16</td><td><a href='http://finance.yahoo.com/news/euro-ministers-set-launch-greek-154645912.html'>site</a></td><td><table><tr><td>In all, euro zone governments will lend 26 billion euros in a first tranche of the bailout before reviewing Greece's compliance with their conditions in October.</td></tr><tr><td>Led by Germany, euro zone governments have ruled out taking a "haircut" to reduce the nominal principle of Greece's debts to them.</td></tr><tr><td>That could mean further uncertainty in Greece and in a wider euro zone economy which data on Friday showed still struggling to meet even modest growth expectations.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-20 13:47:08</td><td><a href='http://www.reuters.com/article/2015/08/20/us-eurozone-greece-germany-idUSKCN0QP1HJ20150820?feedType=RSS&feedName=businessNews'>site</a></td><td>At the outbreak of the euro zone crisis, Schaeuble initially opposed IMF involvement in bailing out Greece before Merkel overruled him.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 12:15:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article28082050.html#storylink=rss'>site</a></td><td>In Brussels, Pierre Moscovici, the European Union's top economy official, said he's shooting for a mid-August timescale for the signing of a bailout deal, while accepting that Greece has to meet a "punishing" schedule.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 20:26:30</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=businessNews'>site</a></td><td>On the negotiations front, the Greek official said suggestions that Greece needed to pass further reform legislation before a bailout deal were not justified by the euro summit statement or subsequent exchanges.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150807&t=2&i=1070300437&w=644&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEB760IY'></td><td>2015-08-07 23:44:33</td><td><a href='http://www.reuters.com/article/2015/08/07/us-eurozone-greece-idUSKCN0QC19820150807?feedType=RSS&feedName=wtMostRead'>site</a></td><td>A senior Greek official said the two sides' assessments of the macroeconomic outlook and primary budget balance targets were very close and unlikely to be an obstacle to a deal.</td></tr>
 </table></body></html>

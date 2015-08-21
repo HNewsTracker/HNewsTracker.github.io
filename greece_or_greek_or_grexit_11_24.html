@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.3164186.1437602713!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/greece.jpg'></td><td>2015-07-22 08:40:14</td><td><a href='http://www.cbc.ca/news/business/greece-approves-new-batch-of-reforms-for-multi-billion-dollar-bailout-1.3162819?cmp=rss'>site</a></td><td>Greece has relied on bailout loans totaling 240 billion euros since 2010 after it was locked out of international money markets.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 12:19:18</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/27/greece-creditors-get-down-to-business-on-bailout-deal'>site</a></td><td>Without the money due from the expected three-year bailout totaling around 85 billion euros, Greece would be unable to make that payment - a development that would likely trigger fresh fears over the country's future in the euro.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 18:10:30</td><td><a href='http://www.reuters.com/article/2015/08/10/us-eurozone-greece-talks-idUSKCN0QE0PS20150810?feedType=RSS&feedName=topNews'>site</a></td><td>Germany's Handelsblatt newspaper reported that the IMF believes Greece needs a bigger bailout worth 90 billion euros.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-11 05:57:29</td><td><a href='http://www.reuters.com/article/2015/08/11/us-eurozone-greece-bailout-idUSKCN0QF2BV20150811?feedType=RSS&feedName=wtMostRead'>site</a></td><td>The pact is expected to be worth up to 86 billion euros ($94.75 billion) in fresh loans for debt-ridden Greece, but there was no immediate confirmation of its size.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-11 07:21:26</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>Greece has relied on international bailouts worth a total 240 billion euros ($263 billion) since it lost market confidence and was unable to borrow from anyone else in 2010.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/7Crcni.wtSImlTugYpBD.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-03T030358Z_1_LYNXNPEB7203F_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-08-03 11:30:45</td><td><a href='http://finance.yahoo.com/news/greeks-brace-stock-market-carnage-030358586.html'>site</a></td><td>Banking shares, which make up about 20 percent of the Greece index, were particularly hard hit.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-18 09:40:18</td><td><a href='http://www.startribune.com/greece-eases-some-limits-on-money-transfers/322137261/'>site</a></td><td>ATHENS, Greece - The Greek government has relaxed slightly its restrictions on banking transactions, allowing small amounts to be sent abroad for the first time in about two months.</td></tr>
 </table></body></html>
