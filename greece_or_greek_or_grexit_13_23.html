@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 10:54:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/23/greece-clears-final-reform-hurdle-before-new-bailout-talks'>site</a></td><td>Without the money Greece would be unable to pay the debts due over the coming three years and would likely be forced to leave the euro, Europe's shared currency.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/30/c3/d2/c9177f4c8d05408085912743c779f31a-da451bd6382f40dfa324274e47b7d816-0.jpg'></td><td>2015-07-31 01:03:59</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/drachma-revolt-adds-unease-to-greeces-awkward-alli/nm8zw/'>site</a></td><td>The decision followed a dramatic 12-hour meeting by the 200-member central committee, during which party rebels appealed for Greece to return to its national currency, the drachma.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>They have openly voiced support for Greece to turn its back on the euro as its national currency.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/8/11/greece-accepts-harsh-new-bailout-terms/_jcr_content/image.adapt.480.low.tsipras2_072316.jpg'></td><td>2015-08-14 20:10:00</td><td><a href='http://america.aljazeera.com/articles/2015/8/14/greeces-euro-partners-approve-billions-in-new-loans.html'>site</a></td><td>The move saves Greece from a disorderly default on its debts which could have come as soon as next week and helps to cement its membership of Europe's single currency, but means more hardship for ordinary Greeks.</td></tr>
+</table></body></html>

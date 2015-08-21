@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/g/q/e/e/image.related.thumbnail.90x60.gigq9a.png/1437461326733.jpg'></td><td>2015-07-21 12:19:25</td><td><a href='http://www.smh.com.au/world/turkey-denies-turning-blind-eye-to-islamic-state-as-bombing-stokes-anger-20150721-gihkhw.html'>site</a></td><td>Thousands of foreign fighters have crossed through Turkey to join Islamic State over the past few years, fuelling accusations from the government's opponents that it is turning a blind eye.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/h/3/l/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.smh.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td>Many of Turkey's Kurds and opposition supporters suspect President Tayyip Erdogan and the ruling AK Party of covertly backing Islamic State against Kurdish fighters in Syria, something the government has repeatedly denied.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 04:05:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28435420.html#storylink=rss'>site</a></td><td>The U.S. and Western countries have long been pressing Erdogan's government to do more to stop foreign fighters from crossing through Turkey into Syria and Iraq to join IS, with some analysts suggesting Turkey was looking the other way because the Islamic State is also fighting Assad.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/25/66/eb/f09876aaabfe409ba75b0aa4f92424ee-11d4339db20c456fa0a97df3de0632b8-0_1.jpg'></td><td>2015-07-25 18:25:59</td><td><a href='http://www.daytondailynews.com/ap/ap/international/kurds-fight-the-is-group-while-being-bombed-by-tur/nm6hZ/'>site</a></td><td>The Kurds of Syria and Iraq have become a major part of the war against the Islamic State group, with Kurdish populations in both countries threatened by the militants' advance.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 17:50:59</td><td><a href='http://www.startribune.com/nato-holding-rare-emergency-meeting-at-turkey-s-request/318670501/'>site</a></td><td><table><tr><td>NATO holding rare emergency meeting to review Islamic State threat, Turkey's reaction</td></tr><tr><td>"The rise of Islamic State in northern Iraq, in northern Syria, has effectively destabilized the southern border of Turkey. But also domestically, the threat of terrorism has become very real," Lete told The Associated Press.</td></tr></table></td></tr>
 </table></body></html>
