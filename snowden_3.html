@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 16:45:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/21/german-officials-to-ask-us-for-clarity-on-latest-spy-claims'>site</a></td><td>German spy chief sees reason to thank Snowden</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 16:45:14</td><td></td><td><a href='snowden_3_4.html'>BERLIN (AP) - Germany's domestic intelligence chief said Tuesday that the revelations by Edward Snowden have had at least one positive effect, by raising awareness about the importance of counter-espionage. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/j/d/j/k/image.related.articleLeadwide.620x349.gijdil.png/1437655479169.jpg'></td><td>2015-07-23 12:45:10</td><td><a href='http://www.brisbanetimes.com.au/world/nsa-leaker-edward-snowden-seeks-return-to-us-on-his-terms-20150723-gijdil.html'>site</a></td><td><table><tr><td>But Mr Snowden has gained little more from his revolutionising disclosures beyond the sense of accomplishment he is said to feel, according to the few people in and outside Russia with whom he has occasional contact.</td></tr><tr><td>Sergei Markov, an ardent nationalist and Kremlin advisor on diplomacy and international affairs, said Mr Snowden was in need of Russia's protection because "he can compromise thousands of intelligence and military officials".</td></tr><tr><td>Mr Goldfarb points to Mr Snowden's claims - and NSA officials' denials - that he attempted to take his concern about surveillance excesses to higher-ups at the agency, who turned a deaf ear.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-23 12:45:10</td><td></td><td><a href='snowden_3_4.html'>"Edward loves America and he would definitely like to return home," Anatoly Kucherena, Mr Snowden's Moscow lawyer, said in an interview at his ornate central Moscow office. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/j/d/j/k/image.related.articleLeadwide.620x349.gijdil.png/1437659847407.jpg'></td><td>2015-07-23 13:57:36</td><td><a href='http://www.brisbanetimes.com.au/world/nsa-leaker-edward-snowden-seeks-return-to-us-on-his-terms-20150723-gijdil.html'>site</a></td><td><table><tr><td>Mr Snowden's release of classified files he took from his National Security Agency contractor's job blew the lid off programs long said to be aimed at catching terrorists and keeping Americans safe.</td></tr><tr><td>The journalists who were the conduits of Mr Snowden's disclosures have been bestowed with their profession's highest honors, as has director Laura Poitras with an Academy Award for her documentary on the fugitive, CitizenFour.</td></tr></table></td></tr>
 </table></body></html>

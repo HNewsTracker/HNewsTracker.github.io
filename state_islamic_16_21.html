@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-07-24 04:01:11</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/23/ap-sources-turkey-allows-us-to-use-key-base-to-strike-is'>site</a></td><td>Turkey allows US to use key air base to strike Islamic State</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 12:56:27</td><td><a href='http://www.foxnews.com/world/2015/07/25/turkish-jets-target-kurds-in-iraq-islamic-state-militants-in-syria/'>site</a></td><td>Turkey also announced Friday that it was allowing its air bases to be used by the U.S.-led coalition forces for operations against Islamic State extremists.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48530851,width-300,resizemode-4/.jpg'></td><td>2015-08-18 13:57:44</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Islamic-State-fighter-urges-fellow-Turks-to-conquer-Istanbul/articleshow/48530765.cms'>site</a></td><td>The United States carried out its first manned air strikes against Islamic State from Turkey's southern Incirlik Air Base last week and officials have said operations will be ramped up once additional coalition forces arrive.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 15:24:00</td><td><a href='http://www.latimes.com/world/middleeast/la-fg-u-s-turkey-islamic-state-syria-20150727-story.html'>site</a></td><td>The PKK is fighting Islamic State "for power, not for peace, not for security."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/p/7/h/6/image.related.articleLeadwide.620x349.giw3g6.png/1439229671565.jpg'></td><td>2015-08-10 18:01:25</td><td><a href='http://www.smh.com.au/world/nusra-front-says-it-will-withdraw-from-frontline-against-islamic-state-in-syria-20150810-giw3g6'>site</a></td><td>It said that the decision to push the Islamic State out of the proposed safe zone was not "the free choice of the fighting factions; in fact, its first goal is the national security of Turkey."</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/40/16/33/8447722/11/square_gallery_thumb.jpg'></td><td>2015-08-11 16:50:54</td><td><a href='http://www.sfgate.com/news/world/article/Greece-closes-in-on-bailout-deal-possibly-within-6436731.php'>site</a></td><td>A man reads a newspaper outside a shop in in the northern Greek port city of Thessaloniki, Tuesday, Aug. 11, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 14:41:07</td><td><a href='http://www.miamiherald.com/news/business/article31073082.html#storylink=rss'>site</a></td><td>A Greek flag flutters next to visitors overlooking the city from the Acropolis hill in Athens, Greece, Friday, Aug. 14, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-18 17:00:11</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31370957.html#storylink=rss'>site</a></td><td>People wait to cross the street as an elderly woman begs for alms in the northern port city of Thessaloniki, Greece, on Tuesday, Aug. 18, 2015.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-21 12:55:06</td><td><a href='http://www.miamiherald.com/news/business/article31700642.html#storylink=rss'>site</a></td><td>Conservative New Democracy party head Evangelos Meimarakis, center, leaves the presidential Palace after a meeting with Greek President in Athens, Friday Aug. 21, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-15 10:00:44</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31182353.html#storylink=rss'>site</a></td><td>At a similar vote in July, 60 members of Merkel's 311-member conservative bloc voted against further bailout negotiations to prevent Greece from defaulting on its debts.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 15:33:30</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/merkel-looks-to-shore-up-german-support-for-greek/'>site</a></td><td>To counter that, Merkel's government has been talking tough on the new rescue package, insisting Greece will be supervised closely and that there will be no write-off - or "haircut" - on the loans the country owes Germany.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-19 12:24:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31496567.html#storylink=rss'>site</a></td><td>Germany's parliament overwhelmingly approved a third bailout for Greece on Wednesday, removing a key hurdle to providing new loans to the country and keeping it from defaulting on its debts in as little as 24 hours.</td></tr>
 </table></body></html>
