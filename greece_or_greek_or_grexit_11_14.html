@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 12,
+            max: 11,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -55,9 +55,8 @@
   <tr><td style='display:none'>4</td><td></td><td>2015-07-24 11:35:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486590&ref=rss'>site</a></td><td>Greek talks to begin after 'technical' issues ironed out</td></tr>
   <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/nYAfYJ05nl.be9Bkeaa_Zw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-25T131503Z_2_LYNXNPEB6O053_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-26 03:59:51</td><td><a href='http://finance.yahoo.com/news/greek-bailout-talks-pushed-back-035951385.html'>site</a></td><td>ATHENS (Reuters) - Talks between Greece and its international creditors over a new bailout package will be delayed by a couple of days because of organizational issues, a finance ministry official said on Saturday.</td></tr>
   <tr><td style='display:none'>6</td><td></td><td>2015-07-28 12:42:34</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=topNews'>site</a></td><td>EU/IMF mission chiefs to arrive in Greece for bailout talks on Wednesday</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/LPWXGYXZhD03hbQPdWXCkQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-28T124234Z_2_LYNXNPEB6R0L4_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-28 20:26:30</td><td><a href='http://finance.yahoo.com/news/eu-imf-mission-chiefs-arrive-123755787.html'>site</a></td><td>When required, creditors' representatives had met with Greek officials at the Bank of Greece and the State General Accounting Office.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://ww1.hdnux.com/photos/37/76/67/8383984/15/square_gallery_thumb.jpg'></td><td>2015-07-31 04:01:06</td><td><a href='http://www.sfgate.com/news/world/article/Greek-bailout-talks-to-shift-gear-6416573.php'>site</a></td><td>Greek bailout talks to shift gear</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/bePSXbPrs4j_zCOZ5_MDPg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-10T005810Z_2_LYNXNPEB780C4_RTROPTP_3_CBUSINESS-US-EUROZONE-GREECE-TALKS_original.jpg'></td><td>2015-08-10 18:10:30</td><td><a href='http://finance.yahoo.com/news/greece-hopes-conclude-bailout-talks-005012453.html'>site</a></td><td>Greece and lenders in final push to seal new bailout</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-08-11 11:54:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>Greece agrees on broad terms of new bailout package</td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-08-15 09:56:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/15/german-lawmakers-to-vote-on-greece-bailout-wednesday'>site</a></td><td>BERLIN (AP) - German lawmakers will hold a special session Wednesday morning to decide on a new bailout package for Greece.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww1.hdnux.com/photos/37/76/67/8383984/15/square_gallery_thumb.jpg'></td><td>2015-07-31 04:01:06</td><td><a href='http://www.sfgate.com/news/world/article/Greek-bailout-talks-to-shift-gear-6416573.php'>site</a></td><td>Greek bailout talks to shift gear</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/bePSXbPrs4j_zCOZ5_MDPg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-10T005810Z_2_LYNXNPEB780C4_RTROPTP_3_CBUSINESS-US-EUROZONE-GREECE-TALKS_original.jpg'></td><td>2015-08-10 18:10:30</td><td><a href='http://finance.yahoo.com/news/greece-hopes-conclude-bailout-talks-005012453.html'>site</a></td><td>Greece and lenders in final push to seal new bailout</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-11 11:54:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>Greece agrees on broad terms of new bailout package</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-08-15 09:56:16</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/15/german-lawmakers-to-vote-on-greece-bailout-wednesday'>site</a></td><td>BERLIN (AP) - German lawmakers will hold a special session Wednesday morning to decide on a new bailout package for Greece.</td></tr>
 </table></body></html>

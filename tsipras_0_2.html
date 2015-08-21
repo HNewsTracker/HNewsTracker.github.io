@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td><table><tr><td>Many Greeks like Tsipras' message of hope - even if his actions may be leading to a harder life.</td></tr><tr><td>He added that Tsipras' portrayal of Greece rejecting the meddling of "foreigners" resonates among many Greeks.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150820&i=110692200&w=240&r=110692200-1&t=2'></td><td>2015-08-21 01:05:34</td><td><a href='http://www.reuters.com/article/2015/08/21/us-eurozone-greece-resignation-idUSKCN0QP1Q820150821?feedType=RSS&feedName=topNews'>site</a></td><td>Tsipras nevertheless remains popular among his supporters for trying to stand up to the foreign creditors and with the opposition in disarray, he is widely expected to return to power.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-21 04:02:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/21/greeces-tsipras-bets-on-early-polls-to-boost-reform-mandate'>site</a></td><td>Greece's European creditors did not appear dismayed by Tsipras' move, which was widely expected.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-21 04:02:46</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-bets-on-early-polls-to-boost-refor/nnNq6/'>site</a></td><td>Although Tsipras is widely tipped to win the election, if he fails to secure an outright majority he would have to seek a complex coalition deal that could hamper his ability to govern in the long term.</td></tr>
 </table></body></html>

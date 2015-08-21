@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-31 01:08:07</td><td><a href='http://www.miamiherald.com/news/business/article29514796.html#storylink=rss'>site</a></td><td><table><tr><td>Greek Prime Minister Alexis Tsipras addresses a meeting of his ruling radical left Syriza party's central committee in Athens, on Thursday, July 30, 2015.</td></tr><tr><td>Syriza's governing central committee early Friday backed a proposal by Tsipras to hold an emergency party conference in September, after the talks have been concluded.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>"We have to agree that we can't go on this way," Tsipras told the committee members during a dramatic 12-hour meeting.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/40/31/52/8493747/13/920x920.jpg'></td><td>2015-08-20 18:28:25</td><td><a href='http://www.sfgate.com/news/world/article/Greece-gets-14-5-billion-to-pay-debts-part-of-6454604.php'>site</a></td><td>Greek Prime Minister Alexis Tsipras leaves his office in Athens, on Thursday, Aug. 20, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/N_OQphGwzTSCbACAENlRvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/homerun/cnbc.com/https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/22/102853163-GettyImages-478813678.1910x1000.jpg'></td><td>2015-07-22 14:24:41</td><td><a href='http://finance.yahoo.com/news/tsipras-rallies-troops-ahead-greek-071442070.html'>site</a></td><td>In the first parliamentary vote last week on measures (called "prior actions) including a sales-tax hike, around a quarter of Syriza lawmakers rebelled, making the latest vote tough on Tsipras.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>Tsipras effectively lost his majority in parliament in a vote three weeks ago, when nearly one-fourth of Syriza's lawmakers refused to back new austerity measures.</td></tr>
 </table></body></html>
