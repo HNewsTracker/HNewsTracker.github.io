@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,11 @@
     <h3>tsipras</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>7</td><td></td><td>2015-07-21 15:29:41</td><td></td><td><a href='tsipras_0_1.html'>ATHENS, Greece (AP) - Under Alexis Tsipras, Greece slid back into recession, sank deeper into debt and found itself pushed to the brink of bankruptcy. (14)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 15:35:54</td><td><a href='http://www.startribune.com/greece-s-tsipras-stays-popular-despite-bailout-hardship/317792711/'>site</a></td><td>Tsipras' Syriza party was elected in January on a promise to end austerity, forming a coalition with the right-wing, anti-bailout Independent Greeks party - a move that broadened his political influence.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/13/102828831-GReek_timeline.80x60.jpg?v=1436804433'></td><td>2015-07-22 01:06:00</td><td><a href='http://www.cnbc.com/2015/07/21/alexis-tsipras-transforms-himself-as-he-sells-greek-bailout-terms.html'>site</a></td><td>Mr. Tsipras benefits from having never had anything to do with those parties.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-22 14:24:41</td><td></td><td><a href='tsipras_0_3.html'>In the first parliamentary vote last week on measures (called "prior actions) including a sales-tax hike, around a quarter of Syriza lawmakers rebelled, making the latest vote tough on Tsipras. (2)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-07-31 01:08:07</td><td></td><td><a href='tsipras_0_4.html'>Greek Prime Minister Alexis Tsipras addresses a meeting of his ruling radical left Syriza party's central committee in Athens, on Thursday, July 30, 2015. (15)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>Also on Friday, Tsipras is due to appear in parliament to answer qustions from the opposition about contingency plans to adopt a parallel payment system that could have facilitated a euro exit.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-14 09:55:15</td><td><a href='http://www.smh.com.au//breaking-news-world/greek-parliament-approves-bailout-deal-20150814-410xq.html'>site</a></td><td><table><tr><td>Tsipras appealed to other EU countries to reject the alternative solution that Germany was suggesting, which he claimed would only prolong the agony.</td></tr><tr><td>Tsipras said that failure to ratify the deal would enable Germany to push forward its proposal for a bridging loan.</td></tr></table></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-08-21 01:05:34</td><td></td><td><a href='tsipras_0_2.html'>Tsipras nevertheless remains popular among his supporters for trying to stand up to the foreign creditors and with the opposition in disarray, he is widely expected to return to power. (3)</a></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150820&i=110692200&w=240&r=110692200-1&t=2'></td><td>2015-08-21 01:05:34</td><td><a href='http://www.reuters.com/article/2015/08/21/us-eurozone-greece-resignation-idUSKCN0QP1Q820150821?feedType=RSS&feedName=worldNews'>site</a></td><td>Meimarakis took aim at Tsipras.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/13/102828831-GReek_timeline.80x60.jpg?v=1436804433'></td><td>2015-07-22 01:06:00</td><td><a href='http://www.cnbc.com/2015/07/21/alexis-tsipras-transforms-himself-as-he-sells-greek-bailout-terms.html'>site</a></td><td>Mr. Tsipras benefits from having never had anything to do with those parties.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-07-31 01:08:07</td><td></td><td><a href='tsipras_0_1.html'>Greek Prime Minister Alexis Tsipras addresses a meeting of his ruling radical left Syriza party's central committee in Athens, on Thursday, July 30, 2015. (19)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>Also on Friday, Tsipras is due to appear in parliament to answer qustions from the opposition about contingency plans to adopt a parallel payment system that could have facilitated a euro exit.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 09:55:15</td><td><a href='http://www.smh.com.au//breaking-news-world/greek-parliament-approves-bailout-deal-20150814-410xq.html'>site</a></td><td>Tsipras appealed to other EU countries to reject the alternative solution that Germany was suggesting, which he claimed would only prolong the agony.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150820&i=110692200&w=240&r=110692200-1&t=2'></td><td>2015-08-21 01:05:34</td><td><a href='http://www.reuters.com/article/2015/08/21/us-eurozone-greece-resignation-idUSKCN0QP1Q820150821?feedType=RSS&feedName=worldNews'>site</a></td><td>Meimarakis took aim at Tsipras.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-21 04:02:46</td><td></td><td><a href='tsipras_0_2.html'>Although Tsipras is widely tipped to win the election, if he fails to secure an outright majority he would have to seek a complex coalition deal that could hamper his ability to govern in the long term. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-21 11:42:00</td><td></td><td><a href='tsipras_0_3.html'>Tsipras is hoping to strengthen his hold on power in a snap election after seven months in office in which he fought Greece's creditors for a better bailout deal but had to cave in and accept more onerous terms. (14)</a></td></tr>
 </table></body></html>

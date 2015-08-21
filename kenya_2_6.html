@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,13 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>netanyahu</h3>
+    <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/ows_144003579628076.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-20 18:55:53</td><td><a href='http://www.startribune.com/on-nuclear-deal-not-all-israelis-are-with-netanyahu/322428141/'>site</a></td><td><table><tr><td>If Netanyahu loses, he will have gained nothing and potentially lost much by damaging the already strained relationship with the U.S., endangering a vital security alliance and American diplomatic cover at the United Nations.</td></tr><tr><td>"When it comes to the relationship between Israel and the United States, Netanyahu's problem is ... extreme courage, to the point of dangerousness," commentator Ari Shavit wrote in the Haaretz daily Thursday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/Politics/876/493/Obama_Kenya.jpg?ve=1&tl=1'></td><td>2015-07-25 18:31:55</td><td><a href='http://www.foxnews.com/politics/2015/07/25/in-kenya-obama-blends-blunt-messages-with-warm-reflections/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fpolitics+%28Internal+-+Politics+-+Text%29'>site</a></td><td>A number of Kenyan politicians and religious leaders had warned Obama that any overtures on gay rights would not be welcomed in Kenya, where gay sex is punishable by up to 14 years in prison.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/37/71/37/8361944/13/square_gallery_thumb.jpg'></td><td>2015-07-25 19:03:35</td><td><a href='http://www.sfgate.com/news/world/article/Obama-in-Kenya-Africa-is-on-the-move-6404969.php'>site</a></td><td>Obama did little to paper over policy differences with Kenya's government, most notably on gay rights.</td></tr>
 </table></body></html>

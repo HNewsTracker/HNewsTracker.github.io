@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 12:15:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article28082050.html#storylink=rss'>site</a></td><td>In Brussels, Pierre Moscovici, the European Union's top economy official, said he's shooting for a mid-August timescale for the signing of a bailout deal, while accepting that Greece has to meet a "punishing" schedule.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 20:26:30</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=businessNews'>site</a></td><td>On the negotiations front, the Greek official said suggestions that Greece needed to pass further reform legislation before a bailout deal were not justified by the euro summit statement or subsequent exchanges.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150807&t=2&i=1070300437&w=644&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEB760IY'></td><td>2015-08-07 23:44:33</td><td><a href='http://www.reuters.com/article/2015/08/07/us-eurozone-greece-idUSKCN0QC19820150807?feedType=RSS&feedName=wtMostRead'>site</a></td><td>A senior Greek official said the two sides' assessments of the macroeconomic outlook and primary budget balance targets were very close and unlikely to be an obstacle to a deal.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-08-03 10:00:43</td><td><a href='http://finance.yahoo.com/news/greek-stock-market-reopens-22-100034490.html'>site</a></td><td>Greek bank stocks suffered the most, hitting or nearing the daily trading limit of a 30 percent loss.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>A plunge of more than 16 percent for the main Greek index and a 30 percent sell-off for bank stocks were the latest signs of Greece?s shattered economy.</td></tr>
 </table></body></html>

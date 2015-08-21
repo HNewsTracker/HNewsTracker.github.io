@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 12:32:37</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/21/germanwings-crash-families-accuse-airline-of-ignoring-them'>site</a></td><td><table><tr><td>Germanwings crash families accuse airline of ignoring them</td></tr><tr><td>BERLIN (AP) - A group of parents whose children were killed in the Germanwings plane crash in March have written a scathing letter to Lufthansa's CEO, accusing him of ignoring their needs and feelings.</td></tr><tr><td>The letter comes amid negotiations with Lufthansa, Germanwings' parent airline, over compensation.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/a9d/video/article24897842.ece/ALTERNATES/w140/Teens+Killed+in+Germanwings+Crash+Brought+Home'></td><td>2015-07-22 02:19:15</td><td><a href='http://www.theglobeandmail.com/news/world/families-demand-apology-from-lufthansa-ceo-for-germanwings-crash/article25623078/?cmpid=rss1'>site</a></td><td><table><tr><td>The families of 18 schoolchildren and teachers killed in the Germanwings crash have called for an apology from the head of Lufthansa, saying their children might still be alive if the airline's doctors had paid more attention to the pilot's health.</td></tr><tr><td>In an emotional letter to the chief executive of Lufthansa, Germanwings' parent group, the families said CEO Carsten Spohr had not spoken with them personally, nor had he apologized for the crash, in which all 150 on board died.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-24 18:35:08</td><td></td><td><a href='germanwings_1.html'>A stele, a stone slab erected as a monument, set up in the area near where a Germanwings aircraft crashed in the French Alps, in Le Vernet, French Alps, Friday, July 24, 2015. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/a9d/video/article24897842.ece/ALTERNATES/w140/Teens+Killed+in+Germanwings+Crash+Brought+Home'></td><td>2015-07-22 02:19:15</td><td><a href='http://www.theglobeandmail.com/news/world/families-demand-apology-from-lufthansa-ceo-for-germanwings-crash/article25623078/?cmpid=rss1'>site</a></td><td><table><tr><td>The families of 18 schoolchildren and teachers killed in the Germanwings crash have called for an apology from the head of Lufthansa, saying their children might still be alive if the airline's doctors had paid more attention to the pilot's health.</td></tr><tr><td>In an emotional letter to the chief executive of Lufthansa, Germanwings' parent group, the families said CEO Carsten Spohr had not spoken with them personally, nor had he apologized for the crash, in which all 150 on board died.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 18:35:08</td><td></td><td><a href='germanwings_0.html'>A stele, a stone slab erected as a monument, set up in the area near where a Germanwings aircraft crashed in the French Alps, in Le Vernet, French Alps, Friday, July 24, 2015. (6)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-08-14 15:36:03</td><td><a href='http://www.startribune.com/school-unveils-memorial-to-germanwings-crash-victims/321878101/'>site</a></td><td><table><tr><td>School that lost students in Germanwings crash inaugurates memorial with plaque, cherry trees</td></tr><tr><td>BERLIN - A high school that lost 16 students and two teachers in the Germanwings plane crash in March is inaugurating a memorial to the victims that features 18 cherry trees.</td></tr></table></td></tr>
 </table></body></html>

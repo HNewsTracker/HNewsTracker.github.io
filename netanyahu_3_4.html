@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/ows_144003579628076.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-20 18:55:53</td><td><a href='http://www.startribune.com/on-nuclear-deal-not-all-israelis-are-with-netanyahu/322428141/'>site</a></td><td><table><tr><td>If Netanyahu loses, he will have gained nothing and potentially lost much by damaging the already strained relationship with the U.S., endangering a vital security alliance and American diplomatic cover at the United Nations.</td></tr><tr><td>"When it comes to the relationship between Israel and the United States, Netanyahu's problem is ... extreme courage, to the point of dangerousness," commentator Ari Shavit wrote in the Haaretz daily Thursday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/64/16/8340382/3/square_gallery_thumb.jpg'></td><td>2015-07-21 18:36:10</td><td><a href='http://www.sfgate.com/news/article/Carter-Netanyahu-call-it-a-day-after-discussing-6397458.php'>site</a></td><td>Carter and Netanyahu met Tuesday in the prime minister's office in Jerusalem.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 18:45:14</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/21/carter-netanyahu-call-it-a-day-after-discussing-iran-deal'>site</a></td><td><table><tr><td>Carter, Netanyahu call it a day after discussing Iran deal</td></tr><tr><td>Carter on Tuesday did avoid a public tongue-lashing by Prime Minister Benjamin Netanyahu.</td></tr><tr><td>A Carter aide who attended the talks in Jerusalem later told reporters that Netanyahu bluntly expressed his opposition to the Iran deal but did not get angry or upset with Carter.</td></tr><tr><td>The U.S. official said neither Carter nor Netanyahu raised the issue of potential U.S. compensation to Israel in the form of increased defense assistance to counter Iran-related threats.</td></tr><tr><td>He was the first Cabinet-level U.S. official to meet with Netanyahu since the signing of the Iran deal.</td></tr></table></td></tr>
 </table></body></html>

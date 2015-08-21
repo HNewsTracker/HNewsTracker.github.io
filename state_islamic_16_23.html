@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/i/h/3/l/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.brisbanetimes.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td>Ankara: Kurdish militants have claimed responsibility for the assassination of two Turkish police officers in what they said was retaliation for a suspected Islamic State suicide bombing that killed 32 people.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/67/74/8355626/13/square_gallery_thumb.jpg'></td><td>2015-07-24 12:45:32</td><td><a href='http://www.sfgate.com/news/world/article/Turkey-says-jets-strike-IS-targets-in-Syria-6402899.php'>site</a></td><td>For their part, Turkish police launched a major operation Friday against terror groups including Islamic State, carrying out simultaneous raids in Istanbul and 12 provinces and detaining more than 290 people.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/bea8882/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fe6%2F54793c97282fb105c93ba03c53d4aa%2Fmedia%3A2581106c34c146639cbd9627b41a7904TurkeySyriaAirstrikes.JPEG'></td><td>2015-07-25 07:59:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/25/turkish-jets-hit-is-targets-in-syria-kurds-in-iraq'>site</a></td><td>Turkish police meanwhile proceeded with a major operation against the Islamic State, the PKK and the far-left DHKP-C for a second day running.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 12:44:21</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/qa-kurds-fight-islamic-state-and-endure-turkish-at/nm7FH/'>site</a></td><td>Tensions flared again after an Islamic State suicide bombing in the southeastern Turkish city of Suruc last week killed 32 people.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48530851,width-300,resizemode-4/.jpg'></td><td>2015-08-18 13:57:44</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Islamic-State-fighter-urges-fellow-Turks-to-conquer-Istanbul/articleshow/48530765.cms'>site</a></td><td>The steps followed a suicide bombing, blamed on Islamic State, in the Turkish border town of Suruc on July 20 which killed 34 people.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/23/ab/81/c90ffb0467ff4084bd01cb9578477b3f-947d2f779ed549d6b226b808c407cfa1-0.jpg'></td><td>2015-07-23 14:55:45</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/official-suspected-is-militants-kill-turkish-soldi/nm5WT/'>site</a></td><td>Suspected Islamic State militants fired at a Turkish military outpost from inside Syrian territory Thursday, killing a Turkish soldier and wounding two others, an official said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 15:55:59</td><td><a href='http://www.reuters.com/article/2015/07/23/us-mideast-crisis-turkey-jets-idUSKCN0PX1VB20150723?feedType=RSS&feedName=worldNews'>site</a></td><td>ANKARA Turkey has scrambled fighter jets to the Syrian border following clashes with Islamic State militants, a Turkish official said on Thursday.</td></tr>
 </table></body></html>

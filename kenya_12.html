@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,13 +40,14 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>netanyahu</h3>
+    <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.stimg.co/ows_144003579628076.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-20 18:55:53</td><td><a href='http://www.startribune.com/on-nuclear-deal-not-all-israelis-are-with-netanyahu/322428141/'>site</a></td><td><table><tr><td>If Netanyahu loses, he will have gained nothing and potentially lost much by damaging the already strained relationship with the U.S., endangering a vital security alliance and American diplomatic cover at the United Nations.</td></tr><tr><td>"When it comes to the relationship between Israel and the United States, Netanyahu's problem is ... extreme courage, to the point of dangerousness," commentator Ari Shavit wrote in the Haaretz daily Thursday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 07:25:14</td><td><a href='http://www.sfgate.com/news/article/As-he-heads-to-Africa-Obama-s-electricity-plan-6400933.php'>site</a></td><td>Although this week's trip to Kenya and Ethiopia will be Obama's third to sub-Saharan Africa as president, his global agenda has been largely focused on Asia and the Middle East.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-23 07:30:06</td><td><a href='http://www.miamiherald.com/news/politics-government/article28386073.html#storylink=rss'>site</a></td><td>FILE - In this Saturday, Aug. 26, 2006 file photo, then U.S. Senator Barack Obama meets with his step-grandmother Sarah Obama at his father's house in Kogelo, western Kenya.</td></tr>
 </table></body></html>
