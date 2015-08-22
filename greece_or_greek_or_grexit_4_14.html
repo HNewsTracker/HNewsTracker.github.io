@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 12:32:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-23-EU--Greece-Out%20of%20Business/id-88af5b485d1f4c2b91d1b81651be43c1'>site</a></td><td>Uncertainty over Greece's bailout and recent capital controls have led to a new spate of store closures in Greek capital.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03365/greeceno1_3365948g.jpg'></td><td>2015-08-05 13:44:18</td><td><a href='http://www.telegraph.co.uk/finance/economics/11784364/Greece-in-final-stage-of-bail-out-talks-as-bank-shares-collapse-for-a-third-day.html'>site</a></td><td>"Despite the difficulties we are facing we hope this agreement can end uncertainty on the future of Greece."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 10:54:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/23/greece-clears-final-reform-hurdle-before-new-bailout-talks'>site</a></td><td>Without the money Greece would be unable to pay the debts due over the coming three years and would likely be forced to leave the euro, Europe's shared currency.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-26 14:44:22</td><td><a href='http://www.reuters.com/article/2015/07/26/us-eurozone-greece-idUSKCN0Q00JN20150726?feedType=RSS&feedName=worldNews'>site</a></td><td>Lafazanis, leader of a hardline faction in the ruling Syriza party that has argued for a return to the drachma, said the move would have allowed pensions and public sector wages to be paid if Greece were forced out of the euro.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/30/c3/d2/c9177f4c8d05408085912743c779f31a-da451bd6382f40dfa324274e47b7d816-0.jpg'></td><td>2015-07-31 01:03:59</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/drachma-revolt-adds-unease-to-greeces-awkward-alli/nm8zw/'>site</a></td><td>The decision followed a dramatic 12-hour meeting by the 200-member central committee, during which party rebels appealed for Greece to return to its national currency, the drachma.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>They have openly voiced support for Greece to turn its back on the euro as its national currency.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/8/11/greece-accepts-harsh-new-bailout-terms/_jcr_content/image.adapt.480.low.tsipras2_072316.jpg'></td><td>2015-08-14 20:10:00</td><td><a href='http://america.aljazeera.com/articles/2015/8/14/greeces-euro-partners-approve-billions-in-new-loans.html'>site</a></td><td>The move saves Greece from a disorderly default on its debts which could have come as soon as next week and helps to cement its membership of Europe's single currency, but means more hardship for ordinary Greeks.</td></tr>
 </table></body></html>

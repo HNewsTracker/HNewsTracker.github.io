@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 04:47:05</td><td></td><td><a href='apple_9_11.html'>And of the more than a dozen early Apple Watch owners interviewed by the AP by phone, email or in person, most of them love their watch. (9)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 23:20:05</td><td></td><td><a href='apple_9_10.html'>Apps will get better when Apple updates the watch's software this fall to permit more "native" apps -- those that aren't just extensions of phone apps. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 08:41:58</td><td></td><td><a href='apple_9_10.html'>LONDON (Reuters) - Disappointment over U.S. corporate earnings, most notably at Apple Inc (AAPL.O), the world's largest company, pushed stocks lower on Wednesday and investors towards the shelter of bonds. (10)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 11:47:06</td><td></td><td><a href='apple_9_11.html'>ANALYST TAKE: "China is at the core of Apple's problem, and the iPhone maker is becoming too dependent on a single country which is having big problems of its own," said David Madden, market analyst at IG. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 11:47:06</td><td></td><td><a href='apple_9_12.html'>A cautious outlook from Apple coupled with indifferent earnings from U.S. technology firms weighed on global stock markets Wednesday ahead of another key vote in the Greek Parliament. (3)</a></td></tr>
 </table></body></html>

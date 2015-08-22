@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-10 13:58:22</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/10/greek-coast-guard-rescues-1-417-migrants-over-3-days'>site</a></td><td>The vast majority then head to mainland Greece and from there, try to reach more prosperous European Union countries by either walking across the Balkans from northern Greece, or sneaking onto Italy-bound ferries from the west.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/11/b3/99/0f6f500631dc468aaaf4b3ad7c88aa6a-b0acb25bd35843648b6b34f707525031-0_1.jpg'></td><td>2015-08-11 08:28:47</td><td><a href='http://www.daytondailynews.com/ap/ap/international/fights-among-migrants-break-out-on-greek-island-of/nnHG2/'>site</a></td><td>The European Union is granting 2.4 billion euros/$2.6 billion to EU nations to upgrade their migration programs with the biggest sums going to Greece and Italy where thousands of refugees have arrived this year.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066095823&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L05Z'></td><td>2015-07-22 05:48:45</td><td><a href='http://www.reuters.com/article/2015/07/22/us-eurozone-greece-argentina-analysis-idUSKCN0PW0BT20150722?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Grexit debate down but not out, Argentina lessons remain</td></tr><tr><td>"But there would almost certainly be a period of very rapid growth and recovery in employment. In Argentina, employment started growing within the year, and that would probably happen in Greece."</td></tr><tr><td>"Years from now, will Europeans look back and say we extended the bailout for Greece for too long?" said Mickey Levy, member of the U.S. Shadow Open Market Committee and co-author of a 2012 paper "Greece's predicament: Lessons from Argentina".</td></tr></table></td></tr>
 </table></body></html>

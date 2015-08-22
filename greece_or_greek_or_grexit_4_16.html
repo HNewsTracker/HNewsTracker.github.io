@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 12:15:38</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article28082050.html#storylink=rss'>site</a></td><td>In Brussels, Pierre Moscovici, the European Union's top economy official, said he's shooting for a mid-August timescale for the signing of a bailout deal, while accepting that Greece has to meet a "punishing" schedule.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150807&t=2&i=1070300437&w=644&fh=&fw=&ll=&pl=&sq=&r=LYNXNPEB760IY'></td><td>2015-08-07 23:44:33</td><td><a href='http://www.reuters.com/article/2015/08/07/us-eurozone-greece-idUSKCN0QC19820150807?feedType=RSS&feedName=wtMostRead'>site</a></td><td>A senior Greek official said the two sides' assessments of the macroeconomic outlook and primary budget balance targets were very close and unlikely to be an obstacle to a deal.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-15 10:00:44</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31182353.html#storylink=rss'>site</a></td><td>At a similar vote in July, 60 members of Merkel's 311-member conservative bloc voted against further bailout negotiations to prevent Greece from defaulting on its debts.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 15:33:30</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/merkel-looks-to-shore-up-german-support-for-greek/'>site</a></td><td>To counter that, Merkel's government has been talking tough on the new rescue package, insisting Greece will be supervised closely and that there will be no write-off - or "haircut" - on the loans the country owes Germany.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-19 12:24:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31496567.html#storylink=rss'>site</a></td><td>Germany's parliament overwhelmingly approved a third bailout for Greece on Wednesday, removing a key hurdle to providing new loans to the country and keeping it from defaulting on its debts in as little as 24 hours.</td></tr>
 </table></body></html>
