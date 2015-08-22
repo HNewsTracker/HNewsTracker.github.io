@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>xbox or playstation or nintendo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/37/53/44/8304958/15/square_gallery_thumb.jpg'></td><td>2015-07-14 04:11:24</td><td><a href='http://www.chron.com/business/technology/article/The-Internet-flooded-with-tributes-to-Nintendo-6382940.php'>site</a></td><td>Shoppers move on an escalator under Nintendo's Super Mario characters at an electronics store in Tokyo, Monday, July 13, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/37/53/44/8304958/15/square_gallery_thumb.jpg'></td><td>2015-07-14 04:11:24</td><td><a href='http://www.sfgate.com/business/technology/article/The-Internet-flooded-with-tributes-to-Nintendo-6382940.php'>site</a></td><td><table><tr><td>TOKYO (AP) - Nintendo Co. President Satoru Iwata's death from an illness at 55 is being mourned by game fans around the world.</td></tr><tr><td>They're sharing Iwata Mii avatars, creating pictures with farewell messages on the Nintendo drawing game Splatoon and sending Tweets with "ThankYouIwata" hashtags.</td></tr><tr><td>A petition is circulating, amassing thousands of signatures, urging Nintendo to create an "amiibo" figurine in the likeness of Iwata.</td></tr><tr><td>The small dolls packed with sensors, which already come in Nintendo characters such as Super Mario and Kirby, are used to play games.</td></tr><tr><td>An illustration showing Nintendo characters weeping around Iwata lying down with his eyes closed on a bed of flowers is going viral on Twitter.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-14 04:20:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article27188926.html#storylink=rss'>site</a></td><td>Satoru Iwata, who led Japanese video game company Nintendo Co. through years of growth with its Pokemon and Super Mario franchises, died on the weekend of a bile duct tumor, the company said Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/Microgalleries/2015/06/15/minecrafthololens650.jpg&amp;size=200x112&amp;quality=85'></td><td>2015-08-22 00:17:39</td><td><a href='http://technology.canoe.com/Gaming/Features/2015/08/21/22543272.html?cid=rsstechnologygaming'>site</a></td><td><table><tr><td>Microsoft's X15 showcase: Xbox One's five biggest games</td></tr><tr><td>With a lineup of games that includes everything from cybernetic super-soldiers to old-timey animated devils, the coming year is shaping up to be big for the Xbox One.</td></tr><tr><td>Here's a look at five must-play games making their console debuts on the Xbox One.</td></tr></table></td></tr>
 </table></body></html>
