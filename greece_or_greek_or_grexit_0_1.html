@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066095823&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L05Z'></td><td>2015-07-22 05:48:45</td><td><a href='http://www.reuters.com/article/2015/07/22/us-eurozone-greece-argentina-analysis-idUSKCN0PW0BT20150722?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Grexit debate down but not out, Argentina lessons remain</td></tr><tr><td>"But there would almost certainly be a period of very rapid growth and recovery in employment. In Argentina, employment started growing within the year, and that would probably happen in Greece."</td></tr><tr><td>"Years from now, will Europeans look back and say we extended the bailout for Greece for too long?" said Mickey Levy, member of the U.S. Shadow Open Market Committee and co-author of a 2012 paper "Greece's predicament: Lessons from Argentina".</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-17 06:43:21</td><td><a href='http://www.cbc.ca/news/world/greece-clears-migrants-tent-city-in-athens-park-1.3193175?cmp=rss'>site</a></td><td>Greek authorities said Sunday they have started resettling migrants living in tents in a park in the capital Athens - but many were wary and had moved out ahead of the operation.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/40/24/76/8474546/15/square_gallery_thumb.jpg'></td><td>2015-08-17 07:56:48</td><td><a href='http://www.sfgate.com/news/world/article/Greek-authorities-begin-clearing-Athens-park-of-6447307.php'>site</a></td><td>A migrant with his child makes his way to board a fire brigade bus to be transferred from a park to an organized camp which has been set up by the Greek state a few miles from the centre of Athens, Sunday, Aug. 16, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://stmedia.stimg.co/1439765763_10018621+GREECE+MIGRANTS+6.JPG?w=263'></td><td>2015-08-17 08:20:14</td><td><a href='http://www.startribune.com/greek-authorities-begin-clearing-athens-park-of-migrants/321992461/'>site</a></td><td>More than 130,000 migrants have reached Greece so far in 2015, straining the country's resources.</td></tr>
 </table></body></html>

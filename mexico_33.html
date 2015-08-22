@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/3006400/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F42%2Fc4%2F569a89f0451d9be3ddbcda89a9dd%2Fresizes%2F500%2F150715reportbigpic-editorial.bigpic.jpg'></td><td>2015-08-20 16:27:37</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/20/mexicos-treasury-lowers-gdp-growth-forecast-to-2-to-28-pct'>site</a></td><td><table><tr><td>Mexico's Treasury lowers GDP growth forecast to 2 to 2.8 pct</td></tr><tr><td>Mexico's central bank also recently lowered its own 2015 economic growth forecast, which is currently 1.7 percent to 2.5 percent.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 22:39:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31622573.html#storylink=rss'>site</a></td><td>Treasury Deputy Secretary Fernando Aportela said the economy was limited in the second quarter by disappointing industrial activity in the United States, which accounts for 80 percent of Mexico's international commerce.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 23:54:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28771279.html#storylink=rss'>site</a></td><td>Mexico search for missing students turns up 129 bodies</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/shot+gal07251520.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-07-26 23:55:08</td><td><a href='http://www.startribune.com/mexico-search-for-missing-students-turns-up-129-bodies/318585061/'>site</a></td><td>Mexico's search for 43 missing students has turned up 60 clandestine graves with 129 bodies</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 01:15:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28771279.html#storylink=rss'>site</a></td><td><table><tr><td>The search for 43 missing college students in the southern state of Guerrero has turned up at least 60 clandestine graves and 129 bodies over the last 10 months, Mexico's attorney general's office says.</td></tr><tr><td>More than 20,000 people are listed as missing across Mexico, and there are many "disappeared" in Guerrero, a state that is a major opium producer and the battleground among several cartels warring over territory and drug smuggling routes.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-27 01:31:29</td><td><a href='http://www.ctvnews.ca/world/mexico-s-search-for-43-missing-students-turns-up-60-clandestine-graves-1.2488926'>site</a></td><td>On Sunday, a few hundred people led by parents of the missing youths marched in Mexico City to call for justice in the case.</td></tr>
 </table></body></html>

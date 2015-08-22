@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 07:30:17</td><td></td><td><a href='mexico_30_32.html'>About 25,000 pedestrians (and 50,000 motorists) cross daily at San Ysidro to work, shop and play but it is unclear how many are foreigners in Mexico. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-20 07:30:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11500334&ref=rss'>site</a></td><td>For Mexico, it is a step toward closing an escape route for American criminals who disappear in Mexico.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-20 07:35:08</td><td></td><td><a href='mexico_30_31.html'>In this Aug. 18, 2015, photo, a woman approaches the entrance to the Mexico border crossing in San Ysidro, Calif. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-23 17:55:20</td><td></td><td><a href='mexico_30_31.html'>CULIACAN, Mexico (AP) " Palatial tombs mark the final resting spots of top narcotics traffickers in the Jardines de Humaya cemetery in the Sinaloa state capital of Culiacan. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 17:55:20</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11486017&ref=rss'>site</a></td><td>But his escape doesn't seem to have sparked additional violence in this area, apparently with few new burials here in the nearly two weeks since he slipped out of Mexico's highest-security prison.</td></tr>
 </table></body></html>

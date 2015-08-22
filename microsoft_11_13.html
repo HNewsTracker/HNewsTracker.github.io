@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,15 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>greece or greek or grexit</h3>
+    <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-17 06:43:21</td><td><a href='http://www.cbc.ca/news/world/greece-clears-migrants-tent-city-in-athens-park-1.3193175?cmp=rss'>site</a></td><td>The settlement is far from other residences, but some feared that locals in Votanikos would object to the migrants in their midst, and the Greek media have played up the "locals protest" angle.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 07:56:48</td><td></td><td><a href='greece_or_greek_or_grexit_0_1.html'>A migrant with his child makes his way to board a fire brigade bus to be transferred from a park to an organized camp which has been set up by the Greek state a few miles from the centre of Athens, Sunday, Aug. 16, 2015. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 07:05:28</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11488250&ref=rss'>site</a></td><td>But Microsoft is counting on tens or even hundreds of millions of people to download its latest release for free in the coming months.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 07:05:28</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11488250&ref=rss'>site</a></td><td>Rather than charging them to upgrade, as Microsoft used to do, it's embracing the free download model pioneered by Apple and Google.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 13:24:27</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/28/microsoft-launches-windows-10-heres-what-that-means'>site</a></td><td>It has new features, a streamlined Web browser called Edge and a desktop version of Cortana, the online assistant that is Microsoft's answer to Google Now and Apple's Siri.</td></tr>
 </table></body></html>

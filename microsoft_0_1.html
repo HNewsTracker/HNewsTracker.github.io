@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/34/06/64/7367982/7/square_gallery_thumb.jpg'></td><td>2015-08-05 23:36:35</td><td><a href='http://www.sfgate.com/business/article/Microsoft-offers-Halo-5-prizes-to-lure-6427429.php'>site</a></td><td><table><tr><td>But Microsoft, the company that makes the game, cannot afford to coast on warm feelings alone for the "Halo" series, because other big game franchises like "Call of Duty" have overshadowed it.</td></tr><tr><td>So the team making the game, as well as Microsoft's marketing machine, is focusing on the booming world of competitive video games - in particular, making sure that it appeals to elite gamers.</td></tr><tr><td>That leaves a big moneymaking opportunity for game makers - an opportunity that is particularly acute for Microsoft, which not only makes "Halo" but the video game console that the game is played on.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150722&t=2&i=1066230947&w=644&fh=&fw=&ll=&pl=&r=LYNXNPEB6L0XA'></td><td>2015-07-22 18:42:20</td><td><a href='http://www.reuters.com/article/2015/07/22/us-microsoft-hardware-idUSKCN0PW25U20150722?feedType=RSS&feedName=businessNews'>site</a></td><td>Moerdler said Microsoft likely would increasingly make gaming available on Windows as a way to attract users to Windows devices.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/62FYNnbym_J8zgP_N_ZoZA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-07-22T184220Z_1_LYNXNPEB6L0XA_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-07-22 18:42:20</td><td><a href='http://finance.yahoo.com/news/microsofts-hardware-strategy-under-scrutiny-184220481.html'>site</a></td><td>(Reuters) - Sales of Microsoft Corp's Surface tablets and Xbox gaming consoles are soaring.</td></tr>
 </table></body></html>
