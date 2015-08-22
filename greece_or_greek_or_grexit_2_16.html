@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 13:50:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31370957.html#storylink=rss'>site</a></td><td><table><tr><td>Greece sells to German firm rights to run 14 airports</td></tr><tr><td>Greece has agreed to sell to a German company the rights to operate 14 regional airports.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-18 17:00:11</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31370957.html#storylink=rss'>site</a></td><td>Greece has agreed to sell to a German company the rights to operate 14 regional airports, in a wave of privatizations the government had until recently opposed but needs to make to qualify for bailout loans.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-19 14:48:45</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/19/greece-resists-efforts-to-renegotiate-regional/'>site</a></td><td><table><tr><td>Greece resists efforts to renegotiate regional airports deal</td></tr><tr><td>ATHENS, Greece (AP) - The Greek government is resisting efforts by a state-controlled German company to renegotiate aspects of its concession to operate 14 prime Greek regional airports.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/07/23/876/493/70e3a6a64d7be410VgnVCM100000d7c1a8c0____-Greece Bailout-3.jpg?ve=1&tl=1'></td><td>2015-07-23 04:02:11</td><td><a href='http://www.foxbusiness.com/markets/2015/07/23/greek-parliament-approves-new-creditor-demanded-reforms-clearing-way-for/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td>Tsipras said approval would give Greece breathing room to quash speculation that the country will be forced to abandon the euro, and help it regain market confidence and eventually tap bond markets again.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 07:27:42</td><td><a href='http://www.independent.co.uk/news/world/europe/greece-deal-live-what-is-it-86bn-bailout-euro-eu-germany-euclid-tsakalotos-10449320.html'>site</a></td><td>Figures next week are set to confirm that Greece's recession deepened in the second quarter as concerns over the country's Euro future dented confidence, it has been reported.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,8 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/446ef46badfd986ae5f769cc742944789e601dba/c=247-0-3870-2724&amp;r=x404&amp;c=534x401/local/-/media/2015/08/11/USATODAY/USATODAY/635749146930841985-AP-Ferguson-Oath-Keepers.jpg'></td><td>2015-08-11 02:46:30</td><td><a href='http://www.usatoday.com/story/news/nation/2015/08/11/armed-oath-keepers-arrive-ferguson/31453655/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-newstopstories'>site</a></td><td>Armed 'Oath Keepers' arrive in Ferguson</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 21:31:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-ferguson-oath-keepers-armed-militia-20150811-story.html'>site</a></td><td>He said members plan to remain in Ferguson "at least through the end of the week."</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 21:34:49</td><td><a href='http://www.miamiherald.com/news/nation-world/article30738612.html#storylink=rss'>site</a></td><td>Oath Keepers? return criticized in Ferguson</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-11 21:34:49</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article30738612.html#storylink=rss'>site</a></td><td>Heavily armed civilians with a group known as the Oath Keepers arrive in Ferguson, Mo., early Tuesday, Aug. 11, 2015.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='merica.aljazeera.com/content/ajam/watch/shows/live-news/2015/8/ferguson-demonstrations-on-the-anniversary-of-michael-browns-death/_jcr_content/image.adapt.full.low.WP-MICHAEL BROWN VIOLENCE-CQ.jpg'></td><td>2015-08-11 23:37:00</td><td><a href='http://america.aljazeera.com/articles/2015/8/11/police-say-video-shows-ferguson-shooting-suspect.html'>site</a></td><td>John Karriman, an Oath Keepers leader from southwest Missouri, said members plan to remain in Ferguson at least through the end of the week.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 21:34:49</td><td><a href='http://www.miamiherald.com/news/nation-world/article30738612.html#storylink=rss'>site</a></td><td>Oath Keepers? return criticized in Ferguson</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 21:34:49</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article30738612.html#storylink=rss'>site</a></td><td>Heavily armed civilians with a group known as the Oath Keepers arrive in Ferguson, Mo., early Tuesday, Aug. 11, 2015.</td></tr>
 </table></body></html>

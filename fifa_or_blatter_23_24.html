@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 10:55:18</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11486553&ref=rss'>site</a></td><td><table><tr><td>FIFA says corruption crisis hinders search for new sponsors</td></tr><tr><td>Targeting almost $6 billion in revenue from the 2018 tournament, FIFA has not signed any new sponsors since last year's World Cup in Brazil.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-07-24T105617Z_1_LYNXNPEB6N0G3_RTROPTP_2_SOCCER-FIFA-2026-BIDDING.JPG?itok=POzfShy4'></td><td>2015-07-24 16:02:42</td><td><a href='http://www.sbs.com.au/news/article/2015/07/24/fifa-meet-sponsors-after-reproaches-coke-visa-mcdonalds'>site</a></td><td><table><tr><td>FIFA to meet sponsors after reproaches from Coke, Visa, McDonald&#039;s</td></tr><tr><td>"Clearly, there were a number of sponsors, mainly three, its Coca-Cola, McDonald's and Visa, who have expressed and sent a letter to FIFA, asking for information," he told a new conference in the Russian city of St Petersburg.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 11:35:18</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11487259&ref=rss'>site</a></td><td><table><tr><td>Russia getting on with World Cup job as FIFA fights scandal</td></tr><tr><td>"I'd like to emphasize again that all the plans to prepare for the World Cup will be fulfilled," Putin said, standing alongside the embattled Blatter at Saturday's preliminary draw for the 2018 tournament.</td></tr><tr><td>"Russia is really way on track and I have no concern. The next FIFA secretary general should be happy with the work that I give him because he will have a very organized World Cup."</td></tr></table></td></tr>
 </table></body></html>

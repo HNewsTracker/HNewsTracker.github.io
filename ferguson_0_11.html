@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 01:33:21</td><td><a href='http://www.miamiherald.com/news/politics-government/article29545420.html#storylink=rss'>site</a></td><td>When a white Ferguson policeman fatally shot a young black man nearly a year ago, the St. Louis suburb erupted in violent protests and the nation took notice.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td><table><tr><td>ST. LOUIS (AP) - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson.</td></tr><tr><td>But since joining the St. Louis office of The Associated Press in 1993, I had never been to Ferguson as a reporter.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 11:33:07</td><td><a href='http://www.miamiherald.com/news/nation-world/article30677811.html#storylink=rss'>site</a></td><td>The St. Louis suburb thoroughfare was the focus of months of massive protests and sometimes violent unrest last summer after the killing of Brown by a Ferguson police officer.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.daytondailynews.com/ap/ap/us/ferguson-defends-interim-chief-after-concerns-rais/nnKTt/'>site</a></td><td>Anderson, who is on leave from the Arizona department while he works in Ferguson in suburban St. Louis, has been promoted several times in Glendale and his records show generally favorable, sometimes glowing, reviews.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 04:30:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-08-03-US--Ferguson-Reporter's%20Essay/id-12e719b9db9f419b979c2f4e97b287fb'>site</a></td><td><table><tr><td>ST. LOUIS (AP) - EDITOR'S NOTE - A year ago, most Americans had never heard of the St. Louis suburb called Ferguson.</td></tr><tr><td>But since joining the St. Louis office of The Associated Press in 1993, I had never been to Ferguson as a reporter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.daytondailynews.com/ap/ap/us/ferguson-defends-interim-chief-after-concerns-rais/nnKTt/'>site</a></td><td>Anderson, who is on leave from the Arizona department while he works in Ferguson in suburban St. Louis, has been promoted several times in Glendale and his records show generally favorable, sometimes glowing, reviews.</td></tr>
 </table></body></html>
