@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 14:21:00</td><td></td><td><a href='egypt_18_19.html'>CAIRO -- A former army officer who is one of Egypt's most wanted militants called on fellow Egyptians to wage holy war against President Abdel-Fattah el-Sissi, describing him as a "new pharaoh" in a new recording. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 14:21:00</td><td><a href='http://www.ctvnews.ca/world/top-militant-urges-holy-war-against-egypt-s-new-pharaoh-1.2481544'>site</a></td><td>Officials say el-Ashmawi has worked closely with the Sinai-based Ansar Beit al-Maqdis militant group that pledged allegiance to the Islamic State last year and is blamed for some of Egypt's most high-profile deadly attacks.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-24 11:40:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28116559.html#storylink=rss'>site</a></td><td>One military official said el-Ashmawi was named as a suspect in the July 11 bombing outside the Italian Consulate in Cairo that killed a bystander, the first attack on a diplomatic mission in Egypt.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.sandiegouniontrib.com/img/photos/2015/08/17/ad2f0547dc1e57247f0f6a706700dded2_r900x493.JPEG?122770e84b36f1c039d5c4c2ca15c2d8bc4ecd52'></td><td>2015-08-17 07:32:33</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/ap-photos-egypts-banned-ultras-soccer-fans-take/'>site</a></td><td>They were considered one of the most organized movements in Egypt after the Muslim Brotherhood, which the government outlawed as a terrorist organization following the 2013 military overthrow of Islamist President Mohammed Morsi.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 07:35:58</td><td></td><td><a href='egypt_18_19.html'>In this July 26, 2015 photo, members of Zamalek's football club's Ultras White Knights (UWK) group, the club's hardcore fan base, attend a friend's bachelor party in Cairo, Egypt. (10)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/j/g/j/a/image.related.articleLeadwide.620x349.gikl05.png/1437838185560.jpg'></td><td>2015-07-25 15:29:52</td><td><a href='http://www.smh.com.au/world/greek-bailout-talks-to-begin-after-delay-20150725-gikl05'>site</a></td><td>Apart from the terms of a new loan, Greece and its lenders are also expected to discuss the sustainability of its debt, which is around 170 percent of GDP.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-13 10:06:08</td><td><a href='http://www.miamiherald.com/news/business/article30978222.html#storylink=rss'>site</a></td><td>Greece has long said its mountainous debt of 180 percent of GDP cannot reasonably be repaid and that it needs some form of debt restructuring.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 12:29:55</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/03/greece-stock-market-reopens-with-22-percent-loss'>site</a></td><td>Greece's stock market and banks were closed on June 29, when the government put limits on money withdrawals and transfers to keep a run on the banks from bringing down the financial system.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>But the resumption of trading was a necessary step as Greece tries to emerge from controls on financial activity that the government, confronted with a bank run, imposed at the end of June.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-06 16:57:06</td><td><a href='http://www.miamiherald.com/news/business/article30211326.html#storylink=rss'>site</a></td><td>It was the latest in a string of gloomy figures this week, which reflected the damage wrought by the government's forced decision to close Greek banks at the end of June, to stop depositors emptying their accounts.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-07-22 17:01:23</td><td></td><td><a href='apple_6_7.html'>Apple (AAPL.O) shares slumped as much as 6.7 percent to $121.99, a day after the iPhone maker's revenue forecast for the fourth quarter fell below expectations. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/37/65/21/8344701/13/628x471.jpg'></td><td>2015-07-22 18:15:57</td><td><a href='http://www.seattlepi.com/business/energy/article/Tech-shares-lead-an-early-slump-for-US-stocks-6399228.php'>site</a></td><td>Technology shares lead a slump in US stocks; Apple sinks</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 18:15:57</td><td></td><td><a href='apple_6_8.html'>Weak showings from Apple, Microsoft and other companies pulled stocks lower in afternoon trading Wednesday, pointing the market toward its second decline in as many days. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 20:50:08</td><td></td><td><a href='apple_6_9.html'>"Apple is the biggest publicly traded company in the world, so it's going to have a big impact on the indices," noted Erik Davidson, chief investment officer at Wells Fargo Private Bank. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-06 13:15:59</td><td></td><td><a href='apple_6_8.html'>Meanwhile Apple said its App Store saw the largest-ever number of customers in July, yielding $1.7 billion in transactions. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 22:49:26</td><td></td><td><a href='apple_6_7.html'>Apple's iTunes Store helped revitalize the music industry a decade ago, but digital downloads have slumped in recent years amid a shift toward streaming. (3)</a></td></tr>
 </table></body></html>

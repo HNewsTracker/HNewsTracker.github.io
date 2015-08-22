@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 21:56:32</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/18/judge-new-mexico-police-officers-to-stand-trial-for-murder'>site</a></td><td>New Mexico police officers ordered to stand trial for murder</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-19 08:29:03</td><td><a href='http://www.miamiherald.com/news/nation-world/article31497284.html#storylink=rss'>site</a></td><td>In New Mexico, Pro Tem Judge Neil Candelaria ruled after a nearly two-week preliminary hearing that there was probable cause for Perez and Sandy to face trial.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-19 08:36:18</td><td><a href='http://www.cbc.ca/news/world/new-mexico-police-officers-face-murder-trial-in-homeless-man-s-death-1.3195795?cmp=rss'>site</a></td><td>A former and a current New Mexico police officer charged with murder sat motionless after a judge announced they would have to face a jury trial for the on-duty shooting of a homeless man.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 03:44:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article29083525.html#storylink=rss'>site</a></td><td><table><tr><td>Mexico struggles to clean seaweed surge from Cancun beaches</td></tr><tr><td>Authorities on Mexico's Caribbean coast said Monday they are redoubling efforts to remove tons of sargassum seaweed that has been washing ashore in recent weeks.</td></tr><tr><td>Officials in the Caribbean island of Barbados have also struggled with seaweed washing ashore, and large piles of sargassum washed up on the shore in Galveston, Texas, in 2014 after drifting into the Gulf of Mexico.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-29 01:10:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11488729&ref=rss'>site</a></td><td>Mexico to clean seaweed from coast, monitor floating masses</td></tr>
 </table></body></html>
