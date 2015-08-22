@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 12,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,16 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 12:38:51</td><td><a href='http://www.theguardian.com/world/2015/jul/25/greek-bailout-talks-european-commission-ecb-imf'>site</a></td><td>Tsipras, who is by far the most popular politician in Greece according to opinion polls, has said his priority is to secure the bailout package before dealing with the political fallout from the Syriza party rebellion.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-26 18:48:07</td><td><a href='http://www.reuters.com/article/2015/07/26/us-eurozone-greece-idUSKCN0Q00JN20150726?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Greek PM Tsipras under pressure over covert Syriza drachma plan reports</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/8j0LGF_MU9Gfl6kPsdOuKg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-07-26T144422Z_1_LYNXNPEB6P07N_RTROPTP_3_EUROZONE-GREECE_original.jpg'></td><td>2015-07-26 18:48:07</td><td><a href='http://finance.yahoo.com/news/greek-pm-tsipras-under-pressure-141355344.html'>site</a></td><td>The reports came at the end of a week of fevered speculation over what Syriza hardliners had in mind as an alternative to the tough bailout terms that Tsipras reluctantly accepted to keep Greece in the euro.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>Political parties, including Tsipras' Syriza, are in turmoil and there is speculation Greece will head into another general election in November.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-11 11:54:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>Greece agrees on broad terms of new bailout package</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-13 08:21:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article30978222.html#storylink=rss'>site</a></td><td>His radical left Syriza party won January elections on promises of repealing similar austerity imposed in return for Greece's previous bailouts.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-08-14 23:02:28</td><td><a href='http://www.cbsnews.com/news/greece-gets-nod-for-billions-in-new-loans/'>site</a></td><td>Tsipras has maintained his public popularity in Greece despite his U-turn on austerity policies, and consistently leads opposition parties in opinion polls.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/17/b3/36/d39e958f677641629294997f4c883b28-335624b529de41198c06221fe84cf849-0_2.jpg'></td><td>2015-08-17 12:42:34</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-government-seen-calling-confidence-vote/nnLSY/'>site</a></td><td>Although no opinion polls have been published since the end of last week when Greece's third bailout was finalized, previous polls showed his party enjoying a wide lead over opposition parties.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-08-20 17:44:00</td><td><a href='http://www.npr.org/sections/thetwo-way/2015/08/20/433206660/greek-pm-steps-down-calls-new-elections-in-wake-of-bailout-deal?utm_medium=RSS&utm_campaign=storiesfromnpr'>site</a></td><td>"The political mandate of the January 25 elections has exhausted its limits and now the Greek people have to have their say," Tsipras said.</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-08-20 21:59:27</td><td><a href='http://www.cbsnews.com/news/greece-prime-minister-alexis-tsipras-resigns-early-elections-rebellion-bailout/'>site</a></td><td>Some analysts took the reports of early elections as an indication that Greece will struggle to implement the terms of its bailout.</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-08-21 04:02:46</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-bets-on-early-polls-to-boost-refor/nnNq6/'>site</a></td><td>Greece's Tsipras bets on early polls to boost reform mandate</td></tr>
-  <tr><td style='display:none'>11</td><td><img src='http://static.theglobeandmail.ca/b39/report-on-business/international-business/european-business/article26045575.ece/ALTERNATES/w220/-543487245.JPG'></td><td>2015-08-21 10:43:19</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/far-left-splits-from-tsipras-as-greece-heads-to-elections/article26045576/?cmpid=rss1'>site</a></td><td>Far left splits from Tsipras as Greece heads to elections</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 14:44:22</td><td><a href='http://www.reuters.com/article/2015/07/26/us-eurozone-greece-idUSKCN0Q00JN20150726?feedType=RSS&feedName=worldNews'>site</a></td><td>Lafazanis, leader of a hardline faction in the ruling Syriza party that has argued for a return to the drachma, said the move would have allowed pensions and public sector wages to be paid if Greece were forced out of the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/30/c3/d2/c9177f4c8d05408085912743c779f31a-da451bd6382f40dfa324274e47b7d816-0.jpg'></td><td>2015-07-31 01:03:59</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/drachma-revolt-adds-unease-to-greeces-awkward-alli/nm8zw/'>site</a></td><td>The decision followed a dramatic 12-hour meeting by the 200-member central committee, during which party rebels appealed for Greece to return to its national currency, the drachma.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>They have openly voiced support for Greece to turn its back on the euro as its national currency.</td></tr>
 </table></body></html>

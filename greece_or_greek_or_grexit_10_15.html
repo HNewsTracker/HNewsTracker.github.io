@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,12 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 16:00:48</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=topNews'>site</a></td><td>When negotiations on further aid eventually began, they were moved to Brussels, with no access to Greek ministries.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IAXUcvCPVik6_sn8ItynSg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-07T111925Z_1_LYNXNPEB760IY_RTROPTP_3_EUROZONE-GREECE-TSIPRAS_original.jpg'></td><td>2015-08-07 11:19:25</td><td><a href='http://finance.yahoo.com/news/eu-officials-review-progress-greek-111925503.html'>site</a></td><td>Greece would not get a free ticket to new aid, the coalition politician added.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>The radical left-led government hopes the new bailout talks can conclude before Aug. 20, when Greece must repay a debt worth more than 3 billion euros ($3.3 billion) to the European Central Bank.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 09:10:05</td><td><a href='http://www.foxnews.com/world/2015/07/28/greece-in-second-day-preparatory-talks-with-bailout-creditors-over-new-rescue/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The aim is to thrash out the terms of the deal - worth about 85 billion euros ($94 billion) over three years - before Aug. 20, when Greece must make a debt payment that it cannot afford without new loans.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/08/03/102887771-899de55c81c5bad92d54334d4e27319d54ce680c.80x60.jpg?v=1438616601'></td><td>2015-08-03 14:29:00</td><td><a href='http://www.cnbc.com/2015/08/03/greek-stock-market-reopens.html'>site</a></td><td>Greek banks then reopened on July 20.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>The limits are costing Greece an estimated 1.75 billion euros to 2.8 billion euros ($1.9 billion to $3.1 billion) weekly.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-11 04:18:50</td><td><a href='http://www.reuters.com/article/2015/08/11/us-eurozone-greece-bailout-idUSKCN0QF2BV20150811?feedType=RSS&feedName=topNews'>site</a></td><td>Officials also said the two sides had yet to agree on setting up a sovereign wealth fund in Greece designed to raise 50 billion euros from privatizations, three-quarters of which would be used to recapitalize banks and to decrease the debt.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-11 05:57:29</td><td><a href='http://www.reuters.com/article/2015/08/11/us-eurozone-greece-bailout-idUSKCN0QF2BV20150811?feedType=RSS&feedName=wtMostRead'>site</a></td><td>The pact is expected to be worth up to 86 billion euros ($94.75 billion) in fresh loans for debt-ridden Greece, but there was no immediate confirmation of its size.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/14/7e/a9/a1bb0929859a4862b0fc37be4a0eaa64-26e37218dc1e46cfb49e1b62716e9e85-0.jpg'></td><td>2015-08-14 20:44:15</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-all-night-debate-on-new-bailout/nnKCZ/'>site</a></td><td><table><tr><td>Ten billion euros will be available to recapitalize Greece banks, while a second slice of 16 billion euros will be paid in installments, starting with 13 billion euros by Aug. 20 when Greece must make a new debt payment to the European Central Bank.</td></tr><tr><td>The final rescue package would eventually give Greece up to 86 billion euros ($93 billion) in loans over three years in exchange for harsh spending cuts and tax hikes.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-15 00:10:39</td><td><a href='http://www.reuters.com/article/2015/08/15/us-eurozone-greece-idUSKCN0QJ1PR20150815?feedType=RSS&feedName=worldNews'>site</a></td><td>Officials said the Fund needed more assurances and detail on Greek reforms, notably to pensions, and steps to persuade it that Greece's debt burden was sustainable.</td></tr>
 </table></body></html>
