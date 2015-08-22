@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>On Wednesday, the ECB provided a new vital cash injection to Greece's battered banks.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 17:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-07-22-EU--Greece-Bailout/id-93397ec44c904b9aa595c3618d00ec68'>site</a></td><td>Extra ECB liquidity means that Greek banks will still be able to hand out cash.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/22/57/e0/7f7bc31ddf694a13a62044ea79dab9e1-c61248d335184048ac89a81dd34b2af8-0.jpg'></td><td>2015-07-22 18:09:17</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-parliament-to-vote-on-more-bailout-conditio/nm4fn/'>site</a></td><td>A European banking official told The Associated Press the ECB decided to increase emergency liquidity to Greek banks by 900 million euros ($980 million) - the second such cash injection in just under a week.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/1D1yls6HGT8XfAae82zZdw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/c33742ae9be40a227e0f6a706700ef28_original.jpg'></td><td>2015-08-03 19:37:34</td><td><a href='http://finance.yahoo.com/news/greek-stock-market-bloodbath-exchange-112237193.html'>site</a></td><td>He noted some traders are selling stock merely to raise cash because there is so little liquidity in the Greek economy.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://img.rasset.ie/000afa95-117.jpg'></td><td>2015-08-14 12:29:58</td><td><a href='http://www.rte.ie/news/2015/0814/721143-greece-economy/'>site</a></td><td>If Greece defaults on this debt, the ECB is likely to halt emergency funding for Greece's crippled banks.</td></tr>
+</table></body></html>

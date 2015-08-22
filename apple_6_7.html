@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 06:20:39</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/pharrell-one-direction-among-headliners-at-apple/'>site</a></td><td>LOS ANGELES (AP) - Pharrell Williams, One Direction and Florence + The Machine are going to appear at the Apple Music Festival next month.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-18 06:23:57</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article31369988.html#storylink=rss'>site</a></td><td>Previously known as the iTunes Festival, the eight-year-old concert event was renamed the Apple Music Festival to support the launch earlier this summer of the new Apple Music app.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-18 06:23:57</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article31369988.html#storylink=rss'>site</a></td><td><table><tr><td>Pharrell, One Direction among headliners at Apple Music fest</td></tr><tr><td>19. Festival performances will be broadcast live and on-demand on Apple Music, and additional material will be available on the app's Beats 1 radio.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 17:01:23</td><td><a href='http://finance.yahoo.com/news/u-stock-futures-fall-apple-112526132.html'>site</a></td><td>Apple (AAPL.O) shares slumped as much as 6.7 percent to $121.99, a day after the iPhone maker's revenue forecast for the fourth quarter fell below expectations.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 20:50:08</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article28221517.html#storylink=rss'>site</a></td><td><table><tr><td>Apple's latest results also stirred investor concerns about a slowdown in the growth of iPhone sales.</td></tr><tr><td>"Do iPhone sales tell us a lot about the broader economy and the markets or does it tell us more about Apple? It probably tells us more about Apple," Davidson said.</td></tr></table></td></tr>
 </table></body></html>

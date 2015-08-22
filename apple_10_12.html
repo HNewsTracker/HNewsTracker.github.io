@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/mpOAYtDZxKU8kA0BOFEc2g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-06-11T155845Z_1_LYNXMPEB5A0ZI_RTROPTP_3_USA-APPLE_original.jpg'></td><td>2015-07-21 20:47:41</td><td><a href='http://finance.yahoo.com/news/apple-logs-q3-beat--but-q4-sales-outlook-disappoints--204759056.html'>site</a></td><td>Apple's sales in China more than doubled from a year earlier to $13.2 billion.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-21 20:51:00</td><td><a href='http://www.latimes.com/business/technology/la-fi-tn-apple-earnings-20150721-story.html'>site</a></td><td>Apple said its "other products" category pulled in $2.64 billion in revenue.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-21 20:53:00</td><td><a href='http://www.ctvnews.ca/business/apple-earnings-rise-on-strong-iphone-sales-but-impact-of-watch-remains-unclear-1.2480438'>site</a></td><td><table><tr><td>In one tantalizing clue, Apple reported $2.6 billion in revenue from the segment that includes the watch and several other products, or about $952 million more than the previous quarter, when the watch had not yet gone on sale.</td></tr><tr><td>Apple got a big boost from new markets like China, which contributed more than a quarter of the company's revenue, or $13.2 billion.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/os/en_us/News/Reuters/2015-08-06T122327Z_1_LYNXNPEB750P4_RTROPTP_2_APPLE-DISRUPTION.JPG'></td><td>2015-08-06 13:11:21</td><td><a href='https://www.yahoo.com/tech/s/apple-music-attracts-more-11-million-trial-members-122327572--finance.html?src=rss'>site</a></td><td>Apple set a high water mark for App Store customers in China in July.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000ab338-642.jpg'></td><td>2015-08-06 13:15:59</td><td><a href='http://www.rte.ie/news/business/2015/0806/719580-apple-music-attracted-11m-trial-subscribers/'>site</a></td><td>Meanwhile Apple said its App Store saw the largest-ever number of customers in July, yielding $1.7 billion in transactions.</td></tr>
 </table></body></html>

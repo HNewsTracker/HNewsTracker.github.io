@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -51,4 +51,7 @@
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 22:40:08</td><td><a href='http://www.miamiherald.com/news/politics-government/article28358188.html#storylink=rss'>site</a></td><td><table><tr><td>White House dismisses Kenya release of Obama schedule</td></tr><tr><td>The White House had announced earlier this year that Obama would travel to Kenya to attend a Global Entrepreneurship Summit.</td></tr></table></td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-07-25 11:33:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-25-AF-Obama-Africa-Notebook/id-007c1a7d8f5440d395a1b2d14353ccf4'>site</a></td><td>White House Notebook: Obama faces 'family politics' in Kenya</td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-07-25 21:05:00</td><td><a href='http://www.cnbc.com/2015/07/25/new-york-times-digital-obama-in-kenya-an-upbeat-tone-but-notes-of-discord-too.html'>site</a></td><td>"Kenya is leading the way," Mr. Obama said.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-26 11:50:26</td><td><a href='http://thehill.com/policy/international/249207-obama-urges-kenya-to-use-past-to-guide-future'>site</a></td><td>Obama urges Kenya to use past to guide future</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/26/74/28/1e66ea3f4d07432c9f3489786cfd643a-49842e46398546e7886e00007dc3dfbd-1_1.jpg'></td><td>2015-07-26 12:59:31</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/obama-to-close-historic-kenya-visit-with-national-/nm6rD/'>site</a></td><td>On the final day of his visit in Kenya, Obama laid out his vision for Kenya's future and broad themes of U.S.-Kenya relations.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-07-26 15:00:50</td><td><a href='http://www.nydailynews.com/news/politics/obama-pushes-kenya-root-corruption-article-1.2304585'>site</a></td><td>"Because of Kenya's progress - because of your potential - you can build your future right here, right now," Obama told the crowd of 4,500 packed into a sports arena in the capital of Nairobi.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 14:55:46</td><td><a href='http://www.upi.com/Top_News/US/2015/07/22/Ferguson-to-hire-new-interim-police-chief/1071437574276/'>site</a></td><td>Glendale is the same city where Ferguson leaders chose its interim city manager, Ed Beasley.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 15:20:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article28170364.html#storylink=rss'>site</a></td><td>Anderson previously was police commander in the Phoenix suburb of Glendale, Arizona - the same city from which Ferguson recently hired its interim city manager, Ed Beasley.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/d47/news/world/article25857894.ece/ALTERNATES/w220/web-wo-us-ferguson06nw1'></td><td>2015-08-06 13:49:27</td><td><a href='http://www.theglobeandmail.com/news/world/ferguson-one-year-later-whats-happening-this-weekend/article25857899/?cmpid=rss1'>site</a></td><td>Ferguson Mayor James Knowles said the city has made many reforms in the last year, though it still has more to do.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/14/ferguson-defends-interim-chief-after-concerns-raised'>site</a></td><td>The statement from the city of Ferguson said Anderson was hired following a process that included a background investigation "independent of the City Manager."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/d47/news/world/article25857894.ece/ALTERNATES/w220/web-wo-us-ferguson06nw1'></td><td>2015-08-06 13:49:27</td><td><a href='http://www.theglobeandmail.com/news/world/ferguson-one-year-later-whats-happening-this-weekend/article25857899/?cmpid=rss1'>site</a></td><td>Ferguson Mayor James Knowles said the city has made many reforms in the last year, though it still has more to do.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/14/ferguson-defends-interim-chief-after-concerns-raised'>site</a></td><td>The statement from the city of Ferguson said Anderson was hired following a process that included a background investigation "independent of the City Manager."</td></tr>
 </table></body></html>
