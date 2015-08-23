@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 03:19:07</td><td><a href='http://www.miamiherald.com/news/politics-government/article29829346.html#storylink=rss'>site</a></td><td><table><tr><td>FIFA President Sepp Blatter is relinquishing his position on the IOC.</td></tr><tr><td>FIFA president Sepp Blatter's term as an International Olympic Committee member ended Monday when he did not seek re-election.</td></tr><tr><td>Blatter was among a group of IOC members up for re-election for another eight-year term.</td></tr><tr><td>But IOC President Thomas Bach said Blatter informed him by letter on July 23 that he would not stand again.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/1e5/sports/soccer/article25816559.ece/ALTERNATES/w220/CSPORTS-US-SOCCER-FIFA-BLAT.JPG'></td><td>2015-08-03 10:16:43</td><td><a href='http://www.theglobeandmail.com/sports/soccer/sepp-blatter-gives-up-ioc-membership-as-fifa-exit-nears/article25816560/?cmpid=rss1'>site</a></td><td><table><tr><td>Blatter would ordinarily have been re-elected for another eight-year term as a procedural matter at the ongoing IOC Session in Malaysia, along with more than a dozen other members, but would be required to stand down when he left FIFA at the end of February.</td></tr><tr><td>Although Blatter has not been accused of any wrongdoing, his stewardship has been heavily criticised and his troubled reign, that began in 1998, will come to an end when he is replaced by the winner of FIFA?s next presidential election on Feb. 26.</td></tr><tr><td>Mr. Blatter wrote me a letter on July 23 informing me that it would be inappropriate to seek another eight-year term as he was retiring from his position at FIFA in seven months when a new president will be selected on Feb. 26,?</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 18:35:05</td><td><a href='http://www.charlotteobserver.com/sports/article28419046.html#storylink=rss'>site</a></td><td><table><tr><td>Russian Sports Minister Vitaly Mutko says the corruption crisis engulfing FIFA has thwarted communication with the embattled governing body.</td></tr><tr><td>Mutko says "communication with FIFA ... is not as easy as it was before because if you expect that there will be a change in administration in February then communication is somewhat thwarted."</td></tr></table></td></tr>
 </table></body></html>

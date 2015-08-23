@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -55,6 +55,5 @@
   <tr><td style='display:none'>4</td><td><img src='http://ww2.hdnux.com/photos/40/15/20/8442929/3/square_gallery_thumb.jpg'></td><td>2015-08-11 06:12:40</td><td><a href='http://www.sfgate.com/news/crime/article/The-Latest-Police-chief-Man-seriously-injured-6434768.php'>site</a></td><td>Officers arrest a protester, Monday, Aug. 10, 2015, in Ferguson, Mo.</td></tr>
   <tr><td style='display:none'>5</td><td></td><td>2015-08-11 06:38:08</td><td><a href='http://www.miamiherald.com/news/nation-world/article30584301.html#storylink=rss'>site</a></td><td>Police stand near a broken cash register in a parking lot after the front windows of a business were broken out along West Florissant Avenue, Sunday, Aug. 9, 2015, in Ferguson, Mo.</td></tr>
   <tr><td style='display:none'>6</td><td></td><td>2015-08-11 22:11:09</td><td><a href='http://www.miamiherald.com/news/nation-world/article30677787.html#storylink=rss'>site</a></td><td>Ronald Johnson confer, Monday, Aug. 10, 2015, in Ferguson, Mo.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.daytondailynews.com/ap/ap/us/ferguson-defends-interim-chief-after-concerns-rais/nnKTt/'>site</a></td><td>Ferguson city officials on Friday defended interim Police Chief Andre Anderson after an online report raised concerns about his record as an officer in Glendale, Arizona.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-08-21 02:49:09</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article31633649.html#storylink=rss'>site</a></td><td>Ferguson police Sgt. Dominica Fuller listens to a question during a news conference Thursday, Aug. 20, 2015, in Ferguson, Mo.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-21 02:49:09</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article31633649.html#storylink=rss'>site</a></td><td>Ferguson police Sgt. Dominica Fuller listens to a question during a news conference Thursday, Aug. 20, 2015, in Ferguson, Mo.</td></tr>
 </table></body></html>
