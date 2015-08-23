@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 14:06:09</td><td></td><td><a href='ebola_0_2.html'>Dr. Clifford Lane, charged with overseeing Ebola clinical trials for the U.S. National Institute for Allergy and Infectious Diseases, acknowledges enrolling enough cases to complete the trial is a challenge at this point. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 14:06:09</td><td></td><td><a href='ebola_0_1.html'>Moments after the first person treated with ZMapp started receiving the experimental Ebola drug he could feel effects which suggested it was working. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-23 13:48:05</td><td></td><td><a href='ebola_0_2.html'>DAKAR, Senegal (AP) - Lingering health problems afflicting many of the roughly 13,000 Ebola survivors have galvanized global and local health officials to find out how widespread the ailments are, and how to remedy them. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-23 13:48:05</td><td></td><td><a href='ebola_0_3.html'>Lab technician Mohamed SK Sesay was working at a hospital in Kenema, a town in eastern Sierra Leone, testing blood samples for Ebola when he fell sick with the virus. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-23 13:48:05</td><td></td><td><a href='ebola_0_1.html'>Around half those who received post-recovery check-ups have joint pain, said Dr. Daniel Bausch, an Ebola expert and consultant for WHO. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-23 13:48:05</td><td></td><td><a href='ebola_0_4.html'>"If we can find out this kind of information, hopefully we can help other Ebola survivors in the future," Dr. Zan Yeong, an eye specialist involved in a study of health problems in survivors in Liberia, told The Associated Press. (2)</a></td></tr>
 </table></body></html>
