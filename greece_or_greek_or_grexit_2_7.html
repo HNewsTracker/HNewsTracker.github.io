@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/w/y/n/j/image.related.articleLeadwide.620x349.giwylc.png/1439304754629.jpg'></td><td>2015-08-11 14:52:44</td><td><a href='http://www.smh.com.au/world/fights-among-migrants-on-greek-island-as-turkey-rescues-330-syrians-20150811-giwylc.html'>site</a></td><td>The United Nations refugee agency called conditions for migrants on the Greek islands "shameful".</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-18 13:45:02</td><td><a href='http://www.reuters.com/article/2015/08/18/us-europe-migrants-greece-unhcr-idUSKCN0QN14920150818?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>U.N. urges Greece to take charge of refugee crisis</td></tr><tr><td>GENEVA Greece must show "much more leadership" to tackle an escalating crisis in which 160,000 refugees and migrants have reached its shores so far this year, the United Nations said on Tuesday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-21 20:56:52</td><td><a href='http://www.sbs.com.au/news/article/2015/08/22/greece-moves-refugees-mainland-crush-builds-border'>site</a></td><td>The crisis has exposed massive shortages in Greece's available facilities, but also striking discord within the European Union on how to handle the humanitarian crisis.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://stmedia.stimg.co/1440248882_10002461+Macedonia+Migrants+362353355.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-22 14:25:16</td><td><a href='http://www.startribune.com/thousands-of-migrants-still-trapped-on-macedonian-border/322578411/'>site</a></td><td>Few, if any, of the migrants want to remain in Greece, which is in the grip of a financial crisis.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 12:59:45</td><td><a href='http://www.ctvnews.ca/business/retail-nightmare-greek-store-closures-spike-1.2483357'>site</a></td><td>"The vast majority of Greek companies are half a step from going out of business."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.smh.com.au/content/dam/images/g/i/j/g/j/a/image.related.articleLeadwide.620x349.gikl05.png/1437838185560.jpg'></td><td>2015-07-25 15:29:52</td><td><a href='http://www.smh.com.au/world/greek-bailout-talks-to-begin-after-delay-20150725-gikl05'>site</a></td><td>An overwhelming majority - 78 percent - still wanted Greece to stay in the euro zone against 19 percent in favour of going back to the drachma.</td></tr>
 </table></body></html>
