@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-22 13:05:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/boko-haram-strengthens-ties-with-islamic-state-gro/nnPWR/'>site</a></td><td><table><tr><td>Boko Haram strengthens ties with Islamic State group</td></tr><tr><td>An estimated 80 to 200 Boko Haram fighters are in the Libyan city of Sirte, according to Nigeria analyst Jacob Zenn, in The Sentinel magazine of the Washington-based Jamestown Foundation.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-22 13:05:33</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/22/boko-haram-strengthens-ties-with-islamic-state-group'>site</a></td><td><table><tr><td>Boko Haram pledged allegiance to IS in March and in June was declared its West African province.</td></tr><tr><td>Algerian security forces believe Boko Haram fighters have joined other militants in northern Niger, he wrote.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-22 13:10:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11501471&ref=rss'>site</a></td><td>Further evidence of Boko Haram's links with IS is the arrest on Aug. 15 by Lebanese authorities of hard-line IS cleric Ahmad al-Assir at Beirut airport.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-15 10:46:57</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/15/cameroon-pledges-2450-troops-to-anti-boko-haram/'>site</a></td><td>Cameroon pledges 2,450 troops to anti-Boko Haram force</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-08-15 10:46:57</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/15/cameroon-pledges-2-450-troops-to-anti-boko-haram-force'>site</a></td><td>At a meeting in Cameroon in February, Nigeria and a group of neighboring countries that also includes Chad, Niger and Benin agreed to deploy around 8,700 troops against Boko Haram, which became an affiliate of the Islamic State group earlier this year.</td></tr>
 </table></body></html>
