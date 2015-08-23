@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-21 18:49:54</td><td><a href='http://www.reuters.com/article/2015/08/21/us-apple-autos-idUSKCN0QQ23420150821?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>At least six others with experience developing self-driving technology and systems have joined Apple, according to their LinkedIn profiles.</td></tr><tr><td>Sources have said that Apple is developing a car and studying self-driving technology, but it is unclear if the iPhone maker is designing a vehicle that could drive itself.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 06:20:39</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/17/pharrell-one-direction-among-headliners-at-apple/'>site</a></td><td>LOS ANGELES (AP) - Pharrell Williams, One Direction and Florence + The Machine are going to appear at the Apple Music Festival next month.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-18 06:23:57</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article31369988.html#storylink=rss'>site</a></td><td>Previously known as the iTunes Festival, the eight-year-old concert event was renamed the Apple Music Festival to support the launch earlier this summer of the new Apple Music app.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-18 06:23:57</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article31369988.html#storylink=rss'>site</a></td><td><table><tr><td>Pharrell, One Direction among headliners at Apple Music fest</td></tr><tr><td>19. Festival performances will be broadcast live and on-demand on Apple Music, and additional material will be available on the app's Beats 1 radio.</td></tr></table></td></tr>
 </table></body></html>

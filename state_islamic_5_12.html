@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/25/66/eb/f09876aaabfe409ba75b0aa4f92424ee-11d4339db20c456fa0a97df3de0632b8-0_1.jpg'></td><td>2015-07-25 18:25:59</td><td><a href='http://www.daytondailynews.com/ap/ap/international/kurds-fight-the-is-group-while-being-bombed-by-tur/nm6hZ/'>site</a></td><td>Kurds accused Turkey of not doing enough to help Syrian Kurds during the battle against Islamic State militants over the Syrian Kurdish border town of Kobani, prompting violent clashes and straining the fragile peace process.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 18:30:31</td><td><a href='http://www.startribune.com/kurds-fight-the-is-group-while-being-bombed-by-turkey/318535361/'>site</a></td><td>They have demonstrated a surprising resilience in their fight against Islamic State group militants in Kobani, pushing them out in January with the help of U.S.-led airstrikes.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/i/j/k/o/g/image.related.articleLeadwide.620x349.gijmxj.png/1437724468773.jpg'></td><td>2015-07-24 07:55:33</td><td><a href='http://www.brisbanetimes.com.au/world/turkey-launches-fight-against-islamic-state-and-allows-us-warplanes-to-use-bases-for-airstrikes-20150724-gijmxj.html'>site</a></td><td>Turkey launches fight against Islamic State and allows US warplanes to use bases for airstrikes</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/25/66/eb/f09876aaabfe409ba75b0aa4f92424ee-11d4339db20c456fa0a97df3de0632b8-0_1.jpg'></td><td>2015-07-25 18:25:59</td><td><a href='http://www.daytondailynews.com/ap/ap/international/kurds-fight-the-is-group-while-being-bombed-by-tur/nm6hZ/'>site</a></td><td>Kurds accused Turkey of not doing enough to help Syrian Kurds during the battle against Islamic State militants over the Syrian Kurdish border town of Kobani, prompting violent clashes and straining the fragile peace process.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 18:30:31</td><td><a href='http://www.startribune.com/kurds-fight-the-is-group-while-being-bombed-by-turkey/318535361/'>site</a></td><td>They have demonstrated a surprising resilience in their fight against Islamic State group militants in Kobani, pushing them out in January with the help of U.S.-led airstrikes.</td></tr>
 </table></body></html>

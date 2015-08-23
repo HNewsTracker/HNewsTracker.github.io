@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 09:04:08</td><td><a href='http://www.miamiherald.com/sports/article31370810.html#storylink=rss'>site</a></td><td>Gerhard Mayer-Vorfelder, a former FIFA and UEFA official who also served as the president of the German soccer federation, has died.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-18 09:05:19</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11499273&ref=rss'>site</a></td><td>He also served two terms on the FIFA execitive committee and was UEFA vice president from 2007-09.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://c.files.bbci.co.uk/10424/production/_84969566_plat1.jpg'></td><td>2015-08-17 13:02:10</td><td><a href='http://www.bbc.co.uk/sport/0/football/33961821'>site</a></td><td>Fifa will investigate the alleged distribution of a dossier highly critical of Uefa president Michel Platini from its Zurich headquarters.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/7/29/ec45aa528da545b5ad200466d7ddbe87_18.jpg'></td><td>2015-08-17 13:05:55</td><td><a href='http://www.aljazeera.com/news/2015/08/platini-smear-campaign-investigated-fifa-150817125610042.html'>site</a></td><td>The existence of the dossier on Platini, who is hoping to replace outgoing FIFA President Sepp Blatter in February's election, has also been reported in the Swiss media.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.independent.co.uk/incoming/article10290863.ece/alternates/w460/Jerome-Valcke-v2.jpg'></td><td>2015-08-17 13:34:34</td><td><a href='http://www.independent.co.uk/sport/football/international/fifa-will-investigate-alleged-smear-dossier-on-michel-platini-after-uefa-lodge-official-complaint-to-general-secretary-jerome-valcke-10459161.html'>site</a></td><td>German newspaper Welt am Sonntag said on Sunday that the document, entitled "Platini - skeleton in the closet", was distributed out of Fifa's headquarters.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-06 13:15:59</td><td></td><td><a href='apple_12_14.html'>Meanwhile Apple said its App Store saw the largest-ever number of customers in July, yielding $1.7 billion in transactions. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 22:49:26</td><td></td><td><a href='apple_12_13.html'>Apple's iTunes Store helped revitalize the music industry a decade ago, but digital downloads have slumped in recent years amid a shift toward streaming. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 21:40:38</td><td><a href='http://www.nydailynews.com/news/national/apple-building-self-driving-car-report-article-1.2326373?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>Apple is building a self-driving car: report</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 21:58:52</td><td></td><td><a href='apple_12_14.html'>Apple, which is best known for making iPhones and Mac computers, hasn't said what kind of testing it hoped to conduct at the GoMentum Station automotive testing facility, which used to be a naval station in the San Francisco Bay Area city of Concord. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 21:58:52</td><td></td><td><a href='apple_12_13.html'>An Apple spokesman declined comment Friday. (2)</a></td></tr>
 </table></body></html>

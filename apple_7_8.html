@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-21 12:58:26</td><td><a href='http://finance.yahoo.com/news/futures-little-changed-ahead-apple-113205365.html'>site</a></td><td>Stock futures little changed ahead of Apple earnings</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 08:41:58</td><td><a href='http://finance.yahoo.com/news/asian-shares-dragged-down-wall-003647188.html'>site</a></td><td>LONDON (Reuters) - Disappointment over U.S. corporate earnings, most notably at Apple Inc (AAPL.O), the world's largest company, pushed stocks lower on Wednesday and investors towards the shelter of bonds.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-22 09:36:03</td><td><a href='http://www.theglobeandmail.com/globe-investor/inside-the-market/market-updates/premarket-global-stocks-sour-as-apple-results-leave-bitter-aftertaste/article25624358/?cmpid=rss1'>site</a></td><td>Premarket: Global stocks sour as Apple results leave bitter aftertaste</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-22 11:25:26</td><td><a href='http://www.reuters.com/article/2015/07/22/us-markets-stocks-idUSKCN0PW15G20150722?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>U.S. stock futures fall as Apple results disappoint</td></tr><tr><td>U.S. stock index futures fell on Wednesday as corporate earnings disappointed, especially from Apple (AAPL.O), the world's largest company.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 11:47:06</td><td><a href='http://www.miamiherald.com/news/business/article28080421.html#storylink=rss'>site</a></td><td><table><tr><td>Apple outlook weighs on global markets</td></tr><tr><td>A cautious outlook from Apple coupled with indifferent earnings from U.S. technology firms weighed on global stock markets Wednesday ahead of another key vote in the Greek Parliament.</td></tr></table></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-22 18:15:57</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/22/tech-shares-lead-an-early-slump-for-us-stocks'>site</a></td><td>THE QUOTE: As the biggest publicly traded company in the world, Apple has a big impact on the market.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-22 20:50:08</td><td><a href='http://www.miamiherald.com/news/business/article28221517.html#storylink=rss'>site</a></td><td>"Apple is the biggest publicly traded company in the world, so it's going to have a big impact on the indices," noted Erik Davidson, chief investment officer at Wells Fargo Private Bank.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2_WPX1Y4Li0jDlBW92HZNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T164512Z_1_LYNXNPEB7D0UC_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-08-14 17:54:12</td><td><a href='http://finance.yahoo.com/news/hedge-funds-added-apple-shares-164512648.html'>site</a></td><td><table><tr><td>BOSTON (Reuters) - Top U.S. hedge funds added to their positions in Apple Inc (AAPL.O) during the second quarter, even as shares of the iPhone maker were flat during the period.</td></tr><tr><td>Tiger Eye Capital LLC added 25,000 shares of Apple to bring its total stake to 356,502 shares, filings showed.</td></tr><tr><td>Bridgewater Associates LP was a seller, however, cutting its Apple stake by 201,500 shares to 531,497 shares, filings show.</td></tr><tr><td>The decline could have exposed the second-quarter hedge fund buyers to losses, though some might have exited Apple before it fell from a high of $132.07 on July 20.</td></tr><tr><td>Their analysis of 685 hedge funds with nearly $1 trillion in equity assets found 69 of the funds had Apple among their top 10 holdings.</td></tr><tr><td>Still, during the first quarter of this year a number of hedge funds cut their stakes in Apple as its shares rallied, previous filings showed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2_WPX1Y4Li0jDlBW92HZNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T164512Z_1_LYNXNPEB7D0UC_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-08-14 20:04:13</td><td><a href='http://finance.yahoo.com/news/hedge-funds-added-apple-shares-164512648.html'>site</a></td><td>At the end of the first quarter Apple was one of the most popular stocks owned by hedge funds, according to Goldman Sachs research.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/GVwMMA5Jl6ZnX0mf5ya.LQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T214454Z_2_LYNXNPEB7D0UC_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-08-14 21:44:54</td><td><a href='http://finance.yahoo.com/news/hedge-funds-added-apple-shares-164512648.html'>site</a></td><td>Apple shares gained less than 1.0 percent during the second quarter to close at $125.43 on June 30.</td></tr>
 </table></body></html>

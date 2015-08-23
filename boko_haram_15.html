@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-23 10:25:25</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/23/bombs-kill-29-as-nigerian-leader-says-us-hampering-fight'>site</a></td><td><table><tr><td>Buhari told policy makers at the U.S. Institute for Peace on Wednesday that Nigeria's armed forces are "largely impotent" because they do not possess the appropriate weapons to fight Boko Haram.</td></tr><tr><td>Amnesty International charges Nigeria's military is responsible for the deaths of 8,000 detainees - twice as many as Boko Haram's victims in the first four years of its 6-year-old insurgency.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/7/17/suicide-bombs-kill-64-in-nigeria/_jcr_content/image.adapt.480.low.Boko_Haram_052214.jpg'></td><td>2015-07-23 12:30:00</td><td><a href='http://america.aljazeera.com/articles/2015/7/23/bombs-kill-29-as-nigerian-leader-says-us-hampering-fight1.html'>site</a></td><td>US aiding and abetting Boko Haram by refusing Nigeria arms, says Buhari</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-22 13:05:33</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/boko-haram-strengthens-ties-with-islamic-state-gro/nnPWR/'>site</a></td><td><table><tr><td>Boko Haram strengthens ties with Islamic State group</td></tr><tr><td>An estimated 80 to 200 Boko Haram fighters are in the Libyan city of Sirte, according to Nigeria analyst Jacob Zenn, in The Sentinel magazine of the Washington-based Jamestown Foundation.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-22 13:05:33</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/22/boko-haram-strengthens-ties-with-islamic-state-group'>site</a></td><td><table><tr><td>Boko Haram pledged allegiance to IS in March and in June was declared its West African province.</td></tr><tr><td>Algerian security forces believe Boko Haram fighters have joined other militants in northern Niger, he wrote.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-22 13:10:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11501471&ref=rss'>site</a></td><td>Further evidence of Boko Haram's links with IS is the arrest on Aug. 15 by Lebanese authorities of hard-line IS cleric Ahmad al-Assir at Beirut airport.</td></tr>
 </table></body></html>

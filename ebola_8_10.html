@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 18:17:08</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/05/new-ebola-cases-in-single-digits-for-2nd-week-says-who'>site</a></td><td>This week, Sierra Leone has reported two new cases, both relatives of a man who died from Ebola in Tonkolili, an area that hadn't seen the deadly virus in months.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-05 18:44:00</td><td><a href='http://www.ctvnews.ca/health/un-says-new-ebola-cases-in-single-digits-another-week-1.2503480'>site</a></td><td><table><tr><td>The path to zero cases, however, remains a challenge as the West African nations that have seen most of the more than 11,200 deaths from Ebola -- Sierra Leone, Guinea and Liberia -- head into rainy season.</td></tr><tr><td>WHO reported two confirmed cases of Ebola --one in Guinea and one in Sierra Leone-- in the week ending Aug. 2.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 13:54:09</td><td><a href='http://www.miamiherald.com/living/health-fitness/article30019245.html#storylink=rss'>site</a></td><td><table><tr><td>Khan says the patient recently traveled to a country with Ebola cases, but he didn't identify the country or name the patient.</td></tr><tr><td>Khan says the patient didn't have direct contact with anyone known to have Ebola and is considered "low risk" for the disease.</td></tr></table></td></tr>
 </table></body></html>
