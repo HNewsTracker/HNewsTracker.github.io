@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 14:59:07</td><td><a href='http://www.miamiherald.com/news/politics-government/article28696741.html#storylink=rss'>site</a></td><td>Despite FIFA's scandals, Sepp Blatter says the organization remains committed to 2018 World Cup host nation Russia.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 15:51:21</td><td><a href='http://www.foxnews.com/sports/2015/07/25/latest-blatter-to-putin-make-us-happy/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>In brief comments, Putin welcomed Blatter, saying that Russia would ''do everything that depends on us'' to make players and fans feel at home in 2018.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 18:50:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28700482.html#storylink=rss'>site</a></td><td>"I don't know what sort of system FIFA use anymore, and I'm not even sure FIFA know what sort of system they use," said O'Neill, who captained Northern Ireland at the 1982 World Cup, long before FIFA created its rankings.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-20 19:13:36</td><td><a href='http://www.nytimes.com/reuters/2015/08/20/sports/soccer/20reuters-soccer-fifa-sponsors.html?partner=rss&emc=rss&_r=0'>site</a></td><td><table><tr><td>FIFA Give Little Away After Secretive Sponsors' Meeting</td></tr><tr><td>ZURICH - FIFA discussed reforms with some of its leading commercial partners on Thursday during a secretive meeting at the headquarters of world soccer's scandal-plagued governing body.</td></tr><tr><td>The sponsors said in a joint statement: "FIFA provided the sponsors with updates on several topics. During this meeting, we reiterated our expectations for robust reform, and we will continue to engage with FIFA."</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-08-20T191253Z_1_LYNXNPEB7J0WQ_RTROPTP_2_SOCCER-FIFA.JPG?itok=GntT_pVY'></td><td>2015-08-20 23:02:06</td><td><a href='http://www.sbs.com.au/news/article/2015/08/21/fifa-give-little-away-after-secretive-sponsors-meeting'>site</a></td><td>"During the meeting, FIFA reaffirmed its commitment to transparency, reform, and collaboration with its valued partners," said a statement.</td></tr>
 </table></body></html>

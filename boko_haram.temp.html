@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>9</td><td></td><td>2015-07-25 23:52:16</td><td></td><td><a href='boko_haram.temp_2.html'>The attack on a popular night spot evening in the town of Maroua comes just days after other violence blamed on Boko Haram militants left at least 20 dead. (3)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-07-28 14:57:14</td><td></td><td><a href='boko_haram.temp_8.html'>"The two countries are intertwined and have no choice but to have a relationship to deal with Boko Haram," said Chris Fomunyoh, an analyst with the Washington-based National Democratic Institute. (3)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-07-30 20:48:02</td><td></td><td><a href='boko_haram.temp_10.html'>Soldiers rescued 71 people, almost all girls and women, in firefights that killed many Boko Haram militants in villages near the northeastern city of Maiduguri, Nigeria's military said Thursday. (5)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-07-30 21:55:39</td><td></td><td><a href='boko_haram.temp_6.html'>Chad announced Thursday that its troops killed 13 Boko Haram fighters in attacks this week near Lake Chad, where militants slit the throats of three villagers. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/02/77/91/8a6bea2a5d9d47dc972999d2da87a578-7d8998cbed474c398f49375505fc7aac-0_1.jpg'></td><td>2015-08-02 17:20:32</td><td><a href='http://www.daytondailynews.com/ap/ap/international/nigeria-review-of-soldiers-condemned-in-boko-haram/nnBgx/'>site</a></td><td>The review comes three months after the inauguration of President Muhammadu Buhari, who has vowed to crush the Boko Haram Islamic uprising which has spilled across Nigeria's borders.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-08-02 23:27:46</td><td></td><td><a href='boko_haram.temp_0.html'>Nigeria's airforce also said that it helped ground troops repel an attack by Boko Haram around the village of Bitta on the southern edge of the Sambisa forest reserve, a stronghold of the militant group. (5)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-15 10:46:57</td><td></td><td><a href='boko_haram.temp_11.html'>At a meeting in Cameroon in February, Nigeria and a group of neighboring countries that also includes Chad, Niger and Benin agreed to deploy around 8,700 troops against Boko Haram, which became an affiliate of the Islamic State group earlier this year. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48507620,width-300,resizemode-4/Abubakar-Shekau.jpg'></td><td>2015-08-17 01:46:08</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Boko-Haram-leader-Shekau-says-he-is-alive/articleshow/48507609.cms'>site</a></td><td>Boko Haram leader Shekau says he is alive</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.skynews.com/media/images/generated/2014/5/12/308412/default/v2/cegrab-20140512-171239-159-1-206x116.jpg'></td><td>2015-08-17 07:38:40</td><td><a href='http://news.sky.com/story/1536924/boko-haram-boss-denies-hes-been-replaced'>site</a></td><td>Boko Haram Boss Denies He's Been Replaced</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 19:49:43</td><td><a href='http://www.abc.net.au/news/2015-08-19/up-to-150-drowned-or-shot-fleeing-boko-haram-ambush-in-nigeria/6707190'>site</a></td><td>Up to 150 people have drowned in a river or been shot dead fleeing Boko Haram gunmen who raided a remote village in Nigeria's north-eastern Yobe state, locals say.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-08-22 13:05:33</td><td></td><td><a href='boko_haram.temp_17.html'>An estimated 80 to 200 Boko Haram fighters are in the Libyan city of Sirte, according to Nigeria analyst Jacob Zenn, in The Sentinel magazine of the Washington-based Jamestown Foundation. (5)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-22 18:39:39</td><td></td><td><a href='boko_haram.temp_4.html'>NGALA, Nigeria (AP) - Nigeria's new army chief drove to the frontline of the war on Boko Haram and narrowly missed an ambush that killed one soldier and wounded two. (3)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-23 12:14:18</td><td></td><td><a href='boko_haram.temp_15.html'>U.N. Secretary General Ban Ki-moon is to arrive in Nigeria Sunday to commemorate the Boko Haram bombing of his organization's headquarters and focus new attention on 219 schoolgirls held by the extremists. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-23 22:20:00</td><td><a href='http://www.dw.com/en/suspected-boko-haram-militants-ambush-nigerias-chief-of-army-staff-convoy/a-18667790?maca=en-rss-en-world-4025-rdf'>site</a></td><td>A convoy carrying Nigeria's chief of army staff has been ambushed by suspected Boko Haram militants.</td></tr>
+</table></body></html>

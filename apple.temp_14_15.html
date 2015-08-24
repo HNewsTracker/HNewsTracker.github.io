@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2_WPX1Y4Li0jDlBW92HZNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T164512Z_1_LYNXNPEB7D0UC_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-08-14 17:54:12</td><td><a href='http://finance.yahoo.com/news/hedge-funds-added-apple-shares-164512648.html'>site</a></td><td><table><tr><td>BOSTON (Reuters) - Top U.S. hedge funds added to their positions in Apple Inc (AAPL.O) during the second quarter, even as shares of the iPhone maker were flat during the period.</td></tr><tr><td>Tiger Eye Capital LLC added 25,000 shares of Apple to bring its total stake to 356,502 shares, filings showed.</td></tr><tr><td>Bridgewater Associates LP was a seller, however, cutting its Apple stake by 201,500 shares to 531,497 shares, filings show.</td></tr><tr><td>The decline could have exposed the second-quarter hedge fund buyers to losses, though some might have exited Apple before it fell from a high of $132.07 on July 20.</td></tr><tr><td>Their analysis of 685 hedge funds with nearly $1 trillion in equity assets found 69 of the funds had Apple among their top 10 holdings.</td></tr><tr><td>Still, during the first quarter of this year a number of hedge funds cut their stakes in Apple as its shares rallied, previous filings showed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2_WPX1Y4Li0jDlBW92HZNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T164512Z_1_LYNXNPEB7D0UC_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-08-14 20:04:13</td><td><a href='http://finance.yahoo.com/news/hedge-funds-added-apple-shares-164512648.html'>site</a></td><td>At the end of the first quarter Apple was one of the most popular stocks owned by hedge funds, according to Goldman Sachs research.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/GVwMMA5Jl6ZnX0mf5ya.LQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T214454Z_2_LYNXNPEB7D0UC_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-08-14 21:44:54</td><td><a href='http://finance.yahoo.com/news/hedge-funds-added-apple-shares-164512648.html'>site</a></td><td>Apple shares gained less than 1.0 percent during the second quarter to close at $125.43 on June 30.</td></tr>
+</table></body></html>

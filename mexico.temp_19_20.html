@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 07:45:24</td><td><a href='http://www.startribune.com/sludge-from-colorado-mine-spill-heads-down-river-to-nm/321008761/'>site</a></td><td><table><tr><td>The creek runs into the Animas, which then flows into the San Juan River in New Mexico and joins the Colorado River in Utah.</td></tr><tr><td>Gov. Susana Martinez is disturbed by the lack of information provided by the agency to New Mexico's environmental agencies, said Chris Sanchez, a spokesman for the governor.</td></tr><tr><td>In Farmington, New Mexico, city officials shut down water-supply intake pumps to avoid contamination and advised citizens to stay out of the river until the discoloration has passed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 17:58:06</td><td><a href='http://www.miamiherald.com/news/business/article30381405.html#storylink=rss'>site</a></td><td>Officials in New Mexico are blasting the U.S. Environmental Protection Agency for not informing them soon enough about a plume of mustard-colored muck floating downstream from a Colorado mine.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-08 04:15:02</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/07/wastewater-from-colorado-mine-flows-toward-new/'>site</a></td><td><table><tr><td>DENVER (AP) - An eerie yellow sludge that poured out of a shuttered gold mine and into a southwestern Colorado river was inching its way downstream toward New Mexico and Utah.</td></tr><tr><td>Local officials declared stretches of the river off-limits in Colorado and New Mexico.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/40/11/23/8426716/23/square_gallery_thumb.jpg'></td><td>2015-08-08 04:15:02</td><td><a href='http://www.sfgate.com/news/science/article/Wastewater-from-Colorado-mine-flows-toward-New-6432413.php'>site</a></td><td>Water samples were also tested in New Mexico, but no results had been released.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.usnews.com/dims4/USNEWS/c10c82c/2147483647/resize/300x/quality/85/?url=%2Fcmsmedia%2F3a%2F66%2F1c36c2c44fa381b26939c23469e8%2Fdata-mine.jpg'></td><td>2015-08-10 21:26:54</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/10/the-latest-tribe-declares-emergency-due-to-mine-spill'>site</a></td><td>The New Mexico Environment Department partnered with the U.S. Environmental Protection Agency to begin testing the water Monday.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-10 21:33:08</td><td><a href='http://www.miamiherald.com/news/nation-world/article30616890.html#storylink=rss'>site</a></td><td><table><tr><td>People are getting their well water tested in northwestern New Mexico after a plume of contaminated water spilled from a Colorado mine into the Animas River.</td></tr><tr><td>Farms along the Animas and San Juan river valleys in New Mexico have no water to irrigate their crops after a massive spill from a closed Colorado mine.</td></tr><tr><td>Members of New Mexico's congressional delegation sent a letter to the U.S. Environmental Protection Agency on Monday, asking that the agency develop a comprehensive plan for addressing those communities, farms and ranches that are without water.</td></tr><tr><td>The U.S. Environmental Protection Agency has yet to say if the metals, which include lead and arsenic, pose a threat to human health, frustrating residents and state and local officials in Colorado and downstream in New Mexico and Utah.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww2.hdnux.com/photos/40/20/03/8454337/43/square_gallery_thumb.jpg'></td><td>2015-08-13 02:51:19</td><td><a href='http://www.sfgate.com/news/science/article/The-Latest-EPA-chief-to-visit-New-Mexico-6439698.php'>site</a></td><td>New Mexico's attorney general says communities affected by contaminated wastewater that spilled from a Colorado mine have anywhere from seven to 50 days of drinking water in storage tanks and reservoirs.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/12/89/fc/a6c2299272864b048574afe40babd612-c51b887558064fc7aca5253534729521-5.jpg'></td><td>2015-08-13 02:51:19</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-epa-chief-to-visit-new-mexico-colorado/nnH2p/'>site</a></td><td><table><tr><td>A 100-mile-long plume has since traveled for hundreds of miles, through parts of Colorado, New Mexico and Utah on the way to Lake Powell, a key source of water for the Southwest.</td></tr><tr><td>The head of the Environmental Protection Agency says she will visit Farmington, New Mexico, downstream from where millions of gallons of mine waste spilled into a southwest Colorado river.</td></tr><tr><td>At Lake Powell, the San Juan meets the Colorado River, which provides water to parts of California, Arizona, Nevada, New Mexico and Utah.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-13 02:56:07</td><td><a href='http://www.miamiherald.com/news/nation-world/article30835680.html#storylink=rss'>site</a></td><td>The head of the Environmental Protection Agency plans to visit Colorado and New Mexico sometime Wednesday to see the impact of a 3 million gallon mine waste spill triggered during an agency-led cleanup.</td></tr>
+</table></body></html>

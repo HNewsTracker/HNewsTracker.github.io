@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>fifa or blatter</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-08-14 16:46:48</td><td><a href='http://www.usnews.com/news/sports/articles/2015/08/14/prosecutor-seeks-extradition-of-more-fifa-defendants'>site</a></td><td>Former FIFA vice president Jeffrey Webb, right, leaves Brooklyn federal court with his attorney Edward O'Callaghan, Friday, Aug. 14, 2015, in New York.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 16:46:48</td><td></td><td><a href='fifa_or_blatter_18_19.html'>A U.S. prosecutor says his office is in extradition negotiations with lawyers of defendants in the FIFA (FEE'-fuh) bribery soccer probe. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-26 11:35:18</td><td></td><td><a href='fifa_or_blatter_18_19.html'>"I'd like to emphasize again that all the plans to prepare for the World Cup will be fulfilled," Putin said, standing alongside the embattled Blatter at Saturday's preliminary draw for the 2018 tournament. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 11:35:18</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11487259&ref=rss'>site</a></td><td>It's a "relaxing situation," FIFA general secretary Jerome Valcke, who expects to leave office in February along with his longtime boss Blatter, told journalists Friday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-26 11:47:16</td><td><a href='http://www.foxnews.com/sports/2015/07/26/russia-getting-on-with-world-cup-job-as-fifa-fights-scandal/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fsports+%28Internal+-+Sports+-+Mixed%29'>site</a></td><td>ST. PETERSBURG, Russia (AP) As he shared the stage with FIFA's departing president Sepp Blatter, Russian President Vladimir Putin's message was simple.</td></tr>
 </table></body></html>

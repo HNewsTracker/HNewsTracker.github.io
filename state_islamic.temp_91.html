@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/g/x/r/m/t/image.related.articleLeadwide.620x349.gimjuw.png/1438113218021.jpg'></td><td>2015-07-28 19:53:42</td><td><a href='http://www.smh.com.au/world/florida-man-harlem-suarez-charged-in-alleged-backpack-bomb-plot-after-fbi-sting-20150728-gimjuw'>site</a></td><td>According to the criminal complaint, the FBI was alerted to Facebook posts made by Suarez in April of this year in which he expressed his support for Islamic State.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/g/x/r/m/t/image.related.articleLeadwide.620x349.gimjuw.png/1438113218021.jpg'></td><td>2015-07-28 19:53:42</td><td><a href='http://www.brisbanetimes.com.au/world/florida-man-harlem-suarez-charged-in-alleged-backpack-bomb-plot-after-fbi-sting-20150728-gimjuw'>site</a></td><td><table><tr><td>Washington: A Florida man has been charged in an alleged backpack bomb plot he planned to carry out on a public beach in Key West to show his support for the Islamic State militant group, the Department of Justice said on Tuesday.</td></tr><tr><td>Numerous young men have been arrested in the United States in recent months, with many plotting 'lone wolf attacks' in support of Islamic State.</td></tr></table></td></tr>
+</table></body></html>

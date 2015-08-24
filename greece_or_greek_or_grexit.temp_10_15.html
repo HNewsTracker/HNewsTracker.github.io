@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>Greece's current government offers a stark example of the risks.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 06:15:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11495549&ref=rss'>site</a></td><td>Greece closes in on bailout deal possibly within the day</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-18 09:40:18</td><td><a href='http://www.startribune.com/greece-eases-some-limits-on-money-transfers/322137261/'>site</a></td><td>ATHENS, Greece - The Greek government has relaxed slightly its restrictions on banking transactions, allowing small amounts to be sent abroad for the first time in about two months.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/40/33/07/8499710/11/square_gallery_thumb.jpg'></td><td>2015-08-21 18:08:04</td><td><a href='http://www.sfgate.com/news/world/article/Greece-s-Tsipras-bets-on-early-polls-to-boost-6456896.php'>site</a></td><td>Greek election looms as parties struggle to form government</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-21 18:11:57</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31700642.html#storylink=rss'>site</a></td><td>He noted that the bailout deal was signed with Greece, and not just the current government, meaning it should be implemented by whoever emerges victorious from the election.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-23 20:29:38</td><td><a href='http://www.miamiherald.com/news/business/article31972851.html#storylink=rss'>site</a></td><td>The Greek government says it's still aiming for a Sept.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-24 14:25:06</td><td><a href='http://www.miamiherald.com/news/business/article32000394.html#storylink=rss'>site</a></td><td>While some analysts have voiced concerns the election could derail the implementation of bailout measures Greece has signed up to, others argued it could lead to a more stable government.</td></tr>
+</table></body></html>

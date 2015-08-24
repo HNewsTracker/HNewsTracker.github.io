@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-20 23:43:59</td><td><a href='http://www.reuters.com/article/2015/08/20/us-microsoft-interdigital-us-idUSKCN0QP2CU20150820?feedType=RSS&feedName=technologyNews'>site</a></td><td>Microsoft files antitrust suit against InterDigital in patent feud</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/08/20/microsoft650.jpg&size=104x59&quality=85'></td><td>2015-08-20 23:44:38</td><td><a href='http://technology.canoe.com/News/2015/08/20/22543015.html?cid=rsstechnology'>site</a></td><td>Microsoft files antitrust suit against InterDigital</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/08/20/microsoft650.jpg&size=104x59&quality=85'></td><td>2015-08-20 23:44:38</td><td><a href='http://technology.canoe.com/News/2015/08/20/22543015.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>NEW YORK - InterDigital Inc. has violated U.S. antitrust law by failing to keep its promise to fairly license its technology considered essential to mobile phone communications, Microsoft Corp said in a lawsuit on Thursday.</td></tr><tr><td>It comes as the U.S. International Trade Commission is set to rule this month on whether Microsoft smartphones should be banned from being imported into the United States for infringing two of InterDigital's patents.</td></tr><tr><td>Microsoft alleged InterDigital's "abusive licensing practices" over its standard, essential patents violate federal anti-monopoly laws.</td></tr><tr><td>InterDigital "falsely promised" to license these patents on reasonable terms so they would be accepted as industry standards but then charged exorbitant rates, Microsoft said in the complaint.</td></tr></table></td></tr>
+</table></body></html>

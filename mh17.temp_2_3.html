@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mh17.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/w/3/d/1/image.related.articleLeadwide.620x349.giw3cm.png/1439223475835.jpg'></td><td>2015-08-10 16:42:46</td><td><a href='http://www.smh.com.au/world/mh17-report-australian-flight-safety-experts-to-test-crash-theory-20150810-giw3cm'>site</a></td><td>London: Australian flight safety experts will examine a reconstruction of part of the MH17 plane to test their theory on why it crashed.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/5606488-3x2-340x227.jpg'></td><td>2015-08-11 12:21:04</td><td><a href='http://www.abc.net.au/news/2015-08-11/fragments-from-mh17-site-may-be-from-russian-made-missile/6690062'>site</a></td><td>Investigators stressed that "at present, the conclusion cannot be drawn that there is a causal connection between the discovered parts and the crash of flight MH17".</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='ww.theguardian.com//i.guim.co.uk/img/media/29a8f54ca89fb10fe803915f74195921c1acccdd/0_0_3500_2099/master/3500.jpg?w=300&amp;q=85&amp;auto=format&amp;sharp=10&amp;s=af62087384f0c65f62ef31ae640c7495'></td><td>2015-08-11 12:36:48</td><td><a href='http://www.theguardian.com/world/2015/aug/11/mh17-possible-parts-missile-system-found-ukraine-crash-site'>site</a></td><td>Dutch prosecutors have said for the first time that they have found parts that could belong to a Buk missile system at the site in eastern Ukraine where Malaysia Airlines flight MH17 was brought down last year.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48439788,width-300,resizemode-4/MH.jpg'></td><td>2015-08-11 12:49:18</td><td><a href='http://timesofindia.indiatimes.com/world/europe/MH17-investigators-find-possible-BUK-missile-parts/articleshow/48439740.cms'>site</a></td><td>Investigators probing the shooting down of Malaysia Airlines Flight MH17 said on Tuesday they had identified pieces that "possibly" come from a Russian-made BUK missile from eastern Ukraine, where the plane crashed.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-11 20:24:36</td><td><a href='http://da.feedsportal.com/c/34692/f/637303/s/48e66bd8/sc/3/l/0L0Ssbs0N0Bau0Cnews0Carticle0C20A150C0A80C120Cfragments0Emh170Esite0Emay0Ebe0Erussian0Emade0Emissile/ia1.htm'>site</a></td><td>Fragments from MH17 site may be from Russian-made missile</td></tr>
+</table></body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-20 19:02:34</td><td><a href='http://www.cbsnews.com/news/greece-prime-minister-alexis-tsipras-resigns-early-elections-rebellion-bailout/'>site</a></td><td>Tsipras had delayed a decision on whether to call new elections until after Greece received the first installment from the bailout and made a debt repayment to the European Central Bank, both of which it did Thursday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-21 04:02:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/21/greeces-tsipras-bets-on-early-polls-to-boost-reform-mandate'>site</a></td><td>Greece's European creditors did not appear dismayed by Tsipras' move, which was widely expected.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/b39/report-on-business/international-business/european-business/article26045575.ece/ALTERNATES/w220/-543487245.JPG'></td><td>2015-08-21 10:43:19</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/european-business/far-left-splits-from-tsipras-as-greece-heads-to-elections/article26045576/?cmpid=rss1'>site</a></td><td>Tsipras resigned on Thursday, hoping to strengthen his hold on power in snap elections after seven months in office in which he fought Greece's creditors for a better bailout deal but had to cave in.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-24 14:25:06</td><td><a href='http://www.miamiherald.com/news/business/article32000394.html#storylink=rss'>site</a></td><td>"We believe Mr. Tsipras called for a snap election now to seek a fresh mandate to implement the latest agreement with Greece's creditors," said Alpona Banerji, vice president at Moody's ratings agency.</td></tr>
+</table></body></html>

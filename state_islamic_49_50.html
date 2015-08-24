@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-19 16:28:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-07-19-ML--Islamic%20State/id-449167b2e0e74de79f07f3a57749f181'>site</a></td><td><table><tr><td>BEIRUT (AP) - A U.S.-led coalition dropped new leaflets over the de facto capital of the Islamic State group in Syria, promising those below that "freedom will come" to the region, activists said Sunday.</td></tr><tr><td>An anti-Islamic State group called Raqqa is Being Silently Slaughtered and the Britain-based Syrian Observatory for Human Rights said the leaflets had drawings showing dead extremists and their flag turned upside down.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-19 16:57:09</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/19/us-led-airdrops-shower-leaflets-over-islamic-state-territory'>site</a></td><td>US-led airdrops shower leaflets over Islamic State territory</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-19 20:32:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article27815971.html#storylink=rss'>site</a></td><td>No one has claimed responsibility for the attacks, but the Islamic State militant group often is behind such attacks in and around the capital as it seeks to destabilize Iraq's Shiite-led government.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 06:25:20</td><td><a href='http://www.startribune.com/is-beheads-leading-syrian-antiquities-scholar-in-palmyra/322248631/'>site</a></td><td>BEIRUT - Syrian state media and an activist group say that Islamic State extremists have beheaded one of the country's most prominent antiquities scholars in the ancient town of Palmyra.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.independent.co.uk/incoming/article10461579.ece/alternates/w148/v2-palmyra-khaled-asaad-getty-full-width.jpg'></td><td>2015-08-23 21:38:39</td><td><a href='http://www.independent.co.uk/news/world/americas/isis-fighters-destroy-temple-in-ancient-city-of-palmyra-in-syria-10468603.html'>site</a></td><td>On Wednesday, relatives and witnesses said Khaled al-Asaad, an 81-year-old antiquities scholar who devoted his life to understanding Palmyra, was beheaded by Islamic State militants, his bloodied body hung on a pole.</td></tr>
 </table></body></html>

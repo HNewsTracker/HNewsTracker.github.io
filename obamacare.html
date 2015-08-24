@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-07-24 14:12:14</td><td></td><td><a href='obamacare_4.html'>Senate Republican leaders announced plans Friday to use a must-pass highway bill to try to overturn President Barack Obama's health care law, in the latest GOP assault on "Obamacare." (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 20:10:49</td><td><a href='http://www.mercurynews.com/health/ci_28544553/obamacare-new-covered-california-rates-increase-4-percent?source=rss'>site</a></td><td>Obamacare: New Covered California rates increase 4 percent statewide for 2016</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 20:10:49</td><td><a href='http://www.mercurynews.com/health/ci_28544553/obamacare-new-covered-california-rates-increase-4-percent?source=rss'>site</a></td><td>Obamacare: New Covered California rates increase 4 percent statewide for 2016</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-08-14 10:45:21</td><td><a href='http://www.foxnews.com/politics/2015/08/13/study-shows-16m-fewer-uninsured-since-obamacare-but-can-law-take-all-credit/'>site</a></td><td>Study shows 16M fewer uninsured since ObamaCare &#8211; but can law take all the credit?</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-08-18 12:22:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/politics/ct-scott-walker-health-care-plan-20150818-story.html'>site</a></td><td>Scott Walker proposes tax credits to replace Obamacare</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-08-18 19:05:23</td><td><a href='http://www.cbsnews.com/news/scott-walker-plans-to-replace-obamacare-with-tax-credits/'>site</a></td><td>"On my first day as president, I will send legislation to the Congress to once and for all repeal Obamacare entirely and then along with it we're going to replace it in a way that puts patients and their families...back in charge of their health care - not the federal government," Walker said.</td></tr>

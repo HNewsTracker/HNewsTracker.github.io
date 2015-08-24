@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>volcano.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 00:25:57</td><td></td><td><a href='volcano.temp_8.html'>Volcano-like underground fire is put out after a month (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 01:11:43</td><td><a href='http://www.cbsnews.com/news/ancient-volcano-tattooed-the-earth-with-giant-rings/'>site</a></td><td><table><tr><td>Tectonic activity, or the movement of continental plates, eventually drifted the volcano away from its hot spot, so Pilanesberg is now dormant, according to NASA Earth Observatory.</td></tr><tr><td>The Ossipee ring dike formed around 90 million years ago, during the second of three major eruptions throughout the active period of the volcano that created the structure.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/40/02/07/8397302/9/square_gallery_thumb.jpg'></td><td>2015-08-01 14:14:16</td><td><a href='http://www.chron.com/news/science/article/Highly-active-volcano-erupts-on-Reunion-amid-6419132.php'>site</a></td><td><table><tr><td>Highly active volcano erupts on Reunion amid media frenzy</td></tr><tr><td>Lava erupts from the Piton de la Fournaise "Peak of the Furnace" volcano, on the southeastern corner of the Indian Ocean island of Reunion Saturday, Aug. 1, 2015.</td></tr><tr><td>The volcano is in the Reunion National Park - a world heritage site.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/20130818000765478336-original_800x600.jpg?itok=3pY3ng5r'></td><td>2015-08-15 07:02:01</td><td><a href='http://www.sbs.com.au/news/article/2015/08/15/volcano-japan-prompts-warning'>site</a></td><td>Volcano in Japan prompts warning</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.euronews.com/articles/311803/606x340_311803.jpg?1439686628'></td><td>2015-08-16 00:57:08</td><td><a href='http://www.euronews.com/2015/08/16/ecuador-evacuation-after-increased-activity-around-cotopaxi-volcano/'>site</a></td><td>The president of Ecuador has declared a state of emergency after the giant Cotopaxi volcano showed signs of increased activity.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-17 22:35:21</td><td></td><td><a href='volcano.temp_0.html'>QUITO, Ecuador (AP) " Ecuadorean authorities said Monday that up to 325,000 people live in areas that could be threatened by fast-moving mud and rock flows if there is a major eruption of the Cotopaxi volcano. (12)</a></td></tr>
+</table></body></html>

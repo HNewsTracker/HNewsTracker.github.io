@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48507216,width-300,resizemode-4/Abdel-fattah-al-Sisi.jpg'></td><td>2015-08-16 23:27:37</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Egypts-Sisi-approves-anti-terrorism-law-setting-up-special-courts/articleshow/48507211.cms'>site</a></td><td>Financing "terrorist groups" will also carry a penalty of life in prison, which in Egypt is 25 years.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-17 09:56:02</td><td></td><td><a href='egypt.temp_12_13.html'>Egypt has not had a parliament for over two years, and legislative authority rests with el-Sissi, who has passed dozens of laws in his 14 months in office. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-17 15:29:23</td><td></td><td><a href='egypt.temp_12_15.html'>Following Morsi's ouster, a long-running insurgency in the Sinai Peninsula surged, with stepped-up attacks targeting the military there and on the mainland, while an affiliate of the Islamic State group established an Egypt branch. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 19:30:31</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/17/egypt-president-signs-new-anti-terrorism-law-into-effect'>site</a></td><td>"This is because the Interior Ministry wants that, and the Interior Ministry is now ruling Egypt," he wrote on his official Facebook page.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-20 02:06:07</td><td></td><td><a href='egypt.temp_12_14.html'>Egypt's sweeping new counterterrorism law erodes basic rights and defines terrorism so broadly that it could encompass civil disobedience and be used to stifle dissent, Human Rights Watch said Wednesday in a scathing report. (11)</a></td></tr>
+</table></body></html>

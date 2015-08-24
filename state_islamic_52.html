@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 09:33:34</td><td><a href='http://www.rferl.org/content/islamic-state-abducts-dozens-syrian-christians/27175649.html'>site</a></td><td>Islamic State Abducts Dozens Of Syrian Christians</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 11:50:32</td><td><a href='http://www.theglobeandmail.com/news/world/islamic-state-abducts-dozens-of-christians-from-syrian-town-monitor/article25871907/?cmpid=rss1'>site</a></td><td>Islamic State militants have abducted dozens of Christian families after seizing a strategically located town in the central Syrian province of Homs, a monitor said on Friday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 13:55:45</td><td><a href='http://www.startribune.com/after-capturing-syrian-town-is-abducts-dozens-of-christians/321034081/'>site</a></td><td>BEIRUT - Activists say Islamic State group has abducted 230 residents, including dozens of Christians, from a central Syrian town captured by the extremists earlier this week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-13 23:34:00</td><td><a href='http://www.ctvnews.ca/world/u-s-investigating-whether-islamic-state-used-chemical-weapons-against-kurds-1.2516149'>site</a></td><td><table><tr><td>U.S. investigating whether Islamic State used chemical weapons against Kurds</td></tr><tr><td>-- The United States is investigating whether the Islamic State used chemical weapons, the White House said Thursday, following allegations that IS militants deployed chemical weapons against Kurdish forces in northern Iraq.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 00:10:00</td><td><a href='http://www.cnbc.com/2015/08/13/us-investigating-whether-islamic-state-used-chemical-weapons.html'>site</a></td><td>Although the U.S. and its coalition partners are mounting airstrikes against the Islamic State, they are relying on local forces like the Kurds, the Iraqi military and others to do the fighting on the ground.</td></tr>
 </table></body></html>

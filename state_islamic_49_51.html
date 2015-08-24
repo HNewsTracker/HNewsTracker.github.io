@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 00:44:05</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/australian-islamic-state-group-medic-arrested-in-s/nm6TN/'>site</a></td><td>An Australian nurse who says he was forced by the Islamic State movement to work as a medic in Syria is to appear in a Sydney court on terrorism-related charges.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 02:19:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28672570.html#storylink=rss'>site</a></td><td>Australian Islamic State group medic arrested on return home</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 05:35:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28672570.html#storylink=rss'>site</a></td><td><table><tr><td>He is the first Australian involved with the Islamic State known to have returned home since the Sunni fighters swept into western Iraq in June last year and declared the establishment of a caliphate, Monash University terrorism expert Greg Barton said.</td></tr><tr><td>Court documents show both charges allege that Brookman knowingly provided support to the Islamic State movement by undertaking guard duty and reconnaissance for the militants.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/64992bc53d73494fdbd60590b541f25e8291a494/c=171-0-2830-1999&amp;r=x404&amp;c=534x401/local/-/media/USATODAY/WiresImages/2015/08/23/10689c10d622f4257f0f6a70670075b1.jpg'></td><td>2015-08-23 22:24:46</td><td><a href='http://www.usatoday.com/story/news/world/2015/08/23/isil-destroys-palmyra-temple/32239003/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomworld-topstories'>site</a></td><td><table><tr><td>They said the Islamic State fighters used suicide bombings and mortar shells and that chief of army operations in Anbar, Maj-Gen. Qassim al-Dulaimi, was lightly wounded in the attack.</td></tr><tr><td>News of Sunday's attack came two days after up to 50 soldiers were killed by the Islamic State group in two ambushes elsewhere in Anbar province, much of which is under militant control, including Ramadi and the key city of Fallujah.</td></tr></table></td></tr>
 </table></body></html>

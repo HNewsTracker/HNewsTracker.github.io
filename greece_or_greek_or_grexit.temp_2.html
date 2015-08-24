@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-08-10 13:58:22</td><td></td><td><a href='greece_or_greek_or_grexit.temp_2_4.html'>The vast majority then head to mainland Greece and from there, try to reach more prosperous European Union countries by either walking across the Balkans from northern Greece, or sneaking onto Italy-bound ferries from the west. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/11/b3/99/0f6f500631dc468aaaf4b3ad7c88aa6a-b0acb25bd35843648b6b34f707525031-0_1.jpg'></td><td>2015-08-11 08:28:47</td><td><a href='http://www.daytondailynews.com/ap/ap/international/fights-among-migrants-break-out-on-greek-island-of/nnHG2/'>site</a></td><td>The European Union is granting 2.4 billion euros/$2.6 billion to EU nations to upgrade their migration programs with the biggest sums going to Greece and Italy where thousands of refugees have arrived this year.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-11 09:51:00</td><td></td><td><a href='greece_or_greek_or_grexit.temp_2_6.html'>Greece's coast guard said it had rescued 329 migrants in seven separate search and rescue incidents off the coast of Lesbos and Kos in the 24 hours from Monday morning. (3)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-15 08:01:08</td><td></td><td><a href='greece_or_greek_or_grexit.temp_2_3.html'>Migrants and refugees gather at a makeshift migrant detention center at Kos' abandoned football stadium after crossing from Turkey, at the southeastern island of Kos, Greece, Friday, Aug. 14, 2015. (41)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-18 13:45:02</td><td></td><td><a href='greece_or_greek_or_grexit.temp_2_7.html'>GENEVA Greece must show "much more leadership" to tackle an escalating crisis in which 160,000 refugees and migrants have reached its shores so far this year, the United Nations said on Tuesday. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-18 20:32:06</td><td></td><td><a href='greece_or_greek_or_grexit.temp_2_9.html'>The Greek Merchant Marine Ministry said Tuesday the Eleftherios Venizelos is expected to leave Kos by Wednesday morning to travel to Thessaloniki. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 10:45:06</td><td></td><td><a href='greece_or_greek_or_grexit.temp_2_8.html'>Migrant in Greece says they begged for food, water, blankets (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-20 14:33:54</td><td></td><td><a href='greece_or_greek_or_grexit.temp_2_5.html'>GEVGELIJA, Macedonia -- Macedonia stepped up security on its border with Greece on Thursday, blocking thousands of migrants from entering and leaving them stranded on a dusty field. (19)</a></td></tr>
+</table></body></html>

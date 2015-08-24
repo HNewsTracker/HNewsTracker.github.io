@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-30 20:48:02</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/30/nigerian-soldiers-rescue-71-children-women-from-boko-haram'>site</a></td><td><table><tr><td>Women and children rescued by Nigerian soldiers from Boko Haram extremists in the northeast of Nigeria arrive at the military office in Maiduguri, Nigeria, Thursday, July 30, 2015.</td></tr><tr><td>Soldiers rescued 71 people, almost all girls and women, in firefights that killed many Boko Haram militants in villages near the northeastern city of Maiduguri, Nigeria's military said Thursday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/08/02/876/493/Boko Haram-1.jpg?ve=1&tl=1'></td><td>2015-08-02 22:17:16</td><td><a href='http://www.foxnews.com/world/2015/08/02/nigerian-army-troops-rescue-178-captives-most-children-destroy-8-boko-haram/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Nigerian troops rescued 178 people from Boko Haram in attacks that destroyed several camps of the Islamic extremists in the northeast of the country, an army statement said Sunday, Aug. 2.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/1/25/escaping-boko-haram-the-road-from-bama/_jcr_content/image.adapt.480.low.nigeria_bama.jpg'></td><td>2015-08-03 01:18:00</td><td><a href='http://america.aljazeera.com/articles/2015/8/2/nigeria-army-rescued-178-people-from-boko-haram.html'>site</a></td><td><table><tr><td>Hundreds have been freed from Boko Haram captivity this year but none of the 219 girls abducted in April 2014 from a school in Chibok were among those rescued.</td></tr><tr><td>Some of those rescued last week said they had been held by Boko Haram for up to one year in villages just 25 miles from Maiduguri.</td></tr></table></td></tr>
+</table></body></html>

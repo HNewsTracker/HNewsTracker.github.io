@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-20 07:30:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11500334&ref=rss'>site</a></td><td><table><tr><td>At busy crossing, pedestrians need passports to enter Mexico</td></tr><tr><td>SAN DIEGO (AP) " Walking into Mexico at the nation's busiest border crossing with the United States is no longer an uninterrupted stroll for foreigners.</td></tr><tr><td>He has insisted that Mexico sends criminals to the U.S. and pledges to build a border wall at Mexico's expense.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 07:32:05</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/20/at-busy-crossing-pedestrians-need-passports-to-enter-mexico'>site</a></td><td>Pedestrians and motorists have generally entered Mexico unencumbered along the 1,954-mile border with the United States.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-20 07:35:08</td><td><a href='http://www.miamiherald.com/news/nation-world/article31602209.html#storylink=rss'>site</a></td><td>In this Aug. 18, 2015, photo, a woman approaches the entrance to the Mexico border crossing in San Ysidro, Calif.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-20 15:46:53</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/20/at-busy-crossing-pedestrians-need-passports-to-enter-mexico'>site</a></td><td>In this Tuesday, Aug. 18, 2015, photo, a man headed into Mexico stops at a fountain as fellow travelers approach the entrance to the Mexico border crossing in San Ysidro, Calif.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-21 00:04:16</td><td><a href='http://www.miamiherald.com/news/nation-world/article31661936.html#storylink=rss'>site</a></td><td><table><tr><td>In this Aug. 18, 2015, photo, pedestrians pull suit cases and newly bought goods as they trek up the new pedestrian walk way to the Mexico border crossing in San Ysidro, Calif.</td></tr><tr><td>In this Aug. 18, 2015, photo, a group of people follow the new signs indicating the direction to the new pedestrian path to the Mexico border crossing in San Ysidro, Calif.</td></tr></table></td></tr>
+</table></body></html>

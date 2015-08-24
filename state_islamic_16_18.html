@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/i/h/3/l/image.related.articleLeadwide.620x349.giigzg.png/1437575239666.jpg'></td><td>2015-07-22 14:27:35</td><td><a href='http://www.smh.com.au/world/kurdish-militants-kill-two-turkish-police-to-avenge-islamic-state-bombing-20150722-giigzg'>site</a></td><td><table><tr><td>Anti-government protests after Monday's bombing in Suruc erupted in several cities for a second night on Tuesday, with some of the demonstrators chanting "Murderer Islamic State, collaborator Erdogan and AKP".</td></tr><tr><td>On Tuesday, Prime Minister Ahmet Davutoglu rejected accusations that Turkey had tacitly supported Islamic State and had unwittingly opened the door to the bombing; but he said initial evidence suggested the Islamist radical group was responsible.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48530851,width-300,resizemode-4/.jpg'></td><td>2015-08-18 13:57:44</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Islamic-State-fighter-urges-fellow-Turks-to-conquer-Istanbul/articleshow/48530765.cms'>site</a></td><td>"Altogether and under the orders of Abu Bakr al Baghdadi ... let's conquer Istanbul, which the traitor Erdogan works day and night to hand over to crusaders," the man said, referring to Islamic State's leader.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 19:48:21</td><td><a href='http://www.foxnews.com/world/2015/08/14/islamic-state-leader-reportedly-raped-american-hostage/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The parents of the late American hostage Kayla Mueller say they were told by American officials that their daughter was repeatedly forced to have sex with Abu Bakr Baghdadi, the leader of the Islamic State group.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 20:51:03</td><td><a href='http://www.startribune.com/family-islamic-state-leader-raped-american-hostage/321898081/'>site</a></td><td>The Islamic State group claimed Mueller was killed in a Jordanian air strike near Raqqah, the group's self-declared capital in Syria.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 22:49:09</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/14/family-islamic-state-leader-raped-american-hostage'>site</a></td><td>The news is but the latest in a litany of horrors perpetrated by the Islamic State group, which has beheaded, burned and crucified male captives while passing around women as sex slaves.</td></tr>
 </table></body></html>

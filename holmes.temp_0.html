@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>7</td><td></td><td>2015-08-03 20:02:35</td><td></td><td><a href='holmes.temp_0_1.html'>? Jurors in the Colorado theatre shooting trial declined to rule out the death penalty Monday as they move toward sentencing James Holmes, finding his defence failed to persuade them to show him mercy. (36)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 22:42:43</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/03/theater-shooting-jury-decides-whether-execution-still-option'>site</a></td><td>Ian Sullivan, the father of Holmes' youngest victim, 6-year-old Veronica Moser-Sullivan, closed his eyes when her name was read.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-08 05:55:08</td><td></td><td><a href='holmes.temp_0_3.html'>Nine jurors wanted to execute Holmes, but one was steadfastly opposed and two others wavering, a juror told reporters after the verdict was announced. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-08 05:55:08</td><td></td><td><a href='holmes.temp_0_4.html'>Ashley Moser, whose 6-year-old daughter died in the attack and who was herself paralyzed by Holmes' bullets, also shook her head and then slowly leaned it against the wheelchair of another paralyzed victim, Caleb Medley. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td>In the back, Aurora police officers who responded to the bloody scene of Holmes' attacks began crying.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-14 22:50:22</td><td></td><td><a href='holmes.temp_0_2.html'>The lone holdout felt just as strongly that Holmes should get a life sentence as the 11 other jurors believed he should die for the 2012 shooting, District Attorney George Brauchler said, based on prosecution interviews with some of the panel. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/14/18/a0/31e9e3b86fb44f3298cdf9a61aa74e27-5cc671812957448e99801c049e659083-0.jpg'></td><td>2015-08-14 22:50:22</td><td><a href='http://www.daytondailynews.com/ap/ap/us/da-theater-shooters-life-sentence-came-down-to-1-j/nnKcw/'>site</a></td><td>George Brauchler, lead prosecutor in the case against convicted Colorado theater shooter James Holmes, responds to questions during an interview Friday, Aug. 14, 2015, in Centennial, Colo.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-24 05:09:11</td><td></td><td><a href='holmes.temp_0_5.html'>Judge Carlos A. Samour Jr. will formally sentence Holmes to life on 24 counts of first-degree murder - two for each of those killed. (4)</a></td></tr>
+</table></body></html>

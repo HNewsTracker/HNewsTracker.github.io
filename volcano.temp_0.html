@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>volcano.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 17:00:13</td><td><a href='http://www.startribune.com/ecuador-s-cotopaxi-volcano-spews-ash-south-of-quito/321885661/'>site</a></td><td>"The situation merits the population staying informed about what's happening with the volcano," said Ramon.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-16 02:26:06</td><td></td><td><a href='volcano.temp_0_3.html'>Four blasts inside the volcano sent ash shooting more than two miles in the sky Friday, coating highways, homes and cars just south of Ecuador's capital with a fine gray powder. (4)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-16 02:26:06</td><td></td><td><a href='volcano.temp_0_2.html'>Presidential legal secretary Alexis Mera said further ash explosions and some pyroclastic flows on the volcano's western slopes Saturday led officials to evacuate some nearby villages. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-17 22:35:21</td><td></td><td><a href='volcano.temp_0_1.html'>QUITO, Ecuador (AP) " Ecuadorean authorities said Monday that up to 325,000 people live in areas that could be threatened by fast-moving mud and rock flows if there is a major eruption of the Cotopaxi volcano. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-17 22:45:12</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31341809.html#storylink=rss'>site</a></td><td>The volcano began showing renewed activity in April.</td></tr>
+</table></body></html>

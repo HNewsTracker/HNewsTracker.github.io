@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 15,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() >= table.rows.length - threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>greece or greek or grexit.temp</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 09:00:15</td><td><a href='http://www.startribune.com/survey-shows-unexpected-upturn-in-german-business-confidence/318610961/'>site</a></td><td>BERLIN - Business confidence in Germany, Europe's biggest economy, has risen unexpectedly this month as worries over Greece have subsided, a closely watched survey showed Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 10:55:03</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article28793278.html#storylink=rss'>site</a></td><td><table><tr><td>At its height eight years ago, George Kranitis' family-owned shipyard in Patra, Greece's third-largest city, employed some 35 people and sold around 340 boats annually.</td></tr><tr><td>"Greece is a yachting paradise, a place where everyone likes to have a small boat," said Greek Tourism Federation chief George Vernicos who also heads his own yacht business.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 12:35:10</td><td><a href='http://www.startribune.com/eu-moves-to-protect-cheese-from-both-sides-of-divided-cyprus/318799111/'>site</a></td><td><table><tr><td>BRUSSELS - The European Union has moved to recognize halloumi, or hellim in Turkish, as a protected cheese from both sides of the Greek-Turkish divided island of Cyprus and lauds it as a symbolic step toward further reunification.</td></tr><tr><td>The island nation was forcibly divided in 1974 into a Greek Cypriot south and a Turkish Cypriot north.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-08-03 14:34:32</td><td><a href='http://finance.yahoo.com/news/greek-stocks-unofficially-close-16-143432559.html'>site</a></td><td>Greek stocks unofficially close 16 percent lower, banks plunge 30 percent</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-08-07 13:33:06</td><td></td><td><a href='greece_or_greek_or_grexit.temp_39.html'>The European Union appealed Friday to its member countries to live up to pledges to provide planes and other assets so that its border agency can cope with a migrant influx into Greece and Hungary. (3)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-08-15 08:01:08</td><td></td><td><a href='greece_or_greek_or_grexit.temp_2.html'>Migrants and refugees gather at a makeshift migrant detention center at Kos' abandoned football stadium after crossing from Turkey, at the southeastern island of Kos, Greece, Friday, Aug. 14, 2015. (76)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-08-17 06:30:20</td><td></td><td><a href='greece_or_greek_or_grexit.temp_31.html'>HONG KONG (AP) " World stock markets were mostly higher Monday as the yuan steadied and Greece inched closer to receiving its latest bailout. (3)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-08-17 07:56:48</td><td></td><td><a href='greece_or_greek_or_grexit.temp_0.html'>A migrant with his child makes his way to board a fire brigade bus to be transferred from a park to an organized camp which has been set up by the Greek state a few miles from the centre of Athens, Sunday, Aug. 16, 2015. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 07:45:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11499236&ref=rss'>site</a></td><td>German Red Cross to distribute aid to migrants in Greece</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 18:24:13</td><td><a href='http://abcnews.go.com/International/wireStory/greece-suspends-work-canadian-run-gold-mine-33175266'>site</a></td><td>Greece Suspends Work at Canadian-Run Gold Mine</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-08-20 19:02:34</td><td></td><td><a href='greece_or_greek_or_grexit.temp_10.html'>In a televised address to the nation Thursday night, Tsipras defended his government's negotiating tactics and said Greece got the best deal possible for its 86 billion euro ($95 billion) bailout from other eurozone countries. (200)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-21 14:26:48</td><td><a href='http://abcnews.go.com/Business/wireStory/china-greece-concerns-push-us-stock-market-33225902'>site</a></td><td>Fears Over China and Greece Push Down US Stocks for 2nd Day</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-21 14:30:09</td><td></td><td><a href='greece_or_greek_or_grexit.temp_41.html'>Investors are also worried about more turmoil in Greece after the resignation of its prime minister. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-23 20:05:14</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11501910&ref=rss'>site</a></td><td>Anti-mining protesters clash with Greek police; 78 arrested</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-24 14:50:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11502338&ref=rss'>site</a></td><td><table><tr><td>Hundreds close roads in Greece to protest gold mine closure</td></tr><tr><td>THESSALONIKI, Greece (AP) " Greek police have arrested two union leaders after hundreds of miners blocked roads to protest the temporary closure of a controversial gold mine in northern Greece.</td></tr></table></td></tr>
+</table></body></html>

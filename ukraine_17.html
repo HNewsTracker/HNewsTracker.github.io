@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-24 21:39:05</td><td><a href='http://www.sfgate.com/news/article/US-to-expand-Ukraine-military-training-6403934.php'>site</a></td><td><table><tr><td>US to expand Ukraine military training</td></tr><tr><td>Spokesman Mark Toner said the new program would increase to more than $244 million the amount of U.S. security assistance provided to Ukraine since last year when conflict between Kiev and Russian-backed separatists escalated in the east of the country.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-24 21:39:05</td><td><a href='http://www.usnews.com/news/politics/articles/2015/07/24/us-to-expand-ukraine-military-training'>site</a></td><td>The State Department announced that the training would begin this fall in western Ukraine.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 21:45:05</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article28597066.html#storylink=rss'>site</a></td><td>The White House said Biden and Poroshenko also talked about Ukraine's efforts to combat corruption and the urgency of seeking justice in the crash of Malaysia Airlines Flight MH-17, which was shot down over Ukraine just over a year ago.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.huffingtonpost.com//asset/scalefit_630_noupscale/55b2d4ad1d000030001429d7.jpeg'></td><td>2015-07-25 00:30:13</td><td><a href='http://www.huffingtonpost.com/entry/us-to-train-ukraine-military-following-russian-agression_55b2d3f3e4b0224d8832704c?'>site</a></td><td>Toner said he had nothing to announce on any new weapons for Ukraine and that the focus was on providing non-lethal aid.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 00:47:18</td><td><a href='http://www.rferl.org/content/us-starts-training-ukrainian-army-troops-this-fall/27151714.html'>site</a></td><td>"This training is part of our long-running defense cooperation with Ukraine."</td></tr>
 </table></body></html>

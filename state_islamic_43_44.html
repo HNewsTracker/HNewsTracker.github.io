@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 06:25:20</td><td><a href='http://www.startribune.com/is-beheads-leading-syrian-antiquities-scholar-in-palmyra/322248631/'>site</a></td><td>BEIRUT - Syrian state media and an activist group say that Islamic State extremists have beheaded one of the country's most prominent antiquities scholars in the ancient town of Palmyra.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.independent.co.uk/incoming/article10461579.ece/alternates/w148/v2-palmyra-khaled-asaad-getty-full-width.jpg'></td><td>2015-08-23 21:38:39</td><td><a href='http://www.independent.co.uk/news/world/americas/isis-fighters-destroy-temple-in-ancient-city-of-palmyra-in-syria-10468603.html'>site</a></td><td>On Wednesday, relatives and witnesses said Khaled al-Asaad, an 81-year-old antiquities scholar who devoted his life to understanding Palmyra, was beheaded by Islamic State militants, his bloodied body hung on a pole.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/p/7/h/6/image.related.articleLeadwide.620x349.giw3g6.png/1439229671565.jpg'></td><td>2015-08-10 18:01:25</td><td><a href='http://www.smh.com.au/world/nusra-front-says-it-will-withdraw-from-frontline-against-islamic-state-in-syria-20150810-giw3g6'>site</a></td><td><table><tr><td>The Nusra Front's withdrawal from rural positions north-east of the Syrian city of Aleppo came amid newly announced steps by Turkey and the United States to fight the Islamic State in Syria.</td></tr><tr><td>US and Turkish officials last month described plans to provide military support to Syrian rebels to clear the Islamic State, from a roughly 95-kilometre-long strip of territory along the Turkish border.</td></tr></table></td></tr>
 </table></body></html>
