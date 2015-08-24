@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-12 12:28:42</td><td></td><td><a href='state_islamic_41_42.html'>The latest in the events surrounding the purported slaying by Egypt's Islamic State affiliate of Croatian hostage Tomislav Salopek, after an online image was circulated Wednesday showing his beheaded body. (12)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-12 21:39:55</td><td></td><td><a href='state_islamic_41_43.html'>The photograph, circulating on Twitter accounts of Sinai Province supporters, shows a man's severed head placed on his body, with a knife driven into sand next to it and the black Islamic State flag in the background. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-23 21:38:39</td><td></td><td><a href='state_islamic_41_42.html'>On Wednesday, relatives and witnesses said Khaled al-Asaad, an 81-year-old antiquities scholar who devoted his life to understanding Palmyra, was beheaded by Islamic State militants, his bloodied body hung on a pole. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/23/80/a0/83f71bc78a37468591b7e984b4626637-26ee8171edf241e5b669b5f55929c89a-0.jpg'></td><td>2015-08-23 21:43:47</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/iraqi-officials-say-23-soldiers-sunni-fighters-kil/nnPqB/'>site</a></td><td>Islamic State group supporters on social media also did not immediately mention the temple's destruction.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-23 22:24:46</td><td></td><td><a href='state_islamic_41_43.html'>They said the Islamic State fighters used suicide bombings and mortar shells and that chief of army operations in Anbar, Maj-Gen. Qassim al-Dulaimi, was lightly wounded in the attack. (2)</a></td></tr>
 </table></body></html>

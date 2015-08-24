@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 14:44:22</td><td><a href='http://www.reuters.com/article/2015/07/26/us-eurozone-greece-idUSKCN0Q00JN20150726?feedType=RSS&feedName=worldNews'>site</a></td><td>The Kathimerini report said access to the Greek tax service's computer systems was under the control of inspectors from the "troika", the international creditors' group, and therefore inaccessible to the government.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-18 09:40:18</td><td><a href='http://www.startribune.com/greece-eases-some-limits-on-money-transfers/322137261/'>site</a></td><td>ATHENS, Greece - The Greek government has relaxed slightly its restrictions on banking transactions, allowing small amounts to be sent abroad for the first time in about two months.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 12:19:18</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/27/greece-creditors-get-down-to-business-on-bailout-deal'>site</a></td><td>Without the money due from the expected three-year bailout totaling around 85 billion euros, Greece would be unable to make that payment - a development that would likely trigger fresh fears over the country's future in the euro.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PiEea8e.zpoyu6JROCo3mg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T161430Z_2_LYNXNPEB7D0SK_RTROPTP_3_EUROZONE-GREECE-EUROGROUP_original.jpg'></td><td>2015-08-14 22:55:16</td><td><a href='http://finance.yahoo.com/news/euro-ministers-set-launch-greek-154645912.html'>site</a></td><td>In all, euro zone governments will lend 26 billion euros in a first tranche of the bailout before reviewing Greece's compliance with their conditions in October.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/20/ab/c3/b7f63fc8f4d34f86b4f77f344357aaa4-61103075384a49cc872bbfbbc112f702-3.jpg'></td><td>2015-08-20 06:30:04</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-gets-145-billion-to-pay-debts-part-of-new-b/nnNGj/'>site</a></td><td>Greece is receiving the first 13 billion-euro ($14.5 billion) payment of its new bailout, with 12 billion euros earmarked for repaying debts and the remainder for settling arrears to public sector suppliers.</td></tr>
 </table></body></html>

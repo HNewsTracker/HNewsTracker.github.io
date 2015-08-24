@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-26 14:44:22</td><td><a href='http://www.reuters.com/article/2015/07/26/us-eurozone-greece-idUSKCN0Q00JN20150726?feedType=RSS&feedName=worldNews'>site</a></td><td>Lafazanis, leader of a hardline faction in the ruling Syriza party that has argued for a return to the drachma, said the move would have allowed pensions and public sector wages to be paid if Greece were forced out of the euro.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/30/c3/d2/c9177f4c8d05408085912743c779f31a-da451bd6382f40dfa324274e47b7d816-0.jpg'></td><td>2015-07-31 01:03:59</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/drachma-revolt-adds-unease-to-greeces-awkward-alli/nm8zw/'>site</a></td><td>The decision followed a dramatic 12-hour meeting by the 200-member central committee, during which party rebels appealed for Greece to return to its national currency, the drachma.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-31 04:01:06</td><td><a href='http://www.usnews.com/news/business/articles/2015/07/31/greek-bailout-talks-to-shift-gear'>site</a></td><td>They have openly voiced support for Greece to turn its back on the euro as its national currency.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000ae6ae-642.jpg'></td><td>2015-07-24 20:15:29</td><td><a href='http://www.rte.ie/news/business/2015/0724/716984-greece-bailout-talks/'>site</a></td><td>The Greek parliament has already approved two packages of reform measures, a prerequisite for starting the formal negotiations to hammer out details of the new bailout.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-12 11:36:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/12/greeces-bailout-bill-submitted-to-parliament'>site</a></td><td>Greek bailout details ironed out as bill goes to parliament</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 21:27:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31073082.html#storylink=rss'>site</a></td><td>The bailout bill passed through the Greek parliament thanks to support from opposition parties, with 222 votes in favor, 64 against, 11 abstentions and three absent in the 300-member parliament.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-19 10:50:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31496567.html#storylink=rss'>site</a></td><td>Schaeuble conceded that voting in favor of the bailout wasn't an easy one for him, but that "it would be irresponsible to not use the chance for a new beginning in Greece" in light of the fact that the Greek parliament has already backed a large chunk of reform measures demanded by creditors.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://static01.nyt.com/images/2015/08/12/world/12Greekdebt-web/12Greekdebt-web-thumbStandard.jpg'></td><td>2015-08-19 12:10:32</td><td><a href='http://www.nytimes.com/2015/08/20/world/europe/angela-merkel-german-parliament-greek-bailout.html?partner=rss&emc=rss&_r=0'>site</a></td><td>"But in view of the fact that the Greek Parliament has already passed a large part of the measures, it would be irresponsible not to use the opportunity now for a new start in Greece."</td></tr>
 </table></body></html>
