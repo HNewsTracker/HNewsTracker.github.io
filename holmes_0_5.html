@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,7 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-22 20:33:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-07-22-US--Colorado%20Shooting/id-477fe2ab5c5348b9a976903b25512494'>site</a></td><td>(AP) - James Holmes should be put to death for the Colorado theater shooting because he deliberately and cruelly killed 12 people, including a 6-year-old girl, prosecutors told jurors Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-22 22:56:47</td><td><a href='http://www.daytondailynews.com/ap/ap/us/the-latest-theater-shooting-trials-sentencing-phas/nm4r2/'>site</a></td><td><table><tr><td>Lawyers for Colorado theater shooter James Holmes did not make any arguments disputing that the crime makes him eligible for the death penalty.</td></tr><tr><td>The penalty phase of the trial starts Wednesday with prosecutors telling jurors why Holmes should be eligible for execution.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/37/65/72/8347309/7/square_gallery_thumb.jpg'></td><td>2015-07-23 00:33:00</td><td><a href='http://www.sfgate.com/news/crime/article/Jurors-to-weigh-whether-Colorado-theater-shooter-6398617.php'>site</a></td><td>The monthlong penalty phase of the trial of Holmes, who could be sentenced to death for killing 12 people in a Colorado movie theater, began Wednesday morning with the judge giving instructions to the jury.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-28 22:14:21</td><td><a href='http://www.daytondailynews.com/ap/ap/us/colorado-theater-shooters-sister-says-she-still-lo/nm7j7/'>site</a></td><td>The father of Colorado theater shooter James Holmes said he didn't know his son suffered from mental illness until he killed 12 people at a Batman movie.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-29 01:07:08</td><td><a href='http://www.usnews.com/news/us/articles/2015/07/28/colorado-theater-shooters-sister-says-she-still-loves-him'>site</a></td><td>(AP) - The father of Colorado theater gunman James Holmes said he never suspected his son was mentally ill before the 2012 attack, but he and his wife became increasingly concerned about him when he stopped returning their phone calls.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-03 15:29:11</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article29845882.html#storylink=rss'>site</a></td><td>The jury in the Colorado theater shooting trial resumed deliberating Monday whether to keep the death penalty on the table for gunman James Holmes.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://wpmedia.news.nationalpost.com/2015/08/colorado_shooting.jpg?w=620'></td><td>2015-08-03 20:02:35</td><td><a href='http://news.nationalpost.com/news/world/jury-leaves-door-open-to-death-penalty-for-colorado-theatre-killer-james-holmes'>site</a></td><td>? Jurors in the Colorado theatre shooting trial declined to rule out the death penalty Monday as they move toward sentencing James Holmes, finding his defence failed to persuade them to show him mercy.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-08-08 02:28:12</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article30395031.html#storylink=rss'>site</a></td><td>Jurors in the Colorado theater shooting have been dismissed after failing to agree on a sentence for gunman James Holmes.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-08-08 02:28:12</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article30395031.html#storylink=rss'>site</a></td><td>The lead prosecutor in the Colorado theater shooting case says he's frustrated that gunman James Holmes didn't get the death penalty, but he praised jurors for doing a "hell of a job."</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://stmedia.stimg.co/1438989722_10076762+1holmes080815.JPG?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-08-08 05:55:08</td><td><a href='http://www.startribune.com/at-end-of-epic-colorado-theater-shooting-trial-a-surprise/321116861/'>site</a></td><td>There was never any question during the trial as to whether Holmes was the killer.</td></tr>
-  <tr><td style='display:none'>10</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/14/18/a0/31e9e3b86fb44f3298cdf9a61aa74e27-5cc671812957448e99801c049e659083-0.jpg'></td><td>2015-08-14 22:50:22</td><td><a href='http://www.daytondailynews.com/ap/ap/us/da-theater-shooters-life-sentence-came-down-to-1-j/nnKcw/'>site</a></td><td>George Brauchler, lead prosecutor in the case against convicted Colorado theater shooter James Holmes, responds to questions during an interview Friday, Aug. 14, 2015, in Centennial, Colo.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 15:29:11</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article29845882.html#storylink=rss'>site</a></td><td>The same jury rejected Holmes' insanity defense and convicted him of 165 counts of murder, attempted murder and weapons charges last month.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-24 05:09:11</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/23/at-least-100-people-may-speak-at-james-holmes/'>site</a></td><td><table><tr><td>Judge Carlos A. Samour Jr. will formally sentence Holmes to life on 24 counts of first-degree murder - two for each of those killed.</td></tr><tr><td>They won't be able to address Holmes directly but rather the judge.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-24 05:15:09</td><td><a href='http://www.startribune.com/at-least-100-people-may-speak-at-james-holmes-sentencing/322650591/'>site</a></td><td>The three-day hearing gives survivors a chance to share their harrowing stories with the judge, but it won't change Holmes' sentence.</td></tr>
 </table></body></html>

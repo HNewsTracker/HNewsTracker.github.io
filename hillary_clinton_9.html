@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-24 05:21:37</td><td></td><td><a href='hillary_clinton_9_14.html'>NEW YORK - The U.S. Justice Department is weighing a request by two government inspectors general to open a criminal investigation into Hillary Clinton's use of a private email account for her work as secretary of state, the New York Times reported on Thursday. (3)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-24 05:21:37</td><td></td><td><a href='hillary_clinton_9_10.html'>Clinton has repeatedly said she broke no laws or rules by eschewing a standard government email account for her State Department work in favor of a private account linked to a computer server in her New York home. (9)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 00:02:08</td><td><a href='http://nypost.com/2015/07/24/hillary-clintons-latest-e-mail-mess/'>site</a></td><td>Hillary Clinton?s latest e-mail mess</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-25 18:07:46</td><td></td><td><a href='hillary_clinton_9_12.html'>Democratic presidential hopeful Hillary Rodham Clinton speaks Friday, July 24, 2015, at the New York University Leonard N. Stern School of Business in New York. (3)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-25 18:07:46</td><td></td><td><a href='hillary_clinton_9_11.html'>Hillary Clinton says she will testify this October before a public hearing of the House committee investigating the deaths of four Americans in Benghazi, Libya. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 00:02:08</td><td><a href='http://nypost.com/2015/07/24/hillary-clintons-latest-e-mail-mess/'>site</a></td><td>Hillary Clinton?s latest e-mail mess</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 18:07:46</td><td></td><td><a href='hillary_clinton_9_11.html'>Democratic presidential hopeful Hillary Rodham Clinton speaks Friday, July 24, 2015, at the New York University Leonard N. Stern School of Business in New York. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-25 18:07:46</td><td></td><td><a href='hillary_clinton_9_12.html'>Hillary Clinton says she will testify this October before a public hearing of the House committee investigating the deaths of four Americans in Benghazi, Libya. (6)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-12 01:22:44</td><td></td><td><a href='hillary_clinton_9_10.html'>WASHINGTON -- Hillary Rodham Clinton relented Tuesday to months of demands she relinquish the personal email server she used while secretary of state, directing the device be given to the Justice Department. (10)</a></td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-08-12 02:59:55</td><td></td><td><a href='hillary_clinton_9_13.html'>Clinton handed over about 30,000 emails she sent and received, although her staff have since acknowledged without explanation that some work emails are missing. (2)</a></td></tr>
 </table></body></html>

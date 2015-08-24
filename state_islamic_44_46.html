@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-12 11:44:46</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article30829167.html#storylink=rss'>site</a></td><td>A black flag used by the Islamic State group and a knife were planted in the sand next to him.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-12 21:39:55</td><td><a href='http://www.torontosun.com/2015/08/12/islamic-state-egypt-affiliate-claims-to-have-beheaded-croatian-hostage-report'>site</a></td><td>The photograph, circulating on Twitter accounts of Sinai Province supporters, shows a man's severed head placed on his body, with a knife driven into sand next to it and the black Islamic State flag in the background.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/64992bc53d73494fdbd60590b541f25e8291a494/c=171-0-2830-1999&amp;r=x404&amp;c=534x401/local/-/media/USATODAY/WiresImages/2015/08/23/10689c10d622f4257f0f6a70670075b1.jpg'></td><td>2015-08-23 22:24:46</td><td><a href='http://www.usatoday.com/story/news/world/2015/08/23/isil-destroys-palmyra-temple/32239003/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomworld-topstories'>site</a></td><td><table><tr><td>They said the Islamic State fighters used suicide bombings and mortar shells and that chief of army operations in Anbar, Maj-Gen. Qassim al-Dulaimi, was lightly wounded in the attack.</td></tr><tr><td>News of Sunday's attack came two days after up to 50 soldiers were killed by the Islamic State group in two ambushes elsewhere in Anbar province, much of which is under militant control, including Ramadi and the key city of Fallujah.</td></tr></table></td></tr>
 </table></body></html>

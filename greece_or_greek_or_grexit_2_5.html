@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 16:00:48</td><td><a href='http://www.reuters.com/article/2015/07/28/us-eurozone-greece-bailout-idUSKCN0Q21EM20150728?feedType=RSS&feedName=topNews'>site</a></td><td>When negotiations on further aid eventually began, they were moved to Brussels, with no access to Greek ministries.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IAXUcvCPVik6_sn8ItynSg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-07T111925Z_1_LYNXNPEB760IY_RTROPTP_3_EUROZONE-GREECE-TSIPRAS_original.jpg'></td><td>2015-08-07 11:19:25</td><td><a href='http://finance.yahoo.com/news/eu-officials-review-progress-greek-111925503.html'>site</a></td><td>Greece would not get a free ticket to new aid, the coalition politician added.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='merica.aljazeera.com/content/ajam/articles/2013/8/18/bridge-to-nowheresyrianrefugeesingreece/_jcr_content/image.adapt.480.low.Syrian_refugees_in_greece_a.jpg'></td><td>2015-08-12 17:49:00</td><td><a href='http://america.aljazeera.com/articles/2015/8/12/as-conditions-worsen-greece-promises-ship-to-house-refugees.html'>site</a></td><td><table><tr><td>Unlike during past immigration crises in Greece since the early 1990s, this time the refugees don't want to stay.</td></tr><tr><td>Municipal officials weren't available to comment Wednesday but have long been lobbying for the refugees to be taken to mainland Greece.</td></tr><tr><td>Across the road, an elderly Greek couple handed out food to refugees perched on the wall.</td></tr></table></td></tr>
 </table></body></html>

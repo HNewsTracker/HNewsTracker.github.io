@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,13 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>holmes</h3>
+    <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nbcbayarea.com/designimages/nbcny_logo_tv.png'></td><td>2015-07-24 12:48:41</td><td><a href='http://www.nbcnewyork.com/video/#!/entertainment/entertainment-news/Tonight_-Say-Anything-with-Katie-Holmes/318392031'>site</a></td><td>'Tonight': Say Anything with Katie Holmes</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-08 02:18:08</td><td></td><td><a href='holmes_0.html'>Jurors in the Colorado theater shooting case reached a decision Friday, Aug. 7, 2015, on whether Holmes should be sentenced to life in prison or the death penalty. (50)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 15:50:14</td><td><a href='http://www.startribune.com/ap-news-guide-turkish-us-deal-may-have-far-reaching-effects/318879191/'>site</a></td><td><table><tr><td>AP News Guide: Turkish-US deal may have far-reaching effect on Islamic State group, Syrian war</td></tr><tr><td>The deal further embroils Turkey, a key NATO ally, in Syria's civil war, and also catapults it into a front-line position in the global war against the Islamic State group.</td></tr></table></td></tr>
 </table></body></html>
