@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 06:14:07</td><td></td><td><a href='state_islamic_20_21.html'>Turkish warplanes struck Islamic State group targets across the border in Syria early Friday, in a strong tactical shift for Turkey which had long been reluctant to join the U.S.-led coalition against the extremist group. (6)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 08:05:12</td><td></td><td><a href='state_islamic_20_22.html'>The strikes in Iraq targeted the Kurdistan Workers' Party, or PKK, whose affiliates have been effective in battling the Islamic State group. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/bea8882/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fe6%2F54793c97282fb105c93ba03c53d4aa%2Fmedia%3A2581106c34c146639cbd9627b41a7904TurkeySyriaAirstrikes.JPEG'></td><td>2015-07-25 07:59:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/25/turkish-jets-hit-is-targets-in-syria-kurds-in-iraq'>site</a></td><td>Turkish police meanwhile proceeded with a major operation against the Islamic State, the PKK and the far-left DHKP-C for a second day running.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-25 08:05:12</td><td></td><td><a href='state_islamic_20_21.html'>The strikes in Iraq targeted the Kurdistan Workers' Party, or PKK, whose affiliates have been effective in battling the Islamic State group. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-07-25 08:05:12</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28689118.html#storylink=rss'>site</a></td><td>Kurdish groups held the Turkish government responsible for the blast, saying it had not been aggressive in battling the Islamic State group.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 12:56:27</td><td><a href='http://www.foxnews.com/world/2015/07/25/turkish-jets-target-kurds-in-iraq-islamic-state-militants-in-syria/'>site</a></td><td>Turkey also announced Friday that it was allowing its air bases to be used by the U.S.-led coalition forces for operations against Islamic State extremists.</td></tr>
 </table></body></html>

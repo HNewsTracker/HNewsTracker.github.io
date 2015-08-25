@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 22,
+            max: 23,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 22 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 23 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -70,4 +70,5 @@
   <tr><td style='display:none'>19</td><td><img src='http://i.cbc.ca/1.3192085.1439591848!/cpImage/httpImage/image.jpg_gen/derivatives/original_620/colorado-shooting.jpg'></td><td>2015-08-14 22:41:24</td><td><a href='http://www.cbc.ca/news/world/colorado-theatre-shooter-james-holmes-s-life-spared-by-single-juror-1.3192076?cmp=rss'>site</a></td><td>The holdout hasn't come forward to speak with prosecutors, but other jurors have said testimony about Holmes' mental illness persuaded her to show mercy.</td></tr>
   <tr><td style='display:none'>20</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/14/18/a0/31e9e3b86fb44f3298cdf9a61aa74e27-5cc671812957448e99801c049e659083-0.jpg'></td><td>2015-08-14 22:50:22</td><td><a href='http://www.daytondailynews.com/ap/ap/us/da-theater-shooters-life-sentence-came-down-to-1-j/nnKcw/'>site</a></td><td>When it was clear she wouldn't budge, the jurors took a vote, and the holdout told them that if mental illness hadn't been a part of Holmes' defense, she too would have favored a death sentence, Brauchler said.</td></tr>
   <tr><td style='display:none'>21</td><td></td><td>2015-08-24 05:09:11</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/24/at-least-100-people-may-speak-at-james-holmes-sentencing'>site</a></td><td>At least 100 people may speak at James Holmes' sentencing</td></tr>
+  <tr><td style='display:none'>22</td><td><img src='http://i.cbc.ca/1.3202660.1440483360!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/colorado-shooting.jpg'></td><td>2015-08-25 06:21:06</td><td><a href='http://www.cbc.ca/news/world/james-holmes-hears-from-angry-movie-theatre-victims-in-sentencing-phase-1.3202658?cmp=rss'>site</a></td><td>James Holmes appears in court for the sentencing phase in his trial on Monday at Arapahoe County District Court in Centennial, Colo.</td></tr>
 </table></body></html>

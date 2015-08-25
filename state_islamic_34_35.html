@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 00:44:05</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/24/australian-islamic-state-group-medic-arrested-in-sydney'>site</a></td><td>Brookman says he was forced to join Islamic State militants after being injured in an airstrike and taken to a hospital controlled by the group.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 02:19:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28672570.html#storylink=rss'>site</a></td><td>It is not clear whether Brookman was still in Syria on Dec. 4, when Australia made a presence in the Islamic State stronghold of al-Raqqa province in Syria a crime punishable by 10 years in prison.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 05:35:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article28672570.html#storylink=rss'>site</a></td><td><table><tr><td>He said he was innocent of any crime and was forced to join Islamic State militants after being injured in an airstrike and taken to a hospital controlled by the group at al-Bab in Aleppo province.</td></tr><tr><td>Barton said it was unclear whether Brookman was ever in al-Raqqa, although he admits to being in a town controlled by the Islamic State.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-12 22:51:03</td><td><a href='http://www.japantimes.co.jp/news/2015/08/13/world/u-s-f-16s-fly-first-sorties-turkey-base-islamic-state-targets-syria/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td><table><tr><td>Pentagon officials have said the main advantage of using Incirlik is its proximity to Islamic State targets in northern Syria, although a senior U.S. defense official said Wednesday that the F-16s may also be used on missions over Iraq.</td></tr><tr><td>A Foreign Ministry official in Ankara said Wednesday that Turkey has not carried out its own airstrikes against the Islamic State recently because the U.S. asked it to wait so that the two countries can coordinate efforts.</td></tr></table></td></tr>
 </table></body></html>

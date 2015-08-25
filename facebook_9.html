@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-30 21:14:13</td><td></td><td><a href='facebook_9_10.html'>Facebook hopes to share the technology with telecommunications carriers and development agencies, which it hopes will build and operate the drone networks, Parikh said. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-30 21:14:13</td><td></td><td><a href='facebook_9_11.html'>Facebook also has a separate but related initiative that works with wireless carriers to provide limited mobile Internet service at no cost, in countries where residents are too poor to afford traditional wireless plans. (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 08:08:46</td><td><a href='http://www.chron.com/business/technology/article/Tech-Tips-Stuff-you-didn-t-know-you-could-do-on-6452246.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Did you know you can add a pronunciation guide to your name on Facebook?</td></tr><tr><td>Facebook is constantly updating its service, adding new features or tweaking old ones.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-19 08:08:46</td><td><a href='http://www.seattlepi.com/business/technology/article/Tech-Tips-Stuff-you-didn-t-know-you-could-do-on-6452246.php'>site</a></td><td><table><tr><td>Tech Tips: Stuff you didn't know you could do on Facebook</td></tr><tr><td>Here, Facebook will offer suggestions for your first and last name that you can listen to before selecting.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-19 08:14:11</td><td></td><td><a href='facebook_9_10.html'>Thanks to a popular but little-known new feature, Facebook lets you spruce up the photos you post by adding text and quirky stickers, such as drawings of scuba gear, sunglasses or a corn dog. (2)</a></td></tr>
 </table></body></html>

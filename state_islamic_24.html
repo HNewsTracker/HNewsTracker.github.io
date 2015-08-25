@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/25/66/eb/f09876aaabfe409ba75b0aa4f92424ee-11d4339db20c456fa0a97df3de0632b8-0_1.jpg'></td><td>2015-07-25 18:25:59</td><td><a href='http://www.daytondailynews.com/ap/ap/international/kurds-fight-the-is-group-while-being-bombed-by-tur/nm6hZ/'>site</a></td><td><table><tr><td>The Kurds of Syria and Iraq have become a major part of the war against the Islamic State group, with Kurdish populations in both countries threatened by the militants' advance.</td></tr><tr><td>Kurds accused Turkey of not doing enough to help Syrian Kurds during the battle against Islamic State militants over the Syrian Kurdish border town of Kobani, prompting violent clashes and straining the fragile peace process.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 18:25:59</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/25/kurds-fight-the-is-group-while-being-bombed-by-turkey'>site</a></td><td>They have been somewhat effective in limiting the expansion of the Islamic State militants across northern Iraq but there are concerns that Turkish airstrikes on the PKK could jeopardize Kurdish positions.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 18:30:31</td><td><a href='http://www.startribune.com/kurds-fight-the-is-group-while-being-bombed-by-turkey/318535361/'>site</a></td><td>They have demonstrated a surprising resilience in their fight against Islamic State group militants in Kobani, pushing them out in January with the help of U.S.-led airstrikes.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/37/71/37/8361970/11/square_gallery_thumb.jpg'></td><td>2015-07-25 22:24:43</td><td><a href='http://www.sfgate.com/news/world/article/Kurds-fight-the-IS-group-while-being-bombed-by-6405370.php'>site</a></td><td>Q&A: Kurds fight Islamic State and endure attacks</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-07-27 12:44:21</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/qa-kurds-fight-islamic-state-and-endure-turkish-at/nm7FH/'>site</a></td><td>Tensions flared again after an Islamic State suicide bombing in the southeastern Turkish city of Suruc last week killed 32 people.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-07-27 12:44:21</td><td><a href='http://www.usnews.com/news/world/articles/2015/07/27/q-a-kurds-fight-islamic-state-and-endure-turkish-attacks'>site</a></td><td>BAGHDAD (AP) - U.S. and Turkish plans to create an "Islamic State-free zone" in Syria along the Turkish border could escalate the conflict between Turkey and Kurdish fighters in Syria and Iraq.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/04/c2/81/19b4f6e69e2b4bb3a21a86a921332b1b-2641d039833444b78079030e87f8aac6-0.jpg'></td><td>2015-08-04 07:16:27</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/facing-islamic-state-threat-iraq-digitizes-nationa/nnCSz/'>site</a></td><td>As the Islamic State militants now set out to destroy Iraq's history and culture, a major preservation and digitization project is underway in the capital to safeguard a millennia worth of history.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-04 07:20:34</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11491909&ref=rss'>site</a></td><td>In recent months, the library donated some 2,500 books to libraries in Iraq's Diyala province after Iraqi forces recaptured towns there from Islamic State militants.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-04 07:23:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article29924077.html#storylink=rss'>site</a></td><td>Facing Islamic State threat, Iraq digitizes national library</td></tr>
 </table></body></html>
