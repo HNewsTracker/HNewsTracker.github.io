@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,10 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 18:17:05</td><td><a href='http://www.daytondailynews.com/ap/ap/us/ferguson-defends-interim-chief-after-concerns-rais/nnKTt/'>site</a></td><td><table><tr><td>Ferguson city officials on Friday defended interim Police Chief Andre Anderson after an online report raised concerns about his record as an officer in Glendale, Arizona.</td></tr><tr><td>Anderson, who is on leave from the Arizona department while he works in Ferguson in suburban St. Louis, has been promoted several times in Glendale and his records show generally favorable, sometimes glowing, reviews.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297734066751_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-08-07 13:18:11</td><td><a href='http://www.torontosun.com/2015/08/07/a-year-after-michael-browns-death-a-changed-ferguson-tries-to-move-beyond-shooting-protests'>site</a></td><td>At the time of the shooting, just three of Ferguson's 53 officers were black.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6687148-3x2-340x227.jpg'></td><td>2015-08-10 19:25:00</td><td><a href='http://www.abc.net.au/news/2015-08-11/ferguson-police-charge-man-wounded-on-shooting-anniversary/6687144'>site</a></td><td>"In light of last night's violence and unrest in the city of Ferguson, and the potential for harm to persons and property, I am exercising my authority as county executive to issue a state of emergency, effective immediately," he said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 20:38:53</td><td><a href='http://www.sbs.com.au/news/article/2015/08/11/ferguson-state-emergency-set-after-anniversary-violence'>site</a></td><td>Authorities declared a state of emergency in Ferguson, Missouri, after gunfire erupted on the anniversary of a high-profile police shooting and prosecutors on Monday charged an 18-year-old man with assault on officers.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.gannett-cdn.com/media/2015/08/09/USATODAY/USATODAY/635747533660196380-GTY-483516130.jpg'></td><td>2015-08-11 04:07:02</td><td><a href='http://www.usatoday.com/story/news/nation/2015/08/10/ferguson-protest-shooting/31397841/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomnation-topstories'>site</a></td><td>I strongly condemn the violence against the community, including police officers, in Ferguson, Missouri.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='ww.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2014/8/25//2014825152029566734_20.jpg'></td><td>2015-08-11 05:22:17</td><td><a href='http://www.aljazeera.com/news/2015/08/police-shooting-protests-put-ferguson-edge-150811044744295.html'>site</a></td><td>Protesters regrouped in Ferguson, Missouri, after a state of emergency was declared, aimed at preventing a repeat of violence the night before on the anniversary of the police shooting of an unarmed black man.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-08-14 16:08:34</td><td><a href='http://www.nytimes.com/2015/08/15/us/state-of-emergency-in-ferguson-is-lifted-as-protests-ease.html?partner=rss&emc=rss&_r=0'>site</a></td><td>"After reviewing the events of the past four evenings under the state of emergency, I am pleased to report our law enforcement officers have established order while preventing further acts of violence in Ferguson," Mr. Stenger said in a statement.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,4 +50,5 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/40/40/63/8522967/7/square_gallery_thumb.jpg'></td><td>2015-08-23 13:48:05</td><td><a href='http://www.chron.com/news/medical/article/With-many-Ebola-survivors-ailing-doctors-6460454.php'>site</a></td><td>DAKAR, Senegal (AP) - Lingering health problems afflicting many of the roughly 13,000 Ebola survivors have galvanized global and local health officials to find out how widespread the ailments are, and how to remedy them.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/821ac88/2147483647/crop/367x329%2B21%2B0/resize/300x270/quality/85/?url=%2Fcmsmedia%2F7b%2F92%2Fd4018c8d4ae1994da5f6f7d79a17%2Fresizes%2F500%2F150722-smartphonehand-stock.jpg'></td><td>2015-08-23 13:48:05</td><td><a href='http://health.usnews.com/health-news/news/articles/2015/08/23/with-many-ebola-survivors-ailing-doctors-evaluate-situation'>site</a></td><td>With many Ebola survivors ailing, doctors evaluate situation</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-23 15:23:56</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/08/23/22543744.html?cid=rssnewsworld'>site</a></td><td>Many Ebola survivors have lingering health problems, alarming medical professionals</td></tr>
 </table></body></html>

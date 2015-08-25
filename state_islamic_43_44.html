@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/p/7/h/6/image.related.articleLeadwide.620x349.giw3g6.png/1439229671565.jpg'></td><td>2015-08-10 18:01:25</td><td><a href='http://www.smh.com.au/world/nusra-front-says-it-will-withdraw-from-frontline-against-islamic-state-in-syria-20150810-giw3g6'>site</a></td><td><table><tr><td>The Nusra Front's withdrawal from rural positions north-east of the Syrian city of Aleppo came amid newly announced steps by Turkey and the United States to fight the Islamic State in Syria.</td></tr><tr><td>US and Turkish officials last month described plans to provide military support to Syrian rebels to clear the Islamic State, from a roughly 95-kilometre-long strip of territory along the Turkish border.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 06:25:20</td><td><a href='http://www.startribune.com/is-beheads-leading-syrian-antiquities-scholar-in-palmyra/322248631/'>site</a></td><td>BEIRUT - Syrian state media and an activist group say that Islamic State extremists have beheaded one of the country's most prominent antiquities scholars in the ancient town of Palmyra.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.independent.co.uk/incoming/article10461579.ece/alternates/w148/v2-palmyra-khaled-asaad-getty-full-width.jpg'></td><td>2015-08-23 21:38:39</td><td><a href='http://www.independent.co.uk/news/world/americas/isis-fighters-destroy-temple-in-ancient-city-of-palmyra-in-syria-10468603.html'>site</a></td><td>On Wednesday, relatives and witnesses said Khaled al-Asaad, an 81-year-old antiquities scholar who devoted his life to understanding Palmyra, was beheaded by Islamic State militants, his bloodied body hung on a pole.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31473179.ece/cd889/ALTERNATES/h342/PANews%20BT_P-de038da5-1889-4bd8-a4ad-d67050bea20e_I1.jpg'></td><td>2015-08-24 10:23:25</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/palmyra-temple-in-syria-destroyed-by-islamic-state-using-explosives-31473180.html'>site</a></td><td>The head of Unesco, Irina Bokova, said Islamic State extremists in Syria and Iraq are engaged in the "most brutal, systematic" destruction of ancient sites since the Second World War.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-24 14:25:09</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/24/suicide-attacks-against-iraqi-security-outpost-kill-8'>site</a></td><td>BEIRUT (AP) - A resident in the Syrian city of Palmyra says Islamic State militants have demolished the ancient temple of Baalshamin after laying explosives around it for over a month, confirming earlier reports.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 15:31:13</td><td></td><td><a href='mh17_0.html'>Pushing for a tribunal to prosecute the people who shot down MH17: Foreign Affairs Minister Julie Bishop speaks to members of the Security Council during a UN meeting last year. (6)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/07/30/world/mh17-ukraine-un-tribunal/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-07-30 11:33:30</td><td><a href='http://edition.cnn.com/2015/07/30/world/mh17-ukraine-un-tribunal/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_world+%28RSS%3A+CNN+-+World%29'>site</a></td><td>Russia vetoes U.N. MH17 tribunal</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-11 13:24:54</td><td></td><td><a href='mh17_2.html'>"The parts are of particular interest to the criminal investigation as they can possibly provide more information about who was involved in the crash of MH17," said a joint statement by the Dutch Safety Board, which is co-ordinating the air safety investigation, and the Joint Investigation Team which runs the criminal investigation into the tragedy. (8)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/k/q/j/1/image.related.articleLeadwide.620x349.gimjc0.png/1438096425622.jpg'></td><td>2015-07-28 15:31:13</td><td><a href='http://www.smh.com.au/world/foreign-minister-bishop-faces-showdown-with-russia-over-un-vote-for-mh17-tribunal-20150728-gimjc0'>site</a></td><td><table><tr><td>Foreign Minister Bishop faces showdown with Russia over UN vote for MH17 tribunal</td></tr><tr><td>Pushing for a tribunal to prosecute the people who shot down MH17: Foreign Affairs Minister Julie Bishop speaks to members of the Security Council during a UN meeting last year.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 13:24:54</td><td></td><td><a href='mh17_0.html'>"The parts are of particular interest to the criminal investigation as they can possibly provide more information about who was involved in the crash of MH17," said a joint statement by the Dutch Safety Board, which is co-ordinating the air safety investigation, and the Joint Investigation Team which runs the criminal investigation into the tragedy. (12)</a></td></tr>
 </table></body></html>

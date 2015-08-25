@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-08 06:59:11</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/08/is-top-command-dominated-by-ex-officers-in-saddams-army'>site</a></td><td>An Islamic hard-liner, he once chided Omran for wearing an Iraqi flag pin into the bathroom because it included the words "God is great."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/08/d8/80/75a48c16404c4418938b5f5170140dd4-6095bb17717742c083b8b8041cc4ca8b-0.jpg'></td><td>2015-08-08 06:59:11</td><td><a href='http://www.daytondailynews.com/ap/ap/international/is-top-command-dominated-by-ex-officers-in-saddams/nnF42/'>site</a></td><td>Now al-Ani is a commander in the Islamic State group, said Omran, who rose to become a major general in the Iraqi army and now commands its 5th Division fighting IS.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-12 22:51:03</td><td><a href='http://www.japantimes.co.jp/news/2015/08/13/world/u-s-f-16s-fly-first-sorties-turkey-base-islamic-state-targets-syria/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td><table><tr><td>Pentagon officials have said the main advantage of using Incirlik is its proximity to Islamic State targets in northern Syria, although a senior U.S. defense official said Wednesday that the F-16s may also be used on missions over Iraq.</td></tr><tr><td>A Foreign Ministry official in Ankara said Wednesday that Turkey has not carried out its own airstrikes against the Islamic State recently because the U.S. asked it to wait so that the two countries can coordinate efforts.</td></tr></table></td></tr>
 </table></body></html>
