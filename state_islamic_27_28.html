@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-21 19:15:58</td><td><a href='http://www.abc.net.au/news/2015-08-22/islamic-state-second-in-command-dead-white-house-confirms/6716756'>site</a></td><td>Islamic State second-in-command killed in air strike: White House</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-48596786,width-300,resizemode-4/Islamic-State.jpg'></td><td>2015-08-21 19:20:34</td><td><a href='http://timesofindia.indiatimes.com/world/us/White-House-No-2-IS-leader-killed-in-US-military-strike/articleshow/48596722.cms'>site</a></td><td><table><tr><td>As the senior deputy to Islamic State leader Abu Bakr al-Baghdadi, al-Hayali was the primary coordinator for moving large amounts of weapons, explosives, vehicles and people between Iraq and Syria.</td></tr><tr><td>Also killed in the air strike was an Islamic State media operative known as Abu Abdullah.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='ww.smh.com.au/content/dam/images/g/h/2/v/m/q/image.related.articleLeadwide.620x349.gj57pa.png/1440186204996.jpg'></td><td>2015-08-21 19:45:07</td><td><a href='http://www.smh.com.au/world/islamic-states-no-2-haji-mutazz-reported-killed-by-drone-strike-in-iraq-us-20150821-gj57pa'>site</a></td><td>2 leader of the Islamic State militant group was killed in a US drone strike near Mosul, Iraq, this week, CNN reported earlier on Friday.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/h/2/v/m/q/image.related.articleLeadwide.620x349.gj57pa.png/1440186204996.jpg'></td><td>2015-08-21 19:45:07</td><td><a href='http://www.brisbanetimes.com.au/world/islamic-states-no-2-haji-mutazz-reported-killed-by-drone-strike-in-iraq-us-20150821-gj57pa'>site</a></td><td>Washington: The second-in-command of the Islamic State militant group was killed during a US air strike in Iraq on Tuesday, the White House said on Friday, dealing a blow to the group that has sought to form a caliphate in the Middle East.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-12 22:51:03</td><td><a href='http://www.japantimes.co.jp/news/2015/08/13/world/u-s-f-16s-fly-first-sorties-turkey-base-islamic-state-targets-syria/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td><table><tr><td>Pentagon officials have said the main advantage of using Incirlik is its proximity to Islamic State targets in northern Syria, although a senior U.S. defense official said Wednesday that the F-16s may also be used on missions over Iraq.</td></tr><tr><td>A Foreign Ministry official in Ankara said Wednesday that Turkey has not carried out its own airstrikes against the Islamic State recently because the U.S. asked it to wait so that the two countries can coordinate efforts.</td></tr></table></td></tr>
 </table></body></html>

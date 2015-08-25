@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 21:20:16</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11487072&ref=rss'>site</a></td><td><table><tr><td>Rolling Jamaica, reeling Mexico meet in Gold Cup final</td></tr><tr><td>PHILADELPHIA (AP) " Mexico is the favorite to win its record-extending seventh CONCACAF Gold Cup title, and coach Miguel Herrera is answering questions about his future with the team.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/40/42/04/8528177/13/920x920.jpg'></td><td>2015-08-25 02:21:13</td><td><a href='http://www.sfgate.com/news/crime/article/APNewsBreak-New-Mexico-official-plans-school-6461910.php'>site</a></td><td>New Mexico's attorney general is launching an investigation into how the state's largest school district hired Martinez as a high-level administrator who faces child sex abuse charges in Colorado.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/US/WireAP_2ffc36e856cd499fae6d3aa0c19af03b_16x9_992.jpg'></td><td>2015-08-25 02:21:26</td><td><a href='http://abcnews.go.com/US/wireStory/apnewsbreak-mexico-official-plans-school-district-probe-33282273'>site</a></td><td>New Mexico Investigates School's Hiring of Sex Abuse Suspect</td></tr>
 </table></body></html>

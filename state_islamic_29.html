@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-08 06:59:11</td><td></td><td><a href='state_islamic_29_30.html'>An Islamic hard-liner, he once chided Omran for wearing an Iraqi flag pin into the bathroom because it included the words "God is great." (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-08 06:59:11</td><td></td><td><a href='state_islamic_29_31.html'>Under its leader, Iraqi jihadi Abu Bakr al-Baghdadi, the Islamic State group's top command is dominated by former officers from Saddam's military and intelligence agencies, according to senior Iraqi officers and top intelligence officials. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/08/d8/80/75a48c16404c4418938b5f5170140dd4-6095bb17717742c083b8b8041cc4ca8b-0.jpg'></td><td>2015-08-08 06:59:11</td><td><a href='http://www.daytondailynews.com/ap/ap/international/is-top-command-dominated-by-ex-officers-in-saddams/nnF42/'>site</a></td><td>But Islamic militants grew in prominence, particularly with the creation and increasing strength of al-Qaida in Iraq.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 18:01:25</td><td></td><td><a href='state_islamic_29_30.html'>The Nusra Front's withdrawal from rural positions north-east of the Syrian city of Aleppo came amid newly announced steps by Turkey and the United States to fight the Islamic State in Syria. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/i/p/7/h/6/image.related.articleLeadwide.620x349.giw3g6.png/1439229671565.jpg'></td><td>2015-08-10 18:01:25</td><td><a href='http://www.smh.com.au/world/nusra-front-says-it-will-withdraw-from-frontline-against-islamic-state-in-syria-20150810-giw3g6'>site</a></td><td>It said that the decision to push the Islamic State out of the proposed safe zone was not "the free choice of the fighting factions; in fact, its first goal is the national security of Turkey."</td></tr>
 </table></body></html>
