@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>one direction</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 11:55:17</td><td><a href='http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=11495660&ref=rss'>site</a></td><td>Burger King: One Direction, Buzzfeed spurred chicken fries</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/40/16/42/8448178/7/920x920.jpg'></td><td>2015-08-11 15:00:46</td><td><a href='http://www.sfgate.com/entertainment/article/Burger-King-Buzzfeed-One-Direction-spurred-6437149.php'>site</a></td><td>Fans of Burger King's chicken fries may have the boy band One Direction and the website Buzzfeed to thank for the return of the skinny fried sticks.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-24 09:09:15</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article32000763.html#storylink=rss'>site</a></td><td><table><tr><td>One Direction spokesman won't confirm hiatus report</td></tr><tr><td>A spokesman for One Direction is declining to comment on a report that the chart-topping boy band will take an indefinite break starting next March.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-25 09:57:03</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/08/25/one-direction-assures-fans-split-wont-be-permanent'>site</a></td><td>LONDON (AP) - Members of One Direction have confirmed the band is taking a break, but are reassuring worried fans that it won't be permanent.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-25 09:59:19</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article32293767.html#storylink=rss'>site</a></td><td>One Direction assures fans split won't be permanent</td></tr>
 </table></body></html>

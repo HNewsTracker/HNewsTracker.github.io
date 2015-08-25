@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 11:33:00</td><td></td><td><a href='kenya_2_3.html'>Al-Shabab, a group linked to al-Qaeda, has conducted major attacks in Kenya, including the 2013 attack on Nairobi's Westgate mall and an April attack in Garissa town that killed nearly 150 people. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-07-25 13:08:20</td><td></td><td><a href='kenya_2_6.html'>U.S. President Barack Obama, left, stands next to Kenya's President Uhuru Kenyatta, 2nd left, as the Kenya Air Force military band passes by, at State House in Nairobi, Kenya Saturday, July 25, 2015. (6)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-07-25 19:03:35</td><td></td><td><a href='kenya_2_4.html'>President Barack Obama mixed blunt messages to Kenya's leaders on gay rights, corruption and counterterrorism Saturday with warm reflections on his family ties to a nation that considers him a local son. (15)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 21:32:47</td><td></td><td><a href='kenya_2_5.html'>Obama also said during his first visit as president to his father's homeland that Kenya had to tackle corruption by showing it was prosecuting culprits, saying it would spur growth. (7)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 11:33:00</td><td></td><td><a href='kenya_2_4.html'>Al-Shabab, a group linked to al-Qaeda, has conducted major attacks in Kenya, including the 2013 attack on Nairobi's Westgate mall and an April attack in Garissa town that killed nearly 150 people. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 19:03:35</td><td></td><td><a href='kenya_2_3.html'>President Barack Obama mixed blunt messages to Kenya's leaders on gay rights, corruption and counterterrorism Saturday with warm reflections on his family ties to a nation that considers him a local son. (23)</a></td></tr>
 </table></body></html>

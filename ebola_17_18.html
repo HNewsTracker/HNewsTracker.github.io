@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 18:25:24</td><td><a href='http://www.chron.com/news/medical/article/Head-of-CDC-in-Sierra-Leone-as-concerns-grow-from-6421234.php'>site</a></td><td>CDC head says Sierra Leone in strong place with Ebola</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-03 18:25:24</td><td><a href='http://www.daytondailynews.com/ap/ap/international/head-of-cdc-in-sierra-leone-as-concerns-grow-from-/nnByq/'>site</a></td><td>Two new cases of Ebola surfaced in Sierra Leone's Northern Tonkolili District after a man died last week.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/40/04/31/8406638/3/920x920.jpg'></td><td>2015-08-03 19:07:18</td><td><a href='http://www.sfgate.com/world/article/New-Ebola-infections-raise-concerns-in-Sierra-6422022.php'>site</a></td><td>The concerns come as the director of the U.S. Center for Disease Control and Prevention, Dr. Tom Frieden, is in Sierra Leone to observe the impact of the Ebola outbreak and to assess steps needed to get the country to zero cases.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-06 15:53:14</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/sierra-leone-ebola-head-says-country-has-4-cases/nnDyh/'>site</a></td><td><table><tr><td>Sierra Leone has only four recorded cases of Ebola, the West African nation's head of Ebola said Thursday, adding that he is hopeful the countdown to zero can soon begin.</td></tr><tr><td>Authorities last week quarantined 500 people after a man died from Ebola.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 09:35:00</td><td><a href='http://www.ctvnews.ca/health/sierra-leone-awaits-countdown-to-ebola-free-declaration-1.2523353'>site</a></td><td><table><tr><td>Sierra Leone awaits countdown to Ebola-free declaration</td></tr><tr><td>Officials desperately hope they can soon announce the start of the countdown to an Ebola-free declaration from WHO nearly 15 months after the first patient tested positive in Sierra Leone.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-24 13:10:00</td><td><a href='http://www.ctvnews.ca/health/sierra-leone-releases-its-last-known-ebola-patient-1.2530201'>site</a></td><td>But first Sierra Leone must go 42 days -- equal to two incubation periods of 21 days -- without another Ebola case in order for the World Health Organization to make such a declaration.</td></tr>
 </table></body></html>

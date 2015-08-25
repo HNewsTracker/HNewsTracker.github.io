@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-19 09:35:00</td><td></td><td><a href='ebola_16_17.html'>Officials desperately hope they can soon announce the start of the countdown to an Ebola-free declaration from WHO nearly 15 months after the first patient tested positive in Sierra Leone. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-19 09:57:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/19/sierra-leone-awaits-countdown-to-ebola-free-declaration'>site</a></td><td>MASSESSEHBEH, Sierra Leone (AP) - It had been five months since an Ebola death when Musa Kamara traveled to his hometown for festivities to mark the end of Ramadan.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-24 13:43:45</td><td></td><td><a href='ebola_16_18.html'>President Ernest Bai Koroma presented a certificate of discharge to Adama Sankoh, 40, who contracted Ebola after her son died from the disease late last month. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/j/6/z/o/i/image.related.articleLeadwide.620x349.gj6zn1.png/1440469500584.jpg'></td><td>2015-08-25 02:25:55</td><td><a href='http://www.smh.com.au/world/sierra-leones-last-known-ebola-patient-is-discharged-singing-and-dancing-20150825-gj6zn1.html'>site</a></td><td><table><tr><td>Adama Sankoh, 35, centre, who contracted Ebola after her son died from the disease, is discharged on Monday.</td></tr><tr><td>The country has not recorded a new case since the beginning of August, but the WHO won't declare it Ebola-free until six weeks after the last patient is discharged or buried.</td></tr><tr><td>Even then, the president cautioned the crowd Monday that Sierra Leone won't be safe until Ebola has been eradicated from the region.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='ww.brisbanetimes.com.au/content/dam/images/g/j/6/z/o/i/image.related.articleLeadwide.620x349.gj6zn1.png/1440469500584.jpg'></td><td>2015-08-25 02:25:55</td><td><a href='http://www.brisbanetimes.com.au/world/sierra-leones-last-known-ebola-patient-is-discharged-singing-and-dancing-20150825-gj6zn1.html'>site</a></td><td>Sierra Leone's last known Ebola patient is discharged singing and dancing</td></tr>
 </table></body></html>
