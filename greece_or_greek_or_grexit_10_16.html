@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,13 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 12:33:48</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/14/greece-all-night-debate-on-new-bailout'>site</a></td><td>"However, it appears to be unavoidable if Greece is to have a government capable of implementing the agreement."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 17:44:00</td><td><a href='http://www.npr.org/sections/thetwo-way/2015/08/20/433206660/greek-pm-steps-down-calls-new-elections-in-wake-of-bailout-deal?utm_medium=RSS&utm_campaign=storiesfromnpr'>site</a></td><td>"The political mandate of the January 25 elections has exhausted its limits and now the Greek people have to have their say," Tsipras said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-21 04:02:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/21/greeces-tsipras-bets-on-early-polls-to-boost-reform-mandate'>site</a></td><td>The opposition is given little chance of uniting and forming a government, meaning that after five-plus years of a worsening financial crisis, Greece appears headed for its fifth national election in six years.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='merica.aljazeera.com/content/ajam/articles/2015/1/24/greece-election-efforts/_jcr_content/image.adapt.480.low.Inside_Syriza_012415.jpg'></td><td>2015-08-21 11:42:00</td><td><a href='http://america.aljazeera.com/articles/2015/8/21/far-left-splits-from-tsipras-ahead-of-elections.html'>site</a></td><td>Greece's president gave the conservative opposition a chance to form a new government following Tsipras's resignation on Thursday, but the country appears almost certain to be heading for its third election in as many years next month.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-23 20:30:26</td><td><a href='http://www.startribune.com/greece-government-aiming-for-sept-20-as-election-date/322630501/'>site</a></td><td>Opposition leader Evangelos Meimarakis, who was asked to form a government, is expected to inform Greek President Prokopis Pavlopoulos Monday that he has failed.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-08-24 08:20:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11502234&ref=rss'>site</a></td><td>Greece: Opposition party head returns mandate to form gov't</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-08-24 14:22:41</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/24/greece-newly-formed-party-receives-mandate-to-form-govt'>site</a></td><td><table><tr><td>Greece: Newly formed party receives mandate to form gov't</td></tr><tr><td>"Some people think they can hide the consequences of the (bailout agreements) from the Greek people," Lafazanis said, commenting on Tsipras' decision to trigger elections, as he met with President Prokopis Pavlopoulos to receive the mandate to form a government.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>Greece's current government offers a stark example of the risks.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-11 06:15:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11495549&ref=rss'>site</a></td><td>Greece closes in on bailout deal possibly within the day</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PiEea8e.zpoyu6JROCo3mg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-08-14T161430Z_2_LYNXNPEB7D0SK_RTROPTP_3_EUROZONE-GREECE-EUROGROUP_original.jpg'></td><td>2015-08-14 22:55:16</td><td><a href='http://finance.yahoo.com/news/euro-ministers-set-launch-greek-154645912.html'>site</a></td><td>"After the changes in the government and the crises that we had, the cooperation with let's say the changed Greek government is very constructive, very well organized," Jeroen Dijsselbloem, the Dutch minister who chaired the meeting, told reporters.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-18 09:40:18</td><td><a href='http://www.startribune.com/greece-eases-some-limits-on-money-transfers/322137261/'>site</a></td><td>ATHENS, Greece - The Greek government has relaxed slightly its restrictions on banking transactions, allowing small amounts to be sent abroad for the first time in about two months.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-08-19 14:48:45</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/19/greece-resists-efforts-to-renegotiate-regional/'>site</a></td><td>Greek government spokeswoman Olga Gerovassili said Wednesday that Athens wants the deal implemented as is and that Greece "cannot accept" efforts by the German firm to secure better terms.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/40/33/07/8499710/11/square_gallery_thumb.jpg'></td><td>2015-08-21 18:08:04</td><td><a href='http://www.sfgate.com/news/world/article/Greece-s-Tsipras-bets-on-early-polls-to-boost-6456896.php'>site</a></td><td>Greek election looms as parties struggle to form government</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-08-21 18:11:57</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31700642.html#storylink=rss'>site</a></td><td>He noted that the bailout deal was signed with Greece, and not just the current government, meaning it should be implemented by whoever emerges victorious from the election.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-08-23 20:29:38</td><td><a href='http://www.miamiherald.com/news/business/article31972851.html#storylink=rss'>site</a></td><td><table><tr><td>The Greek government says it's still aiming for a Sept.</td></tr><tr><td>Government spokeswoman Olga Gerovassili told Greek state TV ERT on Sunday that "as things stand now, Sept. 20 is a feasible election date."</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-08-24 14:25:06</td><td><a href='http://www.miamiherald.com/news/business/article32000394.html#storylink=rss'>site</a></td><td>While some analysts have voiced concerns the election could derail the implementation of bailout measures Greece has signed up to, others argued it could lead to a more stable government.</td></tr>
 </table></body></html>

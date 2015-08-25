@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-13 23:34:00</td><td><a href='http://www.ctvnews.ca/world/u-s-investigating-whether-islamic-state-used-chemical-weapons-against-kurds-1.2516149'>site</a></td><td><table><tr><td>U.S. investigating whether Islamic State used chemical weapons against Kurds</td></tr><tr><td>-- The United States is investigating whether the Islamic State used chemical weapons, the White House said Thursday, following allegations that IS militants deployed chemical weapons against Kurdish forces in northern Iraq.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 00:10:00</td><td><a href='http://www.cnbc.com/2015/08/13/us-investigating-whether-islamic-state-used-chemical-weapons.html'>site</a></td><td>Although the U.S. and its coalition partners are mounting airstrikes against the Islamic State, they are relying on local forces like the Kurds, the Iraqi military and others to do the fighting on the ground.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-08-24 18:18:16</td><td></td><td><a href='state_islamic_44_45.html'>Gay rights groups tell UN Islamic State killed 30 people for sodomy (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-24 18:18:16</td><td></td><td><a href='state_islamic_44_46.html'>"Death threats followed me to Turkey. A former school friend from Idlib named Khalil had joined (Islamic State). He relayed through a mutual friend that he wanted to kill me, aiming to go to paradise," he said. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-24 18:18:16</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/08/24/22544202.html?cid=rssnewsworld'>site</a></td><td>"If (Islamic State) didn't get me, members of my family would have done it."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-24 21:25:30</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/24/islamic-state-claims-30-killed-for-sodomy-un-meeting-told'>site</a></td><td>Last year, when the Islamic State took the city, the violence worsened, he said.</td></tr>
 </table></body></html>

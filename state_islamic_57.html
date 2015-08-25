@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-05 10:39:23</td><td><a href='http://www.usnews.com/news/world/articles/2015/08/05/turkey-says-extensive-fight-against-is-to-start-soon'>site</a></td><td>His comments came following reports that members of the Free Syrian Army who went through a U.S. training program to fight Islamic State militants were captured by the al-Qaida-linked Nusra Front in Syria.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-05 20:18:35</td><td><a href='http://www.sfgate.com/world/article/Turkey-says-extensive-fight-against-Islamic-6427029.php'>site</a></td><td>Turkey says ?extensive? fight against Islamic State to start soon</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 09:33:34</td><td><a href='http://www.rferl.org/content/islamic-state-abducts-dozens-syrian-christians/27175649.html'>site</a></td><td>Islamic State Abducts Dozens Of Syrian Christians</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-07 11:50:32</td><td><a href='http://www.theglobeandmail.com/news/world/islamic-state-abducts-dozens-of-christians-from-syrian-town-monitor/article25871907/?cmpid=rss1'>site</a></td><td>Islamic State militants have abducted dozens of Christian families after seizing a strategically located town in the central Syrian province of Homs, a monitor said on Friday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-07 13:55:45</td><td><a href='http://www.startribune.com/after-capturing-syrian-town-is-abducts-dozens-of-christians/321034081/'>site</a></td><td>BEIRUT - Activists say Islamic State group has abducted 230 residents, including dozens of Christians, from a central Syrian town captured by the extremists earlier this week.</td></tr>
 </table></body></html>

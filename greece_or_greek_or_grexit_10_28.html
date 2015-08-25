@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 12:38:51</td><td><a href='http://www.theguardian.com/world/2015/jul/25/greek-bailout-talks-european-commission-ecb-imf'>site</a></td><td>Tsipras, who is by far the most popular politician in Greece according to opinion polls, has said his priority is to secure the bailout package before dealing with the political fallout from the Syriza party rebellion.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-04 04:11:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/04/rebooting-greece-how-to-get-its-economy-going-again'>site</a></td><td>Political parties, including Tsipras' Syriza, are in turmoil and there is speculation Greece will head into another general election in November.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-14 23:02:28</td><td><a href='http://www.cbsnews.com/news/greece-gets-nod-for-billions-in-new-loans/'>site</a></td><td>Tsipras has maintained his public popularity in Greece despite his U-turn on austerity policies, and consistently leads opposition parties in opinion polls.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/17/b3/36/d39e958f677641629294997f4c883b28-335624b529de41198c06221fe84cf849-0_2.jpg'></td><td>2015-08-17 12:42:34</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-government-seen-calling-confidence-vote/nnLSY/'>site</a></td><td>Although no opinion polls have been published since the end of last week when Greece's third bailout was finalized, previous polls showed his party enjoying a wide lead over opposition parties.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-21 04:02:46</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-bets-on-early-polls-to-boost-refor/nnNq6/'>site</a></td><td>Greece's Tsipras bets on early polls to boost reform mandate</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 23:02:28</td><td><a href='http://www.cbsnews.com/news/greece-gets-nod-for-billions-in-new-loans/'>site</a></td><td>Tsipras has maintained his public popularity in Greece despite his U-turn on austerity policies, and consistently leads opposition parties in opinion polls.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/17/b3/36/d39e958f677641629294997f4c883b28-335624b529de41198c06221fe84cf849-0_2.jpg'></td><td>2015-08-17 12:42:34</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greek-government-seen-calling-confidence-vote/nnLSY/'>site</a></td><td>Although no opinion polls have been published since the end of last week when Greece's third bailout was finalized, previous polls showed his party enjoying a wide lead over opposition parties.</td></tr>
 </table></body></html>

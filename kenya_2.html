@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-07-25 11:33:00</td><td></td><td><a href='kenya_2_4.html'>Al-Shabab, a group linked to al-Qaeda, has conducted major attacks in Kenya, including the 2013 attack on Nairobi's Westgate mall and an April attack in Garissa town that killed nearly 150 people. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-25 19:03:35</td><td></td><td><a href='kenya_2_3.html'>President Barack Obama mixed blunt messages to Kenya's leaders on gay rights, corruption and counterterrorism Saturday with warm reflections on his family ties to a nation that considers him a local son. (23)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/world-news/article31404348.ece/513a2/ALTERNATES/h342/PANews%20BT_P-40607503-bfd0-4d00-973d-cd455c86cbc7_I1.jpg'></td><td>2015-07-26 05:07:07</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/obama-urges-kenyans-to-choose-path-to-progress-31404349.html'>site</a></td><td><table><tr><td>The president's late father was born and is buried in Kenya, and its people have waited for years for the chance to welcome Mr Obama back as president.</td></tr><tr><td>He made history by becoming the first sitting American president to visit Kenya when he arrived late on Friday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-26 11:50:26</td><td><a href='http://thehill.com/policy/international/249207-obama-urges-kenya-to-use-past-to-guide-future'>site</a></td><td>Obama urges Kenya to use past to guide future</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/26/74/28/1e66ea3f4d07432c9f3489786cfd643a-49842e46398546e7886e00007dc3dfbd-1_1.jpg'></td><td>2015-07-26 12:59:31</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/obama-to-close-historic-kenya-visit-with-national-/nm6rD/'>site</a></td><td><table><tr><td>On the final day of his visit in Kenya, Obama laid out his vision for Kenya's future and broad themes of U.S.-Kenya relations.</td></tr><tr><td>President Barack Obama delivers a speech at the Safaricom Indoor Arena in the Kasarani area of Nairobi, Kenya Sunday, July 26, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-07-26 15:00:50</td><td><a href='http://www.nydailynews.com/news/politics/obama-pushes-kenya-root-corruption-article-1.2304585'>site</a></td><td>"Because of Kenya's progress - because of your potential - you can build your future right here, right now," Obama told the crowd of 4,500 packed into a sports arena in the capital of Nairobi.</td></tr>
 </table></body></html>

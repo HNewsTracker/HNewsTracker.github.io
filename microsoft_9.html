@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-28 07:05:28</td><td></td><td><a href='microsoft_9_10.html'>Microsoft makes money from selling advertising for its Bing search engine, and Windows 10 comes with many apps that steer people to Bing. (13)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 13:24:27</td><td></td><td><a href='microsoft_9_11.html'>It has new features, a streamlined Web browser called Edge and a desktop version of Cortana, the online assistant that is Microsoft's answer to Google Now and Apple's Siri. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-07-28 16:17:27</td><td><a href='http://www.cbsnews.com/news/fresh-start-windows-10-arrives-for-free/'>site</a></td><td>A: Microsoft plans promotional events in several cities Wednesday, tied to a global ad campaign and a series of charitable donations.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-25 16:24:47</td><td></td><td><a href='microsoft_9_10.html'>Mayor's spokeswoman April Odom said in a release Tuesday that the Birmingham Division of Youth Services will work with the city's school district to implement DigiGirlz, a Microsoft program that teaches high school girls about careers in technology. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-08-25 16:24:47</td><td><a href='http://www.miamiherald.com/news/business/article32308776.html#storylink=rss'>site</a></td><td>City officials say Birmingham will also launch the DreamSpark program, which offers access to Microsoft software for learning, teaching and research and BizSpark, which provides free software, support and more to local startup businesses.</td></tr>
 </table></body></html>
