@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 13:50:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31370957.html#storylink=rss'>site</a></td><td><table><tr><td>Greece sells to German firm rights to run 14 airports</td></tr><tr><td>Greece has agreed to sell to a German company the rights to operate 14 regional airports.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-18 17:00:11</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31370957.html#storylink=rss'>site</a></td><td>Greece has agreed to sell to a German company the rights to operate 14 regional airports, in a wave of privatizations the government had until recently opposed but needs to make to qualify for bailout loans.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-19 14:48:45</td><td><a href='http://www.sandiegouniontribune.com/news/2015/aug/19/greece-resists-efforts-to-renegotiate-regional/'>site</a></td><td><table><tr><td>Greece resists efforts to renegotiate regional airports deal</td></tr><tr><td>ATHENS, Greece (AP) - The Greek government is resisting efforts by a state-controlled German company to renegotiate aspects of its concession to operate 14 prime Greek regional airports.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-13 08:21:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article30978222.html#storylink=rss'>site</a></td><td>His radical left Syriza party won January elections on promises of repealing similar austerity imposed in return for Greece's previous bailouts.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/24/bf/1d/9c736db447d94c61a1500a25e314c261-e461e2d4273e48e98974a780639c9c7f-0.jpg'></td><td>2015-08-24 14:22:41</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greece-newly-formed-party-receives-mandate-to-form/nnP9G/'>site</a></td><td>Syriza hardliners blasted the party's young leader for reneging on the promises which brought him to power in January elections to repeal austerity measures imposed in return for Greece's two previous international bailouts.</td></tr>
 </table></body></html>
