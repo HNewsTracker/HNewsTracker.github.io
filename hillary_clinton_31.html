@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/14/e9/38/4b1a39a864484e66b63f0a0ef7d1a1f8-797c27670d994fc5b6bd759665f434cf-0.jpg'></td><td>2015-08-14 20:28:12</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/clinton-wants-scholarships-child-care-for-student-/nnKZM/'>site</a></td><td>Hillary Rodham Clinton called Friday for more quality child care on college campuses and additional scholarships to help students who are parents as she pitched her plan to reduce higher education costs.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-14 20:28:12</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/14/clinton-wants-scholarships-child-care-for-student-parents'>site</a></td><td>Clinton wants scholarships, child care for student parents</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/10/cb/57/59d09696f3b74b258430f278182f14a9-45037df8d95344248a24ac25f804dde1-0.jpg'></td><td>2015-08-10 20:29:33</td><td><a href='http://www.daytondailynews.com/ap/ap/political/group-backing-hillary-clinton-gets-1m-from-anonymo/nnGzt/'>site</a></td><td>Democratic presidential candidate Hillary Rodham Clinton arrives at the high school in Exeter, N.H., Monday, Aug. 10, 2015, where she announced her college affordability plan.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 20:29:33</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/10/group-backing-hillary-clinton-gets-1m-from-anonymous-donors'>site</a></td><td>Group backing Hillary Clinton gets $1M from anonymous donors</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 20:33:09</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article30623862.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton told a cheering crowd at her largest rally so far that "the endless flow of secret, unaccountable money" must be stopped.</td></tr>
 </table></body></html>
