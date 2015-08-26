@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-21 22:30:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11501266&ref=rss'>site</a></td><td><table><tr><td>Although Mexico adopted new regulations in April to reduce deaths of North Pacific loggerhead sea turtles in waters surrounding Baja California, the U.S. government said these measures were inadequate.</td></tr><tr><td>Mexico has put in place restrictions on the use of certain fishing nets, hooks and traps that are known to kill sea turtles.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-21 22:30:33</td><td><a href='http://www.startribune.com/mexico-says-it-is-committed-to-reducing-sea-turtle-deaths/322550651/'>site</a></td><td><table><tr><td>Mexico says it is committed to protecting sea turtles, despite negative report from US</td></tr><tr><td>MEXICO CITY - Mexico is objecting to a U.S. decision to negatively certify it for not doing enough to reduce the deaths of endangered sea turtles in fishing nets.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-18 21:56:32</td><td><a href='http://www.usnews.com/news/us/articles/2015/08/18/judge-new-mexico-police-officers-to-stand-trial-for-murder'>site</a></td><td>New Mexico police officers ordered to stand trial for murder</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-19 08:29:03</td><td><a href='http://www.miamiherald.com/news/nation-world/article31497284.html#storylink=rss'>site</a></td><td>In New Mexico, Pro Tem Judge Neil Candelaria ruled after a nearly two-week preliminary hearing that there was probable cause for Perez and Sandy to face trial.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-19 08:36:18</td><td><a href='http://www.cbc.ca/news/world/new-mexico-police-officers-face-murder-trial-in-homeless-man-s-death-1.3195795?cmp=rss'>site</a></td><td>A former and a current New Mexico police officer charged with murder sat motionless after a judge announced they would have to face a jury trial for the on-duty shooting of a homeless man.</td></tr>
 </table></body></html>

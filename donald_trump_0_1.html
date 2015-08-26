@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>donald trump</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 13:35:50</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article31084533.html#storylink=rss'>site</a></td><td><table><tr><td>How Donald Trump was present at the TV Critics meetings</td></tr><tr><td>As a TV star turned presidential hopeful, billionaire developer Donald Trump was a regular topic of discussion at the just-concluded Television Critics Association gathering.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-21 14:16:15</td><td><a href='http://www.ctvnews.ca/world/trump-cited-as-inspiration-for-brothers-who-beat-up-homeless-mexican-man-1.2527371'>site</a></td><td>BOSTON -- The Mexican government has confirmed that a homeless Boston man police say was beaten by two brothers, one of whom said he was inspired by Donald Trump's views on immigrants, was a citizen of Mexico.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://cnews.canoe.com/CNEWS/World/2015/08/21/1297739399595.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-08-21 14:47:06</td><td><a href='http://cnews.canoe.com/CNEWS/World/2015/08/21/22543230.html?cid=rssnewsworld'>site</a></td><td>Donald Trump used as reason for 2 brothers beating, peeing on homeless Mexican: Cops</td></tr>
 </table></body></html>

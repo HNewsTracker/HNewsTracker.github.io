@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-23 12:55:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11501801&ref=rss'>site</a></td><td>KATHMANDU, Nepal (AP) " Nepal has opened Mount Everest to climbers for the first time since an earthquake-triggered avalanche in April killed 19 mountaineers and ended the popular spring climbing season.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-23 13:00:00</td><td><a href='http://www.ctvnews.ca/world/mount-everest-reopens-to-climbers-for-first-time-since-nepal-earthquake-1.2529357'>site</a></td><td>"The main purpose of my climb is to spread the message that Nepal was safe for climbers and trekkers even after the earthquake," Kuriki told reporters.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-23 13:50:30</td><td><a href='http://www.startribune.com/nepal-opens-everest-to-climbers-for-1st-time-since-avalanche/322618621/'>site</a></td><td>Nepal reopens Mount Everest to climbers; Japanese man to attempt scale the peak next month</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='ww.smh.com.au/content/dam/images/g/j/7/w/t/z/image.related.articleLeadwide.620x349.gj7w63.png/1440554694964.jpg'></td><td>2015-08-26 02:05:08</td><td><a href='http://www.smh.com.au/world/nepal-protester-shot-dead-in-fresh-clashes-as-india-pleads-for-calm-20150826-gj7w63.html'>site</a></td><td><table><tr><td>Nepal protester shot dead in fresh clashes as India pleads for calm</td></tr><tr><td>Kathmandu: In usually serene Nepal, police have shot dead a protester as fresh clashes erupted a day after an 18-month-old boy and seven police officers died during demonstrations against a new constitution.</td></tr><tr><td>Anger has been building for weeks in southern Nepal after MPs struck a breakthrough deal on a new constitution.</td></tr></table></td></tr>
 </table></body></html>

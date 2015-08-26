@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,14 +40,13 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
   <body role="document">
-    <h3>boko haram</h3>
+    <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-23 12:14:18</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31954983.html#storylink=rss'>site</a></td><td>U.N. Secretary General Ban Ki-moon is to arrive in Nigeria Sunday to commemorate the Boko Haram bombing of his organization's headquarters and focus new attention on 219 schoolgirls held by the extremists.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/24/4a/93/08cf9d6bc7cb453ca72ff28beeb27410-a2fe76a735cd4c6893abe13cd58d43a9-0.jpg'></td><td>2015-08-24 14:32:33</td><td><a href='http://www.daytondailynews.com/ap/ap/international/un-chief-remembers-23-killed-in-boko-haram-bomb-in/nnP66/'>site</a></td><td>U.N. Secretary-General Ban Ki-moon paid tribute Monday to 23 colleagues killed four years ago in a Boko Haram car bombing at his organization's Nigeria headquarters.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-26 02:50:18</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/trump-vows-never-to-eat-oreos-again-citing-move-to/nnRC6/'>site</a></td><td><table><tr><td>Trump vows never to eat Oreos again, citing move to Mexico</td></tr><tr><td>Republican presidential candidate Donald Trump repeated his claim Tuesday evening that he would stop eating Oreos, citing the cookie maker's decision to close a plant in Chicago and move it to Mexico.</td></tr></table></td></tr>
 </table></body></html>

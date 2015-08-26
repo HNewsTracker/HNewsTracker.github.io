@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>donald trump</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-14 13:35:50</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article31084533.html#storylink=rss'>site</a></td><td><table><tr><td>How Donald Trump was present at the TV Critics meetings</td></tr><tr><td>As a TV star turned presidential hopeful, billionaire developer Donald Trump was a regular topic of discussion at the just-concluded Television Critics Association gathering.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-25 05:00:00</td><td><a href='http://www.seattlepi.com/news/article/Donald-Trump-Is-Still-Bashing-Megyn-Kelly-6464645.php'>site</a></td><td>Donald Trump Is Still Bashing Megyn Kelly</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-25 18:45:08</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article32299842.html#storylink=rss'>site</a></td><td>Fox News chief Roger Ailes said Tuesday that Donald Trump owes the network's Megyn Kelly an apology for an unprovoked Twitter attack that "is as unacceptable as it is disturbing," but Trump isn't backing down.</td></tr>
 </table></body></html>

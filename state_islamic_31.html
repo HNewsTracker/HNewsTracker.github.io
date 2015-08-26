@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-12 12:28:42</td><td></td><td><a href='state_islamic_31_32.html'>The latest in the events surrounding the purported slaying by Egypt's Islamic State affiliate of Croatian hostage Tomislav Salopek, after an online image was circulated Wednesday showing his beheaded body. (12)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-12 21:39:55</td><td></td><td><a href='state_islamic_31_33.html'>The photograph, circulating on Twitter accounts of Sinai Province supporters, shows a man's severed head placed on his body, with a knife driven into sand next to it and the black Islamic State flag in the background. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-07-27 12:44:21</td><td></td><td><a href='state_islamic_31_32.html'>BAGHDAD (AP) - U.S. and Turkish plans to create an "Islamic State-free zone" in Syria along the Turkish border could escalate the conflict between Turkey and Kurdish fighters in Syria and Iraq. (13)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-07-27 15:24:00</td><td><a href='http://www.latimes.com/world/middleeast/la-fg-u-s-turkey-islamic-state-syria-20150727-story.html'>site</a></td><td>The PKK is fighting Islamic State "for power, not for peace, not for security."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-07-28 15:50:14</td><td></td><td><a href='state_islamic_31_33.html'>The deal further embroils Turkey, a key NATO ally, in Syria's civil war, and also catapults it into a front-line position in the global war against the Islamic State group. (2)</a></td></tr>
 </table></body></html>
