@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>greece or greek or grexit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-11 11:54:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/11/greece-closes-in-on-bailout-deal-possibly-within-the-day'>site</a></td><td>A draft of the agreement cited by the Greek daily Kathimerini said the deal included a package of more than 30 measures that would have to be voted on in Greece's Parliament immediately, followed by a second package of measures to be adopted from October onwards.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-12 11:36:04</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/12/greeces-bailout-bill-submitted-to-parliament'>site</a></td><td>Greek bailout details ironed out as bill goes to parliament</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://img.rasset.ie/000afa19-642.jpg'></td><td>2015-08-13 14:46:29</td><td><a href='http://www.rte.ie/news/world/2015/0813/721042-greece/'>site</a></td><td>Parliament, however, is expected to approve the bailout agreement by a comfortable margin since opposition parties have promised their backing for the government to ensure Greece does not return to financial chaos.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-14 21:27:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31073082.html#storylink=rss'>site</a></td><td>The bailout bill passed through the Greek parliament thanks to support from opposition parties, with 222 votes in favor, 64 against, 11 abstentions and three absent in the 300-member parliament.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-08-19 10:50:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article31496567.html#storylink=rss'>site</a></td><td>Schaeuble conceded that voting in favor of the bailout wasn't an easy one for him, but that "it would be irresponsible to not use the chance for a new beginning in Greece" in light of the fact that the Greek parliament has already backed a large chunk of reform measures demanded by creditors.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://static01.nyt.com/images/2015/08/12/world/12Greekdebt-web/12Greekdebt-web-thumbStandard.jpg'></td><td>2015-08-19 12:10:32</td><td><a href='http://www.nytimes.com/2015/08/20/world/europe/angela-merkel-german-parliament-greek-bailout.html?partner=rss&emc=rss&_r=0'>site</a></td><td>"But in view of the fact that the Greek Parliament has already passed a large part of the measures, it would be irresponsible not to use the opportunity now for a new start in Greece."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-03 12:54:27</td><td><a href='http://nypost.com/2015/08/03/greek-stock-market-reopens-to-a-bloodbath/'>site</a></td><td>Greek stock market reopens to a bloodbath</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000af049-642.jpg'></td><td>2015-08-03 21:39:17</td><td><a href='http://www.rte.ie/news/2015/0803/718902-greece-banks/'>site</a></td><td>Greek stock exchange re-opens after five weeks</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-03 23:35:34</td><td><a href='http://www.startribune.com/greek-stock-market-reopens-with-a-free-fall/320538152/'>site</a></td><td>ATHENS - Investors issued a vote of no confidence in Greece?s economy on Monday, dumping Greek stocks as trading on the Athens stock exchange resumed for the first time in five weeks.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-21 04:02:46</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/greeces-tsipras-bets-on-early-polls-to-boost-refor/nnNq6/'>site</a></td><td>The political uncertainty took its toll on Greece's stock market, with the Athens Stock Exchange closing 3.5 percent down on election speculation.</td></tr>
 </table></body></html>
