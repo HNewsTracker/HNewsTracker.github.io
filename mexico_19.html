@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 07:45:24</td><td><a href='http://www.startribune.com/sludge-from-colorado-mine-spill-heads-down-river-to-nm/321008761/'>site</a></td><td>As the plume headed toward New Mexico, that state's governor said the EPA waited too long to tell her about the problem.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 21:26:54</td><td></td><td><a href='mexico_19_21.html'>The head of the New Mexico Environment Department is calling out federal officials for not quickly notifying the state of a toxic wastewater spill from an abandoned Colorado mine. (7)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-13 02:51:19</td><td></td><td><a href='mexico_19_22.html'>The Ohio Republican called on the Obama administration Wednesday to do everything in its power to protect people in the affected states of Colorado, New Mexico and Utah. (3)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-08-13 02:51:19</td><td></td><td><a href='mexico_19_20.html'>The head of the Environmental Protection Agency says she will visit Farmington, New Mexico, downstream from where millions of gallons of mine waste spilled into a southwest Colorado river. (17)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/3006400/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F42%2Fc4%2F569a89f0451d9be3ddbcda89a9dd%2Fresizes%2F500%2F150715reportbigpic-editorial.bigpic.jpg'></td><td>2015-08-20 16:27:37</td><td><a href='http://www.usnews.com/news/business/articles/2015/08/20/mexicos-treasury-lowers-gdp-growth-forecast-to-2-to-28-pct'>site</a></td><td><table><tr><td>Mexico's Treasury lowers GDP growth forecast to 2 to 2.8 pct</td></tr><tr><td>Mexico's central bank also recently lowered its own 2015 economic growth forecast, which is currently 1.7 percent to 2.5 percent.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 22:39:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article31622573.html#storylink=rss'>site</a></td><td>Treasury Deputy Secretary Fernando Aportela said the economy was limited in the second quarter by disappointing industrial activity in the United States, which accounts for 80 percent of Mexico's international commerce.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-08-03 02:11:27</td><td></td><td><a href='mexico_10_11.html'>Journalists and activists hold up cut-out images of slain photojournalist Ruben Espinosa during a protest at Mexico City's Angel of the Independence monument, Sunday. (26)</a></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/40/03/55/8403809/31/square_gallery_thumb.jpg'></td><td>2015-08-03 04:13:24</td><td><a href='http://www.sfgate.com/news/crime/article/Advocates-fear-more-impunity-in-Mexico-6420918.php'>site</a></td><td>Advocates fear more impunity in Mexico photographer killing</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-08-04 02:08:08</td><td></td><td><a href='mexico_10_12.html'>The United Nations High Commission on Human Rights condemned the killings, saying that the bodies had signs of torture and sexual violence and that the climate of impunity "is one of the obstacles to practicing freedom of expression in Mexico." (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-08-06 16:52:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article30257886.html#storylink=rss'>site</a></td><td>Three years ago Martinez was killed and now on August 1, Espinosa himself was tortured and killed along with four other people inside an apartment building in Mexico City, the city where he had sought refuge after being threatened in the state of Veracruz.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-25 02:21:13</td><td></td><td><a href='mexico_10_11.html'>New Mexico's attorney general is launching an investigation into how the state's largest school district hired Martinez as a high-level administrator who faces child sex abuse charges in Colorado. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/40/42/04/8528177/13/920x920.jpg'></td><td>2015-08-25 02:21:13</td><td><a href='http://www.sfgate.com/news/crime/article/APNewsBreak-New-Mexico-official-plans-school-6461910.php'>site</a></td><td>FILE - This Jan. 29, 2015 file photo shows New Mexico Attorney...</td></tr>
 </table></body></html>

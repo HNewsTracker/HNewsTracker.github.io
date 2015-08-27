@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-08-20 20:25:57</td><td></td><td><a href='mexico_15_16.html'>MEXICO CITY (AP) - Mexican archaeologists believe they have found the main trophy rack of sacrificed human skulls at Mexico City's Templo Mayor Aztec ruin site. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-08-20 23:39:23</td><td></td><td><a href='mexico_15_17.html'>Eduardo Matos, an archaeologist at the National Institute of Anthropology and History, suggested the skull rack in Mexico City "was a show of might" by the Aztecs. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-08-07 07:45:24</td><td><a href='http://www.startribune.com/sludge-from-colorado-mine-spill-heads-down-river-to-nm/321008761/'>site</a></td><td>As the plume headed toward New Mexico, that state's governor said the EPA waited too long to tell her about the problem.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 21:26:54</td><td></td><td><a href='mexico_15_17.html'>The head of the New Mexico Environment Department is calling out federal officials for not quickly notifying the state of a toxic wastewater spill from an abandoned Colorado mine. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-13 02:51:19</td><td></td><td><a href='mexico_15_18.html'>The Ohio Republican called on the Obama administration Wednesday to do everything in its power to protect people in the affected states of Colorado, New Mexico and Utah. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-08-13 02:51:19</td><td></td><td><a href='mexico_15_16.html'>The head of the Environmental Protection Agency says she will visit Farmington, New Mexico, downstream from where millions of gallons of mine waste spilled into a southwest Colorado river. (17)</a></td></tr>
 </table></body></html>

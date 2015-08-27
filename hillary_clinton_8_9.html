@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/37/72/42/8366216/5/920x920.jpg'></td><td>2015-07-26 22:41:54</td><td><a href='http://www.sfgate.com/business/energy/article/In-Iowa-Clinton-says-climate-plan-will-promote-6406621.php'>site</a></td><td>Jan Bauer gets a hug from Democratic presidential candidate Hillary Rodham Clinton after introducing her to speak at a campaign event Sunday, July 26, 2015, at Iowa State University in Ames, Iowa.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-07-27 01:32:33</td><td><a href='http://www.reuters.com/article/2015/07/27/us-usa-election-clinton-energy-idUSKCN0Q00X920150727?feedType=RSS&feedName=politicsNews'>site</a></td><td>Clinton, the front-runner for her party's 2016 presidential nomination, also pledged to have more than half a billion solar panels installed nationwide within four years of taking office.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-07-27 18:50:11</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article28862665.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton is detailing new energy proposals in Iowa to address climate change.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/07/30/8b/84/01626805ed0e474bbf9ce5c0a049dd09-14604b9d59404d2596feb315d385f76b-0_1.jpg'></td><td>2015-07-31 02:21:34</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/clinton-charity-donors-surge-amid-hillary-clinton-/nm9Qs/'>site</a></td><td><table><tr><td>Clinton charity donors surge amid Hillary Clinton's campaign</td></tr><tr><td>A new list of donors to the Bill, Hillary and Chelsea Clinton Foundation shows a marked surge in donations and the numbers of contributors to the family charity in the first half of this year - at the same time that Hillary Rodham Clinton ramped up her campaign for the presidency.</td></tr><tr><td>"We know that donors are giving more because they are seeing the impact of our work across the globe," said the foundation's new president, Donna Shalala, who was accompanying Bill and Hillary Clinton's daughter, Chelsea, on a tour of foundation programs in Haiti.</td></tr></table></td></tr>
 </table></body></html>

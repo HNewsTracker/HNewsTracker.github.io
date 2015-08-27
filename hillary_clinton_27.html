@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/04/9f/4d/4f6a216dcd0e4d18b660f082b2c56407-14fa51fce73c45b3af0d4a12194bca51-0.jpg'></td><td>2015-08-05 02:59:18</td><td><a href='http://www.daytondailynews.com/ap/ap/political/hillary-clinton-slams-bush-on-immigration-womens-h/nnC4k/'>site</a></td><td>Democratic presidential candidate Hillary Rodham Clinton speaks to supporters during a campaign rally at La Rumba, a Denver dance club and restaurant, Tuesday, Aug. 4, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/40/06/46/8415657/3/square_gallery_thumb.jpg'></td><td>2015-08-05 02:59:18</td><td><a href='http://www.sfgate.com/news/article/Hillary-Clinton-slams-Bush-on-immigration-6425381.php'>site</a></td><td><table><tr><td>DENVER (AP) - Hillary Clinton on Tuesday repeatedly slammed Jeb Bush and the rest of the Republican presidential field over immigration and women's health during a campaign stop in Denver.</td></tr><tr><td>Clinton also criticized Bush for questioning the amount the federal government spends on women's health during a forum earlier Tuesday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/08/10/cb/57/59d09696f3b74b258430f278182f14a9-45037df8d95344248a24ac25f804dde1-0.jpg'></td><td>2015-08-10 20:29:33</td><td><a href='http://www.daytondailynews.com/ap/ap/political/group-backing-hillary-clinton-gets-1m-from-anonymo/nnGzt/'>site</a></td><td>Democratic presidential candidate Hillary Rodham Clinton arrives at the high school in Exeter, N.H., Monday, Aug. 10, 2015, where she announced her college affordability plan.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-08-10 20:29:33</td><td><a href='http://www.usnews.com/news/politics/articles/2015/08/10/group-backing-hillary-clinton-gets-1m-from-anonymous-donors'>site</a></td><td>Group backing Hillary Clinton gets $1M from anonymous donors</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-08-10 20:33:09</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article30623862.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton told a cheering crowd at her largest rally so far that "the endless flow of secret, unaccountable money" must be stopped.</td></tr>
 </table></body></html>
